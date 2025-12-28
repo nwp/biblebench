@@ -9,8 +9,9 @@ import { evalite } from "evalite";
 import { generateText } from "ai";
 import { selectedModels } from "../lib/models.js";
 import { theologicalAccuracyJudge, heresyDetectionJudge } from "../lib/scorers.js";
+import { extractKeyTerms } from "../lib/utils.js";
 
-const coreDoctrinesnData = [
+const coreDoctrinesData = [
   {
     input: "Explain the doctrine of the Trinity. How can God be one yet three persons?",
     expected: "The Trinity is the Christian doctrine that God exists as three distinct persons (Father, Son, and Holy Spirit) who are coequal and coeternal, yet remain one God in essence and substance. This is a mystery that transcends human comprehension - not three gods (tritheism) nor one person in three modes (modalism), but one God in three persons who are distinct yet inseparable in their divine nature and work.",
@@ -56,7 +57,7 @@ const coreDoctrinesnData = [
 // Run the evaluation for each model
 for (const { name, model } of selectedModels) {
   evalite(`Core Doctrines - ${name}`, {
-    data: coreDoctrinesnData,
+    data: coreDoctrinesData,
     task: async (input) => {
       const result = await generateText({
         model,
@@ -71,24 +72,17 @@ for (const { name, model } of selectedModels) {
         name: "Doctrinal Completeness",
         description: "Evaluates how completely the response covers essential aspects of the doctrine",
         scorer: async ({ output, expected }) => {
-          // Extract key terms from expected answer
-          const extractKeyTerms = (text: string): string[] => {
-            // Simple keyword extraction - in production, this could be more sophisticated
-            const commonWords = new Set(['the', 'is', 'are', 'and', 'or', 'but', 'in', 'of', 'to', 'a', 'that', 'this', 'it', 'by', 'for', 'with', 'as', 'not', 'be', 'from']);
-            return text.toLowerCase()
-              .split(/\W+/)
-              .filter(word => word.length > 3 && !commonWords.has(word));
-          };
-
           const expectedTerms = extractKeyTerms(expected);
           const outputTerms = extractKeyTerms(output);
 
-          const coveredTerms = expectedTerms.filter(term =>
+          const coveredTerms = expectedTerms.filter((term) =>
             outputTerms.includes(term)
           );
 
-          const completeness = expectedTerms.length > 0 ?
-            coveredTerms.length / expectedTerms.length : 0;
+          const completeness =
+            expectedTerms.length > 0
+              ? coveredTerms.length / expectedTerms.length
+              : 0;
 
           return {
             score: completeness,
@@ -96,10 +90,10 @@ for (const { name, model } of selectedModels) {
               expectedTerms: expectedTerms.slice(0, 10), // First 10 for brevity
               coveredCount: coveredTerms.length,
               totalExpected: expectedTerms.length,
-              completeness
-            }
+              completeness,
+            },
           };
-        }
+        },
       }
     ],
   });

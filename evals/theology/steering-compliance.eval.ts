@@ -456,13 +456,15 @@ for (const { name, model } of selectedModels) {
   for (const testCase of steeringComplianceData) {
     // Test conservative persona
     evalite(`Steering Compliance [Conservative] - ${testCase.topic} - ${name}`, {
-      data: [{
-        input: testCase.question,
-        persona_type: "conservative",
-        persona_prompt: testCase.conservative_persona,
-        expected_position: testCase.expected_conservative,
-        topic: testCase.topic,
-      }],
+      data: [
+        {
+          input: testCase.question,
+          persona_type: "conservative",
+          persona_prompt: testCase.conservative_persona,
+          expected_position: testCase.expected_conservative,
+          topic: testCase.topic,
+        } as any,
+      ],
       task: async (data: any) => {
         const result = await generateText({
           model,
@@ -481,13 +483,15 @@ for (const { name, model } of selectedModels) {
 
     // Test progressive persona
     evalite(`Steering Compliance [Progressive] - ${testCase.topic} - ${name}`, {
-      data: [{
-        input: testCase.question,
-        persona_type: "progressive",
-        persona_prompt: testCase.progressive_persona,
-        expected_position: testCase.expected_progressive,
-        topic: testCase.topic,
-      }],
+      data: [
+        {
+          input: testCase.question,
+          persona_type: "progressive",
+          persona_prompt: testCase.progressive_persona,
+          expected_position: testCase.expected_progressive,
+          topic: testCase.topic,
+        } as any,
+      ],
       task: async (data: any) => {
         const result = await generateText({
           model,

@@ -4,6 +4,55 @@ This directory contains shared utilities for the BibleBench evaluation suite.
 
 ## Files
 
+### `types.ts`
+
+Central type definitions for the entire evaluation system, providing strong type safety across models, scorers, and evaluations.
+
+**Key Types:**
+
+- `BaseTestData`, `ScriptureTestData`, `TheologyTestData`: Test data structures
+- `ModelConfig`: Model configuration with metadata
+- `ExtendedScorerInput`: Enhanced scorer input with optional metadata fields
+- `ScorerResult<TMetadata>`: Typed scorer results
+- Metadata types: `TheologicalScorerMetadata`, `HeresyScorerMetadata`, `DenominationalScorerMetadata`, etc.
+
+**Type Guards:**
+
+- `isScriptureTestData()`: Check if data is scripture-specific
+- `isTheologyTestData()`: Check if data is theology-specific
+
+### `utils.ts`
+
+Common utility functions used across evaluations and scorers, eliminating code duplication.
+
+**Text Processing:**
+
+- `normalizeText()`: Normalize text for comparison (lowercase, no punctuation)
+- `normalizeReference()`: Normalize scripture references
+- `extractKeyTerms()`: Extract significant terms from text
+- `calculateWordOverlap()`: Calculate word overlap between texts
+
+**Similarity:**
+
+- `levenshteinDistance()`: Calculate edit distance between strings
+- `calculateSimilarity()`: Calculate similarity score (0-1) based on edit distance
+
+**Validation:**
+
+- `validateEnvironment()`: Validate required environment variables
+- `isValidTranslation()`: Check if string is a valid Bible translation
+
+**Translation Support:**
+
+- `TRANSLATION_MARKERS`: Vocabulary markers for Bible translations (KJV, NIV, ESV, etc.)
+- `BibleTranslation`: Type for supported translations
+
+**Helpers:**
+
+- `clamp()`: Clamp number between min and max
+- `delay()`: Create delay promise for rate limiting
+- `formatScore()`: Format score as percentage string
+
 ### `models.ts`
 
 Configures and exports AI SDK models accessed through **OpenRouter** and wrapped with Evalite's tracing and caching functionality.

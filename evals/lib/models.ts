@@ -16,16 +16,24 @@
 
 import { wrapAISDKModel } from "evalite/ai-sdk";
 import { createOpenRouter } from "@openrouter/ai-sdk-provider";
+import type { LanguageModelV2 } from "@ai-sdk/provider";
+import { validateEnvironment, delay } from "./utils.js";
+import type { ModelConfig } from "./types.js";
+
+/**
+ * Validate environment and get configuration
+ */
+const envConfig = validateEnvironment();
 
 /**
  * Configure OpenRouter provider
  * Uses OPENROUTER_API_KEY from environment variables
- * 
+ *
  * The headers help identify this application on OpenRouter's dashboard
  * and in their usage statistics/rankings.
  */
 const openrouter = createOpenRouter({
-  apiKey: process.env.OPENROUTER_API_KEY,
+  apiKey: envConfig.openrouterApiKey,
   headers: {
     "HTTP-Referer": "https://github.com/nwp/biblebench", // Your app URL for OpenRouter rankings
     "X-Title": "BibleBench", // Your app name for OpenRouter rankings
@@ -39,31 +47,42 @@ const openrouter = createOpenRouter({
 let lastRequestTime = 0;
 const MIN_DELAY_MS = 3500; // 3.5 seconds between requests (~17 req/min, under the 16-20 limit)
 
+/**
+ * Waits for rate limit before allowing the next request
+ */
 async function waitForRateLimit(): Promise<void> {
   const now = Date.now();
   const timeSinceLastRequest = now - lastRequestTime;
-  
+
   if (timeSinceLastRequest < MIN_DELAY_MS) {
     const waitTime = MIN_DELAY_MS - timeSinceLastRequest;
-    await new Promise(resolve => setTimeout(resolve, waitTime));
+    await delay(waitTime);
   }
-  
+
   lastRequestTime = Date.now();
 }
 
 /**
  * Wraps a model with rate limiting for free tier models only
  */
-function wrapWithRateLimit(modelName: string) {
-  const model = openrouter.chat(modelName);
-  
-  return wrapAISDKModel({
-    ...model,
-    doGenerate: async (...args: Parameters<typeof model.doGenerate>) => {
+function wrapWithRateLimit(modelName: string): LanguageModelV2 {
+  const baseModel = openrouter.chat(modelName);
+  const originalDoGenerate = baseModel.doGenerate.bind(baseModel);
+  const originalDoStream = baseModel.doStream.bind(baseModel);
+
+  const rateLimitedModel: LanguageModelV2 = {
+    ...baseModel,
+    doGenerate: async (...args: Parameters<typeof baseModel.doGenerate>) => {
       await waitForRateLimit();
-      return model.doGenerate(...args);
+      return originalDoGenerate(...args);
     },
-  } as any);
+    doStream: async (...args: Parameters<typeof baseModel.doStream>) => {
+      await waitForRateLimit();
+      return originalDoStream(...args);
+    },
+  };
+
+  return wrapAISDKModel(rateLimitedModel);
 }
 
 /**
@@ -144,47 +163,47 @@ export const defaultJudgeModel = gpt5Mini;
  * Note: All models are accessed through OpenRouter, so you only need
  * one API key (OPENROUTER_API_KEY) instead of separate keys for each provider.
  */
-export const benchmarkModels = [
+export const benchmarkModels: readonly ModelConfig[] = [
   // OpenAI models
-  { name: "GPT-5.2", model: gpt52 },
-  { name: "GPT-5.1", model: gpt51 },
-  { name: "GPT-5 Nano", model: gpt5Nano },
-  { name: "GPT-OSS-120B", model: gptOss120b },
-  { name: "GPT-OSS-20B", model: gptOss20b },
+  { name: "GPT-5.2", model: gpt52, provider: "openai" },
+  { name: "GPT-5.1", model: gpt51, provider: "openai" },
+  { name: "GPT-5 Nano", model: gpt5Nano, provider: "openai" },
+  { name: "GPT-OSS-120B", model: gptOss120b, provider: "openai" },
+  { name: "GPT-OSS-20B", model: gptOss20b, provider: "openai" },
 
   // Anthropic models
-  { name: "Claude Haiku 4.5", model: claudeHaiku45 },
-  { name: "Claude Sonnet 4.5", model: claudeSonnet45 },
-  { name: "Claude Opus 4.5", model: claudeOpus45 },
+  { name: "Claude Haiku 4.5", model: claudeHaiku45, provider: "anthropic" },
+  { name: "Claude Sonnet 4.5", model: claudeSonnet45, provider: "anthropic" },
+  { name: "Claude Opus 4.5", model: claudeOpus45, provider: "anthropic" },
 
   // X.AI models
-  { name: "Grok 4.1 Fast", model: grok41Fast },
-  { name: "Grok 4", model: grok4 },
+  { name: "Grok 4.1 Fast", model: grok41Fast, provider: "xai" },
+  { name: "Grok 4", model: grok4, provider: "xai" },
 
   // Google models
-  { name: "Gemini 3 Flash Preview", model: gemini3FlashPreview },
-  { name: "Gemini 3 Pro Preview", model: gemini3ProPreview },
+  { name: "Gemini 3 Flash Preview", model: gemini3FlashPreview, provider: "google" },
+  { name: "Gemini 3 Pro Preview", model: gemini3ProPreview, provider: "google" },
 
   // Mistral models
-  { name: "Mistral Large 2512", model: mistralLarge2512 },
+  { name: "Mistral Large 2512", model: mistralLarge2512, provider: "mistral" },
 
   // DeepSeek models
-  { name: "DeepSeek V3.2", model: deepseekV32 },
+  { name: "DeepSeek V3.2", model: deepseekV32, provider: "deepseek" },
 
   // Prime Intellect models
-  { name: "Intellect-3", model: intellect3 },
+  { name: "Intellect-3", model: intellect3, provider: "prime-intellect" },
 
   // AllenAI models
-  { name: "OLMo 3.1 32B Think", model: olmo3132bThink },
+  { name: "OLMo 3.1 32B Think", model: olmo3132bThink, provider: "allenai" },
 
   // NVIDIA models
-  { name: "Nemotron 3 Nano 30B", model: nemotron3Nano30b },
+  { name: "Nemotron 3 Nano 30B", model: nemotron3Nano30b, provider: "nvidia" },
 
   // Zhipu AI models
-  { name: "GLM-4.7", model: glm47 },
+  { name: "GLM-4.7", model: glm47, provider: "zhipu" },
 
   // MiniMax models
-  { name: "MiniMax M2.1", model: minimaxM21 },
+  { name: "MiniMax M2.1", model: minimaxM21, provider: "minimax" },
 ] as const;
 
 /**
@@ -207,8 +226,8 @@ export const minimaxModels = [minimaxM21];
  * Test subset of models (for quick testing with lower API costs)
  * Using openai/gpt-oss-120b:free for free tier testing
  */
-export const testModels = [
-  { name: "GPT-OSS-120B:Free", model: gptOss120bFree },
+export const testModels: readonly ModelConfig[] = [
+  { name: "GPT-OSS-120B:Free", model: gptOss120bFree, provider: "openai" },
 ] as const;
 
 /**
@@ -226,37 +245,37 @@ export const testModels = [
  *
  * If MODELS is not set, all benchmarkModels are used.
  */
-function getSelectedModels() {
-  const modelsEnv = process.env.MODELS?.trim();
+function getSelectedModels(): readonly ModelConfig[] {
+  const modelsEnv = envConfig.modelFilters;
 
   // If no MODELS env var, return all models
-  if (!modelsEnv) {
-    return benchmarkModels;
-  }
-
-  // Split by comma and trim whitespace
-  const patterns = modelsEnv.split(',').map(p => p.trim().toLowerCase()).filter(p => p.length > 0);
-
-  if (patterns.length === 0) {
+  if (!modelsEnv || modelsEnv.length === 0) {
     return benchmarkModels;
   }
 
   // Filter models by matching any pattern (case-insensitive partial match)
   const filtered = benchmarkModels.filter(({ name }) => {
     const lowerName = name.toLowerCase();
-    return patterns.some(pattern => lowerName.includes(pattern));
+    return modelsEnv.some((pattern) => lowerName.includes(pattern));
   });
 
   // Log which models were selected
   if (filtered.length > 0) {
     console.log(`\n🎯 Running with ${filtered.length} selected model(s):`);
-    filtered.forEach(({ name }) => console.log(`   - ${name}`));
-    console.log('');
+    filtered.forEach(({ name, provider }) => {
+      const providerTag = provider ? ` [${provider}]` : "";
+      console.log(`   - ${name}${providerTag}`);
+    });
+    console.log("");
   } else {
-    console.warn(`\n⚠️  Warning: No models matched pattern "${modelsEnv}"`);
-    console.warn('   Available model names:');
-    benchmarkModels.forEach(({ name }) => console.warn(`   - ${name}`));
-    console.warn('   Falling back to all models.\n');
+    const originalPattern = process.env.MODELS || "";
+    console.warn(`\n⚠️  Warning: No models matched pattern "${originalPattern}"`);
+    console.warn("   Available model names:");
+    benchmarkModels.forEach(({ name, provider }) => {
+      const providerTag = provider ? ` [${provider}]` : "";
+      console.warn(`   - ${name}${providerTag}`);
+    });
+    console.warn("   Falling back to all models.\n");
     return benchmarkModels;
   }
 
