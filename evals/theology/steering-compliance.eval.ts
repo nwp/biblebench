@@ -24,7 +24,7 @@
 import { evalite } from "evalite";
 import { generateText, generateObject } from "ai";
 import { z } from "zod";
-import { testModels, defaultJudgeModel } from "../lib/models.js";
+import { selectedModels, defaultJudgeModel } from "../lib/models.js";
 
 /**
  * Test data with parallel conservative and progressive personas
@@ -452,7 +452,7 @@ const viewpointExpressionDetector = {
 };
 
 // Run the evaluation: Each test case creates TWO evaluations (conservative + progressive)
-for (const { name, model } of testModels) {
+for (const { name, model } of selectedModels) {
   for (const testCase of steeringComplianceData) {
     // Test conservative persona
     evalite(`Steering Compliance [Conservative] - ${testCase.topic} - ${name}`, {

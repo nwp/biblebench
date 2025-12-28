@@ -211,3 +211,68 @@ export const testModels = [
   { name: "GPT-OSS-120B:Free", model: gptOss120bFree },
 ] as const;
 
+/**
+ * Filter models by name based on environment variable
+ *
+ * Usage:
+ *   MODELS="gpt,claude" pnpm eval
+ *   MODELS="sonnet" pnpm eval
+ *   MODELS="gpt-5.2,opus" pnpm eval:dev
+ *
+ * Supports:
+ * - Comma-separated values: MODELS="gpt,claude"
+ * - Case-insensitive partial matching: MODELS="opus" matches "Claude Opus 4.5"
+ * - Multiple patterns: MODELS="gpt-5,claude haiku"
+ *
+ * If MODELS is not set, all benchmarkModels are used.
+ */
+function getSelectedModels() {
+  const modelsEnv = process.env.MODELS?.trim();
+
+  // If no MODELS env var, return all models
+  if (!modelsEnv) {
+    return benchmarkModels;
+  }
+
+  // Split by comma and trim whitespace
+  const patterns = modelsEnv.split(',').map(p => p.trim().toLowerCase()).filter(p => p.length > 0);
+
+  if (patterns.length === 0) {
+    return benchmarkModels;
+  }
+
+  // Filter models by matching any pattern (case-insensitive partial match)
+  const filtered = benchmarkModels.filter(({ name }) => {
+    const lowerName = name.toLowerCase();
+    return patterns.some(pattern => lowerName.includes(pattern));
+  });
+
+  // Log which models were selected
+  if (filtered.length > 0) {
+    console.log(`\n🎯 Running with ${filtered.length} selected model(s):`);
+    filtered.forEach(({ name }) => console.log(`   - ${name}`));
+    console.log('');
+  } else {
+    console.warn(`\n⚠️  Warning: No models matched pattern "${modelsEnv}"`);
+    console.warn('   Available model names:');
+    benchmarkModels.forEach(({ name }) => console.warn(`   - ${name}`));
+    console.warn('   Falling back to all models.\n');
+    return benchmarkModels;
+  }
+
+  return filtered;
+}
+
+/**
+ * Selected models for evaluation
+ *
+ * By default, includes all benchmarkModels.
+ * Can be filtered using the MODELS environment variable.
+ *
+ * Examples:
+ *   MODELS="gpt" pnpm eval              # Only GPT models
+ *   MODELS="claude,grok" pnpm eval      # Claude and Grok models
+ *   MODELS="opus" pnpm eval:dev         # Only Opus model
+ */
+export const selectedModels = getSelectedModels();
+

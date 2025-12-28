@@ -7,7 +7,7 @@
 
 import { evalite } from "evalite";
 import { generateText } from "ai";
-import { testModels } from "../lib/models.js";
+import { selectedModels } from "../lib/models.js";
 import { scriptureReferenceAccuracy, containsAnswer } from "../lib/scorers.js";
 
 const referenceKnowledgeData = [
@@ -54,7 +54,7 @@ const referenceKnowledgeData = [
 ];
 
 // Run the evaluation for each model
-for (const { name, model } of testModels) {
+for (const { name, model } of selectedModels) {
   evalite(`Reference Knowledge - ${name}`, {
     data: referenceKnowledgeData,
     task: async (input) => {

@@ -7,7 +7,7 @@
 
 import { evalite } from "evalite";
 import { generateText } from "ai";
-import { testModels } from "../lib/models.js";
+import { selectedModels } from "../lib/models.js";
 import { theologicalAccuracyJudge } from "../lib/scorers.js";
 
 const heresyDetectionData = [
@@ -49,7 +49,7 @@ const heresyDetectionData = [
 ];
 
 // Run the evaluation for each model
-for (const { name, model } of testModels) {
+for (const { name, model } of selectedModels) {
   evalite(`Heresy Detection - ${name}`, {
     data: heresyDetectionData,
     task: async (input) => {

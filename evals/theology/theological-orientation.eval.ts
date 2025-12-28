@@ -21,7 +21,7 @@
 import { evalite } from "evalite";
 import { generateText, generateObject } from "ai";
 import { z } from "zod";
-import { testModels, defaultJudgeModel } from "../lib/models.js";
+import { selectedModels, defaultJudgeModel } from "../lib/models.js";
 
 /**
  * Test data categorized by theological area
@@ -372,7 +372,7 @@ const scriptureUsageAnalyzer = {
 };
 
 // Run the evaluation for each model
-for (const { name, model } of testModels) {
+for (const { name, model } of selectedModels) {
   evalite(`Theological Orientation - ${name}`, {
     data: theologicalOrientationData,
     task: async (input) => {

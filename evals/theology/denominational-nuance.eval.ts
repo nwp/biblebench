@@ -7,7 +7,7 @@
 
 import { evalite } from "evalite";
 import { generateText } from "ai";
-import { testModels } from "../lib/models.js";
+import { selectedModels } from "../lib/models.js";
 import { theologicalAccuracyJudge, denominationalBiasDetector } from "../lib/scorers.js";
 
 const denominationalNuanceData = [
@@ -44,7 +44,7 @@ const denominationalNuanceData = [
 ];
 
 // Run the evaluation for each model
-for (const { name, model } of testModels) {
+for (const { name, model } of selectedModels) {
   evalite(`Denominational Nuance - ${name}`, {
     data: denominationalNuanceData,
     task: async (input) => {

@@ -9,7 +9,7 @@
 import { evalite, createScorer } from "evalite";
 import { generateText, generateObject } from "ai";
 import { z } from "zod";
-import { defaultJudgeModel, testModels } from "../lib/models.js";
+import { defaultJudgeModel, selectedModels } from "../lib/models.js";
 import { theologicalAccuracyJudge } from "../lib/scorers.js";
 
 /**
@@ -96,7 +96,7 @@ const pastoralApplicationData = [
 ];
 
 // Run the evaluation for each model
-for (const { name, model } of testModels) {
+for (const { name, model } of selectedModels) {
   evalite(`Pastoral Application - ${name}`, {
     data: pastoralApplicationData,
     task: async (input) => {
