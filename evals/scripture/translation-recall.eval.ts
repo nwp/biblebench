@@ -231,7 +231,6 @@ for (const { name, model } of benchmarkModels) {
       const result = await generateText({
         model,
         prompt: `You are a Bible scholar with expertise in various Bible translations. Provide the exact verse text from the specified translation. Be precise with the wording - different translations use different phrases. Quote only the verse text without the reference.\n\n${input}`,
-        maxTokens: 300,
       });
       return result.text;
     },
@@ -240,7 +239,8 @@ for (const { name, model } of benchmarkModels) {
       {
         name: "Translation Accuracy",
         description: "Measures accuracy of translation-specific wording",
-        scorer: ({ output, expected }, testCase: any) => {
+        scorer: (scoreInput: any) => {
+          const { output, expected } = scoreInput;
           // Normalize text for comparison
           const normalize = (text: string) =>
             text.toLowerCase()
@@ -263,7 +263,7 @@ for (const { name, model } of benchmarkModels) {
           const wordOverlap = matchedWords / wordsExpected.length;
 
           // Check if key phrases are present (translation-specific markers)
-          const keyPhrases = testCase.keyPhrases || [];
+          const keyPhrases = scoreInput.keyPhrases || [];
           const keyPhrasesFound = keyPhrases.filter((phrase: string) =>
             normalizedOutput.includes(normalize(phrase))
           );
@@ -289,7 +289,7 @@ for (const { name, model } of benchmarkModels) {
               keyPhrasesFound: keyPhrasesFound.length,
               totalKeyPhrases: keyPhrases.length,
               keyPhraseScore,
-              translation: testCase.translation
+              translation: scoreInput.translation
             }
           };
         }
@@ -297,8 +297,9 @@ for (const { name, model } of benchmarkModels) {
       {
         name: "Translation Fidelity",
         description: "Checks if response uses the correct translation's distinctive vocabulary",
-        scorer: ({ output, expected }, testCase: any) => {
-          const keyPhrases = testCase.keyPhrases || [];
+        scorer: (scoreInput: any) => {
+          const { output } = scoreInput;
+          const keyPhrases = scoreInput.keyPhrases || [];
           if (keyPhrases.length === 0) return { score: 1, metadata: { na: true } };
 
           const outputLower = output.toLowerCase();
@@ -318,7 +319,7 @@ for (const { name, model } of benchmarkModels) {
             "ESV": ["should", "will"],
           };
 
-          const currentTranslation = testCase.translation;
+          const currentTranslation = scoreInput.translation;
           let penaltyApplied = false;
 
           // Check if wrong translation markers are present

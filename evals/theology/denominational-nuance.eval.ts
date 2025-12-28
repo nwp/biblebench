@@ -51,7 +51,6 @@ for (const { name, model } of benchmarkModels) {
       const result = await generateText({
         model,
         prompt: `You are a fair-minded theologian knowledgeable about different Christian traditions. Explain the following theological topic, representing different denominational perspectives accurately and without bias. Show respect for legitimate theological diversity while maintaining commitment to core orthodox beliefs.\n\n${input}`,
-        maxTokens: 500,
       });
       return result.text;
     },

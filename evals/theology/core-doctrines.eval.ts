@@ -61,7 +61,6 @@ for (const { name, model } of benchmarkModels) {
       const result = await generateText({
         model,
         prompt: `You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\n${input}`,
-        maxTokens: 400,
       });
       return result.text;
     },

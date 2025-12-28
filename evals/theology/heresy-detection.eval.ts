@@ -56,7 +56,6 @@ for (const { name, model } of benchmarkModels) {
       const result = await generateText({
         model,
         prompt: `You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\n${input}`,
-        maxTokens: 400,
       });
       return result.text;
     },
@@ -65,8 +64,9 @@ for (const { name, model } of benchmarkModels) {
       {
         name: "Heresy Identification",
         description: "Checks if the response correctly identifies the heresy",
-        scorer: ({ output }, testCase: any) => {
-          const heresyType = testCase.heresyType;
+        scorer: (scoreInput: any) => {
+          const { output } = scoreInput;
+          const heresyType = scoreInput.heresyType;
           if (!heresyType || heresyType === "None - testing doctrinal discernment") {
             return { score: 1, metadata: { type: "no specific heresy" } };
           }
@@ -87,7 +87,8 @@ for (const { name, model } of benchmarkModels) {
       {
         name: "Orthodox Response",
         description: "Checks if the response defends orthodox teaching",
-        scorer: ({ output }) => {
+        scorer: (scoreInput: any) => {
+          const { output } = scoreInput;
           const outputLower = output.toLowerCase();
 
           // Keywords indicating orthodox defense

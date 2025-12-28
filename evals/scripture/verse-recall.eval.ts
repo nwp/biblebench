@@ -72,7 +72,6 @@ for (const { name, model } of benchmarkModels) {
       const result = await generateText({
         model,
         prompt: `You are a Bible scholar. Answer the following question about scripture accurately and concisely. Provide only the verse text without the reference. You may use any standard translation (KJV, NIV, ESV, etc.).\n\n${input}`,
-        maxTokens: 200,
       });
       return result.text;
     },

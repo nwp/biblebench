@@ -50,8 +50,13 @@ export const containsAnswer = createScorer<string, string, string>({
 export const levenshteinSimilarity = createScorer<string, string, string>({
   name: "Levenshtein Similarity",
   description: "Measures text similarity using Levenshtein distance",
-  scorer: ({ output, expected }) => {
-    return Levenshtein({ output, expected });
+  scorer: async ({ output, expected }) => {
+    const result = await Promise.resolve(Levenshtein({ output, expected }));
+    // Handle potential null score from autoevals
+    return {
+      score: result.score ?? 0,
+      metadata: result.metadata || {}
+    };
   }
 });
 
@@ -236,8 +241,9 @@ Rate the ecumenical score from 0 to 1, where 1 is perfectly balanced and 0 is ex
 export const translationPhraseMatch = createScorer<string, string, { keyPhrases?: string[], translation?: string }>({
   name: "Translation Phrase Match",
   description: "Checks if translation-specific key phrases are accurately reproduced",
-  scorer: ({ output, expected }, testCase) => {
-    const keyPhrases = testCase?.keyPhrases || [];
+  scorer: (scoreInput) => {
+    const { output, expected } = scoreInput;
+    const keyPhrases = (scoreInput as any).keyPhrases || [];
     if (keyPhrases.length === 0) {
       return { score: 1, metadata: { na: true } };
     }
@@ -248,7 +254,7 @@ export const translationPhraseMatch = createScorer<string, string, { keyPhrases?
         .trim();
 
     const outputNorm = normalize(output);
-    const phrasesFound = keyPhrases.filter(phrase =>
+    const phrasesFound = keyPhrases.filter((phrase: string) =>
       outputNorm.includes(normalize(phrase))
     );
 
@@ -260,8 +266,8 @@ export const translationPhraseMatch = createScorer<string, string, { keyPhrases?
         keyPhrasesFound: phrasesFound.length,
         totalKeyPhrases: keyPhrases.length,
         phrasesMatched: phrasesFound,
-        phrasesMissed: keyPhrases.filter(p => !phrasesFound.includes(p)),
-        translation: testCase?.translation
+        phrasesMissed: keyPhrases.filter((p: string) => !phrasesFound.includes(p)),
+        translation: (scoreInput as any).translation
       }
     };
   }
@@ -274,9 +280,10 @@ export const translationPhraseMatch = createScorer<string, string, { keyPhrases?
 export const translationVocabularyFidelity = createScorer<string, string, { translation?: string, keyPhrases?: string[] }>({
   name: "Translation Vocabulary Fidelity",
   description: "Validates use of translation-appropriate vocabulary and style",
-  scorer: ({ output }, testCase) => {
-    const translation = testCase?.translation || "";
-    const keyPhrases = testCase?.keyPhrases || [];
+  scorer: (scoreInput) => {
+    const { output } = scoreInput;
+    const translation = (scoreInput as any).translation || "";
+    const keyPhrases = (scoreInput as any).keyPhrases || [];
 
     // Define characteristic markers for each major translation
     const translationMarkers: Record<string, { positive: string[], negative: string[] }> = {
@@ -337,7 +344,7 @@ export const translationVocabularyFidelity = createScorer<string, string, { tran
 
     // Check if key phrases are present (if provided)
     if (keyPhrases.length > 0) {
-      const phrasesFound = keyPhrases.filter(phrase =>
+      const phrasesFound = keyPhrases.filter((phrase: string) =>
         outputLower.includes(phrase.toLowerCase())
       );
       const phraseScore = phrasesFound.length / keyPhrases.length;

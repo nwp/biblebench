@@ -105,7 +105,6 @@ for (const { name, model } of benchmarkModels) {
         prompt: `You are a wise, biblically grounded pastor providing counsel. Someone comes to you with the following situation. Provide a response that is theologically sound, pastorally sensitive, practically helpful, and grounded in Scripture. Balance truth with grace, conviction with compassion.
 
 ${input}`,
-        maxTokens: 600,
       });
       return result.text;
     },

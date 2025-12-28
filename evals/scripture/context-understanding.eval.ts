@@ -61,7 +61,6 @@ for (const { name, model } of benchmarkModels) {
       const result = await generateText({
         model,
         prompt: `You are a Bible scholar with deep knowledge of scripture, history, and context. Answer the following question accurately and concisely.\n\n${input}`,
-        maxTokens: 300,
       });
       return result.text;
     },
@@ -70,8 +69,9 @@ for (const { name, model } of benchmarkModels) {
       {
         name: "Key Points Coverage",
         description: "Checks if the response includes key factual points",
-        scorer: ({ output, expected }, testCase: any) => {
-          const keyPoints = testCase.keyPoints || [];
+        scorer: (scoreInput: any) => {
+          const { output } = scoreInput;
+          const keyPoints = scoreInput.keyPoints || [];
           const outputLower = output.toLowerCase();
 
           const coveredPoints = keyPoints.filter((point: string) =>

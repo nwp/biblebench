@@ -61,7 +61,6 @@ for (const { name, model } of benchmarkModels) {
       const result = await generateText({
         model,
         prompt: `You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., "John 3:16").\n\n${input}`,
-        maxTokens: 50,
       });
       return result.text;
     },
