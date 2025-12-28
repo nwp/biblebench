@@ -550,14 +550,6 @@ This benchmark is provided for educational and evaluative purposes. It represent
 - Inspired by existing LLM benchmarks: MMLU, TruthfulQA, HumanEval, etc.
 - Theological input from various Christian traditions and scholars
 
-## 📧 Contact
-
-For questions, suggestions, or collaboration:
-
-- Open an issue on GitHub
-- Email: [your-email@example.com]
-- Twitter: [@yourusername]
-
 ---
 
 *"Do your best to present yourself to God as one approved, a worker who does not need to be ashamed and who correctly handles the word of truth." - 2 Timothy 2:15 (NIV)*
