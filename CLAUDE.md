@@ -37,17 +37,22 @@ biblebench/
 │           └── examples.md     # Usage examples
 ├── evals/
 │   ├── scripture/              # Scripture accuracy evaluations
-│   │   ├── verse-recall.eval.ts
+│   │   ├── exact-scripture-matching.eval.ts  # Exact verse recall across translations
 │   │   ├── reference-knowledge.eval.ts
 │   │   └── context-understanding.eval.ts
 │   ├── theology/               # Theological concept evaluations
 │   │   ├── core-doctrines.eval.ts
 │   │   ├── heresy-detection.eval.ts
 │   │   ├── denominational-nuance.eval.ts
-│   │   └── pastoral-application.eval.ts
+│   │   ├── pastoral-application.eval.ts
+│   │   ├── sect-theology.eval.ts
+│   │   ├── theological-orientation.eval.ts
+│   │   └── steering-compliance.eval.ts
 │   └── lib/                    # Shared utilities
 │       ├── models.ts           # AI model configurations
 │       ├── scorers.ts          # Custom scoring functions
+│       ├── types.ts            # TypeScript type definitions
+│       ├── utils.ts            # Utility functions
 │       └── README.md
 ├── evalite.config.ts          # Evalite configuration
 ├── tsconfig.json              # TypeScript configuration
