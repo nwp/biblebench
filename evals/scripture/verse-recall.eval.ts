@@ -8,7 +8,7 @@
 
 import { evalite } from "evalite";
 import { generateText } from "ai";
-import { testModels } from "../lib/models.js";
+import { selectedModels } from "../lib/models.js";
 import { exactMatch, levenshteinSimilarity, containsAnswer } from "../lib/scorers.js";
 
 const verseRecallData = [
@@ -65,7 +65,7 @@ const verseRecallData = [
 ];
 
 // Run the evaluation for each model
-for (const { name, model } of testModels) {
+for (const { name, model } of selectedModels) {
   evalite(`Verse Recall - ${name}`, {
     data: verseRecallData,
     task: async (input) => {

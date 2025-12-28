@@ -203,8 +203,18 @@ Before submitting:
 1. Run your evaluation: `pnpm eval:dev`
 2. Verify scores make sense
 3. Check traces in the UI
-4. Test with multiple models
+4. Test with multiple models (use `MODELS="model1,model2" pnpm eval:dev` to test specific models)
 5. Review metadata output
+
+**Tip:** Use the `MODELS` environment variable to test with a subset of models during development:
+
+```bash
+# Test with just one or two models to save time/cost
+MODELS="gpt-5.2,claude haiku" pnpm eval:dev
+
+# Test your new evaluation file with all models
+pnpm eval evals/your-category/your-eval.eval.ts
+```
 
 ### Commit Messages
 

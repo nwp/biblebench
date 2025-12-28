@@ -306,66 +306,65 @@ All models are accessed through a **single OpenRouter API key**, making it easy 
 
 ### Running with Model Subsets
 
-You can easily run evaluations on specific models or categories by modifying `evals/lib/models.ts`:
+You can easily run evaluations on specific models using the `MODELS` environment variable - no code changes needed!
 
-#### Option 1: Test Specific Models
+#### Filter by Model Name
 
-Edit the `benchmarkModels` array to include only the models you want:
-
-```typescript
-// In evals/lib/models.ts
-export const benchmarkModels = [
-  // Test only these specific models
-  { name: "GPT-5.2", model: gpt52 },
-  { name: "Claude Haiku 4.5", model: claudeHaiku45 },
-  { name: "Grok 4", model: grok4 },
-] as const;
-```
-
-#### Option 2: Test by Provider Category
-
-Use the pre-organized model categories:
-
-```typescript
-// Test only OpenAI models
-export const benchmarkModels = openaiModels.map((model, i) => ({
-  name: `OpenAI Model ${i + 1}`,
-  model
-})) as const;
-
-// Test only Google models
-export const benchmarkModels = [
-  { name: "Gemini 3 Flash", model: gemini3FlashPreview },
-  { name: "Gemini 3 Pro", model: gemini3ProPreview },
-] as const;
-
-// Mix providers
-export const benchmarkModels = [
-  ...openaiModels.map(m => ({ name: "OpenAI", model: m })),
-  ...anthropicModels.map(m => ({ name: "Anthropic", model: m })),
-] as const;
-```
-
-#### Option 3: Temporarily Comment Out Models
-
-For quick testing, comment out models you don't want to test:
-
-```typescript
-export const benchmarkModels = [
-  { name: "GPT-5.2", model: gpt52 },
-  // { name: "GPT-5.1", model: gpt51 },  // Commented out
-  // { name: "GPT-5 Nano", model: gpt5Nano },  // Commented out
-  { name: "Claude Haiku 4.5", model: claudeHaiku45 },
-  // ... etc
-] as const;
-```
-
-**Note:** After modifying `models.ts`, TypeScript will recompile automatically in dev mode, or you can manually run:
+Use comma-separated patterns to match model names (case-insensitive):
 
 ```bash
-pnpm tsc --noEmit  # Check for errors
-pnpm eval          # Run evaluations with new configuration
+# Run only GPT models
+MODELS="gpt" pnpm eval
+
+# Run only Claude models
+MODELS="claude" pnpm eval
+
+# Run GPT and Claude models
+MODELS="gpt,claude" pnpm eval
+
+# Run specific models by partial name match
+MODELS="opus,sonnet" pnpm eval
+
+# Run a single specific model
+MODELS="gpt-5.2" pnpm eval
 ```
+
+#### How Pattern Matching Works
+
+- **Case-insensitive**: `MODELS="gpt"` matches "GPT-5.2", "GPT-5.1", etc.
+- **Partial matching**: `MODELS="claude"` matches "Claude Haiku 4.5", "Claude Sonnet 4.5", "Claude Opus 4.5"
+- **Multiple patterns**: `MODELS="gpt-5,opus"` matches models containing "gpt-5" OR "opus"
+- **Comma-separated**: Use commas to specify multiple patterns
+
+#### Examples
+
+```bash
+# Run only OpenAI models
+MODELS="gpt" pnpm eval:dev
+
+# Run only Anthropic Opus and Sonnet
+MODELS="opus,sonnet" pnpm eval
+
+# Run Google Gemini models
+MODELS="gemini" pnpm eval
+
+# Run a specific evaluation with specific models
+MODELS="claude haiku,grok" pnpm eval evals/theology/core-doctrines.eval.ts
+
+# Run without caching on specific models
+MODELS="gpt-5.2" pnpm eval --no-cache
+```
+
+#### View Available Models
+
+If you specify a pattern that doesn't match any models, the system will show you all available model names:
+
+```bash
+MODELS="invalid" pnpm eval
+# Shows warning with list of all available models
+```
+
+**Tip:** By default (without `MODELS` set), all 20+ configured models will run. Use `MODELS` to save time and API costs during development!
 
 ### Adding New Models
 

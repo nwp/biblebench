@@ -102,15 +102,23 @@ pnpm eval --no-cache
 
 ### Test Fewer Models
 
-Edit `evals/lib/models.ts` and comment out models you don't want to test:
+Use the `MODELS` environment variable to filter which models to test - no code changes needed:
 
-```typescript
-export const benchmarkModels = [
-  { name: "GPT-4o", model: gpt4o },
-  { name: "Claude Sonnet 4.5", model: sonnet45 },
-  // { name: "Claude Opus 4", model: opus4 }, // Commented out
-] as const;
+```bash
+# Run only specific models
+MODELS="gpt" pnpm eval              # Only GPT models
+MODELS="claude" pnpm eval           # Only Claude models
+MODELS="opus,sonnet" pnpm eval      # Only Opus and Sonnet models
+MODELS="gpt-5.2" pnpm eval:dev      # Only GPT-5.2
+
+# Run multiple providers
+MODELS="gpt,claude,grok" pnpm eval
 ```
+
+The pattern matching is case-insensitive and matches partial names. For example:
+- `MODELS="gpt"` matches all models with "gpt" in the name
+- `MODELS="claude haiku"` matches "Claude Haiku 4.5"
+- `MODELS="5.2,opus"` matches "GPT-5.2" and "Claude Opus 4.5"
 
 ### Add More Test Cases
 
@@ -150,7 +158,7 @@ Run `pnpm install` to ensure all dependencies are installed.
 
 - Use `--no-cache` flag only when needed
 - With caching enabled, repeated runs are much faster
-- Reduce the number of models in `benchmarkModels`
+- Use `MODELS` to test fewer models: `MODELS="gpt-5.2" pnpm eval`
 
 ### High API costs
 

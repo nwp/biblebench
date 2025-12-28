@@ -155,7 +155,8 @@ Configures AI SDK models accessed through OpenRouter, wrapped with Evalite's `wr
 - Intelligent caching of responses
 - Unified access to hundreds of models from multiple providers
 
-The `benchmarkModels` array defines which models are tested across all evaluations.
+The `benchmarkModels` array defines all available models.
+The `selectedModels` export respects the `MODELS` environment variable for filtering which models to test.
 All models are accessed through OpenRouter using a single API key.
 
 ### `evals/lib/scorers.ts`
@@ -174,11 +175,25 @@ Each evaluation file:
 
 1. Imports models and scorers from `lib/`
 2. Defines test data with `input`, `expected`, and optional metadata
-3. Iterates over `benchmarkModels` to test each model
+3. Iterates over `selectedModels` to test each model (respects `MODELS` env var)
 4. Uses `evalite()` to create test suites
 5. Applies multiple scorers for comprehensive evaluation
 
 ## Common Development Tasks
+
+### Running Specific Models
+
+Use the `MODELS` environment variable to filter which models to test - no code changes needed:
+
+```bash
+# Run only specific models
+MODELS="gpt" pnpm eval              # Only GPT models
+MODELS="claude" pnpm eval           # Only Claude models
+MODELS="opus,sonnet" pnpm eval      # Only Opus and Sonnet
+MODELS="gpt-5.2" pnpm eval:dev      # Single specific model
+```
+
+Pattern matching is case-insensitive and supports partial matches. Multiple patterns can be comma-separated.
 
 ### Adding New Test Cases
 
@@ -248,12 +263,12 @@ Create a new `.eval.ts` file in the appropriate directory:
 ```typescript
 import { evalite } from "evalite";
 import { generateText } from "ai";
-import { benchmarkModels } from "../lib/models.js";
+import { selectedModels } from "../lib/models.js";
 import { myScorer } from "../lib/scorers.js";
 
 const testData = [/* your test cases */];
 
-for (const { name, model } of benchmarkModels) {
+for (const { name, model } of selectedModels) {
   evalite(`Category - ${name}`, {
     data: testData,
     task: async (input) => {
