@@ -24,6 +24,12 @@ Built with Evalite (beta) and AI SDK v5, it provides rigorous, reproducible test
 
 ```
 biblebench/
+├── .claude/
+│   └── skills/
+│       └── evalite/            # Evalite expertise skill
+│           ├── SKILL.md        # Core skill definition
+│           ├── reference.md    # API reference
+│           └── examples.md     # Usage examples
 ├── evals/
 │   ├── scripture/              # Scripture accuracy evaluations
 │   │   ├── verse-recall.eval.ts
@@ -41,10 +47,49 @@ biblebench/
 ├── evalite.config.ts          # Evalite configuration
 ├── tsconfig.json              # TypeScript configuration
 ├── package.json               # Dependencies and scripts
+├── CLAUDE.md                  # This file - Claude Code guide
 ├── README.md                  # Main documentation
 ├── QUICKSTART.md              # Getting started guide
 └── CONTRIBUTING.md            # Contribution guidelines
 ```
+
+## Evalite Skill
+
+This project includes a **Claude Code skill** that provides expert assistance with Evalite development. Skills are automatically activated when you work on relevant tasks - no need to explicitly invoke them.
+
+### What is the Evalite Skill?
+
+Located in `.claude/skills/evalite/`, this skill makes Claude Code an expert in:
+- Creating new `.eval.ts` evaluation files
+- Designing custom scorers (rule-based, heuristic, LLM-as-judge)
+- Configuring AI SDK models with proper wrapping and caching
+- Debugging evaluation results using traces and metadata
+- Following BibleBench-specific patterns and conventions
+
+### Skill Files
+
+- **SKILL.md** - Core skill with Evalite concepts, best practices, and project context
+- **reference.md** - Complete API reference for Evalite and AI SDK v5
+- **examples.md** - 10 practical examples covering common tasks
+
+### When It Activates
+
+The skill automatically triggers when you mention:
+- Creating evaluations or `.eval.ts` files
+- Working with scorers or scoring functions
+- Configuring models or AI SDK integration
+- Debugging evaluation results
+- Evalite-related questions
+
+### Example Usage
+
+Simply ask naturally, and the skill will activate automatically:
+- "Create a new evaluation for church history"
+- "How do I add an LLM-as-judge scorer for detecting theological errors?"
+- "Debug why my verse recall evaluation scores are low"
+- "Add support for Gemini models to the benchmark"
+
+The skill provides deep Evalite expertise combined with BibleBench-specific theological and technical patterns, making development much more efficient.
 
 ## Key Files to Understand
 
