@@ -1,5 +1,6 @@
-# BibleBench 📖
+![BibleBench logo](docs/logo.png)
 
+# BibleBench
 An industry-standard LLM benchmark for Christian scripture accuracy and theological understanding
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
