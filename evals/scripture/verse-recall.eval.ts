@@ -9,7 +9,12 @@
 import { evalite } from "evalite";
 import { generateText } from "ai";
 import { selectedModels } from "../lib/models.js";
-import { exactMatch, levenshteinSimilarity, containsAnswer } from "../lib/scorers.js";
+import {
+  exactMatch,
+  levenshteinSimilarity,
+  containsAnswer,
+} from "../lib/scorers.js";
+import { normalizeText, calculateWordOverlap } from "../lib/utils.js";
 
 const verseRecallData = [
   {
@@ -82,27 +87,15 @@ for (const { name, model } of selectedModels) {
         name: "Verse Accuracy",
         description: "Comprehensive verse accuracy score",
         scorer: ({ output, expected }) => {
-          // Normalize text for comparison
-          const normalize = (text: string) =>
-            text.toLowerCase()
-              .replace(/[.,;:!?"']/g, "")
-              .replace(/\s+/g, " ")
-              .trim();
-
-          const normalizedOutput = normalize(output);
-          const normalizedExpected = normalize(expected);
+          const normalizedOutput = normalizeText(output);
+          const normalizedExpected = normalizeText(expected);
 
           // Calculate different levels of accuracy
           const exactMatch = normalizedOutput === normalizedExpected;
           const contains = normalizedOutput.includes(normalizedExpected);
-          const wordsExpected = normalizedExpected.split(" ");
-          const wordsOutput = normalizedOutput.split(" ");
 
-          // Calculate word overlap
-          const matchedWords = wordsExpected.filter(word =>
-            wordsOutput.includes(word)
-          ).length;
-          const wordOverlap = matchedWords / wordsExpected.length;
+          // Calculate word overlap using shared utility
+          const { overlap: wordOverlap, matchedWords, totalWords } = calculateWordOverlap(output, expected);
 
           let score = 0;
           if (exactMatch) score = 1.0;
@@ -119,10 +112,10 @@ for (const { name, model } of selectedModels) {
               contains,
               wordOverlap,
               matchedWords,
-              totalWords: wordsExpected.length
-            }
+              totalWords,
+            },
           };
-        }
+        },
       }
     ],
   });

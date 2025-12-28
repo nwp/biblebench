@@ -9,6 +9,25 @@ import { createScorer } from "evalite";
 import { generateObject } from "ai";
 import { z } from "zod";
 import { defaultJudgeModel } from "./models.js";
+import {
+  normalizeText,
+  normalizeReference,
+  calculateSimilarity,
+  calculateWordOverlap,
+  clamp,
+  TRANSLATION_MARKERS,
+  isValidTranslation,
+  type BibleTranslation,
+} from "./utils.js";
+import type {
+  ExtendedScorerInput,
+  ScorerResult,
+  TheologicalScorerMetadata,
+  HeresyScorerMetadata,
+  DenominationalScorerMetadata,
+  TranslationScorerMetadata,
+  SimilarityScorerMetadata,
+} from "./types.js";
 
 /**
  * Exact Match Scorer
@@ -17,13 +36,16 @@ import { defaultJudgeModel } from "./models.js";
 export const exactMatch = createScorer<string, string, string>({
   name: "Exact Match",
   description: "Checks if the output exactly matches the expected value (case-insensitive)",
-  scorer: ({ output, expected }) => {
-    const match = output.trim().toLowerCase() === expected.trim().toLowerCase();
+  scorer: ({ output, expected }): ScorerResult<SimilarityScorerMetadata> => {
+    const normalizedOutput = normalizeText(output);
+    const normalizedExpected = normalizeText(expected);
+    const match = normalizedOutput === normalizedExpected;
+
     return {
       score: match ? 1 : 0,
-      metadata: { match }
+      metadata: { exactMatch: match },
     };
-  }
+  },
 });
 
 /**
@@ -33,13 +55,16 @@ export const exactMatch = createScorer<string, string, string>({
 export const containsAnswer = createScorer<string, string, string>({
   name: "Contains Answer",
   description: "Checks if the output contains the expected answer",
-  scorer: ({ output, expected }) => {
-    const contains = output.toLowerCase().includes(expected.toLowerCase());
+  scorer: ({ output, expected }): ScorerResult<SimilarityScorerMetadata> => {
+    const normalizedOutput = normalizeText(output);
+    const normalizedExpected = normalizeText(expected);
+    const contains = normalizedOutput.includes(normalizedExpected);
+
     return {
       score: contains ? 1 : 0,
-      metadata: { contains, expected }
+      metadata: { contains },
     };
-  }
+  },
 });
 
 /**
@@ -49,49 +74,16 @@ export const containsAnswer = createScorer<string, string, string>({
 export const levenshteinSimilarity = createScorer<string, string, string>({
   name: "Levenshtein Similarity",
   description: "Measures text similarity using Levenshtein distance",
-  scorer: ({ output, expected }) => {
-    // Calculate Levenshtein distance
-    const levenshteinDistance = (a: string, b: string): number => {
-      const aLen = a.length;
-      const bLen = b.length;
-      
-      if (aLen === 0) return bLen;
-      if (bLen === 0) return aLen;
+  scorer: ({ output, expected }): ScorerResult<SimilarityScorerMetadata> => {
+    const normalizedOutput = normalizeText(output);
+    const normalizedExpected = normalizeText(expected);
+    const similarity = calculateSimilarity(normalizedOutput, normalizedExpected);
 
-      const matrix: number[][] = Array(bLen + 1)
-        .fill(null)
-        .map(() => Array(aLen + 1).fill(0));
-
-      for (let i = 0; i <= aLen; i++) matrix[0][i] = i;
-      for (let j = 0; j <= bLen; j++) matrix[j][0] = j;
-
-      for (let j = 1; j <= bLen; j++) {
-        for (let i = 1; i <= aLen; i++) {
-          const cost = a[i - 1] === b[j - 1] ? 0 : 1;
-          matrix[j][i] = Math.min(
-            matrix[j][i - 1] + 1,
-            matrix[j - 1][i] + 1,
-            matrix[j - 1][i - 1] + cost
-          );
-        }
-      }
-
-      return matrix[bLen][aLen];
-    };
-
-    const distance = levenshteinDistance(output.toLowerCase(), expected.toLowerCase());
-    const maxLength = Math.max(output.length, expected.length);
-    const similarity = maxLength === 0 ? 1 : 1 - (distance / maxLength);
-    
     return {
-      score: Math.max(0, Math.min(1, similarity)),
-      metadata: {
-        distance,
-        maxLength,
-        similarity
-      }
+      score: clamp(similarity, 0, 1),
+      metadata: { similarity },
     };
-  }
+  },
 });
 
 /**
@@ -101,13 +93,9 @@ export const levenshteinSimilarity = createScorer<string, string, string>({
 export const scriptureReferenceAccuracy = createScorer<string, string, string>({
   name: "Scripture Reference Accuracy",
   description: "Validates scripture reference formatting and accuracy",
-  scorer: ({ output, expected }) => {
-    // Normalize references (e.g., "John 3:16" vs "John 3.16")
-    const normalizeRef = (ref: string) =>
-      ref.replace(/[.:]/g, ':').replace(/\s+/g, ' ').trim().toLowerCase();
-
-    const normalizedOutput = normalizeRef(output);
-    const normalizedExpected = normalizeRef(expected);
+  scorer: ({ output, expected }): ScorerResult<SimilarityScorerMetadata> => {
+    const normalizedOutput = normalizeReference(output);
+    const normalizedExpected = normalizeReference(expected);
 
     const exactMatch = normalizedOutput === normalizedExpected;
     const contains = normalizedOutput.includes(normalizedExpected);
@@ -115,13 +103,11 @@ export const scriptureReferenceAccuracy = createScorer<string, string, string>({
     return {
       score: exactMatch ? 1 : contains ? 0.5 : 0,
       metadata: {
-        normalizedOutput,
-        normalizedExpected,
         exactMatch,
-        contains
-      }
+        contains,
+      },
     };
-  }
+  },
 });
 
 /**
@@ -131,7 +117,11 @@ export const scriptureReferenceAccuracy = createScorer<string, string, string>({
 export const theologicalAccuracyJudge = createScorer<string, string, string>({
   name: "Theological Accuracy Judge",
   description: "LLM-based evaluation of theological accuracy and doctrinal correctness",
-  scorer: async ({ input, output, expected }) => {
+  scorer: async ({
+    input,
+    output,
+    expected,
+  }): Promise<ScorerResult<TheologicalScorerMetadata>> => {
     const result = await generateObject({
       model: defaultJudgeModel,
       schema: z.object({
@@ -170,10 +160,10 @@ Provide a score from 0 to 1, where:
         biblically_grounded: result.object.biblically_grounded,
         nuance_captured: result.object.nuance_captured,
         errors: result.object.errors,
-        rationale: result.object.rationale
-      }
+        rationale: result.object.rationale,
+      },
     };
-  }
+  },
 });
 
 /**
@@ -183,7 +173,7 @@ Provide a score from 0 to 1, where:
 export const heresyDetectionJudge = createScorer<string, string, string | undefined>({
   name: "Heresy Detection Judge",
   description: "Detects heretical or unorthodox theological statements",
-  scorer: async ({ output }) => {
+  scorer: async ({ output }): Promise<ScorerResult<HeresyScorerMetadata>> => {
     const result = await generateObject({
       model: defaultJudgeModel,
       schema: z.object({
@@ -207,10 +197,15 @@ Check for common heresies including but not limited to:
 Rate the severity and identify specific issues.`
     });
 
-    const score = result.object.contains_heresy ?
-      (result.object.severity === "severe" ? 0 :
-       result.object.severity === "moderate" ? 0.3 :
-       result.object.severity === "minor" ? 0.7 : 1) : 1;
+    const score = result.object.contains_heresy
+      ? result.object.severity === "severe"
+        ? 0
+        : result.object.severity === "moderate"
+          ? 0.3
+          : result.object.severity === "minor"
+            ? 0.7
+            : 1
+      : 1;
 
     return {
       score,
@@ -218,20 +213,27 @@ Rate the severity and identify specific issues.`
         contains_heresy: result.object.contains_heresy,
         severity: result.object.severity,
         heresies_detected: result.object.heresies_detected,
-        explanation: result.object.explanation
-      }
+        explanation: result.object.explanation,
+      },
     };
-  }
+  },
 });
 
 /**
  * Denominational Bias Detector
  * Detects and measures denominational bias in theological responses
  */
-export const denominationalBiasDetector = createScorer<string, string, string | undefined>({
+export const denominationalBiasDetector = createScorer<
+  string,
+  string,
+  string | undefined
+>({
   name: "Denominational Bias Detector",
   description: "Detects denominational bias in theological responses",
-  scorer: async ({ output, input }) => {
+  scorer: async ({
+    output,
+    input,
+  }): Promise<ScorerResult<DenominationalScorerMetadata>> => {
     const result = await generateObject({
       model: defaultJudgeModel,
       schema: z.object({
@@ -262,34 +264,35 @@ Rate the ecumenical score from 0 to 1, where 1 is perfectly balanced and 0 is ex
         bias_detected: result.object.bias_detected,
         denominations: result.object.denominations,
         bias_strength: result.object.bias_strength,
-        explanation: result.object.explanation
-      }
+        explanation: result.object.explanation,
+      },
     };
-  }
+  },
 });
 
 /**
  * Translation-Specific Phrase Matcher
  * Checks if translation-specific key phrases are present in the output
  */
-export const translationPhraseMatch = createScorer<string, string, { keyPhrases?: string[], translation?: string }>({
+export const translationPhraseMatch = createScorer<
+  string,
+  string,
+  { keyPhrases?: string[]; translation?: string }
+>({
   name: "Translation Phrase Match",
   description: "Checks if translation-specific key phrases are accurately reproduced",
-  scorer: (scoreInput) => {
-    const { output, expected } = scoreInput;
-    const keyPhrases = (scoreInput as any).keyPhrases || [];
+  scorer: (scoreInput): ScorerResult<TranslationScorerMetadata> => {
+    const { output } = scoreInput;
+    const extendedInput = scoreInput as ExtendedScorerInput;
+    const keyPhrases = extendedInput.keyPhrases || [];
+
     if (keyPhrases.length === 0) {
-      return { score: 1, metadata: { na: true } };
+      return { score: 1, metadata: {} };
     }
 
-    const normalize = (text: string) =>
-      text.toLowerCase()
-        .replace(/[.,;:!?"'–—]/g, "")
-        .trim();
-
-    const outputNorm = normalize(output);
-    const phrasesFound = keyPhrases.filter((phrase: string) =>
-      outputNorm.includes(normalize(phrase))
+    const outputNorm = normalizeText(output);
+    const phrasesFound = keyPhrases.filter((phrase) =>
+      outputNorm.includes(normalizeText(phrase))
     );
 
     const score = phrasesFound.length / keyPhrases.length;
@@ -300,71 +303,44 @@ export const translationPhraseMatch = createScorer<string, string, { keyPhrases?
         keyPhrasesFound: phrasesFound.length,
         totalKeyPhrases: keyPhrases.length,
         phrasesMatched: phrasesFound,
-        phrasesMissed: keyPhrases.filter((p: string) => !phrasesFound.includes(p)),
-        translation: (scoreInput as any).translation
-      }
+        phrasesMissed: keyPhrases.filter((p) => !phrasesFound.includes(p)),
+        translation: extendedInput.translation,
+      },
     };
-  }
+  },
 });
 
 /**
  * Translation Vocabulary Fidelity
  * Checks if the output uses vocabulary appropriate to the requested translation
  */
-export const translationVocabularyFidelity = createScorer<string, string, { translation?: string, keyPhrases?: string[] }>({
+export const translationVocabularyFidelity = createScorer<
+  string,
+  string,
+  { translation?: string; keyPhrases?: string[] }
+>({
   name: "Translation Vocabulary Fidelity",
   description: "Validates use of translation-appropriate vocabulary and style",
-  scorer: (scoreInput) => {
+  scorer: (scoreInput): ScorerResult<TranslationScorerMetadata> => {
     const { output } = scoreInput;
-    const translation = (scoreInput as any).translation || "";
-    const keyPhrases = (scoreInput as any).keyPhrases || [];
+    const extendedInput = scoreInput as ExtendedScorerInput;
+    const translation = extendedInput.translation || "";
+    const keyPhrases = extendedInput.keyPhrases || [];
 
-    // Define characteristic markers for each major translation
-    const translationMarkers: Record<string, { positive: string[], negative: string[] }> = {
-      "KJV": {
-        positive: ["thee", "thou", "thy", "thine", "saith", "unto", "ye", "hath", "doth", "begotten", "whosoever"],
-        negative: ["you", "your", "says", "declares", "to", "will be"]
-      },
-      "NKJV": {
-        positive: ["you", "your", "begotten"],
-        negative: ["thee", "thou", "thy"]
-      },
-      "NIV": {
-        positive: ["one and only", "will be", "declares", "you", "your"],
-        negative: ["thee", "thou", "begotten", "saith"]
-      },
-      "ESV": {
-        positive: ["should", "will", "only son"],
-        negative: ["thee", "thou", "begotten"]
-      },
-      "NASB": {
-        positive: ["him who", "through him"],
-        negative: ["thee", "thou"]
-      },
-      "NLT": {
-        positive: ["says the", "like this", "you", "your"],
-        negative: ["thee", "thou", "saith", "declares"]
-      },
-      "CSB": {
-        positive: ["do not", "will", "you"],
-        negative: ["thee", "thou", "saith"]
-      }
-    };
-
-    if (!translation || !translationMarkers[translation]) {
+    if (!translation || !isValidTranslation(translation)) {
       return { score: 1, metadata: { translation, notEvaluated: true } };
     }
 
     const outputLower = output.toLowerCase();
-    const markers = translationMarkers[translation];
+    const markers = TRANSLATION_MARKERS[translation];
 
     // Check for positive markers (should be present)
-    const positiveFound = markers.positive.filter(marker =>
+    const positiveFound = markers.positive.filter((marker) =>
       outputLower.includes(marker.toLowerCase())
     );
 
     // Check for negative markers (should NOT be present)
-    const negativeFound = markers.negative.filter(marker =>
+    const negativeFound = markers.negative.filter((marker) =>
       outputLower.includes(marker.toLowerCase())
     );
 
@@ -373,41 +349,47 @@ export const translationVocabularyFidelity = createScorer<string, string, { tran
 
     // Penalty for using markers from wrong translations
     if (negativeFound.length > 0) {
-      score -= (negativeFound.length * 0.2);
+      score -= negativeFound.length * 0.2;
     }
 
     // Check if key phrases are present (if provided)
     if (keyPhrases.length > 0) {
-      const phrasesFound = keyPhrases.filter((phrase: string) =>
+      const phrasesFound = keyPhrases.filter((phrase) =>
         outputLower.includes(phrase.toLowerCase())
       );
       const phraseScore = phrasesFound.length / keyPhrases.length;
-      score = (score * 0.4) + (phraseScore * 0.6); // Weight key phrases more heavily
+      score = score * 0.4 + phraseScore * 0.6; // Weight key phrases more heavily
     }
 
-    score = Math.max(0, Math.min(1, score)); // Clamp to [0, 1]
-
     return {
-      score,
+      score: clamp(score, 0, 1),
       metadata: {
         translation,
         positiveMarkersFound: positiveFound,
         negativeMarkersFound: negativeFound,
         keyPhrasesChecked: keyPhrases.length,
-        appropriateVocabulary: negativeFound.length === 0
-      }
+        appropriateVocabulary: negativeFound.length === 0,
+      },
     };
-  }
+  },
 });
 
 /**
  * Translation Identification Judge
  * LLM-as-judge scorer for identifying which translation a verse comes from
  */
-export const translationIdentificationJudge = createScorer<string, string, { reference?: string }>({
+export const translationIdentificationJudge = createScorer<
+  string,
+  string,
+  { reference?: string }
+>({
   name: "Translation Identification Judge",
   description: "Evaluates ability to correctly identify Bible translations",
-  scorer: async ({ input, output, expected }) => {
+  scorer: async ({
+    input,
+    output,
+    expected,
+  }): Promise<ScorerResult<Record<string, unknown>>> => {
     const result = await generateObject({
       model: defaultJudgeModel,
       schema: z.object({
@@ -436,7 +418,9 @@ Major English translations include:
 Determine if the LLM correctly identified the translation based on distinctive vocabulary and phrasing.`
     });
 
-    const score = result.object.correct_translation ? result.object.confidence : 0;
+    const score = result.object.correct_translation
+      ? result.object.confidence
+      : 0;
 
     return {
       score,
@@ -444,8 +428,8 @@ Determine if the LLM correctly identified the translation based on distinctive v
         correct_translation: result.object.correct_translation,
         confidence: result.object.confidence,
         reasoning: result.object.reasoning,
-        alternative_possibilities: result.object.alternative_possibilities
-      }
+        alternative_possibilities: result.object.alternative_possibilities,
+      },
     };
-  }
+  },
 });

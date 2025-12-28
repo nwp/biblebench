@@ -9,6 +9,7 @@ import { evalite } from "evalite";
 import { generateText } from "ai";
 import { selectedModels } from "../lib/models.js";
 import { theologicalAccuracyJudge } from "../lib/scorers.js";
+import type { ExtendedScorerInput } from "../lib/types.js";
 
 const heresyDetectionData = [
   {
@@ -64,9 +65,11 @@ for (const { name, model } of selectedModels) {
       {
         name: "Heresy Identification",
         description: "Checks if the response correctly identifies the heresy",
-        scorer: (scoreInput: any) => {
+        scorer: (scoreInput) => {
           const { output } = scoreInput;
-          const heresyType = scoreInput.heresyType;
+          const extendedInput = scoreInput as ExtendedScorerInput;
+          const heresyType = extendedInput.heresyType;
+
           if (!heresyType || heresyType === "None - testing doctrinal discernment") {
             return { score: 1, metadata: { type: "no specific heresy" } };
           }
@@ -79,32 +82,32 @@ for (const { name, model } of selectedModels) {
             metadata: {
               heresyType,
               identified,
-              output: output.substring(0, 200) // First 200 chars for context
-            }
+              output: output.substring(0, 200), // First 200 chars for context
+            },
           };
-        }
+        },
       },
       {
         name: "Orthodox Response",
         description: "Checks if the response defends orthodox teaching",
-        scorer: (scoreInput: any) => {
+        scorer: (scoreInput) => {
           const { output } = scoreInput;
           const outputLower = output.toLowerCase();
 
           // Keywords indicating orthodox defense
           const orthodoxKeywords = [
-            'orthodox',
-            'biblical',
-            'scripture',
-            'heretical',
-            'heresy',
-            'false',
-            'incorrect',
-            'error',
-            'contradicts'
+            "orthodox",
+            "biblical",
+            "scripture",
+            "heretical",
+            "heresy",
+            "false",
+            "incorrect",
+            "error",
+            "contradicts",
           ];
 
-          const orthodoxCount = orthodoxKeywords.filter(keyword =>
+          const orthodoxCount = orthodoxKeywords.filter((keyword) =>
             outputLower.includes(keyword)
           ).length;
 
@@ -113,11 +116,13 @@ for (const { name, model } of selectedModels) {
           return {
             score,
             metadata: {
-              orthodoxKeywords: orthodoxKeywords.filter(k => outputLower.includes(k)),
-              count: orthodoxCount
-            }
+              orthodoxKeywords: orthodoxKeywords.filter((k) =>
+                outputLower.includes(k)
+              ),
+              count: orthodoxCount,
+            },
           };
-        }
+        },
       }
     ],
   });
