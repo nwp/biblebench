@@ -11,6 +11,7 @@ You are an expert in Evalite, the TypeScript testing framework for AI-powered ap
 ## When to Use This Skill
 
 Trigger this skill when working on:
+
 - Creating new `.eval.ts` evaluation files
 - Designing custom scorers (rule-based, heuristic, or LLM-as-judge)
 - Configuring AI SDK models with Evalite integration
@@ -44,6 +45,7 @@ const model = wrapAISDKModel(openai("gpt-4o"));
 ```
 
 **Benefits:**
+
 - Automatic tracing of all LLM calls
 - Intelligent caching (24-hour TTL)
 - No-op in production (safe to keep in code)
@@ -51,11 +53,13 @@ const model = wrapAISDKModel(openai("gpt-4o"));
 ### 3. Scorer Types
 
 **Rule-Based Scorers:**
+
 ```typescript
 scorer: ({ output, expected }) => output === expected ? 1 : 0
 ```
 
 **LLM-as-Judge Scorers:**
+
 ```typescript
 scorer: async ({ input, output, expected }) => {
   const result = await generateObject({
@@ -76,11 +80,13 @@ scorer: async ({ input, output, expected }) => {
 ## Project-Specific Context
 
 This BibleBench project uses Evalite to benchmark LLMs on:
+
 - Scripture accuracy (verse recall, references, context)
 - Theological understanding (doctrines, heresy detection, nuance)
 - Pastoral application (real-world wisdom)
 
 **Key Files:**
+
 - `evals/lib/models.ts` - Wrapped AI SDK models
 - `evals/lib/scorers.ts` - Reusable scoring functions
 - `evals/scripture/*.eval.ts` - Scripture evaluations
@@ -144,16 +150,19 @@ pnpm eval:ui
 ## Debugging
 
 **Check traces in UI:**
+
 - Exact prompts sent to models
 - Full responses
 - Token usage and timing
 
 **Examine metadata:**
+
 - LLM-as-judge rationales
 - Detected issues
 - Scoring breakdowns
 
 **Common issues:**
+
 - Missing `.js` extensions in imports (ES modules required)
 - API key errors (check `.env`)
 - Type mismatches (use proper generics)
@@ -164,7 +173,7 @@ pnpm eval:ui
 - All imports need `.js` extensions (ES modules)
 - Caching helps reduce costs significantly
 - LLM-as-judge scorers should use `generateObject` with Zod schemas
-- The default judge model is `gpt4o` (configured in `models.ts`)
+- The default judge model is `gpt-5-mini` (configured in `models.ts`)
 
 For detailed reference, see `reference.md`.
 For examples, see `examples.md`.

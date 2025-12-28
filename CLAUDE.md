@@ -5,6 +5,7 @@ This document provides context for Claude Code when working on the BibleBench pr
 ## Project Overview
 
 BibleBench is a comprehensive LLM benchmark for evaluating Large Language Models on:
+
 - **Scripture accuracy**: Verse recall, reference knowledge, biblical context
 - **Theological understanding**: Core doctrines, heresy detection, denominational nuance
 - **Pastoral wisdom**: Application of theology to real-world situations
@@ -64,6 +65,7 @@ This project includes a **Claude Code skill** that provides expert assistance wi
 ### What is the Evalite Skill?
 
 Located in `.claude/skills/evalite/`, this skill makes Claude Code an expert in:
+
 - Creating new `.eval.ts` evaluation files
 - Designing custom scorers (rule-based, heuristic, LLM-as-judge)
 - Configuring AI SDK models with proper wrapping and caching
@@ -79,6 +81,7 @@ Located in `.claude/skills/evalite/`, this skill makes Claude Code an expert in:
 ### When It Activates
 
 The skill automatically triggers when you mention:
+
 - Creating evaluations or `.eval.ts` files
 - Working with scorers or scoring functions
 - Configuring models or AI SDK integration
@@ -88,6 +91,7 @@ The skill automatically triggers when you mention:
 ### Example Usage
 
 Simply ask naturally, and the skill will activate automatically:
+
 - "Create a new evaluation for church history"
 - "How do I add an LLM-as-judge scorer for detecting theological errors?"
 - "Debug why my verse recall evaluation scores are low"
@@ -102,6 +106,7 @@ This project also includes a **Claude Code skill** for AI SDK v5 (not v6), provi
 ### What is the AI SDK v5 Skill?
 
 Located in `.claude/skills/ai-sdk-v5/`, this skill makes Claude Code an expert in:
+
 - Using `generateText` and `generateObject` (v5 APIs)
 - Configuring model providers (OpenAI, Anthropic, OpenRouter, etc.)
 - Creating Zod schemas for structured output
@@ -118,6 +123,7 @@ Located in `.claude/skills/ai-sdk-v5/`, this skill makes Claude Code an expert i
 ### When It Activates
 
 The skill automatically triggers when you mention:
+
 - Text generation with `generateText` or `generateObject`
 - Model configuration or provider setup
 - Zod schema creation
@@ -128,6 +134,7 @@ The skill automatically triggers when you mention:
 ### Example Usage
 
 Simply ask naturally, and the skill will activate automatically:
+
 - "How do I use generateObject with a Zod schema for scoring?"
 - "Add Claude Opus 4 to the benchmark models"
 - "Create an LLM-as-judge with structured output"
@@ -141,7 +148,9 @@ This project uses **AI SDK v5** specifically. The skill understands v5 patterns 
 ## Key Files to Understand
 
 ### `evals/lib/models.ts`
+
 Configures AI SDK models accessed through OpenRouter, wrapped with Evalite's `wrapAISDKModel` for:
+
 - Automatic tracing of LLM calls
 - Intelligent caching of responses
 - Unified access to hundreds of models from multiple providers
@@ -150,7 +159,9 @@ The `benchmarkModels` array defines which models are tested across all evaluatio
 All models are accessed through OpenRouter using a single API key.
 
 ### `evals/lib/scorers.ts`
+
 Defines reusable scoring functions:
+
 - **Rule-based**: `exactMatch`, `containsAnswer`, `levenshteinSimilarity`
 - **Domain-specific**: `scriptureReferenceAccuracy`
 - **LLM-as-judge**: `theologicalAccuracyJudge`, `heresyDetectionJudge`, `denominationalBiasDetector`
@@ -158,7 +169,9 @@ Defines reusable scoring functions:
 All LLM-as-judge scorers use AI SDK's `generateObject` for structured output with rationales.
 
 ### Evaluation Files (`*.eval.ts`)
+
 Each evaluation file:
+
 1. Imports models and scorers from `lib/`
 2. Defines test data with `input`, `expected`, and optional metadata
 3. Iterates over `benchmarkModels` to test each model
@@ -206,7 +219,7 @@ export const benchmarkModels = [
 ];
 ```
 
-See available models at: https://openrouter.ai/docs#models
+See available models at: <https://openrouter.ai/docs#models>
 
 ### Creating New Scorers
 
@@ -278,26 +291,30 @@ pnpm eval --no-cache
 ## Environment Variables
 
 Required API key (set in `.env`):
+
 - `OPENROUTER_API_KEY` - **Only key needed!** Provides access to all models (GPT, Claude, Llama, Grok, Gemini, etc.)
 
-Get your API key at: https://openrouter.ai/keys
+Get your API key at: <https://openrouter.ai/keys>
 
 ## Theological Principles
 
 When working on this project, keep in mind:
 
 ### Doctrinal Foundation
+
 - Grounded in historic Christian orthodoxy (Apostles' Creed, Nicene Creed, Chalcedonian Definition)
 - Non-negotiables: Trinity, deity of Christ, salvation by grace, biblical authority, resurrection
 - Denominational differences: Baptism, governance, eschatology, spiritual gifts (legitimate diversity)
 
 ### Evaluation Philosophy
+
 - **Fair representation** of diverse Christian traditions
 - **Heresy detection** based on historical ecumenical consensus
 - **Pastoral sensitivity** in real-world application scenarios
 - **Transparency** through detailed metadata and rationales
 
 ### Common Pitfalls to Avoid
+
 - Don't favor one denomination on disputable matters
 - Don't present debatable positions as universally accepted
 - Don't compromise on core orthodox doctrines
@@ -306,24 +323,30 @@ When working on this project, keep in mind:
 ## Debugging Tips
 
 ### Check Traces
+
 The Evalite UI provides detailed traces showing:
+
 - Exact prompts sent to models
 - Full model responses
 - Token usage
 - Timing information
 
 ### Examine Metadata
+
 LLM-as-judge scorers return rich metadata:
+
 - Rationales for scores
 - Detected issues
 - Specific theological assessments
 
 ### Use Caching Wisely
+
 - Enabled by default for faster iteration
 - Disable with `--no-cache` for final runs
 - Cache persists for 24 hours
 
 ### Common Issues
+
 - **API key errors**: Check `.env` file
 - **Import errors**: Ensure `.js` extensions in imports (ES modules)
 - **Low scores**: Check prompts and expected answers
@@ -404,6 +427,7 @@ pnpm eval evals/theology/
 ## Project Goals
 
 The long-term vision for BibleBench is to:
+
 1. Become an industry-standard benchmark for LLM theological knowledge
 2. Help LLM developers identify weaknesses in scripture/theology understanding
 3. Enable religious organizations to evaluate models before deployment

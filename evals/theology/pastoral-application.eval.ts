@@ -9,7 +9,7 @@
 import { evalite, createScorer } from "evalite";
 import { generateText, generateObject } from "ai";
 import { z } from "zod";
-import { benchmarkModels, defaultJudgeModel } from "../lib/models.js";
+import { defaultJudgeModel, testModels } from "../lib/models.js";
 import { theologicalAccuracyJudge } from "../lib/scorers.js";
 
 /**

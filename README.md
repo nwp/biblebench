@@ -235,7 +235,7 @@ BibleBench is currently configured to test **17 cutting-edge models** across 10 
 
 ### OpenAI Models (5)
 
-- **GPT-5.2** - Latest flagship model (also used as judge)
+- **GPT-5 Mini** - Default judge model (efficient and cost-effective)
 - **GPT-5.1** - Advanced reasoning model
 - **GPT-5 Nano** - Efficient compact model
 - **GPT-OSS-120B** - Open-source 120B parameter model

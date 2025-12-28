@@ -17,10 +17,10 @@ Configures and exports AI SDK models accessed through **OpenRouter** and wrapped
 
 **Exports:**
 
-- Individual models: `gpt5`, `gpt4o`, `sonnet45`, `opus4`, `llama31_405b`, `grok4`, etc.
-- `defaultJudgeModel`: The model used for LLM-as-judge evaluations (GPT-4o via OpenRouter)
+- Individual models: `gpt52`, `gpt51`, `gpt-5-mini`, `gpt-5-nano`, `grok4`, etc.
+- `defaultJudgeModel`: The model used for LLM-as-judge evaluations (GPT-5 Mini via OpenRouter)
 - `benchmarkModels`: Array of all models to test in evaluations
-- Model categories: `openaiModels`, `anthropicModels`, `metaModels`, etc.
+- Model categories: `openaiModels`, `anthropicModels`, etc.
 
 **Usage:**
 
@@ -54,7 +54,7 @@ All LLM-as-judge scorers use:
 
 - AI SDK v5's `generateObject` for structured output
 - Zod schemas for validation
-- OpenRouter-accessed models (default: GPT-4o)
+- OpenRouter-accessed models (default: GPT-5 Mini)
 
 ## OpenRouter Configuration
 

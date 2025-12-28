@@ -9,6 +9,7 @@ Comprehensive API reference for working with Evalite in the BibleBench project.
 Creates a new evaluation test suite.
 
 **Parameters:**
+
 - `name` (string): Display name for the evaluation
 - `config` (object):
   - `data` (array): Test cases with `input`, `expected`, and optional metadata
@@ -16,6 +17,7 @@ Creates a new evaluation test suite.
   - `scorers` (array): Scoring functions to evaluate outputs
 
 **Example:**
+
 ```typescript
 import { evalite } from "evalite";
 
@@ -36,25 +38,30 @@ evalite("My Evaluation", {
 Creates a reusable scorer function.
 
 **Type Parameters:**
+
 - `Input`: Type of input data
 - `Output`: Type of task output
 - `Expected`: Type of expected value
 
 **Config Object:**
+
 - `name` (string): Scorer display name
 - `description` (string): What the scorer measures
 - `scorer` (function): Scoring function
 
 **Scorer Function Receives:**
+
 - `input`: The input from test data
 - `output`: The output from task function
 - `expected`: The expected value from test data
 
 **Scorer Function Returns:**
+
 - `number` (0-1): Simple score
 - `{ score: number, metadata: object }`: Score with debugging info
 
 **Example:**
+
 ```typescript
 import { createScorer } from "evalite";
 
@@ -78,6 +85,7 @@ export const exactMatch = createScorer<string, string, string>({
 Wraps an AI SDK model for automatic tracing and caching.
 
 **Parameters:**
+
 - `model`: AI SDK model instance
 - `options` (optional):
   - `caching` (boolean): Enable/disable caching (default: true)
@@ -85,6 +93,7 @@ Wraps an AI SDK model for automatic tracing and caching.
 **Returns:** Wrapped model with tracing and caching
 
 **Example:**
+
 ```typescript
 import { wrapAISDKModel } from "evalite/ai-sdk";
 import { openai } from "@ai-sdk/openai";
@@ -99,6 +108,7 @@ export const noCacheModel = wrapAISDKModel(
 ```
 
 **Features:**
+
 - Automatic tracing of prompts, responses, tokens, timing
 - Intelligent caching with 24-hour TTL
 - Cache key based on model + parameters + prompt
@@ -111,6 +121,7 @@ export const noCacheModel = wrapAISDKModel(
 Generates text from an LLM.
 
 **Config:**
+
 - `model`: Wrapped AI SDK model
 - `prompt`: String prompt
 - `messages`: Alternative to prompt (CoreMessage[])
@@ -119,11 +130,13 @@ Generates text from an LLM.
 - `system`: System message
 
 **Returns:**
+
 - `text`: Generated text string
 - `finishReason`: Why generation stopped
 - `usage`: Token usage stats
 
 **Example:**
+
 ```typescript
 import { generateText } from "ai";
 
@@ -142,15 +155,18 @@ return result.text;
 Generates structured output using Zod schema.
 
 **Config:**
+
 - `model`: Wrapped AI SDK model
 - `schema`: Zod schema for output structure
 - `prompt`: String prompt
 - `messages`: Alternative to prompt
 
 **Returns:**
+
 - `object`: Parsed object matching schema
 
 **Example:**
+
 ```typescript
 import { generateObject } from "ai";
 import { z } from "zod";
@@ -179,12 +195,15 @@ return {
 These are available by importing from `autoevals`:
 
 ### `Levenshtein({ output, expected })`
+
 Calculates edit distance similarity (0-1).
 
 ### `Factuality({ output, expected, input })`
+
 LLM-based factuality assessment.
 
 ### Other Available Scorers
+
 - `AnswerCorrectness`
 - `AnswerRelevancy`
 - `AnswerSimilarity`
@@ -192,6 +211,7 @@ LLM-based factuality assessment.
 - `Faithfulness`
 
 **Example:**
+
 ```typescript
 import { Levenshtein } from "autoevals";
 
@@ -219,7 +239,7 @@ export const gpt5 = wrapAISDKModel(openai("gpt-5"));
 export const sonnet45 = wrapAISDKModel(anthropic("claude-sonnet-4-5"));
 
 // Default judge model
-export const defaultJudgeModel = gpt4o;
+export const defaultJudgeModel = gpt5Mini;
 
 // Models to benchmark
 export const benchmarkModels = [
@@ -392,6 +412,7 @@ Must include:
 **Problem:** `Cannot find module` errors
 
 **Solution:** Ensure `.js` extensions on all imports (ES modules requirement):
+
 ```typescript
 // ✓ Correct
 import { models } from "../lib/models.js";
@@ -405,6 +426,7 @@ import { models } from "../lib/models";
 **Problem:** `API key not found`
 
 **Solution:**
+
 1. Create `.env` file from `.env.example`
 2. Add required API keys
 3. Ensure keys for models being tested
@@ -414,6 +436,7 @@ import { models } from "../lib/models";
 **Problem:** Type mismatches in scorers
 
 **Solution:** Use proper generics:
+
 ```typescript
 // Match your data types
 createScorer<string, string, string>({
@@ -426,6 +449,7 @@ createScorer<string, string, string>({
 **Problem:** Unexpectedly low evaluation scores
 
 **Solution:**
+
 1. Check traces in UI to see exact prompts/responses
 2. Verify expected answers are correct
 3. Adjust prompts for clarity
@@ -436,6 +460,7 @@ createScorer<string, string, string>({
 **Problem:** Changes not reflected in results
 
 **Solution:** Use `--no-cache` flag:
+
 ```bash
 pnpm eval --no-cache
 ```

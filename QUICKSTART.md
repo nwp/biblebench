@@ -21,13 +21,15 @@ cp .env.example .env
 ```
 
 Your `.env` should contain:
+
 ```env
 OPENROUTER_API_KEY=your_openrouter_key_here
 ```
 
-**Get your API key:** https://openrouter.ai/keys
+**Get your API key:** <https://openrouter.ai/keys>
 
 **Why OpenRouter?**
+
 - ✅ One key for GPT, Claude, Llama, Grok, Gemini, and hundreds more
 - ✅ Pay-as-you-go pricing
 - ✅ Automatic failover
@@ -41,6 +43,7 @@ pnpm eval:dev
 ```
 
 This will:
+
 1. Start the Evalite development server
 2. Run all evaluation suites
 3. Open a UI at `http://localhost:3006`
@@ -48,6 +51,7 @@ This will:
 ## Step 4: Explore Results
 
 The Evalite UI shows:
+
 - **Overall scores** for each model on each evaluation
 - **Detailed breakdowns** by scorer
 - **Traces** showing exact inputs/outputs
@@ -129,7 +133,7 @@ Edit `evals/lib/models.ts`:
 
 ```typescript
 // Use a different model for judging
-export const defaultJudgeModel = sonnet45; // Instead of gpt4o
+export const defaultJudgeModel = sonnet45; // Instead of gpt-5-mini
 ```
 
 ## Common Issues

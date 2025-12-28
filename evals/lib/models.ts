@@ -72,6 +72,7 @@ function wrapWithRateLimit(modelName: string) {
 export const gpt52 = wrapAISDKModel(openrouter.chat("openai/gpt-5.2"));
 export const gpt51 = wrapAISDKModel(openrouter.chat("openai/gpt-5.1"));
 export const gpt5Nano = wrapAISDKModel(openrouter.chat("openai/gpt-5-nano"));
+export const gpt5Mini = wrapAISDKModel(openrouter.chat("openai/gpt-5-mini"));
 export const gptOss120b = wrapAISDKModel(openrouter.chat("openai/gpt-oss-120b"));
 export const gptOss120bFree = wrapWithRateLimit("openai/gpt-oss-120b:free");
 export const gptOss20b = wrapAISDKModel(openrouter.chat("openai/gpt-oss-20b"));
@@ -130,9 +131,9 @@ export const minimaxM21 = wrapAISDKModel(openrouter.chat("minimax/minimax-m2.1")
 
 /**
  * Default model for LLM-as-judge evaluations
- * Using GPT-5.2 for high-quality judging
+ * Using GPT-5 Mini for efficient high-quality judging
  */
-export const defaultJudgeModel = gpt52;
+export const defaultJudgeModel = gpt5Mini;
 
 /**
  * All models to benchmark

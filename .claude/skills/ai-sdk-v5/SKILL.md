@@ -11,6 +11,7 @@ You are an expert in Vercel's AI SDK v5 specifically. This project uses AI SDK v
 ## When to Use This Skill
 
 Trigger this skill when working on:
+
 - Generating text or structured output with `generateText` or `generateObject`
 - Configuring AI models and providers (OpenAI, Anthropic, etc.)
 - Creating Zod schemas for structured output
@@ -87,7 +88,7 @@ export const gpt4o = wrapAISDKModel(openai("gpt-4o"));
 export const sonnet45 = wrapAISDKModel(anthropic("claude-sonnet-4-5"));
 
 // Default judge model
-export const defaultJudgeModel = gpt4o;
+export const defaultJudgeModel = gpt5Mini;
 ```
 
 ### Text Generation for Evaluations
@@ -149,6 +150,7 @@ return {
 ### generateText(config)
 
 **Parameters:**
+
 - `model`: AI SDK model instance
 - `prompt`: String prompt (simple use case)
 - `messages`: CoreMessage[] (multi-turn conversations)
@@ -161,6 +163,7 @@ return {
 - `seed`: Deterministic generation
 
 **Returns:**
+
 - `text`: Generated text
 - `finishReason`: Why generation stopped
 - `usage`: Token usage stats
@@ -169,6 +172,7 @@ return {
 ### generateObject(config)
 
 **Parameters:**
+
 - `model`: AI SDK model instance
 - `schema`: Zod schema for output
 - `schemaName`: Optional name for the schema
@@ -179,6 +183,7 @@ return {
 - `maxTokens`: Maximum tokens
 
 **Returns:**
+
 - `object`: Parsed, validated object matching schema
 - `finishReason`: Why generation stopped
 - `usage`: Token usage stats
@@ -356,6 +361,7 @@ XAI_API_KEY=...  # For Grok models
 **Problem:** TypeScript errors with `generateObject` schemas
 
 **Solution:** Ensure Zod schema types match usage:
+
 ```typescript
 // Correct
 const schema = z.object({
@@ -371,6 +377,7 @@ const score: number = result.object.score; // Typed correctly
 **Problem:** `API key not found` or authentication errors
 
 **Solution:**
+
 1. Check `.env` file exists and has correct keys
 2. Ensure environment variables are loaded
 3. Verify key format matches provider requirements
@@ -380,6 +387,7 @@ const score: number = result.object.score; // Typed correctly
 **Problem:** Input too long for model's context window
 
 **Solution:**
+
 1. Reduce `maxTokens`
 2. Shorten prompt or input text
 3. Use model with larger context (e.g., GPT-4o has 128k tokens)
@@ -389,6 +397,7 @@ const score: number = result.object.score; // Typed correctly
 **Problem:** LLM output doesn't match Zod schema
 
 **Solution:**
+
 1. Add descriptions to schema fields
 2. Make prompts more explicit about expected structure
 3. Use simpler schemas
@@ -418,6 +427,7 @@ const result = await generateText({ model, prompt });
 ```
 
 Benefits:
+
 - Automatic tracing of all LLM calls
 - Intelligent caching (24-hour TTL)
 - Visible in Evalite UI traces
