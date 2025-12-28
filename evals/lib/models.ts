@@ -27,52 +27,70 @@ const openrouter = createOpenRouter({
 
 /**
  * OpenAI Models (via OpenRouter)
- * Access OpenAI models through OpenRouter's unified API
  */
-export const gpt5 = wrapAISDKModel(openrouter.chat("openai/gpt-5"));
-export const gpt4o = wrapAISDKModel(openrouter.chat("openai/gpt-4o"));
-export const gpt4oMini = wrapAISDKModel(openrouter.chat("openai/gpt-4o-mini"));
+export const gpt52 = wrapAISDKModel(openrouter.chat("openai/gpt-5.2"));
+export const gpt51 = wrapAISDKModel(openrouter.chat("openai/gpt-5.1"));
+export const gpt5Nano = wrapAISDKModel(openrouter.chat("openai/gpt-5-nano"));
+export const gptOss120b = wrapAISDKModel(openrouter.chat("openai/gpt-oss-120b"));
+export const gptOss20b = wrapAISDKModel(openrouter.chat("openai/gpt-oss-20b"));
 
 /**
  * Anthropic Models (via OpenRouter)
- * Access Claude models through OpenRouter's unified API
  */
-export const sonnet45 = wrapAISDKModel(openrouter.chat("anthropic/claude-sonnet-4.5"));
-export const sonnet35 = wrapAISDKModel(openrouter.chat("anthropic/claude-3.5-sonnet"));
-export const opus4 = wrapAISDKModel(openrouter.chat("anthropic/claude-opus-4"));
-export const haiku35 = wrapAISDKModel(openrouter.chat("anthropic/claude-3.5-haiku"));
-
-/**
- * Meta Models (via OpenRouter)
- * Access Llama models through OpenRouter
- */
-export const llama31_405b = wrapAISDKModel(openrouter.chat("meta-llama/llama-3.1-405b-instruct"));
-export const llama31_70b = wrapAISDKModel(openrouter.chat("meta-llama/llama-3.1-70b-instruct"));
+export const claudeHaiku45 = wrapAISDKModel(openrouter.chat("anthropic/claude-haiku-4.5"));
 
 /**
  * X.AI Models (via OpenRouter)
- * Access Grok models through OpenRouter
  */
-export const grok4 = wrapAISDKModel(openrouter.chat("x-ai/grok-beta"));
-
-/**
- * Mistral Models (via OpenRouter)
- * Access Mistral models through OpenRouter
- */
-export const mistralLarge = wrapAISDKModel(openrouter.chat("mistralai/mistral-large"));
+export const grok41Fast = wrapAISDKModel(openrouter.chat("x-ai/grok-4.1-fast"));
+export const grok4 = wrapAISDKModel(openrouter.chat("x-ai/grok-4"));
 
 /**
  * Google Models (via OpenRouter)
- * Access Gemini models through OpenRouter
  */
-export const gemini2Flash = wrapAISDKModel(openrouter.chat("google/gemini-2.0-flash-exp:free"));
-export const geminiPro15 = wrapAISDKModel(openrouter.chat("google/gemini-pro-1.5"));
+export const gemini3FlashPreview = wrapAISDKModel(openrouter.chat("google/gemini-3-flash-preview"));
+export const gemini3ProPreview = wrapAISDKModel(openrouter.chat("google/gemini-3-pro-preview"));
+
+/**
+ * Mistral Models (via OpenRouter)
+ */
+export const mistralLarge2512 = wrapAISDKModel(openrouter.chat("mistralai/mistral-large-2512"));
+
+/**
+ * DeepSeek Models (via OpenRouter)
+ */
+export const deepseekV32 = wrapAISDKModel(openrouter.chat("deepseek/deepseek-v3.2"));
+
+/**
+ * Prime Intellect Models (via OpenRouter)
+ */
+export const intellect3 = wrapAISDKModel(openrouter.chat("prime-intellect/intellect-3"));
+
+/**
+ * AllenAI Models (via OpenRouter)
+ */
+export const olmo3132bThink = wrapAISDKModel(openrouter.chat("allenai/olmo-3.1-32b-think"));
+
+/**
+ * NVIDIA Models (via OpenRouter)
+ */
+export const nemotron3Nano30b = wrapAISDKModel(openrouter.chat("nvidia/nemotron-3-nano-30b-a3b"));
+
+/**
+ * Zhipu AI Models (via OpenRouter)
+ */
+export const glm47 = wrapAISDKModel(openrouter.chat("z-ai/glm-4.7"));
+
+/**
+ * MiniMax Models (via OpenRouter)
+ */
+export const minimaxM21 = wrapAISDKModel(openrouter.chat("minimax/minimax-m2.1"));
 
 /**
  * Default model for LLM-as-judge evaluations
- * Using GPT-4o for reliable, cost-effective judging
+ * Using GPT-5.2 for high-quality judging
  */
-export const defaultJudgeModel = gpt4o;
+export const defaultJudgeModel = gpt52;
 
 /**
  * All models to benchmark
@@ -83,30 +101,57 @@ export const defaultJudgeModel = gpt4o;
  */
 export const benchmarkModels = [
   // OpenAI models
-  { name: "GPT-5", model: gpt5 },
-  { name: "GPT-4o", model: gpt4o },
+  { name: "GPT-5.2", model: gpt52 },
+  { name: "GPT-5.1", model: gpt51 },
+  { name: "GPT-5 Nano", model: gpt5Nano },
+  { name: "GPT-OSS-120B", model: gptOss120b },
+  { name: "GPT-OSS-20B", model: gptOss20b },
 
   // Anthropic models
-  { name: "Claude Sonnet 4.5", model: sonnet45 },
-  { name: "Claude Opus 4", model: opus4 },
-  { name: "Claude Sonnet 3.5", model: sonnet35 },
+  { name: "Claude Haiku 4.5", model: claudeHaiku45 },
 
-  // Add more models as needed:
-  // { name: "GPT-4o Mini", model: gpt4oMini },
-  // { name: "Claude Haiku 3.5", model: haiku35 },
-  // { name: "Llama 3.1 405B", model: llama31_405b },
-  // { name: "Grok 4", model: grok4 },
-  // { name: "Mistral Large", model: mistralLarge },
-  // { name: "Gemini 2.0 Flash", model: gemini2Flash },
+  // X.AI models
+  { name: "Grok 4.1 Fast", model: grok41Fast },
+  { name: "Grok 4", model: grok4 },
+
+  // Google models
+  { name: "Gemini 3 Flash Preview", model: gemini3FlashPreview },
+  { name: "Gemini 3 Pro Preview", model: gemini3ProPreview },
+
+  // Mistral models
+  { name: "Mistral Large 2512", model: mistralLarge2512 },
+
+  // DeepSeek models
+  { name: "DeepSeek V3.2", model: deepseekV32 },
+
+  // Prime Intellect models
+  { name: "Intellect-3", model: intellect3 },
+
+  // AllenAI models
+  { name: "OLMo 3.1 32B Think", model: olmo3132bThink },
+
+  // NVIDIA models
+  { name: "Nemotron 3 Nano 30B", model: nemotron3Nano30b },
+
+  // Zhipu AI models
+  { name: "GLM-4.7", model: glm47 },
+
+  // MiniMax models
+  { name: "MiniMax M2.1", model: minimaxM21 },
 ] as const;
 
 /**
  * Model Categories for Organization
  * You can use these to run evaluations on specific categories
  */
-export const openaiModels = [gpt5, gpt4o, gpt4oMini];
-export const anthropicModels = [sonnet45, opus4, sonnet35, haiku35];
-export const metaModels = [llama31_405b, llama31_70b];
-export const xaiModels = [grok4];
-export const mistralModels = [mistralLarge];
-export const googleModels = [gemini2Flash, geminiPro15];
+export const openaiModels = [gpt52, gpt51, gpt5Nano, gptOss120b, gptOss20b];
+export const anthropicModels = [claudeHaiku45];
+export const xaiModels = [grok41Fast, grok4];
+export const googleModels = [gemini3FlashPreview, gemini3ProPreview];
+export const mistralModels = [mistralLarge2512];
+export const deepseekModels = [deepseekV32];
+export const primeIntellectModels = [intellect3];
+export const allenaiModels = [olmo3132bThink];
+export const nvidiaModels = [nemotron3Nano30b];
+export const zhipuModels = [glm47];
+export const minimaxModels = [minimaxM21];
