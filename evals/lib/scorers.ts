@@ -228,3 +228,183 @@ Rate the ecumenical score from 0 to 1, where 1 is perfectly balanced and 0 is ex
     };
   }
 });
+
+/**
+ * Translation-Specific Phrase Matcher
+ * Checks if translation-specific key phrases are present in the output
+ */
+export const translationPhraseMatch = createScorer<string, string, { keyPhrases?: string[], translation?: string }>({
+  name: "Translation Phrase Match",
+  description: "Checks if translation-specific key phrases are accurately reproduced",
+  scorer: ({ output, expected }, testCase) => {
+    const keyPhrases = testCase?.keyPhrases || [];
+    if (keyPhrases.length === 0) {
+      return { score: 1, metadata: { na: true } };
+    }
+
+    const normalize = (text: string) =>
+      text.toLowerCase()
+        .replace(/[.,;:!?"'–—]/g, "")
+        .trim();
+
+    const outputNorm = normalize(output);
+    const phrasesFound = keyPhrases.filter(phrase =>
+      outputNorm.includes(normalize(phrase))
+    );
+
+    const score = phrasesFound.length / keyPhrases.length;
+
+    return {
+      score,
+      metadata: {
+        keyPhrasesFound: phrasesFound.length,
+        totalKeyPhrases: keyPhrases.length,
+        phrasesMatched: phrasesFound,
+        phrasesMissed: keyPhrases.filter(p => !phrasesFound.includes(p)),
+        translation: testCase?.translation
+      }
+    };
+  }
+});
+
+/**
+ * Translation Vocabulary Fidelity
+ * Checks if the output uses vocabulary appropriate to the requested translation
+ */
+export const translationVocabularyFidelity = createScorer<string, string, { translation?: string, keyPhrases?: string[] }>({
+  name: "Translation Vocabulary Fidelity",
+  description: "Validates use of translation-appropriate vocabulary and style",
+  scorer: ({ output }, testCase) => {
+    const translation = testCase?.translation || "";
+    const keyPhrases = testCase?.keyPhrases || [];
+
+    // Define characteristic markers for each major translation
+    const translationMarkers: Record<string, { positive: string[], negative: string[] }> = {
+      "KJV": {
+        positive: ["thee", "thou", "thy", "thine", "saith", "unto", "ye", "hath", "doth", "begotten", "whosoever"],
+        negative: ["you", "your", "says", "declares", "to", "will be"]
+      },
+      "NKJV": {
+        positive: ["you", "your", "begotten"],
+        negative: ["thee", "thou", "thy"]
+      },
+      "NIV": {
+        positive: ["one and only", "will be", "declares", "you", "your"],
+        negative: ["thee", "thou", "begotten", "saith"]
+      },
+      "ESV": {
+        positive: ["should", "will", "only son"],
+        negative: ["thee", "thou", "begotten"]
+      },
+      "NASB": {
+        positive: ["him who", "through him"],
+        negative: ["thee", "thou"]
+      },
+      "NLT": {
+        positive: ["says the", "like this", "you", "your"],
+        negative: ["thee", "thou", "saith", "declares"]
+      },
+      "CSB": {
+        positive: ["do not", "will", "you"],
+        negative: ["thee", "thou", "saith"]
+      }
+    };
+
+    if (!translation || !translationMarkers[translation]) {
+      return { score: 1, metadata: { translation, notEvaluated: true } };
+    }
+
+    const outputLower = output.toLowerCase();
+    const markers = translationMarkers[translation];
+
+    // Check for positive markers (should be present)
+    const positiveFound = markers.positive.filter(marker =>
+      outputLower.includes(marker.toLowerCase())
+    );
+
+    // Check for negative markers (should NOT be present)
+    const negativeFound = markers.negative.filter(marker =>
+      outputLower.includes(marker.toLowerCase())
+    );
+
+    // Score calculation
+    let score = 1.0;
+
+    // Penalty for using markers from wrong translations
+    if (negativeFound.length > 0) {
+      score -= (negativeFound.length * 0.2);
+    }
+
+    // Check if key phrases are present (if provided)
+    if (keyPhrases.length > 0) {
+      const phrasesFound = keyPhrases.filter(phrase =>
+        outputLower.includes(phrase.toLowerCase())
+      );
+      const phraseScore = phrasesFound.length / keyPhrases.length;
+      score = (score * 0.4) + (phraseScore * 0.6); // Weight key phrases more heavily
+    }
+
+    score = Math.max(0, Math.min(1, score)); // Clamp to [0, 1]
+
+    return {
+      score,
+      metadata: {
+        translation,
+        positiveMarkersFound: positiveFound,
+        negativeMarkersFound: negativeFound,
+        keyPhrasesChecked: keyPhrases.length,
+        appropriateVocabulary: negativeFound.length === 0
+      }
+    };
+  }
+});
+
+/**
+ * Translation Identification Judge
+ * LLM-as-judge scorer for identifying which translation a verse comes from
+ */
+export const translationIdentificationJudge = createScorer<string, string, { reference?: string }>({
+  name: "Translation Identification Judge",
+  description: "Evaluates ability to correctly identify Bible translations",
+  scorer: async ({ input, output, expected }) => {
+    const result = await generateObject({
+      model: defaultJudgeModel,
+      schema: z.object({
+        correct_translation: z.boolean().describe("Whether the identified translation is correct"),
+        confidence: z.number().min(0).max(1).describe("Confidence in the identification"),
+        reasoning: z.string().describe("Reasoning for the identification"),
+        alternative_possibilities: z.array(z.string()).describe("Other possible translations mentioned")
+      }),
+      prompt: `You are a Bible translation expert. Evaluate whether the LLM correctly identified the Bible translation.
+
+Question: ${input}
+
+Expected Answer: ${expected}
+
+LLM's Response: ${output}
+
+Major English translations include:
+- KJV (King James Version) - Uses "thee/thou/thy", "saith", "begotten"
+- NKJV (New King James Version) - Modern language but keeps "begotten"
+- NIV (New International Version) - "one and only", modern phrasing
+- ESV (English Standard Version) - Literal, modern language
+- NASB (New American Standard Bible) - Very literal
+- NLT (New Living Translation) - Thought-for-thought
+- CSB (Christian Standard Bible) - Balance of literal and readable
+
+Determine if the LLM correctly identified the translation based on distinctive vocabulary and phrasing.`
+    });
+
+    const score = result.object.correct_translation ? result.object.confidence : 0;
+
+    return {
+      score,
+      metadata: {
+        correct_translation: result.object.correct_translation,
+        confidence: result.object.confidence,
+        reasoning: result.object.reasoning,
+        alternative_possibilities: result.object.alternative_possibilities
+      }
+    };
+  }
+});

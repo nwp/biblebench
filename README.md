@@ -34,7 +34,8 @@ biblebench/
 │   ├── scripture/              # Scripture accuracy evaluations
 │   │   ├── verse-recall.eval.ts
 │   │   ├── reference-knowledge.eval.ts
-│   │   └── context-understanding.eval.ts
+│   │   ├── context-understanding.eval.ts
+│   │   └── translation-recall.eval.ts    # NEW: Bible translation testing
 │   ├── theology/               # Theological concept evaluations
 │   │   ├── core-doctrines.eval.ts
 │   │   ├── heresy-detection.eval.ts
@@ -70,6 +71,14 @@ Tests LLMs' foundational knowledge of the Bible itself.
 - Purpose and audience of biblical books
 - Understanding of scriptural context
 - Uses LLM-as-judge for nuanced evaluation
+
+**Translation Recall** (`scripture/translation-recall.eval.ts`)
+- Accurate recall of verses in specific Bible translations (KJV, NIV, ESV, NASB, NLT, CSB, etc.)
+- Understanding of translation-specific vocabulary and phrasing
+- Distinguishing between translation variations (e.g., "begotten" in KJV vs "one and only" in NIV)
+- Ability to identify which translation a verse comes from based on distinctive wording
+- Tests 25+ verses across 8+ major English translations
+- Measured with translation-specific phrase matching, vocabulary fidelity, and Levenshtein similarity
 
 ### 2. Theological Understanding
 
@@ -115,11 +124,17 @@ BibleBench employs multiple scoring approaches:
 - **Key Points Coverage**: Presence of critical theological terms
 - **Multiple Perspectives**: Counting denominational views represented
 
+### Translation-Aware Scorers
+- **Translation Phrase Match**: Checks for translation-specific key phrases (e.g., "begotten" in KJV)
+- **Translation Vocabulary Fidelity**: Validates use of appropriate vocabulary for each translation
+- **Translation Accuracy**: Comprehensive scoring combining word overlap and key phrase matching
+
 ### LLM-as-Judge Scorers
 - **Theological Accuracy Judge**: Evaluates doctrinal soundness, biblical grounding, and nuance
 - **Heresy Detection Judge**: Identifies heterodox teaching with severity ratings
 - **Denominational Bias Detector**: Measures ecumenical balance
 - **Pastoral Wisdom Judge**: Multi-dimensional evaluation of pastoral responses
+- **Translation Identification Judge**: Evaluates ability to correctly identify Bible translations based on distinctive vocabulary
 
 All LLM-as-judge scorers use structured output (via AI SDK's `generateObject`) with detailed rationales, providing transparency and debuggability.
 
@@ -369,7 +384,27 @@ Historical heresies are defined according to ecumenical church councils and hist
 
 ## 📖 Scripture Translations
 
-Default test cases use the **New International Version (NIV)**, but scorers are designed to accept minor translation variations. We may expand to test multiple translations in the future.
+BibleBench includes comprehensive testing of multiple Bible translations:
+
+### Translation Coverage
+
+The benchmark explicitly tests models on these major English translations:
+
+- **KJV** (King James Version, 1611) - Traditional language with "thee/thou/thy"
+- **NKJV** (New King James Version, 1982) - Modernized KJV
+- **NIV** (New International Version, 1978/2011) - Widely-used modern translation
+- **ESV** (English Standard Version, 2001) - Literal, modern English
+- **NASB** (New American Standard Bible, 1971/1995) - Very literal translation
+- **NLT** (New Living Translation, 1996/2015) - Thought-for-thought translation
+- **CSB** (Christian Standard Bible, 2017) - Balance of accuracy and readability
+
+### Evaluation Approach
+
+- **General Recall** (`verse-recall.eval.ts`): Accepts any standard translation
+- **Translation-Specific** (`translation-recall.eval.ts`): Tests precise recall of translation-specific wording
+- **Translation Identification**: Tests ability to identify translations based on distinctive vocabulary
+
+This approach ensures models are evaluated both on general scripture knowledge and on their ability to distinguish between translation variations.
 
 ## 📄 License
 
