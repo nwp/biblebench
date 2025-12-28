@@ -7,7 +7,7 @@
 
 import { evalite } from "evalite";
 import { generateText } from "ai";
-import { benchmarkModels } from "../lib/models.js";
+import { testModels } from "../lib/models.js";
 import { containsAnswer, theologicalAccuracyJudge } from "../lib/scorers.js";
 
 const contextUnderstandingData = [
@@ -54,7 +54,7 @@ const contextUnderstandingData = [
 ];
 
 // Run the evaluation for each model
-for (const { name, model } of benchmarkModels) {
+for (const { name, model } of testModels) {
   evalite(`Context Understanding - ${name}`, {
     data: contextUnderstandingData,
     task: async (input) => {

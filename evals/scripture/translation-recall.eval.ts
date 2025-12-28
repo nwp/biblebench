@@ -7,7 +7,7 @@
 
 import { evalite } from "evalite";
 import { generateText } from "ai";
-import { benchmarkModels } from "../lib/models.js";
+import { testModels } from "../lib/models.js";
 import { levenshteinSimilarity, containsAnswer } from "../lib/scorers.js";
 
 const translationRecallData = [
@@ -224,7 +224,7 @@ const translationRecallData = [
 ];
 
 // Run the evaluation for each model
-for (const { name, model } of benchmarkModels) {
+for (const { name, model } of testModels) {
   evalite(`Translation Recall - ${name}`, {
     data: translationRecallData,
     task: async (input) => {

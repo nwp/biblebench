@@ -6,7 +6,10 @@
   "scripts": {
     "eval:dev": "evalite watch",
     "eval": "evalite run",
-    "eval:ui": "evalite ui"
+    "eval:ui": "evalite ui",
+    "eval:scripture": "evalite run evals/scripture/",
+    "eval:theology": "evalite run evals/theology/",
+    "eval:quick": "evalite run evals/scripture/verse-recall.eval.ts && evalite run evals/theology/core-doctrines.eval.ts"
   },
   "keywords": [
     "llm",
@@ -18,7 +21,7 @@
   ],
   "author": "",
   "license": "MIT",
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.26.2",
   "devDependencies": {
     "@types/node": "^25.0.3",
     "evalite": "1.0.0-beta.15",
@@ -37,6 +40,9 @@
     "overrides": {
       "@ai-sdk/provider": "3.0.0",
       "zod": "^4.2.1"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

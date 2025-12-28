@@ -1,6 +1,10 @@
 # BibleBench 📖
 
-**An industry-standard LLM benchmark for Christian scripture accuracy and theological understanding**
+An industry-standard LLM benchmark for Christian scripture accuracy and theological understanding
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Evalite](https://img.shields.io/badge/built%20with-evalite-blue.svg)](https://evalite.dev)
+[![AI SDK v5](https://img.shields.io/badge/powered%20by-AI%20SDK%20v5-blue.svg)](https://sdk.vercel.ai)
 
 BibleBench is a comprehensive evaluation suite designed to assess Large Language Models (LLMs) on their knowledge of Christian scripture, theological accuracy, and ability to apply biblical principles with wisdom and nuance. Built with [Evalite](https://evalite.dev) and the [AI SDK v5](https://sdk.vercel.ai), it provides rigorous, reproducible testing across multiple dimensions of biblical and theological competence.
 
@@ -28,7 +32,7 @@ BibleBench fills this gap by providing a rigorous, multi-dimensional benchmark g
 
 ### Project Structure
 
-```
+```text
 biblebench/
 ├── evals/
 │   ├── scripture/              # Scripture accuracy evaluations
@@ -57,22 +61,26 @@ biblebench/
 Tests LLMs' foundational knowledge of the Bible itself.
 
 **Verse Recall** (`scripture/verse-recall.eval.ts`)
+
 - Ability to complete famous Bible verses
 - Accuracy of verse recitation
 - Measured with Levenshtein similarity, exact match, and word overlap
 
 **Reference Knowledge** (`scripture/reference-knowledge.eval.ts`)
+
 - Correctly identifying where verses are found
 - Understanding of Bible book/chapter/verse structure
 - Validated against standard reference formats
 
 **Context Understanding** (`scripture/context-understanding.eval.ts`)
+
 - Authorship and historical background
 - Purpose and audience of biblical books
 - Understanding of scriptural context
 - Uses LLM-as-judge for nuanced evaluation
 
 **Translation Recall** (`scripture/translation-recall.eval.ts`)
+
 - Accurate recall of verses in specific Bible translations (KJV, NIV, ESV, NASB, NLT, CSB, etc.)
 - Understanding of translation-specific vocabulary and phrasing
 - Distinguishing between translation variations (e.g., "begotten" in KJV vs "one and only" in NIV)
@@ -85,24 +93,28 @@ Tests LLMs' foundational knowledge of the Bible itself.
 Tests comprehension of Christian doctrine and theology.
 
 **Core Doctrines** (`theology/core-doctrines.eval.ts`)
+
 - Trinity, Incarnation, Justification, Atonement
 - Original sin, Image of God, Gospel
 - Resurrection and eschatology
 - Evaluated with theological accuracy judge and completeness scoring
 
 **Heresy Detection** (`theology/heresy-detection.eval.ts`)
+
 - Identifying historical heresies (Arianism, Modalism, Pelagianism, Docetism, Gnosticism)
 - Distinguishing orthodoxy from heterodoxy
 - Understanding why certain teachings are problematic
 - Tests both identification and explanation
 
 **Denominational Nuance** (`theology/denominational-nuance.eval.ts`)
+
 - Fair representation of Catholic, Protestant, Orthodox perspectives
 - Understanding of legitimate theological diversity
 - Avoiding denominational bias
 - Measured with custom bias detection and balance scoring
 
 **Pastoral Application** (`theology/pastoral-application.eval.ts`)
+
 - Applying theology to real-world situations
 - Balancing truth with grace
 - Pastoral sensitivity and wisdom
@@ -114,22 +126,26 @@ Tests comprehension of Christian doctrine and theology.
 BibleBench employs multiple scoring approaches:
 
 ### Rule-Based Scorers
+
 - **Exact Match**: Binary match of expected output
 - **Contains**: Substring matching
 - **Levenshtein Distance**: Edit distance similarity
 - **Reference Format Validation**: Regex-based format checking
 
 ### Heuristic Scorers
+
 - **Word Overlap**: Percentage of expected words present
 - **Key Points Coverage**: Presence of critical theological terms
 - **Multiple Perspectives**: Counting denominational views represented
 
 ### Translation-Aware Scorers
+
 - **Translation Phrase Match**: Checks for translation-specific key phrases (e.g., "begotten" in KJV)
 - **Translation Vocabulary Fidelity**: Validates use of appropriate vocabulary for each translation
 - **Translation Accuracy**: Comprehensive scoring combining word overlap and key phrase matching
 
 ### LLM-as-Judge Scorers
+
 - **Theological Accuracy Judge**: Evaluates doctrinal soundness, biblical grounding, and nuance
 - **Heresy Detection Judge**: Identifies heterodox teaching with severity ratings
 - **Denominational Bias Detector**: Measures ecumenical balance
@@ -174,6 +190,7 @@ OPENROUTER_API_KEY=your_openrouter_key
 ```
 
 **Benefits of using OpenRouter:**
+
 - ✅ **One API key** for all models (GPT, Claude, Llama, Grok, Gemini, etc.)
 - ✅ **Pay-as-you-go pricing** with transparent per-token costs
 - ✅ **Automatic failover** for reliability
@@ -196,6 +213,7 @@ pnpm eval:ui
 ```
 
 The Evalite UI will be available at `http://localhost:3006`, providing:
+
 - Real-time evaluation progress
 - Detailed score breakdowns
 - Trace inspection
@@ -216,6 +234,7 @@ pnpm eval evals/theology/core-doctrines.eval.ts
 BibleBench is currently configured to test **17 cutting-edge models** across 10 different providers, all accessed through OpenRouter:
 
 ### OpenAI Models (5)
+
 - **GPT-5.2** - Latest flagship model (also used as judge)
 - **GPT-5.1** - Advanced reasoning model
 - **GPT-5 Nano** - Efficient compact model
@@ -223,17 +242,21 @@ BibleBench is currently configured to test **17 cutting-edge models** across 10 
 - **GPT-OSS-20B** - Open-source 20B parameter model
 
 ### Anthropic Models (1)
+
 - **Claude Haiku 4.5** - Fast, efficient Claude variant
 
 ### X.AI Models (2)
+
 - **Grok 4.1 Fast** - Speed-optimized Grok
 - **Grok 4** - Full Grok model
 
 ### Google Models (2)
+
 - **Gemini 3 Flash Preview** - Fast preview model
 - **Gemini 3 Pro Preview** - Advanced preview model
 
 ### Other Advanced Models (7)
+
 - **Mistral Large 2512** (Mistral AI)
 - **DeepSeek V3.2** (DeepSeek)
 - **Intellect-3** (Prime Intellect)
@@ -335,6 +358,7 @@ export const benchmarkModels = [
 ```
 
 **Examples:**
+
 - `openrouter.chat("openai/gpt-4o")` - GPT-4o
 - `openrouter.chat("anthropic/claude-3.5-sonnet")` - Claude Sonnet
 - `openrouter.chat("meta-llama/llama-3.1-405b-instruct")` - Llama 3.1
@@ -396,6 +420,7 @@ for (const { name, model } of benchmarkModels) {
 ## 📈 Benchmark Results
 
 Results include:
+
 - **Overall scores** per model per evaluation category
 - **Detailed metrics** for each scorer
 - **Metadata** including rationales from LLM-as-judge scorers
@@ -407,21 +432,25 @@ Results are stored in `node_modules/.evalite` and can be exported as static HTML
 ## 🎓 Use Cases
 
 ### For LLM Developers
+
 - Benchmark your models against established theological standards
 - Identify weaknesses in scripture knowledge or theological reasoning
 - Track improvements across model versions
 
 ### For Religious Organizations
+
 - Evaluate LLMs before deploying them in educational or pastoral contexts
 - Ensure models align with your theological positions
 - Test for heresy detection and denominational fairness
 
 ### For Researchers
+
 - Study how different LLM architectures handle theological reasoning
 - Compare performance on factual recall vs. nuanced application
 - Analyze bias in religious content generation
 
 ### For Application Developers
+
 - Select the best LLM for your Christian education app
 - Validate that your fine-tuned model maintains theological accuracy
 - Monitor for theological drift in deployed systems
@@ -443,6 +472,7 @@ Please open an issue or pull request on GitHub.
 ### Doctrinal Framework
 
 BibleBench is grounded in **historic Christian orthodoxy** as expressed in:
+
 - The Apostles' Creed
 - The Nicene Creed
 - The Chalcedonian Definition
@@ -459,6 +489,7 @@ We recognize legitimate theological diversity among Christians while maintaining
 ### Heresy Definitions
 
 Historical heresies are defined according to ecumenical church councils and historic Christian consensus:
+
 - Arianism, Modalism, Nestorianism, Docetism, Pelagianism, Gnosticism, etc.
 - Scorers detect these patterns while allowing for legitimate theological diversity
 
@@ -518,6 +549,7 @@ This benchmark is provided for educational and evaluative purposes. It represent
 ## 📧 Contact
 
 For questions, suggestions, or collaboration:
+
 - Open an issue on GitHub
 - Email: [your-email@example.com]
 - Twitter: [@yourusername]

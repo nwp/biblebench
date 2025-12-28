@@ -20,10 +20,51 @@ import { createOpenRouter } from "@openrouter/ai-sdk-provider";
 /**
  * Configure OpenRouter provider
  * Uses OPENROUTER_API_KEY from environment variables
+ * 
+ * The headers help identify this application on OpenRouter's dashboard
+ * and in their usage statistics/rankings.
  */
 const openrouter = createOpenRouter({
   apiKey: process.env.OPENROUTER_API_KEY,
+  headers: {
+    "HTTP-Referer": "https://github.com/nwp/biblebench", // Your app URL for OpenRouter rankings
+    "X-Title": "BibleBench", // Your app name for OpenRouter rankings
+  },
 });
+
+/**
+ * Rate limiter for free tier models
+ * Automatically applies delay to models ending with ":free" suffix
+ */
+let lastRequestTime = 0;
+const MIN_DELAY_MS = 3500; // 3.5 seconds between requests (~17 req/min, under the 16-20 limit)
+
+async function waitForRateLimit(): Promise<void> {
+  const now = Date.now();
+  const timeSinceLastRequest = now - lastRequestTime;
+  
+  if (timeSinceLastRequest < MIN_DELAY_MS) {
+    const waitTime = MIN_DELAY_MS - timeSinceLastRequest;
+    await new Promise(resolve => setTimeout(resolve, waitTime));
+  }
+  
+  lastRequestTime = Date.now();
+}
+
+/**
+ * Wraps a model with rate limiting for free tier models only
+ */
+function wrapWithRateLimit(modelName: string) {
+  const model = openrouter.chat(modelName);
+  
+  return wrapAISDKModel({
+    ...model,
+    doGenerate: async (...args: Parameters<typeof model.doGenerate>) => {
+      await waitForRateLimit();
+      return model.doGenerate(...args);
+    },
+  } as any);
+}
 
 /**
  * OpenAI Models (via OpenRouter)
@@ -32,6 +73,7 @@ export const gpt52 = wrapAISDKModel(openrouter.chat("openai/gpt-5.2"));
 export const gpt51 = wrapAISDKModel(openrouter.chat("openai/gpt-5.1"));
 export const gpt5Nano = wrapAISDKModel(openrouter.chat("openai/gpt-5-nano"));
 export const gptOss120b = wrapAISDKModel(openrouter.chat("openai/gpt-oss-120b"));
+export const gptOss120bFree = wrapWithRateLimit("openai/gpt-oss-120b:free");
 export const gptOss20b = wrapAISDKModel(openrouter.chat("openai/gpt-oss-20b"));
 
 /**
@@ -155,3 +197,12 @@ export const allenaiModels = [olmo3132bThink];
 export const nvidiaModels = [nemotron3Nano30b];
 export const zhipuModels = [glm47];
 export const minimaxModels = [minimaxM21];
+
+/**
+ * Test subset of models (for quick testing with lower API costs)
+ * Using openai/gpt-oss-120b:free for free tier testing
+ */
+export const testModels = [
+  { name: "GPT-OSS-120B:Free", model: gptOss120bFree },
+] as const;
+

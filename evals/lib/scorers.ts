@@ -9,7 +9,6 @@ import { createScorer } from "evalite";
 import { generateObject } from "ai";
 import { z } from "zod";
 import { defaultJudgeModel } from "./models.js";
-import { Levenshtein } from "autoevals";
 
 /**
  * Exact Match Scorer
@@ -50,12 +49,47 @@ export const containsAnswer = createScorer<string, string, string>({
 export const levenshteinSimilarity = createScorer<string, string, string>({
   name: "Levenshtein Similarity",
   description: "Measures text similarity using Levenshtein distance",
-  scorer: async ({ output, expected }) => {
-    const result = await Promise.resolve(Levenshtein({ output, expected }));
-    // Handle potential null score from autoevals
+  scorer: ({ output, expected }) => {
+    // Calculate Levenshtein distance
+    const levenshteinDistance = (a: string, b: string): number => {
+      const aLen = a.length;
+      const bLen = b.length;
+      
+      if (aLen === 0) return bLen;
+      if (bLen === 0) return aLen;
+
+      const matrix: number[][] = Array(bLen + 1)
+        .fill(null)
+        .map(() => Array(aLen + 1).fill(0));
+
+      for (let i = 0; i <= aLen; i++) matrix[0][i] = i;
+      for (let j = 0; j <= bLen; j++) matrix[j][0] = j;
+
+      for (let j = 1; j <= bLen; j++) {
+        for (let i = 1; i <= aLen; i++) {
+          const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+          matrix[j][i] = Math.min(
+            matrix[j][i - 1] + 1,
+            matrix[j - 1][i] + 1,
+            matrix[j - 1][i - 1] + cost
+          );
+        }
+      }
+
+      return matrix[bLen][aLen];
+    };
+
+    const distance = levenshteinDistance(output.toLowerCase(), expected.toLowerCase());
+    const maxLength = Math.max(output.length, expected.length);
+    const similarity = maxLength === 0 ? 1 : 1 - (distance / maxLength);
+    
     return {
-      score: result.score ?? 0,
-      metadata: result.metadata || {}
+      score: Math.max(0, Math.min(1, similarity)),
+      metadata: {
+        distance,
+        maxLength,
+        similarity
+      }
     };
   }
 });

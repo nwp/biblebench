@@ -96,7 +96,7 @@ const pastoralApplicationData = [
 ];
 
 // Run the evaluation for each model
-for (const { name, model } of benchmarkModels) {
+for (const { name, model } of testModels) {
   evalite(`Pastoral Application - ${name}`, {
     data: pastoralApplicationData,
     task: async (input) => {
