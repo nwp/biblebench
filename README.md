@@ -211,7 +211,103 @@ pnpm eval evals/scripture/
 pnpm eval evals/theology/core-doctrines.eval.ts
 ```
 
+## 🤖 Configured Models
+
+BibleBench is currently configured to test **17 cutting-edge models** across 10 different providers, all accessed through OpenRouter:
+
+### OpenAI Models (5)
+- **GPT-5.2** - Latest flagship model (also used as judge)
+- **GPT-5.1** - Advanced reasoning model
+- **GPT-5 Nano** - Efficient compact model
+- **GPT-OSS-120B** - Open-source 120B parameter model
+- **GPT-OSS-20B** - Open-source 20B parameter model
+
+### Anthropic Models (1)
+- **Claude Haiku 4.5** - Fast, efficient Claude variant
+
+### X.AI Models (2)
+- **Grok 4.1 Fast** - Speed-optimized Grok
+- **Grok 4** - Full Grok model
+
+### Google Models (2)
+- **Gemini 3 Flash Preview** - Fast preview model
+- **Gemini 3 Pro Preview** - Advanced preview model
+
+### Other Advanced Models (7)
+- **Mistral Large 2512** (Mistral AI)
+- **DeepSeek V3.2** (DeepSeek)
+- **Intellect-3** (Prime Intellect)
+- **OLMo 3.1 32B Think** (AllenAI)
+- **Nemotron 3 Nano 30B** (NVIDIA)
+- **GLM-4.7** (Zhipu AI)
+- **MiniMax M2.1** (MiniMax)
+
+All models are accessed through a **single OpenRouter API key**, making it easy to test across diverse architectures, training approaches, and capabilities.
+
 ## 🔧 Customization
+
+### Running with Model Subsets
+
+You can easily run evaluations on specific models or categories by modifying `evals/lib/models.ts`:
+
+#### Option 1: Test Specific Models
+
+Edit the `benchmarkModels` array to include only the models you want:
+
+```typescript
+// In evals/lib/models.ts
+export const benchmarkModels = [
+  // Test only these specific models
+  { name: "GPT-5.2", model: gpt52 },
+  { name: "Claude Haiku 4.5", model: claudeHaiku45 },
+  { name: "Grok 4", model: grok4 },
+] as const;
+```
+
+#### Option 2: Test by Provider Category
+
+Use the pre-organized model categories:
+
+```typescript
+// Test only OpenAI models
+export const benchmarkModels = openaiModels.map((model, i) => ({
+  name: `OpenAI Model ${i + 1}`,
+  model
+})) as const;
+
+// Test only Google models
+export const benchmarkModels = [
+  { name: "Gemini 3 Flash", model: gemini3FlashPreview },
+  { name: "Gemini 3 Pro", model: gemini3ProPreview },
+] as const;
+
+// Mix providers
+export const benchmarkModels = [
+  ...openaiModels.map(m => ({ name: "OpenAI", model: m })),
+  ...anthropicModels.map(m => ({ name: "Anthropic", model: m })),
+] as const;
+```
+
+#### Option 3: Temporarily Comment Out Models
+
+For quick testing, comment out models you don't want to test:
+
+```typescript
+export const benchmarkModels = [
+  { name: "GPT-5.2", model: gpt52 },
+  // { name: "GPT-5.1", model: gpt51 },  // Commented out
+  // { name: "GPT-5 Nano", model: gpt5Nano },  // Commented out
+  { name: "Claude Haiku 4.5", model: claudeHaiku45 },
+  // ... etc
+] as const;
+```
+
+**Note:** After modifying `models.ts`, TypeScript will recompile automatically in dev mode, or you can manually run:
+
+```bash
+pnpm tsc --noEmit  # Check for errors
+pnpm eval          # Run evaluations with new configuration
+```
 
 ### Adding New Models
 
