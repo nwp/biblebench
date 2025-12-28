@@ -23,7 +23,7 @@ Built with Evalite (beta) and AI SDK v5, it provides rigorous, reproducible test
 
 ## Project Structure
 
-```
+```text
 biblebench/
 ├── .claude/
 │   └── skills/
@@ -72,13 +72,13 @@ Located in `.claude/skills/evalite/`, this skill makes Claude Code an expert in:
 - Debugging evaluation results using traces and metadata
 - Following BibleBench-specific patterns and conventions
 
-### Skill Files
+### Evalite Skill Files
 
 - **SKILL.md** - Core skill with Evalite concepts, best practices, and project context
 - **reference.md** - Complete API reference for Evalite and AI SDK v5
 - **examples.md** - 10 practical examples covering common tasks
 
-### When It Activates
+### When the Evalite Skill Activates
 
 The skill automatically triggers when you mention:
 
@@ -88,7 +88,7 @@ The skill automatically triggers when you mention:
 - Debugging evaluation results
 - Evalite-related questions
 
-### Example Usage
+### Example Usage (Evalite)
 
 Simply ask naturally, and the skill will activate automatically:
 
@@ -114,13 +114,13 @@ Located in `.claude/skills/ai-sdk-v5/`, this skill makes Claude Code an expert i
 - Debugging AI SDK errors and issues
 - Integrating AI SDK with Evalite
 
-### Skill Files
+### AI SDK v5 Skill Files
 
 - **SKILL.md** - Core skill with AI SDK v5 concepts, patterns, and best practices
 - **reference.md** - Complete API reference for generateText, generateObject, providers, and Zod
 - **examples.md** - 15 practical examples covering common use cases
 
-### When It Activates
+### When the AI SDK v5 Skill Activates
 
 The skill automatically triggers when you mention:
 
@@ -131,7 +131,7 @@ The skill automatically triggers when you mention:
 - AI SDK debugging or optimization
 - Temperature, tokens, or other model parameters
 
-### Example Usage
+### Example Usage (AI SDK v5)
 
 Simply ask naturally, and the skill will activate automatically:
 

@@ -81,6 +81,8 @@ export const gptOss20b = wrapAISDKModel(openrouter.chat("openai/gpt-oss-20b"));
  * Anthropic Models (via OpenRouter)
  */
 export const claudeHaiku45 = wrapAISDKModel(openrouter.chat("anthropic/claude-haiku-4.5"));
+export const claudeSonnet45 = wrapAISDKModel(openrouter.chat("anthropic/claude-sonnet-4.5"));
+export const claudeOpus45 = wrapAISDKModel(openrouter.chat("anthropic/claude-opus-4.5"));
 
 /**
  * X.AI Models (via OpenRouter)
@@ -152,6 +154,8 @@ export const benchmarkModels = [
 
   // Anthropic models
   { name: "Claude Haiku 4.5", model: claudeHaiku45 },
+  { name: "Claude Sonnet 4.5", model: claudeSonnet45 },
+  { name: "Claude Opus 4.5", model: claudeOpus45 },
 
   // X.AI models
   { name: "Grok 4.1 Fast", model: grok41Fast },
@@ -188,7 +192,7 @@ export const benchmarkModels = [
  * You can use these to run evaluations on specific categories
  */
 export const openaiModels = [gpt52, gpt51, gpt5Nano, gptOss120b, gptOss20b];
-export const anthropicModels = [claudeHaiku45];
+export const anthropicModels = [claudeHaiku45, claudeSonnet45, claudeOpus45];
 export const xaiModels = [grok41Fast, grok4];
 export const googleModels = [gemini3FlashPreview, gemini3ProPreview];
 export const mistralModels = [mistralLarge2512];

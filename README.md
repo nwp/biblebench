@@ -231,19 +231,22 @@ pnpm eval evals/theology/core-doctrines.eval.ts
 
 ## 🤖 Configured Models
 
-BibleBench is currently configured to test **17 cutting-edge models** across 10 different providers, all accessed through OpenRouter:
+BibleBench is currently configured to test **20 cutting-edge models** across 10 different providers, all accessed through OpenRouter:
 
-### OpenAI Models (5)
+### OpenAI Models (6)
 
 - **GPT-5 Mini** - Default judge model (efficient and cost-effective)
+- **GPT-5.2** - Latest generation with enhanced capabilities
 - **GPT-5.1** - Advanced reasoning model
 - **GPT-5 Nano** - Efficient compact model
 - **GPT-OSS-120B** - Open-source 120B parameter model
 - **GPT-OSS-20B** - Open-source 20B parameter model
 
-### Anthropic Models (1)
+### Anthropic Models (3)
 
 - **Claude Haiku 4.5** - Fast, efficient Claude variant
+- **Claude Sonnet 4.5** - Balanced quality and speed
+- **Claude Opus 4.5** - Maximum capability model
 
 ### X.AI Models (2)
 
