@@ -9,21 +9,29 @@ Get up and running with BibleBench in 5 minutes!
 pnpm install
 ```
 
-## Step 2: Set Up API Keys
+## Step 2: Set Up OpenRouter API Key
+
+BibleBench uses **OpenRouter** exclusively - you only need **one API key** for all models!
 
 ```bash
 # Copy the example environment file
 cp .env.example .env
 
-# Edit .env and add your API keys
-# At minimum, you need OPENAI_API_KEY for GPT models and the judge
+# Edit .env and add your OpenRouter API key
 ```
 
-Your `.env` should look like:
+Your `.env` should contain:
 ```env
-OPENAI_API_KEY=sk-proj-xxxxx
-ANTHROPIC_API_KEY=sk-ant-xxxxx
+OPENROUTER_API_KEY=your_openrouter_key_here
 ```
+
+**Get your API key:** https://openrouter.ai/keys
+
+**Why OpenRouter?**
+- ✅ One key for GPT, Claude, Llama, Grok, Gemini, and hundreds more
+- ✅ Pay-as-you-go pricing
+- ✅ Automatic failover
+- ✅ No need for multiple provider accounts
 
 ## Step 3: Run Your First Evaluation
 

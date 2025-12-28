@@ -148,20 +148,24 @@ cp .env.example .env
 
 ### Configuration
 
-Create a `.env` file with your API keys:
+BibleBench uses **OpenRouter** exclusively for accessing all LLM models. This means you only need **one API key** to access hundreds of models from multiple providers.
+
+Create a `.env` file with your OpenRouter API key:
 
 ```env
-# OpenAI (for GPT models)
-OPENAI_API_KEY=your_openai_key
-
-# Anthropic (for Claude models)
-ANTHROPIC_API_KEY=your_anthropic_key
-
-# X.AI (for Grok models - optional)
-XAI_API_KEY=your_xai_key
-
-# Other providers as needed
+# OpenRouter API Key (REQUIRED)
+# Get your key at: https://openrouter.ai/keys
+OPENROUTER_API_KEY=your_openrouter_key
 ```
+
+**Benefits of using OpenRouter:**
+- ✅ **One API key** for all models (GPT, Claude, Llama, Grok, Gemini, etc.)
+- ✅ **Pay-as-you-go pricing** with transparent per-token costs
+- ✅ **Automatic failover** for reliability
+- ✅ **Immediate access** to newly released models
+- ✅ **Unified billing** across all providers
+
+See available models at [OpenRouter Models](https://openrouter.ai/docs#models)
 
 ### Running Evaluations
 
@@ -196,25 +200,35 @@ pnpm eval evals/theology/core-doctrines.eval.ts
 
 ### Adding New Models
 
-Edit `evals/lib/models.ts`:
+All models are accessed through OpenRouter. Simply add any model from the [OpenRouter catalog](https://openrouter.ai/docs#models):
 
 ```typescript
-import { createOpenAI } from "@ai-sdk/openai";
+// In evals/lib/models.ts
 import { wrapAISDKModel } from "evalite/ai-sdk";
+import { createOpenRouter } from "@openrouter/ai-sdk-provider";
 
-const customProvider = createOpenAI({
-  baseURL: "https://api.custom.ai/v1",
-  apiKey: process.env.CUSTOM_API_KEY,
+const openrouter = createOpenRouter({
+  apiKey: process.env.OPENROUTER_API_KEY,
 });
 
-export const customModel = wrapAISDKModel(customProvider("model-name"));
+// Add any model from OpenRouter's catalog
+export const newModel = wrapAISDKModel(
+  openrouter.chat("provider/model-name")
+);
 
 // Add to benchmarkModels array
 export const benchmarkModels = [
   // ... existing models
-  { name: "Custom Model", model: customModel },
+  { name: "New Model", model: newModel },
 ];
 ```
+
+**Examples:**
+- `openrouter.chat("openai/gpt-4o")` - GPT-4o
+- `openrouter.chat("anthropic/claude-3.5-sonnet")` - Claude Sonnet
+- `openrouter.chat("meta-llama/llama-3.1-405b-instruct")` - Llama 3.1
+- `openrouter.chat("x-ai/grok-beta")` - Grok
+- `openrouter.chat("google/gemini-pro-1.5")` - Gemini Pro
 
 ### Creating Custom Scorers
 
