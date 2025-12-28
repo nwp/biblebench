@@ -37,7 +37,7 @@ BibleBench fills this gap by providing a rigorous, multi-dimensional benchmark g
 biblebench/
 ├── evals/
 │   ├── scripture/              # Scripture accuracy evaluations
-│   │   ├── exact-scripture-matching.eval.ts  # Exact verse recall across translations
+│   │   ├── scripture-matching.eval.ts  # Exact verse recall across translations
 │   │   ├── reference-knowledge.eval.ts
 │   │   └── context-understanding.eval.ts
 │   ├── theology/               # Theological concept evaluations
@@ -63,7 +63,7 @@ biblebench/
 
 Tests LLMs' foundational knowledge of the Bible itself.
 
-**Exact Scripture Matching** (`scripture/exact-scripture-matching.eval.ts`)
+**Exact Scripture Matching** (`scripture/scripture-matching.eval.ts`)
 
 - Precise recall of Bible verses with exact wording across multiple translations
 - Tests the same verses in KJV, NIV, ESV, and NASB to verify translation-specific accuracy
@@ -166,7 +166,7 @@ BibleBench employs multiple scoring approaches:
 
 ### Translation-Aware Scorers
 
-- **Exact Match**: Binary scorer for precise scripture text matching (used in exact-scripture-matching evaluation)
+- **Exact Match**: Binary scorer for precise scripture text matching (used in scripture-matching evaluation)
 - **Translation Phrase Match**: Checks for translation-specific key phrases (e.g., "begotten" in KJV)
 - **Translation Vocabulary Fidelity**: Validates use of appropriate vocabulary for each translation
 
@@ -552,7 +552,7 @@ The benchmark explicitly tests models on these major English translations:
 
 ### Evaluation Approach
 
-- **Exact Scripture Matching** (`exact-scripture-matching.eval.ts`): Tests precise recall of verses with exact wording across multiple translations
+- **Exact Scripture Matching** (`scripture-matching.eval.ts`): Tests precise recall of verses with exact wording across multiple translations
 - Each verse is tested in 2-4 different translations to verify translation-specific accuracy
 - Requires perfect matches—since scripture is sacred, no fuzzy matching is used
 - Tests both well-known verses (John 3:16, Psalm 23:1) and less common passages (Micah 6:8, Lamentations 3:22-23)

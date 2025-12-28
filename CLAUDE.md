@@ -37,7 +37,7 @@ biblebench/
 │           └── examples.md     # Usage examples
 ├── evals/
 │   ├── scripture/              # Scripture accuracy evaluations
-│   │   ├── exact-scripture-matching.eval.ts  # Exact verse recall across translations
+│   │   ├── scripture-matching.eval.ts  # Exact verse recall across translations
 │   │   ├── reference-knowledge.eval.ts
 │   │   └── context-understanding.eval.ts
 │   ├── theology/               # Theological concept evaluations
