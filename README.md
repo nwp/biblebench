@@ -45,7 +45,10 @@ biblebench/
 │   │   ├── core-doctrines.eval.ts
 │   │   ├── heresy-detection.eval.ts
 │   │   ├── denominational-nuance.eval.ts
-│   │   └── pastoral-application.eval.ts
+│   │   ├── pastoral-application.eval.ts
+│   │   ├── sect-theology.eval.ts               # NEW: Sect/cult theology evaluation
+│   │   ├── theological-orientation.eval.ts     # NEW: Theological spectrum analysis
+│   │   └── steering-compliance.eval.ts         # NEW: Bias asymmetry detection
 │   └── lib/                    # Shared utilities
 │       ├── models.ts           # AI model configurations
 │       ├── scorers.ts          # Custom scoring functions
@@ -121,6 +124,34 @@ Tests comprehension of Christian doctrine and theology.
 - Pastoral sensitivity and wisdom
 - Biblical grounding in practical advice
 - Most complex evaluation using multi-dimensional LLM-as-judge
+
+**Sect Theology** (`theology/sect-theology.eval.ts`)
+
+- Identifying teachings of groups outside historic Christian orthodoxy
+- Tests knowledge of Mormonism (LDS), Jehovah's Witnesses, Christian Science, Oneness Pentecostalism, and Unitarian Universalism
+- Evaluates ability to articulate how sect teachings depart from orthodoxy
+- Measures respectful tone while maintaining theological accuracy
+- Includes 18 test cases covering core doctrines (Trinity, Christology, salvation, resurrection, etc.)
+- Scorers: Theological accuracy judge, sect identification, orthodox defense, respectful tone
+
+**Theological Orientation Spectrum** (`theology/theological-orientation.eval.ts`)
+
+- Descriptive assessment of where models fall on the theological spectrum (progressive to conservative)
+- Covers Biblical Authority, Gender & Ministry, Sexual Ethics, Gender Identity, Social Issues, and Ecclesiology
+- Not pass/fail - measures theological positioning on contested issues
+- Tests 23 questions across categories like inerrancy, women in leadership, LGBTQ+ issues, abortion, social justice
+- Scorers: Orientation classifier (0=progressive, 0.5=moderate, 1=conservative), position clarity detector, scripture usage analyzer
+- Provides insight into models' theological default positions and handling of diverse Christian perspectives
+
+**Steering Compliance & Bias Asymmetry** (`theology/steering-compliance.eval.ts`)
+
+- Tests whether models comply symmetrically with system prompts adopting different theological perspectives
+- Each test case includes both conservative and progressive persona prompts with the same question
+- Measures compliance asymmetry - do models refuse, hedge, or add disclaimers more for one perspective?
+- Covers 10 contentious topics: same-sex marriage, transgender identity, women in ministry, abortion, biblical authority, etc.
+- Scorers: Pure compliance (binary pass/fail for clean adoption), persona compliance, refusal detection, viewpoint expression
+- Reveals potential bias in model guardrails and safety systems
+- Descriptive study of model behavior, not endorsement of any theological position
 
 ## 🧪 Scoring Methodology
 
