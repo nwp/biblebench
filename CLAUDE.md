@@ -141,12 +141,13 @@ This project uses **AI SDK v5** specifically. The skill understands v5 patterns 
 ## Key Files to Understand
 
 ### `evals/lib/models.ts`
-Configures AI SDK models wrapped with Evalite's `wrapAISDKModel` for:
+Configures AI SDK models accessed through OpenRouter, wrapped with Evalite's `wrapAISDKModel` for:
 - Automatic tracing of LLM calls
 - Intelligent caching of responses
-- Support for multiple providers (OpenAI, Anthropic, etc.)
+- Unified access to hundreds of models from multiple providers
 
 The `benchmarkModels` array defines which models are tested across all evaluations.
+All models are accessed through OpenRouter using a single API key.
 
 ### `evals/lib/scorers.ts`
 Defines reusable scoring functions:
@@ -183,13 +184,20 @@ const testData = [
 
 ### Adding New Models
 
-Edit `evals/lib/models.ts`:
+All models are accessed through OpenRouter. Edit `evals/lib/models.ts`:
 
 ```typescript
 import { wrapAISDKModel } from "evalite/ai-sdk";
-import { openai } from "@ai-sdk/openai";
+import { createOpenRouter } from "@openrouter/ai-sdk-provider";
 
-export const newModel = wrapAISDKModel(openai("model-name"));
+const openrouter = createOpenRouter({
+  apiKey: process.env.OPENROUTER_API_KEY,
+});
+
+// Add any model from OpenRouter's catalog
+export const newModel = wrapAISDKModel(
+  openrouter.chat("provider/model-name")
+);
 
 // Add to benchmarkModels array
 export const benchmarkModels = [
@@ -197,6 +205,8 @@ export const benchmarkModels = [
   { name: "New Model", model: newModel },
 ];
 ```
+
+See available models at: https://openrouter.ai/docs#models
 
 ### Creating New Scorers
 
@@ -267,10 +277,10 @@ pnpm eval --no-cache
 
 ## Environment Variables
 
-Required API keys (set in `.env`):
-- `OPENAI_API_KEY` - For GPT models and default judge
-- `ANTHROPIC_API_KEY` - For Claude models
-- Additional keys as needed for other providers
+Required API key (set in `.env`):
+- `OPENROUTER_API_KEY` - **Only key needed!** Provides access to all models (GPT, Claude, Llama, Grok, Gemini, etc.)
+
+Get your API key at: https://openrouter.ai/keys
 
 ## Theological Principles
 
@@ -329,28 +339,40 @@ See `CONTRIBUTING.md` for detailed guidelines. Key points:
 4. **Testing**: Run evaluations before submitting
 5. **Documentation**: Update relevant docs with changes
 
-## AI SDK v5 Notes
+## AI SDK v5 with OpenRouter
 
-This project uses AI SDK v5 specifically (not v6). Key patterns:
+This project uses AI SDK v5 (not v6) with OpenRouter for all model access. Key patterns:
 
 ```typescript
 import { generateText, generateObject } from "ai";
 import { wrapAISDKModel } from "evalite/ai-sdk";
+import { createOpenRouter } from "@openrouter/ai-sdk-provider";
+import { z } from "zod";
+
+// Configure OpenRouter
+const openrouter = createOpenRouter({
+  apiKey: process.env.OPENROUTER_API_KEY,
+});
+
+// Wrap models for Evalite
+const model = wrapAISDKModel(openrouter.chat("openai/gpt-4o"));
 
 // Text generation
 const result = await generateText({
-  model: wrappedModel,
+  model,
   prompt: "Your prompt",
   maxTokens: 300,
 });
 
 // Structured output (for LLM-as-judge)
 const result = await generateObject({
-  model: wrappedModel,
+  model,
   schema: z.object({/* zod schema */}),
   prompt: "Your prompt",
 });
 ```
+
+All models are accessed through OpenRouter - no direct provider integrations needed.
 
 ## Helpful Commands
 
