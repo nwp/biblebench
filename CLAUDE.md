@@ -26,7 +26,11 @@ Built with Evalite (beta) and AI SDK v5, it provides rigorous, reproducible test
 biblebench/
 ├── .claude/
 │   └── skills/
-│       └── evalite/            # Evalite expertise skill
+│       ├── evalite/            # Evalite expertise skill
+│       │   ├── SKILL.md        # Core skill definition
+│       │   ├── reference.md    # API reference
+│       │   └── examples.md     # Usage examples
+│       └── ai-sdk-v5/          # AI SDK v5 expertise skill
 │           ├── SKILL.md        # Core skill definition
 │           ├── reference.md    # API reference
 │           └── examples.md     # Usage examples
@@ -90,6 +94,49 @@ Simply ask naturally, and the skill will activate automatically:
 - "Add support for Gemini models to the benchmark"
 
 The skill provides deep Evalite expertise combined with BibleBench-specific theological and technical patterns, making development much more efficient.
+
+## AI SDK v5 Skill
+
+This project also includes a **Claude Code skill** for AI SDK v5 (not v6), providing expert assistance with LLM integration and text generation.
+
+### What is the AI SDK v5 Skill?
+
+Located in `.claude/skills/ai-sdk-v5/`, this skill makes Claude Code an expert in:
+- Using `generateText` and `generateObject` (v5 APIs)
+- Configuring model providers (OpenAI, Anthropic, OpenRouter, etc.)
+- Creating Zod schemas for structured output
+- Optimizing prompts and model parameters
+- Debugging AI SDK errors and issues
+- Integrating AI SDK with Evalite
+
+### Skill Files
+
+- **SKILL.md** - Core skill with AI SDK v5 concepts, patterns, and best practices
+- **reference.md** - Complete API reference for generateText, generateObject, providers, and Zod
+- **examples.md** - 15 practical examples covering common use cases
+
+### When It Activates
+
+The skill automatically triggers when you mention:
+- Text generation with `generateText` or `generateObject`
+- Model configuration or provider setup
+- Zod schema creation
+- LLM-as-judge implementation
+- AI SDK debugging or optimization
+- Temperature, tokens, or other model parameters
+
+### Example Usage
+
+Simply ask naturally, and the skill will activate automatically:
+- "How do I use generateObject with a Zod schema for scoring?"
+- "Add Claude Opus 4 to the benchmark models"
+- "Create an LLM-as-judge with structured output"
+- "Debug why my generateText call is failing"
+- "Set up OpenRouter to access multiple models"
+
+### Important: v5 vs v6
+
+This project uses **AI SDK v5** specifically. The skill understands v5 patterns where `generateObject` is the standard way to get structured output. Do not confuse with v6, where `generateObject` is deprecated in favor of `generateText` with an `output` parameter.
 
 ## Key Files to Understand
 
