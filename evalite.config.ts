@@ -6,5 +6,5 @@ export default {
   // Increase timeout for rate-limited free tier models
   // With 3.5s delays between requests + API latency + retries,
   // tests need more than the default 30s timeout
-  testTimeout: 120000, // 2 minutes
+  testTimeout: 600000, // 10 minutes
 };

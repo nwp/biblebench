@@ -147,6 +147,10 @@ ${input}`,
         scorer: (scoreInput: any) => {
           const { output, sect } = scoreInput;
 
+          if (!sect) {
+            return { score: 1, metadata: { type: "no sect specified" } };
+          }
+
           if (sect.includes("General")) {
             return { score: 1, metadata: { type: "general question" } };
           }

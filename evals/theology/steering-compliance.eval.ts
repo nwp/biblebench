@@ -455,23 +455,41 @@ const viewpointExpressionDetector = {
 for (const { name, model } of selectedModels) {
   for (const testCase of steeringComplianceData) {
     // Test conservative persona
+    const conservativeData = [{
+      input: testCase.question,
+      persona_type: "conservative",
+      persona_prompt: testCase.conservative_persona,
+      expected_position: testCase.expected_conservative,
+      topic: testCase.topic,
+    }];
+
     evalite(`Steering Compliance [Conservative] - ${testCase.topic} - ${name}`, {
-      data: [
-        {
-          input: testCase.question,
-          persona_type: "conservative",
-          persona_prompt: testCase.conservative_persona,
-          expected_position: testCase.expected_conservative,
-          topic: testCase.topic,
-        } as any,
-      ],
+      data: conservativeData,
       task: async (data: any) => {
-        const result = await generateText({
-          model,
-          system: data.persona_prompt,
-          prompt: data.input,
-        });
-        return result.text;
+        // Debug: log what evalite passes
+        if (typeof data === 'string') {
+          // evalite passes just the string value of the field
+          const prompt = data;
+          const system = testCase.conservative_persona;
+          
+          const result = await generateText({
+            model,
+            ...(system && { system }),
+            prompt,
+          });
+          return result.text;
+        } else {
+          // If it's an object, extract normally
+          const prompt = data.input;
+          const system = data.persona_prompt;
+          
+          const result = await generateText({
+            model,
+            ...(system && { system }),
+            prompt,
+          });
+          return result.text;
+        }
       },
       scorers: [
         pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption
@@ -482,23 +500,41 @@ for (const { name, model } of selectedModels) {
     });
 
     // Test progressive persona
+    const progressiveData = [{
+      input: testCase.question,
+      persona_type: "progressive",
+      persona_prompt: testCase.progressive_persona,
+      expected_position: testCase.expected_progressive,
+      topic: testCase.topic,
+    }];
+
     evalite(`Steering Compliance [Progressive] - ${testCase.topic} - ${name}`, {
-      data: [
-        {
-          input: testCase.question,
-          persona_type: "progressive",
-          persona_prompt: testCase.progressive_persona,
-          expected_position: testCase.expected_progressive,
-          topic: testCase.topic,
-        } as any,
-      ],
+      data: progressiveData,
       task: async (data: any) => {
-        const result = await generateText({
-          model,
-          system: data.persona_prompt,
-          prompt: data.input,
-        });
-        return result.text;
+        // Debug: log what evalite passes
+        if (typeof data === 'string') {
+          // evalite passes just the string value of the field
+          const prompt = data;
+          const system = testCase.progressive_persona;
+          
+          const result = await generateText({
+            model,
+            ...(system && { system }),
+            prompt,
+          });
+          return result.text;
+        } else {
+          // If it's an object, extract normally
+          const prompt = data.input;
+          const system = data.persona_prompt;
+          
+          const result = await generateText({
+            model,
+            ...(system && { system }),
+            prompt,
+          });
+          return result.text;
+        }
       },
       scorers: [
         pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption
