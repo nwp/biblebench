@@ -1,0 +1,238 @@
+/* ===================================================================
+   BibleBench Dashboard - Chart Styles
+   Clean, professional data visualization
+   =================================================================== */
+
+/* Chart Containers - Minimal and focused */
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 320px;
+  margin: var(--space-8) 0;
+  padding: var(--space-8);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--slate-300);
+}
+
+/* Overall Leaderboard Chart - Featured */
+#chart-overall-leaderboard {
+  min-height: 450px;
+  max-height: 700px;
+}
+
+/* Evaluation Charts */
+.evaluation-section canvas {
+  min-height: 320px;
+  max-height: 550px;
+}
+
+/* Loading State */
+.chart-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  color: var(--text-tertiary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.chart-loading::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--space-4);
+  border: 3px solid var(--border-subtle);
+  border-top-color: var(--slate-950);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.chart-loading::after {
+  content: 'Loading chart data...';
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+}
+
+/* Error State */
+.chart-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  padding: var(--space-10);
+  text-align: center;
+  background: var(--bg-page);
+  border: 2px dashed var(--rose-500);
+}
+
+.chart-error-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-4);
+  opacity: 0.6;
+}
+
+.chart-error-message {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--rose-500);
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chart-error-details {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* No Data State */
+.chart-no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  color: var(--text-tertiary);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: var(--bg-page);
+  border: 2px dashed var(--border-default);
+}
+
+.chart-no-data::before {
+  content: '📊';
+  font-size: 2.5rem;
+  margin-bottom: var(--space-4);
+  opacity: 0.4;
+}
+
+/* Canvas element */
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+canvas:focus {
+  outline: 2px solid var(--slate-950);
+  outline-offset: 4px;
+}
+
+/* Chart.js tooltip customization (via JS) */
+.chartjs-tooltip {
+  opacity: 1;
+  position: absolute;
+  background: var(--slate-950);
+  color: white;
+  border-radius: 0;
+  padding: var(--space-3) var(--space-4);
+  pointer-events: none;
+  transform: translate(-50%, -110%);
+  transition: all 0.2s ease;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-xl);
+  z-index: 1000;
+  max-width: 280px;
+  border: 2px solid var(--accent-primary);
+}
+
+.chartjs-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--slate-950);
+}
+
+.chartjs-tooltip-key {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: var(--space-2);
+  border-radius: 0;
+  border: 1px solid white;
+}
+
+/* Chart.js legend customization (via JS) */
+.chartjs-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3) var(--space-5);
+  margin-top: var(--space-8);
+  padding: var(--space-5);
+  background: var(--bg-page);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.chartjs-legend-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding: var(--space-2) var(--space-3);
+  transition: all 0.15s ease;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.chartjs-legend-item:hover {
+  background: var(--bg-surface);
+}
+
+.chartjs-legend-item.hidden {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.chartjs-legend-color {
+  width: 16px;
+  height: 16px;
+  margin-right: var(--space-2);
+  border-radius: 0;
+  border: 2px solid var(--slate-200);
+}
+
+.chartjs-legend-label {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Chart accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .chart-loading::before {
+    animation: none;
+  }
+
+  canvas {
+    transition: none;
+  }
+}
+
+/* Touch device improvements */
+@media (hover: none) and (pointer: coarse) {
+  .chart-container {
+    padding: var(--space-6);
+  }
+
+  canvas {
+    min-height: 280px;
+  }
+}

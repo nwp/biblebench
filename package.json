@@ -13,8 +13,12 @@
     "eval:gpt": "MODELS=gpt evalite run",
     "eval:claude": "MODELS=claude evalite run",
     "eval:single": "MODELS='gpt-oss-20b' evalite serve evals/theology/theological-orientation.eval.ts",
-    "eval:export": "MODELS='gpt-oss' evalite export --output=eval-results",
-    "eval:view": "pnpm dlx serve -s ./eval-results"
+    "eval:export": "MODELS='gpt-oss' evalite export --output=docs/traces --basePath=/traces",
+    "eval:view": "pnpm dlx serve -s ./docs/traces",
+    "dashboard:build": "node scripts/build-dashboard.js",
+    "dashboard:serve": "pnpm dlx serve -s ./docs",
+    "dashboard:dev": "pnpm dashboard:build && pnpm dashboard:serve",
+    "deploy": "pnpm eval:export && pnpm dashboard:build"
   },
   "keywords": [
     "llm",

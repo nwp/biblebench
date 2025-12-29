@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Industry-standard LLM benchmark for Christian scripture accuracy and theological understanding">
+  <title>BibleBench - LLM Benchmark for Christian Scripture & Theology</title>
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="./data/dashboard.json" as="fetch" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/charts.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Application JavaScript (ES6 modules) -->
+  <script type="module" src="./js/main.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="title">
+          <span class="title-main">BibleBench</span>
+          <span class="title-sub">LLM Benchmark for Christian Scripture & Theology</span>
+        </h1>
+        <p class="subtitle">
+          Rigorous evaluation of Large Language Models on scripture accuracy, theological understanding, and pastoral wisdom
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-value" id="stat-models">-</span>
+          <span class="stat-label">Models Tested</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="stat-evaluations">-</span>
+          <span class="stat-label">Evaluations</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="stat-test-cases">-</span>
+          <span class="stat-label">Test Cases</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="stat-overall-score">-</span>
+          <span class="stat-label">Avg Benchmark Score</span>
+        </div>
+      </div>
+      <div class="stats-actions">
+        <a href="./traces/" class="btn btn-primary">
+          View Detailed Traces →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Model Filter Section -->
+      <section class="model-filter-section">
+        <h2>Filter Models</h2>
+        <div class="model-filter">
+          <button class="filter-trigger" id="filter-trigger" aria-expanded="false">
+            <span id="filter-label">Select Models</span>
+            <span class="badge" id="filter-badge">- of -</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="filter-panel" id="filter-panel" hidden>
+            <div class="filter-search">
+              <input
+                type="search"
+                id="filter-search"
+                placeholder="Search models by name..."
+                aria-label="Search models"
+              >
+            </div>
+            <div class="filter-actions">
+              <button class="btn btn-sm" id="select-all">Select All</button>
+              <button class="btn btn-sm" id="deselect-all">Deselect All</button>
+            </div>
+            <div class="model-groups" id="model-groups">
+              <!-- Populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Overall Leaderboard -->
+      <section class="section leaderboard-section">
+        <h2>Overall Benchmark Rankings</h2>
+        <p class="section-description">
+          Average performance across all evaluations. Higher scores indicate better overall performance.
+        </p>
+        <div class="chart-container">
+          <canvas id="chart-overall-leaderboard" aria-label="Overall benchmark rankings chart"></canvas>
+        </div>
+        <div class="chart-controls">
+          <button class="btn btn-sm" id="show-all-models" hidden>Show All Models</button>
+          <p class="chart-note" id="leaderboard-note"></p>
+        </div>
+      </section>
+
+      <!-- Scripture Accuracy Category -->
+      <section class="section category-section">
+        <h2 class="category-title">Scripture Accuracy</h2>
+        <p class="category-description">
+          Tests foundational knowledge of the Bible itself—verse recall, reference knowledge, and biblical context.
+        </p>
+
+        <!-- Exact Scripture Matching -->
+        <div class="evaluation-section" data-eval-id="exact-scripture-matching">
+          <h3 class="eval-title">Exact Scripture Matching</h3>
+          <div class="chart-container">
+            <canvas id="chart-exact-scripture-matching" aria-label="Exact Scripture Matching scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-exact-scripture-matching">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+        <!-- Reference Knowledge -->
+        <div class="evaluation-section" data-eval-id="reference-knowledge">
+          <h3 class="eval-title">Reference Knowledge</h3>
+          <div class="chart-container">
+            <canvas id="chart-reference-knowledge" aria-label="Reference Knowledge scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-reference-knowledge">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+        <!-- Context Understanding -->
+        <div class="evaluation-section" data-eval-id="context-understanding">
+          <h3 class="eval-title">Context Understanding</h3>
+          <div class="chart-container">
+            <canvas id="chart-context-understanding" aria-label="Context Understanding scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-context-understanding">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Theological Understanding Category -->
+      <section class="section category-section">
+        <h2 class="category-title">Theological Understanding</h2>
+        <p class="category-description">
+          Tests comprehension of Christian doctrine, orthodoxy, denominational diversity, and pastoral application.
+        </p>
+
+        <!-- Core Doctrines -->
+        <div class="evaluation-section" data-eval-id="core-doctrines">
+          <h3 class="eval-title">Core Doctrines</h3>
+          <div class="chart-container">
+            <canvas id="chart-core-doctrines" aria-label="Core Doctrines scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-core-doctrines">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+        <!-- Heresy Detection -->
+        <div class="evaluation-section" data-eval-id="heresy-detection">
+          <h3 class="eval-title">Heresy Detection</h3>
+          <div class="chart-container">
+            <canvas id="chart-heresy-detection" aria-label="Heresy Detection scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-heresy-detection">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+        <!-- Denominational Nuance -->
+        <div class="evaluation-section" data-eval-id="denominational-nuance">
+          <h3 class="eval-title">Denominational Nuance</h3>
+          <div class="chart-container">
+            <canvas id="chart-denominational-nuance" aria-label="Denominational Nuance scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-denominational-nuance">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+        <!-- Pastoral Application -->
+        <div class="evaluation-section" data-eval-id="pastoral-application">
+          <h3 class="eval-title">Pastoral Application</h3>
+          <div class="chart-container">
+            <canvas id="chart-pastoral-application" aria-label="Pastoral Application scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-pastoral-application">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+        <!-- Sect Theology -->
+        <div class="evaluation-section" data-eval-id="sect-theology">
+          <h3 class="eval-title">Sect Theology</h3>
+          <div class="chart-container">
+            <canvas id="chart-sect-theology" aria-label="Sect Theology scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-sect-theology">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+        <!-- Theological Orientation -->
+        <div class="evaluation-section" data-eval-id="theological-orientation">
+          <h3 class="eval-title">Theological Orientation</h3>
+          <div class="chart-container">
+            <canvas id="chart-theological-orientation" aria-label="Theological Orientation scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-theological-orientation">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+        <!-- Steering Compliance - Conservative -->
+        <div class="evaluation-section" data-eval-id="steering-compliance-conservative">
+          <h3 class="eval-title">Steering Compliance - Conservative</h3>
+          <div class="chart-container">
+            <canvas id="chart-steering-compliance-conservative" aria-label="Steering Compliance Conservative scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-steering-compliance-conservative">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+        <!-- Steering Compliance - Progressive -->
+        <div class="evaluation-section" data-eval-id="steering-compliance-progressive">
+          <h3 class="eval-title">Steering Compliance - Progressive</h3>
+          <div class="chart-container">
+            <canvas id="chart-steering-compliance-progressive" aria-label="Steering Compliance Progressive scores by model"></canvas>
+          </div>
+          <details class="evaluation-info">
+            <summary>About this evaluation</summary>
+            <div class="info-content" id="info-steering-compliance-progressive">
+              <!-- Populated by JavaScript -->
+            </div>
+          </details>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        BibleBench is an open-source benchmark for evaluating LLMs on Christian scripture and theology.
+        <br>
+        Built with <a href="https://evalite.dev" target="_blank" rel="noopener">Evalite</a> and <a href="https://sdk.vercel.ai" target="_blank" rel="noopener">AI SDK v5</a>.
+      </p>
+      <p class="footer-links">
+        <a href="https://github.com/yourusername/biblebench" target="_blank" rel="noopener">GitHub</a> •
+        <a href="./traces/" target="_blank">Detailed Traces</a> •
+        <a href="https://github.com/yourusername/biblebench/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
