@@ -451,97 +451,101 @@ const viewpointExpressionDetector = {
   }
 };
 
-// Run the evaluation: Each test case creates TWO evaluations (conservative + progressive)
-for (const { name, model } of selectedModels) {
-  for (const testCase of steeringComplianceData) {
-    // Test conservative persona
-    const conservativeData = [{
-      input: testCase.question,
-      persona_type: "conservative",
-      persona_prompt: testCase.conservative_persona,
-      expected_position: testCase.expected_conservative,
-      topic: testCase.topic,
-    }];
+// Run A/B testing across all models: Each test case creates TWO evaluations (conservative + progressive)
+for (const testCase of steeringComplianceData) {
+  // Test conservative persona
+  const conservativeData = [{
+    input: testCase.question,
+    persona_type: "conservative",
+    persona_prompt: testCase.conservative_persona,
+    expected_position: testCase.expected_conservative,
+    topic: testCase.topic,
+  }];
 
-    evalite(`Steering Compliance [Conservative] - ${testCase.topic} - ${name}`, {
-      data: conservativeData,
-      task: async (data: any) => {
-        // Debug: log what evalite passes
-        if (typeof data === 'string') {
-          // evalite passes just the string value of the field
-          const prompt = data;
-          const system = testCase.conservative_persona;
-          
-          const result = await generateText({
-            model,
-            ...(system && { system }),
-            prompt,
-          });
-          return result.text;
-        } else {
-          // If it's an object, extract normally
-          const prompt = data.input;
-          const system = data.persona_prompt;
-          
-          const result = await generateText({
-            model,
-            ...(system && { system }),
-            prompt,
-          });
-          return result.text;
-        }
-      },
+  evalite.each(
+    selectedModels.map(({ name, model }) => ({ name: `${testCase.topic} - ${name}`, input: { model } }))
+  )("Steering Compliance - Conservative", {
+    data: async () => conservativeData,
+    task: async (data: any, variant: any) => {
+      // Debug: log what evalite passes
+      if (typeof data === 'string') {
+        // evalite passes just the string value of the field
+        const prompt = data;
+        const system = testCase.conservative_persona;
+
+        const result = await generateText({
+          model: variant.input.model,
+          ...(system && { system }),
+          prompt,
+        });
+        return result.text;
+      } else {
+        // If it's an object, extract normally
+        const prompt = data.input;
+        const system = data.persona_prompt;
+
+        const result = await generateText({
+          model: variant.input.model,
+          ...(system && { system }),
+          prompt,
+        });
+        return result.text;
+      }
+    },
       scorers: [
         pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption
         complianceScorer,
         refusalDetector,
         viewpointExpressionDetector,
       ],
-    });
+    }
+  );
 
-    // Test progressive persona
-    const progressiveData = [{
-      input: testCase.question,
-      persona_type: "progressive",
-      persona_prompt: testCase.progressive_persona,
-      expected_position: testCase.expected_progressive,
-      topic: testCase.topic,
-    }];
+  // Test progressive persona
+  const progressiveData = [{
+    input: testCase.question,
+    persona_type: "progressive",
+    persona_prompt: testCase.progressive_persona,
+    expected_position: testCase.expected_progressive,
+    topic: testCase.topic,
+  }];
 
-    evalite(`Steering Compliance [Progressive] - ${testCase.topic} - ${name}`, {
-      data: progressiveData,
-      task: async (data: any) => {
-        // Debug: log what evalite passes
-        if (typeof data === 'string') {
-          // evalite passes just the string value of the field
-          const prompt = data;
-          const system = testCase.progressive_persona;
-          
-          const result = await generateText({
-            model,
-            ...(system && { system }),
-            prompt,
-          });
-          return result.text;
-        } else {
-          // If it's an object, extract normally
-          const prompt = data.input;
-          const system = data.persona_prompt;
-          
-          const result = await generateText({
-            model,
-            ...(system && { system }),
-            prompt,
-          });
-          return result.text;
-        }
-      },
+  evalite.each(
+    selectedModels.map(({ name, model }) => ({ name: `${testCase.topic} - ${name}`, input: { model } }))
+  )("Steering Compliance - Progressive", {
+    data: async () => progressiveData,
+    task: async (data: any, variant: any) => {
+      // Debug: log what evalite passes
+      if (typeof data === 'string') {
+        // evalite passes just the string value of the field
+        const prompt = data;
+        const system = testCase.progressive_persona;
+
+        const result = await generateText({
+          model: variant.input.model,
+          ...(system && { system }),
+          prompt,
+        });
+        return result.text;
+      } else {
+        // If it's an object, extract normally
+        const prompt = data.input;
+        const system = data.persona_prompt;
+
+        const result = await generateText({
+          model: variant.input.model,
+          ...(system && { system }),
+          prompt,
+        });
+        return result.text;
+      }
+    },
       scorers: [
         pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption
         complianceScorer,
         refusalDetector,
         viewpointExpressionDetector,
       ],
-    });
-  }
+    }
+  );
 }

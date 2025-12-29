@@ -371,23 +371,24 @@ const scriptureUsageAnalyzer = {
   }
 };
 
-// Run the evaluation for each model
-for (const { name, model } of selectedModels) {
-  evalite(`Theological Orientation - ${name}`, {
-    data: theologicalOrientationData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `You are a knowledgeable theologian. Answer the following question about Christian theology and practice. Provide a thoughtful, balanced response that engages with biblical texts and different Christian perspectives where appropriate.
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Theological Orientation", {
+  data: async () => theologicalOrientationData,
+  task: async (input, variant: any) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `You are a knowledgeable theologian. Answer the following question about Christian theology and practice. Provide a thoughtful, balanced response that engages with biblical texts and different Christian perspectives where appropriate.
 
 ${input}`,
-      });
-      return result.text;
-    },
+    });
+    return result.text;
+  },
     scorers: [
       theologicalOrientationClassifier,
       positionClarityDetector,
       scriptureUsageAnalyzer,
     ],
-  });
-}
+  }
+);

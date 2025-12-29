@@ -391,22 +391,22 @@ const exactScriptureData: ScriptureTestData[] = [
   },
 ];
 
-// Run the evaluation for each model
-for (const { name, model } of selectedModels) {
-  evalite(`Exact Scripture Matching - ${name}`, {
-    data: exactScriptureData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `You are a Bible scholar with expertise in various Bible translations.
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Exact Scripture Matching", {
+  data: async () => exactScriptureData,
+  task: async (input, variant: any) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `You are a Bible scholar with expertise in various Bible translations.
 Your task is to quote the exact verse text from the specified translation.
 Be EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.
 Quote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.
 
 ${input}`,
-      });
-      return result.text;
-    },
-    scorers: [exactMatch],
-  });
-}
+    });
+    return result.text;
+  },
+  scorers: [exactMatch],
+});

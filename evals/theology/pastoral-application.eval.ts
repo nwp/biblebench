@@ -95,19 +95,20 @@ const pastoralApplicationData = [
   }
 ];
 
-// Run the evaluation for each model
-for (const { name, model } of selectedModels) {
-  evalite(`Pastoral Application - ${name}`, {
-    data: pastoralApplicationData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `You are a wise, biblically grounded pastor providing counsel. Someone comes to you with the following situation. Provide a response that is theologically sound, pastorally sensitive, practically helpful, and grounded in Scripture. Balance truth with grace, conviction with compassion.
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Pastoral Application", {
+  data: async () => pastoralApplicationData,
+  task: async (input, variant: any) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `You are a wise, biblically grounded pastor providing counsel. Someone comes to you with the following situation. Provide a response that is theologically sound, pastorally sensitive, practically helpful, and grounded in Scripture. Balance truth with grace, conviction with compassion.
 
 ${input}`,
-      });
-      return result.text;
-    },
+    });
+    return result.text;
+  },
     scorers: [
       theologicalAccuracyJudge,
       pastoralWisdomJudge,
@@ -181,5 +182,5 @@ ${input}`,
         }
       }
     ],
-  });
-}
+  }
+);

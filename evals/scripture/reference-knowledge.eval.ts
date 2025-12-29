@@ -53,17 +53,18 @@ const referenceKnowledgeData = [
   }
 ];
 
-// Run the evaluation for each model
-for (const { name, model } of selectedModels) {
-  evalite(`Reference Knowledge - ${name}`, {
-    data: referenceKnowledgeData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., "John 3:16").\n\n${input}`,
-      });
-      return result.text;
-    },
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Reference Knowledge", {
+  data: async () => referenceKnowledgeData,
+  task: async (input, variant: any) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., "John 3:16").\n\n${input}`,
+    });
+    return result.text;
+  },
     scorers: [
       scriptureReferenceAccuracy,
       containsAnswer,
@@ -86,5 +87,5 @@ for (const { name, model } of selectedModels) {
         }
       }
     ],
-  });
-}
+  }
+);
