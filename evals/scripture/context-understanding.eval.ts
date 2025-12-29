@@ -94,11 +94,11 @@ ${input}`,
 
           for (const point of keyPoints) {
             const pointLower = point.toLowerCase();
-            const pointWords = pointLower.split(/\s+/);
+            const pointWords = pointLower.split(/\s+/).filter(word => word.length > 2);
 
-            // Check if at least 50% of the words in the key point appear in output
+            // Check if at least 50% of the significant words appear in output
             const matchingWords = pointWords.filter(word =>
-              word.length > 2 && outputLower.includes(word)
+              outputLower.includes(word)
             );
 
             if (matchingWords.length >= Math.max(1, pointWords.length * 0.5)) {
