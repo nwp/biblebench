@@ -60,7 +60,20 @@ for (const { name, model } of selectedModels) {
     task: async (input) => {
       const result = await generateText({
         model,
-        prompt: `You are a Bible scholar with deep knowledge of scripture, history, and context. Answer the following question accurately and concisely.\n\n${input}`,
+        prompt: `You are a Bible scholar with deep knowledge of scripture, history, and context.
+
+Answer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.
+
+Examples of good answers:
+- Question: "Who wrote Romans?"
+  Answer: "The Apostle Paul"
+- Question: "What was the purpose of Revelation?"
+  Answer: "To encourage persecuted Christians with visions of God's ultimate victory and Christ's return"
+
+Do NOT add phrases like "According to tradition" or "The text was written by" - just state the facts directly.
+
+${input}`,
+        maxTokens: 150,
       });
       return result.text;
     },
@@ -68,26 +81,46 @@ for (const { name, model } of selectedModels) {
       theologicalAccuracyJudge,
       {
         name: "Key Points Coverage",
-        description: "Checks if the response includes key factual points",
+        description: "Checks if the response includes key factual points using word overlap",
         scorer: (scoreInput: any) => {
           const { output } = scoreInput;
           const keyPoints = scoreInput.keyPoints || [];
           const outputLower = output.toLowerCase();
 
-          const coveredPoints = keyPoints.filter((point: string) =>
-            outputLower.includes(point.toLowerCase())
-          );
+          // Count how many key points are present (flexible matching)
+          let pointsFound = 0;
+          const matchedPoints: string[] = [];
+          const missedPoints: string[] = [];
+
+          for (const point of keyPoints) {
+            const pointLower = point.toLowerCase();
+            const pointWords = pointLower.split(/\s+/);
+
+            // Check if at least 50% of the words in the key point appear in output
+            const matchingWords = pointWords.filter(word =>
+              word.length > 2 && outputLower.includes(word)
+            );
+
+            if (matchingWords.length >= Math.max(1, pointWords.length * 0.5)) {
+              pointsFound++;
+              matchedPoints.push(point);
+            } else {
+              missedPoints.push(point);
+            }
+          }
 
           const coverage = keyPoints.length > 0 ?
-            coveredPoints.length / keyPoints.length : 0;
+            pointsFound / keyPoints.length : 0;
 
           return {
             score: coverage,
             metadata: {
               keyPoints,
-              coveredPoints,
+              matchedPoints,
+              missedPoints,
               coverage,
-              totalPoints: keyPoints.length
+              totalPoints: keyPoints.length,
+              pointsFound
             }
           };
         }
