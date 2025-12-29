@@ -60,7 +60,7 @@ evalite.each(
   data: async () => contextUnderstandingData,
   task: async (input, variant: any) => {
     const result = await generateText({
-      model: variant.input.model,
+      model: variant.model,
       prompt: `You are a Bible scholar with deep knowledge of scripture, history, and context.
 
 Answer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.

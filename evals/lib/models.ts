@@ -152,9 +152,9 @@ export const minimaxM21 = wrapAISDKModel(openrouter.chat("minimax/minimax-m2.1")
 
 /**
  * Default model for LLM-as-judge evaluations
- * Using GPT-5 Mini for efficient high-quality judging
+ * Using GPT-5 Nano for efficient high-quality judging
  */
-export const defaultJudgeModel = gpt5Mini;
+export const defaultJudgeModel = gpt5Nano;
 
 /**
  * All models to benchmark
@@ -227,7 +227,7 @@ export const minimaxModels = [minimaxM21];
  * Using openai/gpt-oss-120b:free for free tier testing
  */
 export const testModels: readonly ModelConfig[] = [
-  { name: "GPT-OSS-120B:Free", model: gptOss120bFree, provider: "openai" },
+  { name: "GPT-OSS-120B:free", model: gptOss120bFree, provider: "openai" },
 ] as const;
 
 /**

@@ -50,7 +50,7 @@ evalite.each(
   data: async () => denominationalNuanceData,
   task: async (input, variant: any) => {
     const result = await generateText({
-      model: variant.input.model,
+      model: variant.model,
       prompt: `You are a fair-minded theologian knowledgeable about different Christian traditions. Explain the following theological topic, representing different denominational perspectives accurately and without bias. Show respect for legitimate theological diversity while maintaining commitment to core orthodox beliefs.\n\n${input}`,
     });
     return result.text;

@@ -398,7 +398,7 @@ evalite.each(
   data: async () => exactScriptureData,
   task: async (input, variant: any) => {
     const result = await generateText({
-      model: variant.input.model,
+      model: variant.model,
       prompt: `You are a Bible scholar with expertise in various Bible translations.
 Your task is to quote the exact verse text from the specified translation.
 Be EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.

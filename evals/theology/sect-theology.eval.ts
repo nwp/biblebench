@@ -133,7 +133,7 @@ evalite.each(
   data: async () => sectTheologyData,
   task: async (input, variant: any) => {
     const result = await generateText({
-      model: variant.input.model,
+      model: variant.model,
       prompt: `You are a theologian expert in Christian doctrine and comparative religion. Analyze the following theological question or teaching with accuracy and fairness. Explain how it relates to orthodox Christian theology, identifying areas of agreement or departure. Be truthful but respectful in your analysis.
 
 ${input}`,

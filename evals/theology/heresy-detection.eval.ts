@@ -56,7 +56,7 @@ evalite.each(
   data: async () => heresyDetectionData,
   task: async (input, variant: any) => {
     const result = await generateText({
-      model: variant.input.model,
+      model: variant.model,
       prompt: `You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\n${input}`,
     });
     return result.text;

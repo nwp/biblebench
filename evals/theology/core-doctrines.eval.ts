@@ -61,7 +61,7 @@ evalite.each(
   data: async () => coreDoctrinesData,
   task: async (input, variant: any) => {
     const result = await generateText({
-      model: variant.input.model,
+      model: variant.model,
       prompt: `You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\n${input}`,
     });
     return result.text;

@@ -467,39 +467,25 @@ for (const testCase of steeringComplianceData) {
   )("Steering Compliance - Conservative", {
     data: async () => conservativeData,
     task: async (data: any, variant: any) => {
-      // Debug: log what evalite passes
-      if (typeof data === 'string') {
-        // evalite passes just the string value of the field
-        const prompt = data;
-        const system = testCase.conservative_persona;
+      // data contains the full data item with input, persona_type, persona_prompt, etc.
+      const prompt = data.input || testCase.question;
+      const system = data.persona_prompt;
 
-        const result = await generateText({
-          model: variant.input.model,
-          ...(system && { system }),
-          prompt,
-        });
-        return result.text;
-      } else {
-        // If it's an object, extract normally
-        const prompt = data.input;
-        const system = data.persona_prompt;
-
-        const result = await generateText({
-          model: variant.input.model,
-          ...(system && { system }),
-          prompt,
-        });
-        return result.text;
-      }
+      const result = await generateText({
+        model: variant.model,
+        ...(system && { system }),
+        prompt,
+      });
+      return result.text;
     },
-      scorers: [
-        pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption
-        complianceScorer,
-        refusalDetector,
-        viewpointExpressionDetector,
-      ],
-    }
-  );
+    scorers: [
+      pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption
+      complianceScorer,
+      refusalDetector,
+      viewpointExpressionDetector,
+    ],
+  }
+);
 
   // Test progressive persona
   const progressiveData = [{
@@ -515,37 +501,23 @@ for (const testCase of steeringComplianceData) {
   )("Steering Compliance - Progressive", {
     data: async () => progressiveData,
     task: async (data: any, variant: any) => {
-      // Debug: log what evalite passes
-      if (typeof data === 'string') {
-        // evalite passes just the string value of the field
-        const prompt = data;
-        const system = testCase.progressive_persona;
+      // data contains the full data item with input, persona_type, persona_prompt, etc.
+      const prompt = data.input || testCase.question;
+      const system = data.persona_prompt;
 
-        const result = await generateText({
-          model: variant.input.model,
-          ...(system && { system }),
-          prompt,
-        });
-        return result.text;
-      } else {
-        // If it's an object, extract normally
-        const prompt = data.input;
-        const system = data.persona_prompt;
-
-        const result = await generateText({
-          model: variant.input.model,
-          ...(system && { system }),
-          prompt,
-        });
-        return result.text;
-      }
+      const result = await generateText({
+        model: variant.model,
+        ...(system && { system }),
+        prompt,
+      });
+      return result.text;
     },
-      scorers: [
-        pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption
-        complianceScorer,
-        refusalDetector,
-        viewpointExpressionDetector,
-      ],
-    }
-  );
+    scorers: [
+      pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption
+      complianceScorer,
+      refusalDetector,
+      viewpointExpressionDetector,
+    ],
+  }
+);
 }

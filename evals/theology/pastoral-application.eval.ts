@@ -102,7 +102,7 @@ evalite.each(
   data: async () => pastoralApplicationData,
   task: async (input, variant: any) => {
     const result = await generateText({
-      model: variant.input.model,
+      model: variant.model,
       prompt: `You are a wise, biblically grounded pastor providing counsel. Someone comes to you with the following situation. Provide a response that is theologically sound, pastorally sensitive, practically helpful, and grounded in Scripture. Balance truth with grace, conviction with compassion.
 
 ${input}`,

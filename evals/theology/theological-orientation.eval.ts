@@ -174,7 +174,9 @@ const theologicalOrientationClassifier = {
   name: "Theological Orientation Classifier",
   description: "Classifies theological responses on a progressive-to-conservative spectrum",
   scorer: async (scoreInput: any) => {
-    const { output, category, subcategory } = scoreInput;
+    const { output, input } = scoreInput;
+    const category = input?.category || "Unknown";
+    const subcategory = input?.subcategory || "Unknown";
 
     const result = await generateObject({
       model: defaultJudgeModel,
@@ -376,12 +378,20 @@ evalite.each(
   selectedModels.map(({ name, model }) => ({ name, input: { model } }))
 )("Theological Orientation", {
   data: async () => theologicalOrientationData,
-  task: async (input, variant: any) => {
+  task: async (input: any, variant: any) => {
+    // When using evalite.each(), input is the full data item from the data array
+    // It contains: input (the question), category, subcategory, notes, etc.
+    const question = typeof input === 'object' && input.input 
+      ? input.input 
+      : typeof input === 'string' 
+      ? input 
+      : '';
+    
     const result = await generateText({
-      model: variant.input.model,
+      model: variant.model,
       prompt: `You are a knowledgeable theologian. Answer the following question about Christian theology and practice. Provide a thoughtful, balanced response that engages with biblical texts and different Christian perspectives where appropriate.
 
-${input}`,
+${question}`,
     });
     return result.text;
   },
