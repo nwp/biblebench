@@ -38,6 +38,17 @@
     padding: var(--space-16) 0 var(--space-12);
   }
 
+  .header-brand {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-6);
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+
   .title-main {
     font-size: clamp(2.5rem, 10vw, 3.5rem);
     letter-spacing: -0.03em;
@@ -50,6 +61,7 @@
   .subtitle {
     font-size: 1rem;
     line-height: 1.6;
+    margin-left: 0;
   }
 
   /* Stats Bar */
@@ -195,6 +207,11 @@
 
 /* Very Small Mobile (up to 480px) */
 @media (max-width: 480px) {
+  .logo {
+    width: 56px;
+    height: 56px;
+  }
+
   .title-main {
     font-size: clamp(2rem, 12vw, 2.75rem);
   }
