@@ -417,12 +417,12 @@ export const myCustomScorer = createScorer<string, string, string>({
 
 ### Adding New Evaluations
 
-Create a new `.eval.ts` file in the appropriate directory:
+Create a new `.eval.ts` file in the appropriate directory using Evalite's A/B testing feature:
 
 ```typescript
 import { evalite } from "evalite";
 import { generateText } from "ai";
-import { benchmarkModels } from "../lib/models.js";
+import { selectedModels } from "../lib/models.js";
 import { myScorer } from "../lib/scorers.js";
 
 const myData = [
@@ -430,32 +430,56 @@ const myData = [
   // ... more test cases
 ];
 
-for (const { name, model } of benchmarkModels) {
-  evalite(`My Evaluation - ${name}`, {
-    data: myData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `Your prompt here: ${input}`,
-      });
-      return result.text;
-    },
-    scorers: [myScorer],
-  });
-}
+// Use evalite.each() for side-by-side model comparison
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("My Evaluation", {
+  data: async () => myData,
+  task: async (input, variant) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `Your prompt here: ${input}`,
+    });
+    return result.text;
+  },
+  scorers: [myScorer],
+});
 ```
+
+**Why use `evalite.each()`?**
+
+- **Side-by-side comparison**: All models are compared within a single evaluation run
+- **Per-model scores**: Each model's performance is clearly visible and comparable
+- **Better UI**: Evalite's interface shows direct model comparisons
+- **Easier analysis**: Instantly see which models perform best on each test case
 
 ## 📈 Benchmark Results
 
-Results include:
+All evaluations use **Evalite's A/B testing** feature (`evalite.each()`) to enable direct model comparison. This means:
 
-- **Overall scores** per model per evaluation category
-- **Detailed metrics** for each scorer
+- **Side-by-side comparison**: Models are tested together in a single evaluation run
+- **Per-model scores**: Each model gets its own column showing performance across all test cases
+- **Direct comparisons**: Instantly see which models excel or struggle on specific questions
+- **Detailed metrics** for each scorer, with model-specific breakdowns
 - **Metadata** including rationales from LLM-as-judge scorers
-- **Traces** of model inputs and outputs
-- **Comparison views** across models
+- **Traces** of model inputs and outputs for every test case
+- **Unified results**: All model results in one view instead of separate evaluations
 
 Results are stored in `node_modules/.evalite` and can be exported as static HTML for CI/CD integration.
+
+### Model Filtering
+
+Use the `MODELS` environment variable to run evaluations on specific models while maintaining the A/B comparison structure:
+
+```bash
+# Compare only GPT models against each other
+MODELS="gpt" pnpm eval
+
+# Compare Claude Opus vs Sonnet
+MODELS="opus,sonnet" pnpm eval
+```
+
+The A/B testing structure is preserved regardless of how many models you filter to.
 
 ## 🎓 Use Cases
 

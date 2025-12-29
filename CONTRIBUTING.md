@@ -160,12 +160,12 @@ Every eval file should:
 4. Use multiple complementary scorers
 5. Include clear descriptions
 
-Example structure:
+Example structure (using A/B testing):
 
 ```typescript
 import { evalite } from "evalite";
 import { generateText } from "ai";
-import { benchmarkModels } from "../lib/models.js";
+import { selectedModels } from "../lib/models.js";
 import { myScorer } from "../lib/scorers.js";
 
 const testData = [
@@ -177,24 +177,26 @@ const testData = [
   // More test cases
 ];
 
-for (const { name, model } of benchmarkModels) {
-  evalite(`Category Name - ${name}`, {
-    data: testData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `System prompt\n\n${input}`,
-        maxTokens: 300,
-      });
-      return result.text;
-    },
-    scorers: [
-      myScorer,
-      // Additional scorers
-    ],
-  });
-}
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Category Name", {
+  data: async () => testData,
+  task: async (input, variant) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `System prompt\n\n${input}`,
+    });
+    return result.text;
+  },
+  scorers: [
+    myScorer,
+    // Additional scorers
+  ],
+});
 ```
+
+**Note:** All evaluations use `evalite.each()` for A/B testing, which enables side-by-side model comparison in the UI. This is the standard pattern for all BibleBench evaluations.
 
 ### Testing
 
