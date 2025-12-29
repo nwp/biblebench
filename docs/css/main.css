@@ -263,6 +263,45 @@ body {
 }
 
 /* ===================================================================
+   Navigation Menu - Sticky Menu for Section Access
+   =================================================================== */
+
+.nav-menu {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-6);
+  justify-content: center;
+  list-style: none;
+  padding: var(--space-5) 0;
+}
+
+.nav-links a {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-base);
+}
+
+.nav-links a:hover {
+  color: var(--accent-primary);
+  border-bottom-color: var(--accent-primary);
+}
+
+/* ===================================================================
    Buttons - Clean and Direct
    =================================================================== */
 
