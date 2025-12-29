@@ -54,17 +54,18 @@ const coreDoctrinesData = [
   }
 ];
 
-// Run the evaluation for each model
-for (const { name, model } of selectedModels) {
-  evalite(`Core Doctrines - ${name}`, {
-    data: coreDoctrinesData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\n${input}`,
-      });
-      return result.text;
-    },
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Core Doctrines", {
+  data: async () => coreDoctrinesData,
+  task: async (input, variant: any) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\n${input}`,
+    });
+    return result.text;
+  },
     scorers: [
       theologicalAccuracyJudge,
       heresyDetectionJudge,
@@ -96,5 +97,5 @@ for (const { name, model } of selectedModels) {
         },
       }
     ],
-  });
-}
+  }
+);

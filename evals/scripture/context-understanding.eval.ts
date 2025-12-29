@@ -53,14 +53,15 @@ const contextUnderstandingData = [
   }
 ];
 
-// Run the evaluation for each model
-for (const { name, model } of selectedModels) {
-  evalite(`Context Understanding - ${name}`, {
-    data: contextUnderstandingData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `You are a Bible scholar with deep knowledge of scripture, history, and context.
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Context Understanding", {
+  data: async () => contextUnderstandingData,
+  task: async (input, variant: any) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `You are a Bible scholar with deep knowledge of scripture, history, and context.
 
 Answer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.
 
@@ -73,10 +74,9 @@ Examples of good answers:
 Do NOT add phrases like "According to tradition" or "The text was written by" - just state the facts directly.
 
 ${input}`,
-        maxTokens: 150,
-      });
-      return result.text;
-    },
+    });
+    return result.text;
+  },
     scorers: [
       theologicalAccuracyJudge,
       {
@@ -94,10 +94,10 @@ ${input}`,
 
           for (const point of keyPoints) {
             const pointLower = point.toLowerCase();
-            const pointWords = pointLower.split(/\s+/).filter(word => word.length > 2);
+            const pointWords = pointLower.split(/\s+/).filter((word: string) => word.length > 2);
 
             // Check if at least 50% of the significant words appear in output
-            const matchingWords = pointWords.filter(word =>
+            const matchingWords = pointWords.filter((word: string) =>
               outputLower.includes(word)
             );
 
@@ -126,5 +126,5 @@ ${input}`,
         }
       }
     ],
-  });
-}
+  }
+);

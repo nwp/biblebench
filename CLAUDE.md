@@ -180,9 +180,11 @@ Each evaluation file:
 
 1. Imports models and scorers from `lib/`
 2. Defines test data with `input`, `expected`, and optional metadata
-3. Iterates over `selectedModels` to test each model (respects `MODELS` env var)
-4. Uses `evalite()` to create test suites
+3. Uses `evalite.each()` for A/B testing across all models (respects `MODELS` env var)
+4. Creates a single evaluation with side-by-side model comparisons
 5. Applies multiple scorers for comprehensive evaluation
+
+All evaluations use **Evalite's A/B testing** feature to enable direct model comparison rather than separate evaluations per model.
 
 ## Common Development Tasks
 
@@ -263,7 +265,7 @@ export const myScorer = createScorer<string, string, string>({
 
 ### Creating New Evaluations
 
-Create a new `.eval.ts` file in the appropriate directory:
+Create a new `.eval.ts` file in the appropriate directory using Evalite's A/B testing:
 
 ```typescript
 import { evalite } from "evalite";
@@ -273,21 +275,27 @@ import { myScorer } from "../lib/scorers.js";
 
 const testData = [/* your test cases */];
 
-for (const { name, model } of selectedModels) {
-  evalite(`Category - ${name}`, {
-    data: testData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `System prompt\n\n${input}`,
-        maxTokens: 300,
-      });
-      return result.text;
-    },
-    scorers: [myScorer],
-  });
-}
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Category Name", {
+  data: async () => testData,
+  task: async (input, variant) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `System prompt\n\n${input}`,
+    });
+    return result.text;
+  },
+  scorers: [myScorer],
+});
 ```
+
+**Benefits of `evalite.each()`:**
+- All models compared side-by-side in a single evaluation
+- Per-model scores clearly visible in the UI
+- Direct comparison of model performance on each test case
+- Better for benchmarking and analysis
 
 ## Running Evaluations
 

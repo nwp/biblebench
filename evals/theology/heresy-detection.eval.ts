@@ -49,17 +49,18 @@ const heresyDetectionData = [
   }
 ];
 
-// Run the evaluation for each model
-for (const { name, model } of selectedModels) {
-  evalite(`Heresy Detection - ${name}`, {
-    data: heresyDetectionData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\n${input}`,
-      });
-      return result.text;
-    },
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Heresy Detection", {
+  data: async () => heresyDetectionData,
+  task: async (input, variant: any) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\n${input}`,
+    });
+    return result.text;
+  },
     scorers: [
       theologicalAccuracyJudge,
       {
@@ -125,5 +126,5 @@ for (const { name, model } of selectedModels) {
         },
       }
     ],
-  });
-}
+  }
+);

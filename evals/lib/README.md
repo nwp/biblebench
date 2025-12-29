@@ -74,12 +74,15 @@ Configures and exports AI SDK models accessed through **OpenRouter** and wrapped
 **Usage:**
 
 ```typescript
-import { benchmarkModels, gpt4o } from "./models.js";
+import { selectedModels } from "./models.js";
 
-// All models are pre-configured through OpenRouter
-for (const { name, model } of benchmarkModels) {
-  // Use model in evaluations
-}
+// Models are accessed via selectedModels (respects MODELS env var)
+// Used in A/B testing with evalite.each()
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Evaluation Name", {
+  // ... evaluation config
+});
 ```
 
 ### `scorers.ts`
@@ -131,24 +134,34 @@ const model = wrapAISDKModel(openrouter.chat("provider/model-name"));
 
 ## Usage in Evaluations
 
-Import scorers and models in your eval files:
+Import scorers and models in your eval files using A/B testing:
 
 ```typescript
-import { benchmarkModels, defaultJudgeModel } from "../lib/models.js";
+import { evalite } from "evalite";
+import { generateText } from "ai";
+import { selectedModels } from "../lib/models.js";
 import { theologicalAccuracyJudge, exactMatch } from "../lib/scorers.js";
 
-// Use in evalite() calls
-for (const { name, model } of benchmarkModels) {
-  evalite(`Test - ${name}`, {
-    data: testData,
-    task: async (input) => {
-      const result = await generateText({ model, prompt: input });
-      return result.text;
-    },
-    scorers: [theologicalAccuracyJudge, exactMatch]
-  });
-}
+// Use evalite.each() for A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Test Name", {
+  data: async () => testData,
+  task: async (input, variant) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: input
+    });
+    return result.text;
+  },
+  scorers: [theologicalAccuracyJudge, exactMatch]
+});
 ```
+
+**Benefits of A/B Testing:**
+- All models compared side-by-side in a single evaluation
+- Per-model scores visible in the UI
+- Better for benchmarking and analysis
 
 ## Adding New Models
 

@@ -43,17 +43,18 @@ const denominationalNuanceData = [
   }
 ];
 
-// Run the evaluation for each model
-for (const { name, model } of selectedModels) {
-  evalite(`Denominational Nuance - ${name}`, {
-    data: denominationalNuanceData,
-    task: async (input) => {
-      const result = await generateText({
-        model,
-        prompt: `You are a fair-minded theologian knowledgeable about different Christian traditions. Explain the following theological topic, representing different denominational perspectives accurately and without bias. Show respect for legitimate theological diversity while maintaining commitment to core orthodox beliefs.\n\n${input}`,
-      });
-      return result.text;
-    },
+// Run A/B testing across all models
+evalite.each(
+  selectedModels.map(({ name, model }) => ({ name, input: { model } }))
+)("Denominational Nuance", {
+  data: async () => denominationalNuanceData,
+  task: async (input, variant: any) => {
+    const result = await generateText({
+      model: variant.input.model,
+      prompt: `You are a fair-minded theologian knowledgeable about different Christian traditions. Explain the following theological topic, representing different denominational perspectives accurately and without bias. Show respect for legitimate theological diversity while maintaining commitment to core orthodox beliefs.\n\n${input}`,
+    });
+    return result.text;
+  },
     scorers: [
       theologicalAccuracyJudge,
       denominationalBiasDetector,
@@ -132,5 +133,5 @@ for (const { name, model } of selectedModels) {
         }
       }
     ],
-  });
-}
+  }
+);
