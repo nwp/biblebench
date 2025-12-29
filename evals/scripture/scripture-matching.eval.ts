@@ -395,7 +395,7 @@ const exactScriptureData: ScriptureTestData[] = [
 for (const { name, model } of selectedModels) {
   evalite(`Exact Scripture Matching - ${name}`, {
     data: exactScriptureData,
-    task: async (data) => {
+    task: async (input) => {
       const result = await generateText({
         model,
         prompt: `You are a Bible scholar with expertise in various Bible translations.
@@ -403,8 +403,7 @@ Your task is to quote the exact verse text from the specified translation.
 Be EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.
 Quote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.
 
-${data.input}`,
-        maxTokens: 500,
+${input}`,
       });
       return result.text;
     },
