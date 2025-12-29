@@ -81,7 +81,7 @@ pnpm eval --no-cache
 
 ### Evaluation Categories
 
-1. **Scripture/Verse Recall**: Tests memorization of verses
+1. **Scripture/Exact Scripture Matching**: Tests precise recall of verses across multiple translations with exact wording
 2. **Scripture/Reference Knowledge**: Tests knowledge of where verses are found
 3. **Scripture/Context Understanding**: Tests understanding of biblical context
 4. **Theology/Core Doctrines**: Tests understanding of key Christian doctrines

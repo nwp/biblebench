@@ -37,18 +37,17 @@ BibleBench fills this gap by providing a rigorous, multi-dimensional benchmark g
 biblebench/
 ├── evals/
 │   ├── scripture/              # Scripture accuracy evaluations
-│   │   ├── verse-recall.eval.ts
+│   │   ├── scripture-matching.eval.ts  # Exact verse recall across translations
 │   │   ├── reference-knowledge.eval.ts
-│   │   ├── context-understanding.eval.ts
-│   │   └── translation-recall.eval.ts    # NEW: Bible translation testing
+│   │   └── context-understanding.eval.ts
 │   ├── theology/               # Theological concept evaluations
 │   │   ├── core-doctrines.eval.ts
 │   │   ├── heresy-detection.eval.ts
 │   │   ├── denominational-nuance.eval.ts
 │   │   ├── pastoral-application.eval.ts
-│   │   ├── sect-theology.eval.ts               # NEW: Sect/cult theology evaluation
-│   │   ├── theological-orientation.eval.ts     # NEW: Theological spectrum analysis
-│   │   └── steering-compliance.eval.ts         # NEW: Bias asymmetry detection
+│   │   ├── sect-theology.eval.ts               # Sect/cult theology evaluation
+│   │   ├── theological-orientation.eval.ts     # Theological spectrum analysis
+│   │   └── steering-compliance.eval.ts         # Bias asymmetry detection
 │   └── lib/                    # Shared utilities
 │       ├── models.ts           # AI model configurations
 │       ├── scorers.ts          # Custom scoring functions
@@ -64,11 +63,15 @@ biblebench/
 
 Tests LLMs' foundational knowledge of the Bible itself.
 
-**Verse Recall** (`scripture/verse-recall.eval.ts`)
+**Exact Scripture Matching** (`scripture/scripture-matching.eval.ts`)
 
-- Ability to complete famous Bible verses
-- Accuracy of verse recitation
-- Measured with Levenshtein similarity, exact match, and word overlap
+- Precise recall of Bible verses with exact wording across multiple translations
+- Tests the same verses in KJV, NIV, ESV, and NASB to verify translation-specific accuracy
+- 49 test cases covering 16 different verses (both well-known and less common)
+- Requires perfect matches—every word, comma, and punctuation mark must be correct
+- Includes famous verses (John 3:16, Psalm 23:1) and lesser-known passages (Micah 6:8, Lamentations 3:22-23)
+- Measured with exact match scorer—no fuzzy matching since scripture is sacred
+- Each test case includes translation-specific key phrases for verification
 
 **Reference Knowledge** (`scripture/reference-knowledge.eval.ts`)
 
@@ -82,15 +85,6 @@ Tests LLMs' foundational knowledge of the Bible itself.
 - Purpose and audience of biblical books
 - Understanding of scriptural context
 - Uses LLM-as-judge for nuanced evaluation
-
-**Translation Recall** (`scripture/translation-recall.eval.ts`)
-
-- Accurate recall of verses in specific Bible translations (KJV, NIV, ESV, NASB, NLT, CSB, etc.)
-- Understanding of translation-specific vocabulary and phrasing
-- Distinguishing between translation variations (e.g., "begotten" in KJV vs "one and only" in NIV)
-- Ability to identify which translation a verse comes from based on distinctive wording
-- Tests 25+ verses across 8+ major English translations
-- Measured with translation-specific phrase matching, vocabulary fidelity, and Levenshtein similarity
 
 ### 2. Theological Understanding
 
@@ -172,9 +166,9 @@ BibleBench employs multiple scoring approaches:
 
 ### Translation-Aware Scorers
 
+- **Exact Match**: Binary scorer for precise scripture text matching (used in scripture-matching evaluation)
 - **Translation Phrase Match**: Checks for translation-specific key phrases (e.g., "begotten" in KJV)
 - **Translation Vocabulary Fidelity**: Validates use of appropriate vocabulary for each translation
-- **Translation Accuracy**: Comprehensive scoring combining word overlap and key phrase matching
 
 ### LLM-as-Judge Scorers
 
@@ -552,20 +546,18 @@ BibleBench includes comprehensive testing of multiple Bible translations:
 The benchmark explicitly tests models on these major English translations:
 
 - **KJV** (King James Version, 1611) - Traditional language with "thee/thou/thy"
-- **NKJV** (New King James Version, 1982) - Modernized KJV
 - **NIV** (New International Version, 1978/2011) - Widely-used modern translation
 - **ESV** (English Standard Version, 2001) - Literal, modern English
 - **NASB** (New American Standard Bible, 1971/1995) - Very literal translation
-- **NLT** (New Living Translation, 1996/2015) - Thought-for-thought translation
-- **CSB** (Christian Standard Bible, 2017) - Balance of accuracy and readability
 
 ### Evaluation Approach
 
-- **General Recall** (`verse-recall.eval.ts`): Accepts any standard translation
-- **Translation-Specific** (`translation-recall.eval.ts`): Tests precise recall of translation-specific wording
-- **Translation Identification**: Tests ability to identify translations based on distinctive vocabulary
+- **Exact Scripture Matching** (`scripture-matching.eval.ts`): Tests precise recall of verses with exact wording across multiple translations
+- Each verse is tested in 2-4 different translations to verify translation-specific accuracy
+- Requires perfect matches—since scripture is sacred, no fuzzy matching is used
+- Tests both well-known verses (John 3:16, Psalm 23:1) and less common passages (Micah 6:8, Lamentations 3:22-23)
 
-This approach ensures models are evaluated both on general scripture knowledge and on their ability to distinguish between translation variations.
+This approach ensures models are evaluated on their ability to recall scripture with precision and distinguish between translation variations accurately.
 
 ## 📄 License
 
