@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 209,
+    "suite_id": 14,
+    "col_order": 34,
+    "input": "Quote 2 Timothy 3:16 from the New International Version (NIV) exactly as written",
+    "expected": "All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness",
+    "output": "All Scripture is God-breathed and useful for teaching, rebuking, correcting and training in righteousness.",
+    "duration": 24033,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:32:45.827Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 90,
+        "eval_id": 209,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T00:33:09.910Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 90,
+        "eval_id": 209,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote 2 Timothy 3:16 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "All Scripture is God-breathed and useful for teaching, rebuking, correcting and training in righteousness.",
+          "toolCalls": []
+        },
+        "start_time": 462.170167,
+        "end_time": 24467.80275,
+        "input_tokens": 92,
+        "output_tokens": 2012,
+        "total_tokens": 2104,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 14,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:32:45.827Z"
+  }
+}

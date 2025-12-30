@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 177,
+    "suite_id": 57,
+    "col_order": 6,
+    "input": "What was the relationship between the books of Kings and Chronicles?",
+    "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+    "output": "Kings is a prophetic history covering the rise and fall of the monarchy focusing on the covenant failure of Israel and Judah; Chronicles is a priestly history written post-exile to provide a genealogical and spiritual foundation for the restored community, focusing primarily on the Davidic line and the temple.",
+    "duration": 37252,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:32.326Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 768,
+        "eval_id": 177,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response accurately reflects the commonly held scholarly view: Kings covers the monarchy’s rise and fall with emphasis on covenant faithfulness/infidelity and prophetic involvement; Chronicles presents a priestly, post-exilic perspective that highlights Davidic kingship, temple worship, and priestly order as a foundation for the restored community. It captures the main contrast and aligns with historic Christian orthodoxy and biblical grounding. Nuances it could improve include noting that Kings also contains prophetic voices and that Chronicles emphasizes Levitical/Worship concerns in addition to Davidic lineage; the dating of Chronicles to the post-exilic Persian period is widely accepted but debated among scholars."
+        },
+        "created_at": "2025-12-30T00:15:09.596Z"
+      },
+      {
+        "id": 769,
+        "eval_id": 177,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:15:09.596Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 285,
+        "eval_id": 177,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Kings is a prophetic history covering the rise and fall of the monarchy focusing on the covenant failure of Israel and Judah; Chronicles is a priestly history written post-exile to provide a genealogical and spiritual foundation for the restored community, focusing primarily on the Davidic line and the temple.",
+          "toolCalls": []
+        },
+        "start_time": 159.997416,
+        "end_time": 1818.369458,
+        "input_tokens": 137,
+        "output_tokens": 56,
+        "total_tokens": 193,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:32.325Z"
+  }
+}

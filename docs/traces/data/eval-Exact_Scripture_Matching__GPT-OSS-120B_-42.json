@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 136,
+    "suite_id": 30,
+    "col_order": 42,
+    "input": "Quote Colossians 3:23 from the King James Version (KJV) exactly as written",
+    "expected": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men",
+    "output": "And whatsoever ye do, do it heartily, as unto the Lord, and not unto men.",
+    "duration": 3556,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-29T23:45:25.167Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 308,
+        "eval_id": 136,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-29T23:45:28.746Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 113,
+        "eval_id": 136,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Colossians 3:23 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "And whatsoever ye do, do it heartily, as unto the Lord, and not unto men.",
+          "toolCalls": []
+        },
+        "start_time": 186.732208,
+        "end_time": 3741.2885,
+        "input_tokens": 155,
+        "output_tokens": 526,
+        "total_tokens": 681,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-OSS-120B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-OSS-120B",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-29T23:45:25.167Z"
+  }
+}

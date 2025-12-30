@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 178,
+    "suite_id": 57,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "To reveal spiritual truths to those receptive to his message while concealing them from those who were hardened or hostile.",
+    "duration": 23265,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:32.326Z",
+    "score": 0.375,
+    "scores": [
+      {
+        "id": 700,
+        "eval_id": 178,
+        "name": "Theological Accuracy Judge",
+        "score": 0.75,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response accurately reflects the biblical teaching that Jesus used parables to reveal truth to the receptive and to conceal or withhold truth from those who were hardened or hostile, which aligns with passages like Matthew 13. This is doctrinally sound and biblically grounded. However, it misses additional nuances: parables also served to make spiritual truths memorable through everyday imagery, and the broader prophetic/contextual framing (e.g., fulfillment of Isaiah) is part of the biblical rationale for parables. The core idea is correct, but the answer lacks the full nuance present in the broader biblical and historical-theological understanding."
+        },
+        "created_at": "2025-12-30T00:14:55.609Z"
+      },
+      {
+        "id": 701,
+        "eval_id": 178,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:14:55.609Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 248,
+        "eval_id": 178,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To reveal spiritual truths to those receptive to his message while concealing them from those who were hardened or hostile.",
+          "toolCalls": []
+        },
+        "start_time": 160.148541,
+        "end_time": 1525.681041,
+        "input_tokens": 135,
+        "output_tokens": 21,
+        "total_tokens": 156,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:32.325Z"
+  }
+}

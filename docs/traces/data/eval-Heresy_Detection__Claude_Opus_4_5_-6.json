@@ -1,0 +1,97 @@
+{
+  "eval": {
+    "id": 87,
+    "suite_id": 69,
+    "col_order": 6,
+    "input": "Is the statement 'Jesus is Lord' sufficient for orthodox Christian belief, or are there other essential beliefs?",
+    "expected": "While 'Jesus is Lord' is foundational (Romans 10:9), orthodox Christianity requires additional essential beliefs about WHO Jesus is. The early creeds developed to combat heresies: Jesus must be confessed as fully God and fully human (against Arianism and Docetism), the Trinity must be affirmed (against modalism), salvation by grace through faith (against works-righteousness), and the authority of Scripture. These essential doctrines form the core of historic Christian orthodoxy.",
+    "output": "# Theological Analysis: The Sufficiency of \"Jesus is Lord\"\n\n## Initial Assessment\n\nThis is an excellent question that touches on the relationship between **minimalist confessions** and **developed orthodoxy**—a tension present throughout church history.\n\n## The Case for Sufficiency\n\nThe confession \"Jesus is Lord\" (*Kyrios Iesous*) carries remarkable theological density:\n\n- **Romans 10:9** ties it directly to salvation\n- **1 Corinthians 12:3** presents it as Spirit-enabled confession\n- It was likely the earliest baptismal formula\n- In its original context, *Kyrios* invoked the divine name (YHWH in the LXX)\n\n## Why the Church Developed Further Criteria\n\nHowever, the historical record shows this confession proved **necessary but insufficient**:\n\n1. **Arians** could say \"Jesus is Lord\" while denying full divinity\n2. **Docetists** affirmed lordship while denying true humanity\n3. **Modalists** confessed it while collapsing Trinitarian distinctions\n\nThis prompted the **Rule of Faith**, creeds (Nicaea, Chalcedon), and dogmatic precision.\n\n## Orthodox Position\n\nThe confession is *materially* sufficient when rightly understood—it *implies* incarnation, resurrection, divinity, and authority. But it requires **unpacking** against misinterpretation.\n\n**Verdict:** Orthodox as a seed confession; insufficient as a boundary marker without interpretive framework.\n\nWhat aspect would you like to explore further?",
+    "duration": 48823,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.472Z",
+    "score": 0.7177777777777777,
+    "scores": [
+      {
+        "id": 672,
+        "eval_id": 87,
+        "name": "Theological Accuracy Judge",
+        "score": 0.82,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "The claim that 'Jesus is Lord' was the earliest baptismal formula is contested in scholarship; early baptismal practice often cited the Triune formula ('in the name of the Father, and of the Son, and of the Holy Spirit'), and while 'Jesus is Lord' was a common creed/confession, labeling it the earliest baptismal formula should be treated as a debated claim with caveats."
+          ],
+          "rationale": "The response accurately (a) grounds the confession in scripture (Romans 10:9; 1 Corinthians 12:3), (b) connects it to historic controversy (Arianism, Docetism, Modalism) and (c) acknowledges that 'Jesus is Lord' is a seed/confession that needs proper interpretation to function as a boundary marker. It rightly situates the confession within the broader orthodox framework (incarnation, resurrection, divinity, authority, creeds like Nicaea/Chalcedon) and notes the necessity of interpretive framework beyond the bare confession. The main caveat is a historically contested claim about baptismal formulae, which should be qualified to avoid overstating its liturgical primacy."
+        },
+        "created_at": "2025-12-30T00:17:31.299Z"
+      },
+      {
+        "id": 673,
+        "eval_id": 87,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:17:31.299Z"
+      },
+      {
+        "id": 674,
+        "eval_id": 87,
+        "name": "Orthodox Response",
+        "score": 0.3333333333333333,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox"
+          ],
+          "count": 1
+        },
+        "created_at": "2025-12-30T00:17:31.299Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 193,
+        "eval_id": 87,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nIs the statement 'Jesus is Lord' sufficient for orthodox Christian belief, or are there other essential beliefs?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# Theological Analysis: The Sufficiency of \"Jesus is Lord\"\n\n## Initial Assessment\n\nThis is an excellent question that touches on the relationship between **minimalist confessions** and **developed orthodoxy**—a tension present throughout church history.\n\n## The Case for Sufficiency\n\nThe confession \"Jesus is Lord\" (*Kyrios Iesous*) carries remarkable theological density:\n\n- **Romans 10:9** ties it directly to salvation\n- **1 Corinthians 12:3** presents it as Spirit-enabled confession\n- It was likely the earliest baptismal formula\n- In its original context, *Kyrios* invoked the divine name (YHWH in the LXX)\n\n## Why the Church Developed Further Criteria\n\nHowever, the historical record shows this confession proved **necessary but insufficient**:\n\n1. **Arians** could say \"Jesus is Lord\" while denying full divinity\n2. **Docetists** affirmed lordship while denying true humanity\n3. **Modalists** confessed it while collapsing Trinitarian distinctions\n\nThis prompted the **Rule of Faith**, creeds (Nicaea, Chalcedon), and dogmatic precision.\n\n## Orthodox Position\n\nThe confession is *materially* sufficient when rightly understood—it *implies* incarnation, resurrection, divinity, and authority. But it requires **unpacking** against misinterpretation.\n\n**Verdict:** Orthodox as a seed confession; insufficient as a boundary marker without interpretive framework.\n\nWhat aspect would you like to explore further?",
+          "toolCalls": []
+        },
+        "start_time": 442.821042,
+        "end_time": 10338.322292,
+        "input_tokens": 66,
+        "output_tokens": 348,
+        "total_tokens": 414,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 69,
+    "run_id": 1,
+    "name": "Heresy Detection [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.472Z"
+  }
+}

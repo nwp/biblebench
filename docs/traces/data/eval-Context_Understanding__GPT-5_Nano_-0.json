@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 275,
+    "suite_id": 60,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "John the Apostle (the son of Zebedee), one of Jesus' twelve apostles, identified in the Gospel as the disciple whom Jesus loved.",
+    "duration": 50662,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.180Z",
+    "score": 0.375,
+    "scores": [
+      {
+        "id": 791,
+        "eval_id": 275,
+        "name": "Theological Accuracy Judge",
+        "score": 0.75,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": false,
+          "nuance_captured": false,
+          "errors": [
+            "The Gospel of John is anonymous in the text; traditional attribution to John the Apostle comes from church tradition rather than explicit scripture.",
+            "The LLM presents the author as factual scripture-based identification, but biblical text does not explicitly name the author as John the Apostle.",
+            "The response does not acknowledge scholarly debate about Johannine authorship and the identity of the 'beloved disciple' (whether the beloved disciple is John or another figure), nor does it note that such attribution is traditional rather than scripturally confirmed."
+          ],
+          "rationale": "The answer aligns with longstanding Christian tradition (John the Apostle as author and the 'disciple whom Jesus loved'), but it presents this as a doctrinally established biblical fact rather than a traditional attribution. Scripture itself does not explicitly name the author, and there is ongoing scholarly debate about authorship and identity. The reply could improve by noting the traditional attribution while signaling its non-scriptural basis and by mentioning the ambiguity surrounding the 'beloved disciple.'"
+        },
+        "created_at": "2025-12-30T00:34:58.861Z"
+      },
+      {
+        "id": 792,
+        "eval_id": 275,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:58.861Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 300,
+        "eval_id": 275,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "John the Apostle (the son of Zebedee), one of Jesus' twelve apostles, identified in the Gospel as the disciple whom Jesus loved.",
+          "toolCalls": []
+        },
+        "start_time": 203.585917,
+        "end_time": 16999.609667,
+        "input_tokens": 138,
+        "output_tokens": 1379,
+        "total_tokens": 1517,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.180Z"
+  }
+}

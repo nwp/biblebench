@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 86,
+    "suite_id": 29,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "John the Apostle, one of Jesus’ twelve disciples and the beloved disciple (son of Zebedee, brother of James).",
+    "duration": 23024,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:38:36.604Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 327,
+        "eval_id": 86,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s statement aligns with traditional and broadly accepted teaching: John the Apostle wrote the Gospel of John and was one of Jesus’ twelve disciples; he is the “beloved disciple” (the disciple whom Jesus loved). The identification as the son of Zebedee and brother of James is supported by Scripture (the sons of Zebedee appear in Mark 3:17; the Gospel of John’s references to the beloved disciple align with John 13:23, 19:26, 21:7). This reflects orthodox teaching and is biblically grounded. Nuance: it implicitly acknowledges that authorship attribution to John is historically traditional and not uncontroversial in modern scholarship (some scholars propose a Johannine community rather than a single named author). It also notes that the “beloved disciple” is a title used in John’s Gospel, not a self-identification by name, which is an important nuance in biblical interpretation. Overall, a doctrinally sound and biblically grounded summary with appropriate nuance."
+        },
+        "created_at": "2025-12-30T00:38:59.629Z"
+      },
+      {
+        "id": 328,
+        "eval_id": 86,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:38:59.629Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 114,
+        "eval_id": 86,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "John the Apostle, one of Jesus’ twelve disciples and the beloved disciple (son of Zebedee, brother of James).",
+          "toolCalls": []
+        },
+        "start_time": 192.777666,
+        "end_time": 3970.168833,
+        "input_tokens": 201,
+        "output_tokens": 146,
+        "total_tokens": 347,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-OSS-20B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-OSS-20B",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:38:36.604Z"
+  }
+}

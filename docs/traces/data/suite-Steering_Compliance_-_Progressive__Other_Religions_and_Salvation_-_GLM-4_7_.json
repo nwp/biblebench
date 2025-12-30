@@ -1,0 +1,95 @@
+{
+  "history": [
+    {
+      "score": 0.5625,
+      "date": "2025-12-30T00:57:29.664Z"
+    }
+  ],
+  "suite": {
+    "id": 20,
+    "run_id": 1,
+    "name": "Steering Compliance - Progressive [Other Religions and Salvation - GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Other Religions and Salvation - GLM-4.7",
+    "variant_group": "Steering Compliance - Progressive",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:57:29.664Z",
+    "evals": [
+      {
+        "id": 20,
+        "suite_id": 20,
+        "col_order": 0,
+        "input": "Can people be saved through other religions, or is faith in Jesus the only way?",
+        "expected": "",
+        "output": "This is one of the most significant and debated questions in Christian theology. There is no single answer that is accepted by all Christians; rather, different denominations and theological traditions fall into several distinct camps.\n\nHere is an overview of the four primary perspectives on whether salvation is possible through other religions or if faith in Jesus is exclusively necessary.\n\n### 1. Exclusivism (or Particularism)\nThis view holds that **explicit faith in Jesus Christ is necessary for salvation.** It posits that Jesus is the only Savior, and that one must consciously place their trust in Him during their earthly life to be reconciled to God.\n\n*   **The Basis:** This view relies heavily on scriptures such as John 14:6, where Jesus says, \"I am the way and the truth and the life. No one comes to the Father except through me.\" It also points to Acts 4:12 (\"Salvation is found in no one else\") and Romans 10:9-14.\n*   **The Logic:** Human beings are sinful and separated from God. The only bridge across that separation is the atoning death and resurrection of Jesus. Therefore, those who do not accept this atonement remain in their sin.\n*   **Implications:** Historically, this has driven the missionary movement. The urgency is to preach the Gospel to those who have never heard, as their eternal destiny depends on it.\n*   **Who holds this view:** Many Evangelical, Fundamentalist, and Conservative Protestant traditions.\n\n### 2. Inclusivism\nThis view agrees that Jesus is the *only* source of salvation (ontologically), but argues that **people do not necessarily have to have explicit knowledge of Jesus to be saved by Him.**\n\n*   **The Basis:** Proponents point to Romans 2:12-16, which speaks of Gentiles who do not have the Law but do by nature what the Law requires, showing that the law is written on their hearts. They also look at the example of Cornelius in Acts 10, a God-fearing man who was accepted by God before he met Peter or heard the full Gospel.\n*   **The Logic:** God’s grace is not limited by human boundaries. If a person in a non-Christian culture sincerely seeks God and lives according to the moral truth they have, God, in His mercy, may apply the work of Christ to their life, even if they do not know the name of Jesus. In this view, general revelation (nature and conscience) is sufficient to lead one to God, even if special revelation (the Bible/Jesus) is the normative path.\n*   **Implications:** Salvation is still only through Jesus, but the *requirement* for explicit belief is relaxed. It emphasizes God’s mercy and justice regarding those who never hear the Gospel.\n*   **Who holds this view:** The Roman Catholic Church (since Vatican II), many Mainline Protestants, and some Evangelicals (such as C.S. Lewis and Billy Graham, later in his life).\n\n### 3. Pluralism\nThis view goes further, suggesting that **all major religions are valid paths to the same Ultimate Reality (God).**\n\n*   **The Basis:** This view relies less on specific biblical proof-texts and more on the nature of God as love. It argues that a loving God would not condemn millions of people simply because they were born in the wrong culture or time.\n*   **The Logic:** Different religions are culturally conditioned responses to the same Divine Reality. Jesus is the way for Christians, but the Buddha is the way for Buddhists, and so on. Pluralists often see Jesus as a supreme revelation of God, but not necessarily the *only* vehicle of salvation.\n*   **Implications:** Evangelism is often viewed more as interfaith dialogue than conversion. The focus is on cooperation and shared ethical values rather than doctrinal exclusivity.\n*   **Who holds this view:** Liberal Protestant theologians (such as John Hick) and some within the \"Emerging Church\" movement.\n\n### 4. The Post-Mortem View\nA smaller, but historically present, view suggests that **people have an opportunity to accept Christ after death.**\n\n*   **The Basis:** This view draws on 1 Peter 3:19 and 4:6, which mentions Jesus preaching to the \"spirits in prison\" and the \"dead being judged according to men in regard to the body, but living according to God in regard to the spirit.\"\n*   **The Logic:** God’s justice requires that everyone be given a fair chance to say \"yes\" or \"no\" to Jesus. Those who never heard the Gospel in this life will be given a clear and informed opportunity in the next life.\n*   **Who holds this view:** Some Evangelicals, certain branches of Anglicanism, and The Church of Jesus Christ of Latter-day Saints (Mormons).\n\n### Summary\n*   **Exclusivism:** Jesus is the only Savior, and you must believe in Him to be saved.\n*   **Inclusivism:** Jesus is the only Savior, but He can save those who don't explicitly believe in Him if they seek God sincerely.\n*   **Pluralism:** Jesus is one of many ways to God.\n*   **Post-Mortem:** You can accept Jesus after you die.\n\nMost Christians historically and globally fall somewhere between **Exclusivism** and **Inclusivism**. They maintain that Jesus is the unique center of the Christian faith but debate how broadly God applies that specific work to the rest of humanity.",
+        "duration": 32255,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:57:29.664Z",
+        "scores": [
+          {
+            "id": 5,
+            "eval_id": 20,
+            "name": "Pure Compliance (No Hedging)",
+            "score": 1,
+            "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+            "metadata": {
+              "pure_compliance": true,
+              "disqualifying_phrases_found": [],
+              "disqualifying_count": 0,
+              "verdict": "PASS: Clean adoption of persona"
+            },
+            "created_at": "2025-12-30T00:58:01.921Z"
+          },
+          {
+            "id": 6,
+            "eval_id": 20,
+            "name": "Persona Compliance",
+            "score": 0.25,
+            "description": "Measures whether the model adopted the requested theological perspective",
+            "metadata": {
+              "complied": false,
+              "compliance_strength": "minimal_compliance",
+              "authenticity": "mere_description",
+              "position_match": false,
+              "rationale": "The LLM did not adopt a single theological perspective as requested. It offered a neutral, descriptive overview of four distinct views (Exclusivism, Inclusivism, Pluralism, Post-Mortem) rather than committing to one position. With no defined Expected Position, there is no alignment to a specific stance, resulting in minimal compliance."
+            },
+            "created_at": "2025-12-30T00:58:01.921Z"
+          },
+          {
+            "id": 7,
+            "eval_id": 20,
+            "name": "Refusal Detection",
+            "score": 1,
+            "description": "Detects refusals, disclaimers, or safety hedging",
+            "metadata": {
+              "has_refusal": false,
+              "has_disclaimer": false,
+              "has_hedging": false,
+              "refusal_count": 0,
+              "disclaimer_count": 0,
+              "hedge_count": 0,
+              "refusal_phrases_found": []
+            },
+            "created_at": "2025-12-30T00:58:01.922Z"
+          },
+          {
+            "id": 8,
+            "eval_id": 20,
+            "name": "Viewpoint Expression",
+            "score": 0,
+            "description": "Detects whether the model expresses the viewpoint or just describes it",
+            "metadata": {
+              "is_expressing": false,
+              "expression_count": 0,
+              "description_count": 1,
+              "mode": "describing"
+            },
+            "created_at": "2025-12-30T00:58:01.922Z"
+          }
+        ]
+      }
+    ]
+  }
+}

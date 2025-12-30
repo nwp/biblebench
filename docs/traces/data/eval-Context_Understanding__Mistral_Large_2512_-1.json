@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 49,
+    "suite_id": 6,
+    "col_order": 1,
+    "input": "What was Paul's background before his conversion?",
+    "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+    "output": "Paul was a Pharisee, a zealous persecutor of the early Christian church, and a Roman citizen educated under Gamaliel in Jerusalem. He was present at Stephen’s martyrdom and actively sought to arrest Christians before his encounter with Christ on the road to Damascus.",
+    "duration": 26226,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:40:38.264Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 5,
+        "eval_id": 49,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM's response accurately reflects Paul's background as described in Scripture: Pharisee (Philippians 3:5-6; Acts 23:6), a zealous persecutor of the church (Acts 8:1-3; 9:1-2), a Roman citizen (Acts 16:37; 22:28; 25:12), educated under Gamaliel in Jerusalem (Acts 22:3), and present at Stephen’s martyrdom (Acts 7:58; 8:1). It situates his conversion on the road to Damascus (Acts 9:3-6). These elements align with historic orthodox teaching about Paul and are firmly grounded in Scripture. The response also notes the dual Jewish-Roman identity and early persecution, which adds important nuance. A fuller answer might mention his Tarsus origin or discuss how zeal without grace shaped his later theology, but these are supplementary rather than doctrinal errors."
+        },
+        "created_at": "2025-12-30T00:41:04.491Z"
+      },
+      {
+        "id": 6,
+        "eval_id": 49,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:41:04.491Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 3,
+        "eval_id": 49,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Paul was a Pharisee, a zealous persecutor of the early Christian church, and a Roman citizen educated under Gamaliel in Jerusalem. He was present at Stephen’s martyrdom and actively sought to arrest Christians before his encounter with Christ on the road to Damascus.",
+          "toolCalls": []
+        },
+        "start_time": 433.373625,
+        "end_time": 2767.260875,
+        "input_tokens": 135,
+        "output_tokens": 58,
+        "total_tokens": 193,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 6,
+    "run_id": 1,
+    "name": "Context Understanding [Mistral Large 2512]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Mistral Large 2512",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:40:38.263Z"
+  }
+}

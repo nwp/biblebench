@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 265,
+    "suite_id": 86,
+    "col_order": 1,
+    "input": "What was Paul's background before his conversion?",
+    "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+    "output": "Paul was a Pharisee from Tarsus, a Roman citizen by birth, educated in Jerusalem under Gamaliel. He was a zealous persecutor of Christians, present at Stephen's stoning and actively hunting down believers to imprison them.",
+    "duration": 33493,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "score": 0.475,
+    "scores": [
+      {
+        "id": 1155,
+        "eval_id": 265,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response accurately presents Paul’s pre-conversion background according to Scripture: he was a Pharisee from Tarsus, educated in Jerusalem under Gamaliel, and a Roman citizen by birth. It correctly characterizes him as a zealous persecutor of Christians and notes his involvement in Stephen’s death and his efforts to imprison believers (Acts 7:58; 8:1; Acts 9:1-2; Acts 22:3, 28). These details align with the biblical text and traditional Christian teaching. The answer is doctrinally sound and biblically grounded. It could have added additional nuances (e.g., “Hebrew of Hebrews”) for fuller nuance, but the core facts are accurate. A minor caveat: “present at Stephen’s stoning” is commonly understood to include his consent/participation, as described in Acts 8:1 and 9:1."
+        },
+        "created_at": "2025-12-30T00:17:55.356Z"
+      },
+      {
+        "id": 1156,
+        "eval_id": 265,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:55.356Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 440,
+        "eval_id": 265,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Paul was a Pharisee from Tarsus, a Roman citizen by birth, educated in Jerusalem under Gamaliel. He was a zealous persecutor of Christians, present at Stephen's stoning and actively hunting down believers to imprison them.",
+          "toolCalls": []
+        },
+        "start_time": 197.512958,
+        "end_time": 2713.205417,
+        "input_tokens": 150,
+        "output_tokens": 58,
+        "total_tokens": 208,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 86,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

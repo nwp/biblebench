@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 279,
+    "suite_id": 60,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "Jesus' disciples (his followers), though the larger crowd was present to hear.",
+    "duration": 31931,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.180Z",
+    "score": 0.475,
+    "scores": [
+      {
+        "id": 777,
+        "eval_id": 279,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response correctly reflects biblical teaching: the Sermon on the Mount (Matthew 5–7) is delivered in a setting where Jesus is addressing his disciples, while the crowds are present to hear. This dual audience is well-documented in Scripture (e.g., 5:1–2 notes the crowds and the disciples; the sermon content is directed to the disciples but publicly delivered). The statement aligns with historic Christian orthodoxy and is grounded in Scripture. A fuller nuance could mention that the teaching functions as normative instruction for all who follow Jesus, not just the original listeners, but the core claim about the audience is accurate."
+        },
+        "created_at": "2025-12-30T00:34:40.130Z"
+      },
+      {
+        "id": 778,
+        "eval_id": 279,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:40.130Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 294,
+        "eval_id": 279,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus' disciples (his followers), though the larger crowd was present to hear.",
+          "toolCalls": []
+        },
+        "start_time": 204.179667,
+        "end_time": 12329.381333,
+        "input_tokens": 137,
+        "output_tokens": 598,
+        "total_tokens": 735,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.180Z"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 138,
+    "suite_id": 30,
+    "col_order": 4,
+    "input": "Where does Paul write about the armor of God?",
+    "expected": "Ephesians 6:10-18",
+    "output": "The scripture reference where Paul writes about the armor of God is:\n\n**Ephesians 6:10-18**",
+    "duration": 6429,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:52:49.340Z",
+    "score": 0.8333333333333334,
+    "scores": [
+      {
+        "id": 226,
+        "eval_id": 138,
+        "name": "Scripture Reference Accuracy",
+        "score": 0.5,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:52:55.788Z"
+      },
+      {
+        "id": 227,
+        "eval_id": 138,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:52:55.788Z"
+      },
+      {
+        "id": 228,
+        "eval_id": 138,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "The scripture reference where Paul writes about the armor of God is:\n\n**Ephesians 6:10-18**"
+        },
+        "created_at": "2025-12-30T00:52:55.788Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 98,
+        "eval_id": 138,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhere does Paul write about the armor of God?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The scripture reference where Paul writes about the armor of God is:\n\n**Ephesians 6:10-18**",
+          "toolCalls": []
+        },
+        "start_time": 192.393041,
+        "end_time": 6619.255833,
+        "input_tokens": 61,
+        "output_tokens": 314,
+        "total_tokens": 375,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Reference Knowledge [Intellect-3]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Intellect-3",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:52:49.340Z"
+  }
+}

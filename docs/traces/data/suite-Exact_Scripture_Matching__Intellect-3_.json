@@ -1,0 +1,1221 @@
+{
+  "history": [
+    {
+      "score": 0.7291666666666666,
+      "date": "2025-12-30T00:51:33.270Z"
+    }
+  ],
+  "suite": {
+    "id": 27,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Intellect-3]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Intellect-3",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:51:33.270Z",
+    "evals": [
+      {
+        "id": 63,
+        "suite_id": 27,
+        "col_order": 0,
+        "input": "Quote John 3:16 from the King James Version (KJV) exactly as written",
+        "expected": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life",
+        "output": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+        "duration": 13128,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 33,
+            "eval_id": 63,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:46.401Z"
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "suite_id": 27,
+        "col_order": 1,
+        "input": "Quote John 3:16 from the New International Version (NIV) exactly as written",
+        "expected": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life",
+        "output": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.",
+        "duration": 19238,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 40,
+            "eval_id": 64,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:52.511Z"
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "suite_id": 27,
+        "col_order": 2,
+        "input": "Quote John 3:16 from the English Standard Version (ESV) exactly as written",
+        "expected": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life",
+        "output": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
+        "duration": 10620,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 20,
+            "eval_id": 65,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:43.893Z"
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "suite_id": 27,
+        "col_order": 3,
+        "input": "Quote John 3:16 from the New American Standard Bible (NASB) exactly as written",
+        "expected": "For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life",
+        "output": "For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish but have eternal life.",
+        "duration": 11168,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 23,
+            "eval_id": 66,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:44.441Z"
+          }
+        ]
+      },
+      {
+        "id": 67,
+        "suite_id": 27,
+        "col_order": 4,
+        "input": "Quote Psalm 23:1 from the King James Version (KJV) exactly as written",
+        "expected": "The Lord is my shepherd; I shall not want",
+        "output": "The LORD is my shepherd; I shall want.",
+        "duration": 10657,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 21,
+            "eval_id": 67,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:43.930Z"
+          }
+        ]
+      },
+      {
+        "id": 68,
+        "suite_id": 27,
+        "col_order": 5,
+        "input": "Quote Psalm 23:1 from the New International Version (NIV) exactly as written",
+        "expected": "The Lord is my shepherd, I lack nothing",
+        "output": "The LORD is my shepherd, I shall lack nothing.",
+        "duration": 10066,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 16,
+            "eval_id": 68,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:43.339Z"
+          }
+        ]
+      },
+      {
+        "id": 69,
+        "suite_id": 27,
+        "col_order": 6,
+        "input": "Quote Psalm 23:1 from the English Standard Version (ESV) exactly as written",
+        "expected": "The Lord is my shepherd; I shall not want",
+        "output": "The LORD is my shepherd; I shall want for nothing.",
+        "duration": 11427,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 25,
+            "eval_id": 69,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:44.700Z"
+          }
+        ]
+      },
+      {
+        "id": 70,
+        "suite_id": 27,
+        "col_order": 7,
+        "input": "Quote Genesis 1:1 from the King James Version (KJV) exactly as written",
+        "expected": "In the beginning God created the heaven and the earth",
+        "output": "In the beginning God created the heaven and the earth.",
+        "duration": 8666,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 3,
+            "eval_id": 70,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:41.939Z"
+          }
+        ]
+      },
+      {
+        "id": 71,
+        "suite_id": 27,
+        "col_order": 8,
+        "input": "Quote Genesis 1:1 from the New International Version (NIV) exactly as written",
+        "expected": "In the beginning God created the heavens and the earth",
+        "output": "In the beginning God created the heavens and the earth.",
+        "duration": 9836,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 13,
+            "eval_id": 71,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:43.110Z"
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "suite_id": 27,
+        "col_order": 9,
+        "input": "Quote Genesis 1:1 from the English Standard Version (ESV) exactly as written",
+        "expected": "In the beginning, God created the heavens and the earth",
+        "output": "In the beginning, God created the heavens and the earth.",
+        "duration": 10318,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 18,
+            "eval_id": 72,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:43.591Z"
+          }
+        ]
+      },
+      {
+        "id": 73,
+        "suite_id": 27,
+        "col_order": 10,
+        "input": "Quote Romans 3:23 from the King James Version (KJV) exactly as written",
+        "expected": "For all have sinned, and come short of the glory of God",
+        "output": "For all have sinned, and come short of the glory of God.",
+        "duration": 6975,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 1,
+            "eval_id": 73,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:40.249Z"
+          }
+        ]
+      },
+      {
+        "id": 74,
+        "suite_id": 27,
+        "col_order": 11,
+        "input": "Quote Romans 3:23 from the New International Version (NIV) exactly as written",
+        "expected": "for all have sinned and fall short of the glory of God",
+        "output": "for all have sinned and fall short of the glory of God.",
+        "duration": 19731,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 42,
+            "eval_id": 74,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:53.004Z"
+          }
+        ]
+      },
+      {
+        "id": 75,
+        "suite_id": 27,
+        "col_order": 12,
+        "input": "Quote Romans 3:23 from the English Standard Version (ESV) exactly as written",
+        "expected": "for all have sinned and fall short of the glory of God",
+        "output": "for all have sinned and fall short of the glory of God.",
+        "duration": 7792,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 2,
+            "eval_id": 75,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:41.066Z"
+          }
+        ]
+      },
+      {
+        "id": 76,
+        "suite_id": 27,
+        "col_order": 13,
+        "input": "Quote Proverbs 3:5-6 from the King James Version (KJV) exactly as written",
+        "expected": "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths",
+        "output": "Trust in the LORD with all thine heart; and lean not unto thine own understanding.  \nIn all thy ways acknowledge him, and he shall direct thy paths.",
+        "duration": 11760,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 30,
+            "eval_id": 76,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:45.033Z"
+          }
+        ]
+      },
+      {
+        "id": 77,
+        "suite_id": 27,
+        "col_order": 14,
+        "input": "Quote Proverbs 3:5-6 from the New International Version (NIV) exactly as written",
+        "expected": "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight",
+        "output": "Trust in the LORD with all your heart  \nand lean not on your own understanding;  \nin all your ways submit to him,  \nand he will make your paths straight.",
+        "duration": 9266,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 8,
+            "eval_id": 77,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:42.540Z"
+          }
+        ]
+      },
+      {
+        "id": 78,
+        "suite_id": 27,
+        "col_order": 15,
+        "input": "Quote Proverbs 3:5-6 from the English Standard Version (ESV) exactly as written",
+        "expected": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths",
+        "output": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make your paths straight.",
+        "duration": 23781,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 47,
+            "eval_id": 78,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:57.055Z"
+          }
+        ]
+      },
+      {
+        "id": 79,
+        "suite_id": 27,
+        "col_order": 16,
+        "input": "Quote Philippians 4:13 from the King James Version (KJV) exactly as written",
+        "expected": "I can do all things through Christ which strengtheneth me",
+        "output": "I can do all things through Christ which strengtheneth me.",
+        "duration": 9498,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 10,
+            "eval_id": 79,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:42.772Z"
+          }
+        ]
+      },
+      {
+        "id": 80,
+        "suite_id": 27,
+        "col_order": 17,
+        "input": "Quote Philippians 4:13 from the New International Version (NIV) exactly as written",
+        "expected": "I can do all this through him who gives me strength",
+        "output": "I can do all things through Christ who strengthens me.",
+        "duration": 9885,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 15,
+            "eval_id": 80,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:43.158Z"
+          }
+        ]
+      },
+      {
+        "id": 81,
+        "suite_id": 27,
+        "col_order": 18,
+        "input": "Quote Philippians 4:13 from the English Standard Version (ESV) exactly as written",
+        "expected": "I can do all things through him who strengthens me",
+        "output": "I can do all things through him who strengthens me.",
+        "duration": 18745,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 38,
+            "eval_id": 81,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:52.018Z"
+          }
+        ]
+      },
+      {
+        "id": 82,
+        "suite_id": 27,
+        "col_order": 19,
+        "input": "Quote Isaiah 40:31 from the King James Version (KJV) exactly as written",
+        "expected": "But they that wait upon the Lord shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint",
+        "output": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.",
+        "duration": 10530,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 19,
+            "eval_id": 82,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:43.803Z"
+          }
+        ]
+      },
+      {
+        "id": 83,
+        "suite_id": 27,
+        "col_order": 20,
+        "input": "Quote Isaiah 40:31 from the New International Version (NIV) exactly as written",
+        "expected": "but those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint",
+        "output": "but those who hope in the LORD will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
+        "duration": 16880,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 36,
+            "eval_id": 83,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:50.154Z"
+          }
+        ]
+      },
+      {
+        "id": 84,
+        "suite_id": 27,
+        "col_order": 21,
+        "input": "Quote Jeremiah 29:11 from the King James Version (KJV) exactly as written",
+        "expected": "For I know the thoughts that I think toward you, saith the Lord, thoughts of peace, and not of evil, to give you an expected end",
+        "output": "For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end. Then shall ye call upon me, and I will hearken unto you; and ye shall seek me, and find me, when ye shall search for me with all your heart. And I will be found of you, saith the LORD: and I will turn away your captivity, and gather you from all the nations, and from all the places whither I have driven you, saith the LORD; and I will bring you again into the place whence I caused you to be carried away captive.",
+        "duration": 20914,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.270Z",
+        "scores": [
+          {
+            "id": 44,
+            "eval_id": 84,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:54.188Z"
+          }
+        ]
+      },
+      {
+        "id": 85,
+        "suite_id": 27,
+        "col_order": 22,
+        "input": "Quote Jeremiah 29:11 from the New International Version (NIV) exactly as written",
+        "expected": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future",
+        "output": "For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future.",
+        "duration": 12398,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 31,
+            "eval_id": 85,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:45.672Z"
+          }
+        ]
+      },
+      {
+        "id": 86,
+        "suite_id": 27,
+        "col_order": 23,
+        "input": "Quote Jeremiah 29:11 from the English Standard Version (ESV) exactly as written",
+        "expected": "For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope",
+        "output": "For I know the plans I have for you, declares the LORD, plans for welfare and not for evil, to give you a future and a hope.",
+        "duration": 18724,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 37,
+            "eval_id": 86,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:51.998Z"
+          }
+        ]
+      },
+      {
+        "id": 87,
+        "suite_id": 27,
+        "col_order": 24,
+        "input": "Quote Romans 8:28 from the King James Version (KJV) exactly as written",
+        "expected": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose",
+        "output": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
+        "duration": 9260,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 7,
+            "eval_id": 87,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:42.533Z"
+          }
+        ]
+      },
+      {
+        "id": 88,
+        "suite_id": 27,
+        "col_order": 25,
+        "input": "Quote Romans 8:28 from the New International Version (NIV) exactly as written",
+        "expected": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose",
+        "output": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+        "duration": 9491,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 9,
+            "eval_id": 88,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:42.765Z"
+          }
+        ]
+      },
+      {
+        "id": 89,
+        "suite_id": 27,
+        "col_order": 26,
+        "input": "Quote Romans 8:28 from the English Standard Version (ESV) exactly as written",
+        "expected": "And we know that for those who love God all things work together for good, for those who are called according to his purpose",
+        "output": "And we know that for those who love God all things work together for good, for those who are called according to His purpose.",
+        "duration": 9695,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 11,
+            "eval_id": 89,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:42.969Z"
+          }
+        ]
+      },
+      {
+        "id": 90,
+        "suite_id": 27,
+        "col_order": 27,
+        "input": "Quote Matthew 28:19-20 from the King James Version (KJV) exactly as written",
+        "expected": "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world",
+        "output": "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world. Amen.",
+        "duration": 11438,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 26,
+            "eval_id": 90,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:44.711Z"
+          }
+        ]
+      },
+      {
+        "id": 91,
+        "suite_id": 27,
+        "col_order": 28,
+        "input": "Quote Matthew 28:19-20 from the New International Version (NIV) exactly as written",
+        "expected": "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age",
+        "output": "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.",
+        "duration": 21180,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 46,
+            "eval_id": 91,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:54.454Z"
+          }
+        ]
+      },
+      {
+        "id": 92,
+        "suite_id": 27,
+        "col_order": 29,
+        "input": "Quote Matthew 28:19-20 from the English Standard Version (ESV) exactly as written",
+        "expected": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age",
+        "output": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.",
+        "duration": 12576,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 32,
+            "eval_id": 92,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:45.850Z"
+          }
+        ]
+      },
+      {
+        "id": 93,
+        "suite_id": 27,
+        "col_order": 30,
+        "input": "Quote Micah 6:8 from the King James Version (KJV) exactly as written",
+        "expected": "He hath shewed thee, O man, what is good; and what doth the Lord require of thee, but to do justly, and to love mercy, and to walk humbly with thy God",
+        "output": "He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?",
+        "duration": 15430,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 35,
+            "eval_id": 93,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:48.704Z"
+          }
+        ]
+      },
+      {
+        "id": 94,
+        "suite_id": 27,
+        "col_order": 31,
+        "input": "Quote Micah 6:8 from the New International Version (NIV) exactly as written",
+        "expected": "He has shown you, O mortal, what is good. And what does the Lord require of you? To act justly and to love mercy and to walk humbly with your God",
+        "output": "He has shown you what is good. And what does the Lord require of you? To act justly, to love mercy, and to walk humbly with your God.",
+        "duration": 13548,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 34,
+            "eval_id": 94,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:46.821Z"
+          }
+        ]
+      },
+      {
+        "id": 95,
+        "suite_id": 27,
+        "col_order": 32,
+        "input": "Quote Micah 6:8 from the English Standard Version (ESV) exactly as written",
+        "expected": "He has told you, O man, what is good; and what does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God",
+        "output": "He has told you, O man, what is good. And what does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God?",
+        "duration": 18778,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 39,
+            "eval_id": 95,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:52.052Z"
+          }
+        ]
+      },
+      {
+        "id": 96,
+        "suite_id": 27,
+        "col_order": 33,
+        "input": "Quote 2 Timothy 3:16 from the King James Version (KJV) exactly as written",
+        "expected": "All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness",
+        "output": "All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness.",
+        "duration": 8861,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 5,
+            "eval_id": 96,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:42.134Z"
+          }
+        ]
+      },
+      {
+        "id": 97,
+        "suite_id": 27,
+        "col_order": 34,
+        "input": "Quote 2 Timothy 3:16 from the New International Version (NIV) exactly as written",
+        "expected": "All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness",
+        "output": "All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness.",
+        "duration": 9226,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 6,
+            "eval_id": 97,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:42.499Z"
+          }
+        ]
+      },
+      {
+        "id": 98,
+        "suite_id": 27,
+        "col_order": 35,
+        "input": "Quote 2 Timothy 3:16 from the English Standard Version (ESV) exactly as written",
+        "expected": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness",
+        "output": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,",
+        "duration": 9818,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 12,
+            "eval_id": 98,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:43.092Z"
+          }
+        ]
+      },
+      {
+        "id": 99,
+        "suite_id": 27,
+        "col_order": 36,
+        "input": "Quote James 1:5 from the King James Version (KJV) exactly as written",
+        "expected": "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him",
+        "output": "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.",
+        "duration": 10112,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 17,
+            "eval_id": 99,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:43.386Z"
+          }
+        ]
+      },
+      {
+        "id": 100,
+        "suite_id": 27,
+        "col_order": 37,
+        "input": "Quote James 1:5 from the New International Version (NIV) exactly as written",
+        "expected": "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you",
+        "output": "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.",
+        "duration": 9841,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.271Z",
+        "scores": [
+          {
+            "id": 14,
+            "eval_id": 100,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:43.115Z"
+          }
+        ]
+      },
+      {
+        "id": 117,
+        "suite_id": 27,
+        "col_order": 38,
+        "input": "Quote James 1:5 from the English Standard Version (ESV) exactly as written",
+        "expected": "If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him",
+        "output": "If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him.",
+        "duration": 11296,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 24,
+            "eval_id": 117,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:44.619Z"
+          }
+        ]
+      },
+      {
+        "id": 118,
+        "suite_id": 27,
+        "col_order": 39,
+        "input": "Quote Lamentations 3:22-23 from the King James Version (KJV) exactly as written",
+        "expected": "It is of the Lord's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness",
+        "output": "It is of the Lord's mercies that we are not consumed, because his compassions fail not.\nThey are new every morning: great is thy faithfulness.",
+        "duration": 24900,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 48,
+            "eval_id": 118,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:58.223Z"
+          }
+        ]
+      },
+      {
+        "id": 119,
+        "suite_id": 27,
+        "col_order": 40,
+        "input": "Quote Lamentations 3:22-23 from the New International Version (NIV) exactly as written",
+        "expected": "Because of the Lord's great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness",
+        "output": "Because of the Lord's great love we are not consumed, for his compassions never fail.  \nThey are new every morning; great is your faithfulness.",
+        "duration": 20298,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 43,
+            "eval_id": 119,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:53.620Z"
+          }
+        ]
+      },
+      {
+        "id": 120,
+        "suite_id": 27,
+        "col_order": 41,
+        "input": "Quote Lamentations 3:22-23 from the English Standard Version (ESV) exactly as written",
+        "expected": "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness",
+        "output": "The steadfast love of the LORD never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness.",
+        "duration": 19208,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 41,
+            "eval_id": 120,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:52.530Z"
+          }
+        ]
+      },
+      {
+        "id": 121,
+        "suite_id": 27,
+        "col_order": 42,
+        "input": "Quote Colossians 3:23 from the King James Version (KJV) exactly as written",
+        "expected": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men",
+        "output": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men.",
+        "duration": 8762,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 4,
+            "eval_id": 121,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:42.085Z"
+          }
+        ]
+      },
+      {
+        "id": 122,
+        "suite_id": 27,
+        "col_order": 43,
+        "input": "Quote Colossians 3:23 from the New International Version (NIV) exactly as written",
+        "expected": "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters",
+        "output": "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.",
+        "duration": 11641,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 28,
+            "eval_id": 122,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:44.964Z"
+          }
+        ]
+      },
+      {
+        "id": 123,
+        "suite_id": 27,
+        "col_order": 44,
+        "input": "Quote Colossians 3:23 from the English Standard Version (ESV) exactly as written",
+        "expected": "Whatever you do, work heartily, as for the Lord and not for men",
+        "output": "Whatever you do, do your heartily, as for the Lord rather than for men.",
+        "duration": 11709,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 29,
+            "eval_id": 123,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:45.032Z"
+          }
+        ]
+      },
+      {
+        "id": 124,
+        "suite_id": 27,
+        "col_order": 45,
+        "input": "Quote 1 Peter 3:15 from the King James Version (KJV) exactly as written",
+        "expected": "But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear",
+        "output": "But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear.",
+        "duration": 20958,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 45,
+            "eval_id": 124,
+            "name": "Exact Match",
+            "score": 1,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": true
+            },
+            "created_at": "2025-12-30T00:51:54.281Z"
+          }
+        ]
+      },
+      {
+        "id": 125,
+        "suite_id": 27,
+        "col_order": 46,
+        "input": "Quote 1 Peter 3:15 from the New International Version (NIV) exactly as written",
+        "expected": "But in your hearts revere Christ as Lord. Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have. But do this with gentleness and respect",
+        "output": "Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have. And do this with gentleness and respect.",
+        "duration": 11420,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 27,
+            "eval_id": 125,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:44.742Z"
+          }
+        ]
+      },
+      {
+        "id": 126,
+        "suite_id": 27,
+        "col_order": 47,
+        "input": "Quote 1 Peter 3:15 from the English Standard Version (ESV) exactly as written",
+        "expected": "but in your hearts honor Christ the Lord as holy, always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect",
+        "output": "but in your hearts honor Christ the Lord as holy, always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you.",
+        "duration": 10782,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:51:33.272Z",
+        "scores": [
+          {
+            "id": 22,
+            "eval_id": 126,
+            "name": "Exact Match",
+            "score": 0,
+            "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+            "metadata": {
+              "exactMatch": false
+            },
+            "created_at": "2025-12-30T00:51:44.105Z"
+          }
+        ]
+      }
+    ]
+  }
+}

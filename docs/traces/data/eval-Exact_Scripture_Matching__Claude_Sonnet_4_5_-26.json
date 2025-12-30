@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 354,
+    "suite_id": 89,
+    "col_order": 26,
+    "input": "Quote Romans 8:28 from the English Standard Version (ESV) exactly as written",
+    "expected": "And we know that for those who love God all things work together for good, for those who are called according to his purpose",
+    "output": "And we know that for those who love God all things work together for good, for those who are called according to his purpose.",
+    "duration": 1942,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:30.378Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 717,
+        "eval_id": 354,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:17:32.324Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 230,
+        "eval_id": 354,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Romans 8:28 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "And we know that for those who love God all things work together for good, for those who are called according to his purpose.",
+          "toolCalls": []
+        },
+        "start_time": 203.595625,
+        "end_time": 2115.863833,
+        "input_tokens": 98,
+        "output_tokens": 29,
+        "total_tokens": 127,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 89,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:30.377Z"
+  }
+}

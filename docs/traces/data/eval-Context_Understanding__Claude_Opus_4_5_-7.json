@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 279,
+    "suite_id": 87,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "Jesus used parables to reveal truth to receptive hearts while concealing it from those who rejected him. He explained this directly in Matthew 13:11-13—his disciples were given to understand the mysteries of the kingdom, but to others truth came in parables so that \"seeing they do not see, and hearing they do not hear.\" \n\nParables also made abstract spiritual truths concrete and memorable, disarmed hostile listeners, fulfilled prophecy (Psalm 78:2), and invited deeper reflection rather than surface-level acceptance.",
+    "duration": 37298,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.863Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 1165,
+        "eval_id": 279,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "The claim that parables 'disarmed hostile listeners' is an interpretive flourish not explicitly stated in Scripture; some parables provoke opposition or confusion rather than disarm it.",
+            "The phrasing 'receptive hearts vs. those who rejected him' can be read as an absolute dichotomy. Scripture presents a more nuanced dynamic where some hear and believe, some hear and stumble, and others remain unreceptive or partially receptive. The broader point—that parables reveal truth to the open and obscure it to the hard-hearted—remains accurate, but the binary framing should be softened."
+          ],
+          "rationale": "The response correctly cites Matthew 13:11-13 (the disciples’ understanding of mysteries vs. others receiving with a parabolic form) and the Isaiah/prophetic language about seeing and hearing. It accurately notes that parables make truths concrete and memorable and references Psalm 78:2 as the scriptural basis for Jesus’ use of parables in fulfilling prophecy (as Matthew 13:35 presents). The main strengths are alignment with biblical passages and the general function of parables in teaching and revelation. The main area for caution is an overgeneral or absolute phrasing about 'disarming hostile listeners' and the strict dichotomy of 'receptive vs. rejecting'—the NT presents a more nuanced spectrum of receptivity and reactions to Jesus’ teaching. Overall, the answer is doctrinally sound, biblically grounded, and captures key nuances, with minor interpretive looseness in a couple of claims."
+        },
+        "created_at": "2025-12-30T00:17:59.183Z"
+      },
+      {
+        "id": 1166,
+        "eval_id": 279,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:59.183Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 444,
+        "eval_id": 279,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus used parables to reveal truth to receptive hearts while concealing it from those who rejected him. He explained this directly in Matthew 13:11-13—his disciples were given to understand the mysteries of the kingdom, but to others truth came in parables so that \"seeing they do not see, and hearing they do not hear.\" \n\nParables also made abstract spiritual truths concrete and memorable, disarmed hostile listeners, fulfilled prophecy (Psalm 78:2), and invited deeper reflection rather than surface-level acceptance.",
+          "toolCalls": []
+        },
+        "start_time": 200.6955,
+        "end_time": 4316.541458,
+        "input_tokens": 151,
+        "output_tokens": 116,
+        "total_tokens": 267,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 87,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

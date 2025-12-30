@@ -1,0 +1,92 @@
+{
+  "eval": {
+    "id": 144,
+    "suite_id": 31,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "The Gospel of John was written by the Apostle John, one of Jesus's twelve disciples. John was the son of Zebedee and Salome, and he was originally a fisherman by trade. He was part of Jesus's inner circle, along with Peter and James. John was crucified and later exiled to Patmos, where he received the visions recorded in the Book of Revelation.\n\nHis relationship to Jesus was exceptionally close. John was the disciple whom Jesus loved, and he was present at key moments such as the Transfiguration, the raising of Jairus's daughter, and the Agony in Gethsemane. John was also the only one of the Twelve not to forsake Jesus during his trial and crucifixion. He was entrusted with the care of Jesus's mother, Mary, and he became a pillar of the early church in Jerusalem before ministering in Ephesus.\n\nThe Gospel of John was likely written around AD 90-100 in Ephesus. The early church fathers, such as Irenaeus, Clement of Alexandria, and Tertullian, consistently affirm John the Apostle as the author.",
+    "duration": 50043,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:52:58.634Z",
+    "score": 0.275,
+    "scores": [
+      {
+        "id": 397,
+        "eval_id": 144,
+        "name": "Theological Accuracy Judge",
+        "score": 0.55,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": false,
+          "nuance_captured": true,
+          "errors": [
+            "Incorrect claim that John was crucified; mainstream tradition holds he died a natural death and Revelation places him in exile on Patmos, not crucified.",
+            "Overstatement: claims John was the 'only one' not to forsake Jesus at the trial and crucifixion; the biblical texts do not support this absolute statement and it remains debated.",
+            "Authorship attribution as universally affirmed by the early church; modern scholarship recognizes debate about the exact authorship of the Gospel of John and whether it was written by the Apostle John or a Johannine community; the LLM’s claim of consistent patristic unanimity is overstated.",
+            "Assertion about Salome as John’s mother reflects a traditional view but is not universally attested in Scripture or in all early sources; this identification is therefore tentative.",
+            "Dating the Gospel to AD 90–100 is a traditional estimate but not definitively agreed upon in Scripture or by all scholars; it should be presented as a scholarly hypothesis rather than a proven fact."
+          ],
+          "rationale": "The response largely aligns with orthodox tradition on John as a key figure and the 'beloved disciple,' his care for Mary, and the general dating of the Gospel. However, it contains a significant factual error (John’s crucifixion) and an overconfident claim about universal patristic consensus on authorship. It also makes a debatable assertion about John’s non-forsaking status at Jesus’ trial/crucifixion. The verdict remains doctrinally orthodox overall, but the historical details require caution and nuance, and some traditional identifications (e.g., Salome as Mary’s mother, exact authorship) are not universally agreed upon in Scripture or early sources."
+        },
+        "created_at": "2025-12-30T00:53:48.677Z"
+      },
+      {
+        "id": 398,
+        "eval_id": 144,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:53:48.677Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 151,
+        "eval_id": 144,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The Gospel of John was written by the Apostle John, one of Jesus's twelve disciples. John was the son of Zebedee and Salome, and he was originally a fisherman by trade. He was part of Jesus's inner circle, along with Peter and James. John was crucified and later exiled to Patmos, where he received the visions recorded in the Book of Revelation.\n\nHis relationship to Jesus was exceptionally close. John was the disciple whom Jesus loved, and he was present at key moments such as the Transfiguration, the raising of Jairus's daughter, and the Agony in Gethsemane. John was also the only one of the Twelve not to forsake Jesus during his trial and crucifixion. He was entrusted with the care of Jesus's mother, Mary, and he became a pillar of the early church in Jerusalem before ministering in Ephesus.\n\nThe Gospel of John was likely written around AD 90-100 in Ephesus. The early church fathers, such as Irenaeus, Clement of Alexandria, and Tertullian, consistently affirm John the Apostle as the author.",
+          "toolCalls": []
+        },
+        "start_time": 170.884333,
+        "end_time": 14660.573583,
+        "input_tokens": 142,
+        "output_tokens": 985,
+        "total_tokens": 1127,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Context Understanding [Intellect-3]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Intellect-3",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:52:58.634Z"
+  }
+}

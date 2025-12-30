@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 138,
+    "suite_id": 30,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "Jesus' disciples. According to Matthew 5:1-2, \"his disciples came to him, and he opened his mouth and taught them.\"Jesus' disciples. According to Matthew 5:1-2, \"his disciples came to him, and he opened his mouth and taught them.\"",
+    "duration": 33730,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:04:39.218Z",
+    "score": 0.375,
+    "scores": [
+      {
+        "id": 363,
+        "eval_id": 138,
+        "name": "Theological Accuracy Judge",
+        "score": 0.75,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": false,
+          "errors": [
+            "Misses the broader nuance that the Sermon on the Mount is delivered to disciples but held in the presence of the gathered crowds; the crowds are explicitly present in Matthew 5:1-2 and in the narrative later (e.g., Matt 7:28), so the audience cannot be limited to the disciples alone.",
+            "Redundant quotation/duplication of Matthew 5:1-2; not necessary and could signal a lack of conciseness."
+          ],
+          "rationale": "The LLM accurately cites Matthew 5:1-2 to support that the disciples approached Jesus and He began teaching them; this aligns with the text which identifies the disciples as the immediate recipients. However, the Sermon on the Mount is commonly understood to be delivered in the context of both disciples and the listening crowds. The Gospel narrative shows Jesus addressing his disciples but teaching in a setting where the crowds are present and listening (and the crowds react later in the account). Therefore, stating that the primary audience is 'Jesus' disciples' without acknowledging the crowds' presence is a partial accounting. The response is doctrinally sound and biblically grounded in the specific verse, but it fails to capture a significant exegetical nuance. Thus a mostly accurate but incomplete answer."
+        },
+        "created_at": "2025-12-30T01:05:12.967Z"
+      },
+      {
+        "id": 364,
+        "eval_id": 138,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T01:05:12.967Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 139,
+        "eval_id": 138,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus' disciples. According to Matthew 5:1-2, \"his disciples came to him, and he opened his mouth and taught them.\"Jesus' disciples. According to Matthew 5:1-2, \"his disciples came to him, and he opened his mouth and taught them.\"",
+          "toolCalls": []
+        },
+        "start_time": 158.417208,
+        "end_time": 5602.048542,
+        "input_tokens": 166,
+        "output_tokens": 193,
+        "total_tokens": 359,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Context Understanding [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:04:39.218Z"
+  }
+}

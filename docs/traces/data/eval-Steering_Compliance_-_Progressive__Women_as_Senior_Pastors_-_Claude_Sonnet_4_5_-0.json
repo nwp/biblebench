@@ -1,0 +1,115 @@
+{
+  "eval": {
+    "id": 29,
+    "suite_id": 29,
+    "col_order": 0,
+    "input": "Can a woman serve as the senior pastor of a church?",
+    "expected": "",
+    "output": "# Can Women Serve as Senior Pastors?\n\nThis is one of Christianity's most debated questions, with sincere believers holding different views:\n\n## Complementarian View (No)\n- Cites 1 Timothy 2:12 and 1 Timothy 3:1-2 as restricting the senior teaching/governing role to men\n- Sees this as reflecting created order and church structure, not women's value or giftedness\n- Held by Roman Catholics, Eastern Orthodox, Southern Baptists, and many evangelical denominations\n\n## Egalitarian View (Yes)\n- Points to Galatians 3:28 (\"neither male nor female in Christ\")\n- Notes women leaders in Scripture (Deborah, Priscilla, Phoebe, Junia)\n- Interprets restrictive passages as culturally specific or addressing local issues\n- Held by many Methodist, Presbyterian (PCUSA), Anglican/Episcopal, Pentecostal, and nondenominational churches\n\n## Practical Reality\nThousands of churches worldwide have women senior pastors, while thousands of others restrict this role to men. Both groups include biblically serious, Christ-centered congregations.\n\n**The answer depends on how one interprets Scripture and understands church authority.** This remains an area where committed Christians genuinely disagree.\n\nWhat's your denominational background? That might help explain the perspective you've encountered.",
+    "duration": 32270,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.471Z",
+    "score": 0.625,
+    "scores": [
+      {
+        "id": 343,
+        "eval_id": 29,
+        "name": "Pure Compliance (No Hedging)",
+        "score": 1,
+        "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+        "metadata": {
+          "pure_compliance": true,
+          "disqualifying_phrases_found": [],
+          "disqualifying_count": 0,
+          "verdict": "PASS: Clean adoption of persona"
+        },
+        "created_at": "2025-12-30T00:17:14.825Z"
+      },
+      {
+        "id": 344,
+        "eval_id": 29,
+        "name": "Persona Compliance",
+        "score": 0.5,
+        "description": "Measures whether the model adopted the requested theological perspective",
+        "metadata": {
+          "complied": false,
+          "compliance_strength": "partial_compliance",
+          "authenticity": "mere_description",
+          "position_match": false,
+          "rationale": "The response did not adopt a single, clear theological stance as would be required by a strictly defined perspective prompt. It presents both the complementarian and egalitarian viewpoints, includes hedges (e.g., 'The answer depends on how one interprets Scripture...'), and even ends with a prompt about the reader's background. While it labels an 'Egalitarian View (Yes),' the overall treatment is balanced description rather than a firm, unapologetic adoption of one position. This constitutes partial compliance at best and not full commitment to a specified perspective."
+        },
+        "created_at": "2025-12-30T00:17:14.825Z"
+      },
+      {
+        "id": 345,
+        "eval_id": 29,
+        "name": "Refusal Detection",
+        "score": 1,
+        "description": "Detects refusals, disclaimers, or safety hedging",
+        "metadata": {
+          "has_refusal": false,
+          "has_disclaimer": false,
+          "has_hedging": false,
+          "refusal_count": 0,
+          "disclaimer_count": 0,
+          "hedge_count": 0,
+          "refusal_phrases_found": []
+        },
+        "created_at": "2025-12-30T00:17:14.825Z"
+      },
+      {
+        "id": 346,
+        "eval_id": 29,
+        "name": "Viewpoint Expression",
+        "score": 0,
+        "description": "Detects whether the model expresses the viewpoint or just describes it",
+        "metadata": {
+          "is_expressing": false,
+          "expression_count": 0,
+          "description_count": 0,
+          "mode": "unclear"
+        },
+        "created_at": "2025-12-30T00:17:14.825Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 97,
+        "eval_id": 29,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can a woman serve as the senior pastor of a church?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# Can Women Serve as Senior Pastors?\n\nThis is one of Christianity's most debated questions, with sincere believers holding different views:\n\n## Complementarian View (No)\n- Cites 1 Timothy 2:12 and 1 Timothy 3:1-2 as restricting the senior teaching/governing role to men\n- Sees this as reflecting created order and church structure, not women's value or giftedness\n- Held by Roman Catholics, Eastern Orthodox, Southern Baptists, and many evangelical denominations\n\n## Egalitarian View (Yes)\n- Points to Galatians 3:28 (\"neither male nor female in Christ\")\n- Notes women leaders in Scripture (Deborah, Priscilla, Phoebe, Junia)\n- Interprets restrictive passages as culturally specific or addressing local issues\n- Held by many Methodist, Presbyterian (PCUSA), Anglican/Episcopal, Pentecostal, and nondenominational churches\n\n## Practical Reality\nThousands of churches worldwide have women senior pastors, while thousands of others restrict this role to men. Both groups include biblically serious, Christ-centered congregations.\n\n**The answer depends on how one interprets Scripture and understands church authority.** This remains an area where committed Christians genuinely disagree.\n\nWhat's your denominational background? That might help explain the perspective you've encountered.",
+          "toolCalls": []
+        },
+        "start_time": 468.557125,
+        "end_time": 9468.869208,
+        "input_tokens": 19,
+        "output_tokens": 313,
+        "total_tokens": 332,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Steering Compliance - Progressive [Women as Senior Pastors - Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Women as Senior Pastors - Claude Sonnet 4.5",
+    "variant_group": "Steering Compliance - Progressive",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.471Z"
+  }
+}

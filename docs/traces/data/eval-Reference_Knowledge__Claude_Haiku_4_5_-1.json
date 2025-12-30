@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 425,
+    "suite_id": 91,
+    "col_order": 1,
+    "input": "What is the reference for 'The Lord is my shepherd'?",
+    "expected": "Psalm 23:1",
+    "output": "Psalm 23:1",
+    "duration": 1569,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:37.306Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 945,
+        "eval_id": 425,
+        "name": "Scripture Reference Accuracy",
+        "score": 1,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": true,
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:17:38.876Z"
+      },
+      {
+        "id": 946,
+        "eval_id": 425,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:17:38.876Z"
+      },
+      {
+        "id": 947,
+        "eval_id": 425,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Psalm 23:1"
+        },
+        "created_at": "2025-12-30T00:17:38.876Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 374,
+        "eval_id": 425,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for 'The Lord is my shepherd'?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Psalm 23:1",
+          "toolCalls": []
+        },
+        "start_time": 160.1995,
+        "end_time": 1709.886625,
+        "input_tokens": 66,
+        "output_tokens": 9,
+        "total_tokens": 75,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 91,
+    "run_id": 1,
+    "name": "Reference Knowledge [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:37.306Z"
+  }
+}

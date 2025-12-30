@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 190,
+    "suite_id": 59,
+    "col_order": 3,
+    "input": "Quote John 3:16 from the New American Standard Bible (NASB) exactly as written",
+    "expected": "For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life",
+    "output": "For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life.",
+    "duration": 1349,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:46.380Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 529,
+        "eval_id": 190,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:14:47.731Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 163,
+        "eval_id": 190,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote John 3:16 from the New American Standard Bible (NASB) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life.",
+          "toolCalls": []
+        },
+        "start_time": 187.031167,
+        "end_time": 1513.517209,
+        "input_tokens": 90,
+        "output_tokens": 30,
+        "total_tokens": 120,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:46.380Z"
+  }
+}

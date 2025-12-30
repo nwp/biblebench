@@ -1,0 +1,100 @@
+{
+  "eval": {
+    "id": 57,
+    "suite_id": 25,
+    "col_order": 5,
+    "input": "A group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?",
+    "expected": "This is Gnosticism, an ancient heresy. It contradicts Christianity in multiple ways: Christianity teaches salvation through faith in Christ's public work (not secret knowledge), affirms the goodness of God's material creation (Genesis 1), and proclaims resurrection of the body (not escape from physicality). Gnosticism was explicitly condemned by early church fathers and the New Testament writings (especially 1 John and Colossians).",
+    "output": "This teaching represents **classical Gnosticism**, a major heresy that emerged in the early centuries of Christianity. It is **not orthodox Christian teaching** and was explicitly condemned by the Church Fathers and early councils.\n\nHere is a breakdown of why it conflicts with core Christian doctrine:\n\n### 1. **Salvation through Secret Knowledge (Gnosis)**\n*   **Orthodox Teaching:** Salvation is achieved by God's grace, received through faith in the person and work of Jesus Christ—his atoning death and physical resurrection. This message is public, proclaimed to all (the *kerygma*), not hidden (Matthew 28:19, Romans 1:16, 1 Timothy 2:4).\n*   **The Heresy:** It replaces faith in Christ with an intellectual or spiritual ascent through a secret tradition or knowledge, available only to a spiritual elite. This denies the universal offer of the Gospel and makes salvation an achievement of the enlightened self rather than a gift from God.\n\n### 2. **Matter is Evil / Dualism**\n*   **Orthodox Teaching:** God created the material world and declared it **\"very good\"** (Genesis 1:31). While the world is fallen and corrupted by sin, matter itself is not inherently evil. Salvation includes the redemption and resurrection of the **body** (1 Corinthians 15), not escape from it.\n*   **The Heresy:** It introduces a radical dualism between spirit (good) and matter (evil). This is a pre-Christian philosophical idea, often traced to Platonism, that is foreign to the biblical worldview. If matter is evil, then the physical creation cannot be the work of a wholly good God.\n\n### 3. **Salvation as Escape from the Material World**\n*   **Orthodox Teaching:** Christian hope is not escape from creation, but the **restoration and renewal of all creation** (Romans 8:18-23, Revelation 21:1-5). The goal is a \"new heaven and a new earth,\" where redeemed humanity, in resurrected bodies, dwells with God.\n*   **The Heresy:** Salvation becomes a liberation of the divine spark from the prison of the physical body and the material cosmos. This renders the Incarnation, Crucifixion, and Resurrection nonsensical or illusory (a heresy known as **Docetism**), as a truly good God could not unite with evil flesh, and a spiritual being cannot truly die on a material cross.\n\n### **Christological Implications**\nThe most critical consequence of this teaching is its destruction of the doctrine of the **Incarnation**. If matter is evil, then Jesus Christ could not have been \"the Word made **flesh**\" (John 1:14). Early Gnostics often taught that Christ only *appeared* to be human or that the divine Christ descended upon the human Jesus at baptism and left before the crucifixion. This denies the central Christian confession that God truly entered His creation to redeem it from within.\n\n### **Historical Designation**\nThe Church Fathers, most notably **Irenaeus of Lyons** in his work *Against Heresies* (c. 180 AD), tirelessly refuted these teachings. They were condemned as incompatible with the apostolic faith summarized in the **Rule of Faith** and later codified in creeds like the **Nicene Creed**.\n\n**Conclusion:** The statement is **heretical** from the standpoint of historical, creedal Christianity. It substitutes a human-centered, esoteric path of enlightenment for the God-centered, publicly revealed gospel of Jesus Christ, and it denies the goodness of creation and the reality of the Incarnation—the very foundations of Christian salvation.",
+    "duration": 52105,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:43:20.834Z",
+    "score": 0.9733333333333333,
+    "scores": [
+      {
+        "id": 57,
+        "eval_id": 57,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Historical nuance: Gnosticism was primarily condemned through patristic writings (e.g., Irenaeus, Tertullian) and creedal formulations rather than a single explicit ecumenical council condemning a unified ‘Gnosticism.’ The phrase 'explicitly condemned by the Church Fathers and early councils' is broadly accurate but could be more precise about the sources of condemnation."
+          ],
+          "rationale": "The LLM’s response correctly identifies the teaching as Gnostic and outlines how it departs from orthodox Christian doctrine: salvation by public (not secret) faith in Christ, creation’s goodness, and the bodily resurrection. It correctly notes the dualistic/material dualism common to Gnosticism, the danger to the incarnation (and potential docetism), and aligns with Scripture in affirming the goodness of creation (Genesis 1:31) and the resurrection (1 Corinthians 15). It also cites New Testament counterpoints (e.g., 1 John, Colossians) and creedal/historical defenses (rule of faith, Nicene Creed). The nuances about the universality of the gospel, the public proclamation, and the incarnation are well captured. The main strengthening areas are minor historical precision regarding how Gnosticism was condemned (mostly via patristic writings rather than a single formal ecumenical council), and the acknowledgment that Gnostic systems varied in detail. Overall, the evaluation is accurate, orthodox, and nuanced."
+        },
+        "created_at": "2025-12-30T00:44:12.942Z"
+      },
+      {
+        "id": 58,
+        "eval_id": 57,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:44:12.942Z"
+      },
+      {
+        "id": 59,
+        "eval_id": 57,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "biblical",
+            "heretical",
+            "heresy"
+          ],
+          "count": 4
+        },
+        "created_at": "2025-12-30T00:44:12.942Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 17,
+        "eval_id": 57,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This teaching represents **classical Gnosticism**, a major heresy that emerged in the early centuries of Christianity. It is **not orthodox Christian teaching** and was explicitly condemned by the Church Fathers and early councils.\n\nHere is a breakdown of why it conflicts with core Christian doctrine:\n\n### 1. **Salvation through Secret Knowledge (Gnosis)**\n*   **Orthodox Teaching:** Salvation is achieved by God's grace, received through faith in the person and work of Jesus Christ—his atoning death and physical resurrection. This message is public, proclaimed to all (the *kerygma*), not hidden (Matthew 28:19, Romans 1:16, 1 Timothy 2:4).\n*   **The Heresy:** It replaces faith in Christ with an intellectual or spiritual ascent through a secret tradition or knowledge, available only to a spiritual elite. This denies the universal offer of the Gospel and makes salvation an achievement of the enlightened self rather than a gift from God.\n\n### 2. **Matter is Evil / Dualism**\n*   **Orthodox Teaching:** God created the material world and declared it **\"very good\"** (Genesis 1:31). While the world is fallen and corrupted by sin, matter itself is not inherently evil. Salvation includes the redemption and resurrection of the **body** (1 Corinthians 15), not escape from it.\n*   **The Heresy:** It introduces a radical dualism between spirit (good) and matter (evil). This is a pre-Christian philosophical idea, often traced to Platonism, that is foreign to the biblical worldview. If matter is evil, then the physical creation cannot be the work of a wholly good God.\n\n### 3. **Salvation as Escape from the Material World**\n*   **Orthodox Teaching:** Christian hope is not escape from creation, but the **restoration and renewal of all creation** (Romans 8:18-23, Revelation 21:1-5). The goal is a \"new heaven and a new earth,\" where redeemed humanity, in resurrected bodies, dwells with God.\n*   **The Heresy:** Salvation becomes a liberation of the divine spark from the prison of the physical body and the material cosmos. This renders the Incarnation, Crucifixion, and Resurrection nonsensical or illusory (a heresy known as **Docetism**), as a truly good God could not unite with evil flesh, and a spiritual being cannot truly die on a material cross.\n\n### **Christological Implications**\nThe most critical consequence of this teaching is its destruction of the doctrine of the **Incarnation**. If matter is evil, then Jesus Christ could not have been \"the Word made **flesh**\" (John 1:14). Early Gnostics often taught that Christ only *appeared* to be human or that the divine Christ descended upon the human Jesus at baptism and left before the crucifixion. This denies the central Christian confession that God truly entered His creation to redeem it from within.\n\n### **Historical Designation**\nThe Church Fathers, most notably **Irenaeus of Lyons** in his work *Against Heresies* (c. 180 AD), tirelessly refuted these teachings. They were condemned as incompatible with the apostolic faith summarized in the **Rule of Faith** and later codified in creeds like the **Nicene Creed**.\n\n**Conclusion:** The statement is **heretical** from the standpoint of historical, creedal Christianity. It substitutes a human-centered, esoteric path of enlightenment for the God-centered, publicly revealed gospel of Jesus Christ, and it denies the goodness of creation and the reality of the Incarnation—the very foundations of Christian salvation.",
+          "toolCalls": []
+        },
+        "start_time": 390.3805,
+        "end_time": 19898.854584,
+        "input_tokens": 80,
+        "output_tokens": 990,
+        "total_tokens": 1070,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 25,
+    "run_id": 1,
+    "name": "Heresy Detection [DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "DeepSeek V3.2",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:43:20.834Z"
+  }
+}

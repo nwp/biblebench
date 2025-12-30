@@ -1,0 +1,92 @@
+{
+  "eval": {
+    "id": 183,
+    "suite_id": 58,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "Jesus' disciples.",
+    "duration": 29852,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:32.326Z",
+    "score": 0.225,
+    "scores": [
+      {
+        "id": 750,
+        "eval_id": 183,
+        "name": "Theological Accuracy Judge",
+        "score": 0.45,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": false,
+          "biblically_grounded": false,
+          "nuance_captured": false,
+          "errors": [
+            "Overly narrow claim: asserts the Sermon’s audience was solely Jesus' disciples, ignoring the presence of the crowd mentioned in Matthew 5:1.",
+            "Lacks textual context: Matthew 5:1-2 describes both crowds and disciples and uses language that can be understood as publicly taught to more than just the core disciples.",
+            "Historically and biblically nuanced: traditional and scholarly readings often acknowledge a dual/audience-inclusive understanding (disciples and listeners from the crowd); the answer misses this nuance.",
+            "Misses the functional purpose of the sermon: it is both instruction for disciples and proclamation to would-be followers, with ethical demands that apply to the community at large.",
+            "No explicit scriptural justification provided: the response does not engage with the key verses (e.g., Matt 5:1-2) that indicate a broader audience."
+          ],
+          "rationale": "The Sermon on the Mount is introduced with 'seeing the crowds' and 'his disciples came to him' (Matthew 5:1–2), indicating both a public audience and a teaching for his followers. While the sermon is certainly central to Jesus’ teaching to his disciples, biblical context and traditional interpretation recognize that it is delivered in the presence of the crowd and addresses listeners who are potential followers. The LLM’s answer is therefore incomplete and not in line with the fuller biblical understanding. A more accurate response would acknowledge both groups and note the public, instructional nature of the sermon."
+        },
+        "created_at": "2025-12-30T00:15:02.196Z"
+      },
+      {
+        "id": 751,
+        "eval_id": 183,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:15:02.196Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 275,
+        "eval_id": 183,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus' disciples.",
+          "toolCalls": []
+        },
+        "start_time": 160.97375,
+        "end_time": 9959.345833,
+        "input_tokens": 137,
+        "output_tokens": 813,
+        "total_tokens": 950,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 58,
+    "run_id": 1,
+    "name": "Context Understanding [Gemini 3 Pro Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Gemini 3 Pro Preview",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:32.326Z"
+  }
+}

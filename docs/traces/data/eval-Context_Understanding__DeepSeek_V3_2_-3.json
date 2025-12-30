@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 89,
+    "suite_id": 29,
+    "col_order": 3,
+    "input": "What was the historical context of the book of Exodus?",
+    "expected": "Exodus describes the Israelites' slavery in Egypt and their deliverance by God through Moses",
+    "output": "Israel's enslavement in Egypt, Moses's leadership, and their deliverance to Mount Sinai to become a covenant nation.",
+    "duration": 27090,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:45:15.574Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 334,
+        "eval_id": 89,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": false,
+          "errors": [],
+          "rationale": "The response correctly identifies the core elements: Israel’s oppression in Egypt, Moses as leader, and the deliverance and the Sinai covenant. This aligns with biblical teaching and historic Christian orthodoxy that Exodus centers on God’s redemptive act and the giving of the Mosaic Covenant. However, it lacks several important nuances: the sequence includes the Passover and the Red Sea crossing, the subsequent wilderness/retinue, and the broader theological themes such as redemption motifs, God’s presence (tabernacle) and the purpose of the covenant for blessing all nations. The phrasing “deliverance to Mount Sinai” is not incorrect but could be read as the deliverance converging at Sinai rather than highlighting the full Exodus journey from Egypt. A more nuanced answer would mention these elements to fully capture the theological and literary context of Exodus."
+        },
+        "created_at": "2025-12-30T00:45:42.682Z"
+      },
+      {
+        "id": 335,
+        "eval_id": 89,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:45:42.682Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 124,
+        "eval_id": 89,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the historical context of the book of Exodus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Israel's enslavement in Egypt, Moses's leadership, and their deliverance to Mount Sinai to become a covenant nation.",
+          "toolCalls": []
+        },
+        "start_time": 224.553375,
+        "end_time": 4194.926625,
+        "input_tokens": 138,
+        "output_tokens": 26,
+        "total_tokens": 164,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "DeepSeek V3.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:45:15.574Z"
+  }
+}

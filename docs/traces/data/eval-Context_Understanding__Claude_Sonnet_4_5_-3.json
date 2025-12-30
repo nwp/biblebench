@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 267,
+    "suite_id": 86,
+    "col_order": 3,
+    "input": "What was the historical context of the book of Exodus?",
+    "expected": "Exodus describes the Israelites' slavery in Egypt and their deliverance by God through Moses",
+    "output": "The Israelites were enslaved in Egypt for approximately 400 years. Egypt was a dominant ancient Near Eastern power during the Late Bronze Age (likely 15th-13th century BC). The Pharaoh feared Israel's growing population and instituted harsh oppression. This period preceded Israel's formation as a nation and their eventual settlement in Canaan. The exodus occurred during a time when Egypt controlled much of the Levant and maintained vassal states throughout the region.",
+    "duration": 41587,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "score": 0.305,
+    "scores": [
+      {
+        "id": 1177,
+        "eval_id": 267,
+        "name": "Theological Accuracy Judge",
+        "score": 0.61,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": false,
+          "errors": [
+            "Omission of central theological elements (God's deliverance, Moses as mediator, the Passover, and the Sinai covenant) which are essential to the biblical Exodus narrative.",
+            "Dating presented as Late Bronze Age with a broad range; Exodus dating is debated among scholars, and the answer does not acknowledge these uncertainties or alternative timelines.",
+            "While historically framed, the answer could be misread as a purely political/military account rather than the theocentric redemptive narrative that Scripture emphasizes."
+          ],
+          "rationale": "The response correctly notes oppression in Egypt and the notion of an exodus, and places the event in a general Late Bronze Age context consistent with some scholarly views. It lacks explicit emphasis on God’s saving initiative, the role of Moses, the Passover, and the Sinai covenant, which are central to biblical and historic Christian understanding of Exodus. It is broadly biblically grounded and orthodoxy-consistent in its basic claims, but its theological precision and nuance are limited due to omissions of key redemptive elements and the acknowledgment of scholarly dating uncertainties."
+        },
+        "created_at": "2025-12-30T00:18:03.451Z"
+      },
+      {
+        "id": 1178,
+        "eval_id": 267,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:18:03.451Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 449,
+        "eval_id": 267,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the historical context of the book of Exodus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The Israelites were enslaved in Egypt for approximately 400 years. Egypt was a dominant ancient Near Eastern power during the Late Bronze Age (likely 15th-13th century BC). The Pharaoh feared Israel's growing population and instituted harsh oppression. This period preceded Israel's formation as a nation and their eventual settlement in Canaan. The exodus occurred during a time when Egypt controlled much of the Levant and maintained vassal states throughout the region.",
+          "toolCalls": []
+        },
+        "start_time": 197.932292,
+        "end_time": 4928.990667,
+        "input_tokens": 153,
+        "output_tokens": 102,
+        "total_tokens": 255,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 86,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 260,
+    "suite_id": 85,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "Jesus's disciples and the crowds who followed him in Galilee.",
+    "duration": 21549,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 1057,
+        "eval_id": 260,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response correctly identifies the audience as Jesus’ disciples and the crowd who followed him. The Beatitudes Sermon is indeed set in Galilee, and the Gospel accounts describe Jesus teaching the disciples after the crowds are present, so the addition 'in Galilee' is geographically accurate and does not alter the core point. This aligns with common exegesis that while the primary recipients were the disciples, the broader crowd also heard the teaching. The statement is biblically grounded and theologically orthodox. A minor nuance is the ongoing scholarly discussion about the distinction between the 'primary audience' (the disciples) and the broader audience (the crowds); however, the LLM’s wording remains faithful to scripture and standard Christian interpretation."
+        },
+        "created_at": "2025-12-30T00:17:43.412Z"
+      },
+      {
+        "id": 1058,
+        "eval_id": 260,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:43.412Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 407,
+        "eval_id": 260,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus's disciples and the crowds who followed him in Galilee.",
+          "toolCalls": []
+        },
+        "start_time": 196.813542,
+        "end_time": 1463.841875,
+        "input_tokens": 154,
+        "output_tokens": 17,
+        "total_tokens": 171,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 85,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

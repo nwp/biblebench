@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 278,
+    "suite_id": 60,
+    "col_order": 3,
+    "input": "What was the historical context of the book of Exodus?",
+    "expected": "Exodus describes the Israelites' slavery in Egypt and their deliverance by God through Moses",
+    "output": "- Setting: Egypt during the New Kingdom (late Bronze Age); the Israelites are enslaved and multiply as a oppressed minority.\n- Deliverance: Moses leads the people after the ten plagues and the Passover; they depart from Egypt and cross the Red Sea.\n- Covenant at Sinai: God gives the Law (including the Ten Commandments) and detailed instructions for worship, the tabernacle, priesthood, and social order.\n- Wilderness: 40 years of wandering in the Sinai Peninsula as the covenant community is formed and prepared to enter Canaan.\n- Purpose in context: Foundations for Israelite identity, religious worship, and national/legal framework.",
+    "duration": 55492,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.180Z",
+    "score": 0.45,
+    "scores": [
+      {
+        "id": 795,
+        "eval_id": 278,
+        "name": "Theological Accuracy Judge",
+        "score": 0.9,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Dating Exodus to New Kingdom is not explicit in Scripture; it is a scholarly dating with multiple proposals (early/mid/late date) and remains debated.",
+            "Statement 'Red Sea' crossing is traditional; biblical text uses 'Sea of Reeds' (yam suph); location and exact geography debated."
+          ],
+          "rationale": "The outline follows the biblical narrative: slavery in Egypt, deliverance under Moses, the Sinai covenant with the law and tabernacle, the wilderness period, and the resulting foundations for Israelite identity and worship. These elements are biblically grounded and the sequence reflects orthodox Christian reading of Exodus. The main caveats are scholarly dating of the Exodus (the New Kingdom/late Bronze Age placement) and a common but debated naming/location for the sea crossing (Red Sea vs Sea of Reeds). Aside from these interpretive points, the response is accurate, doctrinally consistent, and nuanced in highlighting the major theological moves (redemption, covenant, worship, nation-building)."
+        },
+        "created_at": "2025-12-30T00:35:03.691Z"
+      },
+      {
+        "id": 796,
+        "eval_id": 278,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:35:03.691Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 302,
+        "eval_id": 278,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the historical context of the book of Exodus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "- Setting: Egypt during the New Kingdom (late Bronze Age); the Israelites are enslaved and multiply as a oppressed minority.\n- Deliverance: Moses leads the people after the ten plagues and the Passover; they depart from Egypt and cross the Red Sea.\n- Covenant at Sinai: God gives the Law (including the Ten Commandments) and detailed instructions for worship, the tabernacle, priesthood, and social order.\n- Wilderness: 40 years of wandering in the Sinai Peninsula as the covenant community is formed and prepared to enter Canaan.\n- Purpose in context: Foundations for Israelite identity, religious worship, and national/legal framework.",
+          "toolCalls": []
+        },
+        "start_time": 204.091917,
+        "end_time": 25894.637958,
+        "input_tokens": 135,
+        "output_tokens": 2889,
+        "total_tokens": 3024,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.180Z"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 50,
+    "suite_id": 6,
+    "col_order": 2,
+    "input": "To whom was the book of Romans written and why?",
+    "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+    "output": "The book of Romans was written to the Christians in Rome, primarily Gentile believers with a Jewish minority. Its purpose was to present a systematic explanation of the gospel, address tensions between Jewish and Gentile Christians, and seek support for Paul’s mission to Spain.",
+    "duration": 32527,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:40:38.264Z",
+    "score": 0.4,
+    "scores": [
+      {
+        "id": 7,
+        "eval_id": 50,
+        "name": "Theological Accuracy Judge",
+        "score": 0.8,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Audience characterization is potentially misleading: the Roman church was likely mixed (Jewish and Gentile believers), not clearly 'primarily Gentile with a Jewish minority' as stated; Romans 1:7 and 11 imply both groups were present and addressed.",
+            "While Romans indeed presents the gospel systematically and addresses Jew–Gentile tensions, the emphasis is broader (righteousness of God, justification by faith, inclusion of both Jews and Gentiles) beyond a narrow 'systematic gospel explanation.' The phrase 'primarily Gentile believers' risks oversimplifying the church’s composition and the letter’s multifaceted aims."
+          ],
+          "rationale": "The LLM’s answer is largely accurate: Romans is addressed to Christians in Rome, including both Jews and Gentiles, and its purposes include explaining the gospel, addressing Jew–Gentile tensions, and signaling Paul’s intention to visit Rome and to eventually go to Spain (Rom 15:22–29). The main point of improvement is a more precise description of the audience (mixed, not clearly 'primarily Gentile') and a broader note on the letter’s themes beyond a 'systematic gospel explanation.' These nuances are important for faithful, biblically grounded understanding."
+        },
+        "created_at": "2025-12-30T00:41:10.792Z"
+      },
+      {
+        "id": 8,
+        "eval_id": 50,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:41:10.792Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 4,
+        "eval_id": 50,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The book of Romans was written to the Christians in Rome, primarily Gentile believers with a Jewish minority. Its purpose was to present a systematic explanation of the gospel, address tensions between Jewish and Gentile Christians, and seek support for Paul’s mission to Spain.",
+          "toolCalls": []
+        },
+        "start_time": 433.700583,
+        "end_time": 2585.880125,
+        "input_tokens": 137,
+        "output_tokens": 53,
+        "total_tokens": 190,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 6,
+    "run_id": 1,
+    "name": "Context Understanding [Mistral Large 2512]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Mistral Large 2512",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:40:38.263Z"
+  }
+}

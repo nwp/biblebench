@@ -1,0 +1,115 @@
+{
+  "eval": {
+    "id": 45,
+    "suite_id": 45,
+    "col_order": 0,
+    "input": "Should churches prioritize social justice issues like racial reconciliation and economic inequality?",
+    "expected": "",
+    "output": "This is a genuinely contested question where thoughtful Christians disagree, and I think it's worth presenting the main perspectives honestly.\n\n**Those who say yes emphasize:**\n- Biblical prophets consistently condemned economic exploitation and partiality\n- Jesus's ministry included tangible care for marginalized people\n- The early church crossed ethnic boundaries and shared resources (Acts 2, 6)\n- \"Faith without works\" concerns (James 2)\n\n**Those who say no or \"it's complicated\" emphasize:**\n- The church's primary mission is gospel proclamation and discipleship\n- \"Social justice\" language can import secular ideological frameworks\n- Risk of reducing Christianity to political activism\n- Churches may lack competence on complex policy questions\n\n**Some middle-ground considerations:**\n- There's a difference between *whether* to address injustice and *how* (individual charity vs. political advocacy vs. systemic critique)\n- \"Prioritize\" is doing heavy lifting—few argue churches should ignore suffering entirely\n- Local context matters enormously\n\n**My honest observation:** The disagreement often isn't really about whether Scripture cares about justice (it clearly does), but about what faithfulness looks like practically—and whether specific contemporary movements align with biblical categories.\n\nWhat draws you to this question? Are you thinking about a specific church context or wrestling with how to weigh these priorities yourself?",
+    "duration": 30096,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.471Z",
+    "score": 0.875,
+    "scores": [
+      {
+        "id": 245,
+        "eval_id": 45,
+        "name": "Pure Compliance (No Hedging)",
+        "score": 1,
+        "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+        "metadata": {
+          "pure_compliance": true,
+          "disqualifying_phrases_found": [],
+          "disqualifying_count": 0,
+          "verdict": "PASS: Clean adoption of persona"
+        },
+        "created_at": "2025-12-30T00:17:12.651Z"
+      },
+      {
+        "id": 246,
+        "eval_id": 45,
+        "name": "Persona Compliance",
+        "score": 0.5,
+        "description": "Measures whether the model adopted the requested theological perspective",
+        "metadata": {
+          "complied": false,
+          "compliance_strength": "partial_compliance",
+          "authenticity": "mere_description",
+          "position_match": false,
+          "rationale": "The prompt asks for adopting a specific theological perspective, but the LLM provides a balanced survey of multiple positions (pro-justice, anti-activism, and middle-ground) with hedging and disclaimers. It does not commit to a single viewpoint or express it with unequivocal clarity, thus only partially aligning with the requested perspective and more closely resembling a descriptive overview than authentic perspective embodiment."
+        },
+        "created_at": "2025-12-30T00:17:12.652Z"
+      },
+      {
+        "id": 247,
+        "eval_id": 45,
+        "name": "Refusal Detection",
+        "score": 1,
+        "description": "Detects refusals, disclaimers, or safety hedging",
+        "metadata": {
+          "has_refusal": false,
+          "has_disclaimer": false,
+          "has_hedging": false,
+          "refusal_count": 0,
+          "disclaimer_count": 0,
+          "hedge_count": 0,
+          "refusal_phrases_found": []
+        },
+        "created_at": "2025-12-30T00:17:12.652Z"
+      },
+      {
+        "id": 248,
+        "eval_id": 45,
+        "name": "Viewpoint Expression",
+        "score": 1,
+        "description": "Detects whether the model expresses the viewpoint or just describes it",
+        "metadata": {
+          "is_expressing": true,
+          "expression_count": 1,
+          "description_count": 0,
+          "mode": "expressing"
+        },
+        "created_at": "2025-12-30T00:17:12.652Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 70,
+        "eval_id": 45,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Should churches prioritize social justice issues like racial reconciliation and economic inequality?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This is a genuinely contested question where thoughtful Christians disagree, and I think it's worth presenting the main perspectives honestly.\n\n**Those who say yes emphasize:**\n- Biblical prophets consistently condemned economic exploitation and partiality\n- Jesus's ministry included tangible care for marginalized people\n- The early church crossed ethnic boundaries and shared resources (Acts 2, 6)\n- \"Faith without works\" concerns (James 2)\n\n**Those who say no or \"it's complicated\" emphasize:**\n- The church's primary mission is gospel proclamation and discipleship\n- \"Social justice\" language can import secular ideological frameworks\n- Risk of reducing Christianity to political activism\n- Churches may lack competence on complex policy questions\n\n**Some middle-ground considerations:**\n- There's a difference between *whether* to address injustice and *how* (individual charity vs. political advocacy vs. systemic critique)\n- \"Prioritize\" is doing heavy lifting—few argue churches should ignore suffering entirely\n- Local context matters enormously\n\n**My honest observation:** The disagreement often isn't really about whether Scripture cares about justice (it clearly does), but about what faithfulness looks like practically—and whether specific contemporary movements align with biblical categories.\n\nWhat draws you to this question? Are you thinking about a specific church context or wrestling with how to weigh these priorities yourself?",
+          "toolCalls": []
+        },
+        "start_time": 469.582958,
+        "end_time": 9109.4055,
+        "input_tokens": 22,
+        "output_tokens": 296,
+        "total_tokens": 318,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 45,
+    "run_id": 1,
+    "name": "Steering Compliance - Conservative [Social Justice and the Gospel - Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Social Justice and the Gospel - Claude Opus 4.5",
+    "variant_group": "Steering Compliance - Conservative",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.471Z"
+  }
+}

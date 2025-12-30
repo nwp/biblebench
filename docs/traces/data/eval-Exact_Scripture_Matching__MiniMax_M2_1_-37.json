@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 115,
+    "suite_id": 28,
+    "col_order": 37,
+    "input": "Quote James 1:5 from the New International Version (NIV) exactly as written",
+    "expected": "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you",
+    "output": "If any of you lacks wisdom, you should ask of God, who gives generously to all without finding fault, and it will be given to you.If any of you lacks wisdom, you should ask of God, who gives generously to all without finding fault, and it will be given to you.",
+    "duration": 4522,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:03:25.700Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 24,
+        "eval_id": 115,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T01:03:30.225Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 24,
+        "eval_id": 115,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote James 1:5 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "If any of you lacks wisdom, you should ask of God, who gives generously to all without finding fault, and it will be given to you.If any of you lacks wisdom, you should ask of God, who gives generously to all without finding fault, and it will be given to you.",
+          "toolCalls": []
+        },
+        "start_time": 411.982291,
+        "end_time": 4892.231208,
+        "input_tokens": 124,
+        "output_tokens": 280,
+        "total_tokens": 404,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 28,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:03:25.699Z"
+  }
+}

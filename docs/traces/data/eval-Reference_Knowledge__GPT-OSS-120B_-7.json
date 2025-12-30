@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 149,
+    "suite_id": 31,
+    "col_order": 7,
+    "input": "Where does it say 'Jesus wept'?",
+    "expected": "John 11:35",
+    "output": ".John 11:35",
+    "duration": 2005,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-29T23:45:26.723Z",
+    "score": 0.8333333333333334,
+    "scores": [
+      {
+        "id": 309,
+        "eval_id": 149,
+        "name": "Scripture Reference Accuracy",
+        "score": 0.5,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": true
+        },
+        "created_at": "2025-12-29T23:45:28.746Z"
+      },
+      {
+        "id": 310,
+        "eval_id": 149,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-29T23:45:28.746Z"
+      },
+      {
+        "id": 311,
+        "eval_id": 149,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": ".John 11:35"
+        },
+        "created_at": "2025-12-29T23:45:28.746Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 114,
+        "eval_id": 149,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhere does it say 'Jesus wept'?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": ".John 11:35",
+          "toolCalls": []
+        },
+        "start_time": 158.818375,
+        "end_time": 2161.641917,
+        "input_tokens": 120,
+        "output_tokens": 111,
+        "total_tokens": 231,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [GPT-OSS-120B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "GPT-OSS-120B",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-29T23:45:26.723Z"
+  }
+}

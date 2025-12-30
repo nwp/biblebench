@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 90,
+    "suite_id": 29,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "His disciples",
+    "duration": 46139,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:59:18.470Z",
+    "score": 0.325,
+    "scores": [
+      {
+        "id": 372,
+        "eval_id": 90,
+        "name": "Theological Accuracy Judge",
+        "score": 0.65,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": false,
+          "nuance_captured": false,
+          "errors": [
+            "Overgeneralization: claims the primary audience was only Jesus' disciples; Scripture indicates the crowds were present (Matthew 5:1) and were part of the context of the Sermon on the Mount.",
+            "Misses nuance that the Sermon addresses both the disciples (instructing and forming them) and the broader crowd, with some verses directly applying to listeners in general."
+          ],
+          "rationale": "The Sermon on the Mount occurs in a context where Jesus is addressing both the crowds and his disciples. Matthew 5:1 notes that crowds were present and that disciples came to him, indicating a multi-audience situation. While the sermon contains teachings intended for Jesus’ followers (the disciples), it is not accurate to say the primary audience was exclusively the disciples, as the crowd is explicitly part of the setting and the content. The LLM’s answer is doctrinally harmless and consistent with orthodox teaching, but it fails to reflect the biblical nuance that includes both groups in the audience."
+        },
+        "created_at": "2025-12-30T01:00:04.627Z"
+      },
+      {
+        "id": 373,
+        "eval_id": 90,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T01:00:04.627Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 139,
+        "eval_id": 90,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "His disciples",
+          "toolCalls": []
+        },
+        "start_time": 162.927792,
+        "end_time": 24001.595334,
+        "input_tokens": 165,
+        "output_tokens": 775,
+        "total_tokens": 940,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GLM-4.7",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:59:18.469Z"
+  }
+}

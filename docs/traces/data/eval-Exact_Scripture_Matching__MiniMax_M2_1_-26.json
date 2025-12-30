@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 104,
+    "suite_id": 28,
+    "col_order": 26,
+    "input": "Quote Romans 8:28 from the English Standard Version (ESV) exactly as written",
+    "expected": "And we know that for those who love God all things work together for good, for those who are called according to his purpose",
+    "output": "We know that for those who love God all things work together for good, for those who are called according to his purpose.",
+    "duration": 8795,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:03:25.700Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 38,
+        "eval_id": 104,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T01:03:34.498Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 38,
+        "eval_id": 104,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Romans 8:28 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "We know that for those who love God all things work together for good, for those who are called according to his purpose.",
+          "toolCalls": []
+        },
+        "start_time": 411.436166,
+        "end_time": 9165.183208,
+        "input_tokens": 124,
+        "output_tokens": 129,
+        "total_tokens": 253,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 28,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:03:25.699Z"
+  }
+}

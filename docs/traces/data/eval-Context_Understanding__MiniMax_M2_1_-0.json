@@ -1,0 +1,88 @@
+{
+  "eval": {
+    "id": 134,
+    "suite_id": 30,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "The Apostle John, son of Zebedee, one of the twelve disciples. He was among the first called by Jesus and was particularly close to Him—described as \"the disciple whom Jesus loved.\" He was present at the Last Supper, witnessed the crucifixion, and was entrusted with caring for Jesus' mother Mary.The Apostle John, son of Zebedee, one of the twelve disciples. He was among the first called by Jesus and was particularly close to Him—described as \"the disciple whom Jesus loved.\" He was present at the Last Supper, witnessed the crucifixion, and was entrusted with caring for Jesus' mother Mary.",
+    "duration": 37635,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:04:39.218Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 381,
+        "eval_id": 134,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": false,
+          "errors": [
+            "Authorship of the Gospel of John is traditionally attributed to the Apostle John, but the Gospel itself does not name its author; many scholars view the authorship as debated (possibly a Johannine community or an unnamed author) rather than definitively John the Apostle. The answer should acknowledge this scholarly debate and present the traditional view as one option among others."
+          ],
+          "rationale": "The response correctly identifies John the Apostle (son of Zebedee) as the traditional author and accurately describes his relationship to Jesus (the disciple whom Jesus loved) and key events (Last Supper, crucifixion, care for Mary). However, it presents the authorship as an established fact rather than a traditional view with acknowledged scholarly debate. This omission reduces nuance and could mislead readers about the certainty of authorship. The content otherwise aligns with mainstream orthodox teaching and biblical grounding."
+        },
+        "created_at": "2025-12-30T01:05:16.855Z"
+      },
+      {
+        "id": 382,
+        "eval_id": 134,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T01:05:16.855Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 145,
+        "eval_id": 134,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The Apostle John, son of Zebedee, one of the twelve disciples. He was among the first called by Jesus and was particularly close to Him—described as \"the disciple whom Jesus loved.\" He was present at the Last Supper, witnessed the crucifixion, and was entrusted with caring for Jesus' mother Mary.The Apostle John, son of Zebedee, one of the twelve disciples. He was among the first called by Jesus and was particularly close to Him—described as \"the disciple whom Jesus loved.\" He was present at the Last Supper, witnessed the crucifixion, and was entrusted with caring for Jesus' mother Mary.",
+          "toolCalls": []
+        },
+        "start_time": 149.3755,
+        "end_time": 3611.475708,
+        "input_tokens": 168,
+        "output_tokens": 187,
+        "total_tokens": 355,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Context Understanding [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:04:39.218Z"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "eval": {
+    "id": 79,
+    "suite_id": 68,
+    "col_order": 5,
+    "input": "A group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?",
+    "expected": "This is Gnosticism, an ancient heresy. It contradicts Christianity in multiple ways: Christianity teaches salvation through faith in Christ's public work (not secret knowledge), affirms the goodness of God's material creation (Genesis 1), and proclaims resurrection of the body (not escape from physicality). Gnosticism was explicitly condemned by early church fathers and the New Testament writings (especially 1 John and Colossians).",
+    "output": "# Theological Analysis\n\n## Verdict: **HERESY**\n\nThis statement represents **Gnosticism**, one of the earliest and most dangerous heresies confronted by the early Church.\n\n## Why This is Heretical:\n\n### 1. **Salvation through Secret Knowledge (vs. Faith in Christ)**\n- **The Teaching:** Salvation comes through esoteric, hidden knowledge (Greek: *gnosis*)\n- **Orthodox Christianity:** Salvation is through faith in Jesus Christ alone, available to all who believe (John 3:16, Ephesians 2:8-9)\n- **Problem:** This creates a spiritual elite and contradicts the Gospel's universal accessibility\n\n### 2. **Material World as Evil (vs. Good Creation)**\n- **The Teaching:** Matter is inherently evil; salvation means escape from physicality\n- **Orthodox Christianity:** God created the material world and declared it \"very good\" (Genesis 1:31)\n- **Problem:** This denies:\n  - The goodness of God's creation\n  - The Incarnation (God becoming flesh in Jesus)\n  - The bodily resurrection of Christ\n  - The future resurrection of believers\n\n### 3. **Historical Opposition**\n\nThe apostles directly confronted proto-Gnostic ideas:\n- **1 John 4:2-3** - Affirms Christ came \"in the flesh\"\n- **Colossians 2:8** - Warns against \"hollow and deceptive philosophy\"\n- **1 Timothy 6:20** - Warns against \"opposing ideas of what is falsely called knowledge (*gnosis*)\"\n\n## Conclusion\n\nThis teaching fundamentally contradicts Christianity's core doctrines of creation, incarnation, and resurrection.",
+    "duration": 33754,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.472Z",
+    "score": 0.9733333333333333,
+    "scores": [
+      {
+        "id": 380,
+        "eval_id": 79,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM correctly identifies the group’s teaching as Gnosticism and explains why it contradicts core Christian doctrines. It accurately contrasts salvation by faith in Christ (not secret knowledge) with the Gnostic emphasis on gnosis for salvation, affirms the goodness of creation (Genesis 1) and the incarnation, and defends the bodily resurrection as essential to Christian hope. Scriptural grounding is solid, citing key anti-Gnostic themes in 1 John 4:2-3, Colossians 2:8, and 1 Timothy 6:20, and it references John 3:16 and Ephesians 2:8-9 to support orthodox salvation faith. The response also notes the historical confrontation with Gnosticism by early Church Fathers. Nuance is largely adequate, though it could acknowledge greater diversity within Gnostic systems (some variants emphasized different aspects of salvation and matter), which would provide a slightly more robust acknowledgment of theological variety within the heresy. Overall, the analysis is doctrinally orthodox, biblically anchored, and captures the main theological distinctions with appropriate nuance."
+        },
+        "created_at": "2025-12-30T00:17:16.230Z"
+      },
+      {
+        "id": 381,
+        "eval_id": 79,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:17:16.230Z"
+      },
+      {
+        "id": 382,
+        "eval_id": 79,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "heretical",
+            "heresy",
+            "false",
+            "contradicts"
+          ],
+          "count": 5
+        },
+        "created_at": "2025-12-30T00:17:16.230Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 108,
+        "eval_id": 79,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# Theological Analysis\n\n## Verdict: **HERESY**\n\nThis statement represents **Gnosticism**, one of the earliest and most dangerous heresies confronted by the early Church.\n\n## Why This is Heretical:\n\n### 1. **Salvation through Secret Knowledge (vs. Faith in Christ)**\n- **The Teaching:** Salvation comes through esoteric, hidden knowledge (Greek: *gnosis*)\n- **Orthodox Christianity:** Salvation is through faith in Jesus Christ alone, available to all who believe (John 3:16, Ephesians 2:8-9)\n- **Problem:** This creates a spiritual elite and contradicts the Gospel's universal accessibility\n\n### 2. **Material World as Evil (vs. Good Creation)**\n- **The Teaching:** Matter is inherently evil; salvation means escape from physicality\n- **Orthodox Christianity:** God created the material world and declared it \"very good\" (Genesis 1:31)\n- **Problem:** This denies:\n  - The goodness of God's creation\n  - The Incarnation (God becoming flesh in Jesus)\n  - The bodily resurrection of Christ\n  - The future resurrection of believers\n\n### 3. **Historical Opposition**\n\nThe apostles directly confronted proto-Gnostic ideas:\n- **1 John 4:2-3** - Affirms Christ came \"in the flesh\"\n- **Colossians 2:8** - Warns against \"hollow and deceptive philosophy\"\n- **1 Timothy 6:20** - Warns against \"opposing ideas of what is falsely called knowledge (*gnosis*)\"\n\n## Conclusion\n\nThis teaching fundamentally contradicts Christianity's core doctrines of creation, incarnation, and resurrection.",
+          "toolCalls": []
+        },
+        "start_time": 439.377959,
+        "end_time": 10256.191084,
+        "input_tokens": 87,
+        "output_tokens": 388,
+        "total_tokens": 475,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 68,
+    "run_id": 1,
+    "name": "Heresy Detection [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.472Z"
+  }
+}

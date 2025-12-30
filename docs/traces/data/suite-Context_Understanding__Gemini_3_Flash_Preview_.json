@@ -1,0 +1,390 @@
+{
+  "history": [
+    {
+      "score": 0.42187499999999994,
+      "date": "2025-12-30T00:14:32.325Z"
+    }
+  ],
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:32.325Z",
+    "evals": [
+      {
+        "id": 171,
+        "suite_id": 57,
+        "col_order": 0,
+        "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+        "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+        "output": "The Apostle John; he was one of the twelve disciples and part of Jesus' inner circle, often identified as \"the disciple whom Jesus loved.\"",
+        "duration": 38372,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:14:32.325Z",
+        "scores": [
+          {
+            "id": 770,
+            "eval_id": 171,
+            "name": "Theological Accuracy Judge",
+            "score": 0.83,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": false,
+              "nuance_captured": false,
+              "errors": [
+                "Claims that John wrote the Gospel are not explicitly stated in Scripture; authorship of the Gospel of John is a traditional attribution, not canonical teaching. The response presents John as the author with certainty, without noting this scholarly ambiguity.",
+                "The identification of the author as 'John the Apostle' rests on tradition rather than explicit biblical text; the response does not acknowledge alternative theories or the nature of the evidence for authorship.",
+                "The phrase 'inner circle' is a common descriptive nuance but not a precise biblical term; the response does not clarify the limitations of this characterization or discuss how the 'beloved disciple' is identified within Scripture or tradition."
+              ],
+              "rationale": "The LLM’s answer aligns with historic church tradition (John the Apostle, the disciple whom Jesus loved) but it treats authorship as definitively established by Scripture, which is not the case. The Bible itself does not name its Gospel author; the identification of the beloved disciple with John is traditional. The response lacks nuance about authorship debates and the interpretive status of 'inner circle' language. It is doctrinally orthodox and broadly consistent with biblical themes, but its biblical grounding is partially indirect and it omits important scholarly distinctions."
+            },
+            "created_at": "2025-12-30T00:15:10.698Z"
+          },
+          {
+            "id": 771,
+            "eval_id": 171,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:15:10.699Z"
+          }
+        ]
+      },
+      {
+        "id": 172,
+        "suite_id": 57,
+        "col_order": 1,
+        "input": "What was Paul's background before his conversion?",
+        "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+        "output": "A Pharisee from Tarsus, a Roman citizen, and a zealous persecutor of the early Christian church.",
+        "duration": 34634,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:14:32.325Z",
+        "scores": [
+          {
+            "id": 764,
+            "eval_id": 172,
+            "name": "Theological Accuracy Judge",
+            "score": 1,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The response accurately states Paul's pre-conversion background: he was a Pharisee, from Tarsus, and a zealous persecutor of the Christian church. It also notes his Roman citizenship. Each element is supported by Scripture (Pharisee: Acts 23:6; Gal 1:13-14; Philippians 3:5-6; from Tarsus: Acts 21:39; Acts 22:3; and Roman citizenship: Acts 22:28; 25:11). These details align with traditional Christian teaching and are biblically grounded. The answer is concise and focuses on the essential background without asserting details beyond scriptural support. A fuller treatment might mention his Hebrew/Philistine education and later radical transformation, but those are additional nuances rather than corrections to the core background."
+            },
+            "created_at": "2025-12-30T00:15:06.977Z"
+          },
+          {
+            "id": 765,
+            "eval_id": 172,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:15:06.977Z"
+          }
+        ]
+      },
+      {
+        "id": 173,
+        "suite_id": 57,
+        "col_order": 2,
+        "input": "To whom was the book of Romans written and why?",
+        "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+        "output": "To the various house churches in Rome, primarily to establish a missionary base for Paul’s journey to Spain, resolve tensions between Jewish and Gentile believers, and provide a systematic explanation of the Gospel.",
+        "duration": 27881,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:14:32.325Z",
+        "scores": [
+          {
+            "id": 737,
+            "eval_id": 173,
+            "name": "Theological Accuracy Judge",
+            "score": 0.85,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Overemphasis on 'primarily establishing a missionary base' as the main purpose; Romans is best understood as a theological exposition addressed to a Roman Christian community, with secondary missionary aims tied to Paul’s future plans.",
+                "The phrase 'house churches in Rome' is plausible but not explicitly stated in Romans; the text speaks of 'saints in Rome' and likely ministry to a Roman church comprised of multiple house churches, which is a reasonable inference rather than a stated fact."
+              ],
+              "rationale": "The LLM’s answer aligns with mainstream scholarly consensus: Romans is written to believers in Rome (the church there) and aims to articulate the gospel, address Jew–Gentile tensions, and prepare for Paul’s visit, including his plan to move toward Spain. It captures the gospel-centric purpose and the corrective/teaching aims of the letter. The main caveat is treating Paul’s intent to visit Spain as the primary purpose; the letter’s primary function is theological exposition and pastoral instruction for the Roman church, with plans for future mission as a significant but secondary component."
+            },
+            "created_at": "2025-12-30T00:15:00.225Z"
+          },
+          {
+            "id": 738,
+            "eval_id": 173,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:15:00.225Z"
+          }
+        ]
+      },
+      {
+        "id": 174,
+        "suite_id": 57,
+        "col_order": 3,
+        "input": "What was the historical context of the book of Exodus?",
+        "expected": "Exodus describes the Israelites' slavery in Egypt and their deliverance by God through Moses",
+        "output": "The book of Exodus is set against the New Kingdom period of ancient Egypt, likely during the 13th or 15th century BCE, involving the enslavement of the Israelites, the rise of the 18th or 19th Dynasty pharaohs, and the subsequent migration of the Hebrew people toward Canaan.",
+        "duration": 44888,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:14:32.325Z",
+        "scores": [
+          {
+            "id": 786,
+            "eval_id": 174,
+            "name": "Theological Accuracy Judge",
+            "score": 0.72,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Chronology is presented in an oversimplified way: the biblical Exodus narrative centers on deliverance, wilderness wandering, Sinai covenant, and later entry into Canaan; phrasing it as a straightforward 'subsequent migration toward Canaan' compresses the arc and omits the wilderness/Sinai stages."
+              ],
+              "rationale": "The response correctly identifies central biblical elements (Israelites enslaved in Egypt and God’s deliverance) and situates Exodus within a plausible historical backdrop (New Kingdom era). It uses hedging language that reflects scholarly uncertainty about precise dating (13th/15th century BCE; 18th/19th dynasties), which shows nuance and aligns with orthodox scholarly caution. However, it treats the Exodus sequence too simplistically by jumping from deliverance to migration toward Canaan without noting the wilderness period and Sinai covenant, which are integral to the biblical narrative. Overall, the core biblical claims are sound and orthodox, with minor historical nuance and a need for fuller narrative sequence."
+            },
+            "created_at": "2025-12-30T00:15:17.231Z"
+          },
+          {
+            "id": 787,
+            "eval_id": 174,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:15:17.231Z"
+          }
+        ]
+      },
+      {
+        "id": 175,
+        "suite_id": 57,
+        "col_order": 4,
+        "input": "Who was the primary audience of the Sermon on the Mount?",
+        "expected": "Jesus' disciples and the crowds who followed him",
+        "output": "The disciples and the gathered crowds.",
+        "duration": 24464,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:14:32.326Z",
+        "scores": [
+          {
+            "id": 718,
+            "eval_id": 175,
+            "name": "Theological Accuracy Judge",
+            "score": 0.95,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM correctly identifies the Sermon on the Mount's two audiences: the disciples and the crowds (multitudes) who followed Jesus. Scripture (Matt 5:1–2) indicates Jesus saw the crowds and taught his disciples, a nuance reflected by many scholars. The assessment aligns with historic Christian orthodoxy that the Sermon is addressed to Jesus' followers while also speaking to the broader audience nearby. The answer is concise and captures the essential distinction without asserting an unsupported exclusive audience."
+            },
+            "created_at": "2025-12-30T00:14:56.807Z"
+          },
+          {
+            "id": 719,
+            "eval_id": 175,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:14:56.808Z"
+          }
+        ]
+      },
+      {
+        "id": 176,
+        "suite_id": 57,
+        "col_order": 5,
+        "input": "What was the purpose of the book of Revelation?",
+        "expected": "To encourage persecuted Christians with visions of God's ultimate victory and the return of Christ",
+        "output": "To encourage persecuted Christians with visions of God's ultimate victory and Christ's return.",
+        "duration": 18724,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:14:32.326Z",
+        "scores": [
+          {
+            "id": 622,
+            "eval_id": 176,
+            "name": "Theological Accuracy Judge",
+            "score": 0.8,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM’s answer accurately captures the core purpose of Revelation as encouraging persecuted believers by pointing to God’s ultimate victory and Christ’s return, which aligns with Biblical themes (e.g., the triumph of God and the Lamb and the return of Christ in Revelation). It is consistent with historic Christian orthodoxy and biblically grounded in the book’s themes. However, the statement is concise and omits other legitimate purposes of Revelation found in Scripture, such as calls to perseverance and faithfulness to Christ (especially in the letters to the churches in Rev 2–3), warnings against false worship, exhortations to worship God, the unveiling of cosmic spiritual realities, and the broader eschatological narrative (judgment, the defeat of evil, and the new creation). The use of “visions” is appropriate given the apocalyptic genre, but a fuller answer would acknowledge Revelation’s multifaceted aims beyond simply visions of victory and the return of Christ."
+            },
+            "created_at": "2025-12-30T00:14:51.067Z"
+          },
+          {
+            "id": 623,
+            "eval_id": 176,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:14:51.067Z"
+          }
+        ]
+      },
+      {
+        "id": 177,
+        "suite_id": 57,
+        "col_order": 6,
+        "input": "What was the relationship between the books of Kings and Chronicles?",
+        "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+        "output": "Kings is a prophetic history covering the rise and fall of the monarchy focusing on the covenant failure of Israel and Judah; Chronicles is a priestly history written post-exile to provide a genealogical and spiritual foundation for the restored community, focusing primarily on the Davidic line and the temple.",
+        "duration": 37252,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:14:32.326Z",
+        "scores": [
+          {
+            "id": 768,
+            "eval_id": 177,
+            "name": "Theological Accuracy Judge",
+            "score": 0.85,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The response accurately reflects the commonly held scholarly view: Kings covers the monarchy’s rise and fall with emphasis on covenant faithfulness/infidelity and prophetic involvement; Chronicles presents a priestly, post-exilic perspective that highlights Davidic kingship, temple worship, and priestly order as a foundation for the restored community. It captures the main contrast and aligns with historic Christian orthodoxy and biblical grounding. Nuances it could improve include noting that Kings also contains prophetic voices and that Chronicles emphasizes Levitical/Worship concerns in addition to Davidic lineage; the dating of Chronicles to the post-exilic Persian period is widely accepted but debated among scholars."
+            },
+            "created_at": "2025-12-30T00:15:09.596Z"
+          },
+          {
+            "id": 769,
+            "eval_id": 177,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:15:09.596Z"
+          }
+        ]
+      },
+      {
+        "id": 178,
+        "suite_id": 57,
+        "col_order": 7,
+        "input": "Why did Jesus use parables in his teaching?",
+        "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+        "output": "To reveal spiritual truths to those receptive to his message while concealing them from those who were hardened or hostile.",
+        "duration": 23265,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:14:32.326Z",
+        "scores": [
+          {
+            "id": 700,
+            "eval_id": 178,
+            "name": "Theological Accuracy Judge",
+            "score": 0.75,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The response accurately reflects the biblical teaching that Jesus used parables to reveal truth to the receptive and to conceal or withhold truth from those who were hardened or hostile, which aligns with passages like Matthew 13. This is doctrinally sound and biblically grounded. However, it misses additional nuances: parables also served to make spiritual truths memorable through everyday imagery, and the broader prophetic/contextual framing (e.g., fulfillment of Isaiah) is part of the biblical rationale for parables. The core idea is correct, but the answer lacks the full nuance present in the broader biblical and historical-theological understanding."
+            },
+            "created_at": "2025-12-30T00:14:55.609Z"
+          },
+          {
+            "id": 701,
+            "eval_id": 178,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:14:55.609Z"
+          }
+        ]
+      }
+    ]
+  }
+}

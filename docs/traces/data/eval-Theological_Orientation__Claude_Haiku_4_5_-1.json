@@ -1,0 +1,108 @@
+{
+  "eval": {
+    "id": 89,
+    "suite_id": 70,
+    "col_order": 1,
+    "input": "When there appear to be contradictions in the Bible (like different Gospel accounts of the same event), how should we understand these differences?",
+    "expected": "",
+    "output": "# Approaching Biblical Tensions\n\nThis is one of Christianity's most honest questions. Thoughtful believers hold several frameworks:\n\n## Traditional Harmonization\nMany scholars and believers attempt to reconcile accounts—suggesting, for example, that Matthew and Luke's different genealogies serve different purposes, or that apparent contradictions in resurrection accounts reflect details from different witnesses. This approach assumes underlying consistency.\n\n**Strength**: Respects biblical authority holistically\n**Limitation**: Sometimes requires considerable interpretive stretching\n\n## Accepting Legitimate Diversity\nOthers argue the differences themselves carry meaning. The four Gospels present genuinely different portraits of Jesus—emphasizing different themes and audiences. Rather than flaws, these variations reflect authentic theological perspectives.\n\n**Strength**: Takes the texts at face value as distinct documents\n**Limitation**: Requires accepting some events may be reported incompatibly\n\n## Distinguishing Levels of Claims\nMany theologians suggest asking: *What is being affirmed here?* A Gospel writer may prioritize theological truth (e.g., \"Jesus rose\") over chronological precision. The core claim can be reliable even if details vary.\n\n## What Most Christians Agree On\nDespite different approaches, mainstream Christianity holds that:\n- Biblical authors were serious about truth\n- Contradictions in historical details don't necessarily undermine spiritual authority\n- The central narrative—God's redemptive action—remains coherent\n\n**What's your instinct on this?** Do you find one framework more convincing?",
+    "duration": 21620,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.472Z",
+    "score": 0.5,
+    "scores": [
+      {
+        "id": 20,
+        "eval_id": 89,
+        "name": "Theological Orientation Classifier",
+        "score": 0.5,
+        "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+        "metadata": {
+          "orientation": "moderate",
+          "confidence": 0.72,
+          "rationale": "The response analyzes multiple hermeneutical approaches—traditional harmonization, accepting diversity, and discerning levels of claims—without endorsing a single method as definitive. It affirms biblical seriousness and central coherence while acknowledging legitimate diversity, and it frames the discussion as a shared, non-dogmatic exploration rather than a rigid doctrinal stance.",
+          "key_indicators": [
+            "Accepting Legitimate Diversity",
+            "Traditional Harmonization",
+            "Distinguishing Levels of Claims",
+            "What Most Christians Agree On",
+            "Invites personal instinct or judgment"
+          ],
+          "nuance_present": true,
+          "biblical_engagement": "moderate",
+          "category": "Unknown",
+          "subcategory": "Unknown"
+        },
+        "created_at": "2025-12-30T00:17:04.095Z"
+      },
+      {
+        "id": 21,
+        "eval_id": 89,
+        "name": "Position Clarity",
+        "score": 0.5,
+        "description": "Detects whether the response takes a clear position or presents multiple views",
+        "metadata": {
+          "position_type": "acknowledges_both",
+          "presents_alternative": true,
+          "dogmatic_tone": false,
+          "explanation": "The response surveys multiple frameworks (traditional harmonization, accepting legitimate diversity, and distinguishing levels of claims) and weighs their strengths and limitations without endorsing a single approach. It invites readers to choose and notes common ground among Christians. This demonstrates acknowledgment of genuine disagreement and fair presentation of alternatives, with a humble, exploratory tone rather than dogmatic insistence."
+        },
+        "created_at": "2025-12-30T00:17:04.095Z"
+      },
+      {
+        "id": 22,
+        "eval_id": 89,
+        "name": "Scripture Usage",
+        "score": 0.5,
+        "description": "Analyzes how biblical texts are used in the response",
+        "metadata": {
+          "has_references": false,
+          "reference_count": 0,
+          "traditional_hermeneutic_markers": 0,
+          "progressive_hermeneutic_markers": 0,
+          "interpretation_lean": "neutral"
+        },
+        "created_at": "2025-12-30T00:17:04.095Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 6,
+        "eval_id": 89,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a knowledgeable theologian. Answer the following question about Christian theology and practice. Provide a thoughtful, balanced response that engages with biblical texts and different Christian perspectives where appropriate.\n\nWhen there appear to be contradictions in the Bible (like different Gospel accounts of the same event), how should we understand these differences?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# Approaching Biblical Tensions\n\nThis is one of Christianity's most honest questions. Thoughtful believers hold several frameworks:\n\n## Traditional Harmonization\nMany scholars and believers attempt to reconcile accounts—suggesting, for example, that Matthew and Luke's different genealogies serve different purposes, or that apparent contradictions in resurrection accounts reflect details from different witnesses. This approach assumes underlying consistency.\n\n**Strength**: Respects biblical authority holistically\n**Limitation**: Sometimes requires considerable interpretive stretching\n\n## Accepting Legitimate Diversity\nOthers argue the differences themselves carry meaning. The four Gospels present genuinely different portraits of Jesus—emphasizing different themes and audiences. Rather than flaws, these variations reflect authentic theological perspectives.\n\n**Strength**: Takes the texts at face value as distinct documents\n**Limitation**: Requires accepting some events may be reported incompatibly\n\n## Distinguishing Levels of Claims\nMany theologians suggest asking: *What is being affirmed here?* A Gospel writer may prioritize theological truth (e.g., \"Jesus rose\") over chronological precision. The core claim can be reliable even if details vary.\n\n## What Most Christians Agree On\nDespite different approaches, mainstream Christianity holds that:\n- Biblical authors were serious about truth\n- Contradictions in historical details don't necessarily undermine spiritual authority\n- The central narrative—God's redemptive action—remains coherent\n\n**What's your instinct on this?** Do you find one framework more convincing?",
+          "toolCalls": []
+        },
+        "start_time": 437.361666,
+        "end_time": 5763.509666,
+        "input_tokens": 76,
+        "output_tokens": 321,
+        "total_tokens": 397,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 70,
+    "run_id": 1,
+    "name": "Theological Orientation [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/theological-orientation.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Theological Orientation",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.472Z"
+  }
+}

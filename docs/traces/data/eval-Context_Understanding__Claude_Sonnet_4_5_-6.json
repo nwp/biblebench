@@ -1,0 +1,88 @@
+{
+  "eval": {
+    "id": 270,
+    "suite_id": 86,
+    "col_order": 6,
+    "input": "What was the relationship between the books of Kings and Chronicles?",
+    "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+    "output": "Chronicles was written later than Kings and covers much of the same historical period (the monarchy of Israel and Judah), but with different purposes and perspectives. Kings focuses on the political history of both northern and southern kingdoms, emphasizing the causes of exile. Chronicles, written after the Babylonian exile, focuses primarily on Judah and the Davidic line, emphasizing temple worship, the priesthood, and God's faithfulness to his covenant. Chronicles often supplements Kings with additional details about religious reforms and genealogies, while omitting material that reflects poorly on David and Solomon.",
+    "duration": 32933,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "score": 0.435,
+    "scores": [
+      {
+        "id": 1145,
+        "eval_id": 270,
+        "name": "Theological Accuracy Judge",
+        "score": 0.87,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "The claim that Chronicles 'omits material that reflects poorly on David and Solomon' is overstated. Chronicles does present David and Solomon in a largely favorable light, but it does include some admonitions and corrective elements related to David’s census (and Roman numerals aside, it refrains from dwelling on some of the more scandalous episodes in Kings). The statement should be qualified to note that Chronicles downplays certain failures rather than fully omitting them."
+          ],
+          "rationale": "The LLM accurately captures the core relationship: Chronicles is post-exilic, written with a priestly/temple focus, emphasizes the Davidic line and Judah, and supplements Kings with genealogies and reforms while presenting a favorable portrait of David and Solomon and a temple-centered theology. It correctly contrasts Kings’ broader political history (including both kingdoms and exile) with Chronicles’ Judah-centric, temple/Levitical emphasis and covenant fidelity. Nuance is well-handled, including the different perspectives and purposes. The main point needing caution is the blanket claim about omitting all negative material about David and Solomon; Chronicles does downplay some negatives, but it does not completely omit critical episodes, and some corrective material is present. Overall, the assessment is solid with a modest overstatement regarding omissions."
+        },
+        "created_at": "2025-12-30T00:17:54.796Z"
+      },
+      {
+        "id": 1146,
+        "eval_id": 270,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:54.796Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 437,
+        "eval_id": 270,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Chronicles was written later than Kings and covers much of the same historical period (the monarchy of Israel and Judah), but with different purposes and perspectives. Kings focuses on the political history of both northern and southern kingdoms, emphasizing the causes of exile. Chronicles, written after the Babylonian exile, focuses primarily on Judah and the Davidic line, emphasizing temple worship, the priesthood, and God's faithfulness to his covenant. Chronicles often supplements Kings with additional details about religious reforms and genealogies, while omitting material that reflects poorly on David and Solomon.",
+          "toolCalls": []
+        },
+        "start_time": 198.193333,
+        "end_time": 4900.260125,
+        "input_tokens": 153,
+        "output_tokens": 122,
+        "total_tokens": 275,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 86,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

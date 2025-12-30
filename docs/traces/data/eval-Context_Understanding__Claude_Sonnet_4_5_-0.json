@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 264,
+    "suite_id": 86,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "The Apostle John, son of Zebedee, one of Jesus' twelve disciples. He was part of Jesus' inner circle along with Peter and James, and is referred to as \"the disciple whom Jesus loved\" in the Gospel itself.",
+    "duration": 30298,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "score": 0.41,
+    "scores": [
+      {
+        "id": 1127,
+        "eval_id": 264,
+        "name": "Theological Accuracy Judge",
+        "score": 0.82,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": false,
+          "errors": [
+            "The response asserts the Gospel of John was written by John the Apostle, but the biblical text does not explicitly name its author; this attribution rests on early church tradition rather than explicit scriptural evidence.",
+            "It does not note scholarly debate about authorship and the identity of the 'beloved disciple' (whether John is the author or if the beloved disciple is a distinct figure)."
+          ],
+          "rationale": "The answer correctly identifies John as one of the Twelve and acknowledges the 'disciple whom Jesus loved.' This aligns with canonical material and traditional Christian orthodoxy. However, it treats the author’s identity as definitively John the Apostle, which is traditional but not explicit in Scripture, and it omits important scholarly nuance about authorship and the beloved disciple’s identity. Including that nuance would improve biblical grounding and nuance without undermining doctrinal accuracy."
+        },
+        "created_at": "2025-12-30T00:17:52.162Z"
+      },
+      {
+        "id": 1128,
+        "eval_id": 264,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:52.162Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 431,
+        "eval_id": 264,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The Apostle John, son of Zebedee, one of Jesus' twelve disciples. He was part of Jesus' inner circle along with Peter and James, and is referred to as \"the disciple whom Jesus loved\" in the Gospel itself.",
+          "toolCalls": []
+        },
+        "start_time": 197.335458,
+        "end_time": 2081.245292,
+        "input_tokens": 155,
+        "output_tokens": 55,
+        "total_tokens": 210,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 86,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

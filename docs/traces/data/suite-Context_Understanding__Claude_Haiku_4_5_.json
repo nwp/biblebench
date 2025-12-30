@@ -1,0 +1,394 @@
+{
+  "history": [
+    {
+      "score": 0.431875,
+      "date": "2025-12-30T00:17:21.862Z"
+    }
+  ],
+  "suite": {
+    "id": 85,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "evals": [
+      {
+        "id": 256,
+        "suite_id": 85,
+        "col_order": 0,
+        "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+        "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+        "output": "The authorship of the Gospel of John is debated, but tradition identifies John the Apostle, one of Jesus's twelve disciples and the brother of James. He was part of Jesus's inner circle and is described as \"the disciple whom Jesus loved\" in the gospel itself.\n\nModern scholarship often questions whether John the Apostle actually wrote it, suggesting instead an anonymous author from a Johannine community, possibly drawing on eyewitness testimony. The text itself does not name its author.",
+        "duration": 31655,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:17:21.862Z",
+        "scores": [
+          {
+            "id": 1143,
+            "eval_id": 256,
+            "name": "Theological Accuracy Judge",
+            "score": 0.85,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "The claim that the author is definitively 'John the Apostle' is traditional and not stated in Scripture; the response appropriately flags this as debated but could emphasize more clearly that this is a traditional attribution rather than a biblical assertion.",
+                "The reference to 'the brother of James' is a traditional identification (John the Apostle as brother of James) rather than something the Gospel explicitly states within its text; this nuance could be clarified to avoid implying the Gospel itself makes that identification.",
+                "The term 'inner circle' is a standard theological interpretation rather than a plainly stated biblically explicit fact; the answer treats it as a widely held view rather than a scriptural claim, which is fine, but should be flagged as interpretive rather than explicit biblical wording."
+              ],
+              "rationale": "The response correctly notes the Gospel of John is not named within the text and acknowledges traditional attribution to John the Apostle alongside modern scholarly doubt about authorship. It accurately cites the Gospel’s own mention of 'the disciple whom Jesus loved' as a textual clue. It captures important nuance by presenting both traditional attribution and scholarly competing theories (anonymous Johannine work or a Johannine community). The main caveat is that some attributions (John as the brother of James, inner-circle language) rest on tradition or interpretive categories rather than explicit biblical statements. Overall, the answer is doctrinally sound, biblically contextual, and nuanced, with minor clarifications needed regarding what the Bible itself states versus what tradition or scholarly theory claims."
+            },
+            "created_at": "2025-12-30T00:17:53.518Z"
+          },
+          {
+            "id": 1144,
+            "eval_id": 256,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:17:53.518Z"
+          }
+        ]
+      },
+      {
+        "id": 257,
+        "suite_id": 85,
+        "col_order": 1,
+        "input": "What was Paul's background before his conversion?",
+        "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+        "output": "Paul was a Pharisee, a Roman citizen, and a zealous persecutor of Christians. He was trained in Jewish law under Gamaliel in Jerusalem and actively worked to suppress the early Christian movement, including participating in the stoning of Stephen.",
+        "duration": 35577,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:17:21.862Z",
+        "scores": [
+          {
+            "id": 1157,
+            "eval_id": 257,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "The phrase 'participating in the stoning' could imply Paul personally threw stones; the biblical text indicates he consented to Stephen's death (Acts 7:58; 8:1) rather than actively stoning him himself."
+              ],
+              "rationale": "The response accurately reflects Paul's pre-conversion identity: he was a Pharisee, a Roman citizen, trained in Jewish law under Gamaliel, and a zealous persecutor of Christians. It aligns with biblical data (Acts 22:3; Acts 7–8; Galatians 1:13–14; Philippians 3:5) and with historic Christian orthodoxy. The only nuance is the potential overstatement about his personal participation in Stephen's stoning; the text shows he approved of Stephen's death rather than necessarily throwing stones himself."
+            },
+            "created_at": "2025-12-30T00:17:57.441Z"
+          },
+          {
+            "id": 1158,
+            "eval_id": 257,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:17:57.441Z"
+          }
+        ]
+      },
+      {
+        "id": 258,
+        "suite_id": 85,
+        "col_order": 2,
+        "input": "To whom was the book of Romans written and why?",
+        "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+        "output": "**To:** The church at Rome\n\n**Why:** To present Paul's gospel of salvation through faith in Christ, to explain justification by faith rather than works of the law, to address tensions between Jewish and Gentile believers, and to request their support for his planned mission to Spain.",
+        "duration": 23927,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:17:21.862Z",
+        "scores": [
+          {
+            "id": 1093,
+            "eval_id": 258,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM correctly identifies the addressees (the church in Rome) and the primary purposes of Romans: presenting the gospel, emphasizing justification by faith, addressing Jew-Gentile tensions, and indicating Paul’s plan to visit Rome and to gain their support for his mission to Spain. These points align with Scripture (Romans 1:16–17; 3:21–28 on justification by faith; Romans 9–11 on Jew/Gentile matters; Romans 15:24, 28–29 about travel plans). The answer is doctrinally orthodox and biblically grounded, and it captures the main aims and some significant nuances (plural aims, not a single monothematic purpose). A fuller treatment might note the broader themes of the righteousness of God and the universal need for the gospel, but the given points are accurate and well-supported by Romans. "
+            },
+            "created_at": "2025-12-30T00:17:45.791Z"
+          },
+          {
+            "id": 1094,
+            "eval_id": 258,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:17:45.791Z"
+          }
+        ]
+      },
+      {
+        "id": 259,
+        "suite_id": 85,
+        "col_order": 3,
+        "input": "What was the historical context of the book of Exodus?",
+        "expected": "Exodus describes the Israelites' slavery in Egypt and their deliverance by God through Moses",
+        "output": "# Historical Context of Exodus\n\n**Time Period:** The events described likely occurred during Egypt's New Kingdom period (c. 1550-1077 BCE), though scholars debate the exact dating. The narrative is set during the reign of one or more pharaohs, traditionally associated with the 19th Dynasty (c. 1295-1186 BCE).\n\n**Historical Situation:**\n- Egypt was a dominant imperial power with extensive slave labor systems for building projects\n- The Israelites were depicted as enslaved peoples in Egypt\n- Egypt experienced internal upheaval and external threats during this era\n\n**Composition Context:**\nThe book was written centuries after the events it describes, likely during the exilic or post-exilic period (6th-5th century BCE), as reflected in its theological sophistication and literary style.\n\n**Purpose:**\nExodus served to explain Israel's origins as a nation, establish their covenant relationship with God, and provide their foundational religious laws and identity—especially important during the Babylonian exile when their nation and temple were destroyed.\n\n**Key Point:** While Exodus describes real Egyptian practices and settings, modern archaeology has not confirmed the specific narrative of mass exodus, suggesting the account combines historical memory with theological interpretation and literary shaping.",
+        "duration": 38554,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:17:21.862Z",
+        "scores": [
+          {
+            "id": 1171,
+            "eval_id": 259,
+            "name": "Theological Accuracy Judge",
+            "score": 0.82,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Dating Exodus to the New Kingdom (c. 1550–1077 BCE) and the specific association with the 19th Dynasty (c. 1295–1186 BCE) reflect a scholarly hypothesis, not a settled biblical claim; there is broad debate about the exact dating of the Exodus.",
+                "The claim about the book’s composition being exilic or post-exilic and the exile as the primary context for its theological sophistication is a scholarly view. While widely taught in critical scholarship, the biblical text itself does not specify a date of composition; this should be presented as a scholarly interpretation rather than a doctrinal certainty."
+              ],
+              "rationale": "The response accurately reflects core biblical themes (deliverance by God, covenant at Sinai, giving of the Law) and acknowledges the historical-critical context (composition after the events, potential exilic/post-exilic redaction, and archaeology debate). It remains consistent with historic Christian teaching by highlighting the Exodus as foundational for Israel’s covenant identity and law, and by noting that archaeology has not confirmed a mass Exodus. The nuances about dating and composition are appropriately caveated, though these points should be framed as scholarly hypotheses rather than definitive biblical statements."
+            },
+            "created_at": "2025-12-30T00:18:00.418Z"
+          },
+          {
+            "id": 1172,
+            "eval_id": 259,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:18:00.418Z"
+          }
+        ]
+      },
+      {
+        "id": 260,
+        "suite_id": 85,
+        "col_order": 4,
+        "input": "Who was the primary audience of the Sermon on the Mount?",
+        "expected": "Jesus' disciples and the crowds who followed him",
+        "output": "Jesus's disciples and the crowds who followed him in Galilee.",
+        "duration": 21549,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:17:21.862Z",
+        "scores": [
+          {
+            "id": 1057,
+            "eval_id": 260,
+            "name": "Theological Accuracy Judge",
+            "score": 0.85,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The response correctly identifies the audience as Jesus’ disciples and the crowd who followed him. The Beatitudes Sermon is indeed set in Galilee, and the Gospel accounts describe Jesus teaching the disciples after the crowds are present, so the addition 'in Galilee' is geographically accurate and does not alter the core point. This aligns with common exegesis that while the primary recipients were the disciples, the broader crowd also heard the teaching. The statement is biblically grounded and theologically orthodox. A minor nuance is the ongoing scholarly discussion about the distinction between the 'primary audience' (the disciples) and the broader audience (the crowds); however, the LLM’s wording remains faithful to scripture and standard Christian interpretation."
+            },
+            "created_at": "2025-12-30T00:17:43.412Z"
+          },
+          {
+            "id": 1058,
+            "eval_id": 260,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:17:43.412Z"
+          }
+        ]
+      },
+      {
+        "id": 261,
+        "suite_id": 85,
+        "col_order": 5,
+        "input": "What was the purpose of the book of Revelation?",
+        "expected": "To encourage persecuted Christians with visions of God's ultimate victory and the return of Christ",
+        "output": "To encourage persecuted early Christians by revealing Christ's ultimate victory over evil, the future judgment of Satan and his followers, and the establishment of God's eternal kingdom.",
+        "duration": 26332,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:17:21.862Z",
+        "scores": [
+          {
+            "id": 1113,
+            "eval_id": 261,
+            "name": "Theological Accuracy Judge",
+            "score": 0.85,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM’s answer correctly reflects core themes of Revelation: encouraging persecuted believers, Christ’s ultimate victory over evil, the future judgment of Satan and the powers of evil, and the establishment of God’s eternal kingdom. These themes are consistent with biblical passages (e.g., Christ’s victory in Revelation 19–20, the judgment scene in 20, and the promised new creation in 21–22) and align with historic Christian teaching on the book’s purpose to provide hope and endurance in the face of persecution. The response could be slightly more explicit about the return of Christ and the call to perseverance found in the letters to the churches (Rev 2–3) or the apocalyptic symbolism itself, but these are not doctrinal errors. Overall, the answer is accurate, orthodox, and captures the primary eschatological aim of Revelation."
+            },
+            "created_at": "2025-12-30T00:17:48.195Z"
+          },
+          {
+            "id": 1114,
+            "eval_id": 261,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:17:48.195Z"
+          }
+        ]
+      },
+      {
+        "id": 262,
+        "suite_id": 85,
+        "col_order": 6,
+        "input": "What was the relationship between the books of Kings and Chronicles?",
+        "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+        "output": "Kings and Chronicles are parallel historical accounts of the Israelite and Judean monarchies. Chronicles was written later (likely 4th century BCE) and retells much of Kings' material with different emphases: Chronicles focuses more on the southern kingdom of Judah, emphasizes religious themes and temple worship, includes extended genealogies, and presents a more idealized view of certain kings. Both draw from earlier source documents, but Chronicles reorganizes and reinterprets the history for its post-exilic audience.",
+        "duration": 24183,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:17:21.862Z",
+        "scores": [
+          {
+            "id": 1095,
+            "eval_id": 262,
+            "name": "Theological Accuracy Judge",
+            "score": 0.85,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM’s assessment aligns well with mainstream scholarly and biblical understanding: Chronicles recasts material from Kings with a priestly, temple-centered emphasis, foregrounds Judah and the Davidic covenant, includes extensive genealogies, and tends to present certain kings more favorably. It correctly notes that Chronicles is post-exilic in orientation and reinterprets history for that audience. It also correctly implies some overlap with Kings’ material and that Chronicles reorganizes content for thematic purposes (worship, covenant, priesthood) rather than serving as a strict, one-for-one parallel. A minor caveat worth noting is the dating: scholars generally place Chronicles in the late exile to post-exilic period (often dated roughly 5th–4th century BCE); labeling it strictly as “likely 4th century BCE” is plausible but not universally fixed. The statement that Chronicles “retells much of Kings’ material” is true in substance, though Chronicles is not a verbatim parallel but a selective reworking with a particular theological agenda. Overall, the response is doctrinally sound, biblically grounded, and captures important nuances, with only a minor dating precision caveat."
+            },
+            "created_at": "2025-12-30T00:17:46.047Z"
+          },
+          {
+            "id": 1096,
+            "eval_id": 262,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:17:46.047Z"
+          }
+        ]
+      },
+      {
+        "id": 263,
+        "suite_id": 85,
+        "col_order": 7,
+        "input": "Why did Jesus use parables in his teaching?",
+        "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+        "output": "Jesus used parables to:\n\n1. **Conceal truth from those unwilling to understand** - allowing spiritual truths to remain hidden from hardened hearts while revealing them to receptive disciples (Matthew 13:10-17)\n\n2. **Make spiritual truths memorable and accessible** - using familiar agricultural and domestic imagery so common people could grasp abstract concepts\n\n3. **Provoke thought and deeper reflection** - rather than simply declaring answers, parables forced listeners to engage intellectually and spiritually with the material\n\n4. **Fulfill Old Testament prophecy** - Matthew 13:35 cites Psalm 78:2, indicating parables were part of God's planned teaching method\n\n5. **Bypass intellectual defenses** - the story format allowed listeners to hear truth without initial resistance, as they often saw themselves in the narrative before recognizing its application to them",
+        "duration": 39630,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:17:21.862Z",
+        "scores": [
+          {
+            "id": 1173,
+            "eval_id": 263,
+            "name": "Theological Accuracy Judge",
+            "score": 0.85,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Overstates the notion of 'concealing' truth as an intentional tactic in all cases. Scripture speaks of revealing mysteries to the receptive and judgment/seeing/hearing blindness to the hard-hearted, but the dynamic is more complex than a simple concealment principle (see Matthew 13:10-17; 13:11-15).",
+                "The phrase 'Bypass intellectual defenses' is a provocative characterization. Parables function as a teaching method that challenges listeners’ assumptions and exposes hearts; describing this as 'bypassing defenses' can read as manipulative rather than pedagogical or revelatory, and should be framed as the listeners' reception/response determining whether truth is understood.",
+                "While the reference to Psalm 78:2 via Matthew 13:35 is accurate, the claim that parables were part of a singular 'planned teaching method' should be nuanced: Scripture presents parables as a fulfillment of prophecy and a divine method for revealing truth to some while testing/responding to others, rather than a blanket statement about 'plan' as such."
+              ],
+              "rationale": "The LLM’s answer largely tracks biblical teaching: parables reveal truth to those with receptive hearts and reveal or condemn the hard-hearted; they use familiar imagery to make complex truths memorable; they provoke reflection; Matthew 13:35 (citing Psalm 78:2) is rightly invoked to support the view that Jesus spoke in parables as part of prophetic fulfillment. The response also notes that Jesus and His disciples explain the meaning privately (implied by the reference to Matthew 13:10-17 and related passages), which captures an important nuance. However, there are some caveats and nuances that would strengthen accuracy:\n- The description of parables as ‘concealing truth from those unwilling to understand’ is biblically valid but should be carefully nuanced to acknowledge the complexity: concealment is tied to hardness of heart and the listener’s response, not a unilateral tactic by Jesus in every instance.\n- The term ‘bypass intellectual defenses’ risks implying manipulation; a more precise framing is that parables reveal truth in a way that requires discernment and exposes listeners’ hearts, which can lead to judgment for the unrepentant.\n- A fuller treatment would note the role of the Holy Spirit in understanding (for example, Luke 8:10; Mark 4:11-12) and the private explanations to the disciples (e.g., Matthew 13:36-43) as essential aspects of how parables function in teaching and interpretation.\nOverall, the answer is solid and doctrinally sound, with minor over-simplifications that could be tempered for greater precision."
+            },
+            "created_at": "2025-12-30T00:18:01.494Z"
+          },
+          {
+            "id": 1174,
+            "eval_id": 263,
+            "name": "Key Points Coverage",
+            "score": 0,
+            "description": "Checks if the response includes key factual points using word overlap",
+            "metadata": {
+              "keyPoints": [],
+              "matchedPoints": [],
+              "missedPoints": [],
+              "coverage": 0,
+              "totalPoints": 0,
+              "pointsFound": 0
+            },
+            "created_at": "2025-12-30T00:18:01.494Z"
+          }
+        ]
+      }
+    ]
+  }
+}

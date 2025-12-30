@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 126,
+    "suite_id": 30,
+    "col_order": 32,
+    "input": "Quote Micah 6:8 from the English Standard Version (ESV) exactly as written",
+    "expected": "He has told you, O man, what is good; and what does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God",
+    "output": "He has shown you, O man, what is good. And what does the LORD require of you? To do justice, to love kindness, and to walk humbly with your God",
+    "duration": 21127,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:38:54.225Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 382,
+        "eval_id": 126,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T00:39:15.372Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 144,
+        "eval_id": 126,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Micah 6:8 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "He has shown you, O man, what is good. And what does the LORD require of you? To do justice, to love kindness, and to walk humbly with your God",
+          "toolCalls": []
+        },
+        "start_time": 214.879,
+        "end_time": 21339.125666,
+        "input_tokens": 152,
+        "output_tokens": 2325,
+        "total_tokens": 2477,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-OSS-20B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-OSS-20B",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:38:54.224Z"
+  }
+}

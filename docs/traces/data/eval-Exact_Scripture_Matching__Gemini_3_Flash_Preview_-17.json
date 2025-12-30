@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 204,
+    "suite_id": 59,
+    "col_order": 17,
+    "input": "Quote Philippians 4:13 from the New International Version (NIV) exactly as written",
+    "expected": "I can do all this through him who gives me strength",
+    "output": "I can do all this through him who gives me strength.",
+    "duration": 1190,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:46.381Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 522,
+        "eval_id": 204,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:14:47.572Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 156,
+        "eval_id": 204,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Philippians 4:13 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "I can do all this through him who gives me strength.",
+          "toolCalls": []
+        },
+        "start_time": 188.897584,
+        "end_time": 1354.66525,
+        "input_tokens": 90,
+        "output_tokens": 12,
+        "total_tokens": 102,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:46.380Z"
+  }
+}

@@ -1,0 +1,1476 @@
+{
+  "history": [
+    {
+      "score": 0.5547619047619047,
+      "date": "2025-12-30T00:43:20.822Z"
+    }
+  ],
+  "suite": {
+    "id": 1,
+    "run_id": 1,
+    "name": "Theological Orientation [DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/theological-orientation.eval.ts",
+    "variant_name": "DeepSeek V3.2",
+    "variant_group": "Theological Orientation",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:43:20.822Z",
+    "evals": [
+      {
+        "id": 1,
+        "suite_id": 1,
+        "col_order": 0,
+        "input": "What does it mean to say the Bible is 'inspired'? Does this mean it is without error in all it affirms, or can there be errors in historical details, scientific statements, or manuscript transmission?",
+        "expected": "",
+        "output": "## Understanding Biblical \"Inspiration\"\n\nThe term \"inspired\" comes from the Greek *theopneustos* (θεόπνευστος) in 2 Timothy 3:16, meaning \"God-breathed.\" This concept has been understood in various ways throughout Christian history, leading to different views on what inspiration entails regarding truth and error.\n\n### Key Biblical Texts on Inspiration\n1. **2 Timothy 3:16-17**: \"All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness.\"\n2. **2 Peter 1:20-21**: \"No prophecy of Scripture came about by the prophet's own interpretation. For prophecy never had its origin in the human will, but prophets, though human, spoke from God as they were carried along by the Holy Spirit.\"\n3. **John 10:35**: Jesus affirms that \"Scripture cannot be broken.\"\n\n### Major Christian Perspectives on Inspiration\n\n#### 1. **Verbal Plenary Inspiration**\nThis view, common among conservative evangelicals, holds that the entire Bible—all its words—are inspired by God. Proponents often argue that if God inspired the Scriptures, they must be without error in all they affirm (inerrancy), including historical and scientific matters when properly interpreted in their literary context. The Chicago Statement on Biblical Inerrancy (1978) represents this position, acknowledging human authorship but emphasizing divine superintendence that preserved the text from error.\n\n#### 2. **Dynamic Inspiration**\nThis perspective, more common among mainline Protestants and some Catholics, emphasizes the Spirit's work through human authors while acknowledging their cultural limitations. Here, inspiration applies primarily to theological truths and salvation history, not necessarily to scientific or incidental historical details. Human fallibility may affect minor aspects while God's saving message remains intact.\n\n#### 3. **Neo-Orthodox View**\nKarl Barth and others distinguished between the inspired Word of God (Jesus Christ) and the fallible human witness to that Word in Scripture. The Bible becomes God's Word through encounter, not because of inherent textual perfection.\n\n#### 4. **Roman Catholic View**\nVatican II's *Dei Verbum* teaches that God inspired human authors who used their own faculties and styles, with God acting through them to communicate \"solidly, faithfully, and without error\" the truth God wished consigned to Scripture \"for the sake of our salvation.\" This allows for possible imperfections in non-salvific matters.\n\n### Manuscript Transmission\nAll traditions acknowledge textual variants in biblical manuscripts (about 0.1% affect meaning significantly). Most agree that inspiration applies to the original autographs, though we possess copies. Textual criticism seeks to reconstruct the earliest attainable text with remarkable accuracy, especially for the New Testament.\n\n### Balanced Considerations\n\n- **Divine-Human Collaboration**: All Christian traditions recognize both divine and human elements in Scripture's production. The crux is how these interact.\n- **Purpose of Scripture**: Most agree the Bible's primary purpose is to reveal God and salvation through Christ (John 20:31), not to serve as a science or comprehensive history textbook.\n- **Hermeneutical Implications**: How one interprets \"error\" depends on recognizing ancient literary genres (poetry, saga, apocalyptic) not held to modern historiographical standards.\n- **Christocentric Focus**: Many traditions emphasize that Jesus treated Scripture authoritatively (Matthew 5:18), while also reinterpreting it through his person and work.\n\n### Conclusion\nSaying the Bible is \"inspired\" means affirming God's special involvement in its composition to reliably accomplish his purposes—primarily revealing himself and redemption through Christ. Whether this extends to complete inerrancy in all details depends on one's theological framework. Most agree that what Scripture affirms about God's character, human nature, and salvation is trustworthy and authoritative for Christian faith and practice. The historical church has maintained Scripture's authority while wrestling with how divine inspiration accommodates human authorship within ancient cultures and literary forms.",
+        "duration": 124808,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 261,
+            "eval_id": 1,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.63,
+              "rationale": "The response presents and explains multiple traditional positions on biblical inspiration (verbal plenary, dynamic, neo-orthodox, Catholic), clearly preferring Scripture’s authority while acknowledging legitimate diversity. It references conservative benchmarks (e.g., Chicago Statement on Biblical Inerrancy) but also surveys non-conservative viewpoints and emphasizes framework-dependent conclusions, showing pastoral nuance rather than strict orthodoxy or radical revisionism.",
+              "key_indicators": [
+                "Explicit presentation of Verbal Plenary Inspiration and inerrancy as a major conservative view",
+                "Recognition of Dynamic Inspiration and Neo-Orthodox/Catholic perspectives",
+                "Mention of Dei Verbum (Catholic) and textual criticism",
+                "Comment that whether inerrancy extends to all details depends on theological framework",
+                "Balanced conclusion about Scripture’s authority and the variety of interpretive frameworks"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:45:25.632Z"
+          },
+          {
+            "id": 262,
+            "eval_id": 1,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response surveys multiple, well-established perspectives on biblical inspiration (Verbal Plenary/Inerrancy, Dynamic Inspiration, Neo-Orthodox, Roman Catholic) and explicitly positions them as viable options within Christian theology rather than pushing a single doctrinal endpoint. It notes that inerrancy is contingent on one’s framework and discusses manuscript variants, indicating awareness of legitimate scholarly and theological diversity. The Balanced Considerations section emphasizes divine-human collaboration, different literary genres, and Christocentric focus, further signaling a broad, ecumenical approach. The concluding assessment suggests widely shared convictions (inspiration as reliable for core truths) while acknowledging disagreement on the extent of inerrancy, reinforcing that unity rests on trustworthiness and authority rather than uniform agreement on every detail. Overall, the piece prioritizes fair presentation and humility over dogmatic advocacy. "
+            },
+            "created_at": "2025-12-30T00:45:25.632Z"
+          },
+          {
+            "id": 263,
+            "eval_id": 1,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 6,
+              "traditional_hermeneutic_markers": 1,
+              "progressive_hermeneutic_markers": 1,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:45:25.632Z"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "suite_id": 1,
+        "col_order": 1,
+        "input": "When there appear to be contradictions in the Bible (like different Gospel accounts of the same event), how should we understand these differences?",
+        "expected": "",
+        "output": "",
+        "duration": 21624,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 8,
+            "eval_id": 2,
+            "name": "Theological Orientation Classifier",
+            "score": 0.5,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate",
+              "confidence": 0.65,
+              "rationale": "The response functions as a neutral taxonomy of theological positions rather than advocating for a single stance. It lays out explicit descriptions for progressive, progressive-moderate, moderate, moderate-conservative, and conservative positions, and it frames evaluation in terms of interpretation, inclusivity, and diversity without endorsing any one side. This balanced, multi-view framing and emphasis on nuance align with a moderate orientation that acknowledges legitimate diversity and room for disagreement.",
+              "key_indicators": [
+                "neutral, descriptive framing of categories",
+                "no overt advocacy for a particular stance",
+                "explicit criteria for evaluating biblical interpretation",
+                "acknowledgement of diversity and minority positions",
+                "call to analyze texts and framing rather than to conform to a single orthodoxy"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:43:42.449Z"
+          },
+          {
+            "id": 9,
+            "eval_id": 2,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "unclear",
+              "presents_alternative": false,
+              "dogmatic_tone": false,
+              "explanation": "The provided "
+            },
+            "created_at": "2025-12-30T00:43:42.449Z"
+          },
+          {
+            "id": 10,
+            "eval_id": 2,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": false,
+              "reference_count": 0,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:43:42.449Z"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "suite_id": 1,
+        "col_order": 2,
+        "input": "Is the Bible sufficient for all matters of faith and practice, or do we also need church tradition, ongoing revelation, or modern scholarship to supplement scripture?",
+        "expected": "",
+        "output": "",
+        "duration": 19084,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 5,
+            "eval_id": 3,
+            "name": "Theological Orientation Classifier",
+            "score": 0.5,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate",
+              "confidence": 0.63,
+              "rationale": "The provided response is a neutral, descriptive taxonomy of theological orientations rather than an advocacy for any side. It presents five categories (progressive to conservative) with nuanced definitions and explicit acknowledgment of diversity, which signals a balanced, middle-ground approach. It uses cautious, non-dogmatic language (e.g., “emphasizes,” “acknowledges legitimate diversity,” “secondary issue with room for disagreement”) and includes both traditional and progressive elements within its framework. This indicates a preference for doctrinal nuance and contextual interpretation over a fixed, exclusive stance, aligning with a moderate orientation rather than clearly progressive or conservative.",
+              "key_indicators": [
+                "Neutral taxonomy of five categories",
+                "Explicit acknowledgment of diversity and nuance",
+                "Describes issues as potentially secondary or debatable",
+                "Balanced framing without prescriptive doctrinal stance",
+                "Mentions scripture/interpretation in a contextual sense in definitions"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:43:39.909Z"
+          },
+          {
+            "id": 6,
+            "eval_id": 3,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "unclear",
+              "presents_alternative": false,
+              "dogmatic_tone": false,
+              "explanation": "I cannot determine the analysis without the actual theological response text. Please paste the response you want evaluated. Once provided, I will assess the four criteria: 1) whether it takes a clear progressive or conservative position, 2) whether it acknowledges that Christians disagree on the issue, 3) whether it presents alternative views fairly, and 4) whether the tone is dogmatic or humble, and I will give a concise justification for each point."
+            },
+            "created_at": "2025-12-30T00:43:39.909Z"
+          },
+          {
+            "id": 7,
+            "eval_id": 3,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": false,
+              "reference_count": 0,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:43:39.909Z"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "suite_id": 1,
+        "col_order": 3,
+        "input": "How should Christians interpret the Old Testament law today? Are any parts still binding, or has Christ fulfilled all of it?",
+        "expected": "",
+        "output": "This is one of the most significant and complex questions in Christian theology, with varying answers across traditions. A thoughtful response must engage with Scripture, the work of Christ, and the historical practice of the Church.\n\n### The Central New Testament Teaching: Fulfillment in Christ\nThe primary interpretive key is Jesus' own statement in the Sermon on the Mount:\n\n> \"Do not think that I have come to abolish the Law or the Prophets; I have not come to abolish them but to fulfill them.\" (Matthew 5:17, ESV)\n\nThe Greek word for \"fulfill\" (*plēroō*) means to complete, bring to its intended purpose, or fill up. Jesus is the culmination of the Old Testament's story, promises, and symbols. The New Testament writers consistently argue that the **Mosaic Covenant**, with its specific legal code given to national Israel, is no longer the binding covenant for the people of God (Jeremiah 31:31-34; Hebrews 8:13). Christians are under the **New Covenant**, established by Christ's blood.\n\n### Major Interpretive Models\nChristian traditions have developed different frameworks, but three prominent models are:\n\n1.  **The Threefold Division (Moral, Civil, Ceremonial):** Popularized by Reformed theologians like Calvin, this view divides the Law into:\n    *   **Moral Law (e.g., Ten Commandments):** Reflects God's eternal character and is still binding, though understood through Christ's teaching (e.g., Matthew 5:21-48).\n    *   **Ceremonial Law (e.g., sacrifices, purity codes):** Fulfilled in Christ's atoning work and priesthood. They are not binding but remain instructive as shadows of Christ's reality (Colossians 2:16-17; Hebrews 10:1).\n    *   **Civil/Judicial Law (e.g., penalties, land distribution):** Applied specifically to the theocratic nation of Israel and is not directly binding on modern states or the Church.\n\n    **Strengths:** Provides a clear, practical framework that explains why Christians honor the Ten Commandments but not animal sacrifices.\n    **Critique:** The Old Testament itself does not neatly categorize laws this way. The system functioned as an integrated whole.\n\n2.  **Christocentric or Redemptive-Historical Approach:** Emphasizes reading the entire Old Testament, including its laws, as part of a story that points to and is fulfilled in Christ. The question is not \"Which rules do I keep?\" but \"How does this law, in its original context, reveal God's character, human sin, and the need for a Savior, who has now come?\" The law's function shifts from a covenant stipulation for Israel to a source of wisdom and revelation of God's will, interpreted through the lens of Christ and the apostolic teaching.\n\n3.  **The Law as a Unity, Entirely Fulfilled (Dispensational/New Covenant Theology):** Some traditions argue that the Mosaic Law was a complete package given to Israel and has been entirely set aside as a legal system for Christians. Believers are led by the Spirit and the \"law of Christ\" (Galatians 6:2), which includes the moral principles embedded in the Old Testament but not the Mosaic code *as law*. The Old Testament is valuable for teaching and training in righteousness (2 Timothy 3:16-17) but is not a direct source of binding legislation.\n\n### Key New Testament Passages\n*   **Acts 15 & Galatians:** The early Church council decided Gentile converts were not bound to the full Mosaic Law, particularly circumcision and ceremonial purity (Acts 15:1-29). Paul fiercely argues that justification is by faith in Christ, not \"works of the law\" (Galatians 2:16).\n*   **Romans 7:1-6:** Christians are \"released from the law\" because they have \"died to the law\" through Christ's body, belonging now to him.\n*   **Hebrews:** The entire book argues for the superiority of Christ's priesthood and sacrifice, rendering the Levitical system obsolete.\n*   **Matthew 5:21-48:** Jesus repeatedly says, \"You have heard that it was said... But I say to you...\" He authoritatively intensifies and internalizes the law's moral demands, pointing to its heart intent.\n\n### Practical Application: What is Still \"Binding\"?\nMost Christian traditions agree on these practical outcomes, even if their reasoning differs:\n\n*   **The Moral Core (Exemplified in the Ten Commandments):** Prohibitions against idolatry, murder, adultery, theft, and false witness are universally upheld in the New Testament as reflecting God's eternal will. However, even these are often deepened and internalized (e.g., anger as a violation of the heart of the murder command; Matthew 5:21-22).\n*   **The Great Commandments (Love God, Love Neighbor):** Jesus identified these (from Deuteronomy 6:5 and Leviticus 19:18) as the foundation of \"all the Law and the Prophets\" (Matthew 22:37-40). This becomes the guiding hermeneutic for applying Old Testament law. The \"law of Christ\" is the law of love (Romans 13:8-10; Galatians 5:14).\n*   **Ceremonial & Purity Laws:** Not binding. Christians are not required to observe Jewish dietary laws (Mark 7:19; Acts 10:9-16), sacrificial rituals, or specific purity codes. The Sabbath commandment is interpreted variously, with most Christians celebrating the Lord's Day (Sunday) in a spirit of worship and rest, not under the strict Mosaic regulations (Colossians 2:16-17; Romans 14:5-6).\n\n### Conclusion\nChrist has **fulfilled** the entirety of the Old Testament law—its prophecies, its sacrificial system, its national stipulations. Therefore, the Mosaic law is not a direct, binding legal code for the Christian. However, it is **all God-breathed and useful** (2 Timothy 3:16). Christians interpret it as part of the story of redemption, a revelation of God's holiness and our need for grace, and a source of wisdom whose moral principles are **reaffirmed, transformed, and often intensified** in the teaching of Christ and the New Covenant. The guiding principle becomes the \"law of Christ\"—the imperative of love, empowered by the Spirit, as we seek to live in light of his fulfillment of all that came before.\n\nIn short: We are not *under* the Old Testament law as a covenant, but we learn from it *in light of* Christ, obeying his command to love God and neighbor, which is the fulfillment of the law's ultimate purpose.",
+        "duration": 57501,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 72,
+            "eval_id": 4,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.72,
+              "rationale": "The response defends a traditional Protestant framework: Jesus fulfills the Old Covenant Law, Christians live under the New Covenant, and the Mosaic Law’s civil and ceremonial aspects are not binding while the moral core remains. It presents several classic interpretive models (threefold division, Christocentric/redemptive-historical, and a unity/fulfillment view) and cites key NT texts (Acts 15, Galatians, Romans 7, Hebrews, Matthew 5, Colossians 2, Mark 7, Acts 10) to ground the stance. It emphasizes the authority of Scripture and the primacy of the “law of Christ” and the command to love, which is a staple of conservative evangelical theology. At the same time, it acknowledges legitimate diversity of interpretation by outlining multiple frameworks and noting minor nuances (e.g., Sabbath praxis), showing pastoral sensitivity and avoiding dogmatism. This combination—clear advocacy for the traditional Christian reading of the Law’s fulfillment, emphasis on gospel-centered hermeneutics, and openness to differing conservative-leaning approaches—places it squarely in a moderate-conservative position rather than a fully conservative or progressive stance.",
+              "key_indicators": [
+                "Jesus fulfills the Law (Matthew 5:17)",
+                "Mosaic Covenant not binding; New Covenant under Christ",
+                "Moral/Civil/Ceremonial law framework (Threefold Division)",
+                "Christocentric/redemptive-historical interpretation",
+                "Law fulfilled; Law of Christ; law of love (Romans 13:8-10; Galatians 5:14)",
+                "Sabbath interpretive variation (Colossians 2:16-17; Romans 14:5-6)",
+                "Scripture-centered hermeneutic; justification by faith (Acts 15; Galatians)",
+                "Honors diversity of views while maintaining traditional conclusions"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "extensive",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:18.327Z"
+          },
+          {
+            "id": 73,
+            "eval_id": 4,
+            "name": "Position Clarity",
+            "score": 1,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "clear_conservative",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response clearly advances a conservative, Christ-centered conclusion: the Mosaic Law is not binding under the New Covenant, though its moral core is reaffirmed and interpreted through the law of Christ. At the same time, it explicitly surveys and fairly presents three major interpretive models (threefold division, Christocentric/redemptive-historical, and law-fulfillment/dispensational-New Covenant approaches) with noted strengths and critiques. This demonstrates acknowledgment of legitimate diversity among traditions and careful, pluralistic engagement with differing views. The concluding statements are confident but supported by Scripture and are delivered in a measured, humble tone rather than dogmatic proclamation."
+            },
+            "created_at": "2025-12-30T00:44:18.327Z"
+          },
+          {
+            "id": 74,
+            "eval_id": 4,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 23,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:18.327Z"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "suite_id": 1,
+        "col_order": 4,
+        "input": "Does the Bible permit women to serve as pastors or elders in the church? What do passages like 1 Timothy 2:12 and 1 Corinthians 14:34-35 teach about women's roles?",
+        "expected": "",
+        "output": "The question of women serving as pastors or elders is one of the most debated issues in Christian ecclesiology, with faithful interpreters arriving at different conclusions. A thoughtful response requires careful engagement with key biblical texts, recognition of interpretive differences, and attention to the broader biblical narrative.\n\n### **1. Key Restrictive Passages and Their Traditional Interpretation**\nThose who hold that the Bible reserves the office of pastor/elder for men typically center on two primary texts:\n\n**1 Timothy 2:12-14 (ESV):** \"I do not permit a woman to teach or to exercise authority over a man; rather, she is to remain quiet. For Adam was formed first, then Eve; and Adam was not deceived, but the woman was deceived and became a transgressor.\"\n*   **Context:** Instructions to Timothy regarding order in the Ephesian church, which faced false teaching.\n*   **Traditional (Complementarian) Reading:** Paul grounds his instruction in the creation order (Adam formed first) and the fall (Eve deceived). This is seen as establishing a universal, transcultural principle: the teaching and governing authority within the gathered church (specifically the elder/pastor role) is entrusted to qualified men. The \"quietness\" is understood as a posture of receptivity in the context of authoritative teaching, not absolute silence.\n\n**1 Corinthians 14:34-35:** \"The women should keep silent in the churches. For they are not permitted to speak, but should be in submission, as the Law also says. If there is anything they desire to learn, let them ask their husbands at home. For it is shameful for a woman to speak in church.\"\n*   **Context:** Correction of disorderly worship in Corinth, where multiple people were speaking in tongues and prophesying simultaneously.\n*   **Traditional (Complementarian) Reading:** This is seen as consistent with 1 Timothy 2, prohibiting women from participating in the authoritative, judging function connected to the public proclamation and evaluation of prophecy (see 1 Cor. 14:29). It is linked to the principle of submission to male headship in the church.\n\nComplementarians argue these texts, alongside the requirement that an elder be \"the husband of one wife\" (1 Tim. 3:2, Titus 1:6) and the example of the Twelve being male, establish a normative pattern for church leadership.\n\n### **2. Alternative Interpretations and Affirming Perspectives**\nThose who affirm women in pastoral/elder roles (often termed Egalitarians) offer reinterpretations of the above texts and point to other biblical evidence.\n\n**Re-reading the Restrictive Passages:**\n*   **1 Timothy 2:12:** The prohibition is seen as *specific to a situation* in Ephesus where uneducated women were spreading false teachings (see 1 Tim. 5:13). The Greek verb \"I do not permit\" (ἐπιτρέπω) is in the present tense, possibly indicating a temporary correction. The appeal to creation is to correct the local error, not to establish a universal rule.\n*   **1 Corinthians 14:34-35:** This is understood as addressing a *specific disruption*—perhaps women were calling out questions during the service, disrupting the flow. Alternatively, some scholars argue these verses are a quotation from the Corinthians' letter that Paul is *quoting in order to refute* (see 1 Cor. 14:36, \"Or was it from you that the word of God came?\").\n\n**Positive Biblical Evidence for Women in Ministry:**\n*   **Prophetic and Leadership Roles in the New Testament:** Women are consistently present in ministry. Phoebe is called a **deacon** (διάκονον) of the church at Cenchreae (Rom. 16:1). Junia is noted as **\"outstanding among the apostles\"** (Rom. 16:7). Priscilla taught Apollos, a learned man, \"the way of God more accurately\" (Acts 18:26). Philip's four daughters were prophets (Acts 21:9).\n*   **Pentecost Promise:** The Spirit was poured out on \"all flesh... your sons and your **daughters**... shall prophesy\" (Acts 2:17-18). Prophecy is a form of speaking God's word to the church.\n*   **Galatians 3:28:** \"There is neither Jew nor Greek, slave nor free, **male nor female**, for you are all one in Christ Jesus.\" While addressing salvation status, Egalitarians argue this oneness in Christ breaks down gender-based role restrictions in ministry.\n\n### **3. Seeking a Balanced Understanding**\nA balanced theological approach acknowledges:\n\n1.  **Hermeneutical Honesty:** Both sides are trying to be faithful to Scripture. The debate often hinges on whether the restrictive passages are **universal principles** or **contextual instructions** addressing specific first-century problems. It also involves how one weighs \"didactic\" passages (like 1 Timothy) against \"descriptive\" examples (like Phoebe or Junia).\n2.  **Spectrum of Practice:** Christian tradition reflects a spectrum:\n    *   **Traditional Complementarianism:** Women may not serve as senior pastors or elders but can serve in other ministry roles (e.g., deacons, teachers of women/children, missionaries).\n    *   **Two-Office Complementarianism:** Women may serve as deacons but not as elders/pastors.\n    *   **Egalitarianism:** All offices and roles are open to women and men based on gifting and calling, as there is no created order-based restriction in the New Covenant.\n3.  **The Centrality of Charismatic Gifting:** The New Testament emphasizes that the Holy Spirit sovereignly distributes gifts for ministry (1 Cor. 12:11, Eph. 4:11-12). For many, this raises the question: if a woman is manifestly gifted by the Spirit for pastoral teaching and leadership, does the church have the right to forbid its exercise?\n\n### **Conclusion**\nThe Bible does not provide a single, unambiguous proof-text that settles the question for all readers. The traditional interpretation of **1 Timothy 2:12** and **1 Corinthians 14:34-35** has led a majority of the church historically, and many today, to conclude that the office of elder/pastor is reserved for men. However, a strong alternative interpretation, coupled with the clear evidence of women in significant leadership and teaching roles in the early church, has convinced many other Christians that these passages address specific, local issues and do not preclude women from serving as pastors or elders.\n\nUltimately, one's conclusion depends significantly on interpretive decisions regarding biblical authority, the relationship between cultural context and timeless command, and the integration of all relevant texts. Respectful dialogue within the body of Christ is essential, as both positions are held by sincere believers seeking to honor Scripture.",
+        "duration": 220972,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 377,
+            "eval_id": 5,
+            "name": "Theological Orientation Classifier",
+            "score": 0.5,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate",
+              "confidence": 0.72,
+              "rationale": "The response treats the gender-roles debate as a spectrum rather than a fixed, dogmatic stance. It thoroughly presents both traditional/complementarian readings and egalitarian readings, cites key texts, and notes contextual vs universal readings. It explicitly describes a spectrum of practice (traditional, two-office, egalitarian) and emphasizes hermeneutical honesty and respectful dialogue. It neither insists on a single 'biblical proof-text' nor asserts a definitive orthodoxy, instead acknowledging legitimate diversity and pastoral sensitivity. This balanced, non-definitive posture aligns with a moderate stance rather than a conservative or progressive one, though it grounds discussion in biblical authority and recognizes historical majority positions.",
+              "key_indicators": [
+                "Presents both complementarian and egalitarian interpretations",
+                "Acknowledges hermeneutical differences and contextual readings",
+                "Speaks of a spectrum of practice rather than a single normative rule",
+                "Uses phrases like 'balanced theological approach' and 'respectful dialogue'",
+                "Notes historical majority positions but also contemporary minority positions",
+                "Emphasizes biblical authority while allowing for diversity in interpretation"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:47:01.795Z"
+          },
+          {
+            "id": 378,
+            "eval_id": 5,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response presents both the traditional complementarian arguments and the egalitarian reinterpretations, notes historical majority views alongside contemporary dissent, and outlines a spectrum of practice. It emphasizes hermeneutical honesty, contextual considerations, and the overall lack of a single unambiguous proof-text, signaling openness to diverse conclusions rather than a dogmatic stance. The tone and conclusion invite respectful dialogue and acknowledge legitimate disagreement within the church."
+            },
+            "created_at": "2025-12-30T00:47:01.795Z"
+          },
+          {
+            "id": 379,
+            "eval_id": 5,
+            "name": "Scripture Usage",
+            "score": 0.050000000000000044,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 19,
+              "traditional_hermeneutic_markers": 1,
+              "progressive_hermeneutic_markers": 4,
+              "interpretation_lean": "progressive"
+            },
+            "created_at": "2025-12-30T00:47:01.795Z"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "suite_id": 1,
+        "col_order": 5,
+        "input": "What does the Bible teach about headship in marriage? Does Ephesians 5:22-33 establish hierarchy or mutual submission?",
+        "expected": "",
+        "output": "",
+        "duration": 23333,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 11,
+            "eval_id": 6,
+            "name": "Theological Orientation Classifier",
+            "score": 0.5,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate",
+              "confidence": 0.65,
+              "rationale": "The content functions as a neutral, descriptive framework rather than advocating a particular stance. It outlines a spectrum from progressive to conservative and repeatedly emphasizes presenting multiple viewpoints, acknowledging legitimate diversity, and allowing room for disagreement (e.g., “presents multiple viewpoints,” “acknowledges legitimate diversity,” “room for disagreement”). It avoids strong doctrinal enforcement or radical cultural revisionism, instead signaling a balanced, analytical approach that neither endorses nor rejects a specific position outright. This aligns with a moderate posture that values both discussion of biblical/textual interpretation and cultural-contextual factors without definitive allegiance to orthodoxy or reformist ideology.",
+              "key_indicators": [
+                "presents multiple viewpoints",
+                "acknowledges legitimate diversity",
+                "doesn't strongly favor either side",
+                "secondary issue with room for disagreement",
+                "neutral, contextual framing of scripture"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "minimal",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:43:44.158Z"
+          },
+          {
+            "id": 12,
+            "eval_id": 6,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "unclear",
+              "presents_alternative": false,
+              "dogmatic_tone": false,
+              "explanation": "The provided 'Response' content is a meta-instruction consisting of questions about a theological stance rather than an actual theological argument. It does not itself take a clear progressive or conservative position, does not acknowledge disagreements within Christianity, does not present alternative views, and uses a neutral, non-dogmatic tone. To assess a real position, please provide the actual theological response text. Then I can evaluate it against the four criteria."
+            },
+            "created_at": "2025-12-30T00:43:44.158Z"
+          },
+          {
+            "id": 13,
+            "eval_id": 6,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": false,
+              "reference_count": 0,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:43:44.158Z"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "suite_id": 1,
+        "col_order": 6,
+        "input": "Are there any differences between men and women beyond biological ones? Does the Bible teach distinct roles or just biological differences?",
+        "expected": "",
+        "output": "This is one of the most significant and debated questions within Christian theology. The answer involves careful biblical exegesis, theological tradition, and contemporary application. The spectrum of Christian thought generally clusters around two main perspectives, though with many variations.\n\n### **Foundational Shared Dignity**\nAll orthodox Christian traditions agree on the fundamental, equal dignity and value of men and women, rooted in:\n*   **Creation in God's Image:** \"So God created mankind in his own image, in the image of God he created them; male and female he created them\" (Genesis 1:27). Their shared *imago Dei* is primary.\n*   **Equal Standing in Salvation:** \"There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus\" (Galatians 3:28). In terms of redemption, spiritual gifting, and access to God, there is no distinction.\n\nThe debate centers on whether this shared dignity and unity in Christ *precludes* or *incorporates* different roles or callings.\n\n---\n\n### **Two Major Theological Perspectives**\n\n#### **1. Complementarianism**\nThis view holds that men and women, while equal in value and dignity, are created by God for distinct but complementary roles in the family and the church. These differences are seen as rooted in creation, not just biology, and are part of God's good design.\n\n**Key Biblical Texts often cited:**\n*   **Creation Order:** Genesis 2 describes Adam being created first, then Eve as his \"helper fit for him\" (Genesis 2:18). Complementarians see this as establishing a pattern of male headship or responsibility.\n*   **The Fall's Effect:** After the Fall, God tells Eve, \"Your desire shall be for your husband, and he shall rule over you\" (Genesis 3:16). Complementarians view this not as a prescription but as a description of sin-distorted relationships, while the creational pattern of loving headship and respectful submission remains the ideal.\n*   **New Testament Household Codes:** Passages like Ephesians 5:22-33 command wives to \"submit to your own husbands\" and husbands to \"love your wives, as Christ loved the church.\" This is seen as redeeming the creational pattern, with Christ-like servant leadership as the model for husbands.\n*   **Church Leadership:** 1 Timothy 2:11-12, which instructs that a woman should \"learn quietly\" and \"not teach or exercise authority over a man,\" is understood as a universal principle based on the creation order (citing Adam and Eve in the following verses).\n\n**In Practice:** This typically leads to male-only eldership/pastoral roles, and a view of the husband as the ultimate accountable leader in the home, though always as a loving servant.\n\n#### **2. Egalitarianism**\nThis view holds that the creational distinctions between men and women are primarily biological. All role differences attributed to gender are results of the Fall or cultural conditioning, and in Christ, these hierarchical distinctions are abolished for the church.\n\n**Key Biblical Texts often cited:**\n*   **Creation Partnership:** Genesis 1:26-27 shows the shared mandate to rule over creation, emphasizing partnership without hierarchy.\n*   **Redemption in Galatians 3:28:** This is seen as the central hermeneutical key—in Christ, gender-based role distinctions in ministry and authority are nullified, just as racial and class distinctions are.\n*   **Examples of Female Leaders:** They point to Deborah (a judge and prophet in Judges 4-5), Phoebe (a deacon in Romans 16:1), Junia (an apostle in Romans 16:7), and Philip's daughters who prophesied (Acts 21:9) as evidence of God's Spirit working through women in leadership and teaching roles.\n*   **Interpretation of Paul:** The restrictive passages (1 Timothy 2, 1 Corinthians 14) are interpreted as addressing specific, localized problems (e.g., uneducated women causing disruption, or involvement in false teaching) rather than universal mandates. The command for \"mutual submission\" in Ephesians 5:21 is seen as governing the entire household section.\n\n**In Practice:** This opens all ministry and leadership offices to qualified individuals regardless of gender, and views marriage as a partnership of mutual submission without a designated \"head.\"\n\n---\n\n### **Beyond Binary Views and Practical Nuance**\n*   **A Spectrum:** Many Christians and denominations find themselves somewhere between these poles, creating a spectrum of belief and practice.\n*   **Focus on Character over Role:** Both sides emphasize that Christ-like character—love, service, humility, faithfulness—is ultimately more critical than functional roles.\n*   **Distinguishing Spheres:** Some traditions make a distinction between *ontological equality* (equal being and value) and *functional differentiation* (different roles in family/church), arguing the latter does not negate the former.\n\n### **Conclusion**\nThe Bible unequivocally teaches the **equal dignity, value, and spiritual standing** of men and women. On the question of **distinct roles beyond biology**, it presents a tension:\n*   A **Complementarian** reads the biblical narrative as revealing a God-ordained pattern of complementary roles in family and church leadership, grounded in creation and reaffirmed in redemption.\n*   An **Egalitarian** reads the same narrative as moving from a creational partnership, through the distortion of the Fall, to a redemptive restoration of full partnership in Christ, with gender no longer determinative for roles.\n\n**In essence:** The debate is not *whether* men and women are equal, but *how* that equality is expressed in the life of the family and the faith community. Both positions represent sincere, biblically engaged attempts to answer that question, and the disagreement remains one of the most significant intra-Christian dialogues.",
+        "duration": 50613,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 51,
+            "eval_id": 7,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.64,
+              "rationale": "The response presents both complementarian and egalitarian perspectives with careful, biblically grounded analysis, signaling a respect for traditional doctrinal commitments while acknowledging legitimate diversity and nuance within orthodox Christianity. It emphasizes equal dignity (imago Dei) and unity in Christ, but treats questions of gendered roles as a tension rather than a wholesale revision of doctrine. It cites key biblical texts from both sides and frames the debate as a spectrum with pastoral sensitivity, rather than endorsing a single, dominant interpretation. This balanced, inclusive treatment of competing positions, along with a clear emphasis on doctrinal faithfulness within a traditional framework, aligns with a moderate-conservative stance that acknowledges complexity without embracing a progressive overhaul of biblical authority or gender ethics.",
+              "key_indicators": [
+                "two major theological perspectives",
+                "complementarianism",
+                "egalitarianism",
+                "mutual submission",
+                "creation order",
+                "Genesis 1:27",
+                "Genesis 2",
+                "Genesis 3:16",
+                "Ephesians 5:22-33",
+                "1 Timothy 2:11-12",
+                "1 Corinthians 14",
+                "Romans 16:1",
+                "Acts 21:9",
+                "Jer focus on spectrum",
+                "orthodox traditions",
+                "equal dignity",
+                "tension in roles"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:11.439Z"
+          },
+          {
+            "id": 52,
+            "eval_id": 7,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The piece surveys two major positions, complementarianism and egalitarianism, and anchors each with biblical texts and typical arguments. It also notes that many Christians sit along a spectrum between these poles and emphasizes character, not role, in assessing maturity. It maintains that equal dignity and spiritual standing are universal, while disagreements about gendered roles persist. Overall, it presents both views fairly and treats the debate as legitimate within biblical interpretation, rather than urging a single definitive stance, and it uses a humble, exploratory tone rather than a dogmatic proclamation."
+            },
+            "created_at": "2025-12-30T00:44:11.439Z"
+          },
+          {
+            "id": 53,
+            "eval_id": 7,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 12,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:11.439Z"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "suite_id": 1,
+        "col_order": 7,
+        "input": "What does the Bible teach about homosexuality? Are homosexual relationships sinful, or is the biblical prohibition limited to exploitative contexts?",
+        "expected": "",
+        "output": "## Theological Perspective on Biblical Teachings Regarding Homosexuality\n\nThe Bible's treatment of same-sex relationships is a subject of significant theological discussion among Christians today. I will present the primary biblical texts and major interpretive frameworks that shape current debates.\n\n### Key Biblical Texts\n\n**Old Testament Foundations:**\n- **Genesis 1-2**: Presents male-female complementarity as the creation ideal, with marriage established as a \"one flesh\" union between man and woman.\n- **Leviticus 18:22 & 20:13**: Prohibit male same-sex relations, calling them an \"abomination\" within the Holiness Code.\n\n**New Testament Teachings:**\n- **Romans 1:26-27**: Paul describes same-sex relations as \"unnatural\" and resulting from humanity's rejection of God's natural order.\n- **1 Corinthians 6:9-10 & 1 Timothy 1:9-10**: Include Greek terms like *arsenokoitai* (often translated as \"men who practice homosexuality\") in vice lists.\n- **Jude 1:7**: References Sodom and Gomorrah's sexual immorality.\n\n### Major Interpretive Frameworks\n\n**Traditional/Trajectory View:**\nMost Christians throughout history have understood these texts as prohibiting all same-sex sexual activity. This view emphasizes:\n- Consistent witness across both Testaments\n- The creational pattern of male-female complementarity\n- The unqualified nature of New Testament prohibitions\n- The Church's historic consensus\n\n**Revisionist/Contextual View:**\nSome modern scholars argue that biblical prohibitions address specific historical contexts:\n- Exploitative relationships (pederasty, temple prostitution, master-slave dynamics)\n- Lack of mutual, committed relationships comparable to modern same-sex marriages\n- Ancient understandings of sexuality fundamentally different from contemporary orientation-based identities\n\n**Via Media/Third Way Approaches:**\nSome communities attempt to balance conviction with compassion:\n- Maintaining traditional sexual ethics while advocating for dignity and inclusion of LGBTQ persons\n- Distinguishing between orientation (not condemned) and practice (subject to traditional restrictions)\n- Emphasizing celibacy as a vocation for same-sex attracted Christians\n\n### Theological Considerations\n\n**Hermeneutical Challenges:**\n- How specific cultural contexts shape biblical commands versus timeless principles\n- The relationship between Old Testament purity codes and New Testament ethics\n- The role of biblical authority versus modern scientific understandings of sexual orientation\n\n**Broader Biblical Framework:**\n- All people are created in God's image (Genesis 1:27)\n- The universal human tendency toward sin (Romans 3:23)\n- The centrality of love, justice, and compassion in biblical ethics\n- The transformative power of grace and community\n\n### Current Ecclesial Landscape\n\nChristian denominations remain divided:\n- **Affirming**: Some Protestant denominations (UCC, ELCA, PCUSA) and progressive Catholics bless same-sex unions\n- **Non-Affirming**: Eastern Orthodox, Roman Catholic, and many evangelical traditions maintain traditional teachings\n- **Nuanced Positions**: Some Anglican provinces and Anabaptist traditions seek middle paths\n\n### Pastoral Implications\n\nTheological positions have profound pastoral consequences:\n- Traditional views risk marginalizing LGBTQ persons\n- Revisionist views risk separating from historical Christian teaching\n- Many churches grapple with how to minister with both theological integrity and compassion\n\n### Conclusion\n\nThe Bible consistently presents same-sex sexual relations as contrary to God's design, while also teaching God's love for all people. The debate centers on whether this teaching addresses all same-sex relationships or only specific exploitative forms known in the ancient world. Responsible engagement requires:\n1. Careful exegesis of biblical texts\n2. Respect for diverse interpretations within the Christian tradition\n3. Compassion toward those most affected by these teachings\n4. Recognition that faithful Christians of good will continue to reach different conclusions\n\nThe Church's ongoing task is to discern how to be faithful to Scripture while embodying Christ's love for all people, particularly those who have felt marginalized by traditional teachings.",
+        "duration": 62723,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 90,
+            "eval_id": 8,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.65,
+              "rationale": "The response anchors its analysis in a traditional, prohibitive reading of many biblical texts (Old and New Testaments) and cites the historic consensus in its Traditional/Trajectory framework. However, it also explicitly presents Revisionist/Contextual and Via Media/Third Way approaches, acknowledges the hermeneutical and cultural/contextual complexities, and highlights the pastoral need for compassion and inclusion where possible. It names both affirming and non-affirming denominations and stresses respectful diversity of interpretation while maintaining that Scripture presents same-sex relations as contrary to God's design. This combination—baseline traditional ethics with recognized legitimacy of minority views and pastoral nuance—points to a moderate-conservative orientation rather than a strictly conservative or clearly progressive stance.",
+              "key_indicators": [
+                "Traditional/Trajectory View emphasizes prohibitions, 'consistent witness', 'historic consensus'",
+                "Revisionist/Contextual View addresses historical context and modern relationships",
+                "Via Media/Third Way emphasizes maintaining traditional ethics while dignity and inclusion",
+                "Conclusion asserts 'Bible consistently presents...' but acknowledges debate over scope",
+                "Explicit recognition of affirming vs non-affirming denominations and nuance",
+                "Calls for exegesis, humility, compassion, and diverse conclusions"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "extensive",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:23.548Z"
+          },
+          {
+            "id": 91,
+            "eval_id": 8,
+            "name": "Position Clarity",
+            "score": 1,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "clear_conservative",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The piece foregrounds a traditional/conservative reading that same-sex relations are contrary to God’s design, but it explicitly surveys Traditional, Revisionist, and Via Media frameworks and notes ongoing debate within the church. It treats divergent interpretations as legitimate options to be weighed, and it emphasizes exegesis, compassion, and pastoral care rather than coercive certainty. The final assessment states the conservative view while acknowledging disagreement and the pastoral complexity, indicating a generally conservative stance with openness to discussion rather than a dogmatic position."
+            },
+            "created_at": "2025-12-30T00:44:23.548Z"
+          },
+          {
+            "id": 92,
+            "eval_id": 8,
+            "name": "Scripture Usage",
+            "score": 0.2,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 8,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 2,
+              "interpretation_lean": "progressive"
+            },
+            "created_at": "2025-12-30T00:44:23.548Z"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "suite_id": 1,
+        "col_order": 8,
+        "input": "Can a Christian in good conscience support same-sex marriage? Is it possible to affirm both biblical authority and LGBTQ+ inclusion?",
+        "expected": "",
+        "output": "This is one of the most significant questions facing the contemporary church, and Christians of deep faith and biblical conviction arrive at different conclusions. A thoughtful response requires examining scripture, tradition, and diverse Christian perspectives. There is no single, universally accepted answer within global Christianity.\n\n### **The Traditional Christian Perspective**\n\nFor much of Christian history and for many Christians today, the answer has been a clear \"no.\" This view holds that:\n*   **Scripture is unequivocal:** Passages in both the Old Testament (Leviticus 18:22, 20:13) and the New Testament (Romans 1:26-27, 1 Corinthians 6:9-11, 1 Timothy 1:10) are understood as defining sexual intimacy within the covenant of marriage between one man and one woman.\n*   **Creation order is foundational:** The Genesis narrative (Genesis 1:27-28, 2:24) presents the complementary union of male and female as God's creational intent for marriage and family. Jesus himself reaffirms this pattern (Matthew 19:4-6).\n*   **Doctrinal and pastoral consistency:** From this perspective, affirming same-sex marriage requires setting aside the plain reading of these texts and the consistent witness of historical Christian teaching, which is seen as compromising biblical authority. Love is expressed by calling all people to chastity outside of heterosexual marriage, offering community and spiritual support within those boundaries.\n\nThis position, held by the Roman Catholic Church, Eastern Orthodoxy, many Protestant evangelical and global majority churches, prioritizes the preservation of a specific definition of marriage as a sacrament or sacred institution.\n\n### **The Reforming or Affirming Christian Perspective**\n\nA growing number of Christians and denominations (e.g., the Episcopal Church, the Evangelical Lutheran Church in America, the United Church of Christ, and others) answer \"yes.\" They argue that one can support same-sex marriage while upholding biblical authority through a different hermeneutical (interpretive) approach:\n*   **Centrality of broader biblical themes:** They prioritize overarching scriptural themes of God's inclusive love (Galatians 3:28), justice (Micah 6:8), covenant faithfulness, and the Spirit's work in building communities of radical welcome (Acts 10-11).\n*   **Historical and cultural contextualization:** The biblical passages addressing same-sex acts are interpreted as addressing specific historical situations—such as pagan temple prostitution, exploitative pederasty, or acts violating ancient purity codes—not loving, committed, monogamous same-sex relationships unknown in the ancient world.\n*   **The example of Jesus:** They note that Jesus said nothing about homosexuality but consistently challenged exclusionary social and religious boundaries, prioritizing compassion and the spirit of the law over a rigid application of legal codes.\n*   **The witness of the Holy Spirit:** Many point to the fruit of the Spirit (Galatians 5:22-23)—love, joy, peace—evident in the lives and marriages of LGBTQ+ Christians, and to the Spirit's apparent guidance of the church in past paradigm shifts (e.g., regarding Gentiles, slavery, and the role of women). The Acts 15 council is seen as a model for re-interpreting tradition in light of new spiritual evidence.\n*   **Distinguishing between authority and interpretation:** They affirm biblical authority while arguing that all Christians interpret scripture through a lens. They suggest the traditional lens has been unduly influenced by cultural prejudices, and a faithful reading requires engaging with modern knowledge about sexual orientation as a natural, unchosen human characteristic.\n\n### **Possible Middle Grounds?**\nSome traditions and individuals seek a *via media*:\n*   **A \"Third Way\" or \"Welcoming but Not Affirming\":** Some churches (e.g., certain Anabaptist, Methodist, and Anglican communities) attempt to fully include LGBTQ+ individuals in congregational life, extending love and pastoral care, while maintaining a traditional theological stance on marriage. This is often challenging to sustain in practice.\n*   **Agreeing to Disagree in Love:** Recognizing the issue as a **\"theological adiaphoron\"** (a matter not essential to salvation), some Christians advocate for humility, allowing for conscientious disagreement within the unity of the church, though this is contested by those who see it as a first-order moral issue.\n\n### **Conclusion: A Matter of Conscience and Conviction**\n\nUltimately, whether a Christian can support same-sex marriage *in good conscience* depends on their answer to a more fundamental theological question: **What is the definitive guide for faith and practice?**\n*   If one's conscience is formed by a hermeneutic that sees the **specific prohibitions** as timeless, universal moral commands reflecting God's creational will, then conscience would likely forbid support.\n*   If one's conscience is formed by a hermeneutic that prioritizes the **broad themes of covenant, grace, and inclusion**, and sees the Spirit actively guiding the church into new understanding, then conscience may compel support as a matter of justice and love.\n\n**Both positions claim biblical authority.** The divide is less about \"having\" authority versus \"rejecting\" it, and more about *how that authority is interpreted and applied*—whether through a static, legal model or a dynamic, Spirit-led, Christ-centered model.\n\nTherefore, while there is no consensus, it is evident that **sincere, Bible-reading, Jesus-following Christians have come to opposite conclusions.** A good conscience, in Christian tradition, must be informed, humble, prayerful, and accountable to a community of faith. The ongoing debate calls for charity, self-examination, and a shared commitment to seeking the mind of Christ above all.",
+        "duration": 92431,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 223,
+            "eval_id": 9,
+            "name": "Theological Orientation Classifier",
+            "score": 0.5,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate",
+              "confidence": 0.68,
+              "rationale": "The response presents both the traditional/conservative perspective and the reforming/affirming perspective, then discusses possible middle-ground positions. It emphasizes that there is no single consensus and that conscience, hermeneutics, and pastoral considerations shape views. While it acknowledges traditional readings as authoritative for many, it also highlights broader themes (inclusion, justice, Spirit-led guidance) and historical/contextual interpretation. The tone prioritizes charity, humility, and unity in the church, rather than advocating one side as definitively correct. This balanced, non-polemical framing with openness to diversity places it squarely in the moderate zone, slightly leaning toward reconciliation and inclusivity without fully endorsing either side as normative for all readers.",
+              "key_indicators": [
+                "Presents both the Traditional Perspective and the Reforming Perspective",
+                "Notes there is no universally accepted answer within global Christianity",
+                "Advocates via media (Middle Grounds) and theological adiaphoron in some contexts",
+                "Emphasizes conscience, humility, and community discernment",
+                "Uses scriptural references to support multiple viewpoints (Genesis, Leviticus, Romans, Galatians, Acts, etc.)",
+                "Conclusion emphasizes charity and seeking the mind of Christ over rigid alignment to a single position"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:53.256Z"
+          },
+          {
+            "id": 224,
+            "eval_id": 9,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response explicitly presents both the traditional/conservative view and the reforming/affirming view, including their scriptural and theological arguments, and it also discusses possible middle-ground positions. It states that there is no universal consensus and that sincere Christians have arrived at opposite conclusions, indicating acknowledgement of disagreement. It treats biblical authority as real but interprets its application differently, emphasizing charity, humility, and accountability within the faith community rather than dogmatic proclamation. Overall, it does not take a single progressive or conservative stance but fairly recognizes legitimate diversity of conviction."
+            },
+            "created_at": "2025-12-30T00:44:53.256Z"
+          },
+          {
+            "id": 225,
+            "eval_id": 9,
+            "name": "Scripture Usage",
+            "score": 0.2,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 11,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 2,
+              "interpretation_lean": "progressive"
+            },
+            "created_at": "2025-12-30T00:44:53.256Z"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "suite_id": 1,
+        "col_order": 9,
+        "input": "What does the Bible teach about sex before marriage? Is cohabitation or premarital sexual activity acceptable for Christians?",
+        "expected": "",
+        "output": "Based on a traditional reading of Scripture and historic Christian teaching, the Bible presents sexual intimacy as designed by God for the covenant relationship of marriage. Here is a balanced examination of the biblical texts and various Christian perspectives:\n\n### Key Biblical Teachings\n1. **Marriage as the Proper Context for Sex**:  \n   Genesis 2:24 establishes the pattern: \"Therefore a man shall leave his father and his mother and hold fast to his wife, and they shall become one flesh.\" This \"one flesh\" union is portrayed as exclusive to the marital bond. In the New Testament, Jesus reaffirms this teaching (Matthew 19:4-6), and Paul warns against sexual immorality (1 Corinthians 6:18-20).\n\n2. **Warnings Against \"Porneia\" (Sexual Immorality)**:  \n   The Greek term *porneia* is used broadly in the New Testament to refer to sexual activity outside of marriage. Passages like 1 Thessalonians 4:3-5 instruct believers to \"abstain from sexual immorality\" and to control one's body in holiness. Hebrews 13:4 upholds marriage as honorable and warns that God will judge the sexually immoral.\n\n3. **The Body as a Temple**:  \n   1 Corinthians 6:18-20 teaches that sexual sin is uniquely damaging because it violates the sanctity of one's body, which is indwelt by the Holy Spirit. Paul urges believers to \"flee from sexual immorality\" and to honor God with their bodies.\n\n4. **Call to Purity and Self-Control**:  \n   Passages like Galatians 5:19-21 list sexual immorality among the works of the flesh, contrasting them with the fruit of the Spirit. Believers are repeatedly called to live in purity (1 Peter 1:15-16; 1 Corinthians 7:8-9).\n\n### Traditional Christian Interpretation\nThroughout church history, the vast majority of Christian traditions—Catholic, Orthodox, and Protestant—have interpreted these texts as teaching that:\n- Sexual intercourse is reserved for marriage.\n- Cohabitation (living together in a sexual relationship without marriage) falls under the category of *porneia* and is thus sinful.\n- Celibacy outside of marriage is the biblical standard.\n\nThis view holds that marriage is a sacred covenant that reflects Christ’s relationship with the Church (Ephesians 5:31-32), and sexual intimacy is a profound part of that covenantal union.\n\n### Alternative Christian Perspectives\nSome contemporary Christians, particularly in more progressive traditions, argue for nuanced interpretations:\n- They may emphasize the biblical themes of love, commitment, and justice over specific legal formulations.\n- Some suggest that in modern contexts, committed, monogamous cohabitation could be seen as analogous to biblical marriage if it involves lifelong intention and covenant fidelity.\n- Others focus on the spirit of biblical teachings—avoiding exploitation, promiscuity, and harm—while questioning whether all premarital cohabitation is equally problematic.\n\nHowever, these views remain a minority within global Christian orthodoxy and often face criticism for departing from clear biblical parameters.\n\n### Pastoral Considerations\nMany churches recognize that believers may struggle in this area and emphasize:\n- Grace and forgiveness for past mistakes (1 John 1:9).\n- The importance of community, accountability, and wise counsel.\n- Practical support for couples pursuing chastity before marriage.\n\n### Conclusion\nThe consistent witness of Scripture, supported by nearly two millennia of Christian teaching, is that sexual activity is intended exclusively for the marriage covenant. While the Bible does not address modern cohabitation directly, its principles clearly place sexual intimacy within marriage. Christians who seek to follow biblical authority traditionally view both premarital sex and cohabitation as incompatible with God’s design for sexuality, which aims at human flourishing, covenantal faithfulness, and the reflection of divine love.",
+        "duration": 51106,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 54,
+            "eval_id": 10,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.74,
+              "rationale": "The response roots its ethics in a traditional biblical framework, arguing that sexual activity is reserved for marriage and that premarital sex or cohabitation fall under 'porneia.' It cites multiple key texts (Genesis 2:24; Matthew 19:4-6; 1 Corinthians 6:18-20; 1 Thessalonians 4:3-5; Hebrews 13:4; Galatians 5:19-21; 1 Peter 1:15-16; 1 Corinthians 7:8-9) and emphasizes historic Christian teaching across Catholic, Orthodox, and Protestant traditions. While it acknowledges alternative, more progressive perspectives and labels them minority, it consistently foregrounds doctrinal fidelity and pastoral guidance, signaling a conservative stance with limited, explicitly recognized room for diversity.",
+              "key_indicators": [
+                "Based on a traditional reading of Scripture and historic Christian teaching",
+                "Sex is designed by God for the covenant relationship of marriage",
+                "Genesis 2:24; Matthew 19:4-6; 1 Corinthians 6:18-20 cited to support marriage-only sexuality",
+                "porneia (sexual immorality) as broad category for non-marital sex",
+                "Body as temple and call to purity (1 Corinthians 6; Galatians 5:19-21)",
+                "Cohabitation treated as porneia; celibacy outside marriage upheld",
+                "Alternative or progressive perspectives described as minority within orthodoxy",
+                "Pastoral emphasis on grace, forgiveness, community, and accountability",
+                "Conclusion affirms traditional sexuality ethics while noting no direct modern analogs in Scripture"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "extensive",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:11.932Z"
+          },
+          {
+            "id": 55,
+            "eval_id": 10,
+            "name": "Position Clarity",
+            "score": 1,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "clear_conservative",
+              "presents_alternative": true,
+              "dogmatic_tone": true,
+              "explanation": "The response clearly adopts a traditional, conservative reading of Scripture on sexuality: sex is reserved for the marriage covenant, with premarital sex and cohabitation labeled as sinful under the category of porneia, and celibacy outside marriage presented as the biblical standard. This is evidenced by its emphasis on Genesis 2:24, Jesus’ reaffirmation in Matthew 19:4-6, and New Testament warnings (e.g., 1 Corinthians 6:18-20; 1 Thessalonians 4:3-5; Hebrews 13:4), as well as the claim that the body is a temple of the Holy Spirit. The text also appeals to the long-standing witness of Catholic, Orthodox, and Protestant traditions to support its stance. It does, however, acknowledge disagreement by including a section on Alternative Christian Perspectives, describing more progressive views and noting that they constitute a minority within global Christian orthodoxy; it thus shows awareness of diverse opinions while still foregrounding the traditional position. In terms of tone, the piece is largely doctrinal and assertive—describing a normative biblical-ethical standard as the consistent witness of Scripture and church history—though it attempts pastoral balance with language about grace, forgiveness, and communal support. Overall, the analysis takes a clear conservative position, acknowledges dissent, presents alternative views with some fairness, and remains predominantly dogmatic in its conclusions."
+            },
+            "created_at": "2025-12-30T00:44:11.932Z"
+          },
+          {
+            "id": 56,
+            "eval_id": 10,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 11,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:11.932Z"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "suite_id": 1,
+        "col_order": 10,
+        "input": "How should the church respond to members in same-sex relationships? Should they be welcomed into membership and leadership?",
+        "expected": "",
+        "output": "This question touches upon one of the most complex and pastorally sensitive issues facing the global church today. A thoughtful response must engage with Scripture, tradition, reason, and experience—the classic elements of theological reflection—while acknowledging the significant divergence of perspectives within Christianity.\n\n### **Core Theological Tension**\nAt the heart of the matter is how the church interprets and applies biblical texts on sexuality (e.g., Genesis 1-2, Leviticus 18:22, Romans 1:26-27, 1 Corinthians 6:9-11, 1 Timothy 1:10) within its overarching narrative of creation, fall, redemption, and restoration. The tension lies between:\n1.  **The call to holiness and obedience to Scriptural witness:** Many Christians believe the consistent biblical witness defines sexual intimacy as exclusively for a man and a woman in lifelong covenant marriage.\n2.  **The call to grace, love, and inclusion:** The gospel message is fundamentally one of welcome to sinners (all people), emphasizing repentance, transformation, and participation in the body of Christ.\n\nHow a church resolves this tension informs its practice. There are three primary frameworks:\n\n---\n\n### **1. The Traditional or \"Non-Affirming\" Perspective**\nThis view, held by the Roman Catholic Church, Eastern Orthodoxy, many evangelical, Protestant, and Global South churches, affirms the historic Christian teaching on marriage.\n\n*   **Biblical Reasoning:** Scripture is seen as uniformly defining marriage as between a man and a woman (Genesis 2:24, Matthew 19:4-6) and describing homosexual acts as contrary to God's created order. Passages are read as clear moral teachings, not culturally bound.\n*   **Response to Members:** Individuals experiencing same-sex attraction are to be welcomed with compassion and pastoral support as fellow sinners in need of God's grace. The church is called to be a community of care, accountability, and discipleship. However, a sexually active same-sex relationship is understood as ongoing, unrepentant sin, which precludes full membership (often defined as participation in the sacraments like Communion) and certainly leadership.\n*   **On Leadership:** Leadership standards (e.g., 1 Timothy 3, Titus 1) call for being \"above reproach\" and \"self-controlled.\" A same-sex relationship is viewed as a public rejection of biblical sexual ethics, disqualifying one from the role of teacher and model. The focus is on the *practice*, not the *orientation*.\n\n### **2. The Affirming or \"Reconciling\" Perspective**\nThis view, held by many Mainline Protestant churches (e.g., UCC, ELCA, PC(USA), The Episcopal Church) and some evangelical circles, sees committed same-sex relationships as compatible with Christian faith.\n\n*   **Biblical Reasoning:** Proponents argue that the biblical texts address exploitative practices (pederasty, temple prostitution) or excesses of lust, not loving, covenantal same-sex partnerships. They emphasize broader themes of justice, inclusion, and the Spirit's work in the contemporary church (e.g., Acts 10, Philip and the Ethiopian eunuch). They also point to the centrality of love (Matthew 22:37-40) and the inclusion of marginalized people in Jesus' ministry.\n*   **Response to Members:** LGBTQ+ individuals in committed relationships are welcomed as full members, celebrated, and seen as capable of expressing God's love through their relationships. The call to chastity applies equally: outside of marriage for all, fidelity within marriage for all.\n*   **On Leadership:** Sexual orientation or being in a same-sex marriage is not a barrier to leadership. Gifting, character, and call are the primary criteria. An affirming church would ordain LGBTQ+ individuals and see their relationships as a potential asset to ministry.\n\n### **3. A \"Third Way\" or Missional Perspective**\nThis emerging approach, particularly in some evangelical contexts, seeks to navigate between the two poles. It often maintains a traditional sexual ethic but radically rethinks ecclesial practice.\n\n*   **Biblical Reasoning:** It typically holds to the traditional interpretation of Scripture on sexual activity but places greater emphasis on the church as a family and hospital for sinners.\n*   **Response to Members:** It advocates for the fullest possible inclusion short of endorsing the relationship. This might mean welcoming individuals in same-sex relationships into membership, small groups, and service, viewing them as brothers and sisters on a journey of discipleship, with the understanding that there is an ongoing, loving pastoral dialogue about the church's teaching.\n*   **On Leadership:** This is the most difficult point. Most third-way advocates would maintain that leadership requires public alignment with the church's core moral teachings. However, they might be more open to having individuals in same-sex relationships serve in various non-ordained, non-teaching ministries. The distinction is between *membership* (extended to all believers struggling with any sin) and *leadership* (reserved for those who model the community's agreed-upon standards).\n\n---\n\n### **Key Considerations for Any Response**\n\n*   **Distinguishing Membership from Leadership:** Most traditions have a higher bar for leadership (1 Timothy 3). A church might welcome someone into membership while still having questions about their fitness for ordained office or eldership.\n*   **The Nature of \"Welcome\":** Does \"welcome\" mean mere attendance, active fellowship, serving, communion, or voting membership? Clarity is essential.\n*   **Pastoral Care:** Regardless of position, churches are called to reject hostility, bullying, or simplistic answers. The suicide rate among LGBTQ+ youth, often exacerbated by religious rejection, is a serious pastoral concern that demands a response of deep love and safety.\n*   **Unity vs. Conviction:** This issue has proven church-dividing. A church's response must be forged in prayer, scriptural study, and communal discernment, understanding that it may alienate some on either side.\n\n### **Conclusion**\nThere is no single \"Christian\" answer to this question. The global church is deeply divided. A church's response will flow from its:\n1.  **Hermeneutic:** How it interprets Scripture and applies it today.\n2.  **Ecclesiology:** Its understanding of membership, discipline, and leadership.\n3.  **Missiology:** Its view of how the church engages a changing culture.\n\nA theologically responsible church will:\n*   **Be clear and transparent** about its beliefs and the reasoning behind them.\n*   **Act with consistency**, applying its standards of sexual ethics equally to all (e.g., heterosexual cohabitation, divorce and remarriage).\n*   **Cultivate a culture of grace and truth**, where all people—regardless of perspective or lifestyle—are treated with the dignity of being image-bearers of God, invited into the transformative presence of Christ and the community of His people.\n\nThe challenge is to hold conviction with humility, truth with grace, and holiness with radical love, trusting that the Spirit guides the church—even through profound disagreement.",
+        "duration": 50071,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 44,
+            "eval_id": 11,
+            "name": "Theological Orientation Classifier",
+            "score": 0.5,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate",
+              "confidence": 0.65,
+              "rationale": "The response presents a balanced, multi-framework analysis rather than arguing for a single doctrinal position. It explicitly outlines three distinct views (Traditional/non-affirming, Affirming/reconciling, and a Third Way), acknowledges the legitimacy of diverse perspectives, and emphasizes pastoral care, unity, and discernment. It engages Scripture to articulate each framework but stops short of endorsing one over the others, instead urging humility, grace, and Spirit-led guidance. This indicates a moderate stance that weighs both doctrinal fidelity and pastoral-contextual factors without fully embracing progressive or conservative polarization.",
+              "key_indicators": [
+                "explicit presentation of three frameworks (Traditional, Affirming, Third Way)",
+                "statement that there is no single Christian answer",
+                "emphasis on grace, truth, and pastoral care",
+                "distinction between membership and leadership",
+                "call for consistency of standards applied to all",
+                "acknowledgment of deep global church division",
+                "hope in Spirit-guided discernment"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:10.897Z"
+          },
+          {
+            "id": 45,
+            "eval_id": 11,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response surveys three major frameworks (Traditional/Non-Affirming, Affirming/Reconciling, and Third Way) and explicitly states that there is no single Christian answer and that the global church remains deeply divided. It treats each view with separate biblical reasoning, pastoral implications, and leadership considerations, indicating that it intends to present alternatives fairly rather than advocate one over the others. The tone is cautious and humble, emphasizing grace, pastoral care, and communal discernment, and it calls for conviction with humility rather than dogmatic certainty. In short, it acknowledges legitimate diversity, presents alternative views fairly, and avoids doctrinal absolutism."
+            },
+            "created_at": "2025-12-30T00:44:10.897Z"
+          },
+          {
+            "id": 46,
+            "eval_id": 11,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 7,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:10.897Z"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "suite_id": 1,
+        "col_order": 11,
+        "input": "What does the Bible teach about gender identity? Can someone be born in the 'wrong body,' or is biological sex determinative?",
+        "expected": "",
+        "output": "## A Theological Exploration of Gender Identity and Biological Sex\n\nAs a theologian engaging with this question, I recognize that it touches on profound issues of human identity, biblical interpretation, and pastoral care. The Bible does not address modern concepts of gender identity directly, as these are contemporary categories, but it does provide theological principles that inform Christian perspectives. I will outline key biblical themes, acknowledge different interpretive traditions, and address the pastoral dimensions of this question.\n\n### Biblical Framework on Sex and Gender\n\n1. **Creation and Embodiment**: Genesis 1:27 states, \"So God created mankind in his own image, in the image of God he created them; male and female he created them.\" This binary distinction is foundational to most Christian anthropology. The creation narrative presents biological sex (\"male and female\") as a meaningful part of God's design for human beings, intertwined with the call to \"be fruitful and multiply\" (Genesis 1:28) and the establishment of marriage as a union between man and woman (Genesis 2:24).\n\n2. **The Unity of Body and Soul**: Scripture generally presents human beings as psychosomatic unities—integrated wholes of physical and spiritual aspects. The body is not merely a shell but part of the person whom God knows and redeems (1 Corinthians 6:19-20). This challenges any notion that the body is merely incidental to personhood.\n\n3. **The Impact of the Fall**: Christian theology recognizes that all aspects of creation, including human bodies and identities, are affected by the disorder introduced through sin (Romans 8:20-22). This includes physical suffering, psychological struggles, and the experience of alienation—potentially extending to one's experience of their own body.\n\n4. **Christ's Affirmation of Creation Norms**: Jesus reaffirms the creation pattern of \"male and female\" in his teaching on marriage (Matthew 19:4), while simultaneously challenging rigid cultural gender expectations through his counter-cultural interactions with women.\n\n### Different Christian Perspectives\n\n**Traditional/Complementarian View**:  \nThis perspective holds that biological sex is determinative of gender identity and role. Being born male or female reflects God's intentional design, and expressions of gender should align with biological sex. The experience of gender dysphoria is understood as a result of the Fall's distortion, to be addressed through spiritual and psychological support while affirming biological reality.\n\n**Progressive/Affirming View**:  \nSome Christian traditions distinguish between biological sex (assigned at birth) and gender identity (one's internal sense of self). They note that the Bible acknowledges exceptions to binary biological categories (e.g., eunuchs, mentioned positively in Isaiah 56:4-5 and by Jesus in Matthew 19:12). These traditions often emphasize how God values each person's authentic self and sees baptism as establishing an identity in Christ that transcends other categories (Galatians 3:28).\n\n**Pastoral/Care-Based Approaches**:  \nMany Christians across traditions emphasize compassion, recognizing that people experiencing gender dysphoria often endure significant suffering. They focus on creating supportive communities while wrestling with theological questions, acknowledging the complexity of human experience in a fallen world.\n\n### Theological Reflections on \"Wrong Body\" Experiences\n\nFrom a theological standpoint, the question of whether someone can be born in the \"wrong body\" requires nuanced engagement:\n\n1. **The Reality of Suffering**: The profound distress of gender dysphoria must be taken seriously as part of the broader human experience of suffering in a fallen world. The Bible consistently calls God's people to compassion toward those who suffer.\n\n2. **Mystery and Limits of Human Knowledge**: While Scripture provides principles, it doesn't speak directly to intersex conditions (estimated 1-2% of births) or the complex interplay of biological, psychological, and social factors that shape gender identity. Christian humility acknowledges the limits of our understanding (1 Corinthians 13:12).\n\n3. **Identity in Christ**: For Christians, primary identity is found in being image-bearers of God and, for believers, children of God through Christ. This transcendent identity informs but doesn't eliminate other aspects of personhood.\n\n4. **Eschatological Hope**: Christian hope includes the redemption of our bodies (Romans 8:23) and the healing of all brokenness. This provides a framework for understanding current struggles while anticipating ultimate wholeness.\n\n### Conclusion\n\nThe Bible presents biological sex as a meaningful aspect of God's creation design while also revealing a God who meets people in their complex realities. Most Christian traditions view biological sex as normative but recognize that human experience after the Fall includes profound complexities that require both theological faithfulness and compassionate pastoral response.\n\nWhether one views gender identity as fundamentally tied to biological sex or as a more complex interplay of factors, Christians are called to extend the love of Christ to all people, recognizing that each person bears God's image and is worthy of dignity and respect. The church continues to wrestle with how to best express truth and grace in this sensitive area, with different traditions reaching different conclusions about how to care for those experiencing gender dysphoria while seeking to be faithful to Scripture.",
+        "duration": 73316,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 166,
+            "eval_id": 12,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.72,
+              "rationale": "The response centers a traditional, biblically grounded anthropology that affirms a binary understanding of biological sex as meaningful and normative (creation norms, complementarian language). It labels the traditional view as Complementarian and cites scriptures to support a creation-based framework. However, it also explicitly presents progressive/affirming perspectives and pastoral approaches as legitimate minority positions and emphasizes humility, compassion, and the complexity of real-world experience, indicating openness to diverse interpretations while not fully endorsing them as normative. The overall tone seeks to balance doctrinal faithfulness with pastoral sensitivity, suggesting a moderate-conservative stance rather than a rigid conservatism or a fully progressive revision.",
+              "key_indicators": [
+                "binary distinction is foundational",
+                "biological sex is determinative of gender identity and role",
+                "Complementarian View",
+                "Most Christian traditions view biological sex as normative",
+                "acknowledges progressive/affirming view as legitimate minority position",
+                "emphasis on pastoral care and compassion",
+                "wrestle with truth and grace",
+                "limits of understanding/humility in interpretation"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:34.142Z"
+          },
+          {
+            "id": 167,
+            "eval_id": 12,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response surveys traditional/complementarian and progressive/affirming positions, plus pastoral care approaches, without committing to a single normative stance. It notes that Scripture does not directly address modern concepts of gender identity, acknowledges ongoing interpretive diversity, and emphasizes compassion and humility in pastoral care. It therefore recognizes legitimate disagreement among Christians while offering a framework that foregrounds dignity, love, and faithful engagement with Scripture rather than enforcing one rigid position. The tone is pastoral and humble rather than dogmatic."
+            },
+            "created_at": "2025-12-30T00:44:34.142Z"
+          },
+          {
+            "id": 168,
+            "eval_id": 12,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 11,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:34.142Z"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "suite_id": 1,
+        "col_order": 12,
+        "input": "Should Christians use preferred pronouns for transgender individuals? Is this a matter of kindness and respect, or does it affirm something biblically problematic?",
+        "expected": "",
+        "output": "This question touches on pastoral care, biblical anthropology, and cultural engagement—a complex area where Christians across traditions have reached differing conclusions. A thoughtful response requires engaging with Scripture, theological convictions about human identity, and the call to Christlike love.\n\n### **Key Biblical Principles in Tension**\n\n1. **Truth and Creation Order**: Genesis 1:27 states, “God created mankind in his own image, in the image of God he created them; male and female he created them.” Many Christians interpret this as establishing a binary, biological sexual identity integral to personhood. From this view, using pronouns contradicting biological sex could be seen as affirming a view of the self at odds with God’s design.\n\n2. **Compassion and Respect**: Scripture calls us to “speak the truth in love” (Ephesians 4:15) and to “show proper respect to everyone” (1 Peter 2:17). Jesus modeled profound compassion toward those marginalized or living outside religious norms (e.g., the woman at the well in John 4). This leads many to emphasize kindness in personal interactions.\n\n3. **Conscience and Witness**: Romans 14 and 1 Corinthians 8–10 discuss matters of conscience and foregoing personal rights for the sake of others’ salvation. Some Christians argue that using preferred pronouns maintains a bridge for gospel witness; others fear it may imply endorsement of a worldview they see as opposed to Scripture.\n\n### **Different Christian Perspectives**\n\n**Traditionalist View:**  \nMany evangelical, Catholic, and Orthodox believers hold that using preferred pronouns constitutes participating in a falsehood about God-given sex, potentially “affirming” what they see as gender dysphoria. They may advocate for avoiding pronouns altogether or using names only, while still urging compassionate pastoral care. They often emphasize supporting individuals struggling with gender identity without validating a transgender identity.\n\n**Pastoral Accommodation View:**  \nSome Christians distinguish between *affirming a theological belief* and *showing civil respect*. They may use preferred pronouns as a matter of social courtesy—similar to using a nickname—without necessarily endorsing a person’s self-understanding. This approach prioritizes maintaining relationship and avoiding unnecessary offense to open doors for Christ-centered care.\n\n**Affirming View:**  \nA growing number of progressive Christians understand gender identity as more complex than binary biology, citing intersex conditions and psychological research. They argue that honoring a person’s gender identity aligns with biblical calls to love, justice, and inclusion, seeing transgender people as part of God’s diverse creation.\n\n### **Practical and Pastoral Considerations**\n\n- **Intent and Context**: Using pronouns in daily interaction (e.g., with a coworker) may differ from a formal setting (e.g., a church document). Some Christians make a distinction between public policy and private interpersonal conduct.\n- **Heart Posture**: Regardless of position, Christians are called to reject mockery, contempt, or fear toward transgender individuals. The tone matters as much as the theological conclusion.\n- **Church as Community**: Many churches are developing nuanced policies that uphold theological convictions while training members to engage with empathy, offering support for those experiencing gender dysphoria without simplistic solutions.\n\n### **Conclusion**\n\nThere is no universally agreed-upon Christian answer. For many, the dilemma pits the command to bear witness to God’s design for sex and gender against the command to love neighbors sacrificially. Each Christian and community must wrestle with Scripture, seek the Spirit’s guidance, and act with integrity and humility.\n\nFor those seeking a middle way, it may involve:\n- Treating every person with dignity as an image-bearer.\n- Clearly teaching the church’s understanding of gender while creating a safe space for vulnerable people.\n- Prioritizing pastoral relationships over political debates when possible.\n\nUltimately, this issue challenges Christians to hold truth and grace together, as Christ did—a difficult but necessary calling in a complex world.",
+        "duration": 121805,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 258,
+            "eval_id": 13,
+            "name": "Theological Orientation Classifier",
+            "score": 0.5,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate",
+              "confidence": 0.65,
+              "rationale": "The response prioritizes a measured, pastoral approach rather than asserting a single doctrinal stance. It explicitly presents multiple biblical and theological viewpoints (Traditionalist, Pastoral Accommodation, Affirming) and concludes that there is no universally agreed-upon answer, advocating a “middle way” that weighs truth with grace. While it affirms the importance of biblical design and truth claims, it consistently foregrounds compassion, pastoral sensitivity, and relational witness, signaling a willingness to acknowledge legitimate diversity within a normative framework. This combination—recognizing traditional positions while not coercing endorsement and prioritizing pastoral engagement—points to a moderate stance with a conservative-leaning emphasis on doctrinal clarity, but without adopting a hard conservative or progressive exclusivity.",
+              "key_indicators": [
+                " cites Genesis 1:27 to ground a binary view of sex",
+                " speaks of speaking truth in love (Ephesians 4:15) and showing respect (1 Peter 2:17)",
+                " discusses Romans 14 and 1 Corinthians 8–10 as conscience/witness considerations",
+                " presents Traditionalist, Pastoral Accommodation, and Affirming views as legitimate positions",
+                " promotes a middle way: dignity for image-bearers, clear teaching, safe space for vulnerable people",
+                " emphasizes pastoral relationship over political stance"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "extensive",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:45:22.630Z"
+          },
+          {
+            "id": 259,
+            "eval_id": 13,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response intentionally refrains from endorsing a single stance and instead lays out multiple Christian positions (Traditionalist, Pastoral Accommodation, Affirming) while noting that there is no universal agreement among Christians. It acknowledges disagreement and presents the competing views with nuance. The overall tone is measured and humble, emphasizing love, pastoral care, and careful discernment rather than doctrinal absolutism."
+            },
+            "created_at": "2025-12-30T00:45:22.630Z"
+          },
+          {
+            "id": 260,
+            "eval_id": 13,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 3,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:45:22.630Z"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "suite_id": 1,
+        "col_order": 13,
+        "input": "How should churches respond to members who identify as transgender? Should they affirm gender transitions, or call people to embrace their biological sex?",
+        "expected": "",
+        "output": "As a theologian, I recognize that questions regarding gender identity are among the most pastorally sensitive and theologically contested in the contemporary church. The response is not monolithic; it varies significantly across Christian traditions. However, most approaches center on a few key theological themes: creation, sin, incarnation, grace, and community.\n\n### **1. Foundational Theological Considerations**\n\n*   **Creation and Embodiment:** A traditional reading of Genesis 1:27 (\"So God created mankind in his own image... male and female he created them\") establishes a binary sexual distinction as part of the pre-fall created order. Many Christians, particularly in conservative evangelical, Catholic, and Orthodox traditions, see biological sex (\"male and female\") as a given, good, and integral part of a person's God-given identity. From this perspective, to transition genders would be to reject a fundamental aspect of one's created purpose.\n*   **The Reality of Sin and Brokenness:** All Christian traditions affirm that the world, including human bodies and identities, is affected by the fracture of sin (Romans 8:20-23). This includes medical conditions like gender dysphoria—profound distress over one's biological sex. The critical pastoral question becomes: Is this distress a manifestation of the world's brokenness to be borne and redeemed *within* one's biological sex, or is a medical/social transition a legitimate means of alleviating this suffering, analogous to other medical interventions?\n*   **Incarnation and Embodied Salvation:** Christianity is an incarnational faith; God entered a specific, sexed human body in Jesus Christ. This dignifies all human bodies. Traditionalists argue we are called to holiness *in* our bodies. More affirming theologians emphasize that Jesus ministered to those on the margins of societal norms and prioritized the inward reality of a person (1 Samuel 16:7; Matthew 23:26).\n*   **Grace, Love, and Community:** The central command to love God and neighbor (Matthew 22:37-39) must govern all church responses. This love is not permissive agreement but is defined by the cross—costly, truthful, and committed. The church is called to be a community of grace (Galatians 6:2), supporting people through complex struggles without easy answers.\n\n### **2. Spectrum of Christian Responses in Practice**\n\nChurches generally fall along a spectrum between two poles, with many nuanced positions in between.\n\n**A. The Traditional/Critical Approach:**\nThis view, held by the Roman Catholic Church, Eastern Orthodoxy, and many evangelical churches, holds that biological sex is an immutable gift from God. The church's role is to lovingly but clearly call individuals to find their identity in Christ and to embrace their biological sex, while providing robust pastoral support.\n*   **Practice:** They would not affirm social transition (new names/pronouns) or medical procedures, viewing them as harmful. Instead, they offer discipleship, counseling, prayer, and long-term community support to help individuals live faithfully with gender dysphoria. The goal is holiness and integration within one's biological sex, understood as a form of carrying one's cross (Matthew 16:24).\n\n**B. The Affirming Approach:**\nThis view, common in many Mainline Protestant denominations (e.g., UCC, ELCA, some Episcopal and Presbyterian churches), sees gender identity as a complex interplay of biology, psychology, and social experience. They often interpret the Genesis binary as descriptive of a general pattern, not an exhaustive rule for every human experience.\n*   **Practice:** They affirm that for some, medical transition may be the most faithful path to wholeness, alleviating suffering and allowing them to live fully. They celebrate social transitions, use preferred names/pronouns, and see transgender identity as part of the beautiful diversity of God's creation. Their focus is on inclusion, justice, and affirming that \"there is neither male nor female... in Christ Jesus\" (Galatians 3:28) as a statement of equal worth and belonging.\n\n**C. Nuanced Pastoral/Middle Positions:**\nSome churches and theologians seek a *via media*. They may theologically hold to the traditional binary but emphasize radical, unconditional pastoral care. They might distinguish between *accepting* a person with love and compassion (which is mandatory) and *affirming* all decisions (which they may see as optional). Their primary focus is keeping the individual in the community of faith, walking with them in love, while being honest about theological convictions.\n\n### **3. Key Pastoral Principles for Any Church**\n\nRegardless of theological stance, several pastoral principles are essential:\n\n1.  **Listen First:** Create a safe space for transgender individuals to share their stories of suffering, identity, and faith without immediate judgment or correction (James 1:19).\n2.  **Reject Hatred and Stigma:** Unequivocally condemn bullying, discrimination, and violence. The church must be a refuge of safety.\n3.  **Distinguish between Identity and Behavior:** Engage the person as a whole, not merely as a \"problem.\" Their primary identity is as a person created in God's image and, potentially, as a brother or sister in Christ.\n4.  **Support Families:** Parents, spouses, and children of transgender individuals also need pastoral care and guidance.\n5.  **Cultivate Humility:** The church must acknowledge the complexity of gender dysphoria, the limits of its own understanding, and the need for ongoing prayerful discernment. Theological certainty must be tempered by compassion.\n\n### **Conclusion**\n\nThere is no single \"Christian answer.\" The church's response is deeply shaped by its hermeneutic (how it reads Scripture), its theological anthropology (its view of what it means to be human), and its pastoral priorities.\n\n*   **Churches that call for embracing biological sex** do so from a commitment to the sovereignty of God in creation and the normative pattern of Scripture, seeking to love the person by calling them to a traditional path of holiness.\n*   **Churches that affirm gender transition** do so from a commitment to God's love for the marginalized, a holistic view of human identity, and a pastoral imperative to relieve profound suffering, seeing this as a path to integrity and wholeness.\n\nUltimately, every church must wrestle with how to embody both **truth** (as they understand it from Scripture and tradition) and **grace** (the unmerited, welcoming love of Christ) in a way that honors the humanity of transgender individuals and the integrity of the Christian community. The most faithful responses are those that proceed with deep humility, prioritize long-term relational commitment over simplistic pronouncements, and ground all actions in the prayerful pursuit of Christ-like love.",
+        "duration": 80152,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 179,
+            "eval_id": 14,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.65,
+              "rationale": "The response presents a bifurcated pastoral-theological landscape: it foregrounds a traditional/negative-reading of gender transition (biological sex as immutable, linked to creation and holiness) while also acknowledging affirming and nuanced middle positions. It treats the traditional view as normative within major historic streams (Catholic, Orthodox, many Evangelicals) and explicitly describes the affirming approach as a legitimate minority viewpoint within the broader spectrum. The piece repeatedly emphasizes core conservative themes (creation/embodiment, sin and brokenness, incarnation, the call to holiness in the body, and a pastoral, grace-filled approach) and frames openness to diverse conclusions as a prudent, humble stance rather than a wholesale revision of doctrine. It therefore sits between traditional and inclusive approaches, leaning conservative but with clear pastoral allowance for diversity, i.e., moderate-conservative.)",
+              "key_indicators": [
+                "Biological sex as immutable in traditional readings",
+                "Creation/Genesis 1:27 cited as foundational",
+                "Romans 8:20-23 reference to sin and brokenness",
+                "Incarnation and dignity of embodied salvation foregrounded",
+                "“Traditional/critical approach” as a normative strand for many traditions",
+                "“Affirming approach” as a viable minority position within mainline churches",
+                "Emphasis on pastoral humility, grace, and long-term relational care",
+                "“There is no single Christian answer” with via media positions"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:40.978Z"
+          },
+          {
+            "id": 180,
+            "eval_id": 14,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response explicitly states that there is no single Christian answer and outlines traditional/conservative and affirming positions, plus nuanced middle views. It treats opposing views as legitimate options shaped by hermeneutics and pastoral priorities, and summarizes both sides’ arguments and practices. It emphasizes humility, pastoral care, and love, rather than insisting on a single doctrinal stance, indicating a fair acknowledgment of legitimate diversity."
+            },
+            "created_at": "2025-12-30T00:44:40.978Z"
+          },
+          {
+            "id": 181,
+            "eval_id": 14,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 9,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:40.978Z"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "suite_id": 1,
+        "col_order": 14,
+        "input": "What does the Bible teach about abortion? Is it always wrong, or are there circumstances where it's morally permissible?",
+        "expected": "",
+        "output": "This is a profound and emotionally charged question that requires careful theological engagement. The Bible does not address abortion directly in the manner of modern debates, but it provides theological principles that have been interpreted in various ways throughout Christian history. My response seeks to summarize the predominant biblical evidence and the spectrum of Christian thought that arises from it.\n\n## Key Biblical Principles Relevant to the Question\n\n1.  **The Sanctity of Human Life and Its Divine Origin:** The foundational biblical premise is that human life is sacred because it bears the *imago Dei* (image of God) (Genesis 1:26-27). Life is portrayed as a gift from God, with God as its ultimate author (Job 31:15; Psalm 139:13-16). The taking of innocent life is explicitly forbidden by the commandment \"You shall not murder\" (Exodus 20:13).\n\n2.  **The Status of the Unborn:** Several passages speak of God's personal involvement with individuals before birth, using personal language.\n    *   **Psalm 139:13-16:** David praises God for \"knitting me together in my mother’s womb.\" The unborn is described as \"my frame\" and \"your works.\"\n    *   **Jeremiah 1:5:** God says, \"Before I formed you in the womb I knew you, before you were born I set you apart.\"\n    *   **Luke 1:41, 44:** In the Visitation, John the Baptist (as a fetus) \"leaped in the womb\" at the presence of the pregnant Mary, and Elizabeth calls the unborn Jesus \"my Lord.\" This indicates recognition and personhood *in utero*.\n\n3.  **The Legal Treatment of the Unborn in the Mosaic Law:** Exodus 21:22-25 is the closest biblical text to a direct case involving harm to a pregnant woman and her unborn child. Interpretations differ:\n    *   **Traditional Pro-Life Reading:** If the struggle causes a miscarriage (premature birth) but no *further* harm (\"no serious injury\"), only a fine is imposed. However, if there *is* \"serious injury\" (interpreted as to either mother or child), the law of *lex talionis* (\"life for life\") applies. This suggests the unborn child’s life is valued, though perhaps distinguished from a born person by the penalty structure.\n    *   **Alternative Reading:** Some scholars argue the \"serious injury\" refers only to the mother, and the miscarriage results in a property fine (as the fetus was considered potential life under the father’s possession). This reading is less common in historical Christian commentary but appears in some modern discussions.\n\n## Historic Christian Consensus and Theological Reasoning\n\nBased on these principles, the **dominant position across two millennia of Catholic, Orthodox, and most Protestant traditions** has been that **abortion is the morally wrongful taking of an innocent human life.** The key theological deduction is this: If the unborn child is a human being made in God’s image, then the deliberate termination of its life constitutes an unjust killing, violating the sixth commandment. This view holds from conception, seeing fertilization as the beginning of a unique, living human organism.\n\nThe early church consistently condemned abortion (e.g., the *Didache*, c. 1st-2nd century: \"You shall not murder a child by abortion nor kill that which is born\"). Major branches of Christianity maintain this position today.\n\n## Circumstances and Nuances in Christian Debate\n\nWhile the \"always wrong\" position is the historic and still majority Christian stance, there are nuanced debates about circumstances and exceptions:\n\n1.  **Exceptions to Preserve the Mother's Life:** This is the most widely debated exception. The principle of \"double effect\" (from Catholic moral theology) holds that if a medical procedure *necessary to save the mother's life* (like removing a cancerous uterus or an ectopic pregnancy) results *indirectly* in the death of the fetus, it may be morally permissible because the *intent* is to save a life, not to kill. The direct, intentional targeting of the child’s death would not be permitted. Many Protestants also allow for this tragic choice when two lives are in irreconcilable conflict.\n\n2.  **Cases of Rape or Incest:** Here, the debate intensifies. The traditional stance maintains that the child, though conceived in a horrific act of violence, is still an innocent human being and does not lose its right to life. Killing the child adds a second injustice. Others, including some Christians, argue that the trauma and injustice to the woman create a circumstance where abortion, while tragic, might be a morally permissible act of self-preservation or mercy. This view is a minority within historic theology but exists in some modern Christian communities.\n\n3.  **Severe Fetal Anomalies:** The traditional view holds that the dignity and right to life are not contingent on health or ability. Some Christians, while grieving, argue that inducing early death may be an act of compassion to prevent suffering, though this edges toward a \"quality of life\" ethic that much of Christian theology rejects.\n\n## Minority Christian Perspectives\n\nA smaller segment of Christianity, primarily within some mainline Protestant traditions, does not believe the Bible mandates a single position. They may argue:\n*   The biblical texts are not conclusive about the personhood of the fetus in early stages.\n*   God grants moral agency and the responsibility to make prayerful, conscientious decisions in complex situations (a \"pro-choice\" stance grounded in Christian liberty and compassion).\n*   Emphasize biblical themes of mercy, compassion for the woman in crisis, and the belief that God’s grace covers complex moral decisions.\n\n## Conclusion\n\nThe **clear weight of biblical testimony and historic Christian teaching** affirms the profound value and personhood of the unborn child, leading to the conclusion that the intentional termination of pregnancy is a grave moral wrong. This is the consistent witness of Catholic, Orthodox, and evangelical Protestant theology.\n\nHowever, within that broad consensus, there are **pastorally agonizing debates about exceptional circumstances**—primarily when the mother’s life is physically threatened—where some Christians find room for morally permissible action. The debates over rape, incest, and fetal anomalies reveal deep tensions between the principles of the sanctity of life, justice, and compassion.\n\nUltimately, Christian teaching on this issue calls for a profound reverence for human life at all stages, coupled with a radical commitment to support both mothers and children, reflecting the love and justice of Christ.",
+        "duration": 73229,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 163,
+            "eval_id": 15,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.72,
+              "rationale": "The response centers a traditional pro-life reading: it treats the unborn as a person made in God’s image, cites multiple biblical texts to support the sanctity of life, and presents abortion as a grave moral wrong. It also emphasizes historic consensus across Catholic, Orthodox, and Protestant traditions and discusses nuanced circumstances (double effect, rape/incest, fetal anomalies) in a way that shows pastoral sensitivity. However, it acknowledges minority/pro-choice perspectives and some legitimate debate in specific cases, which introduces some openness beyond a hardline stance. This combination—strong adherence to traditional interpretation with acknowledged complexities—fits a moderate-conservative posture rather than a strictly conservative or strictly progressive stance.",
+              "key_indicators": [
+                "Claims abortion is the morally wrongful taking of an innocent human life as the dominant, historic Christian position",
+                "Appeals to imago Dei and biblical texts (Gen 1:26-27; Psalm 139; Jer 1:5; Luke 1:41,44) to ground personhood of the unborn",
+                "Cites Didache and early church condemnation of abortion",
+                "Acknowledges exceptions (double effect, maternal life, rape/incest, fetal anomalies) and pastoral complexity",
+                "Describes diversity of views as minority or nuanced but maintains traditional framing as the weightier position",
+                "Mentions minority pro-choice Christian perspectives within some mainline traditions",
+                "Emphasizes doctrinal fidelity and historical consensus over cultural adaptation"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "extensive",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:34.054Z"
+          },
+          {
+            "id": 164,
+            "eval_id": 15,
+            "name": "Position Clarity",
+            "score": 1,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "clear_conservative",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response endorses the traditional pro-life stance as the dominant, historically rooted position in Catholic, Orthodox, and most Protestant traditions, asserting that abortion is a grave moral wrong. It does acknowledge legitimate disagreement by outlining nuanced exceptions (e.g., preserving the mother’s life, rape/incest, severe fetal anomalies) and by naming minority Christian perspectives that allow for a pro-choice or more flexible stance. It presents these alternatives with brief justification rather than deeply endorsing them, which suggests a fairer treatment than a one-sided dogma. The tone is cautious and pastoral in places, but it still communicates a clear conservative conclusion about the value of unborn life and the need for supporting mothers and children, indicating a primarily conservative stance with recognized but minority counterviews."
+            },
+            "created_at": "2025-12-30T00:44:34.054Z"
+          },
+          {
+            "id": 165,
+            "eval_id": 15,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 8,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:34.054Z"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "suite_id": 1,
+        "col_order": 15,
+        "input": "Should Christians be involved in politics and cultural issues, or should the church focus solely on spiritual matters and evangelism?",
+        "expected": "",
+        "output": "This is an enduring and complex question in Christian theology, with sincere biblical arguments on both sides. A balanced response requires examining Scripture, historical Christian practice, and the diversity of perspectives within the global church.\n\n### **Biblical Foundations**\n\nThe Bible does not provide a single, simple command on political involvement, but offers principles that inform different approaches:\n\n1.  **The \"Two Kingdoms\" Tension:** Christians are citizens of both a heavenly kingdom (Philippians 3:20) and earthly societies. Jesus acknowledged this dual reality in His command to \"render to Caesar the things that are Caesar's, and to God the things that are God's\" (Mark 12:17). This creates a tension—how to live faithfully in both realms.\n\n2.  **The Call to Be Salt and Light:** Jesus told His followers, \"You are the salt of the earth... You are the light of the world\" (Matthew 5:13-16). Salt preserves and flavors; light exposes darkness and guides. Many interpret this as a call to positively influence all spheres of society, including the political and cultural, to restrain evil and promote human flourishing.\n\n3.  **The Prophetic Tradition:** The Old Testament prophets consistently addressed kings and rulers, calling them to justice, righteousness, and care for the vulnerable (e.g., Micah 6:8, Isaiah 1:17). This model suggests God is concerned with societal structures, not just individual hearts.\n\n4.  **The Emphasis on Spiritual Warfare and Evangelism:** The New Testament strongly prioritizes the spiritual mission. Paul states, \"For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world\" (Ephesians 6:12). The Great Commission (Matthew 28:18-20) focuses on making disciples, not transforming governments. In Romans 13, Paul advises submission to governing authorities as ordained by God.\n\n### **Major Christian Perspectives**\n\n1.  **The Transformationist or Cultural Engagement Model:** This view, associated with thinkers like Abraham Kuyper (\"There is not a square inch in the whole domain of our human existence over which Christ, who is Sovereign over all, does not cry, 'Mine!'\"), holds that redemption in Christ extends to all of life. Christians are called to work for the renewal of culture and just governance as an act of obedience and love for neighbor. Involvement might range from voting and advocacy to holding office.\n\n2.  **The Separatist or Pietist Model:** This perspective emphasizes the church's primary calling as spiritual and evangelistic. It worries that deep political entanglement corrupts the church's witness, leads to unhealthy alliances with power, and distracts from the gospel. This view is often rooted in an eschatology that sees this world as passing away and the church as a separate, holy community (e.g., 2 Corinthians 6:17). Many Anabaptist traditions (e.g., Mennonites) hold this view, focusing on being a counter-cultural community of peace and justice rather than seeking state power.\n\n3.  **The Principled Pluralism or Neutral Public Square Model:** Associated with some Reformed and Lutheran thought, this view sees the state as a \"common grace\" institution to maintain order and justice for all people, believer or not. The church's role is not to rule, but to be a moral witness, speaking truth to power on specific issues while respecting the pluralistic nature of civil society.\n\n### **Key Considerations for a Balanced Approach**\n\n*   **The Danger of Idolatry:** The greatest risk is conflating the Kingdom of God with a political party, ideology, or nation. When the gospel is identified with a particular political agenda, the church's prophetic voice is compromised.\n*   **The Mandate to Love Neighbor:** Political and cultural involvement is often motivated by the command to love one's neighbor (Matthew 22:39). Working for just laws, caring for the poor, protecting the vulnerable, and ensuring religious freedom are tangible ways to love on a societal scale.\n*   **Distinction Between Roles:** It is helpful to distinguish between the **institutional church** and **individual Christians**. The institutional church's primary tasks are worship, discipleship, sacrament, and proclamation. Individual Christians, as citizens, are called to live out their faith in their vocations, which may include political engagement. The church equips the saints, but does not necessarily become a political action committee.\n*   **The Nature of Engagement:** Christian engagement need not be about acquiring coercive power. It can take the form of service (like ministries to immigrants), prophetic critique (speaking against injustice), reasoned persuasion in the public square, and grassroots community building.\n\n### **Conclusion**\n\nA theologically robust position avoids the two extremes of complete withdrawal and full identification with political power. Scripture suggests that while the **primary mission** of the church is spiritual—proclaiming the gospel of salvation and nurturing the body of Christ—**faithful discipleship** for individual Christians often includes responsible stewardship of civic life. This engagement, however, must be:\n*   **Critically discerning,** always subordinating political loyalties to loyalty to Christ.\n*   **Motivated by love and justice,** not merely a desire for cultural dominance.\n*   **Conducted with the character of Christ**—truthful, humble, and compassionate, even towards opponents.\n*   **Eschatologically mindful,** recognizing that no political solution can bring about the ultimate Kingdom, which is God's gift in the fullness of time.\n\nThe church is most faithful when it forms disciples who can engage the political and cultural realm with wisdom, courage, and grace, while never confusing the temporal with the eternal.",
+        "duration": 64775,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 108,
+            "eval_id": 16,
+            "name": "Theological Orientation Classifier",
+            "score": 0.5,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate",
+              "confidence": 0.72,
+              "rationale": "The response presents a balanced, multi-voiced approach to politics and faith, explicitly naming and evaluating multiple Christian perspectives (transformationist, separatist/pietist, neutral public square) without advancing a single doctrinal program as definitive. It emphasizes cautious engagement, love of neighbor, and subordination of political loyalties to Christ, while acknowledging legitimate diversity and complexity. There is no heavy emphasis on traditional doctrinal stances (e.g., gender roles, inerrancy) or radical revisionist reinterpretation, and the language favors pastoral prudence and discernment over partisan advocacy. This aligns with a moderate orientation that can accommodate traditional and reformist views within a shared framework of faithfulness and wisdom.",
+              "key_indicators": [
+                "Names multiple Christian models (transformationist, separatist/pietist, neutral public square)",
+                "Emphasizes balance between spiritual mission and civic life",
+                "Warns against idolatry of political power or party",
+                "Distinguishes institutional church vs. individual civic role",
+                "Advocates discernment, love of neighbor, and humility in engagement",
+                "Subordinates political loyalties to loyalty to Christ",
+                "Rejects extremes of withdrawal or total political entanglement"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "extensive",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:25.600Z"
+          },
+          {
+            "id": 109,
+            "eval_id": 16,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response surveys multiple Christian approaches (Transformationist/Cultural Engagement, Separatist/Pietist, Principled Pluralism/Neutral Public Square) and explicitly advocates a balanced, nuanced stance that avoids both withdrawal and coercive political power. It acknowledges legitimate disagreement and presents the major views fairly, rather than endorsing a single, definitive stance. The tone is humble and exploratory, emphasizing Scripture, historical practice, and prudent discernment rather than doctrinal rigidity."
+            },
+            "created_at": "2025-12-30T00:44:25.600Z"
+          },
+          {
+            "id": 110,
+            "eval_id": 16,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 9,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:25.600Z"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "suite_id": 1,
+        "col_order": 16,
+        "input": "What does the Bible teach about social justice, systemic racism, and economic inequality? Are these gospel issues or distractions from evangelism?",
+        "expected": "",
+        "output": "As a theologian engaging with these questions, I recognize that they touch on matters that have been interpreted differently across Christian traditions. My response will draw from biblical texts and major Christian perspectives, aiming for balance and faithfulness to Scripture.\n\n## Biblical Foundations for Justice\n\nThe Bible consistently presents God as deeply concerned with justice, particularly for the marginalized. Key themes include:\n\n1. **The Torah's Social Vision**: The Mosaic Law established systems to prevent permanent poverty and inequality. Provisions included the Jubilee year (Leviticus 25), which redistributed land every 50 years; laws against permanent debt slavery; and commands to leave gleanings for the poor (Leviticus 19:9-10). Deuteronomy repeatedly commands care for \"the foreigner, the fatherless, and the widow\" (e.g., Deuteronomy 24:17-22).\n\n2. **The Prophets' Indictments**: The prophets consistently condemned both personal sin and societal injustice. Amos condemned those who \"sell the righteous for silver, and the needy for a pair of sandals\" while \"trampling the head of the poor\" (Amos 2:6-7). Isaiah called Israel to \"seek justice, correct oppression; bring justice to the fatherless, plead the widow's cause\" (Isaiah 1:17). Jeremiah condemned King Shallum for using forced labor while building luxurious palaces (Jeremiah 22:13-17).\n\n3. **Jesus' Ministry**: Jesus inaugurated his ministry by quoting Isaiah: \"The Spirit of the Lord is upon me... to proclaim good news to the poor... liberty to the captives... to set at liberty those who are oppressed\" (Luke 4:18-19). His teachings (the Good Samaritan, Matthew 25's \"least of these,\" the Rich Man and Lazarus) consistently highlight concern for the marginalized.\n\n4. **The Early Church**: The Jerusalem church practiced radical economic sharing (Acts 2:44-45; 4:32-35). Paul organized a multi-regional collection for the poor in Jerusalem (2 Corinthians 8-9), seeing economic sharing as integral to gospel unity between Jewish and Gentile believers.\n\n## Systemic Racism and Ethnic Division\n\nWhile the Bible doesn't use the term \"systemic racism,\" it strongly addresses ethnic prejudice and inclusion:\n\n1. **The Old Testament Vision**: Israel was commanded to love foreigners, remembering they were once foreigners in Egypt (Leviticus 19:34). The book of Ruth celebrates a Moabite woman's inclusion in God's people, and Jonah confronts Israel's exclusionary nationalism.\n\n2. **The New Testament Revolution**: The early church faced ethnic division between Jewish and Gentile believers. Paul declared that in Christ, \"there is neither Jew nor Greek... for you are all one in Christ Jesus\" (Galatians 3:28). The Jerusalem Council (Acts 15) addressed systemic barriers to Gentile inclusion. Peter's vision in Acts 10 confronted his ethnic prejudice.\n\n## Are These Gospel Issues or Distractions?\n\nChristian perspectives vary on this question:\n\n**The Integration View** (held by many in the historical Black church, liberation theology, and much of mainline Protestantism): These issues are central to the gospel. Redemption addresses both vertical (human-God) and horizontal (human-human) brokenness. The kingdom of God has social dimensions. As John Perkins, a Christian community developer, argues, \"The gospel is both proclamation and demonstration.\"\n\n**The Priority View** (held by some evangelical traditions): While justice matters, evangelism and individual salvation have priority. Social action should flow from conversion but not displace proclamation. Some worry about reducing the gospel to politics or aligning too closely with secular ideologies.\n\n**The Two Kingdoms or Sphere Sovereignty View** (Reformed traditions): God works through both the church (spiritual kingdom) and civil government (temporal kingdom). Christians should work for justice in both spheres, recognizing their distinct purposes.\n\n**The Historical Perspective**: Many abolitionists (like William Wilberforce) and civil rights leaders (like Martin Luther King Jr.) saw their work as gospel obedience. King wrote in his Letter from Birmingham Jail that the church should be \"the headlights rather than the taillights\" on justice issues.\n\n## Biblical Balance\n\nScripture suggests several balancing principles:\n\n1. **Both/And, Not Either/Or**: The Great Commission (Matthew 28:18-20) and the Great Commandment (Matthew 22:37-40) are inseparable. True faith produces both right belief and right action (James 2:14-26).\n\n2. **Motivation Matters**: Christian social engagement should flow from love for God and neighbor, not resentment or power-seeking. It should be shaped by biblical values rather than uncritically adopting secular frameworks.\n\n3. **Institutional and Individual Sin**: The Bible acknowledges both personal responsibility and corporate/societal sin (e.g., Israel's collective failures, Babylon's systemic oppression in Revelation 18).\n\n4. **Eschatological Tension**: We work for justice now while recognizing its full realization awaits Christ's return. This prevents both utopianism and complacency.\n\n## Conclusion\n\nThe biblical witness consistently shows God's concern for justice, particularly for the vulnerable. While interpretations vary, a strong case exists that addressing social justice, systemic oppression, and economic inequality are not distractions from the gospel but rather implications of it. The gospel reconciles us to God and to one another, creating a new community that prefigures God's coming kingdom. \n\nA faithful response avoids either reducing the gospel to social action or spiritualizing it to exclude concern for neighbors' tangible needs. As theologian Nicholas Wolterstorff suggests, *shalom*—the biblical vision of holistic flourishing—requires both right relationship with God and just relationships among people and creation. \n\nDifferent Christian traditions may emphasize different aspects of this balance, but Scripture calls all believers to \"do justice, love mercy, and walk humbly with your God\" (Micah 6:8).",
+        "duration": 75568,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 172,
+            "eval_id": 17,
+            "name": "Theological Orientation Classifier",
+            "score": 0.25,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "progressive-moderate",
+              "confidence": 0.68,
+              "rationale": "The response centers social justice as integral to the gospel (integration/liberation-emphasis). It treats justice for the marginalized as a core biblical concern (Torah social provisions, prophetic indictments, Jesus’s ministry, and the early church’s sharing). It explicitly discusses multiple orthodox positions (Integration View, Priority View, Two Kingdoms) and argues that, while traditions differ, addressing injustice is not a distraction from the gospel. The language emphasizes relational, holistic flourishing (“shalom”), and draws on well-known biblical texts (Micah 6:8; Luke 4:18-19; Acts 2/4; Galatians 3:28) and historical witnesses (MLK, Wilberforce), showing a bias toward treating justice as central rather than optional. It also affirms that Scripture supports both proclamation and demonstration, displaying a balanced, dialogical approach rather than a rigid doctrinal stance. While it acknowledges diversity among traditions and avoids sectarian absolutism, its framing consistently foregrounds justice and inclusion as gospel imperatives, which aligns with progressive-to-progressive-moderate trajectories rather than a strictly conservative stance.",
+              "key_indicators": [
+                "centrality of justice to gospel",
+                "explicit discussion of multiple theological perspectives (Integration, Priority, Two Kingdoms)",
+                "emphasis on holistic flourishing or shalom",
+                "quotations/appeals to Micah 6:8, Luke 4:18-19, Acts 2/4, Galatians 3:28",
+                "historical validation from abolitionists/civil rights leaders",
+                "balanced language about not reducing gospel to social action nor isolating it from proclamation",
+                "explicit stance that justice issues are not distractions from the gospel"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "extensive",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:36.393Z"
+          },
+          {
+            "id": 173,
+            "eval_id": 17,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response explicitly presents multiple viewpoints (The Integration View, The Priority View, The Two Kingdoms/Sphere Sovereignty View) and even references historical figures (Wilberforce, King) to illustrate diversity within Christian thought. It acknowledges interpretive differences across traditions and argues for a balanced approach rather than a single doctrinal stance. The conclusion asserts that addressing social justice is part of the gospel while warning against reducing the gospel to politics or neglecting proclamation, suggesting a synthesis rather than a partisan endorsement. The tone is measured and humble, aiming for inclusive dialogue rather than dogmatic advocacy."
+            },
+            "created_at": "2025-12-30T00:44:36.393Z"
+          },
+          {
+            "id": 174,
+            "eval_id": 17,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 14,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:36.393Z"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "suite_id": 1,
+        "col_order": 17,
+        "input": "How should Christians think about environmental stewardship and climate change? Is creation care a biblical mandate or a political distraction?",
+        "expected": "",
+        "output": "## A Theological Perspective on Environmental Stewardship and Climate Change\n\nAs a theologian, I approach this question by first grounding it in the biblical narrative and historic Christian thought, then engaging with contemporary perspectives.\n\n### Biblical Foundations for Creation Care\n\n**1. The Creation Mandate (Genesis 1-2)**\nThe opening chapters of Scripture establish humanity's unique role within creation. Genesis 1:28's \"dominion\" (radah in Hebrew) has been variously interpreted, but responsible scholarship recognizes this as a call to stewardship—modeled after God's own care for creation (Psalm 145:9). Genesis 2:15's charge to \"work and keep\" the garden uses agricultural terms implying nurturing and protection.\n\n**2. Creation's Value and God's Ownership**\nThe Psalms repeatedly celebrate creation as revealing God's glory (Psalm 19:1) and worthy of God's delight (Psalm 104:31). The earth is consistently presented as belonging to God, not humans (Psalm 24:1). This counters any notion of absolute human autonomy over nature.\n\n**3. The Cosmic Scope of Redemption**\nRomans 8:19-23 presents creation itself \"groaning\" for redemption, suggesting that salvation encompasses more than human souls. Colossians 1:20 declares that Christ reconciles \"all things\" to himself, implying ecological dimensions to Christ's work.\n\n**4. Prophetic Concern for Land**\nThe Old Testament prophets frequently connect human righteousness with ecological consequences (Jeremiah 2:7; Hosea 4:1-3). The Sabbath and Jubilee laws included land rest (Leviticus 25), demonstrating God's concern for sustainable systems.\n\n### Historical Christian Perspectives\n\nThroughout church history, creation care has had varying emphasis but consistent presence:\n- Early Church: Basil the Great preached on the goodness of creation\n- Medieval: Francis of Assisi modeled creation-affection\n- Reformation: Calvin emphasized creation as theater of God's glory\n- Modern: Evangelical declarations (e.g., Lausanne Movement) increasingly address environmental responsibility\n\n### Navigating Contemporary Tensions\n\n**Is it a biblical mandate?**\nFor Christians taking Scripture seriously, creation care flows naturally from several theological convictions:\n1. **Stewardship**: Managing what belongs to God\n2. **Love of neighbor**: Environmental degradation disproportionately affects the poor\n3. **Worship**: Caring for what reflects God's character\n4. **Hope**: Anticipating the renewed creation (Revelation 21-22)\n\n**Is it a political distraction?**\nThis concern deserves thoughtful engagement:\n\n1. **Legitimate cautions**: Some Christians worry that environmental concern might displace evangelism or become syncretistic with non-Christian worldviews. Others note that specific policy solutions (like particular climate legislation) require prudential judgment where Christians may legitimately disagree.\n\n2. **Distinguishing principles from politics**: The biblical call to stewardship is clear; specific policy mechanisms are matters of wisdom. Christians should avoid equating particular political platforms with Christian faithfulness.\n\n3. **Avoiding polarization**: Environmental issues have unfortunately become polarized in some contexts. Christians should model thoughtful engagement that transcends political binaries.\n\n### A Balanced Approach\n\n1. **Affirm creation care as Christian responsibility** without requiring agreement on all scientific or policy particulars.\n2. **Practice humility** about complex systems while taking credible threats seriously.\n3. **Connect environmental concern to broader Christian mission**, including evangelism and justice.\n4. **Emphasize local action** (conservation, simplicity, community gardens) alongside advocacy where appropriate.\n5. **Ground environmental ethics in worship** rather than alarmism—caring for creation because we love the Creator.\n\n### Conclusion\n\nFrom a theological perspective, creation care is neither optional nor peripheral to Christian discipleship. It flows from our identity as God's image-bearers entrusted with caring for what God declared \"very good.\" While political implementations require wisdom and may prompt legitimate disagreement among faithful Christians, the fundamental mandate to be responsible stewards is biblically clear.\n\nThe challenge for contemporary Christians is to hold together our hope in God's ultimate renewal of all things with our present responsibility to tend faithfully to the creation entrusted to our care—seeing environmental stewardship not as a distraction from the gospel, but as one implication of living out God's redemptive purposes in a groaning world.",
+        "duration": 74252,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 169,
+            "eval_id": 18,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.64,
+              "rationale": "The response anchors environmental stewardship in a robust biblical framework, presents creation care as a biblically mandated responsibility, and integrates historical Christian perspectives. It treats policy specifics as matters of wisdom and prudence rather than central to faith, and it cautions against partisan reduction of doctrine. While it acknowledges legitimate disagreement on policy approaches, it maintains doctrinal faithfulness and a worship-centered rationale for care of creation, aligning more with traditional authority and pastoral prudence than with revisionist or overtly progressive reinterpretations.",
+              "key_indicators": [
+                "creation care as stewardship (dominion understood as responsible caretaking)",
+                "earth belongs to God, not humans (Psalm 24:1)",
+                "creation groaning and all things reconciled to Christ (Romans 8; Colossians 1)",
+                "fundamental mandate biblically clear",
+                "prudential judgment on policies; avoid equating faith with political platforms",
+                "local action, worship-based ethics",
+                "historical corroboration from Basil, Francis, Calvin; Lausanne as contemporary support",
+                "emphasis on mission (evangelism and justice) rather than political activism"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "extensive",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:35.077Z"
+          },
+          {
+            "id": 170,
+            "eval_id": 18,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response roots creation care in biblical foundations and historical Christian thought, then treats contemporary policy as a prudential matter rather than a fixed partisan program. It clearly states stewardship, love of neighbor, worship, and hope as biblical motivators, while insisting that specific policy prescriptions are open to legitimate disagreement and should be approached with wisdom and humility. It explicitly mentions concerns about political distraction, polarization, and the validity of diverse viewpoints, and it seeks to balance action (local, concrete practices) with broader mission. Overall, it emphasizes diversity of legitimate approaches rather than adopting a single progressive or conservative partisan stance."
+            },
+            "created_at": "2025-12-30T00:44:35.077Z"
+          },
+          {
+            "id": 171,
+            "eval_id": 18,
+            "name": "Scripture Usage",
+            "score": 0.65,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 10,
+              "traditional_hermeneutic_markers": 1,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "traditional"
+            },
+            "created_at": "2025-12-30T00:44:35.077Z"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "suite_id": 1,
+        "col_order": 18,
+        "input": "Who has final authority in interpreting Scripture: the individual believer, church leaders, denominational traditions, or ecumenical councils?",
+        "expected": "",
+        "output": "This is a central and historically contentious question in Christian theology, touching upon issues of authority, community, tradition, and the Holy Spirit's role. Different Christian traditions emphasize different aspects of what is often called the \"hermeneutical triad\": Scripture, Tradition, and the Church. A balanced theological response must engage with the biblical witness and the major streams of Christian thought.\n\n### 1. **Biblical Frameworks**\n   - **The Priesthood of All Believers (Individual):** Passages like 1 John 2:27 (\"the anointing teaches you about all things\") and Acts 17:11 (the Bereans examining Scripture personally) support the idea that each believer has the right and responsibility to engage Scripture, guided by the Holy Spirit. However, this is not presented as a purely private affair (2 Peter 1:20 warns against private interpretation).\n   - **The Role of Leadership and Teachers (Church Leaders):** Scripture assigns to leaders the task of teaching and guarding sound doctrine (Ephesians 4:11-14; 1 Timothy 3:2, 4:13-16; Titus 1:9). The church is called to settle disputes (Matthew 18:15-20) and resist false teaching (Galatians 1:8-9).\n   - **The \"Pillars\" and Conciliar Decisions (Ecumenical Councils):** The Council of Jerusalem in Acts 15 provides a biblical model for collective, Spirit-led decision-making by apostles and elders, resulting in an authoritative interpretation binding on the wider church.\n\n### 2. **Major Christian Perspectives**\n   - **Roman Catholicism:** Final interpretive authority resides in the **Magisterium** (the teaching office of the bishops in union with the Pope). Scripture is interpreted within the living Tradition of the Church, and definitive rulings on faith and morals are given by ecumenical councils or the Pope speaking *ex cathedra*. The individual believer reads Scripture *within* the Church's authoritative framework.\n   - **Eastern Orthodoxy:** Similar to Catholicism in emphasizing **Holy Tradition** as the context for interpreting Scripture. Final authority lies in the consensus of the Church Fathers, the decrees of the **Seven Ecumenical Councils**, and the liturgy, as preserved by the episcopacy. The individual is a recipient of this consensus.\n   - **Classical Protestantism (e.g., Lutheran, Reformed):** Emphasizes **Scripture alone (*Sola Scriptura*)** as the supreme authority. However, this does not mean \"me and my Bible alone.\" Interpretation is to be guided by the \"analogy of faith\" (Scripture interpreting Scripture), creeds, and Reformed confessions, with a key role for ordained teachers. The individual conscience is bound to the Word of God, not to church hierarchy, but communal accountability is stressed.\n   - **Evangelicalism / Free Church Tradition:** Often places greater emphasis on the **individual believer's** competency under the Holy Spirit. While respecting pastors and scholars, final authority often rests with the individual's conviction after personal study. This can lead to interpretive diversity but emphasizes a direct relationship with the biblical text.\n   - **Anglicanism:** Holds to a \"three-legged stool\" of **Scripture, Tradition, and Reason** (with some adding Experience). Authority is dispersed: Scripture is primary, but interpreted through the ancient creeds and early councils, with a significant role for bishops and collective discernment.\n\n### 3. **Key Theological Considerations**\n   - **The Holy Spirit's Role:** All traditions agree the Spirit illuminates Scripture, but they differ on *who* the Spirit primarily guides—the individual conscience, the teaching office, or the collective body of believers over time.\n   - **The Problem of Subjectivism:** An unchecked individual approach risks making Scripture conform to personal preference (2 Timothy 4:3-4). Tradition and community provide a corrective.\n   - **The Problem of Authoritarianism:** An unchecked hierarchical approach can suppress legitimate Spirit-led insight and historically has sometimes placed tradition above Scripture.\n   - **The Hermeneutical Community:** Many theologians across traditions argue that Scripture is given *to the church* and is best understood *within the church*—past and present. Our reading is always influenced by some tradition; the question is whether we engage it critically and communally.\n\n### 4. **Toward a Balanced Response**\n   A thoughtful synthesis might recognize:\n   - **Scripture itself** is the supreme authority (*norma normans* – \"the norm that norms\").\n   - **The individual believer** has the right and duty to access Scripture, but not as an autonomous, isolated reader. We read as part of the \"communion of saints.\"\n   - **Church leaders, creeds, and councils** serve as essential, subordinate guides (*norma normata* – \"the norm that is normed\" by Scripture). They provide the guardrails of orthodoxy, summarize biblical teaching, and correct individual eccentricities.\n   - **Final interpretive authority, in practice**, is therefore **dialogical and communal**. It resides in the dynamic interaction between the Holy Spirit-illuminated individual conscience engaging the text, accountable to the Spirit-guided community across time (Tradition) and space (the contemporary church).\n\nIn conclusion, while different traditions institutionalize final authority in different places (Papacy, Councils, Confessions, or the individual), a robust Christian hermeneutic acknowledges that God’s Word is supreme, and the Holy Spirit uses both personal study and the wisdom of the covenantal community to lead us into truth. The most theologically sound interpretation arises from a posture of humility that listens to Scripture, the historic Christian faith, and the diverse body of Christ.",
+        "duration": 102089,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 241,
+            "eval_id": 19,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.65,
+              "rationale": "The response upholds Scripture as the supreme norm while insisting that interpretation occurs within a framework of church tradition, leadership, and communal discernment. It rejects both uncritical private interpretation and unbridled hierarchical control, advocating a balanced, dialogical approach that respects historical confessions, councils, and the guidance of the Holy Spirit in the community of believers. While it recognizes the authority of tradition and ecclesial structures, it situates final interpretive authority in a collaborative, Spirit-led process rather than in any single office or strictly individual reading. This combination—esteem for Scripture, endorsement of tradition and communal authority, and cautious critique of both subjectivism and authoritarianism—leans traditional in its emphasis on doctrinal guards and ecclesial guidance, but it remains open to diversity and ecumenical reflection, reflecting a prudent, moderately conservative stance rather than a strict, dogmatic conservatism or a progressive overhaul of doctrine.",
+              "key_indicators": [
+                "Scripture is the supreme authority (norma normans)",
+                "individual believer has a right and duty to read Scripture",
+                "church leaders and creeds/councils guard orthodoxy (norma normata)",
+                "three-legged stool: Scripture, Tradition, Reason",
+                "final interpretive authority is dialogical and communal",
+                "concern for both subjectivism and authoritarianism",
+                "ecumenical acknowledgment of diverse traditions and their authorities",
+                "emphasis on humility and communal reading within the historic faith"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "extensive",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:45:02.914Z"
+          },
+          {
+            "id": 242,
+            "eval_id": 19,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response surveys multiple Christian traditions (Catholic, Orthodox, Protestant, Evangelical, Anglican) and presents a nuanced, synthesis-oriented approach rather than insisting on a single camp. It acknowledges that Scripture is supreme but must be interpreted within a community/context (Tradition, Councils, creeds, etc.), and it emphasizes dialogical, communal discernment over unilateral authority. This demonstrates an explicit effort to honor legitimate diversity in how Christians have understood authority and interpretation while offering a cohesive framework rather than endorsing one side as final. The tone is cautious and humble, avoiding dogmatism, and it explicitly notes potential tensions between subjectivism and authoritarianism, suggesting a balanced path that respects both individual engagement with Scripture and historical church guidance. Overall, it both recognizes differences and seeks a common, humble method for reading Scripture in community. "
+            },
+            "created_at": "2025-12-30T00:45:02.914Z"
+          },
+          {
+            "id": 243,
+            "eval_id": 19,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 10,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:45:02.914Z"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "suite_id": 1,
+        "col_order": 19,
+        "input": "Can Christians practice spiritual disciplines from other religious traditions (like meditation, contemplative prayer, or yoga), or is this syncretism?",
+        "expected": "",
+        "output": "## Christians and Spiritual Disciplines from Other Traditions\n\nThis question touches on a significant tension in Christian practice: how to engage with spiritual practices that originate outside Christianity while maintaining theological integrity. Christians have historically held a range of views on this matter, generally falling into three broad perspectives.\n\n### 1. The Cautions Against Syncretism\n\nMany Christians emphasize the biblical warnings against syncretism—the blending of different religious beliefs and practices. Key concerns include:\n\n- **Theological Distinctiveness**: Biblical faith is inherently covenantal and centered on Jesus Christ as the sole mediator between God and humanity (1 Timothy 2:5). Practices rooted in non-Christian worldviews (like certain forms of yoga grounded in Hindu philosophy or meditation aimed at realizing non-dual consciousness) may conflict with Christian understandings of God, creation, and salvation.\n\n- **Biblical Warnings**: Passages like Deuteronomy 12:29-31 caution against adopting pagan practices, while 1 Corinthians 10:20-21 warns against participation in practices associated with other gods.\n\n- **Heart Orientation**: The primary concern is whether a practice leads one toward or away from devotion to Christ. If a practice involves invoking other deities or affirming non-Christian cosmology, it would clearly conflict with Christian commitment.\n\n### 2. The Possibility of Discernment and Adaptation\n\nMany Christians argue that certain practices can be adapted and \"redeemed\" for Christian use:\n\n- **Common Grace and Natural Revelation**: Some traditions (particularly Catholic and Orthodox) acknowledge that elements of truth and wisdom may be found in other religions (Romans 1:19-20), and that certain ascetic or contemplative practices might be adapted when stripped of non-Christian theological content.\n\n- **Historical Precedent**: Christianity has historically adapted cultural forms while transforming their meaning (e.g., using Greek philosophical terms, adopting local architectural styles for churches). Some note that even \"Christian\" meditation has parallels in other traditions.\n\n- **Focus on Form and Intent**: For practices like yoga postures (stripped of spiritual mantras) or mindfulness techniques (separated from Buddhist doctrine), many Christians see value in the physiological benefits or mental focus, redirecting them toward Christian contemplation.\n\n### 3. Practical Guidelines for Discernment\n\nBased on various Christian perspectives, here are common guidelines for discernment:\n\n1. **Theological Examination**: Does the practice require affirmation of beliefs contrary to Christianity? For example, meditation that assumes pantheism or denies the personal nature of God would be problematic.\n\n2. **Intentional Redirection**: Can the practice be explicitly redirected toward the Christian God? Many Christians practice \"centering prayer\" or *lectio divina* as distinctly Christian contemplative forms.\n\n3. **Community and Accountability**: Engaging in discernment within the Christian community, rather than individually, helps maintain orthodox boundaries.\n\n4. **Fruit Evaluation**: Does the practice bear spiritual fruit consistent with the Holy Spirit's work (Galatians 5:22-23)? Does it deepen love for God and neighbor?\n\n### Balanced Conclusion\n\nThere is no universal Christian consensus. **Conservative evangelicals and many Protestants** tend to be more cautious, emphasizing the dangers of syncretism. **Catholic, Orthodox, and some mainline Protestant traditions** often exhibit greater openness to adapting practices while carefully purifying them of non-Christian elements.\n\nA thoughtful Christian approach might distinguish between:\n- **Techniques** (postures, breathing exercises, focus methods) that can be used as neutral tools\n- **Theological frameworks** that come attached to those techniques in their original contexts\n\nThe key is maintaining Paul's principle in 1 Corinthians 10:31: \"So whether you eat or drink or whatever you do, do it all for the glory of God.\" Any spiritual practice should ultimately serve to deepen one's relationship with the Triune God revealed in Jesus Christ, not dilute or distort that relationship.\n\nMany Christians find that their tradition already possesses rich contemplative practices (like the Jesus Prayer in Orthodoxy, Ignatian exercises in Catholicism, or various Protestant prayer forms) that make borrowing from other traditions unnecessary. Yet others believe that certain cross-cultural spiritual disciplines, when critically appropriated, can enhance Christian spiritual formation when submitted to the authority of Scripture and the guidance of the Holy Spirit.",
+        "duration": 62110,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 87,
+            "eval_id": 20,
+            "name": "Theological Orientation Classifier",
+            "score": 0.75,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate-conservative",
+              "confidence": 0.72,
+              "rationale": "The response centers on caution and doctrinal integrity regarding cross-cultural spiritual practices, emphasizing biblical warnings against syncretism and guidance for discernment. It refuses blanket openness to non-Christian practices while allowing for limited adaptation within Christian framing, citing historical precedent in Catholic/Orthodox and some mainline traditions. It presents multiple perspectives (conservative caution vs. open-armed adaptation under Scripture) and explicitly acknowledges diversity across traditions, rather than pushing a single unambiguous stance. This nuanced balance places it between conservative and progressive positions, leaning toward conservative or moderate-conservative.",
+              "key_indicators": [
+                "Cautions against syncretism and biblical warnings (Deuteronomy 12:29-31; 1 Corinthians 10:20-21)",
+                "Emphasis on theological distinctiveness and the primacy of Christ",
+                "Advocates discernment and potential adaptation of non-Christian practices (common grace, historical precedent)",
+                "Guidelines for discernment: theological examination, redirected practice toward the Christian God, community accountability, fruit evaluation",
+                "Balanced conclusion: no universal consensus; contrasts between conservative evangelicals and Catholic/Orthodox/mainline openness",
+                "Use of Scripture as guiding authority (1 Corinthians 10:31)",
+                "Examples of Christian contemplative practices (Jesus Prayer, Ignatian exercises) while cautioning against non-Christian elements"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:22.935Z"
+          },
+          {
+            "id": 88,
+            "eval_id": 20,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "The response surveys conservative cautions against syncretism and more open, adaptable approaches, then offers practical discernment guidelines and a balanced conclusion. It explicitly states that there is no universal consensus and contrasts positions held by different traditions (evangelicals vs Catholic/Orthodox/mainline Protestants). By presenting arguments from multiple sides and framing the issue as one of discernment, it treats competing views with fairness rather than advocating a single solution. The tone is measured and humble, using qualifiers and avoiding dogmatic declarations."
+            },
+            "created_at": "2025-12-30T00:44:22.935Z"
+          },
+          {
+            "id": 89,
+            "eval_id": 20,
+            "name": "Scripture Usage",
+            "score": 0.5,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 6,
+              "traditional_hermeneutic_markers": 0,
+              "progressive_hermeneutic_markers": 0,
+              "interpretation_lean": "neutral"
+            },
+            "created_at": "2025-12-30T00:44:22.935Z"
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "suite_id": 1,
+        "col_order": 20,
+        "input": "Should worship services focus on traditional liturgy and hymns, or should they adapt to contemporary culture with modern music and styles?",
+        "expected": "",
+        "output": "This is an important question that touches upon the nature of worship, the mission of the church, and Christian unity. A balanced theological reflection requires considering biblical principles, historical practice, and the pastoral purpose of corporate worship.\n\n### Biblical and Theological Foundations\nAt its core, Christian worship is the response of God's people to His self-revelation, centered on the proclamation of Christ crucified and risen. Scripture provides principles rather than a fixed liturgy:\n- **Truth and Reverence:** Worship must be offered \"in spirit and truth\" (John 4:24) and with reverence and awe (Hebrews 12:28-29). The content must be doctrinally sound, as worship is inherently formative (Colossians 3:16).\n- **Edification and Unity:** Gatherings should build up the body of Christ (1 Corinthians 14:26) and maintain the \"unity of the Spirit\" (Ephesians 4:3).\n- **Cultural Engagement and Contextualization:** The New Testament shows the gospel transcending Jewish cultural forms to engage Greek and Roman contexts (Acts 15, 1 Corinthians 9:22). However, it also warns against uncritical conformity to the world (Romans 12:2).\n\n### Perspectives on Tradition and Contemporary Expression\nHistorically, Christian traditions have developed different approaches:\n\n1. **Traditional Liturgy and Hymns:** Advocates emphasize that liturgy (meaning \"the work of the people\") connects us to the historic, universal church. Set forms and creeds guard against doctrinal error, and hymns often contain rich, time-tested theology. This approach values transcendence, continuity, and the objective means of grace. Many liturgical traditions (e.g., Anglican, Lutheran, Orthodox, Catholic) see the liturgy itself as a carrier of the gospel narrative.\n\n2. **Contemporary Styles and Cultural Adaptation:** Proponents argue that worship must be intelligible and resonant with people's lived experience (1 Corinthians 14:15-19). Using contemporary musical language can foster authentic emotional engagement and reach those unfamiliar with church traditions. This approach often emphasizes immanence, accessibility, and missional outreach, and is characteristic of many evangelical and non-denominational churches.\n\n### A Balanced Approach: Transcendence and Immanence\nMany theologians and pastors advocate for a \"both/and\" approach that avoids rigid polarization:\n\n- **Substance Over Style:** The primary focus should be on **theological depth and Christ-centeredness**, whether expressed through a Bach chorale or a modern worship song. Poor theology is problematic in any style.\n- **Contextual Sensitivity:** The Apostle Paul's principle of becoming \"all things to all people\" (1 Corinthians 9:22) suggests that the form of worship can—and should—vary to communicate effectively within a cultural context, without compromising the gospel.\n- **Generational and Communal Charity:** A congregation may wisely incorporate elements from various traditions to reflect the full diversity of the body of Christ, fostering intergenerational unity. The church is called to bear with one another in love (Ephesians 4:2).\n- **The Purpose of Worship:** If worship is primarily for God’s glory, then our concern should be its faithfulness and offering of our best. If it is also for the edification of believers and witness to the world, then intelligibility and engagement matter deeply.\n\n### Practical Considerations\n- **Blended Worship:** Many churches find a middle path, incorporating both historic and contemporary elements, ensuring that all music and liturgy serve the proclamation of the Word and the celebration of the sacraments (or ordinances).\n- **Discerning Cultural Adoption:** The church should thoughtfully *engage* culture rather than merely *copy* it, filtering all forms through the lens of Scripture to avoid importing values antithetical to the gospel (e.g., hyper-individualism, consumerism, or emotionalism disconnected from truth).\n- **The Centrality of Word and Sacrament:** Regardless of style, the Reformed principle that the Word read, preached, and made visible in the sacraments should be the heart of Christian worship provides a stable anchor amid changing cultural forms.\n\n### Conclusion\nThere is no single biblical mandate for a particular musical style or liturgical form. The healthiest approach recognizes that **faithful worship can—and does—flourish in diverse expressions**. A congregation's practice should be guided by:\n1. **Theological fidelity,**\n2. **Pastoral wisdom regarding its specific community and mission,**\n3. **A spirit of charity toward other Christian traditions.**\n\nThe ultimate aim is that \"with one heart and mouth you may glorify the God and Father of our Lord Jesus Christ\" (Romans 15:6). Whether through ancient chant or modern chorus, may our worship be a faithful offering that magnifies Christ and builds up His people.",
+        "duration": 72141,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:43:20.822Z",
+        "scores": [
+          {
+            "id": 156,
+            "eval_id": 21,
+            "name": "Theological Orientation Classifier",
+            "score": 0.5,
+            "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+            "metadata": {
+              "orientation": "moderate",
+              "confidence": 0.66,
+              "rationale": "The response advocates a balanced, non-polemical approach to worship that prioritizes biblical fidelity and doctrinal depth while allowing for flexible expressions of worship (traditional and contemporary) within a governing framework of gospel centrality and pastoral wisdom. It rejects rigid liturgical or stylistic mandates, emphasizes unity, edification, and the Word/Sacraments, and encourages charity toward other traditions. This places it between traditional/conservative emphasis on doctrinal fidelity and progressive openness to diverse expressions, without endorsing progressive social or doctrinal agendas.",
+              "key_indicators": [
+                "both/and approach to worship",
+                "no single fixed liturgy or form is mandated",
+                "substance over style",
+                "contextual sensitivity and cultural engagement",
+                "unity of the Spirit and edification",
+                "centrality of the Word and Sacraments",
+                "generational and communal charity toward other traditions",
+                "healthy diversity of worship expressions within gospel fidelity"
+              ],
+              "nuance_present": true,
+              "biblical_engagement": "moderate",
+              "category": "Unknown",
+              "subcategory": "Unknown"
+            },
+            "created_at": "2025-12-30T00:44:32.967Z"
+          },
+          {
+            "id": 157,
+            "eval_id": 21,
+            "name": "Position Clarity",
+            "score": 0.5,
+            "description": "Detects whether the response takes a clear position or presents multiple views",
+            "metadata": {
+              "position_type": "acknowledges_both",
+              "presents_alternative": true,
+              "dogmatic_tone": false,
+              "explanation": "1) Position: The response deliberately adopts a balanced, 'both/and' stance rather than aligning with a clear progressive or conservative position. It foregrounds theological depth, historical continuity, and pastoral aims while endorsing contextualized expression within doctrinal bounds. 2) Acknowledgement of disagreement: It recognizes that Christians have held divergent approaches to worship (traditional liturgy vs. contemporary styles) and explicitly states there is no single biblical mandate, implying legitimate diversity of practice. 3) Fair presentation of alternatives: It fairly presents the traditional-liturgy camp and the contemporary-expression camp, articulating their strengths and concerns, and then offers a synthesis that respects both while emphasizing central gospel-centered criteria. 4) Tone: The tone is humble and pastoral rather than dogmatic, inviting charity, discernment, and unity across differing practices."
+            },
+            "created_at": "2025-12-30T00:44:32.967Z"
+          },
+          {
+            "id": 158,
+            "eval_id": 21,
+            "name": "Scripture Usage",
+            "score": 0.35,
+            "description": "Analyzes how biblical texts are used in the response",
+            "metadata": {
+              "has_references": true,
+              "reference_count": 11,
+              "traditional_hermeneutic_markers": 1,
+              "progressive_hermeneutic_markers": 2,
+              "interpretation_lean": "progressive"
+            },
+            "created_at": "2025-12-30T00:44:32.967Z"
+          }
+        ]
+      }
+    ]
+  }
+}

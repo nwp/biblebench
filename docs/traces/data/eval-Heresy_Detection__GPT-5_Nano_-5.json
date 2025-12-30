@@ -1,0 +1,99 @@
+{
+  "eval": {
+    "id": 93,
+    "suite_id": 10,
+    "col_order": 5,
+    "input": "A group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?",
+    "expected": "This is Gnosticism, an ancient heresy. It contradicts Christianity in multiple ways: Christianity teaches salvation through faith in Christ's public work (not secret knowledge), affirms the goodness of God's material creation (Genesis 1), and proclaims resurrection of the body (not escape from physicality). Gnosticism was explicitly condemned by early church fathers and the New Testament writings (especially 1 John and Colossians).",
+    "output": "Verdict: Not orthodox Christian teaching. It is a heresy, most clearly aligned with Gnosticism (often described as a secret-knowledge salvation).\n\nWhy this is not Christian orthodoxy\n\n- Salvation by secret knowledge\n  - In orthodox Christianity, the gospel is publicly proclaimed and available to all who hear and respond in faith. Salvation is by faith in Christ, enabled by grace, not by acquiring hidden or esoteric knowledge that only an elite group possesses.\n  - The claim “salvation comes through secret spiritual knowledge” mirrors classic Gnostic teaching, which taught that salvation depends on special, hidden knowledge imparted to a privileged few.\n\n- Matter is evil / dualism\n  - Christian teaching begins with God creating a good world. Although creation is affected by the Fall, it is not inherently evil. The incarnation itself—the Word becoming flesh—affirms the goodness and value of material reality.\n  - A strong dualism that treats matter as intrinsically evil stands in opposition to Genesis 1–2 and to the Christian conviction that Christ’s work includes the redemption and renewal of the whole creation (not its rejection or escape).\n\n- Salvation as an escape from the material world\n  - Orthodox eschatology teaches the resurrection of the body and the creation of a new heaven and new earth, not the avoidance or rejection of matter. The Christian hope is the transformation and redemption of the whole person (body, soul, and world), not an exile from material existence.\n  - The idea of escaping the material realm is typically associated with Gnostic, Manichaean, or other dualistic systems, not with historic Christian orthodoxy.\n\n- Public revelation vs. hidden knowledge\n  - The Great Commission and the NT consistently present the gospel as a message to be proclaimed publicly to all nations, not a secret doctrine reserved for a “chosen few.”\n  - The insistence on hidden knowledge for salvation conflicts with verses that affirm that truth is made known in Jesus Christ and through the apostolic teaching accessible to the Church (see, for example, the emphasis on the gospel being proclaimed openly in Matt 28 and Rom 1:16).\n\nHistorical and doctrinal context\n\n- The early church repeatedly condemned Gnostic systems (e.g., Valentinians, Sethians) for their secret knowledge, dualistic anthropology, and anti-incarnational leanings. Irenaeus (Against Heresies) is a key source for this critique; later Fathers also argue that “mysteries” of faith are publicly taught within the Church and safeguarded through apostolic tradition, not withheld as secret knowledge.\n- Orthodox teaching upholds that matter, creation, and the human body are good (though fallen and needing redemption), and that God has reconciled all things through Christ, culminating in the resurrection of the dead and the renewal of creation.\n\nWhat a biblical/orthodox alternative looks like\n\n- Salvation through Jesus Christ—publicly proclaimed, received by faith, and lived out in discipleship, by grace through faith (Eph 2:8-9; Rom 10:9-10).\n- Creation is good and redeemable; the incarnation affirms the value of material reality (John 1:14; Col 1:19-20; Rom 8:21-23; 1 Cor 15).\n- The “mysteries” of faith exist in a way that is discerned through the Spirit within the Church, not as private, hidden knowledge required for salvation (1 Cor 2:7-10; Eph 3:3-6).\n- The Church’s mission is to publicly preach the gospel and teach the faith through Scripture and Tradition, not to guard a secret doctrine from the masses.\n\nBottom line\n\n- The group’s statement represents a heretical, Gnostic-like framework rather than orthodox Christian teaching. It rejects the goodness of creation, posits salvation as an escape from matter, and makes salvation depend on hidden knowledge rather than on Christ proclaimed to all. The historical Christian response would be to affirm the public, incarnational, and redeeming orientation of the gospel and to warn against any system that elevates secret gnosis over the revealed work of Christ.",
+    "duration": 60946,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:32:45.803Z",
+    "score": 0.9733333333333333,
+    "scores": [
+      {
+        "id": 220,
+        "eval_id": 93,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s response accurately identifies the teaching as non-orthodox and classifies it as Gnostic or Gnostic-like. It correctly contrasts secret knowledge with the Protestant/Catholic/Orthodox emphasis on public proclamation of the gospel (Matt 28; Rom 10:9-10), affirms the goodness of creation and the incarnation (John 1:14; Col 1:19-20), and upholds the resurrection of the body (1 Cor 15; Rom 8:21-23). It notes the early church’s condemnation of Gnostic systems (e.g., Irenaeus) and clarifies that mysteries are revealed within the Church rather than as private salvation requirements (1 Cor 2:7-10; Eph 3:3-6). The bottom-line assessment is aligned with historic Christian orthodoxy. Minor caveats are not present; the treatment of “mysteries” is nuanced and consistent with Scripture, and no significant doctrinal errors are present."
+        },
+        "created_at": "2025-12-30T00:33:46.756Z"
+      },
+      {
+        "id": 221,
+        "eval_id": 93,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:33:46.756Z"
+      },
+      {
+        "id": 222,
+        "eval_id": 93,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "biblical",
+            "scripture",
+            "heretical",
+            "heresy"
+          ],
+          "count": 5
+        },
+        "created_at": "2025-12-30T00:33:46.756Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 135,
+        "eval_id": 93,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Verdict: Not orthodox Christian teaching. It is a heresy, most clearly aligned with Gnosticism (often described as a secret-knowledge salvation).\n\nWhy this is not Christian orthodoxy\n\n- Salvation by secret knowledge\n  - In orthodox Christianity, the gospel is publicly proclaimed and available to all who hear and respond in faith. Salvation is by faith in Christ, enabled by grace, not by acquiring hidden or esoteric knowledge that only an elite group possesses.\n  - The claim “salvation comes through secret spiritual knowledge” mirrors classic Gnostic teaching, which taught that salvation depends on special, hidden knowledge imparted to a privileged few.\n\n- Matter is evil / dualism\n  - Christian teaching begins with God creating a good world. Although creation is affected by the Fall, it is not inherently evil. The incarnation itself—the Word becoming flesh—affirms the goodness and value of material reality.\n  - A strong dualism that treats matter as intrinsically evil stands in opposition to Genesis 1–2 and to the Christian conviction that Christ’s work includes the redemption and renewal of the whole creation (not its rejection or escape).\n\n- Salvation as an escape from the material world\n  - Orthodox eschatology teaches the resurrection of the body and the creation of a new heaven and new earth, not the avoidance or rejection of matter. The Christian hope is the transformation and redemption of the whole person (body, soul, and world), not an exile from material existence.\n  - The idea of escaping the material realm is typically associated with Gnostic, Manichaean, or other dualistic systems, not with historic Christian orthodoxy.\n\n- Public revelation vs. hidden knowledge\n  - The Great Commission and the NT consistently present the gospel as a message to be proclaimed publicly to all nations, not a secret doctrine reserved for a “chosen few.”\n  - The insistence on hidden knowledge for salvation conflicts with verses that affirm that truth is made known in Jesus Christ and through the apostolic teaching accessible to the Church (see, for example, the emphasis on the gospel being proclaimed openly in Matt 28 and Rom 1:16).\n\nHistorical and doctrinal context\n\n- The early church repeatedly condemned Gnostic systems (e.g., Valentinians, Sethians) for their secret knowledge, dualistic anthropology, and anti-incarnational leanings. Irenaeus (Against Heresies) is a key source for this critique; later Fathers also argue that “mysteries” of faith are publicly taught within the Church and safeguarded through apostolic tradition, not withheld as secret knowledge.\n- Orthodox teaching upholds that matter, creation, and the human body are good (though fallen and needing redemption), and that God has reconciled all things through Christ, culminating in the resurrection of the dead and the renewal of creation.\n\nWhat a biblical/orthodox alternative looks like\n\n- Salvation through Jesus Christ—publicly proclaimed, received by faith, and lived out in discipleship, by grace through faith (Eph 2:8-9; Rom 10:9-10).\n- Creation is good and redeemable; the incarnation affirms the value of material reality (John 1:14; Col 1:19-20; Rom 8:21-23; 1 Cor 15).\n- The “mysteries” of faith exist in a way that is discerned through the Spirit within the Church, not as private, hidden knowledge required for salvation (1 Cor 2:7-10; Eph 3:3-6).\n- The Church’s mission is to publicly preach the gospel and teach the faith through Scripture and Tradition, not to guard a secret doctrine from the masses.\n\nBottom line\n\n- The group’s statement represents a heretical, Gnostic-like framework rather than orthodox Christian teaching. It rejects the goodness of creation, posits salvation as an escape from matter, and makes salvation depend on hidden knowledge rather than on Christ proclaimed to all. The historical Christian response would be to affirm the public, incarnational, and redeeming orientation of the gospel and to warn against any system that elevates secret gnosis over the revealed work of Christ.",
+          "toolCalls": []
+        },
+        "start_time": 414.583875,
+        "end_time": 36086.844208,
+        "input_tokens": 83,
+        "output_tokens": 3924,
+        "total_tokens": 4007,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 10,
+    "run_id": 1,
+    "name": "Heresy Detection [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:32:45.803Z"
+  }
+}

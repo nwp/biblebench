@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 282,
+    "suite_id": 60,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "- To reveal the kingdom’s mysteries to believers while concealing them from unbelievers (Matthew 13:11–13; Mark 4:11–12; Luke 8:10), fulfilling Isaiah’s prophecy (Isaiah 6:9–10).\n- To teach spiritual truths through familiar, everyday imagery, making them memorable (parables like the sower, mustard seed, treasure, net).\n- To provoke reflection, discernment, and a response—crowds hear, but insights require seeking and listening.\n- To distinguish insiders from outsiders and to reveal truth privately to his disciples (Mark 4:34).",
+    "duration": 42657,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.180Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 785,
+        "eval_id": 282,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s evaluation aligns closely with biblical teaching and orthodox interpretation. It correctly cites key passages (Matthew 13:11–13; Mark 4:11–12; Luke 8:10) and the Isaiah 6:9–10 fulfillment, explaining that parables reveal truth to those open to it and conceal it from those unreceptive. It emphasizes the use of familiar imagery, the memorable nature of parables, and the private explanation to disciples (Mark 4:34), which are all well-supported scripturally. It also notes that parables provoke reflection and require seeking, which captures an important interpretive dynamic. The response could be strengthened by mentioning that parables also function as a judgment against hardened hearts and that their communicative purpose includes inviting repentance, but these are nuanced extensions rather than corrections of the core points. Overall, the answer is accurate, doctrinally sound, biblically grounded, and nuanced. "
+        },
+        "created_at": "2025-12-30T00:34:50.856Z"
+      },
+      {
+        "id": 786,
+        "eval_id": 282,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:50.856Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 297,
+        "eval_id": 282,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "- To reveal the kingdom’s mysteries to believers while concealing them from unbelievers (Matthew 13:11–13; Mark 4:11–12; Luke 8:10), fulfilling Isaiah’s prophecy (Isaiah 6:9–10).\n- To teach spiritual truths through familiar, everyday imagery, making them memorable (parables like the sower, mustard seed, treasure, net).\n- To provoke reflection, discernment, and a response—crowds hear, but insights require seeking and listening.\n- To distinguish insiders from outsiders and to reveal truth privately to his disciples (Mark 4:34).",
+          "toolCalls": []
+        },
+        "start_time": 204.403417,
+        "end_time": 18129.022458,
+        "input_tokens": 134,
+        "output_tokens": 1412,
+        "total_tokens": 1546,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.180Z"
+  }
+}

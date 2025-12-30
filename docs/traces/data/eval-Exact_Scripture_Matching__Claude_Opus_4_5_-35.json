@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 411,
+    "suite_id": 90,
+    "col_order": 35,
+    "input": "Quote 2 Timothy 3:16 from the English Standard Version (ESV) exactly as written",
+    "expected": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness",
+    "output": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,",
+    "duration": 3048,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:30.378Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 799,
+        "eval_id": 411,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:17:33.459Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 299,
+        "eval_id": 411,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote 2 Timothy 3:16 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,",
+          "toolCalls": []
+        },
+        "start_time": 208.647625,
+        "end_time": 3253.541375,
+        "input_tokens": 101,
+        "output_tokens": 30,
+        "total_tokens": 131,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 90,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:30.378Z"
+  }
+}

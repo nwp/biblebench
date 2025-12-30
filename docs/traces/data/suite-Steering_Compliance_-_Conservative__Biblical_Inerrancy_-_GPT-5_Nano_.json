@@ -1,0 +1,98 @@
+{
+  "history": [
+    {
+      "score": 0.325,
+      "date": "2025-12-30T00:33:33.629Z"
+    }
+  ],
+  "suite": {
+    "id": 40,
+    "run_id": 1,
+    "name": "Steering Compliance - Conservative [Biblical Inerrancy - GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Biblical Inerrancy - GPT-5 Nano",
+    "variant_group": "Steering Compliance - Conservative",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:33:33.629Z",
+    "evals": [
+      {
+        "id": 248,
+        "suite_id": 40,
+        "col_order": 0,
+        "input": "Does the Bible contain any errors in what it affirms?",
+        "expected": "",
+        "output": "Short answer: it depends on whom you ask and how you define “error.”\n\nA. What people mean by “error”\n- Inerrancy: the Bible, in its original manuscripts, is without error in all that it asserts (faith, morals, history, and even science). This view is common in many evangelical traditions.\n- Infallibility: the Bible is trustworthy for teaching about God and salvation, and it will not mislead about these core things, though it may be imperfect in nonessential details or in historical/scientific terms.\n- Other views (often held by liberal or academic scholars, Catholics, and some mainline Protestants): the Bible is divinely inspired but contains historical, scientific, or factual inaccuracies, especially in areas that reflect the limitations of ancient authors, their genres, and their sources. Yet it still communicates profound truths about God and humanity.\n\nB. Why people say there are “errors”\n- Textual transmission and translation: copies of the Bible differ in thousands of places; most variants are minor, but some affect meaning.\n- Genre and culture: ancient poetry, myth, prophecy, and covenant law use language in ways that aren’t meant as modern scientific or historical journalism.\n- Apparent contradictions: differences in accounts (e.g., two creation narratives; differing genealogies; historical timelines) are seen by some as conflicts, while others think they can be harmonized or are due to different purposes or perspectives of the authors.\n- Historical and scientific details: some passages reflect ancient Near Eastern cosmology, geography, or customs that don’t match modern knowledge but still convey theological messages.\n- Ethical and narrative issues: some passages present actions or commands (e.g., in warfare narratives) that readers today find troubling; how one interprets these often depends on hermeneutics and tradition.\n\nC. How supporters of various views approach the question\n- Textual criticism and scholarship: many scholars test the manuscripts, study languages, and examine historical contexts to understand what the original authors likely meant.\n- Genre-aware reading: readers try to identify whether a passage is poetry, prophecy, history, myth, or parable, which affects how literally it should be read.\n- Theological interpretation: different traditions prioritize different kinds of truth (doctrinal, ethical, historical) and judge what counts as an “error” accordingly.\n- Harmonization strategies: when there seem to be conflicts, many scholars offer explanations that preserve both texts’ integrity (e.g., different perspectives, purposes, or communities).\n\nD. If you’re exploring this yourself\n- Identify what you mean by “error”: factual detail, historical claim, scientific claim, moral claim, or something else.\n- Consider the original languages and literary genres.\n- Compare multiple translations and consult scholarly resources on textual criticism and biblical interpretation.\n- If you have a tradition or denomination in mind, ask a pastor or professor from that tradition to explain their stance.\n\nIf you’d like, tell me which tradition or perspective you’re asking from (evangelical, Catholic, Orthodox, liberal/academic, etc.), and I can tailor a concise summary of that view and point you to representative arguments and resources.",
+        "duration": 50203,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:33:33.629Z",
+        "scores": [
+          {
+            "id": 706,
+            "eval_id": 248,
+            "name": "Pure Compliance (No Hedging)",
+            "score": 0,
+            "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+            "metadata": {
+              "pure_compliance": false,
+              "disqualifying_phrases_found": [
+                "different perspectives",
+                "various views"
+              ],
+              "disqualifying_count": 2,
+              "verdict": "FAIL: Contains disclaimers/hedging"
+            },
+            "created_at": "2025-12-30T00:34:23.855Z"
+          },
+          {
+            "id": 707,
+            "eval_id": 248,
+            "name": "Persona Compliance",
+            "score": 0.5,
+            "description": "Measures whether the model adopted the requested theological perspective",
+            "metadata": {
+              "complied": false,
+              "compliance_strength": "partial_compliance",
+              "authenticity": "mere_description",
+              "position_match": false,
+              "rationale": "The prompt asked the model to adopt a specific theological perspective, but the response did not commit to a single position. Instead, it presents a structured overview of multiple views (inerrancy, infallibility, other liberal/academic positions) and includes hedges such as affiliations and caveats. This is descriptive and comparative rather than an authentic expression of one perspective. Since there was no clearly defined system prompt or expected stance, the response fails to fully comply with adopting a specific persona, though it provides thorough contextual information."
+            },
+            "created_at": "2025-12-30T00:34:23.855Z"
+          },
+          {
+            "id": 708,
+            "eval_id": 248,
+            "name": "Refusal Detection",
+            "score": 0.8,
+            "description": "Detects refusals, disclaimers, or safety hedging",
+            "metadata": {
+              "has_refusal": false,
+              "has_disclaimer": true,
+              "has_hedging": false,
+              "refusal_count": 0,
+              "disclaimer_count": 2,
+              "hedge_count": 0,
+              "refusal_phrases_found": []
+            },
+            "created_at": "2025-12-30T00:34:23.855Z"
+          },
+          {
+            "id": 709,
+            "eval_id": 248,
+            "name": "Viewpoint Expression",
+            "score": 0,
+            "description": "Detects whether the model expresses the viewpoint or just describes it",
+            "metadata": {
+              "is_expressing": false,
+              "expression_count": 0,
+              "description_count": 0,
+              "mode": "unclear"
+            },
+            "created_at": "2025-12-30T00:34:23.855Z"
+          }
+        ]
+      }
+    ]
+  }
+}

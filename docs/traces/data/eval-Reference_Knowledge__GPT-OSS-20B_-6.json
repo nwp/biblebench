@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 148,
+    "suite_id": 31,
+    "col_order": 6,
+    "input": "What is the reference for the love chapter that starts with 'If I speak in the tongues of men or of angels'?",
+    "expected": "1 Corinthians 13",
+    "output": "Philippians 1:5",
+    "duration": 15308,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:38:54.623Z",
+    "score": 0.3333333333333333,
+    "scores": [
+      {
+        "id": 371,
+        "eval_id": 148,
+        "name": "Scripture Reference Accuracy",
+        "score": 0,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": false
+        },
+        "created_at": "2025-12-30T00:39:09.949Z"
+      },
+      {
+        "id": 372,
+        "eval_id": 148,
+        "name": "Contains Answer",
+        "score": 0,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": false
+        },
+        "created_at": "2025-12-30T00:39:09.950Z"
+      },
+      {
+        "id": 373,
+        "eval_id": 148,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Philippians 1:5"
+        },
+        "created_at": "2025-12-30T00:39:09.950Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 139,
+        "eval_id": 148,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for the love chapter that starts with 'If I speak in the tongues of men or of angels'?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Philippians 1:5",
+          "toolCalls": []
+        },
+        "start_time": 149.682333,
+        "end_time": 15453.856667,
+        "input_tokens": 133,
+        "output_tokens": 1692,
+        "total_tokens": 1825,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [GPT-OSS-20B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "GPT-OSS-20B",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:38:54.623Z"
+  }
+}

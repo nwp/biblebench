@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 272,
+    "suite_id": 59,
+    "col_order": 5,
+    "input": "What was the purpose of the book of Revelation?",
+    "expected": "To encourage persecuted Christians with visions of God's ultimate victory and the return of Christ",
+    "output": "To encourage persecuted Christians to remain faithful by revealing Jesus Christ’s present reign and God’s coming judgment and victory over evil, culminating in Christ’s return and the new creation.",
+    "duration": 26764,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.179Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 751,
+        "eval_id": 272,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s response accurately reflects Revelation’s purpose as a message to encourage perseverance among persecuted believers by highlighting Christ’s sovereignty and the ultimate defeat of evil, leading to Christ’s return and the creation of a new order. It aligns with the biblical arc of Revelation: present reign of Christ (already) alongside coming judgment and final victory (not yet), culminating in the return of Christ and new creation (Revelation 21–22). Key scriptural anchors include Revelation 1:7; 5:5–6; 11:15; 19:11–16; and 21–22, which support themes of present reign, judgment, eschatological consummation, and the new creation. Nuance is captured in noting the already/not yet tension and the exhortation to faithfulness; a fuller treatment might explicitly address Revelation’s apocalyptic genre and the broader call to worship and endurance, but these are not doctrinally problematic omissions."
+        },
+        "created_at": "2025-12-30T00:34:34.963Z"
+      },
+      {
+        "id": 752,
+        "eval_id": 272,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:34.963Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 285,
+        "eval_id": 272,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the purpose of the book of Revelation?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To encourage persecuted Christians to remain faithful by revealing Jesus Christ’s present reign and God’s coming judgment and victory over evil, culminating in Christ’s return and the new creation.",
+          "toolCalls": []
+        },
+        "start_time": 203.158167,
+        "end_time": 1887.674875,
+        "input_tokens": 134,
+        "output_tokens": 39,
+        "total_tokens": 173,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.179Z"
+  }
+}

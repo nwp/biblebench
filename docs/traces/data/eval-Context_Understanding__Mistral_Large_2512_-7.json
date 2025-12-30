@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 55,
+    "suite_id": 6,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "Jesus used parables to:\n1. Reveal truths to those with receptive hearts (Matt. 13:10–12).\n2. Conceal truths from those hardened in unbelief (Mark 4:11–12).\n3. Illustrate spiritual principles in relatable, memorable ways (Matt. 13:34–35).\n4. Fulfill prophecy (Ps. 78:2; Matt. 13:35).",
+    "duration": 34152,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:40:38.264Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 11,
+        "eval_id": 55,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response aligns well with biblical teaching. It correctly notes that parables serve to reveal truth to those receptive (Matt 13:10–12) and to conceal truth from those who reject or are hardened in unbelief (Mark 4:11–12), that they illustrate spiritual truths in relatable, memorable ways (Matt 13:34–35), and that Jesus’ use of parables fulfills prophecy (Psalm 78:2; Matt 13:35). These points reflect orthodox interpretation and are biblically grounded. Nuance is present in distinguishing between insiders and outsiders and in citing fulfillment of prophecy. A minor gap is that it does not mention the linked practice of privately explaining parables to the disciples after teaching in parables, which adds depth to understanding how parables function in discipleship; this is not an inaccuracy, just an area for fuller nuance. Overall, the answer is doctrinally sound and biblically grounded."
+        },
+        "created_at": "2025-12-30T00:41:12.417Z"
+      },
+      {
+        "id": 12,
+        "eval_id": 55,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:41:12.417Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 6,
+        "eval_id": 55,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus used parables to:\n1. Reveal truths to those with receptive hearts (Matt. 13:10–12).\n2. Conceal truths from those hardened in unbelief (Mark 4:11–12).\n3. Illustrate spiritual principles in relatable, memorable ways (Matt. 13:34–35).\n4. Fulfill prophecy (Ps. 78:2; Matt. 13:35).",
+          "toolCalls": []
+        },
+        "start_time": 439.323416,
+        "end_time": 3983.397083,
+        "input_tokens": 136,
+        "output_tokens": 101,
+        "total_tokens": 237,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 6,
+    "run_id": 1,
+    "name": "Context Understanding [Mistral Large 2512]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Mistral Large 2512",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:40:38.263Z"
+  }
+}

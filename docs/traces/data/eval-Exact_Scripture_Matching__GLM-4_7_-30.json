@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 124,
+    "suite_id": 30,
+    "col_order": 30,
+    "input": "Quote Micah 6:8 from the King James Version (KJV) exactly as written",
+    "expected": "He hath shewed thee, O man, what is good; and what doth the Lord require of thee, but to do justly, and to love mercy, and to walk humbly with thy God",
+    "output": "He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?",
+    "duration": 16709,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:59:28.433Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 329,
+        "eval_id": 124,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:59:45.165Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 113,
+        "eval_id": 124,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Micah 6:8 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?",
+          "toolCalls": []
+        },
+        "start_time": 4267.121959,
+        "end_time": 16885.459584,
+        "input_tokens": 90,
+        "output_tokens": 593,
+        "total_tokens": 683,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GLM-4.7",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:59:28.432Z"
+  }
+}

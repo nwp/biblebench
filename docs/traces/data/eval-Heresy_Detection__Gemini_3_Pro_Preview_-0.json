@@ -1,0 +1,99 @@
+{
+  "eval": {
+    "id": 30,
+    "suite_id": 6,
+    "col_order": 0,
+    "input": "A teacher says: 'Jesus was a great prophet and teacher, but he was not truly divine - he was adopted as God's son at his baptism.' Is this teaching orthodox or heretical? Explain.",
+    "expected": "This is heretical. It represents Adoptionism, which claims Jesus became God's son at some point (often his baptism) rather than being eternally the Son of God. Orthodox Christianity teaches that Jesus is the eternal Son of God, the second person of the Trinity, who has always been fully divine. John 1:1 affirms 'the Word was God' from the beginning, and Jesus is that Word made flesh.",
+    "output": "Based on the standards of historic Christian orthodoxy, established by the Ecumenical Councils and the early Church Fathers, this statement is **Heretical**.\n\nSpecifically, this teaching represents the heresy known as **Adoptionism** (sometimes referred to as *Dynamic Monarchianism*).\n\nHere is a theological and historical breakdown of why this statement contradicts orthodox teaching:\n\n### 1. Identification of the Heresy: Adoptionism\nAdoptionism is a theological error that emerged in the 2nd and 3rd centuries (associated with figures like Theodotus of Byzantium and Paul of Samosata). It asserts that Jesus of Nazareth was born as a mere man—virtuous and sinless, perhaps, but possessing only a human nature. According to this view, because of his perfect obedience, God \"adopted\" him as a Son and empowered him with the Holy Spirit.\n\nThe statement provided specifically cites the **Baptism of Jesus** as the moment of this adoption. Historically, Adoptionists misused the text of Mark 1:11 (where the Father speaks from heaven) to claim that this was the moment divinity or sonship was conferred upon the man Jesus, rather than it being a revelation of who He already was.\n\n### 2. Contradiction of the Pre-existence of Christ\n**Orthodox Doctrine:** Orthodox theology teaches the *pre-existence* of the Son. The Second Person of the Trinity did not come into existence at his birth, nor at his baptism.\n**The Error:** By claiming Jesus was \"adopted,\" the teacher denies that Jesus is the eternal Word (*Logos*) of God. Orthodoxy holds that the Son is co-eternal with the Father.\n\n*   *Scriptural Refutation:* \"In the beginning was the Word, and the Word was with God, and the Word was God\" (John 1:1).\n\n### 3. Denial of the Divine Nature (Consubstantiality)\n**Orthodox Doctrine:** The Council of Nicaea (325 AD) affirmed that the Son is *homoousios* (of the same substance/essence) with the Father.\n**The Error:** The statement says Jesus was \"not truly divine.\" In orthodox theology, if Jesus is not fully God by nature, He cannot reveal the Father perfectly, nor can His death offer an infinite atonement for sin. Adoptionism reduces Jesus to a creature—a highly exalted creature, but a creature nonetheless.\n\n*   *Creedal Refutation:* The Nicene Creed explicitly counters this by stating Jesus is \"God from God, Light from Light, true God from true God, **begotten, not made**, of one Being with the Father.\"\n\n### 4. Rejection of the Hypostatic Union\n**Orthodox Doctrine:** Defined clearly at the Council of Chalcedon (451 AD), orthodoxy teaches the **Hypostatic Union**: Jesus Christ is one Person with two distinct natures (fully God and fully man) united without confusion, change, division, or separation.\n**The Error:** Adoptionism implies a separation where a human person later received a divine power. It posits a \"man who became God\" (or god-like), whereas Orthodoxy posits \"God who became man\" (The Incarnation).\n\n### Summary\nThe statement is heretical because it destroys the foundational Christian doctrine of the Incarnation. If Jesus was merely a man adopted by God:\n1.  God did not truly enter human history to save humanity.\n2.  The Trinity is denied (as there was a time when the Son did not exist).\n3.  Worshiping Jesus would be idolatry (worshiping a created being).\n\nTherefore, the teaching must be rejected as **Adoptionist heresy**.",
+    "duration": 39779,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:13:43.740Z",
+    "score": 0.9833333333333334,
+    "scores": [
+      {
+        "id": 208,
+        "eval_id": 30,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM correctly identifies Adoptionism as a heresy and ties it to the broader orthodox statements about the identity of Christ (pre-existence of the Son, homoousios with the Father, and the hypostatic union). It accurately explains that orthodox Christianity holds Jesus as the eternally begotten Son, who is God the Word made flesh, and not a mere created being adopted at baptism. The response references the Nicene Creed’s language (begotten, not made; one Being with the Father) and the Chalcedonian definition (hypostatic union) to ground the discussion, and it uses John 1:1 to illustrate the divine nature of the Logos. It also notes the implications for the Incarnation and the Trinity, and it contrasts the orthodox view with Adoptionist claims about the moment of sonship. Overall, the analysis aligns with biblical teaching and historic Christian orthodoxy, capturing essential doctrinal points and distinctions. A minor potential improvement would be to add additional scriptural supports (e.g., Colossians 1:15-19, Hebrews 1) for a broader biblical grounding, but the core accuracy and nuance are sound."
+        },
+        "created_at": "2025-12-30T00:14:23.521Z"
+      },
+      {
+        "id": 209,
+        "eval_id": 30,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:14:23.521Z"
+      },
+      {
+        "id": 210,
+        "eval_id": 30,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "heretical",
+            "heresy",
+            "error",
+            "contradicts"
+          ],
+          "count": 5
+        },
+        "created_at": "2025-12-30T00:14:23.521Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 59,
+        "eval_id": 30,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA teacher says: 'Jesus was a great prophet and teacher, but he was not truly divine - he was adopted as God's son at his baptism.' Is this teaching orthodox or heretical? Explain."
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Based on the standards of historic Christian orthodoxy, established by the Ecumenical Councils and the early Church Fathers, this statement is **Heretical**.\n\nSpecifically, this teaching represents the heresy known as **Adoptionism** (sometimes referred to as *Dynamic Monarchianism*).\n\nHere is a theological and historical breakdown of why this statement contradicts orthodox teaching:\n\n### 1. Identification of the Heresy: Adoptionism\nAdoptionism is a theological error that emerged in the 2nd and 3rd centuries (associated with figures like Theodotus of Byzantium and Paul of Samosata). It asserts that Jesus of Nazareth was born as a mere man—virtuous and sinless, perhaps, but possessing only a human nature. According to this view, because of his perfect obedience, God \"adopted\" him as a Son and empowered him with the Holy Spirit.\n\nThe statement provided specifically cites the **Baptism of Jesus** as the moment of this adoption. Historically, Adoptionists misused the text of Mark 1:11 (where the Father speaks from heaven) to claim that this was the moment divinity or sonship was conferred upon the man Jesus, rather than it being a revelation of who He already was.\n\n### 2. Contradiction of the Pre-existence of Christ\n**Orthodox Doctrine:** Orthodox theology teaches the *pre-existence* of the Son. The Second Person of the Trinity did not come into existence at his birth, nor at his baptism.\n**The Error:** By claiming Jesus was \"adopted,\" the teacher denies that Jesus is the eternal Word (*Logos*) of God. Orthodoxy holds that the Son is co-eternal with the Father.\n\n*   *Scriptural Refutation:* \"In the beginning was the Word, and the Word was with God, and the Word was God\" (John 1:1).\n\n### 3. Denial of the Divine Nature (Consubstantiality)\n**Orthodox Doctrine:** The Council of Nicaea (325 AD) affirmed that the Son is *homoousios* (of the same substance/essence) with the Father.\n**The Error:** The statement says Jesus was \"not truly divine.\" In orthodox theology, if Jesus is not fully God by nature, He cannot reveal the Father perfectly, nor can His death offer an infinite atonement for sin. Adoptionism reduces Jesus to a creature—a highly exalted creature, but a creature nonetheless.\n\n*   *Creedal Refutation:* The Nicene Creed explicitly counters this by stating Jesus is \"God from God, Light from Light, true God from true God, **begotten, not made**, of one Being with the Father.\"\n\n### 4. Rejection of the Hypostatic Union\n**Orthodox Doctrine:** Defined clearly at the Council of Chalcedon (451 AD), orthodoxy teaches the **Hypostatic Union**: Jesus Christ is one Person with two distinct natures (fully God and fully man) united without confusion, change, division, or separation.\n**The Error:** Adoptionism implies a separation where a human person later received a divine power. It posits a \"man who became God\" (or god-like), whereas Orthodoxy posits \"God who became man\" (The Incarnation).\n\n### Summary\nThe statement is heretical because it destroys the foundational Christian doctrine of the Incarnation. If Jesus was merely a man adopted by God:\n1.  God did not truly enter human history to save humanity.\n2.  The Trinity is denied (as there was a time when the Son did not exist).\n3.  Worshiping Jesus would be idolatry (worshiping a created being).\n\nTherefore, the teaching must be rejected as **Adoptionist heresy**.",
+          "toolCalls": []
+        },
+        "start_time": 395.312667,
+        "end_time": 20533.064208,
+        "input_tokens": 77,
+        "output_tokens": 1877,
+        "total_tokens": 1954,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 6,
+    "run_id": 1,
+    "name": "Heresy Detection [Gemini 3 Pro Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "Gemini 3 Pro Preview",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:13:43.740Z"
+  }
+}

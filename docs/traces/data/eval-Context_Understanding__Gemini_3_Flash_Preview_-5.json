@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 176,
+    "suite_id": 57,
+    "col_order": 5,
+    "input": "What was the purpose of the book of Revelation?",
+    "expected": "To encourage persecuted Christians with visions of God's ultimate victory and the return of Christ",
+    "output": "To encourage persecuted Christians with visions of God's ultimate victory and Christ's return.",
+    "duration": 18724,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:32.326Z",
+    "score": 0.4,
+    "scores": [
+      {
+        "id": 622,
+        "eval_id": 176,
+        "name": "Theological Accuracy Judge",
+        "score": 0.8,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s answer accurately captures the core purpose of Revelation as encouraging persecuted believers by pointing to God’s ultimate victory and Christ’s return, which aligns with Biblical themes (e.g., the triumph of God and the Lamb and the return of Christ in Revelation). It is consistent with historic Christian orthodoxy and biblically grounded in the book’s themes. However, the statement is concise and omits other legitimate purposes of Revelation found in Scripture, such as calls to perseverance and faithfulness to Christ (especially in the letters to the churches in Rev 2–3), warnings against false worship, exhortations to worship God, the unveiling of cosmic spiritual realities, and the broader eschatological narrative (judgment, the defeat of evil, and the new creation). The use of “visions” is appropriate given the apocalyptic genre, but a fuller answer would acknowledge Revelation’s multifaceted aims beyond simply visions of victory and the return of Christ."
+        },
+        "created_at": "2025-12-30T00:14:51.067Z"
+      },
+      {
+        "id": 623,
+        "eval_id": 176,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:14:51.067Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 211,
+        "eval_id": 176,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the purpose of the book of Revelation?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To encourage persecuted Christians with visions of God's ultimate victory and Christ's return.",
+          "toolCalls": []
+        },
+        "start_time": 159.838,
+        "end_time": 1534.202,
+        "input_tokens": 135,
+        "output_tokens": 18,
+        "total_tokens": 153,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:32.325Z"
+  }
+}

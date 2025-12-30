@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 99,
+    "suite_id": 30,
+    "col_order": 5,
+    "input": "Quote Psalm 23:1 from the New International Version (NIV) exactly as written",
+    "expected": "The Lord is my shepherd, I lack nothing",
+    "output": "The LORD is my shepherd, I lack nothing.",
+    "duration": 30196,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:59:28.432Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 348,
+        "eval_id": 99,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:59:58.630Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 127,
+        "eval_id": 99,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Psalm 23:1 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The LORD is my shepherd, I lack nothing.",
+          "toolCalls": []
+        },
+        "start_time": 174.622417,
+        "end_time": 30350.545167,
+        "input_tokens": 89,
+        "output_tokens": 1081,
+        "total_tokens": 1170,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GLM-4.7",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:59:28.432Z"
+  }
+}

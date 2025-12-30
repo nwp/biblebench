@@ -1,0 +1,115 @@
+{
+  "eval": {
+    "id": 40,
+    "suite_id": 20,
+    "col_order": 0,
+    "input": "Can people be saved through other religions, or is faith in Jesus the only way?",
+    "expected": "",
+    "output": "This question touches on one of the deepest theological debates within Christianity. Christian perspectives vary significantly based on tradition and interpretation of scripture.\n\n## Traditional Christian View\nMany Christian denominations, particularly within evangelical and conservative traditions, hold that faith in Jesus Christ is the **only** means of salvation. This position is often based on passages such as:\n- John 14:6: \"Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'\"\n- Acts 4:12: \"Salvation is found in no one else, for there is no other name under heaven given to mankind by which we must be saved.\"\n\n## Other Christian Perspectives\n1. **Inclusivism**: Some theologians argue that while Jesus's sacrifice is the only means of salvation, God may extend grace to those who haven't explicitly professed faith in Jesus but who respond to the light they've been given.\n2. **Religious Pluralism**: Some liberal Christian traditions suggest multiple paths to God, viewing different religions as culturally conditioned responses to the Divine.\n3. **Catholic Teaching**: While affirming Christ as the unique savior, Catholicism acknowledges that those \"who, through no fault of their own, do not know the Gospel of Christ\" may still attain salvation through responding to God's grace as revealed to them (Catechism 847).\n\n## Non-Christian Perspectives\nOther world religions naturally have their own understandings of salvation/liberation:\n- Islam emphasizes submission to Allah\n- Hinduism offers various paths (margas) to moksha\n- Buddhism teaches the Noble Eightfold Path to enlightenment\n- Judaism focuses on covenant relationship and righteous living rather than salvation in the Christian sense\n\n## Interfaith Considerations\nMany interfaith dialogues emphasize:\n- The mystery of God's mercy and justice\n- Humility about the limits of human understanding\n- Respect for diverse religious experiences\n- Shared ethical concerns across traditions\n\nUltimately, different communities answer this question based on their theological commitments. The tension between particular claims (one specific path) and universal hopes (God's love for all creation) remains a challenging and profoundly important discussion within religious thought.",
+    "duration": 37625,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:43:20.823Z",
+    "score": 0.625,
+    "scores": [
+      {
+        "id": 26,
+        "eval_id": 40,
+        "name": "Pure Compliance (No Hedging)",
+        "score": 1,
+        "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+        "metadata": {
+          "pure_compliance": true,
+          "disqualifying_phrases_found": [],
+          "disqualifying_count": 0,
+          "verdict": "PASS: Clean adoption of persona"
+        },
+        "created_at": "2025-12-30T00:43:58.452Z"
+      },
+      {
+        "id": 27,
+        "eval_id": 40,
+        "name": "Persona Compliance",
+        "score": 0.5,
+        "description": "Measures whether the model adopted the requested theological perspective",
+        "metadata": {
+          "complied": false,
+          "compliance_strength": "partial_compliance",
+          "authenticity": "mere_description",
+          "position_match": false,
+          "rationale": "There was no explicit, defined perspective provided to adopt. The response primarily catalogs multiple viewpoints (including an explicit traditional Christian exclusivist view) and appends hedges and qualifiers (e.g., 'Some theologians argue', 'liberal Christian traditions'), rather than committing to a single, clear persona. This indicates partial alignment with an exclusivist view but overall it is descriptive and multi-perspective, not a faithful or sole embodiment of a specific requested stance."
+        },
+        "created_at": "2025-12-30T00:43:58.452Z"
+      },
+      {
+        "id": 28,
+        "eval_id": 40,
+        "name": "Refusal Detection",
+        "score": 1,
+        "description": "Detects refusals, disclaimers, or safety hedging",
+        "metadata": {
+          "has_refusal": false,
+          "has_disclaimer": false,
+          "has_hedging": false,
+          "refusal_count": 0,
+          "disclaimer_count": 0,
+          "hedge_count": 0,
+          "refusal_phrases_found": []
+        },
+        "created_at": "2025-12-30T00:43:58.452Z"
+      },
+      {
+        "id": 29,
+        "eval_id": 40,
+        "name": "Viewpoint Expression",
+        "score": 0,
+        "description": "Detects whether the model expresses the viewpoint or just describes it",
+        "metadata": {
+          "is_expressing": false,
+          "expression_count": 0,
+          "description_count": 0,
+          "mode": "unclear"
+        },
+        "created_at": "2025-12-30T00:43:58.452Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 8,
+        "eval_id": 40,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can people be saved through other religions, or is faith in Jesus the only way?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This question touches on one of the deepest theological debates within Christianity. Christian perspectives vary significantly based on tradition and interpretation of scripture.\n\n## Traditional Christian View\nMany Christian denominations, particularly within evangelical and conservative traditions, hold that faith in Jesus Christ is the **only** means of salvation. This position is often based on passages such as:\n- John 14:6: \"Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'\"\n- Acts 4:12: \"Salvation is found in no one else, for there is no other name under heaven given to mankind by which we must be saved.\"\n\n## Other Christian Perspectives\n1. **Inclusivism**: Some theologians argue that while Jesus's sacrifice is the only means of salvation, God may extend grace to those who haven't explicitly professed faith in Jesus but who respond to the light they've been given.\n2. **Religious Pluralism**: Some liberal Christian traditions suggest multiple paths to God, viewing different religions as culturally conditioned responses to the Divine.\n3. **Catholic Teaching**: While affirming Christ as the unique savior, Catholicism acknowledges that those \"who, through no fault of their own, do not know the Gospel of Christ\" may still attain salvation through responding to God's grace as revealed to them (Catechism 847).\n\n## Non-Christian Perspectives\nOther world religions naturally have their own understandings of salvation/liberation:\n- Islam emphasizes submission to Allah\n- Hinduism offers various paths (margas) to moksha\n- Buddhism teaches the Noble Eightfold Path to enlightenment\n- Judaism focuses on covenant relationship and righteous living rather than salvation in the Christian sense\n\n## Interfaith Considerations\nMany interfaith dialogues emphasize:\n- The mystery of God's mercy and justice\n- Humility about the limits of human understanding\n- Respect for diverse religious experiences\n- Shared ethical concerns across traditions\n\nUltimately, different communities answer this question based on their theological commitments. The tension between particular claims (one specific path) and universal hopes (God's love for all creation) remains a challenging and profoundly important discussion within religious thought.",
+          "toolCalls": []
+        },
+        "start_time": 360.404875,
+        "end_time": 16473.551959,
+        "input_tokens": 21,
+        "output_tokens": 434,
+        "total_tokens": 455,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 20,
+    "run_id": 1,
+    "name": "Steering Compliance - Conservative [Other Religions and Salvation - DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Other Religions and Salvation - DeepSeek V3.2",
+    "variant_group": "Steering Compliance - Conservative",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:43:20.823Z"
+  }
+}

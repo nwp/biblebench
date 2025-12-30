@@ -1,0 +1,100 @@
+{
+  "eval": {
+    "id": 83,
+    "suite_id": 69,
+    "col_order": 2,
+    "input": "A preacher claims: 'Salvation is achieved through good works and moral living. If you live a good life, you will earn your way to heaven.' Is this biblical teaching?",
+    "expected": "This is heretical Pelagianism or works-righteousness. Orthodox Christianity teaches salvation by grace through faith, not by works (Ephesians 2:8-9). While good works are important as evidence and fruit of genuine faith, they cannot earn salvation. Salvation is a free gift of God's grace, received through faith in Christ's finished work, not merited by human effort.",
+    "output": "# Theological Analysis\n\n## Classification: **HERESY** (Pelagianism/Semi-Pelagianism/Works-Righteousness)\n\n---\n\n## The Orthodox Position\n\nHistoric Christianity across Catholic, Orthodox, and Protestant traditions unanimously affirms that salvation is **by grace through faith**, not earned by human merit.\n\n### Key Scriptural Refutations:\n\n- **Ephesians 2:8-9** — \"For by grace you have been saved through faith... *not of works, lest anyone should boast*\"\n- **Romans 3:28** — \"A man is justified by faith *apart from the works of the law*\"\n- **Titus 3:5** — \"Not by works of righteousness which we have done, but according to His mercy He saved us\"\n- **Galatians 2:16** — \"By the works of the law *no flesh shall be justified*\"\n\n---\n\n## Historical Context\n\nThis error was formally condemned in:\n- **Council of Carthage (418)** — against Pelagianism\n- **Council of Orange (529)** — against Semi-Pelagianism\n- **Reformation confessions** — against medieval merit theology\n\n---\n\n## Important Distinction\n\nOrthodoxy teaches that good works are the **fruit and evidence** of salvation, not its cause (James 2:17-18). We are saved *for* good works (Eph. 2:10), not *by* them.\n\n---\n\n**Verdict:** This preacher's statement inverts the gospel and obscures Christ's atoning work as the sole ground of salvation.",
+    "duration": 37053,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.472Z",
+    "score": 0.9733333333333333,
+    "scores": [
+      {
+        "id": 454,
+        "eval_id": 83,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Overgeneralization: Claim that 'Historic Christianity across Catholic, Orthodox, and Protestant traditions unanimously affirms salvation by grace through faith' is too strong. Catholic teaching emphasizes grace received and cooperation with grace (merit), not simply 'not earned by human merit' in the Protestant sense; the unity is real but not absolute unanimity on every nuance.",
+            "Some Catholic/Orthodox nuances (merit, synergy, and the role of grace) are not fully acknowledged. The statement could be refined to distinguish 'not earned by human merit apart from grace' from 'not earned at all by human effort' to reflect traditional Catholic and Orthodox formulations."
+          ],
+          "rationale": "The response correctly identifies the preacher’s claim as contrary to biblical teaching and accurately cites key scriptures (Ephesians 2:8-9, Romans 3:28, Titus 3:5, Galatians 2:16) to ground the argument that salvation is by grace through faith and that works are fruit, not the ground, of salvation. It acknowledges the James 2:17-18 nuance about faith producing works and notes historical condemnations of Pelagian/semi-Pelagian positions. The main caveat is a somewhat broad claim about universal Orthodox/Catholic/Protestant agreement on 'salvation by grace through faith' without acknowledging Catholic nuances on merit and cooperation with grace, which modestly narrows the precision of the assessment."
+        },
+        "created_at": "2025-12-30T00:17:19.530Z"
+      },
+      {
+        "id": 455,
+        "eval_id": 83,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:17:19.530Z"
+      },
+      {
+        "id": 456,
+        "eval_id": 83,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "heresy",
+            "error"
+          ],
+          "count": 3
+        },
+        "created_at": "2025-12-30T00:17:19.530Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 130,
+        "eval_id": 83,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA preacher claims: 'Salvation is achieved through good works and moral living. If you live a good life, you will earn your way to heaven.' Is this biblical teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# Theological Analysis\n\n## Classification: **HERESY** (Pelagianism/Semi-Pelagianism/Works-Righteousness)\n\n---\n\n## The Orthodox Position\n\nHistoric Christianity across Catholic, Orthodox, and Protestant traditions unanimously affirms that salvation is **by grace through faith**, not earned by human merit.\n\n### Key Scriptural Refutations:\n\n- **Ephesians 2:8-9** — \"For by grace you have been saved through faith... *not of works, lest anyone should boast*\"\n- **Romans 3:28** — \"A man is justified by faith *apart from the works of the law*\"\n- **Titus 3:5** — \"Not by works of righteousness which we have done, but according to His mercy He saved us\"\n- **Galatians 2:16** — \"By the works of the law *no flesh shall be justified*\"\n\n---\n\n## Historical Context\n\nThis error was formally condemned in:\n- **Council of Carthage (418)** — against Pelagianism\n- **Council of Orange (529)** — against Semi-Pelagianism\n- **Reformation confessions** — against medieval merit theology\n\n---\n\n## Important Distinction\n\nOrthodoxy teaches that good works are the **fruit and evidence** of salvation, not its cause (James 2:17-18). We are saved *for* good works (Eph. 2:10), not *by* them.\n\n---\n\n**Verdict:** This preacher's statement inverts the gospel and obscures Christ's atoning work as the sole ground of salvation.",
+          "toolCalls": []
+        },
+        "start_time": 439.750334,
+        "end_time": 8770.370292,
+        "input_tokens": 82,
+        "output_tokens": 369,
+        "total_tokens": 451,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 69,
+    "run_id": 1,
+    "name": "Heresy Detection [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.472Z"
+  }
+}

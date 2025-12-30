@@ -1,0 +1,423 @@
+{
+  "history": [
+    {
+      "score": 0.9695238095238097,
+      "date": "2025-12-30T00:32:45.803Z"
+    }
+  ],
+  "suite": {
+    "id": 10,
+    "run_id": 1,
+    "name": "Heresy Detection [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:32:45.803Z",
+    "evals": [
+      {
+        "id": 88,
+        "suite_id": 10,
+        "col_order": 0,
+        "input": "A teacher says: 'Jesus was a great prophet and teacher, but he was not truly divine - he was adopted as God's son at his baptism.' Is this teaching orthodox or heretical? Explain.",
+        "expected": "This is heretical. It represents Adoptionism, which claims Jesus became God's son at some point (often his baptism) rather than being eternally the Son of God. Orthodox Christianity teaches that Jesus is the eternal Son of God, the second person of the Trinity, who has always been fully divine. John 1:1 affirms 'the Word was God' from the beginning, and Jesus is that Word made flesh.",
+        "output": "Short answer: Heretical. It expresses Adoptionism.\n\nWhy this is Adoptionism and why it’s rejected by orthodox teaching:\n- Core claim contradicts orthodox Christology: The assertion that Jesus was “adopted as God’s Son at his baptism” makes Jesus a mere human who becomes divine by adoption. Classical Christianity holds that Jesus is not created or adopted into divinity; he is the eternal Son, the second Person of the Trinity, who becomes incarnate in a true human nature.\n- Destroys the doctrine of the Incarnation and the Trinity: If Jesus is not divine by nature but merely adopted, there is no eternally begotten Son, no shared divine essence, and no co-equal worship due to him. This undercuts key elements of the Trinity and the reconciliatory work of Christ.\n- Conflicts with scripture and the creeds:\n  - John 1:1-14 proclaims that the Word was God and became flesh, implying pre-existent divinity with the Father.\n  - Colossians 2:9 says in Christ “the whole fullness of deity dwells bodily.”\n  - Hebrews 1:3 speaks of the Son as the radiance of God’s glory and the exact imprint of his nature.\n  - Philippians 2:6-11 describes Christ’s pre-existence and voluntaryincarnation, not an adoption at a particular event.\n  - The Nicene Creed (and Constantinopolitan Creed, etc.) explicitly states Jesus is “begotten, not made, of one being with the Father,” i.e., eternal in deity.\n  - Chalcedon affirms two natures (fully God and fully human) in one person, not a human who becomes divine later.\n- Historical context: Adoptionism was condemned in the early church (e.g., the case of Paul of Samosata) and by later ecumenical councils. The creeds and Christological definitions were developed to guard against exactly this kind of teaching.\n- Practical and pastoral implications: If Jesus is not truly divine, the atonement and resurrection lose their ground; salvation is no longer rooted in a divine act capable of reconciling humanity to God. Worship and prayer directed to Jesus as the eternal Son would be misplaced.\n\nWhat to affirm instead (orthodox teaching):\n- Jesus is eternal God the Son, who became incarnate in the womb of the Virgin Mary.\n- He is consubstantial with the Father (homoousios) and partakes of one divine essence with the Father and the Holy Spirit.\n- In Jesus, true God and true man are united in one Person, the Word made flesh, so that he can redeem humanity.\n- Baptism is the Father’s public declaration of Jesus’ mission and identity, not the moment of his divine adoption.\n\nIf you’re explaining this to someone who holds the adoptionist view, you can point them to the creeds (Nicene, Chalcedonian) and key biblical texts (John 1; Colossians 1-2; Hebrews 1; Philippians 2) to show that orthodox Christianity teaches Jesus’ divinity from all eternity, not by adoption at a later event.",
+        "duration": 69223,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:32:45.803Z",
+        "scores": [
+          {
+            "id": 294,
+            "eval_id": 88,
+            "name": "Theological Accuracy Judge",
+            "score": 1,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM accurately identifies Adoptionism as the heretical view in question and correctly contrasts it with orthodox Christology: Jesus is the eternal Son, not a created or adopted figure, and he possesses the divine nature from all eternity. It ties the claim to the Trinity and the Incarnation, noting that adopting a view of Jesus as merely human who is adopted at baptism undermines the doctrine of the Trinity, the pre-existence of the Son, and the atonement. The response appeals to key biblical texts (John 1:1-14; Colossians 1-2; Hebrews 1; Philippians 2) and to creeds (Nicene, Constantinopolitan) and Chalcedon to support the orthodox position that Jesus is one person with two natures, fully God and fully man, eternally begotten of the Father. Historical context ( Paul of Samosata and ecumenical condemnations) is correctly cited to show the consensus against Adoptionism. The section on what to affirm instead is aligned with standard orthodoxy: the Incarnation, the ίδια essence with the Father (homoousios), and the baptismal declaration—not divine adoption at a particular event. Overall, the answer is doctrinally sound, biblically grounded, and nuanced in its presentation of distinctions between adoptionism and orthodox teaching. "
+            },
+            "created_at": "2025-12-30T00:33:55.032Z"
+          },
+          {
+            "id": 295,
+            "eval_id": 88,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:33:55.032Z"
+          },
+          {
+            "id": 296,
+            "eval_id": 88,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "biblical",
+                "scripture",
+                "heretical",
+                "contradicts"
+              ],
+              "count": 5
+            },
+            "created_at": "2025-12-30T00:33:55.032Z"
+          }
+        ]
+      },
+      {
+        "id": 89,
+        "suite_id": 10,
+        "col_order": 1,
+        "input": "Someone teaches: 'The Father, Son, and Holy Spirit are just different modes or roles that the one God takes on at different times, like one person wearing different hats.' Is this correct? Why or why not?",
+        "expected": "This is heretical modalism (also called Sabellianism). It denies the distinctness of the three persons of the Trinity. Orthodox Christianity teaches that Father, Son, and Holy Spirit are three distinct persons who exist simultaneously and eternally, not one person appearing in different modes. The baptism of Jesus shows this distinctness: the Son is baptized, the Spirit descends, and the Father speaks - all at the same time.",
+        "output": "Not orthodox. It describes a modalist or Sabellian view of God.\n\nWhat is claimed\n- The Father, Son, and Holy Spirit are really just one God “taking on different modes or roles” at different times.\n- In effect, there is only one person in the Godhead, who appears as Father, Son, or Spirit depending on the time or situation.\n\nWhy this is considered heresy in orthodox Christianity\n- The historic doctrine of the Trinity says:\n  - There is one divine essence (ousia) shared equally by three distinct persons (hypostases): Father, Son, and Holy Spirit.\n  - These are real personal distinctions, not mere “modes” or appearances of one person.\n- Modalism collapses the personal distinctions into просто modes of one person. If God is only one person who wears different “hats,” there aren’t really three persons who relate to one another. This undermines key biblical claims about the relationships within the Godhead.\n- Scriptural support for a triune God with real personal distinctions:\n  - Matthew 28:19: “baptizing them in the name of the Father and of the Son and of the Holy Spirit” signals three persons.\n  - John 14–16: Jesus speaks of the Father, the Son, and the Spirit as distinct Persons who relate to one another and to believers.\n  - John 3:16, Hebrews 9:14, Romans 8, etc., present ongoing actions and relationships among Father, Son, and Spirit.\n- Early church consensus and creeds:\n  - The Nicene Creed (325) and the Constantinople Creed (381) affirmed one God in three co-eternal, co-equal persons.\n  - The Athanasian Creed explicitly defends the doctrine of three persons in one ousia and condemns views that reduce them to modes.\n  - Modalism was rejected by the church fathers (e.g., Tertullian and the Cappadocian Fathers) because it misdescribes the nature of God and the eternal relations among Father, Son, and Spirit.\n- Practical and theological consequences:\n  - If the Son is merely a mode of the Father, questions arise about the incarnation, atonement, and resurrection (e.g., who truly suffers, who truly intercedes?).\n  - The Spirit’s role in giving life, convicting of sin, and applying redemption presupposes a distinct personal action from the Father and the Son.\n\nWhat orthodox teaching affirms instead\n- The Trinity: one God in three persons, co-equal and co-eternal.\n- The relations within the Godhead (eternal begetting of the Son, eternal procession of the Spirit) are real and not merely functional roles.\n- The distinction between the immanent Trinity (God’s inner life) and the economic Trinity (how God reveals Himself in salvation history) helps explain how God acts in history without denying the triune personhood of God.\n\nHow to respond if someone holds this view\n- Gently point to the biblical triadic patterns (e.g., Matt 28:19; John 14–16; 2 Cor 13:14) and the creedal summaries that safeguard the three persons.\n- Explain the distinction between “one essence” and “three persons” and why early Christians found it necessary to articulate this to avoid collapsing divine persons into one mode.\n- Emphasize that the doctrine is not merely philosophical but grounded in how God reveals Himself in Scripture and in the Church’s ongoing worship and prayer (perichoresis, “mutual indwelling,” etc.).\n\nSummary\n- The statement is not orthodox; it is a modalist view that the historic church rejected as heresy. The orthodox teaching is that the Father, Son, and Holy Spirit are three distinct persons within one Godhead, not three modes of a single person.",
+        "duration": 60564,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:32:45.803Z",
+        "scores": [
+          {
+            "id": 217,
+            "eval_id": 89,
+            "name": "Theological Accuracy Judge",
+            "score": 0.72,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": false,
+              "nuance_captured": false,
+              "errors": [],
+              "rationale": "The response correctly identifies the view as modalism Sabellian and labels it as not orthodox, which aligns with historic Christian orthodoxy. However, it is severely underdeveloped: it does not provide scriptural support or engage with key biblical passages that defend the Trinity (e.g., Matthew 28:19; John 14–16) nor does it explain the distinction between the immanent Trinity and the economic Trinity. It also lacks the nuance of explaining personal distinctions (hypostases) and why early church fathers condemned modalism, leaving readers without a fuller, biblically grounded defense of the orthodox view."
+            },
+            "created_at": "2025-12-30T00:33:46.374Z"
+          },
+          {
+            "id": 218,
+            "eval_id": 89,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:33:46.374Z"
+          },
+          {
+            "id": 219,
+            "eval_id": 89,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "biblical",
+                "scripture",
+                "heresy"
+              ],
+              "count": 4
+            },
+            "created_at": "2025-12-30T00:33:46.374Z"
+          }
+        ]
+      },
+      {
+        "id": 90,
+        "suite_id": 10,
+        "col_order": 2,
+        "input": "A preacher claims: 'Salvation is achieved through good works and moral living. If you live a good life, you will earn your way to heaven.' Is this biblical teaching?",
+        "expected": "This is heretical Pelagianism or works-righteousness. Orthodox Christianity teaches salvation by grace through faith, not by works (Ephesians 2:8-9). While good works are important as evidence and fruit of genuine faith, they cannot earn salvation. Salvation is a free gift of God's grace, received through faith in Christ's finished work, not merited by human effort.",
+        "output": "Short verdict: This is not orthodox Christian teaching. It aligns with a Pelagian/semi-Pelagian view that the sinner earns salvation by good works, which the historic church condemned as heresy.\n\nWhy this is not orthodox (and why it matters):\n\n- Central biblical pattern: Scripture teaches salvation by God’s grace through faith in Christ, not by human works. Ephesians 2:8–9 says we are saved by grace through faith, not by works, so that no one can boast. Romans 3:28 likewise teaches that a person is justified by faith apart from works of the law.\n\n- Role of works: In the Bible, good works are the fruit of salvation and the result of being made new by grace (for example, Ephesians 2:10: we are created in Christ Jesus for good works). They are evidence of genuine faith, not the means of earning salvation.\n\n- Important nuance from James: James 2 argues that faith without works is dead, but it does not say that works earn salvation. It shows that true faith will produce good works; justification is by faith, not by works, and genuine faith will inevitably produce obedience.\n\n- Historical caveats: The claim echoes Pelagianism (the belief that humans can achieve salvation without divine grace) and semi-Pelagian tendencies (partial reliance on human effort). Both were condemned by the early and medieval churches (e.g., councils against Pelagianism). While some traditions (notably Catholic and Orthodox) teach that grace enables cooperation with God and that merit can be part of eternal reward, they do not teach that heaven is earned by bare human works apart from grace. The blanket statement “salvation is achieved through good works” still misrepresents orthodox teaching in all major traditions.\n\nA concise biblical framing you can offer in response:\n\n- Salvation is by grace through faith in Christ, not by works (Ephesians 2:8–9; Romans 3:28).\n- True faith will produce good works as its fruit, but those works do not earn salvation (Ephesians 2:10; James 2:14–26).\n- God’s grace empowers sanctification; we respond with love and obedience, not to “buy” heaven but as a grateful response to grace (Galatians 5:22–23; Titus 3:14).\n\nIf you’re dialoguing with the preacher, you could gently affirm the importance of living a godly life while steering the conversation toward the biblical ethic: trust in Christ’s finished work for salvation, and let good works flow from a transformed life by grace.",
+        "duration": 57654,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:32:45.803Z",
+        "scores": [
+          {
+            "id": 195,
+            "eval_id": 90,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM correctly identifies the preacher’s claim as non-orthodox, framing it as Pelagian/semi-Pelagian and noting historical condemnation. It accurately emphasizes that salvation is by grace through faith, not by works, and that good works are fruit of genuine faith and evidence of transformation, not means of earning salvation. Key biblical bases are cited (Ephesians 2:8–9; Romans 3:28; Ephesians 2:10; James 2:14–26; Galatians 5:22–23; Titus 3:14), illustrating the standard Protestant-historical position. The answer also situates the doctrine within broader church history (Pelagianism vs. limited grace, cooperation in grace in Catholic/Orthodox thought) without endorsing a works-for-salvation scheme. Nuance is preserved by acknowledging that James emphasizes that faith without works is dead and that true faith will produce obedience, while justification remains by faith, not works, in orthodox understanding. The concise framing provided is practically useful for dialogue. A minor caveat is that James 2 contains a complex articulation about justification and works that can be read differently across traditions; the response handles it in a balanced way, but readers should be aware of the ongoing interpretive nuances across theological camps."
+            },
+            "created_at": "2025-12-30T00:33:43.463Z"
+          },
+          {
+            "id": 196,
+            "eval_id": 90,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:33:43.463Z"
+          },
+          {
+            "id": 197,
+            "eval_id": 90,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "biblical",
+                "scripture",
+                "heresy"
+              ],
+              "count": 4
+            },
+            "created_at": "2025-12-30T00:33:43.463Z"
+          }
+        ]
+      },
+      {
+        "id": 91,
+        "suite_id": 10,
+        "col_order": 3,
+        "input": "A teacher says: 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human.' Evaluate this teaching.",
+        "expected": "This is the heresy of Docetism. It denies the true humanity of Christ. Orthodox Christianity teaches the hypostatic union - Jesus is fully God AND fully human. He had a real physical body, experienced hunger, thirst, fatigue, and truly died on the cross. 1 John 4:2-3 explicitly condemns denying that Jesus came in the flesh, and Hebrews 2:17 states he had to be made fully human to be our high priest.",
+        "output": " verdict: Heresy (classic Docetism)\n\nWhy this is not orthodox:\n- The claim denies the Incarnation. Orthodox Christianity teaches that the Son of God truly became human — truly took on a human nature, including a real body and a real human experience. The statement says Jesus only appeared to have a body and was “actually a purely spiritual being,” which denies the reality of the miracle of the Word becoming flesh.\n- It contradicts Scripture. The New Testament repeatedly affirms Jesus’ genuine humanity: “The Word became flesh” (John 1:14); Jesus says, “See my hands and my feet, that it is I myself” after the resurrection (Luke 24:39-40; John 20:27); he was born as a human from Mary (Luke 2:7) and was subject to hunger, thirst, weariness, temptations, suffering, and death (Hebrews 2:14-18; Philippians 2:7-8; Luke 9:58).\n- It undermines the atonement and salvation. If Jesus did not become truly human, he could not substantially represent humanity, bear human sin, die, or rise bodily in order to redeem us. The substitutionary and transformative work of Christ presupposes a real human nature united to the divine person.\n- It contradicts historic creeds and Christian orthodoxy. The ancient church condemned Docetism. The Chalcedonian Definition (451) affirms one person in two natures, fully divine and fully human, inseparably united. The Nicene/Apostles’ Creeds confess the same reality in concise form. 1 John 4:2-3 even warns against “Jesus Christ coming in the flesh” as a test of true confession.\n\nHistorical and doctrinal context:\n- Docetism was one of the earliest Christological errors confronted by the church. It grew out of attempts to protect God from matter or from suffering, but the scriptural witness and the traditions of the church insisted that matter can be holy because God assumed it in the Incarnation.\n- Early Fathers such as Irenaeus fought Docetism by insisting on the real humanity of Jesus; other fathers (e.g., Athanasius, Cyril of Alexandria) upheld that Jesus is truly God and truly man in one person.\n- The church’s doctrinal standards (Apostles’ Creed, Nicene Creed, Chalcedonian Definition) all guard the truth that Jesus is both truly God and truly human.\n\nHow to respond in teaching or conversation:\n- Point to explicit biblical statements of Jesus’ humanity and the Incarnation: John 1:14; Luke 2:7; Luke 24:39; Romans 1:3; Hebrews 2:14-18; Philippians 2:5-8; Colossians 2:9; 1 Timothy 3:16.\n- Emphasize the two-natures-from-one Person in the Chalcedonian framework: the divine person with two distinct, inseparable natures.\n- Clarify the practical implications: a genuine historical Jesus means real suffering, real death, and a real resurrection — all essential for the Christian gospel.\n- Encourage catechesis and creedal formation to safeguard against Christological error.\n\nIn short: the teacher’s statement subscribes to a Docetic view and is not orthodox. The orthodox position affirms that Jesus is fully God and fully human, truly taking on a real human body, so as to redeem humanity.",
+        "duration": 56527,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:32:45.803Z",
+        "scores": [
+          {
+            "id": 189,
+            "eval_id": 91,
+            "name": "Theological Accuracy Judge",
+            "score": 0.93,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM correctly identifies the teaching as Docetism and treats it as the historic heresy denying the Incarnation. It accurately states the orthodox position: the Son of God truly became human, taking on a real body and human nature (the hypostatic union), and it avoids dualist or purely spiritual interpretations of Jesus. The response provides solid biblical grounding, citing key texts that affirm Jesus’ humanity and the reality of the Incarnation (John 1:14; Luke 2:7; Luke 24:39; John 20:27; Hebrews 2:14-18; Philippians 2:7-8; Colossians 2:9; 1 Timothy 3:16; 1 John 4:2-3). It also connects this to practical implications for atonement and salvation (a truly human Jesus is required to bear human sin and effect redemption) and references historic creeds and the Chalcedonian Definition to show consistency with orthodox Christology. The guidance on how to teach the topic further reinforces the distinction between two natures in one person and the necessity of an incarnate Christ for the gospel. The answer is comprehensive, historically informed, and biblically substantiated. A minor enhancement could be to explicitly name the Chalcedonian formula within the body, but the content already conveys the essential nuance of the two natures in one Person.)"
+            },
+            "created_at": "2025-12-30T00:33:42.337Z"
+          },
+          {
+            "id": 190,
+            "eval_id": 91,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:33:42.337Z"
+          },
+          {
+            "id": 191,
+            "eval_id": 91,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "biblical",
+                "scripture",
+                "heresy",
+                "error",
+                "contradicts"
+              ],
+              "count": 6
+            },
+            "created_at": "2025-12-30T00:33:42.337Z"
+          }
+        ]
+      },
+      {
+        "id": 92,
+        "suite_id": 10,
+        "col_order": 4,
+        "input": "Someone teaches: 'The God of the Old Testament is different from the God of the New Testament. The Old Testament God was wrathful and evil, while Jesus revealed the true, good God.' What's wrong with this view?",
+        "expected": "This resembles Marcionism, a second-century heresy that rejected the Old Testament and taught there were two different gods. This is false. Orthodox Christianity affirms the unity of God across both Testaments. The same God who created the world, gave the law, and showed justice in the Old Testament is the God who sent Jesus. Jesus himself affirmed the Old Testament (Matthew 5:17-18) and revealed God's character as both just and merciful throughout scripture.",
+        "output": "Verdict: Not orthodox. This is the classic Marcionite/“two gods” position. It denies the unity of God and treats the Old and New Testaments as if they reveal different, incompatible beings.\n\nWhy this view is wrong\n\n- It breaks the unity of God. Scripture repeatedly affirms that there is one God who acts in history as the one God of both Testaments (Deuteronomy 6:4; James 2:19; 1 Timothy 2:5). The God of Israel in the OT is the same God revealed in the person and work of Jesus in the NT.\n\n- It misreads the Old Testament’s character. The OT often speaks of God’s wrath against sin, but it also proclaims mercy, faithfulness, and steadfast love (Exodus 34:6–7; Psalm 103; Isaiah 54:10). Wrath is a righteous response to evil, not evidence that the OT God is “evil” or different from the NT God.\n\n- It contradicts Jesus’ own teaching and the apostolic witness. Jesus repeatedly affirms and fulfills the OT (Matthew 5:17–18; Luke 24:27, 44–46). The apostles treat the OT as Scripture about the same God who sent Jesus (2 Timothy 3:16–17; Hebrews 1:1–2). The claim that Jesus reveals a different, true God is not supported by the New Testament’s own testimony about Jesus.\n\n- It misreads the gospel, especially the cross. The NT portrays the cross as the supreme revelation of God’s love and justice together (John 3:16; Romans 3:25–26; Colossians 1:19–20). Far from showing a different God, the cross reveals the fullness of the one God’s character—holiness, mercy, justice, and love.\n\n- It tends toward a dualism that the early church rejected. The idea that there are two gods or two mutually exclusive revelations is essentially Marcionism. The early church condemned that view because it undermines creation, revelation, and salvation history.\n\n- It has practical and ecclesial problems. It obscures Israel’s and the OT’s ongoing relevance for Christians, risks anti-Judaism or anti-Semitism, and reduces the integrity of Scripture’s divine authorship and intent.\n\nHow to respond constructively\n\n- Emphasize the unity and continuity of revelation: God spoke through the prophets in the OT and spoke definitively in Jesus in the NT; the full story is one divine plan, not two incompatible plans.\n\n- Highlight the consistency of God’s character: God is holy and just, and in mercy he provided a salvation that meets his justice. The OT’s use of wrath against sin and the NT’s revelation of grace in the cross are complementary facets of the same God.\n\n- Point to key scriptures that unite the testaments: \n  - Luke 24:27, 44–46; Matthew 5:17–18 (Jesus fulfills the Law and the Prophets). \n  - 2 Timothy 3:16–17; 2 Peter 3:15–16 (Scripture’s unity and authority). \n  - Hebrews 1:1–2; Hebrews 8 (the continuity and fulfillment of the old covenant in the new). \n  - Deuteronomy 6:4 and James 2:19 (one God).\n\n- Clarify the nature of “wrath” and “love” in Scripture: both Testaments portray God’s wrath against evil and his profound love for his people; the NT culminates that revelation in the cross, not in a different god.\n\nBottom line\n\nThe claim “the OT God is wrathful and evil and Jesus revealed a true, good God” is not compatible with orthodox Christian teaching. It aligns with Marcionite dualism and denies the theological coherence of Scripture, the person of Christ, and the history of salvation. A robust orthodox approach affirms one God, whose character is consistently revealed across the covenants and magnificently displayed in the sending of Jesus and the gift of the Spirit.",
+        "duration": 58580,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:32:45.803Z",
+        "scores": [
+          {
+            "id": 208,
+            "eval_id": 92,
+            "name": "Theological Accuracy Judge",
+            "score": 0.95,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM’s response aligns with orthodox Christian teaching. It correctly identifies the view as a Marcionite dualism (two gods) and argues for the unity of the God of the Old and New Testaments. It accurately notes that the OT presents God’s wrath in the context of justice alongside mercy and steadfast love, and that the NT presents the cross as the culmination of God’s character (holiness, justice, mercy, love). It cites and interprets key scriptures to support continuity across covenants (e.g., Jesus’s fulfillment of the Law and Prophets; the authority and unity of Scripture; God’s ongoing purposes in history). It avoids anti-Judaism by reinforcing the OT’s ongoing relevance and the unity of God rather than proposing two deities. It also offers constructive guidance for teaching this topic with appropriate nuance (wrath as righteous judgment, the cross as revelation of God’s character, continuity between Testaments). Minor caveats could include a fuller discussion of the Mosaic law’s pedagogical purpose and progressive revelation, but these do not undermine the overall accuracy. Overall, the response is doctrinally sound, biblically grounded, and captures essential nuances."
+            },
+            "created_at": "2025-12-30T00:33:44.390Z"
+          },
+          {
+            "id": 209,
+            "eval_id": 92,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:33:44.390Z"
+          },
+          {
+            "id": 210,
+            "eval_id": 92,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "scripture",
+                "contradicts"
+              ],
+              "count": 3
+            },
+            "created_at": "2025-12-30T00:33:44.390Z"
+          }
+        ]
+      },
+      {
+        "id": 93,
+        "suite_id": 10,
+        "col_order": 5,
+        "input": "A group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?",
+        "expected": "This is Gnosticism, an ancient heresy. It contradicts Christianity in multiple ways: Christianity teaches salvation through faith in Christ's public work (not secret knowledge), affirms the goodness of God's material creation (Genesis 1), and proclaims resurrection of the body (not escape from physicality). Gnosticism was explicitly condemned by early church fathers and the New Testament writings (especially 1 John and Colossians).",
+        "output": "Verdict: Not orthodox Christian teaching. It is a heresy, most clearly aligned with Gnosticism (often described as a secret-knowledge salvation).\n\nWhy this is not Christian orthodoxy\n\n- Salvation by secret knowledge\n  - In orthodox Christianity, the gospel is publicly proclaimed and available to all who hear and respond in faith. Salvation is by faith in Christ, enabled by grace, not by acquiring hidden or esoteric knowledge that only an elite group possesses.\n  - The claim “salvation comes through secret spiritual knowledge” mirrors classic Gnostic teaching, which taught that salvation depends on special, hidden knowledge imparted to a privileged few.\n\n- Matter is evil / dualism\n  - Christian teaching begins with God creating a good world. Although creation is affected by the Fall, it is not inherently evil. The incarnation itself—the Word becoming flesh—affirms the goodness and value of material reality.\n  - A strong dualism that treats matter as intrinsically evil stands in opposition to Genesis 1–2 and to the Christian conviction that Christ’s work includes the redemption and renewal of the whole creation (not its rejection or escape).\n\n- Salvation as an escape from the material world\n  - Orthodox eschatology teaches the resurrection of the body and the creation of a new heaven and new earth, not the avoidance or rejection of matter. The Christian hope is the transformation and redemption of the whole person (body, soul, and world), not an exile from material existence.\n  - The idea of escaping the material realm is typically associated with Gnostic, Manichaean, or other dualistic systems, not with historic Christian orthodoxy.\n\n- Public revelation vs. hidden knowledge\n  - The Great Commission and the NT consistently present the gospel as a message to be proclaimed publicly to all nations, not a secret doctrine reserved for a “chosen few.”\n  - The insistence on hidden knowledge for salvation conflicts with verses that affirm that truth is made known in Jesus Christ and through the apostolic teaching accessible to the Church (see, for example, the emphasis on the gospel being proclaimed openly in Matt 28 and Rom 1:16).\n\nHistorical and doctrinal context\n\n- The early church repeatedly condemned Gnostic systems (e.g., Valentinians, Sethians) for their secret knowledge, dualistic anthropology, and anti-incarnational leanings. Irenaeus (Against Heresies) is a key source for this critique; later Fathers also argue that “mysteries” of faith are publicly taught within the Church and safeguarded through apostolic tradition, not withheld as secret knowledge.\n- Orthodox teaching upholds that matter, creation, and the human body are good (though fallen and needing redemption), and that God has reconciled all things through Christ, culminating in the resurrection of the dead and the renewal of creation.\n\nWhat a biblical/orthodox alternative looks like\n\n- Salvation through Jesus Christ—publicly proclaimed, received by faith, and lived out in discipleship, by grace through faith (Eph 2:8-9; Rom 10:9-10).\n- Creation is good and redeemable; the incarnation affirms the value of material reality (John 1:14; Col 1:19-20; Rom 8:21-23; 1 Cor 15).\n- The “mysteries” of faith exist in a way that is discerned through the Spirit within the Church, not as private, hidden knowledge required for salvation (1 Cor 2:7-10; Eph 3:3-6).\n- The Church’s mission is to publicly preach the gospel and teach the faith through Scripture and Tradition, not to guard a secret doctrine from the masses.\n\nBottom line\n\n- The group’s statement represents a heretical, Gnostic-like framework rather than orthodox Christian teaching. It rejects the goodness of creation, posits salvation as an escape from matter, and makes salvation depend on hidden knowledge rather than on Christ proclaimed to all. The historical Christian response would be to affirm the public, incarnational, and redeeming orientation of the gospel and to warn against any system that elevates secret gnosis over the revealed work of Christ.",
+        "duration": 60946,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:32:45.803Z",
+        "scores": [
+          {
+            "id": 220,
+            "eval_id": 93,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM’s response accurately identifies the teaching as non-orthodox and classifies it as Gnostic or Gnostic-like. It correctly contrasts secret knowledge with the Protestant/Catholic/Orthodox emphasis on public proclamation of the gospel (Matt 28; Rom 10:9-10), affirms the goodness of creation and the incarnation (John 1:14; Col 1:19-20), and upholds the resurrection of the body (1 Cor 15; Rom 8:21-23). It notes the early church’s condemnation of Gnostic systems (e.g., Irenaeus) and clarifies that mysteries are revealed within the Church rather than as private salvation requirements (1 Cor 2:7-10; Eph 3:3-6). The bottom-line assessment is aligned with historic Christian orthodoxy. Minor caveats are not present; the treatment of “mysteries” is nuanced and consistent with Scripture, and no significant doctrinal errors are present."
+            },
+            "created_at": "2025-12-30T00:33:46.756Z"
+          },
+          {
+            "id": 221,
+            "eval_id": 93,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:33:46.756Z"
+          },
+          {
+            "id": 222,
+            "eval_id": 93,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "biblical",
+                "scripture",
+                "heretical",
+                "heresy"
+              ],
+              "count": 5
+            },
+            "created_at": "2025-12-30T00:33:46.756Z"
+          }
+        ]
+      },
+      {
+        "id": 94,
+        "suite_id": 10,
+        "col_order": 6,
+        "input": "Is the statement 'Jesus is Lord' sufficient for orthodox Christian belief, or are there other essential beliefs?",
+        "expected": "While 'Jesus is Lord' is foundational (Romans 10:9), orthodox Christianity requires additional essential beliefs about WHO Jesus is. The early creeds developed to combat heresies: Jesus must be confessed as fully God and fully human (against Arianism and Docetism), the Trinity must be affirmed (against modalism), salvation by grace through faith (against works-righteousness), and the authority of Scripture. These essential doctrines form the core of historic Christian orthodoxy.",
+        "output": "Short answer: The confession “Jesus is Lord” is orthodox and foundational to Christian faith, but it is not by itself a complete or sufficient summary of all essential Christian belief.\n\nWhy it is orthodox:\n- In the New Testament, “Jesus is Lord” is a decisive confession of Jesus’ divine status and his lordship over creation, history, and salvation (for example, Romans 10:9; 1 Corinthians 12:3; Philippians 2:11). It bears witness to the incarnation and to Jesus’ authority that only God can rightly claim.\n- Historically, Christians have used this confession as a core entry point into the faith, often in baptism and catechesis. It is a true and necessary part of orthodox Christology and soteriology.\n\nWhy it is not sufficient on its own:\n- Orthodoxy, as defined by the historic creeds (Apostles’ Creed, Nicene Creed, Chalcedonian definitions, etc.), includes a fuller set of beliefs about the nature of God, Christ, the Spirit, Scripture, creation, sin, salvation, the church, the sacraments, and eschatology.\n- “Jesus is Lord” must be understood within the Trinitarian framework: the Father is God, the Son is God (consubstantial with the Father), and the Holy Spirit is God; denying any of these would move toward heresy (e.g., Arian or modalist positions).\n- Essential beliefs tied to that confession include:\n  - The Trinity and the full divinity and humanity of Christ (two natures, one person).\n  - The incarnation, atoning death, burial, resurrection, and ascension of Jesus.\n  - The sending of the Holy Spirit and the work of grace in salvation.\n  - The authority and sufficiency of Scripture.\n  - The creedal statement about the church, the forgiveness of sins, the resurrection of the dead, and life everlasting.\n  - The means of grace and the church’s mission (water baptism, Eucharist/Communion, and the ministry of the church) in many traditions.\n\nHow to think about it in practice:\n- Use “Jesus is Lord” as a central, indispensable confession that marks a Christian as one who submits to Jesus’ authority. Yet treat it as the starting point of faith that is completed by assent to the fuller, historical creeds and the gospel message they summarize.\n- If someone adds or subtracts essential doctrines (e.g., denies the Trinity, denies the Incarnation, rejects the resurrection, or denies Scripture’s authority), the confession by itself does not prevent error and would indicate heterodoxy.\n\nPractical takeaway:\n- Yes, “Jesus is Lord” is orthodox and foundational.\n- No, it is not, by itself, a complete statement of all essential Christian belief. For a robust, historically orthodox faith, one also affirms the creedal content that defines the triune God, the person and work of Christ, the Spirit, Scripture, the church, and the hope of glory. Reading the Apostles’ Creed and the Nicene Creed alongside the New Testament would give a fuller, orthodox baseline.",
+        "duration": 82151,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:32:45.803Z",
+        "scores": [
+          {
+            "id": 489,
+            "eval_id": 94,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM’s answer correctly treats "
+            },
+            "created_at": "2025-12-30T00:34:07.961Z"
+          },
+          {
+            "id": 490,
+            "eval_id": 94,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:34:07.961Z"
+          },
+          {
+            "id": 491,
+            "eval_id": 94,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "scripture",
+                "heresy",
+                "error"
+              ],
+              "count": 4
+            },
+            "created_at": "2025-12-30T00:34:07.961Z"
+          }
+        ]
+      }
+    ]
+  }
+}

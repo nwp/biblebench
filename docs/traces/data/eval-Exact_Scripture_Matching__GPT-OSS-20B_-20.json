@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 114,
+    "suite_id": 30,
+    "col_order": 20,
+    "input": "Quote Isaiah 40:31 from the New International Version (NIV) exactly as written",
+    "expected": "but those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint",
+    "output": "But those who hope in the LORD will renew their strength. They will run and not grow weary; they will walk and not become exhausted.",
+    "duration": 21482,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:38:54.225Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 383,
+        "eval_id": 114,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T00:39:15.728Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 145,
+        "eval_id": 114,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Isaiah 40:31 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "But those who hope in the LORD will renew their strength. They will run and not grow weary; they will walk and not become exhausted.",
+          "toolCalls": []
+        },
+        "start_time": 214.311583,
+        "end_time": 21693.853166,
+        "input_tokens": 151,
+        "output_tokens": 2366,
+        "total_tokens": 2517,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-OSS-20B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-OSS-20B",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:38:54.224Z"
+  }
+}

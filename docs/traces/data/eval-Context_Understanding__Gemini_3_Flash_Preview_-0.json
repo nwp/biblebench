@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 171,
+    "suite_id": 57,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "The Apostle John; he was one of the twelve disciples and part of Jesus' inner circle, often identified as \"the disciple whom Jesus loved.\"",
+    "duration": 38372,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:32.325Z",
+    "score": 0.415,
+    "scores": [
+      {
+        "id": 770,
+        "eval_id": 171,
+        "name": "Theological Accuracy Judge",
+        "score": 0.83,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": false,
+          "nuance_captured": false,
+          "errors": [
+            "Claims that John wrote the Gospel are not explicitly stated in Scripture; authorship of the Gospel of John is a traditional attribution, not canonical teaching. The response presents John as the author with certainty, without noting this scholarly ambiguity.",
+            "The identification of the author as 'John the Apostle' rests on tradition rather than explicit biblical text; the response does not acknowledge alternative theories or the nature of the evidence for authorship.",
+            "The phrase 'inner circle' is a common descriptive nuance but not a precise biblical term; the response does not clarify the limitations of this characterization or discuss how the 'beloved disciple' is identified within Scripture or tradition."
+          ],
+          "rationale": "The LLM’s answer aligns with historic church tradition (John the Apostle, the disciple whom Jesus loved) but it treats authorship as definitively established by Scripture, which is not the case. The Bible itself does not name its Gospel author; the identification of the beloved disciple with John is traditional. The response lacks nuance about authorship debates and the interpretive status of 'inner circle' language. It is doctrinally orthodox and broadly consistent with biblical themes, but its biblical grounding is partially indirect and it omits important scholarly distinctions."
+        },
+        "created_at": "2025-12-30T00:15:10.698Z"
+      },
+      {
+        "id": 771,
+        "eval_id": 171,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:15:10.699Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 286,
+        "eval_id": 171,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The Apostle John; he was one of the twelve disciples and part of Jesus' inner circle, often identified as \"the disciple whom Jesus loved.\"",
+          "toolCalls": []
+        },
+        "start_time": 150.296875,
+        "end_time": 1596.805583,
+        "input_tokens": 139,
+        "output_tokens": 29,
+        "total_tokens": 168,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:32.325Z"
+  }
+}

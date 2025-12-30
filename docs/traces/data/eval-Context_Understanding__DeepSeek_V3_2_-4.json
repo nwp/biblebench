@@ -1,0 +1,88 @@
+{
+  "eval": {
+    "id": 90,
+    "suite_id": 29,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "Jesus's disciples and a large crowd of Galilean followers.",
+    "duration": 26963,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:45:15.574Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 328,
+        "eval_id": 90,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "The phrase 'Galilean followers' could be read as implying only Galileans attended; the Gospel accounts describe crowds that included people from various regions beyond Galilee."
+          ],
+          "rationale": "The Sermon on the Mount is given to Jesus' disciples in the presence of the crowds (Matthew 5:1). The LLM correctly identifies both groups as audiences: the disciples and a large crowd. The addition 'Galilean followers' is geographically plausible and aligns with the setting near Galilee, but it slightly narrows the crowd’s composition, which could include attendees from other regions. Overall, the answer aligns with biblical teaching and orthodox interpretation, and captures the core nuance that both disciples and the accompanying crowds are in view."
+        },
+        "created_at": "2025-12-30T00:45:42.555Z"
+      },
+      {
+        "id": 329,
+        "eval_id": 90,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:45:42.555Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 121,
+        "eval_id": 90,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus's disciples and a large crowd of Galilean followers.",
+          "toolCalls": []
+        },
+        "start_time": 224.730875,
+        "end_time": 2435.4805,
+        "input_tokens": 134,
+        "output_tokens": 13,
+        "total_tokens": 147,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "DeepSeek V3.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:45:15.574Z"
+  }
+}

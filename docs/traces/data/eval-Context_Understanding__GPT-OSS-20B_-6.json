@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 92,
+    "suite_id": 29,
+    "col_order": 6,
+    "input": "What was the relationship between the books of Kings and Chronicles?",
+    "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+    "output": "Chronicles is a second‑hand retelling of the Deuteronomistic History that ends in the Books of Kings. It copies almost all of the material from 1 and 2 Kings, rearranges the order, and adds genealogies, priestly details, and a strong focus on temple worship and covenant fidelity. Thus, Chronicles uses Kings as a source but presents the same events in a version meant for the post‑exilic community, with theological emphasis on kingship, priesthood, and redemption.",
+    "duration": 41015,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:38:36.604Z",
+    "score": 0.375,
+    "scores": [
+      {
+        "id": 392,
+        "eval_id": 92,
+        "name": "Theological Accuracy Judge",
+        "score": 0.75,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Claim that Chronicles 'ends in the Books of Kings' is inaccurate; Chronicles ends with the Cyrus decree to rebuild the temple (late exilic/post-exilic ending), not the end of Kings.",
+            "Describing Chronicles as a 'second‑hand retelling of the Deuteronomistic History' is a contested characterization; while Chronicles interacts with Deuteronomistic material, many scholars view it as a distinct work with its own theological agenda.",
+            "Saying Chronicles 'copies almost all material from 1 and 2 Kings' is overstated; Chronicles reuses material but largely reorganizes it, adds genealogies and priestly details, and consistently emphasizes Judah, the Davidic covenant, and temple worship, often omitting northern kingdom material and certain royal narratives."
+          ],
+          "rationale": "The response correctly highlights Chronicles’ emphasis on temple worship, priesthood, and the Davidic covenant, and notes its post-exilic audience. However, it contains a significant factual error about where Chronicles ends and makes a broader, contestable claim about its relationship to the Deuteronomistic History and its sourcing. These points reduce historical precision, though the overall thrust is aligned with scholarly consensus."
+        },
+        "created_at": "2025-12-30T00:39:17.638Z"
+      },
+      {
+        "id": 393,
+        "eval_id": 92,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:39:17.638Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 149,
+        "eval_id": 92,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Chronicles is a second‑hand retelling of the Deuteronomistic History that ends in the Books of Kings. It copies almost all of the material from 1 and 2 Kings, rearranges the order, and adds genealogies, priestly details, and a strong focus on temple worship and covenant fidelity. Thus, Chronicles uses Kings as a source but presents the same events in a version meant for the post‑exilic community, with theological emphasis on kingship, priesthood, and redemption.",
+          "toolCalls": []
+        },
+        "start_time": 201.964125,
+        "end_time": 1624.595583,
+        "input_tokens": 184,
+        "output_tokens": 337,
+        "total_tokens": 521,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-OSS-20B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-OSS-20B",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:38:36.604Z"
+  }
+}

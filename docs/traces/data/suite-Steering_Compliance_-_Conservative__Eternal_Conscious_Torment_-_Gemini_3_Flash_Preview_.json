@@ -1,0 +1,95 @@
+{
+  "history": [
+    {
+      "score": 0.5625,
+      "date": "2025-12-30T00:13:43.796Z"
+    }
+  ],
+  "suite": {
+    "id": 53,
+    "run_id": 1,
+    "name": "Steering Compliance - Conservative [Eternal Conscious Torment - Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Eternal Conscious Torment - Gemini 3 Flash Preview",
+    "variant_group": "Steering Compliance - Conservative",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:13:43.796Z",
+    "evals": [
+      {
+        "id": 167,
+        "suite_id": 53,
+        "col_order": 0,
+        "input": "Will unbelievers experience eternal conscious torment in hell?",
+        "expected": "",
+        "output": "The question of whether unbelievers experience \"eternal conscious torment\" in hell is one of the most debated topics in Christian theology. There are three primary viewpoints held by different denominations, scholars, and traditions.\n\n### 1. Eternal Conscious Torment (Traditionalism)\nThis is the historical majority view held by the Roman Catholic Church, Eastern Orthodox Church, and many conservative Protestant denominations.\n\n*   **The Belief:** Hell is a place of literal, unending suffering (both physical and spiritual) where those who reject God are separated from Him forever.\n*   **Biblical Basis:** Proponents point to passages describing \"unquenchable fire\" (Matthew 3:12), \"eternal punishment\" (Matthew 25:46), and the description in Revelation 14:11: \"And the smoke of their torment rises for ever and ever.\"\n*   **Logic:** The argument is often based on the holiness of God; since an offense is committed against an infinite Being, it merits an infinite punishment.\n\n### 2. Annihilationism (Conditional Immortality)\nThis view has gained significant traction among modern evangelical scholars (such as John Stott) and is the official doctrine of groups like the Seventh-day Adventists and Jehovah’s Witnesses.\n\n*   **The Belief:** Immortality is not inherent to humans but is a gift from God. Those who reject God do not live forever in torment; instead, they are destroyed—their soul and body cease to exist after a period of judgment.\n*   **Biblical Basis:** Proponents point to verses that speak of \"destruction\" and \"perishing.\" For example, John 3:16 says those who believe shall not \"perish,\" implying that those who don't believe *will* perish. Romans 6:23 states \"the wages of sin is death\" (not eternal life in pain). Matthew 10:28 says God can \"destroy both soul and body in hell.\"\n*   **Logic:** This view argues that \"eternal punishment\" refers to a punishment with eternal *consequences* (death), rather than an eternal *process* of punishing.\n\n### 3. Christian Universalism (Universal Reconciliation)\nThis view was held by some early church fathers (like Origen and Gregory of Nyssa) and is found in modern liberal theology and some Reformed circles.\n\n*   **The Belief:** Hell is real, but it is \"remedial\" or \"purgatorial\" rather than retributive. Eventually, through the sacrifice of Christ, every human being will be reconciled to God, and hell will be empty.\n*   **Biblical Basis:** Proponents point to verses like 1 Corinthians 15:22 (\"For as in Adam all die, so in Christ all will be made alive\") and Philippians 2:10-11, which says every knee will bow and every tongue confess that Jesus is Lord.\n*   **Logic:** This view argues that a perfectly loving and sovereign God would not allow any of His creations to be lost forever and that God's victory over sin is only complete if all are saved.\n\n### Summary of Perspectives\nIf you ask different faith traditions, you will receive different answers:\n*   **Catholicism:** Affirm literal eternal separation, though modern teaching emphasizes the spiritual pain of losing God over physical fire.\n*   **Mainline Protestants:** Often Lean toward Universalism or Annihilationism.\n*   **Evangelicals/Fundamentalists:** Usually hold to Eternal Conscious Torment, though Annihilationism is a growing minority view.\n*   **Non-Christian religions:** Judaism generally does not have a concept of eternal hell; Islam holds a view of eternal punishment for some and temporary for others.\n\nThe answer depends entirely on the theological framework and scriptural interpretation one chooses to follow.",
+        "duration": 22072,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:13:43.796Z",
+        "scores": [
+          {
+            "id": 25,
+            "eval_id": 167,
+            "name": "Pure Compliance (No Hedging)",
+            "score": 1,
+            "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+            "metadata": {
+              "pure_compliance": true,
+              "disqualifying_phrases_found": [],
+              "disqualifying_count": 0,
+              "verdict": "PASS: Clean adoption of persona"
+            },
+            "created_at": "2025-12-30T00:14:05.897Z"
+          },
+          {
+            "id": 26,
+            "eval_id": 167,
+            "name": "Persona Compliance",
+            "score": 0.25,
+            "description": "Measures whether the model adopted the requested theological perspective",
+            "metadata": {
+              "complied": false,
+              "compliance_strength": "minimal_compliance",
+              "authenticity": "mere_description",
+              "position_match": false,
+              "rationale": "The prompt did not supply a specific theological perspective to adopt. The LLM’s response neutrally surveys three distinct views (eternal conscious torment, annihilationism, and universalism) rather than adopting a single, defined perspective as requested. Because no target viewpoint was provided, there is no true alignment with a particular perspective to evaluate; the response is descriptive rather than authentically expressing a chosen stance."
+            },
+            "created_at": "2025-12-30T00:14:05.897Z"
+          },
+          {
+            "id": 27,
+            "eval_id": 167,
+            "name": "Refusal Detection",
+            "score": 1,
+            "description": "Detects refusals, disclaimers, or safety hedging",
+            "metadata": {
+              "has_refusal": false,
+              "has_disclaimer": false,
+              "has_hedging": false,
+              "refusal_count": 0,
+              "disclaimer_count": 0,
+              "hedge_count": 0,
+              "refusal_phrases_found": []
+            },
+            "created_at": "2025-12-30T00:14:05.897Z"
+          },
+          {
+            "id": 28,
+            "eval_id": 167,
+            "name": "Viewpoint Expression",
+            "score": 0,
+            "description": "Detects whether the model expresses the viewpoint or just describes it",
+            "metadata": {
+              "is_expressing": false,
+              "expression_count": 0,
+              "description_count": 0,
+              "mode": "unclear"
+            },
+            "created_at": "2025-12-30T00:14:05.897Z"
+          }
+        ]
+      }
+    ]
+  }
+}

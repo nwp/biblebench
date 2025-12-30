@@ -1,0 +1,511 @@
+{
+  "history": [
+    {
+      "score": 0.8166666666666667,
+      "date": "2025-12-30T01:04:45.046Z"
+    }
+  ],
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:04:45.046Z",
+    "evals": [
+      {
+        "id": 142,
+        "suite_id": 31,
+        "col_order": 0,
+        "input": "Where in the Bible does it say 'For God so loved the world that he gave his one and only Son'?",
+        "expected": "John 3:16",
+        "output": "John 3:16",
+        "duration": 2137,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 258,
+            "eval_id": 142,
+            "name": "Scripture Reference Accuracy",
+            "score": 1,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": true,
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.184Z"
+          },
+          {
+            "id": 259,
+            "eval_id": 142,
+            "name": "Contains Answer",
+            "score": 1,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.184Z"
+          },
+          {
+            "id": 260,
+            "eval_id": 142,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "John 3:16"
+            },
+            "created_at": "2025-12-30T01:04:47.184Z"
+          }
+        ]
+      },
+      {
+        "id": 143,
+        "suite_id": 31,
+        "col_order": 1,
+        "input": "What is the reference for 'The Lord is my shepherd'?",
+        "expected": "Psalm 23:1",
+        "output": "Psalm 23:1Psalm 23:1",
+        "duration": 3124,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 285,
+            "eval_id": 143,
+            "name": "Scripture Reference Accuracy",
+            "score": 0.5,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": false,
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:48.189Z"
+          },
+          {
+            "id": 286,
+            "eval_id": 143,
+            "name": "Contains Answer",
+            "score": 1,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:48.189Z"
+          },
+          {
+            "id": 287,
+            "eval_id": 143,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "Psalm 23:1Psalm 23:1"
+            },
+            "created_at": "2025-12-30T01:04:48.189Z"
+          }
+        ]
+      },
+      {
+        "id": 144,
+        "suite_id": 31,
+        "col_order": 2,
+        "input": "Where is the verse 'In the beginning, God created the heavens and the earth'?",
+        "expected": "Genesis 1:1",
+        "output": "Genesis 1:1",
+        "duration": 1503,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 255,
+            "eval_id": 144,
+            "name": "Scripture Reference Accuracy",
+            "score": 1,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": true,
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:46.567Z"
+          },
+          {
+            "id": 256,
+            "eval_id": 144,
+            "name": "Contains Answer",
+            "score": 1,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:46.567Z"
+          },
+          {
+            "id": 257,
+            "eval_id": 144,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "Genesis 1:1"
+            },
+            "created_at": "2025-12-30T01:04:46.567Z"
+          }
+        ]
+      },
+      {
+        "id": 145,
+        "suite_id": 31,
+        "col_order": 3,
+        "input": "What is the reference for the Ten Commandments?",
+        "expected": "Exodus 20",
+        "output": "Exodus 20:1-17Exodus 20:1-17",
+        "duration": 4212,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 297,
+            "eval_id": 145,
+            "name": "Scripture Reference Accuracy",
+            "score": 0.5,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": false,
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:49.277Z"
+          },
+          {
+            "id": 298,
+            "eval_id": 145,
+            "name": "Contains Answer",
+            "score": 1,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:49.277Z"
+          },
+          {
+            "id": 299,
+            "eval_id": 145,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "Exodus 20:1-17Exodus 20:1-17"
+            },
+            "created_at": "2025-12-30T01:04:49.277Z"
+          }
+        ]
+      },
+      {
+        "id": 146,
+        "suite_id": 31,
+        "col_order": 4,
+        "input": "Where does Paul write about the armor of God?",
+        "expected": "Ephesians 6:10-18",
+        "output": "Ephesians 6:10-20",
+        "duration": 3600,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 294,
+            "eval_id": 146,
+            "name": "Scripture Reference Accuracy",
+            "score": 0,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": false,
+              "contains": false
+            },
+            "created_at": "2025-12-30T01:04:48.665Z"
+          },
+          {
+            "id": 295,
+            "eval_id": 146,
+            "name": "Contains Answer",
+            "score": 0,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": false
+            },
+            "created_at": "2025-12-30T01:04:48.665Z"
+          },
+          {
+            "id": 296,
+            "eval_id": 146,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "Ephesians 6:10-20"
+            },
+            "created_at": "2025-12-30T01:04:48.665Z"
+          }
+        ]
+      },
+      {
+        "id": 147,
+        "suite_id": 31,
+        "col_order": 5,
+        "input": "Where is the Beatitudes (Blessed are the poor in spirit...)?",
+        "expected": "Matthew 5:3-12",
+        "output": "Matthew 5:3-12",
+        "duration": 2370,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 271,
+            "eval_id": 147,
+            "name": "Scripture Reference Accuracy",
+            "score": 1,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": true,
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.434Z"
+          },
+          {
+            "id": 272,
+            "eval_id": 147,
+            "name": "Contains Answer",
+            "score": 1,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.434Z"
+          },
+          {
+            "id": 273,
+            "eval_id": 147,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "Matthew 5:3-12"
+            },
+            "created_at": "2025-12-30T01:04:47.434Z"
+          }
+        ]
+      },
+      {
+        "id": 148,
+        "suite_id": 31,
+        "col_order": 6,
+        "input": "What is the reference for the love chapter that starts with 'If I speak in the tongues of men or of angels'?",
+        "expected": "1 Corinthians 13",
+        "output": "1 Corinthians 13:1",
+        "duration": 2138,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 261,
+            "eval_id": 148,
+            "name": "Scripture Reference Accuracy",
+            "score": 0.5,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": false,
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.203Z"
+          },
+          {
+            "id": 262,
+            "eval_id": 148,
+            "name": "Contains Answer",
+            "score": 1,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.203Z"
+          },
+          {
+            "id": 263,
+            "eval_id": 148,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "1 Corinthians 13:1"
+            },
+            "created_at": "2025-12-30T01:04:47.203Z"
+          }
+        ]
+      },
+      {
+        "id": 149,
+        "suite_id": 31,
+        "col_order": 7,
+        "input": "Where does it say 'Jesus wept'?",
+        "expected": "John 11:35",
+        "output": "John 11:35",
+        "duration": 2230,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 264,
+            "eval_id": 149,
+            "name": "Scripture Reference Accuracy",
+            "score": 1,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": true,
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.294Z"
+          },
+          {
+            "id": 265,
+            "eval_id": 149,
+            "name": "Contains Answer",
+            "score": 1,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.294Z"
+          },
+          {
+            "id": 266,
+            "eval_id": 149,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "John 11:35"
+            },
+            "created_at": "2025-12-30T01:04:47.294Z"
+          }
+        ]
+      },
+      {
+        "id": 150,
+        "suite_id": 31,
+        "col_order": 8,
+        "input": "What is the reference for the Great Commission?",
+        "expected": "Matthew 28:19-20",
+        "output": "Matthew 28:18-20",
+        "duration": 3125,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 288,
+            "eval_id": 150,
+            "name": "Scripture Reference Accuracy",
+            "score": 0,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": false,
+              "contains": false
+            },
+            "created_at": "2025-12-30T01:04:48.190Z"
+          },
+          {
+            "id": 289,
+            "eval_id": 150,
+            "name": "Contains Answer",
+            "score": 0,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": false
+            },
+            "created_at": "2025-12-30T01:04:48.190Z"
+          },
+          {
+            "id": 290,
+            "eval_id": 150,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "Matthew 28:18-20"
+            },
+            "created_at": "2025-12-30T01:04:48.190Z"
+          }
+        ]
+      },
+      {
+        "id": 151,
+        "suite_id": 31,
+        "col_order": 9,
+        "input": "Where is the prophecy 'For to us a child is born, to us a son is given'?",
+        "expected": "Isaiah 9:6",
+        "output": "Isaiah 9:6",
+        "duration": 2798,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:04:45.046Z",
+        "scores": [
+          {
+            "id": 278,
+            "eval_id": 151,
+            "name": "Scripture Reference Accuracy",
+            "score": 1,
+            "description": "Validates scripture reference formatting and accuracy",
+            "metadata": {
+              "exactMatch": true,
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.862Z"
+          },
+          {
+            "id": 279,
+            "eval_id": 151,
+            "name": "Contains Answer",
+            "score": 1,
+            "description": "Checks if the output contains the expected answer",
+            "metadata": {
+              "contains": true
+            },
+            "created_at": "2025-12-30T01:04:47.862Z"
+          },
+          {
+            "id": 280,
+            "eval_id": 151,
+            "name": "Reference Format",
+            "score": 1,
+            "description": "Checks if the reference is in correct format",
+            "metadata": {
+              "validFormat": true,
+              "output": "Isaiah 9:6"
+            },
+            "created_at": "2025-12-30T01:04:47.862Z"
+          }
+        ]
+      }
+    ]
+  }
+}

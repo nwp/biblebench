@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 279,
+    "suite_id": 60,
+    "col_order": 44,
+    "input": "Quote Colossians 3:23 from the English Standard Version (ESV) exactly as written",
+    "expected": "Whatever you do, work heartily, as for the Lord and not for men",
+    "output": "Whatever you do, work heartily, as for the Lord and not for men,",
+    "duration": 5243,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:03.502Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 581,
+        "eval_id": 279,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:10:08.772Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 202,
+        "eval_id": 279,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Colossians 3:23 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Whatever you do, work heartily, as for the Lord and not for men,",
+          "toolCalls": []
+        },
+        "start_time": 195.979375,
+        "end_time": 5433.866583,
+        "input_tokens": 768,
+        "output_tokens": 165,
+        "total_tokens": 933,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Grok 4]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Grok 4",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:03.501Z"
+  }
+}

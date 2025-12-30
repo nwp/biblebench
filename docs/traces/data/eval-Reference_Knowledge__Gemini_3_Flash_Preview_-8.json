@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 291,
+    "suite_id": 61,
+    "col_order": 8,
+    "input": "What is the reference for the Great Commission?",
+    "expected": "Matthew 28:19-20",
+    "output": "Matthew 28:18-20",
+    "duration": 1262,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:48.911Z",
+    "score": 0.3333333333333333,
+    "scores": [
+      {
+        "id": 600,
+        "eval_id": 291,
+        "name": "Scripture Reference Accuracy",
+        "score": 0,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": false
+        },
+        "created_at": "2025-12-30T00:14:50.175Z"
+      },
+      {
+        "id": 601,
+        "eval_id": 291,
+        "name": "Contains Answer",
+        "score": 0,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": false
+        },
+        "created_at": "2025-12-30T00:14:50.175Z"
+      },
+      {
+        "id": 602,
+        "eval_id": 291,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Matthew 28:18-20"
+        },
+        "created_at": "2025-12-30T00:14:50.175Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 201,
+        "eval_id": 291,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for the Great Commission?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Matthew 28:18-20",
+          "toolCalls": []
+        },
+        "start_time": 158.899292,
+        "end_time": 1401.361042,
+        "input_tokens": 55,
+        "output_tokens": 10,
+        "total_tokens": 65,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 61,
+    "run_id": 1,
+    "name": "Reference Knowledge [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:48.911Z"
+  }
+}

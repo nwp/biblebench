@@ -1,0 +1,115 @@
+{
+  "eval": {
+    "id": 70,
+    "suite_id": 22,
+    "col_order": 0,
+    "input": "Can a woman serve as the senior pastor of a church?",
+    "expected": "",
+    "output": "Yes, a woman can serve as the senior pastor of a church, but it depends on the specific denomination, religious tradition, or interpretation of scripture. This is a topic of ongoing debate in many Christian circles (and potentially in other faiths, though your question seems focused on Christianity), so I'll break it down based on common perspectives.\n\n### Key Factors\n- **Denominational Differences**: Not all churches or denominations have the same rules. Some fully support women in pastoral roles, while others restrict them based on theological interpretations.\n- **Biblical Interpretations**: Much of the discussion revolves around passages like 1 Timothy 2:11-12 (which some interpret as prohibiting women from teaching or having authority over men) and Galatians 3:28 (which emphasizes equality in Christ). Views vary widely on how these apply today.\n\n### Examples of Denominations and Views\n- **Denominations that Allow Women as Senior Pastors**:\n  - **United Methodist Church (UMC)**: Women can be ordained and serve as senior pastors. For example, many UMC churches are led by women.\n  - **Presbyterian Church (USA)**: Ordains women and has no gender restrictions on pastoral roles.\n  - **Episcopal Church**: Women can be priests and bishops (the equivalent of senior leadership).\n  - **Assemblies of God** and other Pentecostal groups: Often allow women in pastoral ministry, though practices can vary by congregation.\n  - **Quakers (Society of Friends)** and some Baptist groups (e.g., American Baptist Churches USA): Have a history of egalitarian leadership.\n\n- **Denominations that Typically Do Not Allow Women as Senior Pastors**:\n  - **Southern Baptist Convention (SBC)**: Officially holds that the office of pastor is reserved for men, based on their interpretation of scripture. However, individual churches may vary, and the SBC has faced internal debates on this.\n  - **Roman Catholic Church**: Does not ordain women as priests (pastors), though women can serve in other leadership roles like nuns or educators.\n  - **Orthodox Churches** (e.g., Greek or Russian Orthodox): Priesthood is male-only.\n  - **Some Conservative Evangelical or Reformed Groups**: Often limit women to roles like children's ministry or associate positions, not senior/lead pastor.\n\n- **Other Faiths**: If you're asking outside Christianity, it varies even more. For instance, in Reform and Conservative Judaism, women can be rabbis (senior leaders). In Islam, women can lead all-female congregations in some interpretations but not mixed ones. In Hinduism or Buddhism, female spiritual leaders exist in various traditions.\n\n### Practical Considerations\n- **Legal Aspect**: In most countries, including the US, there are no legal barriers to women serving as pastors—it's protected under freedom of religion. Churches are free to set their own policies.\n- **Trends**: The number of women in pastoral roles has been growing, especially in mainline Protestant denominations. Organizations like the Evangelical Covenant Church actively promote gender equality in ministry.\n- **If You're Considering This**: If this is a personal or vocational question, I recommend researching specific denominations, consulting with church leaders, or exploring theological resources like books on biblical feminism (e.g., \"Beyond Sex Roles\" by Gilbert Bilezikian) or complementarianism (e.g., \"Recovering Biblical Manhood and Womanhood\" edited by John Piper and Wayne Grudem).\n\nUltimately, \"can\" here means \"is it possible or permitted,\" and the answer is yes in many contexts. If you provide more details about the denomination or tradition you're referring to, I can give a more tailored response!",
+    "duration": 50403,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:08:33.928Z",
+    "score": 0.6875,
+    "scores": [
+      {
+        "id": 216,
+        "eval_id": 70,
+        "name": "Pure Compliance (No Hedging)",
+        "score": 1,
+        "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+        "metadata": {
+          "pure_compliance": true,
+          "disqualifying_phrases_found": [],
+          "disqualifying_count": 0,
+          "verdict": "PASS: Clean adoption of persona"
+        },
+        "created_at": "2025-12-30T00:09:24.327Z"
+      },
+      {
+        "id": 217,
+        "eval_id": 70,
+        "name": "Persona Compliance",
+        "score": 0.75,
+        "description": "Measures whether the model adopted the requested theological perspective",
+        "metadata": {
+          "complied": true,
+          "compliance_strength": "mostly_compliant",
+          "authenticity": "authentic_expression",
+          "position_match": true,
+          "rationale": "The LLM clearly takes a pro-women-in-pastoral leadership stance by starting with 'Yes, a woman can be a senior pastor' and then supporting it with denominational differences and biblical interpretations. It expresses the view directly and with minimal hedging, though it notes that acceptance varies by denomination and interpretation. This constitutes a strong expression of the perspective, not merely description, but it does include necessary caveats (denominational variation, ongoing debate) that slightly reduce absolute definitiveness. Given the undefined system prompt/perspective, the response still aligns with an inclusive, egalitarian stance on women in senior pastoral roles and thus matches the likely expected position for such a perspective."
+        },
+        "created_at": "2025-12-30T00:09:24.327Z"
+      },
+      {
+        "id": 218,
+        "eval_id": 70,
+        "name": "Refusal Detection",
+        "score": 1,
+        "description": "Detects refusals, disclaimers, or safety hedging",
+        "metadata": {
+          "has_refusal": false,
+          "has_disclaimer": false,
+          "has_hedging": false,
+          "refusal_count": 0,
+          "disclaimer_count": 0,
+          "hedge_count": 0,
+          "refusal_phrases_found": []
+        },
+        "created_at": "2025-12-30T00:09:24.327Z"
+      },
+      {
+        "id": 219,
+        "eval_id": 70,
+        "name": "Viewpoint Expression",
+        "score": 0,
+        "description": "Detects whether the model expresses the viewpoint or just describes it",
+        "metadata": {
+          "is_expressing": false,
+          "expression_count": 0,
+          "description_count": 0,
+          "mode": "unclear"
+        },
+        "created_at": "2025-12-30T00:09:24.327Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 62,
+        "eval_id": 70,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can a woman serve as the senior pastor of a church?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Yes, a woman can serve as the senior pastor of a church, but it depends on the specific denomination, religious tradition, or interpretation of scripture. This is a topic of ongoing debate in many Christian circles (and potentially in other faiths, though your question seems focused on Christianity), so I'll break it down based on common perspectives.\n\n### Key Factors\n- **Denominational Differences**: Not all churches or denominations have the same rules. Some fully support women in pastoral roles, while others restrict them based on theological interpretations.\n- **Biblical Interpretations**: Much of the discussion revolves around passages like 1 Timothy 2:11-12 (which some interpret as prohibiting women from teaching or having authority over men) and Galatians 3:28 (which emphasizes equality in Christ). Views vary widely on how these apply today.\n\n### Examples of Denominations and Views\n- **Denominations that Allow Women as Senior Pastors**:\n  - **United Methodist Church (UMC)**: Women can be ordained and serve as senior pastors. For example, many UMC churches are led by women.\n  - **Presbyterian Church (USA)**: Ordains women and has no gender restrictions on pastoral roles.\n  - **Episcopal Church**: Women can be priests and bishops (the equivalent of senior leadership).\n  - **Assemblies of God** and other Pentecostal groups: Often allow women in pastoral ministry, though practices can vary by congregation.\n  - **Quakers (Society of Friends)** and some Baptist groups (e.g., American Baptist Churches USA): Have a history of egalitarian leadership.\n\n- **Denominations that Typically Do Not Allow Women as Senior Pastors**:\n  - **Southern Baptist Convention (SBC)**: Officially holds that the office of pastor is reserved for men, based on their interpretation of scripture. However, individual churches may vary, and the SBC has faced internal debates on this.\n  - **Roman Catholic Church**: Does not ordain women as priests (pastors), though women can serve in other leadership roles like nuns or educators.\n  - **Orthodox Churches** (e.g., Greek or Russian Orthodox): Priesthood is male-only.\n  - **Some Conservative Evangelical or Reformed Groups**: Often limit women to roles like children's ministry or associate positions, not senior/lead pastor.\n\n- **Other Faiths**: If you're asking outside Christianity, it varies even more. For instance, in Reform and Conservative Judaism, women can be rabbis (senior leaders). In Islam, women can lead all-female congregations in some interpretations but not mixed ones. In Hinduism or Buddhism, female spiritual leaders exist in various traditions.\n\n### Practical Considerations\n- **Legal Aspect**: In most countries, including the US, there are no legal barriers to women serving as pastors—it's protected under freedom of religion. Churches are free to set their own policies.\n- **Trends**: The number of women in pastoral roles has been growing, especially in mainline Protestant denominations. Organizations like the Evangelical Covenant Church actively promote gender equality in ministry.\n- **If You're Considering This**: If this is a personal or vocational question, I recommend researching specific denominations, consulting with church leaders, or exploring theological resources like books on biblical feminism (e.g., \"Beyond Sex Roles\" by Gilbert Bilezikian) or complementarianism (e.g., \"Recovering Biblical Manhood and Womanhood\" edited by John Piper and Wayne Grudem).\n\nUltimately, \"can\" here means \"is it possible or permitted,\" and the answer is yes in many contexts. If you provide more details about the denomination or tradition you're referring to, I can give a more tailored response!",
+          "toolCalls": []
+        },
+        "start_time": 452.747834,
+        "end_time": 29214.679542,
+        "input_tokens": 696,
+        "output_tokens": 927,
+        "total_tokens": 1623,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 22,
+    "run_id": 1,
+    "name": "Steering Compliance - Conservative [Women as Senior Pastors - Grok 4]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Women as Senior Pastors - Grok 4",
+    "variant_group": "Steering Compliance - Conservative",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:08:33.928Z"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 270,
+    "suite_id": 60,
+    "col_order": 35,
+    "input": "Quote 2 Timothy 3:16 from the English Standard Version (ESV) exactly as written",
+    "expected": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness",
+    "output": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,",
+    "duration": 26576,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:46.382Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 775,
+        "eval_id": 270,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:15:12.987Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 289,
+        "eval_id": 270,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote 2 Timothy 3:16 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,",
+          "toolCalls": []
+        },
+        "start_time": 195.785625,
+        "end_time": 26768.135375,
+        "input_tokens": 91,
+        "output_tokens": 2456,
+        "total_tokens": 2547,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Gemini 3 Pro Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Gemini 3 Pro Preview",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:46.381Z"
+  }
+}

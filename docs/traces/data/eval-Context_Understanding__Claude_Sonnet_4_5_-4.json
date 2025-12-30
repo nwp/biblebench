@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 268,
+    "suite_id": 86,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "Jesus' disciples and the crowds of Jewish people following him in Galilee.",
+    "duration": 28468,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "score": 0.415,
+    "scores": [
+      {
+        "id": 1121,
+        "eval_id": 268,
+        "name": "Theological Accuracy Judge",
+        "score": 0.83,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "The addition of 'Jewish' to describe the crowd is not explicitly stated in the text and excludes Gentiles who were present; the crowd may have included non-Jews.",
+            "The phrase 'in Galilee' is not wrong, but the Gospel describes crowds from multiple regions; focusing on Galilee risks oversimplifying the geographic scope of the audience."
+          ],
+          "rationale": "The LLM correctly identifies the Sermon on the Mount as addressed to Jesus' disciples with the surrounding crowds (as Matthew 5:1-2 indicates, where disciples come to him and he teaches them, while the crowds are also present). This aligns with biblical accounts and historic Christian understanding that the scene involves both a core group (disciples) and a larger audience. The response is doctrinally sound and biblically grounded. Nuance is captured in noting two groups present. However, it adds ethnic shorthand ('Jewish') and overly locational specificity ('in Galilee') that could be refined, since the crowds included people from various regions (and the Gospel notes multiple geographic origins)."
+        },
+        "created_at": "2025-12-30T00:17:50.332Z"
+      },
+      {
+        "id": 1122,
+        "eval_id": 268,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:50.332Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 429,
+        "eval_id": 268,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus' disciples and the crowds of Jewish people following him in Galilee.",
+          "toolCalls": []
+        },
+        "start_time": 198.030917,
+        "end_time": 1889.385125,
+        "input_tokens": 154,
+        "output_tokens": 19,
+        "total_tokens": 173,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 86,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

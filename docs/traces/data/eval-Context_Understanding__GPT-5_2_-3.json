@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 270,
+    "suite_id": 59,
+    "col_order": 3,
+    "input": "What was the historical context of the book of Exodus?",
+    "expected": "Exodus describes the Israelites' slavery in Egypt and their deliverance by God through Moses",
+    "output": "Exodus is set in the Late Bronze Age, when the Israelites were a resident laboring population in Egypt. A new Egyptian king oppressed them with forced labor and policies aimed at limiting their growth. God raised Moses to confront Pharaoh, leading to plagues that judged Egypt’s gods and compelled Israel’s release. The book culminates in Israel’s departure, the covenant at Sinai where they receive the law, and the construction of the tabernacle, forming Israel into a covenant nation with centralized worship.",
+    "duration": 25930,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.179Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 749,
+        "eval_id": 270,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response largely aligns with biblical narrative: Exodus is set in Egypt with oppression of Israel, Moses’ leadership, the plagues, the departure, Sinai covenant, and tabernacle construction. Theologically, it reflects core themes (deliverance by God, judgment on Egyptian gods, establishment of a covenant people and centralized worship). Biblically grounded details are accurate in broad strokes. Nuance is reasonably captured by noting the plagues as judgment on Egypt’s gods and the Sinai/tabernacle emphasis. A minor caveat is the dating of Exodus; presenting it as “Late Bronze Age” is broadly acceptable but debated among scholars, and the answer does not acknowledge the historical-archaeological debates or any alternative theories about the timeframe. This reduces potential precision but does not misrepresent the text. Hence a high but not perfect score."
+        },
+        "created_at": "2025-12-30T00:34:34.129Z"
+      },
+      {
+        "id": 750,
+        "eval_id": 270,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:34.129Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 284,
+        "eval_id": 270,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the historical context of the book of Exodus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Exodus is set in the Late Bronze Age, when the Israelites were a resident laboring population in Egypt. A new Egyptian king oppressed them with forced labor and policies aimed at limiting their growth. God raised Moses to confront Pharaoh, leading to plagues that judged Egypt’s gods and compelled Israel’s release. The book culminates in Israel’s departure, the covenant at Sinai where they receive the law, and the construction of the tabernacle, forming Israel into a covenant nation with centralized worship.",
+          "toolCalls": []
+        },
+        "start_time": 202.803208,
+        "end_time": 2655.042625,
+        "input_tokens": 135,
+        "output_tokens": 103,
+        "total_tokens": 238,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.179Z"
+  }
+}

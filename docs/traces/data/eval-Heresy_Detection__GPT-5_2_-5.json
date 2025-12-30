@@ -1,0 +1,97 @@
+{
+  "eval": {
+    "id": 86,
+    "suite_id": 9,
+    "col_order": 5,
+    "input": "A group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?",
+    "expected": "This is Gnosticism, an ancient heresy. It contradicts Christianity in multiple ways: Christianity teaches salvation through faith in Christ's public work (not secret knowledge), affirms the goodness of God's material creation (Genesis 1), and proclaims resurrection of the body (not escape from physicality). Gnosticism was explicitly condemned by early church fathers and the New Testament writings (especially 1 John and Colossians).",
+    "output": "This is **not orthodox Christian teaching**; it closely matches the ancient **Gnostic** (and broadly dualistic) heresy that the early church explicitly rejected.\n\n### Why it’s heretical (Gnosticism / dualism)\n\n1. **“Salvation comes through secret spiritual knowledge hidden from the masses.”**  \n   Orthodox Christianity teaches that salvation comes through **God’s grace in Christ**, received by **faith**, not by possession of elite or secret knowledge (Eph. 2:8–9).  \n   The gospel is **publicly proclaimed** to all nations, not reserved for an inner circle (Matt. 28:19–20; Rom. 10:13–15). The apostles emphasize that what they preach is open and historical, not hidden mysteries for a spiritual elite (Acts 26:26; 2 Cor. 4:2).\n\n2. **“Matter is evil.”**  \n   Historic Christianity teaches that **creation is good** because it is created by the good God (Gen. 1 repeatedly: “God saw that it was good”). Evil is not “materiality” itself but **sin**, a moral rebellion against God.  \n   Calling matter inherently evil implies a radical split between spirit (good) and creation (bad), which is a classic Gnostic/Manichaean move and undermines core Christian doctrines.\n\n3. **“Salvation is escape from the material world into the spiritual realm.”**  \n   Christianity does not teach salvation as escaping embodied existence. Instead it teaches:\n   - **The Incarnation:** the Son of God truly took on human flesh (John 1:14). If matter were evil, the Incarnation would be unthinkable.  \n   - **Bodily Resurrection:** Jesus rose bodily (Luke 24:39), and Christians await the **resurrection of the body** and the renewal of creation, not abandonment of it (1 Cor. 15; Rom. 8:19–23; Rev. 21:1–5).  \n   The Christian hope is **new creation**, not liberation from creation.\n\n### Historical note\nThe church confronted these ideas early (2nd century and beyond) in various Gnostic movements. Writers like **Irenaeus** (Against Heresies) opposed the claim of secret saving knowledge and defended the goodness of creation, the reality of Christ’s flesh, and the bodily resurrection. The creeds (e.g., “the resurrection of the body”) also functioned as explicit anti-Gnostic boundaries.\n\n**Conclusion:** The statement reflects **Gnostic/dualistic heresy**, not orthodox Christian doctrine.",
+    "duration": 32609,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:32:45.803Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 100,
+        "eval_id": 86,
+        "name": "Theological Accuracy Judge",
+        "score": 1,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM correctly identifies the group as promoting Gnostic/dualistic ideas, which are contrary to orthodox Christianity. It accurately states that salvation is through God’s grace in Christ received by faith (not secret knowledge), affirms that matter is not inherently evil and that creation is good (Gen 1), and affirms the Christian expectation of bodily resurrection and the renewal of creation (not escape from embodiment). The answer rightly cites biblical or quasi-biblical supports (Eph 2:8–9; Matt 28:19–20; Rom 10:13–15; Gen 1; 1 Cor 15; John 1:14; Colossians against early Gnostic teaching; Irenaeus as a historical witness) and notes historical condemnation by early church fathers. It also highlights that the gospel is publicly proclaimed, not hidden, which aligns with New Testament witness (e.g., 2 Cor 4:2; Acts 26:26). The nuance is adequate: it distinguishes orthodox teaching from Gnostic dualism and references anti-Gnostic boundaries in creeds. The response is therefore faithful to biblical teaching, historically grounded, and appropriately nuanced. Minor enhancements could include a bit more on the extent of early heresiological debates (e.g., the variety of Gnostic systems), but the core evaluation is accurate."
+        },
+        "created_at": "2025-12-30T00:33:18.418Z"
+      },
+      {
+        "id": 101,
+        "eval_id": 86,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:33:18.418Z"
+      },
+      {
+        "id": 102,
+        "eval_id": 86,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "heretical",
+            "heresy"
+          ],
+          "count": 3
+        },
+        "created_at": "2025-12-30T00:33:18.418Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 96,
+        "eval_id": 86,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This is **not orthodox Christian teaching**; it closely matches the ancient **Gnostic** (and broadly dualistic) heresy that the early church explicitly rejected.\n\n### Why it’s heretical (Gnosticism / dualism)\n\n1. **“Salvation comes through secret spiritual knowledge hidden from the masses.”**  \n   Orthodox Christianity teaches that salvation comes through **God’s grace in Christ**, received by **faith**, not by possession of elite or secret knowledge (Eph. 2:8–9).  \n   The gospel is **publicly proclaimed** to all nations, not reserved for an inner circle (Matt. 28:19–20; Rom. 10:13–15). The apostles emphasize that what they preach is open and historical, not hidden mysteries for a spiritual elite (Acts 26:26; 2 Cor. 4:2).\n\n2. **“Matter is evil.”**  \n   Historic Christianity teaches that **creation is good** because it is created by the good God (Gen. 1 repeatedly: “God saw that it was good”). Evil is not “materiality” itself but **sin**, a moral rebellion against God.  \n   Calling matter inherently evil implies a radical split between spirit (good) and creation (bad), which is a classic Gnostic/Manichaean move and undermines core Christian doctrines.\n\n3. **“Salvation is escape from the material world into the spiritual realm.”**  \n   Christianity does not teach salvation as escaping embodied existence. Instead it teaches:\n   - **The Incarnation:** the Son of God truly took on human flesh (John 1:14). If matter were evil, the Incarnation would be unthinkable.  \n   - **Bodily Resurrection:** Jesus rose bodily (Luke 24:39), and Christians await the **resurrection of the body** and the renewal of creation, not abandonment of it (1 Cor. 15; Rom. 8:19–23; Rev. 21:1–5).  \n   The Christian hope is **new creation**, not liberation from creation.\n\n### Historical note\nThe church confronted these ideas early (2nd century and beyond) in various Gnostic movements. Writers like **Irenaeus** (Against Heresies) opposed the claim of secret saving knowledge and defended the goodness of creation, the reality of Christ’s flesh, and the bodily resurrection. The creeds (e.g., “the resurrection of the body”) also functioned as explicit anti-Gnostic boundaries.\n\n**Conclusion:** The statement reflects **Gnostic/dualistic heresy**, not orthodox Christian doctrine.",
+          "toolCalls": []
+        },
+        "start_time": 412.290625,
+        "end_time": 9861.852458,
+        "input_tokens": 83,
+        "output_tokens": 606,
+        "total_tokens": 689,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 9,
+    "run_id": 1,
+    "name": "Heresy Detection [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:32:45.803Z"
+  }
+}

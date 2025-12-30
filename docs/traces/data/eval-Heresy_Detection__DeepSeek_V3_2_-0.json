@@ -1,0 +1,99 @@
+{
+  "eval": {
+    "id": 52,
+    "suite_id": 25,
+    "col_order": 0,
+    "input": "A teacher says: 'Jesus was a great prophet and teacher, but he was not truly divine - he was adopted as God's son at his baptism.' Is this teaching orthodox or heretical? Explain.",
+    "expected": "This is heretical. It represents Adoptionism, which claims Jesus became God's son at some point (often his baptism) rather than being eternally the Son of God. Orthodox Christianity teaches that Jesus is the eternal Son of God, the second person of the Trinity, who has always been fully divine. John 1:1 affirms 'the Word was God' from the beginning, and Jesus is that Word made flesh.",
+    "output": "This teaching is **heretical** according to orthodox Christian doctrine as historically defined by the universal Church (Catholic, Eastern Orthodox, and Protestant).\n\nHere is a step-by-step analysis:\n\n### 1. **Identification of the Heresy**\nThe statement aligns with the ancient heresy known as **Adoptionism** (or Dynamic Monarchianism). This teaching asserts that Jesus was born a mere human being, but was \"adopted\" as the Son of God at a specific point in his life (most often at his baptism), receiving divine power or status at that time. He is thus seen as a great prophet or teacher, but not intrinsically divine.\n\n### 2. **Contradiction of Core Orthodox Doctrine**\nOrthodox Christianity, based on Scripture and formalized in the early Ecumenical Councils, affirms:\n*   **The eternal pre-existence and divinity of Jesus Christ.** He is not a created being or a human who became divine; he is the eternal *Logos* (Word) who \"was with God, and was God\" (John 1:1).\n*   **The Incarnation:** The divine Son \"became flesh and dwelt among us\" (John 1:14). He did not *become* the Son; he *is* the Son who took on human nature.\n*   **The Hypostatic Union:** Defined at the Council of Chalcedon (451 AD), this states that Jesus Christ is one person in two natures—fully God and fully man—unconfusedly, unchangeably, indivisibly, and inseparably. These natures were united from the moment of his conception, not from his baptism.\n*   **The Testimony of the Creeds:** The Nicene Creed (325/381 AD) directly refutes Adoptionism by confessing Jesus as:\n    *   \"the only Son of God, eternally begotten of the Father, God from God, Light from Light, true God from true God, begotten, not made, of one Being with the Father.\"\n    *   It affirms his incarnation \"by the Holy Spirit and the Virgin Mary,\" not his divinization at the baptism.\n\n### 3. **Biblical Evidence Contravened**\nWhile the teacher might point to the heavenly voice at Jesus' baptism (\"You are my beloved Son,\" Mark 1:11) as evidence of \"adoption,\" orthodox interpretation understands this as a *declaration* or *revelation* of Jesus' eternal Sonship to those present, not the moment of its inception. Numerous other Scriptures affirm his pre-existent divinity (e.g., John 8:58, \"Before Abraham was, I am\"; Colossians 1:15-17; Philippians 2:5-11).\n\n### 4. **Theological Implications of the Heresy**\nIf Jesus is merely an adopted human and not God incarnate:\n*   **Atonement is undermined:** Only one who is truly God could offer a sacrifice of infinite value to atone for the sins of humanity.\n*   **The Trinity is denied:** The central Christian revelation of God as Father, Son, and Holy Spirit collapses. The Son becomes a creature, not a co-eternal person of the Godhead.\n*   **Worship of Jesus becomes idolatry:** If Christ is not God, then worshiping him (as the New Testament and Christian practice do) would be the worship of a creature, which is forbidden.\n\n### Conclusion\nThe teaching presented is **heretical**. It explicitly rejects the **deity of Christ** and the **doctrine of the Trinity**, which are the non-negotiable foundations of historic, orthodox Christianity. While it may seek to honor Jesus as a supreme moral example, it ultimately denies the central Christian confession that \"in Christ all the fullness of the Deity lives in bodily form\" (Colossians 2:9).",
+    "duration": 70514,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:43:20.834Z",
+    "score": 0.9833333333333334,
+    "scores": [
+      {
+        "id": 149,
+        "eval_id": 52,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM correctly identifies Adoptionism as heretical and aligns with historic Christian orthodoxy: Jesus is eternal God the Son, not a created being who becomes divine at baptism; the incarnation and hypostatic union are from conception, not baptism; the deity of Christ and the Trinity are upheld by the creeds (e.g., Nicene) and Scripture (John 1:1, Colossians 1:15-17, Philippians 2:5-11). It notes that baptismal revelation of Jesus as Son does not establish a new ontological origin but proclaims an existing truth, and it cites relevant biblical passages (John 8:58; Colossians 2:9; John 1:1-14). The discussion on atonement and worship if Christ were only adopted underscores why Adoptionism undermines core Christian doctrines. Nuance is adequately captured: it distinguishes the eternal Sonship from any perceived moment of adoption and references the Chalcedonian articulation of the two natures in one person. The only minor caveat is a precise phrasing on the Chalcedon assertion about the moment of union (the traditional emphasis is on the incarnation rather than baptism; the LLM’s phrasing is commonly accepted and not doctrinally misleading)."
+        },
+        "created_at": "2025-12-30T00:44:31.350Z"
+      },
+      {
+        "id": 150,
+        "eval_id": 52,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:44:31.350Z"
+      },
+      {
+        "id": 151,
+        "eval_id": 52,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "biblical",
+            "scripture",
+            "heretical",
+            "heresy"
+          ],
+          "count": 5
+        },
+        "created_at": "2025-12-30T00:44:31.350Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 42,
+        "eval_id": 52,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA teacher says: 'Jesus was a great prophet and teacher, but he was not truly divine - he was adopted as God's son at his baptism.' Is this teaching orthodox or heretical? Explain."
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This teaching is **heretical** according to orthodox Christian doctrine as historically defined by the universal Church (Catholic, Eastern Orthodox, and Protestant).\n\nHere is a step-by-step analysis:\n\n### 1. **Identification of the Heresy**\nThe statement aligns with the ancient heresy known as **Adoptionism** (or Dynamic Monarchianism). This teaching asserts that Jesus was born a mere human being, but was \"adopted\" as the Son of God at a specific point in his life (most often at his baptism), receiving divine power or status at that time. He is thus seen as a great prophet or teacher, but not intrinsically divine.\n\n### 2. **Contradiction of Core Orthodox Doctrine**\nOrthodox Christianity, based on Scripture and formalized in the early Ecumenical Councils, affirms:\n*   **The eternal pre-existence and divinity of Jesus Christ.** He is not a created being or a human who became divine; he is the eternal *Logos* (Word) who \"was with God, and was God\" (John 1:1).\n*   **The Incarnation:** The divine Son \"became flesh and dwelt among us\" (John 1:14). He did not *become* the Son; he *is* the Son who took on human nature.\n*   **The Hypostatic Union:** Defined at the Council of Chalcedon (451 AD), this states that Jesus Christ is one person in two natures—fully God and fully man—unconfusedly, unchangeably, indivisibly, and inseparably. These natures were united from the moment of his conception, not from his baptism.\n*   **The Testimony of the Creeds:** The Nicene Creed (325/381 AD) directly refutes Adoptionism by confessing Jesus as:\n    *   \"the only Son of God, eternally begotten of the Father, God from God, Light from Light, true God from true God, begotten, not made, of one Being with the Father.\"\n    *   It affirms his incarnation \"by the Holy Spirit and the Virgin Mary,\" not his divinization at the baptism.\n\n### 3. **Biblical Evidence Contravened**\nWhile the teacher might point to the heavenly voice at Jesus' baptism (\"You are my beloved Son,\" Mark 1:11) as evidence of \"adoption,\" orthodox interpretation understands this as a *declaration* or *revelation* of Jesus' eternal Sonship to those present, not the moment of its inception. Numerous other Scriptures affirm his pre-existent divinity (e.g., John 8:58, \"Before Abraham was, I am\"; Colossians 1:15-17; Philippians 2:5-11).\n\n### 4. **Theological Implications of the Heresy**\nIf Jesus is merely an adopted human and not God incarnate:\n*   **Atonement is undermined:** Only one who is truly God could offer a sacrifice of infinite value to atone for the sins of humanity.\n*   **The Trinity is denied:** The central Christian revelation of God as Father, Son, and Holy Spirit collapses. The Son becomes a creature, not a co-eternal person of the Godhead.\n*   **Worship of Jesus becomes idolatry:** If Christ is not God, then worshiping him (as the New Testament and Christian practice do) would be the worship of a creature, which is forbidden.\n\n### Conclusion\nThe teaching presented is **heretical**. It explicitly rejects the **deity of Christ** and the **doctrine of the Trinity**, which are the non-negotiable foundations of historic, orthodox Christianity. While it may seek to honor Jesus as a supreme moral example, it ultimately denies the central Christian confession that \"in Christ all the fullness of the Deity lives in bodily form\" (Colossians 2:9).",
+          "toolCalls": []
+        },
+        "start_time": 356.113292,
+        "end_time": 39121.145167,
+        "input_tokens": 83,
+        "output_tokens": 802,
+        "total_tokens": 885,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 25,
+    "run_id": 1,
+    "name": "Heresy Detection [DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "DeepSeek V3.2",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:43:20.834Z"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 304,
+    "suite_id": 88,
+    "col_order": 24,
+    "input": "Quote Romans 8:28 from the King James Version (KJV) exactly as written",
+    "expected": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose",
+    "output": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
+    "duration": 1753,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:30.377Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 701,
+        "eval_id": 304,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:17:32.133Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 217,
+        "eval_id": 304,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Romans 8:28 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
+          "toolCalls": []
+        },
+        "start_time": 198.064333,
+        "end_time": 1926.417792,
+        "input_tokens": 99,
+        "output_tokens": 30,
+        "total_tokens": 129,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 88,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:30.376Z"
+  }
+}

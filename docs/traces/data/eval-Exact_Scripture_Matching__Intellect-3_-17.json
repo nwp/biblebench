@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 80,
+    "suite_id": 27,
+    "col_order": 17,
+    "input": "Quote Philippians 4:13 from the New International Version (NIV) exactly as written",
+    "expected": "I can do all this through him who gives me strength",
+    "output": "I can do all things through Christ who strengthens me.",
+    "duration": 9885,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:51:33.270Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 15,
+        "eval_id": 80,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T00:51:43.158Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 15,
+        "eval_id": 80,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Philippians 4:13 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "I can do all things through Christ who strengthens me.",
+          "toolCalls": []
+        },
+        "start_time": 465.06425,
+        "end_time": 10301.644084,
+        "input_tokens": 95,
+        "output_tokens": 355,
+        "total_tokens": 450,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 27,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Intellect-3]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Intellect-3",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:51:33.270Z"
+  }
+}

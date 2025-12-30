@@ -1,0 +1,427 @@
+{
+  "history": [
+    {
+      "score": 0.9382539682539682,
+      "date": "2025-12-30T00:16:42.472Z"
+    }
+  ],
+  "suite": {
+    "id": 69,
+    "run_id": 1,
+    "name": "Heresy Detection [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.472Z",
+    "evals": [
+      {
+        "id": 81,
+        "suite_id": 69,
+        "col_order": 0,
+        "input": "A teacher says: 'Jesus was a great prophet and teacher, but he was not truly divine - he was adopted as God's son at his baptism.' Is this teaching orthodox or heretical? Explain.",
+        "expected": "This is heretical. It represents Adoptionism, which claims Jesus became God's son at some point (often his baptism) rather than being eternally the Son of God. Orthodox Christianity teaches that Jesus is the eternal Son of God, the second person of the Trinity, who has always been fully divine. John 1:1 affirms 'the Word was God' from the beginning, and Jesus is that Word made flesh.",
+        "output": "# Theological Analysis: Adoptionism\n\n## Verdict: **HERESY**\n\nThis teaching represents **Adoptionism**, a christological heresy that emerged in the 2nd-3rd centuries and was formally condemned by the early Church.\n\n---\n\n## Historical Background\n\nThis view was held by:\n- **Theodotus of Byzantium** (excommunicated c. 190 AD)\n- **Paul of Samosata** (condemned at Antioch, 268 AD)\n- Later variations appeared among **Dynamic Monarchians**\n\n---\n\n## Why This Is Heretical\n\n### 1. **It denies the eternal divinity of Christ**\nOrthodox teaching affirms Christ was divine *from eternity*, not at a point in time. The Nicene Creed states he is \"eternally begotten of the Father... true God from true God.\"\n\n### 2. **It misreads the baptism narrative**\nThe Father's declaration \"This is my beloved Son\" (Matthew 3:17) is a *revelation* of Christ's identity, not its *origin*.\n\n### 3. **It contradicts Scripture's testimony**\n- John 1:1 — \"The Word *was* God\" (pre-existence)\n- Colossians 2:9 — \"In him the fullness of deity dwells bodily\"\n- Philippians 2:6 — He existed \"in the form of God\" *before* taking human nature\n\n---\n\n## Councils Addressing This\n- **Council of Nicaea (325 AD)**\n- **Council of Chalcedon (451 AD)**\n\nThe orthodox position: Jesus Christ is fully God and fully man—**one person, two natures, united from the incarnation**.",
+        "duration": 36877,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.472Z",
+        "scores": [
+          {
+            "id": 447,
+            "eval_id": 81,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM correctly identifies Adoptionism as a heresy and situates it in the historical context of 2nd–3rd century Christology, noting that it teaches Jesus became the Son at a point in time (often baptism) rather than existing eternally as the Son. It affirms orthodox Christology: Jesus is the eternal Son, fully God and fully man, united in one person with two natures. It supports this with biblical grounding (John 1:1; Colossians 2:9; Philippians 2:6; Matthew 3:17) and references to key doctrinal developments (Nicene and Chalcedonian frameworks) without contradicting them. It also clarifies the baptism narrative as revealing Jesus’ identity, not origin, which preserves important nuances about the nature of adoptionist claims. A minor caveat is that the role of specific councils in explicitly condemning Adoptionism is historically nuanced; Adoptionism was condemned in early church history, but not all formulations were addressed uniformly at Nicaea. Overall, the response is accurate, sound, and nuanced."
+            },
+            "created_at": "2025-12-30T00:17:19.353Z"
+          },
+          {
+            "id": 448,
+            "eval_id": 81,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:17:19.353Z"
+          },
+          {
+            "id": 449,
+            "eval_id": 81,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "scripture",
+                "heretical",
+                "heresy",
+                "contradicts"
+              ],
+              "count": 5
+            },
+            "created_at": "2025-12-30T00:17:19.353Z"
+          }
+        ]
+      },
+      {
+        "id": 82,
+        "suite_id": 69,
+        "col_order": 1,
+        "input": "Someone teaches: 'The Father, Son, and Holy Spirit are just different modes or roles that the one God takes on at different times, like one person wearing different hats.' Is this correct? Why or why not?",
+        "expected": "This is heretical modalism (also called Sabellianism). It denies the distinctness of the three persons of the Trinity. Orthodox Christianity teaches that Father, Son, and Holy Spirit are three distinct persons who exist simultaneously and eternally, not one person appearing in different modes. The baptism of Jesus shows this distinctness: the Son is baptized, the Spirit descends, and the Father speaks - all at the same time.",
+        "output": "# Theological Analysis: Modalistic Monarchianism\n\n## Verdict: **HERESY**\n\nThis teaching is a classic expression of **Modalism** (also called Sabellianism or Modalistic Monarchianism), condemned by the early church in the 3rd century.\n\n---\n\n## What This Teaching Claims\n\nThe statement describes God as one Person who appears in three sequential \"masks\" or roles—Father in the Old Testament, Son in the Incarnation, Holy Spirit at Pentecost—rather than three distinct, co-eternal Persons.\n\n---\n\n## Why It Is Heterodox\n\n### 1. **It contradicts Scripture's simultaneous distinctions**\nAt Christ's baptism (Matthew 3:16-17), all three Persons appear *simultaneously*: the Son is baptized, the Spirit descends, and the Father speaks. One person cannot wear three hats at once.\n\n### 2. **It undermines Christ's prayer life**\nJesus prays to the Father (John 17). Modalism makes this self-dialogue or theatrical performance, not genuine relationship.\n\n### 3. **It was formally rejected**\n- Condemned under Pope Callixtus I (~220 AD)\n- Sabellius excommunicated (~220 AD)\n- Rejected at Constantinople (381 AD)\n\n### 4. **Orthodox Trinitarianism affirms:**\n> *\"One God in three Persons—co-equal, co-eternal, distinct in relation, undivided in essence.\"*\n\nThe Persons are distinguished by **eternal relations of origin**, not temporal modes.\n\n---\n\n## Why This Error Recurs\nIt attempts to protect monotheism but sacrifices the genuine relationality within God that makes salvation intelligible.",
+        "duration": 54568,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.472Z",
+        "scores": [
+          {
+            "id": 883,
+            "eval_id": 82,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Historical specifics about condemnation of modalism are imprecise: the LLM attributes a condemnation to Pope Callixtus I (~220 AD) and Sabellius' excommunication around that time. Early church condemnation came primarily from patristic writers (e.g., Hippolytus, Tertullian) and later ecumenical councils (notably Constantinople I, 381). The exact dating and papal involvement are debated in scholarship."
+              ],
+              "rationale": "The response correctly identifies modalism (Sabellianism) as a heresy and argues from Scripture (e.g., Jesus’ baptism, Jesus praying to the Father) to affirm the orthodox view of three co-eternal, distinct Persons. It also correctly notes the orthodox position on the Trinity (one God in three Persons who are co-equal and co-eternal). The nuances about the eternal relations of origin and the distinction between the economic/immanent Trinity are captured. The main strength is doctrinal accuracy and scriptural grounding; the minor shortcoming is historical specifics, which are not central to the theological point and could be stated with more scholarly caution."
+            },
+            "created_at": "2025-12-30T00:17:37.045Z"
+          },
+          {
+            "id": 884,
+            "eval_id": 82,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:17:37.045Z"
+          },
+          {
+            "id": 885,
+            "eval_id": 82,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "scripture",
+                "heresy",
+                "error",
+                "contradicts"
+              ],
+              "count": 5
+            },
+            "created_at": "2025-12-30T00:17:37.045Z"
+          }
+        ]
+      },
+      {
+        "id": 83,
+        "suite_id": 69,
+        "col_order": 2,
+        "input": "A preacher claims: 'Salvation is achieved through good works and moral living. If you live a good life, you will earn your way to heaven.' Is this biblical teaching?",
+        "expected": "This is heretical Pelagianism or works-righteousness. Orthodox Christianity teaches salvation by grace through faith, not by works (Ephesians 2:8-9). While good works are important as evidence and fruit of genuine faith, they cannot earn salvation. Salvation is a free gift of God's grace, received through faith in Christ's finished work, not merited by human effort.",
+        "output": "# Theological Analysis\n\n## Classification: **HERESY** (Pelagianism/Semi-Pelagianism/Works-Righteousness)\n\n---\n\n## The Orthodox Position\n\nHistoric Christianity across Catholic, Orthodox, and Protestant traditions unanimously affirms that salvation is **by grace through faith**, not earned by human merit.\n\n### Key Scriptural Refutations:\n\n- **Ephesians 2:8-9** — \"For by grace you have been saved through faith... *not of works, lest anyone should boast*\"\n- **Romans 3:28** — \"A man is justified by faith *apart from the works of the law*\"\n- **Titus 3:5** — \"Not by works of righteousness which we have done, but according to His mercy He saved us\"\n- **Galatians 2:16** — \"By the works of the law *no flesh shall be justified*\"\n\n---\n\n## Historical Context\n\nThis error was formally condemned in:\n- **Council of Carthage (418)** — against Pelagianism\n- **Council of Orange (529)** — against Semi-Pelagianism\n- **Reformation confessions** — against medieval merit theology\n\n---\n\n## Important Distinction\n\nOrthodoxy teaches that good works are the **fruit and evidence** of salvation, not its cause (James 2:17-18). We are saved *for* good works (Eph. 2:10), not *by* them.\n\n---\n\n**Verdict:** This preacher's statement inverts the gospel and obscures Christ's atoning work as the sole ground of salvation.",
+        "duration": 37053,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.472Z",
+        "scores": [
+          {
+            "id": 454,
+            "eval_id": 83,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Overgeneralization: Claim that 'Historic Christianity across Catholic, Orthodox, and Protestant traditions unanimously affirms salvation by grace through faith' is too strong. Catholic teaching emphasizes grace received and cooperation with grace (merit), not simply 'not earned by human merit' in the Protestant sense; the unity is real but not absolute unanimity on every nuance.",
+                "Some Catholic/Orthodox nuances (merit, synergy, and the role of grace) are not fully acknowledged. The statement could be refined to distinguish 'not earned by human merit apart from grace' from 'not earned at all by human effort' to reflect traditional Catholic and Orthodox formulations."
+              ],
+              "rationale": "The response correctly identifies the preacher’s claim as contrary to biblical teaching and accurately cites key scriptures (Ephesians 2:8-9, Romans 3:28, Titus 3:5, Galatians 2:16) to ground the argument that salvation is by grace through faith and that works are fruit, not the ground, of salvation. It acknowledges the James 2:17-18 nuance about faith producing works and notes historical condemnations of Pelagian/semi-Pelagian positions. The main caveat is a somewhat broad claim about universal Orthodox/Catholic/Protestant agreement on 'salvation by grace through faith' without acknowledging Catholic nuances on merit and cooperation with grace, which modestly narrows the precision of the assessment."
+            },
+            "created_at": "2025-12-30T00:17:19.530Z"
+          },
+          {
+            "id": 455,
+            "eval_id": 83,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:17:19.530Z"
+          },
+          {
+            "id": 456,
+            "eval_id": 83,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "heresy",
+                "error"
+              ],
+              "count": 3
+            },
+            "created_at": "2025-12-30T00:17:19.530Z"
+          }
+        ]
+      },
+      {
+        "id": 84,
+        "suite_id": 69,
+        "col_order": 3,
+        "input": "A teacher says: 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human.' Evaluate this teaching.",
+        "expected": "This is the heresy of Docetism. It denies the true humanity of Christ. Orthodox Christianity teaches the hypostatic union - Jesus is fully God AND fully human. He had a real physical body, experienced hunger, thirst, fatigue, and truly died on the cross. 1 John 4:2-3 explicitly condemns denying that Jesus came in the flesh, and Hebrews 2:17 states he had to be made fully human to be our high priest.",
+        "output": "# Theological Analysis\n\n## Identification: **HERESY — Docetism**\n\nThis teaching is a classic expression of **Docetism** (from Greek *dokein*, \"to seem\"), one of the earliest heresies confronted by the Church.\n\n---\n\n## Historical Context\n\nDocetism emerged in the **1st-2nd centuries**, influenced by Gnostic dualism that viewed matter as evil or inferior. If flesh is inherently corrupt, the reasoning went, a divine Savior could not truly inhabit it.\n\n**Early opponents included:**\n- The Apostle John (1 John 4:2-3; 2 John 7)\n- Ignatius of Antioch (~110 AD)\n- Irenaeus of Lyon (*Against Heresies*)\n\n---\n\n## Why This Is Heretical\n\n### 1. **Contradicts Scripture**\n- *\"The Word became flesh\"* (John 1:14)\n- Jesus hungered, wept, bled, and died physically\n- The resurrection was bodily (Luke 24:39 — \"Touch me and see\")\n\n### 2. **Destroys Soteriology**\nGregory of Nazianzus articulated the principle: *\"What is not assumed is not healed.\"* If Christ didn't take true human nature, He cannot redeem it.\n\n### 3. **Condemned by Councils**\n- Affirmed against at **Nicaea (325)**, **Chalcedon (451)**\n- The Chalcedonian Definition declares Christ \"truly God and truly man\"\n\n---\n\n## Orthodox Teaching\n\nChrist possesses **two complete natures** — fully divine and fully human — united in one Person, without confusion, mixture, or separation.",
+        "duration": 40521,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.472Z",
+        "scores": [
+          {
+            "id": 526,
+            "eval_id": 84,
+            "name": "Theological Accuracy Judge",
+            "score": 0.95,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM correctly identifies the teaching as Docetism, a historic heresy denying Christ’s true humanity. It situates Docetism in its early-Gnostic context and cites legitimate opponents (John, Ignatius, Irenaeus). It provides strong biblical grounding: Jesus possessed a real, physical body evidenced by John 1:14 and Luke 24:39, and it affirms the bodily resurrection. It highlights the salvific necessity of true humanity with Gregory of Nazianzus (“What is not assumed is not healed”) and notes the ecumenical councils (Nicaea, Chalcedon) that define the orthodox hypostatic union. The orthodox teaching stated—Christ as truly God and truly man with two complete natures in one Person—is accurately portrayed. The answer is doctrinally sound, biblically grounded, and nuanced, presenting why the denial of Jesus’ true humanity undermines salvation and how historic orthodoxy affirms the incarnation. Minor potential enhancements could include explicit citation of Hebrews 2:17 and 1 John 4:2-3 together, but their absence does not constitute an error. "
+            },
+            "created_at": "2025-12-30T00:17:22.997Z"
+          },
+          {
+            "id": 527,
+            "eval_id": 84,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:17:22.998Z"
+          },
+          {
+            "id": 528,
+            "eval_id": 84,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "scripture",
+                "heretical",
+                "heresy",
+                "contradicts"
+              ],
+              "count": 5
+            },
+            "created_at": "2025-12-30T00:17:22.998Z"
+          }
+        ]
+      },
+      {
+        "id": 85,
+        "suite_id": 69,
+        "col_order": 4,
+        "input": "Someone teaches: 'The God of the Old Testament is different from the God of the New Testament. The Old Testament God was wrathful and evil, while Jesus revealed the true, good God.' What's wrong with this view?",
+        "expected": "This resembles Marcionism, a second-century heresy that rejected the Old Testament and taught there were two different gods. This is false. Orthodox Christianity affirms the unity of God across both Testaments. The same God who created the world, gave the law, and showed justice in the Old Testament is the God who sent Jesus. Jesus himself affirmed the Old Testament (Matthew 5:17-18) and revealed God's character as both just and merciful throughout scripture.",
+        "output": "# Theological Analysis: The \"Two Gods\" Teaching\n\n## Classification: **HERESY — Marcionism**\n\nThis is one of the earliest and most significant heresies the Church confronted, associated with **Marcion of Sinope** (c. 85–160 AD), formally condemned in Rome around 144 AD.\n\n---\n\n## Core Errors Identified\n\n### 1. **Violation of Divine Unity (Monotheism)**\nOrthodox Christianity confesses *one* God in three Persons. Positing two gods—one inferior/evil, one supreme/good—introduces a fundamentally **dualistic** metaphysic incompatible with biblical revelation.\n\n> *\"Hear, O Israel: The LORD our God, the LORD is one.\"* (Deuteronomy 6:4)\n\n### 2. **Misreading of Divine Attributes**\nThis view creates a false dichotomy:\n- It ignores **judgment in the New Testament** (Ananias & Sapphira, Revelation's wrath)\n- It ignores **mercy, love, and patience throughout the Old Testament** (Exodus 34:6-7, Hosea, Jonah)\n\nGod's justice and mercy are not contradictory but complementary attributes.\n\n### 3. **Christological Problem**\nJesus consistently identified Himself with YHWH and affirmed the Old Testament's authority:\n> *\"Before Abraham was, I AM\"* (John 8:58)\n> *\"I did not come to abolish the Law...\"* (Matthew 5:17)\n\n### 4. **Canon Destruction**\nMarcion rejected the entire Old Testament and edited Luke/Paul to remove \"Jewish\" elements—undermining apostolic authority.\n\n---\n\n## Why the Church Rejected This\n\nThe Fathers (Irenaeus, Tertullian) recognized this teaching:\n- Severs Christianity from its historical and prophetic roots\n- Makes Jesus' death meaningless (no Fall requiring redemption)\n- Introduces Gnostic cosmology\n\n**Orthodox teaching**: The same God who judges *is* the God who saves—both meet at the Cross.",
+        "duration": 42676,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.472Z",
+        "scores": [
+          {
+            "id": 556,
+            "eval_id": 85,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM correctly identifies the view as Marcionism (the claim of two gods) and argues for the orthodox Christian position: unity of God across the Old and New Testaments, continuity of God’s justice and mercy, and the authority of the Old Testament alongside the New. The response provides biblically grounded support: Deuteronomy 6:4 (the Lord is one), Jesus’ self-identification (John 8:58, I AM), and the continuity of Law and Gospel (Matt. 5:17). It also acknowledges Old Testament examples of mercy (Exodus 34:6-7; Hosea; Jonah) and New Testament judgments (e.g., Ananias and Sapphira, Revelation) to illustrate that divine wrath and mercy coexist in one God. The discussion of canon formation and Marcion’s rejection of the OT, along with church-historical rebuttals by the Fathers (Irenaeus, Tertullian), is consistent with orthodox history and doctrine. Nuance is present in addressing the danger of dualism, the Christological and canonical implications, and the claim that God’s justice and mercy are not contradictory but complementary, culminating in the Cross where judgment and salvation converge.\n\nPossible minor improvements (not errors):\n- The dating and specifics of Marcion’s condemnation (c. 144 AD) are historically nuanced in scholarship; a brief caveat acknowledging that exact dates and procedural details can vary among sources would add precision.\n- The statement that Marcion “edited Luke/Paul to remove ‘Jewish’ elements” is a common summary but simplified; historians note Marcion’s canon included a heavily edited Luke and a distinct collection of Pauline epistles, and the degree of editing versus selection is debated in scholarship. Including that caveat would enhance precision without undermining the overall argument.\n\nOverall, the response aligns well with historical orthodoxy and biblical evidence, and it captures the essential theological nuance regarding divine unity, scriptural authority, and the continuity of God’s character across Testaments."
+            },
+            "created_at": "2025-12-30T00:17:25.152Z"
+          },
+          {
+            "id": 557,
+            "eval_id": 85,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:17:25.152Z"
+          },
+          {
+            "id": 558,
+            "eval_id": 85,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "biblical",
+                "heresy",
+                "false",
+                "error"
+              ],
+              "count": 5
+            },
+            "created_at": "2025-12-30T00:17:25.152Z"
+          }
+        ]
+      },
+      {
+        "id": 86,
+        "suite_id": 69,
+        "col_order": 5,
+        "input": "A group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?",
+        "expected": "This is Gnosticism, an ancient heresy. It contradicts Christianity in multiple ways: Christianity teaches salvation through faith in Christ's public work (not secret knowledge), affirms the goodness of God's material creation (Genesis 1), and proclaims resurrection of the body (not escape from physicality). Gnosticism was explicitly condemned by early church fathers and the New Testament writings (especially 1 John and Colossians).",
+        "output": "# Theological Analysis: Gnosticism\n\n## Verdict: **HERESY** - This is classic Gnosticism, condemned by the early Church\n\n---\n\n## Identifying the Teaching\n\nThis statement contains the core markers of **Gnosticism**, a family of heresies that plagued the Church from the 1st-3rd centuries:\n\n### The Heretical Claims:\n1. **Salvation through secret knowledge (gnosis)** - Only initiates possess saving truth\n2. **Matter is inherently evil** - The physical world is corrupt by nature\n3. **Salvation as escape from materiality** - Redemption means liberation from the body/cosmos\n\n---\n\n## Why This Contradicts Orthodox Christianity\n\n| Gnostic Claim | Orthodox Teaching |\n|---------------|-------------------|\n| Secret knowledge saves | Faith in Christ saves (Eph. 2:8-9); Gospel proclaimed openly (Matt. 28:19-20) |\n| Matter is evil | Creation is \"very good\" (Gen. 1:31); God made the material world |\n| Escape the body | Bodily resurrection affirmed (1 Cor. 15; Apostles' Creed) |\n| Hidden truth for elites | \"Nothing hidden except to be disclosed\" (Mark 4:22) |\n\n---\n\n## Historical Response\n\n- **Irenaeus** (*Against Heresies*, c. 180 AD)\n- **Tertullian**, **Hippolytus**\n- Rejected by all ecumenical consensus\n\nThe **Incarnation** itself refutes this: God *became* flesh (John 1:14), sanctifying matter eternally.",
+        "duration": 27200,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.472Z",
+        "scores": [
+          {
+            "id": 151,
+            "eval_id": 86,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM’s response accurately identifies the teaching as Gnosticism and situates it within orthodox Christian doctrine. It correctly contrasts Gnostic ideas (salvation through secret knowledge, inherent evil of matter, and redemption as escape from material reality) with biblical teaching (salvation by faith in Christ, creation as good, and bodily resurrection). It cites relevant scriptures to support its claims (Ephesians 2:8-9; Matthew 28:19-20; Genesis 1:31; 1 Corinthians 15; John 1:14) and references the historic condemnation by church fathers, which aligns with historical orthodoxy. It also emphasizes the Incarnation as a refutation of Gnostic dualism. The answer could be strengthened by explicit reference to New Testament passages that directly counter Gnostic error (e.g., 1 John and Colossians), but the biblical grounding remains solid and the nuance is well handled (distinguishing secret knowledge from publicly proclaimed gospel, affirming creation’s goodness, and the hope of bodily resurrection)."
+            },
+            "created_at": "2025-12-30T00:17:09.677Z"
+          },
+          {
+            "id": 152,
+            "eval_id": 86,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:17:09.677Z"
+          },
+          {
+            "id": 153,
+            "eval_id": 86,
+            "name": "Orthodox Response",
+            "score": 1,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox",
+                "heretical",
+                "heresy",
+                "contradicts"
+              ],
+              "count": 4
+            },
+            "created_at": "2025-12-30T00:17:09.677Z"
+          }
+        ]
+      },
+      {
+        "id": 87,
+        "suite_id": 69,
+        "col_order": 6,
+        "input": "Is the statement 'Jesus is Lord' sufficient for orthodox Christian belief, or are there other essential beliefs?",
+        "expected": "While 'Jesus is Lord' is foundational (Romans 10:9), orthodox Christianity requires additional essential beliefs about WHO Jesus is. The early creeds developed to combat heresies: Jesus must be confessed as fully God and fully human (against Arianism and Docetism), the Trinity must be affirmed (against modalism), salvation by grace through faith (against works-righteousness), and the authority of Scripture. These essential doctrines form the core of historic Christian orthodoxy.",
+        "output": "# Theological Analysis: The Sufficiency of \"Jesus is Lord\"\n\n## Initial Assessment\n\nThis is an excellent question that touches on the relationship between **minimalist confessions** and **developed orthodoxy**—a tension present throughout church history.\n\n## The Case for Sufficiency\n\nThe confession \"Jesus is Lord\" (*Kyrios Iesous*) carries remarkable theological density:\n\n- **Romans 10:9** ties it directly to salvation\n- **1 Corinthians 12:3** presents it as Spirit-enabled confession\n- It was likely the earliest baptismal formula\n- In its original context, *Kyrios* invoked the divine name (YHWH in the LXX)\n\n## Why the Church Developed Further Criteria\n\nHowever, the historical record shows this confession proved **necessary but insufficient**:\n\n1. **Arians** could say \"Jesus is Lord\" while denying full divinity\n2. **Docetists** affirmed lordship while denying true humanity\n3. **Modalists** confessed it while collapsing Trinitarian distinctions\n\nThis prompted the **Rule of Faith**, creeds (Nicaea, Chalcedon), and dogmatic precision.\n\n## Orthodox Position\n\nThe confession is *materially* sufficient when rightly understood—it *implies* incarnation, resurrection, divinity, and authority. But it requires **unpacking** against misinterpretation.\n\n**Verdict:** Orthodox as a seed confession; insufficient as a boundary marker without interpretive framework.\n\nWhat aspect would you like to explore further?",
+        "duration": 48823,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.472Z",
+        "scores": [
+          {
+            "id": 672,
+            "eval_id": 87,
+            "name": "Theological Accuracy Judge",
+            "score": 0.82,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "The claim that 'Jesus is Lord' was the earliest baptismal formula is contested in scholarship; early baptismal practice often cited the Triune formula ('in the name of the Father, and of the Son, and of the Holy Spirit'), and while 'Jesus is Lord' was a common creed/confession, labeling it the earliest baptismal formula should be treated as a debated claim with caveats."
+              ],
+              "rationale": "The response accurately (a) grounds the confession in scripture (Romans 10:9; 1 Corinthians 12:3), (b) connects it to historic controversy (Arianism, Docetism, Modalism) and (c) acknowledges that 'Jesus is Lord' is a seed/confession that needs proper interpretation to function as a boundary marker. It rightly situates the confession within the broader orthodox framework (incarnation, resurrection, divinity, authority, creeds like Nicaea/Chalcedon) and notes the necessity of interpretive framework beyond the bare confession. The main caveat is a historically contested claim about baptismal formulae, which should be qualified to avoid overstating its liturgical primacy."
+            },
+            "created_at": "2025-12-30T00:17:31.299Z"
+          },
+          {
+            "id": 673,
+            "eval_id": 87,
+            "name": "Heresy Identification",
+            "score": 1,
+            "description": "Checks if the response correctly identifies the heresy",
+            "metadata": {
+              "type": "no specific heresy"
+            },
+            "created_at": "2025-12-30T00:17:31.299Z"
+          },
+          {
+            "id": 674,
+            "eval_id": 87,
+            "name": "Orthodox Response",
+            "score": 0.3333333333333333,
+            "description": "Checks if the response defends orthodox teaching",
+            "metadata": {
+              "orthodoxKeywords": [
+                "orthodox"
+              ],
+              "count": 1
+            },
+            "created_at": "2025-12-30T00:17:31.299Z"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "eval": {
+    "id": 257,
+    "suite_id": 85,
+    "col_order": 1,
+    "input": "What was Paul's background before his conversion?",
+    "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+    "output": "Paul was a Pharisee, a Roman citizen, and a zealous persecutor of Christians. He was trained in Jewish law under Gamaliel in Jerusalem and actively worked to suppress the early Christian movement, including participating in the stoning of Stephen.",
+    "duration": 35577,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 1157,
+        "eval_id": 257,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "The phrase 'participating in the stoning' could imply Paul personally threw stones; the biblical text indicates he consented to Stephen's death (Acts 7:58; 8:1) rather than actively stoning him himself."
+          ],
+          "rationale": "The response accurately reflects Paul's pre-conversion identity: he was a Pharisee, a Roman citizen, trained in Jewish law under Gamaliel, and a zealous persecutor of Christians. It aligns with biblical data (Acts 22:3; Acts 7–8; Galatians 1:13–14; Philippians 3:5) and with historic Christian orthodoxy. The only nuance is the potential overstatement about his personal participation in Stephen's stoning; the text shows he approved of Stephen's death rather than necessarily throwing stones himself."
+        },
+        "created_at": "2025-12-30T00:17:57.441Z"
+      },
+      {
+        "id": 1158,
+        "eval_id": 257,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:57.441Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 441,
+        "eval_id": 257,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Paul was a Pharisee, a Roman citizen, and a zealous persecutor of Christians. He was trained in Jewish law under Gamaliel in Jerusalem and actively worked to suppress the early Christian movement, including participating in the stoning of Stephen.",
+          "toolCalls": []
+        },
+        "start_time": 196.145833,
+        "end_time": 2346.622417,
+        "input_tokens": 150,
+        "output_tokens": 57,
+        "total_tokens": 207,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 85,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

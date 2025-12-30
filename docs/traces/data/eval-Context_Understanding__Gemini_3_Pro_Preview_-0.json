@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 179,
+    "suite_id": 58,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "John the Apostle, the son of Zebedee. He was one of the Twelve Apostles, a member of Jesus's inner circle, and is identified in the text as \"the disciple whom Jesus loved.\"",
+    "duration": 45974,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:32.326Z",
+    "score": 0.4,
+    "scores": [
+      {
+        "id": 791,
+        "eval_id": 179,
+        "name": "Theological Accuracy Judge",
+        "score": 0.8,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": false,
+          "nuance_captured": true,
+          "errors": [
+            "The Gospel of John does not explicitly name its author; identifying the author as 'John the Apostle' is a traditional attribution, not a biblically stated fact.",
+            "The identification 'John the Apostle, the son of Zebedee' is not stated in the Gospel text itself; 'son of Zebedee' is a traditional identification not directly drawn from Scripture.",
+            "The characterization of John as part of Jesus's 'inner circle' and the precise labeling as 'the disciple whom Jesus loved' are interpretive and traditional considerations; the Gospel itself does not present these identifications in a fully explicit, doctrinally formal way."
+          ],
+          "rationale": "The response accurately highlights the key scriptural point that there is a 'beloved disciple' in John, and aligns with historic Christian teaching about John. However, it presents as fact the authorship and familial identity (John the Apostle, the son of Zebedee) which are traditional attributions not explicit in Scripture. It also uses the concept of an 'inner circle' which, while common in Christian tradition, is not explicitly delineated in the Gospel text. Overall, the core doctrinal content is sound, but the biblical grounding for authorship and familial details is not explicit in Scripture, and the answer would benefit from noting the traditional nature of those attributions."
+        },
+        "created_at": "2025-12-30T00:15:18.317Z"
+      },
+      {
+        "id": 792,
+        "eval_id": 179,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:15:18.318Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 298,
+        "eval_id": 179,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "John the Apostle, the son of Zebedee. He was one of the Twelve Apostles, a member of Jesus's inner circle, and is identified in the text as \"the disciple whom Jesus loved.\"",
+          "toolCalls": []
+        },
+        "start_time": 160.296125,
+        "end_time": 8093.343,
+        "input_tokens": 139,
+        "output_tokens": 535,
+        "total_tokens": 674,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 58,
+    "run_id": 1,
+    "name": "Context Understanding [Gemini 3 Pro Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Gemini 3 Pro Preview",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:32.326Z"
+  }
+}

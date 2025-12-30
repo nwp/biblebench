@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 256,
+    "suite_id": 85,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "The authorship of the Gospel of John is debated, but tradition identifies John the Apostle, one of Jesus's twelve disciples and the brother of James. He was part of Jesus's inner circle and is described as \"the disciple whom Jesus loved\" in the gospel itself.\n\nModern scholarship often questions whether John the Apostle actually wrote it, suggesting instead an anonymous author from a Johannine community, possibly drawing on eyewitness testimony. The text itself does not name its author.",
+    "duration": 31655,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 1143,
+        "eval_id": 256,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "The claim that the author is definitively 'John the Apostle' is traditional and not stated in Scripture; the response appropriately flags this as debated but could emphasize more clearly that this is a traditional attribution rather than a biblical assertion.",
+            "The reference to 'the brother of James' is a traditional identification (John the Apostle as brother of James) rather than something the Gospel explicitly states within its text; this nuance could be clarified to avoid implying the Gospel itself makes that identification.",
+            "The term 'inner circle' is a standard theological interpretation rather than a plainly stated biblically explicit fact; the answer treats it as a widely held view rather than a scriptural claim, which is fine, but should be flagged as interpretive rather than explicit biblical wording."
+          ],
+          "rationale": "The response correctly notes the Gospel of John is not named within the text and acknowledges traditional attribution to John the Apostle alongside modern scholarly doubt about authorship. It accurately cites the Gospel’s own mention of 'the disciple whom Jesus loved' as a textual clue. It captures important nuance by presenting both traditional attribution and scholarly competing theories (anonymous Johannine work or a Johannine community). The main caveat is that some attributions (John as the brother of James, inner-circle language) rest on tradition or interpretive categories rather than explicit biblical statements. Overall, the answer is doctrinally sound, biblically contextual, and nuanced, with minor clarifications needed regarding what the Bible itself states versus what tradition or scholarly theory claims."
+        },
+        "created_at": "2025-12-30T00:17:53.518Z"
+      },
+      {
+        "id": 1144,
+        "eval_id": 256,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:53.518Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 436,
+        "eval_id": 256,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The authorship of the Gospel of John is debated, but tradition identifies John the Apostle, one of Jesus's twelve disciples and the brother of James. He was part of Jesus's inner circle and is described as \"the disciple whom Jesus loved\" in the gospel itself.\n\nModern scholarship often questions whether John the Apostle actually wrote it, suggesting instead an anonymous author from a Johannine community, possibly drawing on eyewitness testimony. The text itself does not name its author.",
+          "toolCalls": []
+        },
+        "start_time": 188.673667,
+        "end_time": 2924.515875,
+        "input_tokens": 155,
+        "output_tokens": 106,
+        "total_tokens": 261,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 85,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

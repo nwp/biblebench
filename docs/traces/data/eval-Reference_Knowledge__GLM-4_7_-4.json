@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 146,
+    "suite_id": 31,
+    "col_order": 4,
+    "input": "Where does Paul write about the armor of God?",
+    "expected": "Ephesians 6:10-18",
+    "output": "Ephesians 6:11",
+    "duration": 58865,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:59:35.664Z",
+    "score": 0.3333333333333333,
+    "scores": [
+      {
+        "id": 388,
+        "eval_id": 146,
+        "name": "Scripture Reference Accuracy",
+        "score": 0,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": false
+        },
+        "created_at": "2025-12-30T01:00:34.547Z"
+      },
+      {
+        "id": 389,
+        "eval_id": 146,
+        "name": "Contains Answer",
+        "score": 0,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": false
+        },
+        "created_at": "2025-12-30T01:00:34.547Z"
+      },
+      {
+        "id": 390,
+        "eval_id": 146,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Ephesians 6:11"
+        },
+        "created_at": "2025-12-30T01:00:34.547Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 146,
+        "eval_id": 146,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhere does Paul write about the armor of God?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Ephesians 6:11",
+          "toolCalls": []
+        },
+        "start_time": 159.952084,
+        "end_time": 59022.031,
+        "input_tokens": 57,
+        "output_tokens": 1412,
+        "total_tokens": 1469,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "GLM-4.7",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:59:35.664Z"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 150,
+    "suite_id": 31,
+    "col_order": 8,
+    "input": "What is the reference for the Great Commission?",
+    "expected": "Matthew 28:19-20",
+    "output": "Matthew 28:18-20",
+    "duration": 20545,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:59:35.664Z",
+    "score": 0.3333333333333333,
+    "scores": [
+      {
+        "id": 343,
+        "eval_id": 150,
+        "name": "Scripture Reference Accuracy",
+        "score": 0,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": false
+        },
+        "created_at": "2025-12-30T00:59:56.227Z"
+      },
+      {
+        "id": 344,
+        "eval_id": 150,
+        "name": "Contains Answer",
+        "score": 0,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": false
+        },
+        "created_at": "2025-12-30T00:59:56.227Z"
+      },
+      {
+        "id": 345,
+        "eval_id": 150,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Matthew 28:18-20"
+        },
+        "created_at": "2025-12-30T00:59:56.227Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 124,
+        "eval_id": 150,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for the Great Commission?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Matthew 28:18-20",
+          "toolCalls": []
+        },
+        "start_time": 160.5275,
+        "end_time": 20702.121334,
+        "input_tokens": 56,
+        "output_tokens": 895,
+        "total_tokens": 951,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "GLM-4.7",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:59:35.664Z"
+  }
+}

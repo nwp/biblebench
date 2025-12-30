@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 143,
+    "suite_id": 13,
+    "col_order": 16,
+    "input": "Quote Philippians 4:13 from the King James Version (KJV) exactly as written",
+    "expected": "I can do all things through Christ which strengtheneth me",
+    "output": "I can do all things through Christ which strengtheneth me.",
+    "duration": 2993,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:32:45.825Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 21,
+        "eval_id": 143,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:32:48.820Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 21,
+        "eval_id": 143,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Philippians 4:13 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "I can do all things through Christ which strengtheneth me.",
+          "toolCalls": []
+        },
+        "start_time": 433.545292,
+        "end_time": 3377.976209,
+        "input_tokens": 91,
+        "output_tokens": 62,
+        "total_tokens": 153,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 13,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:32:45.825Z"
+  }
+}

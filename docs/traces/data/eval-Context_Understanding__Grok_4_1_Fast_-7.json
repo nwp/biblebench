@@ -1,0 +1,91 @@
+{
+  "eval": {
+    "id": 178,
+    "suite_id": 57,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "To reveal kingdom mysteries to disciples and believers while concealing them from unbelievers, fulfilling Isaiah 6:9-10.",
+    "duration": 41112,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:02.279Z",
+    "score": 0.41,
+    "scores": [
+      {
+        "id": 786,
+        "eval_id": 178,
+        "name": "Theological Accuracy Judge",
+        "score": 0.82,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": false,
+          "errors": [
+            "Overly binary portrayal: 'reveal to believers while conceal from unbelievers' simplifies the biblical point. Jesus speaks of revealing to those with ears to hear, but the outside world isn't categorically condemned in every instance; understanding can grow (careful with hardening language).",
+            "Missed pedagogical nuance: parables also function as memorable, everyday imagery that aids teaching and recall, which the response does not mention.",
+            "Nuance about prophecy/hardening: while cited with Isaiah 6:9-10, the relationship between prophetic fulfillment, hardening of hearts, and judgment is more nuanced than a single 'concealment' claim.",
+            "Explicit scriptural grounding: would be strengthened by referencing specific passages (e.g., Matthew 13:10-17; Mark 4:11-12; Luke 8:10) to anchor the claim in context."
+          ],
+          "rationale": "The answer correctly identifies a core biblical claim: Jesus used parables to reveal truth to insiders (disciples) and mask it from outsiders, aligning with Matthew 13:10-17 and Isaiah 6:9-10. This aligns with historic orthodoxy and scriptural grounding. However, it is overly concise and lacks key nuances: the pedagogical value of everyday imagery, the gradual unveiling of mysteries to those open to God, and the fuller complexity of the Isaiah quotation. Adding explicit citations and acknowledging the gradual, receptive-heard dimension would improve precision and nuance."
+        },
+        "created_at": "2025-12-30T00:10:43.409Z"
+      },
+      {
+        "id": 787,
+        "eval_id": 178,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:10:43.409Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 299,
+        "eval_id": 178,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To reveal kingdom mysteries to disciples and believers while concealing them from unbelievers, fulfilling Isaiah 6:9-10.",
+          "toolCalls": []
+        },
+        "start_time": 193.438291,
+        "end_time": 4073.941916,
+        "input_tokens": 279,
+        "output_tokens": 427,
+        "total_tokens": 706,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Grok 4.1 Fast]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Grok 4.1 Fast",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:02.279Z"
+  }
+}

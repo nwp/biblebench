@@ -1,0 +1,593 @@
+{
+  "history": [
+    {
+      "score": 0.7501116244836713,
+      "date": "2025-12-30T00:16:42.484Z"
+    }
+  ],
+  "suite": {
+    "id": 79,
+    "run_id": 1,
+    "name": "Core Doctrines [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/core-doctrines.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Core Doctrines",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.484Z",
+    "evals": [
+      {
+        "id": 184,
+        "suite_id": 79,
+        "col_order": 0,
+        "input": "Explain the doctrine of the Trinity. How can God be one yet three persons?",
+        "expected": "The Trinity is the Christian doctrine that God exists as three distinct persons (Father, Son, and Holy Spirit) who are coequal and coeternal, yet remain one God in essence and substance. This is a mystery that transcends human comprehension - not three gods (tritheism) nor one person in three modes (modalism), but one God in three persons who are distinct yet inseparable in their divine nature and work.",
+        "output": "# The Doctrine of the Trinity\n\n## The Core Claim\n\nGod is one in essence (nature) but three in persons (Father, Son, Holy Spirit). This isn't three gods or three parts of one god, but a genuine mystery at Christianity's heart.\n\n## Biblical Foundation\n\n**Old Testament hints:**\n- Genesis 1:26: \"Let *us* make man in *our* image\" (plural)\n- Isaiah 48:16: The speaker (God) mentions \"the Lord and his Spirit\"\n\n**New Testament clarity:**\n- Matthew 28:19: Baptism \"in the name of the Father and of the Son and of the Holy Spirit\"\n- 2 Corinthians 13:14: \"The grace of the Lord Jesus, and the love of God, and the fellowship of the Holy Spirit\"\n- 1 Peter 1:2: All three persons work in salvation\n\n## How to Understand \"One Yet Three\"\n\n**What this means:**\n- **One *what*:** Essence, nature, deity, power, glory\n- **Three *what*:** Persons (hypostases)—distinct centers of consciousness and relationship\n\n**A critical distinction:** They don't divide the divine nature (like three parts of a pie) but rather each fully possesses it (like water's properties fully present in ice, liquid, and steam—though this analogy is imperfect).\n\n## Key Characteristics\n\n| Aspect | Truth |\n|--------|-------|\n| **Equality** | All three are fully God (John 1:1; Romans 9:5) |\n| **Distinction** | They relate to each other and act differently |\n| **Inseparability** | Their works are unified (creation, redemption, sanctification) |\n| **Mystery** | Beyond full human comprehension |\n\n## Common Misunderstandings to Avoid\n\n❌ **Modalism**: The three are just different \"modes\" God appears in (they're simultaneously distinct, not sequential)\n\n❌ **Tritheism**: Three separate gods (violates monotheism)\n\n❌ **Subordinationism**: The Son and Spirit are lesser (all equally divine)\n\n## Why It Matters Theologically\n\nThe Trinity safeguards crucial Christian truths:\n- **God's transcendence** (three persons) *and* **intimacy** (one essence)\n- Jesus is fully God, not a created being\n- The Holy Spirit is divine, not impersonal force\n- Salvation involves the whole Godhead\n\n## The Bottom Line\n\nThe Trinity isn't solved—it's *confessed*. Early creeds captured it without claiming to fully explain it. It remains what Augustine called \"a mystery of faith\": rationally coherent enough to defend against false alternatives, yet ultimately transcending human categories.",
+        "duration": 51001,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.484Z",
+        "scores": [
+          {
+            "id": 803,
+            "eval_id": 184,
+            "name": "Theological Accuracy Judge",
+            "score": 0.87,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "OT evidence for the Trinity is presented cautiously but could be stated with more caution: Genesis 1:26 (“Let us make man in our image”) and Isaiah 48:16 are debated among scholars as hints rather than explicit doctrinal statements; the LLM correctly labels them as hints but readers should recognize the ambiguity in the OT data.",
+                "Isaiah 48:16 is interpreted by some as referencing distinct persons within the Godhead, but the verse's primary context is debated (messianic/servant passages). Presenting it as clear evidence for three coequal persons could overstate the case; a clearer disclaimer that this is a debated OT hint would improve accuracy.",
+                "The comparison to “three parts of a pie” is helpful, but the piece could have emphasized the richer concept of perichoresis (the mutual indwelling) and the distinction between ontological (immanent) Trinity and economic Trinity for fuller nuance.",
+                "The “Subordinationism” item in the “Common Misunderstandings” section contains a potential contradiction: it states Subordinationism as implying “lesser” status, then adds “all equally divine” in parentheses. Subordinationism, in its eternal form, is rejected precisely because it implies lesser divinity; the wording should consistently reflect orthodox teaching that the Father, Son, and Spirit are coequal in essence across all eternity."
+              ],
+              "rationale": "The response is generally solid and aligns with historic orthodoxy: one essence in three persons, biblical basis (Matt. 28:19; 2 Cor. 13:14; 1 Pet. 1:2), and cautions against modalism and tritheism. It correctly notes the mystery and uses standard terms (hypostases, perichoresis is implied by “inseparability” though not named). Minor caveats include: (1) OT hints are debated and should be framed as such rather than treated as explicit evidence; (2) Isaiah 48:16 is contextually nuanced and may not straightforwardly establish three divine Persons; (3) more explicit discussion of the distinction between immanent (ontological) Trinity and economic Trinity would enhance nuance, and (4) the treatment of Subordinationism needs careful wording to avoid implying an acceptable form of eternal subordination. Overall, the answer is doctrinally sound with minor areas needing cautious framing and a touch more nuance."
+            },
+            "created_at": "2025-12-30T00:17:33.493Z"
+          },
+          {
+            "id": 804,
+            "eval_id": 184,
+            "name": "Heresy Detection Judge",
+            "score": 1,
+            "description": "Detects heretical or unorthodox theological statements",
+            "metadata": {
+              "contains_heresy": false,
+              "severity": "none",
+              "heresies_detected": [],
+              "explanation": "The response presents orthodox Trinitarian doctrine: one God in essence, three persons (Father, Son, Spirit) who are co-equal and co-eternal, with clear rejection of modalism, tritheism, and subordinationism. It adheres to biblical supports (Matt 28:19; 2 Cor 13:14; 1 Pet 1:2) and articulates the core features of the doctrine (unity of essence, distinction of persons, and the mystery of the Trinity). It also counters common errors and emphasizes that salvation involves the whole Godhead. \n\nPotential caveats and areas for clarification:\n- OT verses (e.g., Genesis 1:26; Isaiah 48:16) are debated as explicit proof-texts for the Trinity; they are historically important but not definitive on their own. Acknowledging this nuance would strengthen precision.\n- The phrase \"three centers of consciousness and relationship\" could be interpreted in ways that verge toward a social-Trinitarian reading if pressed, though the text clearly maintains one essence and avoids making the persons into wholly separate beings. A fuller distinction between personal relations and personal centers would help guards against misinterpretation.\n- The water-analogy is noted as imperfect, but further clarification with classical terms (perichoresis, co-inherence) would aid readers in understanding how the persons truly relate without dissolving into mere modes or parts.\n- For greater doctrinal precision, explicit reference to classical language (homoousios/consubstantial with the Father; Spirit’s procession) and to the filioque controversy in Western theology would enhance accuracy for readers seeking historic Catholic/Orthodox/Protestant distinctions.\n\nOverall, the response stays within historic Christian orthodoxy and does not present a heretical teaching. The minor caveats are editorial or exegetical rather than doctrinal errors."
+            },
+            "created_at": "2025-12-30T00:17:33.493Z"
+          },
+          {
+            "id": 805,
+            "eval_id": 184,
+            "name": "Doctrinal Completeness",
+            "score": 0.7647058823529411,
+            "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+            "metadata": {
+              "expectedTerms": [
+                "trinity",
+                "christian",
+                "doctrine",
+                "exists",
+                "three",
+                "distinct",
+                "persons",
+                "father",
+                "holy",
+                "spirit"
+              ],
+              "coveredCount": 26,
+              "totalExpected": 34,
+              "completeness": 0.7647058823529411
+            },
+            "created_at": "2025-12-30T00:17:33.493Z"
+          }
+        ]
+      },
+      {
+        "id": 185,
+        "suite_id": 79,
+        "col_order": 1,
+        "input": "What is the hypostatic union in relation to Jesus Christ?",
+        "expected": "The hypostatic union is the doctrine that Jesus Christ is one person with two complete and distinct natures: fully God and fully human. These two natures are united without mixture, confusion, separation, or division. Jesus is not partly God and partly human, but wholly God and wholly human simultaneously.",
+        "output": "# The Hypostatic Union: Christ's Divine-Human Nature\n\n## Definition\n\nThe hypostatic union is the doctrine that Jesus Christ is one person (*hypostasis*) who exists simultaneously in two complete natures: fully divine and fully human. These natures are united without confusion, separation, or change.\n\n## Key Biblical Foundations\n\n**Christ's Divinity:**\n- John 1:1 — \"The Word was God\"\n- Colossians 2:9 — \"In Christ all the fullness of the Deity lives in bodily form\"\n- Hebrews 1:3 — Christ is \"the radiance of God's glory and the exact representation of his being\"\n\n**Christ's Humanity:**\n- John 1:14 — \"The Word became flesh and made his dwelling among us\"\n- Hebrews 2:17 — He \"had to be made like his brothers and sisters in every way\"\n- Luke 2:52 — Jesus \"grew and became strong\"\n\n## Theological Framework\n\nThe doctrine emerged formally at the **Council of Chalcedon (451 AD)** and maintains that:\n\n1. **Distinction without separation** — Both natures remain fully intact\n2. **Unity without confusion** — They don't merge or compromise each other\n3. **Single personhood** — One \"I\" acts through both natures\n4. **Voluntary limitation** — His divine nature voluntarily restricted its operations during incarnation\n\n## Why It Matters\n\n- Ensures Christ's redemptive work has both divine efficacy and genuine human solidarity with us\n- Preserves Christ's ability to truly represent humanity before God\n- Protects against heresies denying either His full divinity or full humanity",
+        "duration": 45674,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.485Z",
+        "scores": [
+          {
+            "id": 615,
+            "eval_id": 185,
+            "name": "Theological Accuracy Judge",
+            "score": 0.78,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Definition omits the classic Chalcedonian clause 'without division' (the standard formula is 'without confusion, without change, without division, without separation').",
+                "The statement 'Voluntary limitation — His divine nature voluntarily restricted its operations during incarnation' is a contested and delicate claim in orthodox Christology (kenosis language) and requires careful qualification to avoid implying a necessary change to the divine attributes or a lack of divine sovereignty.",
+                "There is a minor inconsistency in the framing: the fourfold teaching is typically expressed as 'unconfused, unchangeable, undivided, inseparable' (or equivalently 'without confusion, without change, without division, without separation'); the response uses 'distinction without separation' and 'unity without confusion,' which can be confusing or misstate the standard nuance."
+              ],
+              "rationale": "The answer is largely accurate and biblically grounded, correctly affirming Jesus as one person with two natures (divine and human) and citing key scriptures. It correctly notes Chalcedon as the defining moment and captures core doctrinal points (distinction without separation, unity of person). The main issue is a missing 'division' clause in the formal definition, plus a potentially overconfident claim about divine self-limitation during the incarnation (kenosis) that requires careful qualification. Overall, the response is doctrinally sound and fairly nuanced, with minor but important corrections needed for full precision."
+            },
+            "created_at": "2025-12-30T00:17:28.167Z"
+          },
+          {
+            "id": 616,
+            "eval_id": 185,
+            "name": "Heresy Detection Judge",
+            "score": 1,
+            "description": "Detects heretical or unorthodox theological statements",
+            "metadata": {
+              "contains_heresy": false,
+              "severity": "none",
+              "heresies_detected": [],
+              "explanation": "Overall, the response accurately presents the orthodox doctrine of the hypostatic union: one person (the Son) in two natures (divine and human), united without confusion, without change, without division, without separation, following Chalcedon. Biblical foundations are correctly cited for both the divine and human natures. Minor issues to note: 1) The Chalcedonian formula is usually given as: in two natures, without confusion, without change, without division, without separation. The phrasing here (“Distinction without separation” and “Unity without confusion”) is a nonstandard restatement and could cause confusion; aligning with the traditional fourfold formula would improve precision. 2) The statement “Voluntary limitation — His divine nature voluntarily restricted its operations during incarnation” could be interpreted as the divine nature losing essential attributes. A clearer formulation would distinguish the person of the Son’ voluntary humility in taking on human nature, while affirming that the divine nature remains fully divine and does not cease to exercise its attributes, and that the incarnation involved creaturely limitation by the incarnate Son, not a loss of divine essence. If kenosis is cited, it should be handled carefully (Philippians 2:7) and clarified to avoid implying divinity itself is diminished. 3) The content could explicitly mention that the two natures remain distinct in themselves but are united in one hypostasis (the divine Logos) to prevent any residual ambiguity about ‘two persons.’ Overall, no heresy is taught; suggested clarifications would improve precision."
+            },
+            "created_at": "2025-12-30T00:17:28.168Z"
+          },
+          {
+            "id": 617,
+            "eval_id": 185,
+            "name": "Doctrinal Completeness",
+            "score": 0.75,
+            "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+            "metadata": {
+              "expectedTerms": [
+                "hypostatic",
+                "union",
+                "doctrine",
+                "jesus",
+                "christ",
+                "person",
+                "complete",
+                "distinct",
+                "natures",
+                "fully"
+              ],
+              "coveredCount": 21,
+              "totalExpected": 28,
+              "completeness": 0.75
+            },
+            "created_at": "2025-12-30T00:17:28.168Z"
+          }
+        ]
+      },
+      {
+        "id": 186,
+        "suite_id": 79,
+        "col_order": 2,
+        "input": "Explain justification by faith. How does someone become righteous before God?",
+        "expected": "Justification by faith is the doctrine that sinners are declared righteous before God solely through faith in Jesus Christ, not by their own works or merit. It is a legal declaration by God where the righteousness of Christ is imputed to believers, and their sins are forgiven. This justification is received through faith alone (sola fide), by grace alone (sola gratia), based on Christ's finished work alone (solus Christus).",
+        "output": "# Justification by Faith: A Biblical Overview\n\n## Core Definition\n\nJustification is God's declaration that a person is righteous before Him—not based on their own moral achievement, but through faith in Christ's redemptive work. It's a legal verdict of acquittal, not a transformation of character (that's *sanctification*).\n\n## The Mechanism\n\n**The Problem:** All humans are sinners (Romans 3:23), and sin creates a debt we cannot pay. God's justice demands payment.\n\n**The Solution:** Christ's death satisfies God's justice:\n- Christ bore the penalty we deserved (2 Corinthians 5:21)\n- His righteousness is credited to us through faith (Romans 4:3-8)\n- This is the \"exchange\": our sin for His righteousness\n\n**The Application:** We receive this through faith alone—trusting in Christ, not in our works (Romans 3:28, Ephesians 2:8-9).\n\n## Key Biblical Passages\n\n- **Romans 3:21-26** — The clearest systematic statement\n- **Romans 4** — Abraham justified by faith, not works\n- **Galatians 2:16** — \"Not by works of the law\"\n- **Philippians 3:9** — Righteousness \"through faith in Christ\"\n\n## Important Distinctions\n\n| Justification | Sanctification |\n|---|---|\n| Legal verdict | Moral transformation |\n| Instantaneous | Progressive |\n| By faith alone | Involves obedience |\n| Perfect/complete | Never complete in this life |\n\nThis doctrine addresses humanity's deepest need: how to stand acceptable before a holy God.",
+        "duration": 48309,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.485Z",
+        "scores": [
+          {
+            "id": 655,
+            "eval_id": 186,
+            "name": "Theological Accuracy Judge",
+            "score": 0.9,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The response accurately presents justification by faith as a forensic declaration of righteousness by God, received through faith in Christ and not by works. It correctly emphasizes imputed righteousness, the substitutionary work of Christ, and the distinction between justification (legal verdict) and sanctification (moral growth). It cites key passages (Romans 3, 4; Galatians 2:16; Philippians 3:9; 2 Corinthians 5:21; Ephesians 2:8-9) and aligns with historic Protestant orthodoxy (sola fide, sola gratia, solus Christus). Nuances such as the James 2 tension (faith that works) and the fuller Catholic/Orthodox emphasis on infused righteousness or union with Christ are not addressed, which is a common point of variance among traditions. Overall, the answer is biblically grounded and doctrinally solid, with a solid but not exhaustive treatment of nuance."
+            },
+            "created_at": "2025-12-30T00:17:30.801Z"
+          },
+          {
+            "id": 656,
+            "eval_id": 186,
+            "name": "Heresy Detection Judge",
+            "score": 1,
+            "description": "Detects heretical or unorthodox theological statements",
+            "metadata": {
+              "contains_heresy": false,
+              "severity": "none",
+              "heresies_detected": [],
+              "explanation": "The response presents a classic Protestant articulation of justification by faith alone (sola fide) with imputed righteousness and the distinction between justification (forensic/legal declaration) and sanctification (moral transformation). It cites standard scriptures (Rom 3:21-26; Rom 4; Gal 2:16; Phil 3:9; Eph 2:8-9; 2 Cor 5:21) and frames the process in terms of faith, not works. This aligns with historic orthodox teaching within Protestant soteriology and does not advocate the listed heresies (Arianism, Modalism, Pelagianism, Gnosticism, Docetism, etc.)."
+            },
+            "created_at": "2025-12-30T00:17:30.801Z"
+          },
+          {
+            "id": 657,
+            "eval_id": 186,
+            "name": "Doctrinal Completeness",
+            "score": 0.5813953488372093,
+            "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+            "metadata": {
+              "expectedTerms": [
+                "justification",
+                "faith",
+                "doctrine",
+                "sinners",
+                "declared",
+                "righteous",
+                "before",
+                "solely",
+                "through",
+                "faith"
+              ],
+              "coveredCount": 25,
+              "totalExpected": 43,
+              "completeness": 0.5813953488372093
+            },
+            "created_at": "2025-12-30T00:17:30.801Z"
+          }
+        ]
+      },
+      {
+        "id": 187,
+        "suite_id": 79,
+        "col_order": 3,
+        "input": "What is the doctrine of original sin?",
+        "expected": "Original sin is the doctrine that all humanity inherited a sinful nature from Adam's fall. As a result, all people are born with a inclination toward sin and are spiritually separated from God. This doesn't mean infants are guilty of actual sins, but that human nature is corrupted and inclined toward evil apart from God's grace.",
+        "output": "# The Doctrine of Original Sin\n\n## Core Definition\n\nOriginal sin refers to the fallen spiritual condition of all humanity inherited from Adam and Eve's first disobedience in Eden. It encompasses both the *guilt* imputed to humanity through Adam's transgression and the *corruption* of human nature that results from it.\n\n## Biblical Foundation\n\n**The Genesis Account (Genesis 3)**\n- Adam and Eve violated God's command not to eat from the tree of knowledge\n- Their disobedience brought death and separation from God upon themselves and their descendants\n- Humanity was cast from Eden into a broken world\n\n**Paul's Theological Explanation (Romans 5:12-21)**\n- \"Sin entered the world through one man, and death through sin\"\n- All have sinned; death reigns over all humanity\n- Yet Christ's redemption reverses Adam's transgression\n\n**Additional Support (1 Corinthians 15:21-22; Psalm 51:5)**\n\n## Key Components\n\n| Aspect | Meaning |\n|--------|---------|\n| **Imputation** | Adam's guilt is credited to all humans |\n| **Depravity** | Human nature is corrupted and inclined toward sin |\n| **Universality** | The condition affects all people (except Christ) |\n| **Consequence** | Death and separation from God |\n\n## Important Nuances\n\n- Humans are not held personally guilty for Adam's act, but bear its consequences\n- Infants inherit this condition without personal culpability\n- Original sin doesn't eliminate human responsibility for actual sins\n- Different theological traditions (Catholic, Reformed, Arminian) emphasize different aspects\n\n## Redemptive Answer\n\nChrist's incarnation, death, and resurrection provide the solution through grace and faith.",
+        "duration": 47061,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.485Z",
+        "scores": [
+          {
+            "id": 637,
+            "eval_id": 187,
+            "name": "Theological Accuracy Judge",
+            "score": 0.75,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Inconsistent treatment of original sin as both 'guilt imputed to all humans' and 'not personally guilty for Adam's act' — the text contradicts itself on whether original sin entails imputed guilt.",
+                "Psalm 51:5 is cited as supporting original sin; while it expresses David's personal sin, many traditions view it as a confession of personal sin rather than a universal statement about original sin. Using it as a primary basis for original sin is debatable.",
+                "Some traditions (notably Catholic) distinguish original sin as a deprivation of original justice rather than a blanket imputation of Adam's guilt to all—presenting 'guilt imputed' without acknowledging this nuance can misrepresent Catholic teaching.",
+                "The phrase 'universality (except Christ)' is broadly accurate but could be strengthened by clarifying terms like total depravity and by noting that Christ is sinless and exempt from original sin, rather than implying a general exemption.",
+                "While the answer correctly cites Romans 5 and Genesis 3, it would benefit from a clearer distinction between original sin as a state (deprivation/corruption) vs. imputed guilt to demonstrate how different traditions frame the issue (Augustinian/Calvinist vs. Catholic/Eastern Orthodox)."
+              ],
+              "rationale": "The response captures core biblical anchors (Gen 3; Rom 5; 1 Cor 15) and outlines key components (inheritance of a fallen nature, universality, need for grace). It also shows awareness of doctrinal diversity. However, it contains an internal inconsistency about guilt imputation, relies on Psalm 51:5 as a primary support, and could more accurately reflect non-Protestant traditions’ understanding of original sin as deprivation (not merely guilt). These issues slightly undermine precision, though the overall doctrinal direction remains sound."
+            },
+            "created_at": "2025-12-30T00:17:29.555Z"
+          },
+          {
+            "id": 638,
+            "eval_id": 187,
+            "name": "Heresy Detection Judge",
+            "score": 1,
+            "description": "Detects heretical or unorthodox theological statements",
+            "metadata": {
+              "contains_heresy": false,
+              "severity": "minor",
+              "heresies_detected": [
+                "Ambiguity/contradiction: asserts guilt imputed to all humans but also states 'Humans are not held personally guilty for Adam's act' — this is inconsistent with some traditions and could imply Pelagian tendencies if read in isolation.",
+                "Possible misrepresentation of Catholic/Orthodox original sin doctrine: emphasizes guilt imputation in a way that diverges from their typical emphasis on the loss of original holiness and deprivation of grace rather than universal personal guilt."
+              ],
+              "explanation": "The overall content is broadly orthodox in summary—original sin as a fallen condition affecting all humanity, with Christ as the redemptive solution. The potential issues lie in the tension between 'guilt imputed to all humanity' and the claim that humans are 'not personally guilty for Adam's act' (while infants inherit the condition). Different Christian traditions (Reformed/Protestant) emphasize imputed guilt more strongly, whereas Catholic/Orthodox positions emphasize the state of sin and deprivation rather than universal personal guilt. This inconsistency is the main theological ambiguity and could lead to misinterpretation if presented without clear tradition-specific nuance. No explicit heresy (Arianism, Modalism, Pelagianism, Gnosticism, Docetism) is taught, though the phrasing could be clarified to avoid implying Pelagianism or a mischaracterization of original sin across traditions."
+            },
+            "created_at": "2025-12-30T00:17:29.555Z"
+          },
+          {
+            "id": 639,
+            "eval_id": 187,
+            "name": "Doctrinal Completeness",
+            "score": 0.6551724137931034,
+            "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+            "metadata": {
+              "expectedTerms": [
+                "original",
+                "doctrine",
+                "humanity",
+                "inherited",
+                "sinful",
+                "nature",
+                "adam",
+                "fall",
+                "result",
+                "people"
+              ],
+              "coveredCount": 19,
+              "totalExpected": 29,
+              "completeness": 0.6551724137931034
+            },
+            "created_at": "2025-12-30T00:17:29.555Z"
+          }
+        ]
+      },
+      {
+        "id": 188,
+        "suite_id": 79,
+        "col_order": 4,
+        "input": "Explain the relationship between divine sovereignty and human responsibility.",
+        "expected": "Divine sovereignty and human responsibility are both biblical truths held in tension. God is completely sovereign over all things, yet humans are genuine moral agents responsible for their choices. Scripture teaches both that God ordains all things and that humans make real choices for which they are accountable. Different theological traditions emphasize these aspects differently (Calvinism vs. Arminianism), but orthodox Christianity affirms both truths without fully resolving the mystery of how they relate.",
+        "output": "# Divine Sovereignty and Human Responsibility\n\nThis is one of theology's most profound tensions. Here's a systematic analysis:\n\n## The Biblical Tension\n\n**Divine Sovereignty affirms:**\n- God's absolute control and knowledge (Isaiah 46:9-10)\n- God's predetermination of events (Ephesians 1:11)\n- Human inability to thwart God's purposes (Proverbs 19:21)\n\n**Human Responsibility affirms:**\n- Genuine moral accountability (Romans 14:12)\n- Real choices with consequences (Joshua 24:15)\n- Commands that assume ability to obey (1 John 2:1)\n\nBoth themes appear insistently throughout Scripture without systematic reconciliation.\n\n## Major Theological Approaches\n\n**Calvinist/Reformed:**\n- God's sovereignty is primary; human freedom is real but compatible with determinism\n- Humans freely choose according to their nature, which God determines\n- Addresses foreknowledge through God's timelessness\n\n**Arminian:**\n- God's sovereignty includes granting libertarian free will\n- God's foreknowledge doesn't cause outcomes\n- Emphasizes human cooperation with grace\n\n**Molinist (Middle Knowledge):**\n- God knows all counterfactuals before creation\n- Reconciles genuine freedom with exhaustive divine knowledge\n- God ordains outcomes through knowledge of free choices\n\n**Open Theism:**\n- God has definite knowledge of the past/present\n- Future free acts remain genuinely open\n- Challenges traditional omniscience\n\n## Key Principles\n\n1. **Both are true** - Not choosing one eliminates biblical witness\n2. **Different categories** - God's sovereignty operates on a different metaphysical level than human choice\n3. **Not contradictory in God's perspective** - What appears paradoxical to us may not be in God's omniscience\n4. **Pastoral application** - Trust God's sovereignty while living responsibly\n\n## Practical Implications\n\n- Prayer is real (not illusory) even though God is sovereign\n- Evangelism is urgent (not futile) despite predestination\n- Moral effort matters (we're not passive)\n- Ultimate confidence in God's plan remains intact\n\n**The deepest Christian wisdom** often holds this tension humbly rather than resolving it prematurely.",
+        "duration": 24840,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.485Z",
+        "scores": [
+          {
+            "id": 90,
+            "eval_id": 188,
+            "name": "Theological Accuracy Judge",
+            "score": 0,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": false,
+              "biblically_grounded": false,
+              "nuance_captured": false,
+              "errors": [
+                "Scoring failed: No object generated: the model did not return a response."
+              ],
+              "rationale": "Judge model failed to evaluate this response after multiple retries",
+              "scoringError": true
+            },
+            "created_at": "2025-12-30T00:17:07.333Z"
+          },
+          {
+            "id": 91,
+            "eval_id": 188,
+            "name": "Heresy Detection Judge",
+            "score": 1,
+            "description": "Detects heretical or unorthodox theological statements",
+            "metadata": {
+              "contains_heresy": false,
+              "severity": "none",
+              "heresies_detected": [],
+              "explanation": "The provided response offers a balanced survey of divine sovereignty and human responsibility, outlining Calvinist/Reformed, Arminian, Molinist, and Open Theist perspectives without endorsing a heretical position. It cites biblical themes and maintains emphasis on grace, moral responsibility, prayer, and evangelism—core orthodox concerns. There is no explicit denial of Christ’s divinity, the Trinity, or salvation by grace, nor any advocacy of Pelagianism, Arianism, Modalism, Gnosticism, Docetism, or similar errors. The only potentially controversial element is the explicit inclusion of Open Theism as a major approach; some historic confessions consider it incompatible with classical omniscience. However, the text presents it as one option among others and does not itself advocate it as orthodox belief. Overall, there is no explicit heresy detected in the response. "
+            },
+            "created_at": "2025-12-30T00:17:07.333Z"
+          },
+          {
+            "id": 92,
+            "eval_id": 188,
+            "name": "Doctrinal Completeness",
+            "score": 0.5,
+            "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+            "metadata": {
+              "expectedTerms": [
+                "divine",
+                "sovereignty",
+                "human",
+                "responsibility",
+                "both",
+                "biblical",
+                "truths",
+                "held",
+                "tension",
+                "completely"
+              ],
+              "coveredCount": 26,
+              "totalExpected": 52,
+              "completeness": 0.5
+            },
+            "created_at": "2025-12-30T00:17:07.333Z"
+          }
+        ]
+      },
+      {
+        "id": 189,
+        "suite_id": 79,
+        "col_order": 5,
+        "input": "What does it mean that humans are made in the image of God (imago Dei)?",
+        "expected": "Being made in the image of God means humans uniquely reflect God's nature and character among creation. This includes rational thinking, moral awareness, creativity, relational capacity, and spiritual nature. While sin has marred this image, it hasn't been completely destroyed. The imago Dei gives humans inherent dignity and worth, distinguishes them from animals, and establishes the basis for human morality and purpose.",
+        "output": "# The Image of God (Imago Dei): A Theological Overview\n\n## The Core Teaching\n\nThe imago Dei refers to the biblical doctrine that humans possess a unique likeness to God, establishing human dignity and worth. This appears explicitly in Genesis 1:27: \"So God created mankind in his own image, in the image of God he created them; male and female he created them\" (NIV).\n\n## What the Image *Does* Encompass\n\n**Rational and moral capacity**: Humans possess reason, conscience, and the ability to distinguish right from wrong—capacities reflecting God's rational nature.\n\n**Relational ability**: We can form relationships, particularly with God and one another, mirroring the relational nature of the Trinity.\n\n**Moral agency**: We have genuine choice and responsibility, reflecting God's sovereign freedom.\n\n**Creative capacity**: Humans create, innovate, and steward creation in ways reflecting God's creative activity.\n\n**Spiritual dimension**: Only humans are described as capable of genuine communion with God.\n\n## What the Image Does *Not* Mean\n\n- **Physical resemblance**: God is spirit (John 4:24); the image is not bodily.\n- **Deity**: Humans are not divine; we remain creatures, fundamentally distinct from Creator.\n- **Unfailing goodness**: The image is compatible with human sinfulness (Genesis 9:6 assumes fallen humans still bear God's image).\n\n## Effects of the Fall\n\nSin corrupts but does not erase the imago Dei. This explains why:\n- Humans retain inherent dignity despite moral failure\n- Murder remains heinous (Genesis 9:6)\n- Christian transformation involves *restoration* of the image (Colossians 3:10; 2 Corinthians 3:18)\n\n## Theological Significance\n\nThe imago Dei grounds human rights, the sanctity of life, and the *possibility* of redemption through Christ, who is \"the image of the invisible God\" (Colossians 1:15).",
+        "duration": 40150,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.485Z",
+        "scores": [
+          {
+            "id": 517,
+            "eval_id": 189,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "The claim 'Only humans are described as capable of genuine communion with God' is a simplification. Scripture indeed portrays humans as uniquely bearing God’s image and capable of fellowship with God, but angels and other beings engage with God in various ways too; some theologians caution against asserting a blanket 'only humans' statement without nuance."
+              ],
+              "rationale": "The response aligns with mainstream biblical teaching on the imago Dei: Gen 1:27 establishes image-bearing; the image spans rational/moral capacity, relationality, moral agency, creativity, and a spiritual dimension; the fall marred but did not erase the image; Col 3:10 and 2 Cor 3:18 describe ongoing transformation toward the divine likeness; the image grounds dignity, worth, and the sanctity of life, and Jesus is described as the image of the invisible God (Col 1:15). It correctly excludes physical likeness and deity, and notes that the image persists post-fall (Gen 9:6). Minor nuanced points could be added regarding the functional vs. substantive debates about the imago Dei and the exact nature of ‘communion’ with God compared to angels, but these do not undermine the overall accuracy."
+            },
+            "created_at": "2025-12-30T00:17:22.643Z"
+          },
+          {
+            "id": 518,
+            "eval_id": 189,
+            "name": "Heresy Detection Judge",
+            "score": 1,
+            "description": "Detects heretical or unorthodox theological statements",
+            "metadata": {
+              "contains_heresy": false,
+              "severity": "none",
+              "heresies_detected": [],
+              "explanation": "The response presents a standard, orthodox account of the Imago Dei. It affirms Gen 1:27, the fall, and the ongoing dignity of humans despite sin, as well as the restoration work of Christ and the Spirit. It correctly denies physical likeness to God, deity in humans, and the notion that sin eliminates the image. It also aligns with biblical Christology by noting that Christ is the image of the invisible God. There are no explicit Arian, Modalist, Pelagian, Gnostic, Docetist, or similar heresies. A minor nuance worth clarifying: while the claim that only humans possess genuine communion with God is broadly consistent with Scripture, some passages speak to creation’s knowledge of God and the fuller, Trinitarian basis of genuine communion through Christ and the Spirit; overall, the treatment remains orthodox."
+            },
+            "created_at": "2025-12-30T00:17:22.643Z"
+          },
+          {
+            "id": 519,
+            "eval_id": 189,
+            "name": "Doctrinal Completeness",
+            "score": 0.43902439024390244,
+            "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+            "metadata": {
+              "expectedTerms": [
+                "being",
+                "made",
+                "image",
+                "means",
+                "humans",
+                "uniquely",
+                "reflect",
+                "nature",
+                "character",
+                "among"
+              ],
+              "coveredCount": 18,
+              "totalExpected": 41,
+              "completeness": 0.43902439024390244
+            },
+            "created_at": "2025-12-30T00:17:22.643Z"
+          }
+        ]
+      },
+      {
+        "id": 190,
+        "suite_id": 79,
+        "col_order": 6,
+        "input": "What is the gospel?",
+        "expected": "The gospel is the good news that Jesus Christ, the eternal Son of God, became human, lived a perfect life, died on the cross as a substitute for sinners, rose from the dead, and now offers salvation and reconciliation with God to all who repent and believe in him. It proclaims that salvation is a free gift of God's grace, not earned by human effort, received through faith in Christ alone.",
+        "output": "# The Gospel: Definition and Core Content\n\n## Definition\n\nThe gospel (Greek: *euangelion*, \"good news\") is the proclamation that God has accomplished salvation through Jesus Christ and offers it freely to all who believe.\n\n## The Core Message\n\nThe gospel centers on four essential elements:\n\n**1. The Problem: Human Sinfulness**\n- All humans have sinned and fall short of God's glory (Romans 3:23)\n- Sin creates separation from God and deserves death (Romans 6:23)\n\n**2. God's Solution: Christ's Redemptive Work**\n- Jesus Christ, God's Son, died as a substitute for our sins (1 Corinthians 15:3; Romans 5:8)\n- He was buried and rose from the dead on the third day (1 Corinthians 15:4)\n- His resurrection demonstrates victory over sin and death\n\n**3. Justification by Faith**\n- Salvation comes through faith in Christ, not human merit (Ephesians 2:8-9)\n- Those who believe receive forgiveness and right standing before God (Romans 5:1)\n\n**4. The Call to Response**\n- The gospel demands both belief and repentance (Mark 1:15)\n- It calls for personal commitment and allegiance to Christ as Lord\n\n## Biblical Summary\n\nPaul provides the clearest concise statement: \"Now, brothers and sisters, I want to remind you of the gospel I preached to you... Christ died for our sins... was buried... was raised on the third day\" (1 Corinthians 15:1-4).\n\n## The Gospel's Scope\n\nThe gospel is both **personal** (individual salvation) and **cosmic** (God's redemptive plan for all creation, Romans 8:19-21).",
+        "duration": 32420,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.485Z",
+        "scores": [
+          {
+            "id": 347,
+            "eval_id": 190,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [],
+              "rationale": "The LLM response provides a solid, biblically grounded, and historically orthodox summary of the gospel. It correctly identifies the problem of sin, the substitutionary work, the bodily resurrection, justification by faith, and the call to repentance and belief. It cites key scriptures (Rom 3:23, Rom 6:23, 1 Cor 15:3-4, Eph 2:8-9, Rom 5:1, Mark 1:15, etc.) and affirms the gospel as both personal and cosmic in scope (Rom 8:19-21). The treatment aligns with classical evangelical/orthodox teaching on grace, faith, and response, without promoting human merit or adding works-righteousness. Nuances such as the Holy Spirit’s role in regeneration or explicit emphasis on “Christ alone” are not denied but could be stated more explicitly; beyond that, the answer is accurate and nuanced. The scope section (personal and cosmic) adds depth beyond the standard minimal summary, reflecting a fuller biblical-theological perspective."
+            },
+            "created_at": "2025-12-30T00:17:14.913Z"
+          },
+          {
+            "id": 348,
+            "eval_id": 190,
+            "name": "Heresy Detection Judge",
+            "score": 1,
+            "description": "Detects heretical or unorthodox theological statements",
+            "metadata": {
+              "contains_heresy": false,
+              "severity": "none",
+              "heresies_detected": [],
+              "explanation": "The response presents a straightforward, orthodox summary of the gospel: humanity’s sin, Christ’s substitutionary death and resurrection, justification by faith apart from works, and a call to belief/repentance. It cites key Scripture (Rom 3:23; Rom 6:23; 1 Cor 15:3–4; Eph 2:8–9; Mark 1:15) and aligns with historic Christian confessional teaching (including the Pauline gospel formula in 1 Cor 15:1–4). It also notes the gospel’s personal and cosmic dimensions, which is consistent with biblical witness (e.g., Rom 8:19–21). The list of potential heresies (Arianism, Modalism, Pelagianism, Gnosticism, Docetism) is correctly recognized as deviations from orthodox faith, and none of the content endorses them. Minor caveats worth possible clarification (e.g., explicit Trinitarian language, fuller pneumatology, or nuances about the universality of the offer vs. its application) do not constitute heresy in this summary. Overall, no heretical teaching is detected; if anything, the content reflects classical Protestant/evangelical orthodoxy regarding the gospel."
+            },
+            "created_at": "2025-12-30T00:17:14.913Z"
+          },
+          {
+            "id": 349,
+            "eval_id": 190,
+            "name": "Doctrinal Completeness",
+            "score": 0.5142857142857142,
+            "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+            "metadata": {
+              "expectedTerms": [
+                "gospel",
+                "good",
+                "news",
+                "jesus",
+                "christ",
+                "eternal",
+                "became",
+                "human",
+                "lived",
+                "perfect"
+              ],
+              "coveredCount": 18,
+              "totalExpected": 35,
+              "completeness": 0.5142857142857142
+            },
+            "created_at": "2025-12-30T00:17:14.913Z"
+          }
+        ]
+      },
+      {
+        "id": 191,
+        "suite_id": 79,
+        "col_order": 7,
+        "input": "Explain the doctrine of the resurrection of the body.",
+        "expected": "The resurrection of the body is the Christian belief that at Christ's return, the dead will be raised with transformed, imperishable bodies. This will be a physical resurrection, not merely spiritual immortality. Believers will receive glorified bodies like Christ's resurrection body - real and physical yet freed from decay, death, and limitations of our current bodies. This demonstrates that God's redemption extends to the whole person, not just the soul.",
+        "output": "# The Doctrine of the Resurrection of the Body\n\n## Definition\n\nThe resurrection of the body is the Christian doctrine that God will raise believers' physical bodies from the dead and reunite them with their souls/spirits in a glorified, transformed state at the end of time.\n\n## Biblical Foundation\n\n**Old Testament anticipation:**\n- Daniel 12:2 — \"Many of those who sleep in the dust of the earth shall awake, some to everlasting life, and some to shame and everlasting contempt\"\n- Isaiah 26:19 — Promise of bodily resurrection\n\n**New Testament fulfillment:**\n- 1 Corinthians 15:3-8 — Christ's resurrection as the firstfruits and guarantee of believers' resurrection\n- 1 Thessalonians 4:16-17 — The dead in Christ will rise first at His coming\n- John 5:28-29 — Christ's authority to raise both believers and unbelievers\n- Revelation 20:12-13 — All the dead standing before God's throne\n\n## Key Characteristics\n\n**1. Physical, not merely spiritual**\n- The body itself is raised, not merely the soul surviving\n- Christ's resurrection body was tangible (Luke 24:39) yet transformed\n- This affirms the material world's ultimate redemption\n\n**2. Transformed and glorified**\n- Raised in \"incorruption\" and \"glory\" (1 Corinthians 15:42-43)\n- Continuity with earthly bodies yet fundamentally changed\n- \"Imperishable,\" \"powerful,\" suited for eternal existence\n\n**3. Universal scope**\n- \"All who are in the tombs will hear His voice\" (John 5:28-29)\n- Believers to life; unbelievers to judgment\n- No person escapes resurrection\n\n**4. Christ as the prototype**\n- His resurrection is the \"firstfruits\" (1 Corinthians 15:20-23)\n- Our resurrection depends on and mirrors His\n- His risen body demonstrates what transformed bodies are like\n\n## Theological Significance\n\n**Validates material creation**\n- God's redemptive plan includes the physical world, not escape from it\n- Corrects dualistic heresies that devalue the body\n\n**Completes salvation**\n- Redemption encompasses spirit *and* body (1 Thessalonians 5:23)\n- Death is truly conquered; the last enemy is destroyed (1 Corinthians 15:26)\n\n**Motivates ethical living**\n- Bodily resurrection grounds care for physical bodies (1 Corinthians 6:19-20)\n- Believers' present actions have eschatological weight\n\n**Establishes hope and justice**\n- Promises restoration of what was lost\n- Ensures justice—the righteous rewarded, the wicked judged in bodily form\n\n## Relation to Other Doctrines\n\n- **Christology:** Christ's resurrection authenticates and enables believers' resurrection\n- **Eschatology:** Occurs at Christ's return; followed by the final judgment and new creation\n- **Anthropology:** Affirms humans as unified beings (body + soul), not merely spiritual entities\n\n## Common Questions\n\n**Q: Will our resurrection bodies be identical to our earthly bodies?**\nA: They will be continuous yet transformed—recognizable (as Christ was) but fundamentally renewed, adapted for eternity.\n\n**Q: What about cremation or advanced decomposition?**\nA: God's power transcends physical continuity; He can recreate from any state.\n\n**Q: When does resurrection occur?**\nA: At Christ's second coming (1 Thessalonians 4:16), not at death (the intermediate state involves the soul only).\n\n## Conclusion\n\nThe resurrection of the body is not peripheral to Christian hope but central to it. It declares that God does not save souls from bodies but saves *persons*—embodied beings—for eternity. This doctrine grounds Christian optimism about ultimate redemption and dignifies the physical realm as worthy of God's restoration.",
+        "duration": 43043,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.485Z",
+        "scores": [
+          {
+            "id": 567,
+            "eval_id": 191,
+            "name": "Theological Accuracy Judge",
+            "score": 0.92,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Contains a contested claim about the intermediate state: 'the intermediate state involves the soul only.' This view is not universally held across Christian traditions (e.g., Catholic/Orthodox and many Protestant theologians affirm some form of conscious intermediate state). The statement could mislead readers who rely on other historic formularies.",
+                "Suggests cremation or decomposition pose no barrier to resurrection. While orthodox, this is presented with certainty that may not be explicit in Scripture and could be viewed as an overconfident handling of a debated practical issue.",
+                "The line 'end of time' as the precise timing for the resurrection could be clarified: in much Pauline and OT expectation, the resurrection is linked to Christ's coming/the end of the age rather than a vague 'end of time'."
+              ],
+              "rationale": "The response is largely accurate and aligns with mainstream biblical teaching: a bodily, transformed resurrection at Christ's return, with continuity with the present person but a radical transformation (per 1 Corinthians 15), grounded in key NT passages (1 Thessalonians 4, John 5:28-29, 1 Corinthians 15) and OT anticipation (Daniel 12:2; Isaiah 26:19). It correctly emphasizes the physicality of the resurrection, the church’s eschatological hope, and the salvific completeness that includes body and soul. Nuances such as the prototype of Christ’s resurrection, the glorified nature of the resurrected body, and the eschatological sequence (resurrection, judgment, new creation) are well handled. The main theological caveat is a contested claim about the intermediate state being exclusively soul-only, which is not uniform across historic Christian teaching and can mislead readers; additionally, statements about cremation and the precise timing (end of time) reflect common but not universally authoritative interpretations. Overall, the answer is doctrinally sound and biblically grounded with minor interpretive nuances that could be clarified."
+            },
+            "created_at": "2025-12-30T00:17:25.537Z"
+          },
+          {
+            "id": 568,
+            "eval_id": 191,
+            "name": "Heresy Detection Judge",
+            "score": 0,
+            "description": "Detects heretical or unorthodox theological statements",
+            "metadata": {
+              "contains_heresy": false,
+              "severity": "none",
+              "heresies_detected": [],
+              "explanation": "Scoring failed: No object generated: the model did not return a response.",
+              "scoringError": true
+            },
+            "created_at": "2025-12-30T00:17:25.537Z"
+          },
+          {
+            "id": 569,
+            "eval_id": 191,
+            "name": "Doctrinal Completeness",
+            "score": 0.7380952380952381,
+            "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+            "metadata": {
+              "expectedTerms": [
+                "resurrection",
+                "body",
+                "christian",
+                "belief",
+                "christ",
+                "return",
+                "dead",
+                "will",
+                "raised",
+                "transformed"
+              ],
+              "coveredCount": 31,
+              "totalExpected": 42,
+              "completeness": 0.7380952380952381
+            },
+            "created_at": "2025-12-30T00:17:25.537Z"
+          }
+        ]
+      }
+    ]
+  }
+}

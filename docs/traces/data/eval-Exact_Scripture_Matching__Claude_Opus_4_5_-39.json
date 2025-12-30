@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 415,
+    "suite_id": 90,
+    "col_order": 39,
+    "input": "Quote Lamentations 3:22-23 from the King James Version (KJV) exactly as written",
+    "expected": "It is of the Lord's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness",
+    "output": "It is of the LORD's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.",
+    "duration": 2411,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:30.378Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 759,
+        "eval_id": 415,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:17:32.822Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 266,
+        "eval_id": 415,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Lamentations 3:22-23 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "It is of the LORD's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.",
+          "toolCalls": []
+        },
+        "start_time": 208.805333,
+        "end_time": 2616.316458,
+        "input_tokens": 104,
+        "output_tokens": 36,
+        "total_tokens": 140,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 90,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:30.378Z"
+  }
+}

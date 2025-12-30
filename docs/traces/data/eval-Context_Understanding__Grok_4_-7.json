@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 186,
+    "suite_id": 58,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "To reveal the mysteries of the kingdom of God to those with receptive hearts while concealing them from those who are spiritually blind or hard-hearted, fulfilling Isaiah's prophecy.",
+    "duration": 36747,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:02.279Z",
+    "score": 0.4,
+    "scores": [
+      {
+        "id": 782,
+        "eval_id": 186,
+        "name": "Theological Accuracy Judge",
+        "score": 0.8,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response aligns with biblical teaching: Jesus explains in Matthew 13 that parables reveal truth to those with receptive hearts (the disciples and others who seek understanding) and conceal it from those who are spiritually dull or resistant, which is tied to the prophecy in Isaiah 6:9-10 (Matthew explicitly cites this fulfillment). The emphasis on the “mysteries of the kingdom of God” is biblically grounded and reflects the New Testament framing (e.g., Luke 8:10). This captures the core function of parables as a revelatory tool that also serves as a judgment against unbelief. It is doctrinally orthodox and biblically grounded. A notable nuance it misses is the broader pedagogical value some scholars highlight (e.g., parables as memorable, relatable stories that invite contemplation and application), as well as other dimensions often discussed (e.g., the role of parables in inviting discipleship). Nonetheless, the central claim is accurate, and the answer is faithful to Scripture."
+        },
+        "created_at": "2025-12-30T00:10:39.044Z"
+      },
+      {
+        "id": 783,
+        "eval_id": 186,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:10:39.044Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 297,
+        "eval_id": 186,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To reveal the mysteries of the kingdom of God to those with receptive hearts while concealing them from those who are spiritually blind or hard-hearted, fulfilling Isaiah's prophecy.",
+          "toolCalls": []
+        },
+        "start_time": 194.413791,
+        "end_time": 10219.357291,
+        "input_tokens": 807,
+        "output_tokens": 319,
+        "total_tokens": 1126,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 58,
+    "run_id": 1,
+    "name": "Context Understanding [Grok 4]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Grok 4",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:02.279Z"
+  }
+}

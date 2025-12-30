@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 125,
+    "suite_id": 28,
+    "col_order": 47,
+    "input": "Quote 1 Peter 3:15 from the English Standard Version (ESV) exactly as written",
+    "expected": "but in your hearts honor Christ the Lord as holy, always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect",
+    "output": "but in your hearts honor Christ the Lord as holy, always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect",
+    "duration": 5055,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:03:25.700Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 28,
+        "eval_id": 125,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T01:03:30.759Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 28,
+        "eval_id": 125,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote 1 Peter 3:15 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "but in your hearts honor Christ the Lord as holy, always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect",
+          "toolCalls": []
+        },
+        "start_time": 412.975541,
+        "end_time": 5425.28525,
+        "input_tokens": 127,
+        "output_tokens": 329,
+        "total_tokens": 456,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 28,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:03:25.699Z"
+  }
+}

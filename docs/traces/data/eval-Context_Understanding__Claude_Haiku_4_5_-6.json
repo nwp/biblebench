@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 262,
+    "suite_id": 85,
+    "col_order": 6,
+    "input": "What was the relationship between the books of Kings and Chronicles?",
+    "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+    "output": "Kings and Chronicles are parallel historical accounts of the Israelite and Judean monarchies. Chronicles was written later (likely 4th century BCE) and retells much of Kings' material with different emphases: Chronicles focuses more on the southern kingdom of Judah, emphasizes religious themes and temple worship, includes extended genealogies, and presents a more idealized view of certain kings. Both draw from earlier source documents, but Chronicles reorganizes and reinterprets the history for its post-exilic audience.",
+    "duration": 24183,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.862Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 1095,
+        "eval_id": 262,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s assessment aligns well with mainstream scholarly and biblical understanding: Chronicles recasts material from Kings with a priestly, temple-centered emphasis, foregrounds Judah and the Davidic covenant, includes extensive genealogies, and tends to present certain kings more favorably. It correctly notes that Chronicles is post-exilic in orientation and reinterprets history for that audience. It also correctly implies some overlap with Kings’ material and that Chronicles reorganizes content for thematic purposes (worship, covenant, priesthood) rather than serving as a strict, one-for-one parallel. A minor caveat worth noting is the dating: scholars generally place Chronicles in the late exile to post-exilic period (often dated roughly 5th–4th century BCE); labeling it strictly as “likely 4th century BCE” is plausible but not universally fixed. The statement that Chronicles “retells much of Kings’ material” is true in substance, though Chronicles is not a verbatim parallel but a selective reworking with a particular theological agenda. Overall, the response is doctrinally sound, biblically grounded, and captures important nuances, with only a minor dating precision caveat."
+        },
+        "created_at": "2025-12-30T00:17:46.047Z"
+      },
+      {
+        "id": 1096,
+        "eval_id": 262,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:46.047Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 419,
+        "eval_id": 262,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Kings and Chronicles are parallel historical accounts of the Israelite and Judean monarchies. Chronicles was written later (likely 4th century BCE) and retells much of Kings' material with different emphases: Chronicles focuses more on the southern kingdom of Judah, emphasizes religious themes and temple worship, includes extended genealogies, and presents a more idealized view of certain kings. Both draw from earlier source documents, but Chronicles reorganizes and reinterprets the history for its post-exilic audience.",
+          "toolCalls": []
+        },
+        "start_time": 197.077708,
+        "end_time": 2569.880167,
+        "input_tokens": 153,
+        "output_tokens": 111,
+        "total_tokens": 264,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 85,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

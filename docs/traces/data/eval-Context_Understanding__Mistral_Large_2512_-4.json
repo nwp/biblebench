@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 52,
+    "suite_id": 6,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "The primary audience of the Sermon on the Mount was Jesus' disciples, with a broader secondary audience of the gathered crowds (Matthew 5:1–2).",
+    "duration": 22051,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:40:38.264Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 1,
+        "eval_id": 52,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM's answer aligns with the common exegetical understanding of Matthew 5:1–2: Jesus primarily teaches his disciples, with the crowds present and receiving the teaching as well. This reflects historic Christian orthodoxy that the Sermon on the Mount is directed primarily to Jesus' followers, while still addressing a broader audience through the gathered crowds. The statement is succinct and grounded in scripture (Mt 5:1–2). The nuance of primary vs. secondary audiences is correctly identified."
+        },
+        "created_at": "2025-12-30T00:41:00.317Z"
+      },
+      {
+        "id": 2,
+        "eval_id": 52,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:41:00.317Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 1,
+        "eval_id": 52,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The primary audience of the Sermon on the Mount was Jesus' disciples, with a broader secondary audience of the gathered crowds (Matthew 5:1–2).",
+          "toolCalls": []
+        },
+        "start_time": 434.092916,
+        "end_time": 2220.166125,
+        "input_tokens": 140,
+        "output_tokens": 35,
+        "total_tokens": 175,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 6,
+    "run_id": 1,
+    "name": "Context Understanding [Mistral Large 2512]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Mistral Large 2512",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:40:38.263Z"
+  }
+}

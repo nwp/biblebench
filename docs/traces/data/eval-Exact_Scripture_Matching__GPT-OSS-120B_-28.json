@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 122,
+    "suite_id": 30,
+    "col_order": 28,
+    "input": "Quote Matthew 28:19-20 from the New International Version (NIV) exactly as written",
+    "expected": "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age",
+    "output": "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.",
+    "duration": 3510,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-29T23:45:25.167Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 299,
+        "eval_id": 122,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-29T23:45:28.699Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 109,
+        "eval_id": 122,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Matthew 28:19-20 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.",
+          "toolCalls": []
+        },
+        "start_time": 186.110375,
+        "end_time": 3694.38675,
+        "input_tokens": 155,
+        "output_tokens": 688,
+        "total_tokens": 843,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-OSS-120B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-OSS-120B",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-29T23:45:25.167Z"
+  }
+}

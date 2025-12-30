@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 120,
+    "suite_id": 28,
+    "col_order": 42,
+    "input": "Quote Colossians 3:23 from the King James Version (KJV) exactly as written",
+    "expected": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men",
+    "output": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men;And whatsoever ye do, do it heartily, as to the Lord, and not unto men;",
+    "duration": 4349,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:03:25.700Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 22,
+        "eval_id": 120,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T01:03:30.052Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 22,
+        "eval_id": 120,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Colossians 3:23 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men;And whatsoever ye do, do it heartily, as to the Lord, and not unto men;",
+          "toolCalls": []
+        },
+        "start_time": 412.215958,
+        "end_time": 4719.460791,
+        "input_tokens": 126,
+        "output_tokens": 223,
+        "total_tokens": 349,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 28,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:03:25.699Z"
+  }
+}

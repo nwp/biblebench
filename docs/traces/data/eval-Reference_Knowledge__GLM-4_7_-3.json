@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 145,
+    "suite_id": 31,
+    "col_order": 3,
+    "input": "What is the reference for the Ten Commandments?",
+    "expected": "Exodus 20",
+    "output": "Exodus 20:2-17; Deuteronomy 5:6-21",
+    "duration": 28404,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:59:35.664Z",
+    "score": 0.8333333333333334,
+    "scores": [
+      {
+        "id": 368,
+        "eval_id": 145,
+        "name": "Scripture Reference Accuracy",
+        "score": 0.5,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": true
+        },
+        "created_at": "2025-12-30T01:00:04.086Z"
+      },
+      {
+        "id": 369,
+        "eval_id": 145,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T01:00:04.086Z"
+      },
+      {
+        "id": 370,
+        "eval_id": 145,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Exodus 20:2-17; Deuteronomy 5:6-21"
+        },
+        "created_at": "2025-12-30T01:00:04.086Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 137,
+        "eval_id": 145,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for the Ten Commandments?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Exodus 20:2-17; Deuteronomy 5:6-21",
+          "toolCalls": []
+        },
+        "start_time": 159.724167,
+        "end_time": 28561.647625,
+        "input_tokens": 57,
+        "output_tokens": 1801,
+        "total_tokens": 1858,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "GLM-4.7",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:59:35.664Z"
+  }
+}

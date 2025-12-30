@@ -1,0 +1,101 @@
+{
+  "eval": {
+    "id": 83,
+    "suite_id": 9,
+    "col_order": 2,
+    "input": "A preacher claims: 'Salvation is achieved through good works and moral living. If you live a good life, you will earn your way to heaven.' Is this biblical teaching?",
+    "expected": "This is heretical Pelagianism or works-righteousness. Orthodox Christianity teaches salvation by grace through faith, not by works (Ephesians 2:8-9). While good works are important as evidence and fruit of genuine faith, they cannot earn salvation. Salvation is a free gift of God's grace, received through faith in Christ's finished work, not merited by human effort.",
+    "output": "This statement is **not biblical teaching** and, stated this way, represents a **heretical view of salvation**—specifically akin to **Pelagianism** (the idea that humans can achieve salvation by their own moral effort without God’s grace) or a crude “works-righteousness.”\n\n## Why it is unorthodox\n\n### 1) Scripture denies that we can “earn” salvation\nThe Bible repeatedly teaches that sinners are made right with God **by grace**, not by accumulating moral merit:\n\n- **Ephesians 2:8–9**: “By grace you have been saved through faith… **not a result of works**, so that no one may boast.”\n- **Titus 3:5**: “He saved us, **not because of works done by us in righteousness**, but according to his own mercy.”\n- **Romans 3:20, 28**: “By works of the law no human being will be justified… we hold that one is justified by faith apart from works of the law.”\n\nTo say “live a good life and you will earn your way to heaven” directly contradicts these texts.\n\n### 2) It misunderstands the human condition\nChristian doctrine teaches that humanity is not merely “imperfect but basically fine,” but **fallen** and in need of redemption (Romans 3:10–12, 23). Even our best works cannot erase guilt or heal the deeper problem of sin. Salvation requires God’s saving action in Christ, not self-improvement.\n\n### 3) It confuses the role of works\nThe Bible does insist that genuine faith produces obedience and good works—but as **evidence and fruit of salvation**, not the basis of it:\n\n- **Ephesians 2:10** follows 2:8–9: we are saved by grace *for* good works.\n- **James 2:17**: faith without works is dead—meaning works **demonstrate** living faith, not replace Christ as the ground of acceptance before God.\n\nSo, orthodox Christianity says:\n- We are **justified** (counted righteous) by God’s grace through faith in Christ.\n- We are **sanctified** (made holy) in a life that necessarily includes good works.\n\nGood works matter deeply, but they do not **purchase** heaven.\n\n## Church history/doctrinal note\nThe early church rejected Pelagianism (5th century) and affirmed that salvation is rooted in **grace**, not unaided human effort (e.g., the **Council of Orange**, 529). The Reformation later sharply emphasized “not by works” (while still affirming that saving faith produces works).\n\n## Conclusion\nThe preacher’s claim—**“If you live a good life, you will earn your way to heaven”**—is **unbiblical** and **contrary to orthodox Christian doctrine**. The biblical gospel is that sinners are saved **by grace through faith in Christ**, and good works are the **result** of that saving grace, not the means of earning it.",
+    "duration": 52829,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:32:45.803Z",
+    "score": 0.9733333333333333,
+    "scores": [
+      {
+        "id": 173,
+        "eval_id": 83,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Historical dating inconsistency: The note claims the Council of Orange is in 529 AD (6th century), yet it is commonly dated to 529 (which is indeed in the 6th century). The statement’s parenthetical mislabels the century, which could confuse readers about the historical timeline. Additionally, while not a theological error per se, a brief mention that Pelagianism was condemned at various local synods earlier (and the broader context of Augustine’s polemics) would provide fuller historical nuance."
+          ],
+          "rationale": "The LLM’s response accurately identifies the claim as unbiblical and aligns with orthodox Protestant/evangelical teaching: salvation by grace through faith, with works as evidence of faith, not ground of justification. It correctly cites key scriptures (Ephesians 2:8–9; Titus 3:5; Romans 3:20,28; James 2:17) and articulates the proper biblical distinction between justification (grounded in Christ’s work) and sanctification (producing good works). It also notes the historical rejection of Pelagianism and the idea of grace-centered salvation, which is consistent with historic Christian orthodoxy (e.g., Council of Orange, Reformational emphasis on grace). The nuance is well captured: works matter as fruit and evidence, not as the means of earning salvation, and the response differentiates ground of justification from consequences in the life of faith. The one notable flaw is a minor historical dating inconsistency regarding the Council of Orange (529 AD is in the 6th century, not the 5th) which does not undermine the doctrinal point but should be corrected for precision. Overall, the answer is doctrinally sound, biblically grounded, and appropriately nuanced."
+        },
+        "created_at": "2025-12-30T00:33:38.638Z"
+      },
+      {
+        "id": 174,
+        "eval_id": 83,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:33:38.638Z"
+      },
+      {
+        "id": 175,
+        "eval_id": 83,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "biblical",
+            "scripture",
+            "heretical",
+            "contradicts"
+          ],
+          "count": 5
+        },
+        "created_at": "2025-12-30T00:33:38.638Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 120,
+        "eval_id": 83,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA preacher claims: 'Salvation is achieved through good works and moral living. If you live a good life, you will earn your way to heaven.' Is this biblical teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This statement is **not biblical teaching** and, stated this way, represents a **heretical view of salvation**—specifically akin to **Pelagianism** (the idea that humans can achieve salvation by their own moral effort without God’s grace) or a crude “works-righteousness.”\n\n## Why it is unorthodox\n\n### 1) Scripture denies that we can “earn” salvation\nThe Bible repeatedly teaches that sinners are made right with God **by grace**, not by accumulating moral merit:\n\n- **Ephesians 2:8–9**: “By grace you have been saved through faith… **not a result of works**, so that no one may boast.”\n- **Titus 3:5**: “He saved us, **not because of works done by us in righteousness**, but according to his own mercy.”\n- **Romans 3:20, 28**: “By works of the law no human being will be justified… we hold that one is justified by faith apart from works of the law.”\n\nTo say “live a good life and you will earn your way to heaven” directly contradicts these texts.\n\n### 2) It misunderstands the human condition\nChristian doctrine teaches that humanity is not merely “imperfect but basically fine,” but **fallen** and in need of redemption (Romans 3:10–12, 23). Even our best works cannot erase guilt or heal the deeper problem of sin. Salvation requires God’s saving action in Christ, not self-improvement.\n\n### 3) It confuses the role of works\nThe Bible does insist that genuine faith produces obedience and good works—but as **evidence and fruit of salvation**, not the basis of it:\n\n- **Ephesians 2:10** follows 2:8–9: we are saved by grace *for* good works.\n- **James 2:17**: faith without works is dead—meaning works **demonstrate** living faith, not replace Christ as the ground of acceptance before God.\n\nSo, orthodox Christianity says:\n- We are **justified** (counted righteous) by God’s grace through faith in Christ.\n- We are **sanctified** (made holy) in a life that necessarily includes good works.\n\nGood works matter deeply, but they do not **purchase** heaven.\n\n## Church history/doctrinal note\nThe early church rejected Pelagianism (5th century) and affirmed that salvation is rooted in **grace**, not unaided human effort (e.g., the **Council of Orange**, 529). The Reformation later sharply emphasized “not by works” (while still affirming that saving faith produces works).\n\n## Conclusion\nThe preacher’s claim—**“If you live a good life, you will earn your way to heaven”**—is **unbiblical** and **contrary to orthodox Christian doctrine**. The biblical gospel is that sinners are saved **by grace through faith in Christ**, and good works are the **result** of that saving grace, not the means of earning it.",
+          "toolCalls": []
+        },
+        "start_time": 411.185541,
+        "end_time": 23797.668708,
+        "input_tokens": 77,
+        "output_tokens": 723,
+        "total_tokens": 800,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 9,
+    "run_id": 1,
+    "name": "Heresy Detection [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:32:45.803Z"
+  }
+}

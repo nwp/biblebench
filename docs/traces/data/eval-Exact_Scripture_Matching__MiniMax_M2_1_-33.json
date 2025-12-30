@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 111,
+    "suite_id": 28,
+    "col_order": 33,
+    "input": "Quote 2 Timothy 3:16 from the King James Version (KJV) exactly as written",
+    "expected": "All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness",
+    "output": "All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness:All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness:",
+    "duration": 4381,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:03:25.700Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 23,
+        "eval_id": 111,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T01:03:30.085Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 23,
+        "eval_id": 111,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote 2 Timothy 3:16 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness:All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness:",
+          "toolCalls": []
+        },
+        "start_time": 411.772958,
+        "end_time": 4751.272708,
+        "input_tokens": 127,
+        "output_tokens": 175,
+        "total_tokens": 302,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 28,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:03:25.699Z"
+  }
+}

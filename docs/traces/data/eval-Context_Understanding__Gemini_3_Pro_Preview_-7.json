@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 186,
+    "suite_id": 58,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "To reveal the secrets of the Kingdom of God to receptive followers while concealing them from those with hardened hearts, fulfilling the prophecy of Isaiah, and to illustrate complex spiritual truths using familiar, memorable imagery.",
+    "duration": 41884,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:32.326Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 780,
+        "eval_id": 186,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s answer aligns with biblical teaching: Jesus uses parables to reveal the truth of the Kingdom of God to receptive listeners and to conceal it from those with hardened hearts, a dynamic explicitly echoed in the Gospel narratives (e.g., Matthew 13:10-17; Isaiah 6:9-10 as cited in Matthew 13:14-15). It also mirrors the explanatory link to Isaiah and notes the use of familiar, memorable imagery to convey spiritual truths. The statement is consistent with historic Christian orthodoxy and supported by Scripture. The nuance—recognizing both revelation to the receptive and concealment to the resistant, plus the use of everyday imagery—is adequately captured. No clear theological errors are present."
+        },
+        "created_at": "2025-12-30T00:15:14.228Z"
+      },
+      {
+        "id": 781,
+        "eval_id": 186,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:15:14.228Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 292,
+        "eval_id": 186,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To reveal the secrets of the Kingdom of God to receptive followers while concealing them from those with hardened hearts, fulfilling the prophecy of Isaiah, and to illustrate complex spiritual truths using familiar, memorable imagery.",
+          "toolCalls": []
+        },
+        "start_time": 161.228291,
+        "end_time": 8791.666208,
+        "input_tokens": 135,
+        "output_tokens": 682,
+        "total_tokens": 817,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 58,
+    "run_id": 1,
+    "name": "Context Understanding [Gemini 3 Pro Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Gemini 3 Pro Preview",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:32.326Z"
+  }
+}

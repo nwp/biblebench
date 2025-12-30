@@ -1,0 +1,118 @@
+{
+  "eval": {
+    "id": 187,
+    "suite_id": 79,
+    "col_order": 3,
+    "input": "What is the doctrine of original sin?",
+    "expected": "Original sin is the doctrine that all humanity inherited a sinful nature from Adam's fall. As a result, all people are born with a inclination toward sin and are spiritually separated from God. This doesn't mean infants are guilty of actual sins, but that human nature is corrupted and inclined toward evil apart from God's grace.",
+    "output": "# The Doctrine of Original Sin\n\n## Core Definition\n\nOriginal sin refers to the fallen spiritual condition of all humanity inherited from Adam and Eve's first disobedience in Eden. It encompasses both the *guilt* imputed to humanity through Adam's transgression and the *corruption* of human nature that results from it.\n\n## Biblical Foundation\n\n**The Genesis Account (Genesis 3)**\n- Adam and Eve violated God's command not to eat from the tree of knowledge\n- Their disobedience brought death and separation from God upon themselves and their descendants\n- Humanity was cast from Eden into a broken world\n\n**Paul's Theological Explanation (Romans 5:12-21)**\n- \"Sin entered the world through one man, and death through sin\"\n- All have sinned; death reigns over all humanity\n- Yet Christ's redemption reverses Adam's transgression\n\n**Additional Support (1 Corinthians 15:21-22; Psalm 51:5)**\n\n## Key Components\n\n| Aspect | Meaning |\n|--------|---------|\n| **Imputation** | Adam's guilt is credited to all humans |\n| **Depravity** | Human nature is corrupted and inclined toward sin |\n| **Universality** | The condition affects all people (except Christ) |\n| **Consequence** | Death and separation from God |\n\n## Important Nuances\n\n- Humans are not held personally guilty for Adam's act, but bear its consequences\n- Infants inherit this condition without personal culpability\n- Original sin doesn't eliminate human responsibility for actual sins\n- Different theological traditions (Catholic, Reformed, Arminian) emphasize different aspects\n\n## Redemptive Answer\n\nChrist's incarnation, death, and resurrection provide the solution through grace and faith.",
+    "duration": 47061,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.485Z",
+    "score": 0.8017241379310344,
+    "scores": [
+      {
+        "id": 637,
+        "eval_id": 187,
+        "name": "Theological Accuracy Judge",
+        "score": 0.75,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Inconsistent treatment of original sin as both 'guilt imputed to all humans' and 'not personally guilty for Adam's act' — the text contradicts itself on whether original sin entails imputed guilt.",
+            "Psalm 51:5 is cited as supporting original sin; while it expresses David's personal sin, many traditions view it as a confession of personal sin rather than a universal statement about original sin. Using it as a primary basis for original sin is debatable.",
+            "Some traditions (notably Catholic) distinguish original sin as a deprivation of original justice rather than a blanket imputation of Adam's guilt to all—presenting 'guilt imputed' without acknowledging this nuance can misrepresent Catholic teaching.",
+            "The phrase 'universality (except Christ)' is broadly accurate but could be strengthened by clarifying terms like total depravity and by noting that Christ is sinless and exempt from original sin, rather than implying a general exemption.",
+            "While the answer correctly cites Romans 5 and Genesis 3, it would benefit from a clearer distinction between original sin as a state (deprivation/corruption) vs. imputed guilt to demonstrate how different traditions frame the issue (Augustinian/Calvinist vs. Catholic/Eastern Orthodox)."
+          ],
+          "rationale": "The response captures core biblical anchors (Gen 3; Rom 5; 1 Cor 15) and outlines key components (inheritance of a fallen nature, universality, need for grace). It also shows awareness of doctrinal diversity. However, it contains an internal inconsistency about guilt imputation, relies on Psalm 51:5 as a primary support, and could more accurately reflect non-Protestant traditions’ understanding of original sin as deprivation (not merely guilt). These issues slightly undermine precision, though the overall doctrinal direction remains sound."
+        },
+        "created_at": "2025-12-30T00:17:29.555Z"
+      },
+      {
+        "id": 638,
+        "eval_id": 187,
+        "name": "Heresy Detection Judge",
+        "score": 1,
+        "description": "Detects heretical or unorthodox theological statements",
+        "metadata": {
+          "contains_heresy": false,
+          "severity": "minor",
+          "heresies_detected": [
+            "Ambiguity/contradiction: asserts guilt imputed to all humans but also states 'Humans are not held personally guilty for Adam's act' — this is inconsistent with some traditions and could imply Pelagian tendencies if read in isolation.",
+            "Possible misrepresentation of Catholic/Orthodox original sin doctrine: emphasizes guilt imputation in a way that diverges from their typical emphasis on the loss of original holiness and deprivation of grace rather than universal personal guilt."
+          ],
+          "explanation": "The overall content is broadly orthodox in summary—original sin as a fallen condition affecting all humanity, with Christ as the redemptive solution. The potential issues lie in the tension between 'guilt imputed to all humanity' and the claim that humans are 'not personally guilty for Adam's act' (while infants inherit the condition). Different Christian traditions (Reformed/Protestant) emphasize imputed guilt more strongly, whereas Catholic/Orthodox positions emphasize the state of sin and deprivation rather than universal personal guilt. This inconsistency is the main theological ambiguity and could lead to misinterpretation if presented without clear tradition-specific nuance. No explicit heresy (Arianism, Modalism, Pelagianism, Gnosticism, Docetism) is taught, though the phrasing could be clarified to avoid implying Pelagianism or a mischaracterization of original sin across traditions."
+        },
+        "created_at": "2025-12-30T00:17:29.555Z"
+      },
+      {
+        "id": 639,
+        "eval_id": 187,
+        "name": "Doctrinal Completeness",
+        "score": 0.6551724137931034,
+        "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+        "metadata": {
+          "expectedTerms": [
+            "original",
+            "doctrine",
+            "humanity",
+            "inherited",
+            "sinful",
+            "nature",
+            "adam",
+            "fall",
+            "result",
+            "people"
+          ],
+          "coveredCount": 19,
+          "totalExpected": 29,
+          "completeness": 0.6551724137931034
+        },
+        "created_at": "2025-12-30T00:17:29.555Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 183,
+        "eval_id": 187,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\nWhat is the doctrine of original sin?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# The Doctrine of Original Sin\n\n## Core Definition\n\nOriginal sin refers to the fallen spiritual condition of all humanity inherited from Adam and Eve's first disobedience in Eden. It encompasses both the *guilt* imputed to humanity through Adam's transgression and the *corruption* of human nature that results from it.\n\n## Biblical Foundation\n\n**The Genesis Account (Genesis 3)**\n- Adam and Eve violated God's command not to eat from the tree of knowledge\n- Their disobedience brought death and separation from God upon themselves and their descendants\n- Humanity was cast from Eden into a broken world\n\n**Paul's Theological Explanation (Romans 5:12-21)**\n- \"Sin entered the world through one man, and death through sin\"\n- All have sinned; death reigns over all humanity\n- Yet Christ's redemption reverses Adam's transgression\n\n**Additional Support (1 Corinthians 15:21-22; Psalm 51:5)**\n\n## Key Components\n\n| Aspect | Meaning |\n|--------|---------|\n| **Imputation** | Adam's guilt is credited to all humans |\n| **Depravity** | Human nature is corrupted and inclined toward sin |\n| **Universality** | The condition affects all people (except Christ) |\n| **Consequence** | Death and separation from God |\n\n## Important Nuances\n\n- Humans are not held personally guilty for Adam's act, but bear its consequences\n- Infants inherit this condition without personal culpability\n- Original sin doesn't eliminate human responsibility for actual sins\n- Different theological traditions (Catholic, Reformed, Arminian) emphasize different aspects\n\n## Redemptive Answer\n\nChrist's incarnation, death, and resurrection provide the solution through grace and faith.",
+          "toolCalls": []
+        },
+        "start_time": 432.768292,
+        "end_time": 5739.332292,
+        "input_tokens": 48,
+        "output_tokens": 392,
+        "total_tokens": 440,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 79,
+    "run_id": 1,
+    "name": "Core Doctrines [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/core-doctrines.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Core Doctrines",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.484Z"
+  }
+}

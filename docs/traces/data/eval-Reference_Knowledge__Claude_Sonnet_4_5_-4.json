@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 438,
+    "suite_id": 92,
+    "col_order": 4,
+    "input": "Where does Paul write about the armor of God?",
+    "expected": "Ephesians 6:10-18",
+    "output": "Ephesians 6:10-17",
+    "duration": 1470,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:37.306Z",
+    "score": 0.3333333333333333,
+    "scores": [
+      {
+        "id": 933,
+        "eval_id": 438,
+        "name": "Scripture Reference Accuracy",
+        "score": 0,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": false
+        },
+        "created_at": "2025-12-30T00:17:38.778Z"
+      },
+      {
+        "id": 934,
+        "eval_id": 438,
+        "name": "Contains Answer",
+        "score": 0,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": false
+        },
+        "created_at": "2025-12-30T00:17:38.778Z"
+      },
+      {
+        "id": 935,
+        "eval_id": 438,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Ephesians 6:10-17"
+        },
+        "created_at": "2025-12-30T00:17:38.778Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 370,
+        "eval_id": 438,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhere does Paul write about the armor of God?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Ephesians 6:10-17",
+          "toolCalls": []
+        },
+        "start_time": 162.494584,
+        "end_time": 1610.872875,
+        "input_tokens": 62,
+        "output_tokens": 13,
+        "total_tokens": 75,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 92,
+    "run_id": 1,
+    "name": "Reference Knowledge [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:37.306Z"
+  }
+}

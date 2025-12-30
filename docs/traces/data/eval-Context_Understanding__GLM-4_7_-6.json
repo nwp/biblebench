@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 92,
+    "suite_id": 29,
+    "col_order": 6,
+    "input": "What was the relationship between the books of Kings and Chronicles?",
+    "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+    "output": "Chronicles is a parallel retelling of the history found in Samuel and Kings, focusing exclusively on the southern kingdom of Judah and the Davidic line to emphasize temple worship and priestly continuity, while Kings covers both Israel and Judah and evaluates kings based on their fidelity to the Mosaic covenant.",
+    "duration": 49435,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:59:18.470Z",
+    "score": 0.4,
+    "scores": [
+      {
+        "id": 374,
+        "eval_id": 92,
+        "name": "Theological Accuracy Judge",
+        "score": 0.8,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Overgeneralization: Chronicles is described as exclusively focusing on the southern kingdom; in fact it centers on the Davidic line and temple in Judah but is not strictly exclusive to Judah and can reference or imply Israel at times.",
+            "Editorial nuance not captured: Chronicles is not merely a straightforward retelling but a selective, theological reinterpretation with emphasis on temple worship, Levitical order, and the Davidic covenant; the response does not note the Chronicler’s distinctive positive portrayal of David and temple worship or the selective omissions compared to Kings."
+          ],
+          "rationale": "The response correctly captures the main thrust of Chronicles (Davidic line, temple focus, priestly emphasis) and its comparison to Kings (Kings discusses both Israel and Judah and evaluates kings by fidelity to God). However, it overstates Chronicles’ exclusivity to the southern kingdom and omits important aspects of the Chronicler’s editorial aims (selectivity, positive portrayal of temple worship, and inclusion of genealogies and reforms). These nuances are central to understanding the relationship between Kings and Chronicles in biblical theology."
+        },
+        "created_at": "2025-12-30T01:00:07.923Z"
+      },
+      {
+        "id": 375,
+        "eval_id": 92,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T01:00:07.923Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 140,
+        "eval_id": 92,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Chronicles is a parallel retelling of the history found in Samuel and Kings, focusing exclusively on the southern kingdom of Judah and the Davidic line to emphasize temple worship and priestly continuity, while Kings covers both Israel and Judah and evaluates kings based on their fidelity to the Mosaic covenant.",
+          "toolCalls": []
+        },
+        "start_time": 163.388834,
+        "end_time": 22364.415125,
+        "input_tokens": 136,
+        "output_tokens": 1017,
+        "total_tokens": 1153,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GLM-4.7",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:59:18.469Z"
+  }
+}

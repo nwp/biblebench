@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 193,
+    "suite_id": 59,
+    "col_order": 6,
+    "input": "Quote Psalm 23:1 from the English Standard Version (ESV) exactly as written",
+    "expected": "The Lord is my shepherd; I shall not want",
+    "output": "The LORD is my shepherd; I shall not want.",
+    "duration": 2901,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:03.500Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 558,
+        "eval_id": 193,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:10:06.403Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 187,
+        "eval_id": 193,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Psalm 23:1 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The LORD is my shepherd; I shall not want.",
+          "toolCalls": []
+        },
+        "start_time": 186.57425,
+        "end_time": 3065.725791,
+        "input_tokens": 240,
+        "output_tokens": 173,
+        "total_tokens": 413,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Grok 4.1 Fast]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Grok 4.1 Fast",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:03.500Z"
+  }
+}

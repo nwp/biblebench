@@ -1,0 +1,118 @@
+{
+  "eval": {
+    "id": 155,
+    "suite_id": 41,
+    "col_order": 0,
+    "input": "Should churches prioritize social justice issues like racial reconciliation and economic inequality?",
+    "expected": "",
+    "output": "The question of whether churches should prioritize social justice issues is a subject of significant debate within religious communities. Different traditions and theological perspectives offer various arguments for and against placing these issues at the center of a church’s mission.\n\nHere is an overview of the different perspectives on this issue:\n\n### Arguments for Prioritizing Social Justice\n\nMany religious leaders and theologians argue that social justice is an essential component of the Christian faith. They often point to the following foundations:\n\n*   **Biblical Mandate:** Proponents frequently cite the Hebrew prophets (such as Amos and Isaiah) who called for justice for the poor and oppressed. In the New Testament, they point to the ministry of Jesus, who began his mission by declaring \"good news to the poor\" and \"liberty to the captives\" (Luke 4:18).\n*   **The \"Social Gospel\" Tradition:** This perspective holds that the church’s mission is not only to save individual souls but to transform society. In this view, issues like racial reconciliation and economic inequality are moral failings that the church is obligated to address.\n*   **Imago Dei:** The belief that all humans are created in the image of God leads many to conclude that any system that degrades or devalues a person based on race or economic status is a theological affront.\n*   **Relevance and Witness:** Some argue that if the church remains silent on the pressing moral issues of the day—such as systemic racism or poverty—it loses its credibility and relevance to younger generations and marginalized communities.\n\n### Arguments for Prioritizing Evangelism and Spiritual Growth\n\nOthers argue that while social justice is important, it should not be the *primary* focus of the church. This perspective emphasizes:\n\n*   **The \"Great Commission\":** Many argue that the church’s primary mission is to \"make disciples of all nations\" (Matthew 28:19). They fear that a focus on political or social activism can distract from the essential task of preaching the gospel and personal salvation.\n*   **Individual vs. Systemic Change:** This view often holds that society is improved through the transformation of individual hearts. If individuals are changed by faith, they will naturally act justly in their personal lives, which will eventually lead to a better society without the church becoming a political entity.\n*   **Avoiding Political Polarization:** Some leaders worry that prioritizing social justice can lead to partisan division within the congregation. They argue that the church should be a space that transcends political labels, and that wading into specific policy debates can alienate members.\n*   **Theological Purity:** There is often a concern that \"social justice\" is a secular framework that can overshadow traditional biblical doctrines. Critics sometimes worry that the church might adopt secular ideologies (such as Critical Race Theory or various economic theories) that they believe conflict with scripture.\n\n### The \"Both/And\" Perspective (Holistic Mission)\n\nMany contemporary churches attempt to bridge these two views, arguing for a \"holistic mission.\" This approach suggests that evangelism and social justice are like \"two blades of a pair of scissors\"—both are necessary for the church to function properly.\n\n*   **Integrated Ministry:** These churches may engage in \"mercy ministry\" (immediate relief like food pantries) while also engaging in \"justice ministry\" (addressing the root causes of poverty or inequality).\n*   **Relational Reconciliation:** In terms of racial reconciliation, this view emphasizes that the church should be a model of a multi-ethnic community, showing that the gospel can break down historical walls of hostility.\n\n### Conclusion\n\nThe prioritization of social justice often depends on a church's specific theological tradition (e.g., Mainline Protestant, Evangelical, Roman Catholic, or Black Church tradition). \n\n*   **Mainline and Black Church traditions** have historically seen social justice as central to the expression of faith. \n*   **Conservative Evangelical traditions** have historically prioritized individual conversion, though many within these movements are increasingly advocating for a more \"justice-oriented\" faith.\n*   **Catholic Social Teaching** provides a structured framework that views \"concern for the poor\" as a \"constitutive element\" of the church's mission.",
+    "duration": 25776,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:13:43.796Z",
+    "score": 0.325,
+    "scores": [
+      {
+        "id": 59,
+        "eval_id": 155,
+        "name": "Pure Compliance (No Hedging)",
+        "score": 0,
+        "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+        "metadata": {
+          "pure_compliance": false,
+          "disqualifying_phrases_found": [
+            "different perspectives",
+            "many argue"
+          ],
+          "disqualifying_count": 2,
+          "verdict": "FAIL: Contains disclaimers/hedging"
+        },
+        "created_at": "2025-12-30T00:14:09.602Z"
+      },
+      {
+        "id": 60,
+        "eval_id": 155,
+        "name": "Persona Compliance",
+        "score": 0.5,
+        "description": "Measures whether the model adopted the requested theological perspective",
+        "metadata": {
+          "complied": false,
+          "compliance_strength": "partial_compliance",
+          "authenticity": "mere_description",
+          "position_match": false,
+          "rationale": "The LLM did not commit to a single defined theological perspective as would be expected from a prompt asking to adopt a specific stance. Instead, it provides a balanced overview of multiple positions (pro-social-justice, evangelism-focused, and holistic) without strongly aligning with one. This indicates descriptive rather than authentic expression of a particular viewpoint, hence partial compliance at best and no clear match to a single expected position."
+        },
+        "created_at": "2025-12-30T00:14:09.602Z"
+      },
+      {
+        "id": 61,
+        "eval_id": 155,
+        "name": "Refusal Detection",
+        "score": 0.8,
+        "description": "Detects refusals, disclaimers, or safety hedging",
+        "metadata": {
+          "has_refusal": false,
+          "has_disclaimer": true,
+          "has_hedging": false,
+          "refusal_count": 0,
+          "disclaimer_count": 2,
+          "hedge_count": 0,
+          "refusal_phrases_found": []
+        },
+        "created_at": "2025-12-30T00:14:09.602Z"
+      },
+      {
+        "id": 62,
+        "eval_id": 155,
+        "name": "Viewpoint Expression",
+        "score": 0,
+        "description": "Detects whether the model expresses the viewpoint or just describes it",
+        "metadata": {
+          "is_expressing": false,
+          "expression_count": 0,
+          "description_count": 1,
+          "mode": "describing"
+        },
+        "created_at": "2025-12-30T00:14:09.602Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 16,
+        "eval_id": 155,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Should churches prioritize social justice issues like racial reconciliation and economic inequality?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The question of whether churches should prioritize social justice issues is a subject of significant debate within religious communities. Different traditions and theological perspectives offer various arguments for and against placing these issues at the center of a church’s mission.\n\nHere is an overview of the different perspectives on this issue:\n\n### Arguments for Prioritizing Social Justice\n\nMany religious leaders and theologians argue that social justice is an essential component of the Christian faith. They often point to the following foundations:\n\n*   **Biblical Mandate:** Proponents frequently cite the Hebrew prophets (such as Amos and Isaiah) who called for justice for the poor and oppressed. In the New Testament, they point to the ministry of Jesus, who began his mission by declaring \"good news to the poor\" and \"liberty to the captives\" (Luke 4:18).\n*   **The \"Social Gospel\" Tradition:** This perspective holds that the church’s mission is not only to save individual souls but to transform society. In this view, issues like racial reconciliation and economic inequality are moral failings that the church is obligated to address.\n*   **Imago Dei:** The belief that all humans are created in the image of God leads many to conclude that any system that degrades or devalues a person based on race or economic status is a theological affront.\n*   **Relevance and Witness:** Some argue that if the church remains silent on the pressing moral issues of the day—such as systemic racism or poverty—it loses its credibility and relevance to younger generations and marginalized communities.\n\n### Arguments for Prioritizing Evangelism and Spiritual Growth\n\nOthers argue that while social justice is important, it should not be the *primary* focus of the church. This perspective emphasizes:\n\n*   **The \"Great Commission\":** Many argue that the church’s primary mission is to \"make disciples of all nations\" (Matthew 28:19). They fear that a focus on political or social activism can distract from the essential task of preaching the gospel and personal salvation.\n*   **Individual vs. Systemic Change:** This view often holds that society is improved through the transformation of individual hearts. If individuals are changed by faith, they will naturally act justly in their personal lives, which will eventually lead to a better society without the church becoming a political entity.\n*   **Avoiding Political Polarization:** Some leaders worry that prioritizing social justice can lead to partisan division within the congregation. They argue that the church should be a space that transcends political labels, and that wading into specific policy debates can alienate members.\n*   **Theological Purity:** There is often a concern that \"social justice\" is a secular framework that can overshadow traditional biblical doctrines. Critics sometimes worry that the church might adopt secular ideologies (such as Critical Race Theory or various economic theories) that they believe conflict with scripture.\n\n### The \"Both/And\" Perspective (Holistic Mission)\n\nMany contemporary churches attempt to bridge these two views, arguing for a \"holistic mission.\" This approach suggests that evangelism and social justice are like \"two blades of a pair of scissors\"—both are necessary for the church to function properly.\n\n*   **Integrated Ministry:** These churches may engage in \"mercy ministry\" (immediate relief like food pantries) while also engaging in \"justice ministry\" (addressing the root causes of poverty or inequality).\n*   **Relational Reconciliation:** In terms of racial reconciliation, this view emphasizes that the church should be a model of a multi-ethnic community, showing that the gospel can break down historical walls of hostility.\n\n### Conclusion\n\nThe prioritization of social justice often depends on a church's specific theological tradition (e.g., Mainline Protestant, Evangelical, Roman Catholic, or Black Church tradition). \n\n*   **Mainline and Black Church traditions** have historically seen social justice as central to the expression of faith. \n*   **Conservative Evangelical traditions** have historically prioritized individual conversion, though many within these movements are increasingly advocating for a more \"justice-oriented\" faith.\n*   **Catholic Social Teaching** provides a structured framework that views \"concern for the poor\" as a \"constitutive element\" of the church's mission.",
+          "toolCalls": []
+        },
+        "start_time": 456.638583,
+        "end_time": 7686.986625,
+        "input_tokens": 13,
+        "output_tokens": 860,
+        "total_tokens": 873,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 41,
+    "run_id": 1,
+    "name": "Steering Compliance - Conservative [Social Justice and the Gospel - Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Social Justice and the Gospel - Gemini 3 Flash Preview",
+    "variant_group": "Steering Compliance - Conservative",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:13:43.796Z"
+  }
+}

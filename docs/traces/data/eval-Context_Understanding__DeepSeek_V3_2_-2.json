@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 88,
+    "suite_id": 29,
+    "col_order": 2,
+    "input": "To whom was the book of Romans written and why?",
+    "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+    "output": "The book of Romans was written by the Apostle Paul to the multi-ethnic Christian community in Rome, both Jews and Gentiles, to systematically present the gospel, explain God's righteousness through faith in Christ, and unify the church by addressing tensions over the Law.",
+    "duration": 29844,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:45:15.574Z",
+    "score": 0.44,
+    "scores": [
+      {
+        "id": 352,
+        "eval_id": 88,
+        "name": "Theological Accuracy Judge",
+        "score": 0.88,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM accurately identifies Paul as the author and Rome as the audience, noting a Jewish-Gentile, multi-ethnic church. It correctly states that Romans presents the gospel, emphasizes righteousness from God by faith in Christ, and addresses tensions related to the Law to help unify the community. These themes align with Romans 1–11 (and surrounding chapters) and with historic Christian orthodoxy (justification by faith, inclusion of Gentiles, the Law’s role). The answer is well grounded in Scripture. A minor omission is the explicit, often-cited scholarly emphasis on justification by faith apart from works of the Law (though the phrase \"righteousness through faith\" effectively conveys this). It also does not explicitly mention Paul’s anticipated visit to Rome, which is part of the letter’s historical context, though the main purposes stated (proclaiming the gospel and addressing Law-related tensions) are accurate and central."
+        },
+        "created_at": "2025-12-30T00:45:45.436Z"
+      },
+      {
+        "id": 353,
+        "eval_id": 88,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:45:45.436Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 132,
+        "eval_id": 88,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The book of Romans was written by the Apostle Paul to the multi-ethnic Christian community in Rome, both Jews and Gentiles, to systematically present the gospel, explain God's righteousness through faith in Christ, and unify the church by addressing tensions over the Law.",
+          "toolCalls": []
+        },
+        "start_time": 224.317584,
+        "end_time": 4083.846625,
+        "input_tokens": 135,
+        "output_tokens": 53,
+        "total_tokens": 188,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "DeepSeek V3.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:45:15.574Z"
+  }
+}

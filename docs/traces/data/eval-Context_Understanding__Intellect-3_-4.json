@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 148,
+    "suite_id": 31,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "The primary audience of the Sermon on the Mount was **Jesus' disciples and the general crowd** following Him.\n\n*   **Disciples:** The core audience receiving detailed instruction (Matthew 5:1-2).\n*   **General Crowd:** A large gathering from Galilee, Judea, Jerusalem, and beyond (Matthew 4:23-25, 5:1).",
+    "duration": 28100,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:52:58.634Z",
+    "score": 0.475,
+    "scores": [
+      {
+        "id": 366,
+        "eval_id": 148,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The Sermon on the Mount is described in Matthew 5:1-2 as being taught to Jesus' disciples, with the crowds also present; Matthew 4:23-25 shows large crowds from various regions. The LLM correctly identifies both groups and notes that the core audience receiving detailed instruction are the disciples (discussed as the primary recipients), while the general crowd listens. This aligns with standard exegesis that the sermon is addressed primarily to the disciples, yet delivered in the hearing of the broader crowd. The claims are grounded in scripture (Matt 5:1-2; 4:23-25) and consistent with historic Christian orthodoxy, without introducing doctrinal errors. The nuance of differentiated reception (core disciples vs. listening crowd) is appropriately captured.)"
+        },
+        "created_at": "2025-12-30T00:53:26.752Z"
+      },
+      {
+        "id": 367,
+        "eval_id": 148,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:53:26.752Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 140,
+        "eval_id": 148,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The primary audience of the Sermon on the Mount was **Jesus' disciples and the general crowd** following Him.\n\n*   **Disciples:** The core audience receiving detailed instruction (Matthew 5:1-2).\n*   **General Crowd:** A large gathering from Galilee, Judea, Jerusalem, and beyond (Matthew 4:23-25, 5:1).",
+          "toolCalls": []
+        },
+        "start_time": 179.532625,
+        "end_time": 3687.353291,
+        "input_tokens": 141,
+        "output_tokens": 316,
+        "total_tokens": 457,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Context Understanding [Intellect-3]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Intellect-3",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:52:58.634Z"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "eval": {
+    "id": 93,
+    "suite_id": 29,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "To conceal the truth from those who rejected him and to reveal it to his disciples.",
+    "duration": 35911,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:45:15.574Z",
+    "score": 0.36,
+    "scores": [
+      {
+        "id": 358,
+        "eval_id": 93,
+        "name": "Theological Accuracy Judge",
+        "score": 0.72,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": false,
+          "errors": [
+            "Overly dichotomous framing: uses 'rejected him' vs 'disciples' but scripture speaks of heart posture (receptive vs closed) rather than a simple reject/disciple split.",
+            "Leaves out the 'everyday life' dimension of parables and how Jesus used familiar scenarios to embed truths.",
+            "Misses the nuanced purpose of parables as a means of gradual revelation and fulfillment of prophecy (seeing/hearing yet not understanding) rather than merely concealing from the unreceptive.",
+            "Assumes a fixed audience dichotomy instead of the dynamic, heart-condition-based reception described in Scripture.",
+            "Does not explicitly ground the claim in specific biblical passages (e.g., Matthew 13:10-17; Mark 4:11-12; Luke 8:9-10)."
+          ],
+          "rationale": "The answer captures the core idea that parables involve revealing truth to the receptive while concealing from the unreceptive, which aligns with biblical teaching. However, it is overly terse and lacks several important nuances: the use of everyday imagery in parables, the gradual and Spirit-enabled understanding they foster, the fulfillment/prophetic dimension, and precise biblical grounding. including those nuances would yield a more robust and historically grounded evaluation."
+        },
+        "created_at": "2025-12-30T00:45:51.503Z"
+      },
+      {
+        "id": 359,
+        "eval_id": 93,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:45:51.503Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 135,
+        "eval_id": 93,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To conceal the truth from those who rejected him and to reveal it to his disciples.",
+          "toolCalls": []
+        },
+        "start_time": 225.10475,
+        "end_time": 3072.289959,
+        "input_tokens": 134,
+        "output_tokens": 18,
+        "total_tokens": 152,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "DeepSeek V3.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:45:15.574Z"
+  }
+}

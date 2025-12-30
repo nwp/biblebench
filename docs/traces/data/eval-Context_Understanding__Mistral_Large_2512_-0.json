@@ -1,0 +1,88 @@
+{
+  "eval": {
+    "id": 48,
+    "suite_id": 6,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "The Gospel of John was written by John the Apostle, one of Jesus' twelve disciples and a member of His inner circle (along with Peter and James). He was known as \"the disciple whom Jesus loved\" and was present at key events, including the Last Supper and the Crucifixion.",
+    "duration": 38439,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:40:38.263Z",
+    "score": 0.4,
+    "scores": [
+      {
+        "id": 15,
+        "eval_id": 48,
+        "name": "Theological Accuracy Judge",
+        "score": 0.8,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": false,
+          "nuance_captured": true,
+          "errors": [
+            "Authorship attribution: The claim that the Gospel of John was written by John the Apostle is a traditional position, but the biblical text itself does not explicitly name the author; modern scholarship often debates authorship (John the Apostle vs. John the Elder vs. a Johannine community). This makes the absolute authorship statement not fully biblically grounded."
+          ],
+          "rationale": "The response aligns with traditional Christian teaching that John the Apostle authored the Gospel and that he was part of Jesus' inner circle and the ‘beloved disciple,’ who is described as present at the Last Supper and at the crucifixion. These points are supported by Scripture (e.g., John 13:23-25; John 19:26-27), though the explicit identification of the author as ‘John the Apostle’ is not stated in the text and is a matter of tradition and scholarly debate. The answer is doctrinally orthodox and largely biblically grounded for the events cited, but the authorship claim lacks explicit biblical support, reducing the overall biblical grounding score. The response also could have highlighted scholarly nuances (e.g., Johannine community theory) for fuller nuance. "
+        },
+        "created_at": "2025-12-30T00:41:16.704Z"
+      },
+      {
+        "id": 16,
+        "eval_id": 48,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:41:16.704Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 8,
+        "eval_id": 48,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The Gospel of John was written by John the Apostle, one of Jesus' twelve disciples and a member of His inner circle (along with Peter and James). He was known as \"the disciple whom Jesus loved\" and was present at key events, including the Last Supper and the Crucifixion.",
+          "toolCalls": []
+        },
+        "start_time": 422.757375,
+        "end_time": 2783.929708,
+        "input_tokens": 140,
+        "output_tokens": 63,
+        "total_tokens": 203,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 6,
+    "run_id": 1,
+    "name": "Context Understanding [Mistral Large 2512]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Mistral Large 2512",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:40:38.263Z"
+  }
+}

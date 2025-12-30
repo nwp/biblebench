@@ -1,0 +1,111 @@
+{
+  "eval": {
+    "id": 201,
+    "suite_id": 81,
+    "col_order": 1,
+    "input": "What is the hypostatic union in relation to Jesus Christ?",
+    "expected": "The hypostatic union is the doctrine that Jesus Christ is one person with two complete and distinct natures: fully God and fully human. These two natures are united without mixture, confusion, separation, or division. Jesus is not partly God and partly human, but wholly God and wholly human simultaneously.",
+    "output": "# The Hypostatic Union\n\n## Definition\n\nThe hypostatic union is the theological term describing how the divine and human natures are united in the one Person (Greek: *hypostasis*) of Jesus Christ. Christ is fully God and fully man—two complete natures united in one Person, without mixture, confusion, division, or separation.\n\n## Biblical Foundation\n\n**Affirmations of Christ's Deity:**\n- John 1:1, 14 — \"The Word was God... and the Word became flesh\"\n- Colossians 2:9 — \"In Him the whole fullness of deity dwells bodily\"\n- Philippians 2:6 — He existed \"in the form of God\"\n\n**Affirmations of Christ's Humanity:**\n- Hebrews 2:14, 17 — He shared in flesh and blood, \"made like his brothers in every respect\"\n- 1 Timothy 2:5 — \"the man Christ Jesus\"\n- He experienced hunger, fatigue, sorrow, and death\n\n## The Chalcedonian Definition (451 AD)\n\nThe Council of Chalcedon articulated the boundaries:\n\n> *\"One and the same Christ... in two natures, without confusion, without change, without division, without separation\"*\n\nThe natures retain their distinct properties while belonging to the single Person of the Son.\n\n## Why It Matters\n\n- **Salvation requires both natures**: Only God can save; only a human can represent humanity\n- **Mediator**: Christ bridges the divine-human divide (1 Tim. 2:5)",
+    "duration": 39163,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.485Z",
+    "score": 0.8933333333333334,
+    "scores": [
+      {
+        "id": 496,
+        "eval_id": 201,
+        "name": "Theological Accuracy Judge",
+        "score": 0.93,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Chalcedonian formula is misquoted: should read 'without confusion, without change, without division, without separation' rather than 'without mixture, confusion, division, or separation.' The substitution of 'mixture' for 'change' is theologically inaccurate though the intent is close."
+          ],
+          "rationale": "The answer accurately states the hypostatic union as one Person with two complete natures (divine and human) united without confusion, change, division, or separation. It correctly traces biblical support (John 1:1-14; Col 2:9; Phil 2:6; Heb 2:14-17; 1 Tim 2:5) and cites Chalcedon (451) to define orthodoxy. It notes the salvific and mediatorial significance of the union. The only notable issue is a minor variation in the Chalcedonian wording (the standard list uses 'change' instead of 'mixture'), which does not undermine the doctrine but should be corrected for precision."
+        },
+        "created_at": "2025-12-30T00:17:21.657Z"
+      },
+      {
+        "id": 497,
+        "eval_id": 201,
+        "name": "Heresy Detection Judge",
+        "score": 1,
+        "description": "Detects heretical or unorthodox theological statements",
+        "metadata": {
+          "contains_heresy": false,
+          "severity": "none",
+          "heresies_detected": [],
+          "explanation": "Assessment: The response presents orthodox Christology. It accurately explains the hypostatic union — one person (the Son) with two complete natures, divine and human, united without mixture, change, division, or separation — in line with the Chalcedonian Definition (451 AD). The biblical citations (John 1:1,14; Colossians 2:9; Philippians 2:6; Hebrews 2:14,17; 1 Timothy 2:5) support both the deity and humanity of Christ as foundational to the doctrine. The “Why It Matters” section (salvation requires both natures; Christ as mediator) aligns with historic orthodox teaching. The response also correctly flags common Christological heresies to be mindful of (Arianism, Modalism, Pelagianism, Gnosticism, Docetism) and does not promote any of them. No explicit or implicit heretical claim is present. A potential enhancement could include noting historic debates such as Miaphysitism to acknowledge related controversies, but this is not a doctrinal error. Overall severity: none."
+        },
+        "created_at": "2025-12-30T00:17:21.657Z"
+      },
+      {
+        "id": 498,
+        "eval_id": 201,
+        "name": "Doctrinal Completeness",
+        "score": 0.75,
+        "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+        "metadata": {
+          "expectedTerms": [
+            "hypostatic",
+            "union",
+            "doctrine",
+            "jesus",
+            "christ",
+            "person",
+            "complete",
+            "distinct",
+            "natures",
+            "fully"
+          ],
+          "coveredCount": 21,
+          "totalExpected": 28,
+          "completeness": 0.75
+        },
+        "created_at": "2025-12-30T00:17:21.657Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 141,
+        "eval_id": 201,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\nWhat is the hypostatic union in relation to Jesus Christ?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# The Hypostatic Union\n\n## Definition\n\nThe hypostatic union is the theological term describing how the divine and human natures are united in the one Person (Greek: *hypostasis*) of Jesus Christ. Christ is fully God and fully man—two complete natures united in one Person, without mixture, confusion, division, or separation.\n\n## Biblical Foundation\n\n**Affirmations of Christ's Deity:**\n- John 1:1, 14 — \"The Word was God... and the Word became flesh\"\n- Colossians 2:9 — \"In Him the whole fullness of deity dwells bodily\"\n- Philippians 2:6 — He existed \"in the form of God\"\n\n**Affirmations of Christ's Humanity:**\n- Hebrews 2:14, 17 — He shared in flesh and blood, \"made like his brothers in every respect\"\n- 1 Timothy 2:5 — \"the man Christ Jesus\"\n- He experienced hunger, fatigue, sorrow, and death\n\n## The Chalcedonian Definition (451 AD)\n\nThe Council of Chalcedon articulated the boundaries:\n\n> *\"One and the same Christ... in two natures, without confusion, without change, without division, without separation\"*\n\nThe natures retain their distinct properties while belonging to the single Person of the Son.\n\n## Why It Matters\n\n- **Salvation requires both natures**: Only God can save; only a human can represent humanity\n- **Mediator**: Christ bridges the divine-human divide (1 Tim. 2:5)",
+          "toolCalls": []
+        },
+        "start_time": 434.663167,
+        "end_time": 9467.189833,
+        "input_tokens": 53,
+        "output_tokens": 362,
+        "total_tokens": 415,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 81,
+    "run_id": 1,
+    "name": "Core Doctrines [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/core-doctrines.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Core Doctrines",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.485Z"
+  }
+}

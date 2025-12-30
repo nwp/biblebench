@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 273,
+    "suite_id": 87,
+    "col_order": 1,
+    "input": "What was Paul's background before his conversion?",
+    "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+    "output": "Paul was a Pharisee from Tarsus, a Roman citizen by birth, and trained under the renowned rabbi Gamaliel in Jerusalem. He was a zealous persecutor of the early Christian church, present at Stephen's stoning and actively arresting believers before his Damascus road encounter with Christ.",
+    "duration": 27548,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:21.863Z",
+    "score": 0.475,
+    "scores": [
+      {
+        "id": 1119,
+        "eval_id": 273,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response faithfully summarizes Paul's pre-conversion background: he was a Pharisee from Tarsus, a Roman citizen by birth, and educated under Gamaliel in Jerusalem. It correctly states his zealous persecution of the church, including involvement around Stephen’s martyrdom, and his conversion on the road to Damascus. All points have solid biblical support (Acts 21–22 for citizenship and Gamaliel, Acts 7–8 for persecution, Acts 9 for conversion; see also Galatians 1:14 and Philippians 3:5–6). The treatment is doctrinally orthodox and appropriately nuanced for the question. "
+        },
+        "created_at": "2025-12-30T00:17:49.432Z"
+      },
+      {
+        "id": 1120,
+        "eval_id": 273,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:17:49.433Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 428,
+        "eval_id": 273,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Paul was a Pharisee from Tarsus, a Roman citizen by birth, and trained under the renowned rabbi Gamaliel in Jerusalem. He was a zealous persecutor of the early Christian church, present at Stephen's stoning and actively arresting believers before his Damascus road encounter with Christ.",
+          "toolCalls": []
+        },
+        "start_time": 200.298875,
+        "end_time": 3465.124375,
+        "input_tokens": 150,
+        "output_tokens": 68,
+        "total_tokens": 218,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 87,
+    "run_id": 1,
+    "name": "Context Understanding [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:21.862Z"
+  }
+}

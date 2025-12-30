@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 133,
+    "suite_id": 13,
+    "col_order": 6,
+    "input": "Quote Psalm 23:1 from the English Standard Version (ESV) exactly as written",
+    "expected": "The Lord is my shepherd; I shall not want",
+    "output": "The LORD is my shepherd; I shall not want.",
+    "duration": 2210,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:32:45.825Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 8,
+        "eval_id": 133,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:32:48.037Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 8,
+        "eval_id": 133,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Psalm 23:1 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The LORD is my shepherd; I shall not want.",
+          "toolCalls": []
+        },
+        "start_time": 432.27375,
+        "end_time": 2594.766875,
+        "input_tokens": 90,
+        "output_tokens": 56,
+        "total_tokens": 146,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 13,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:32:45.825Z"
+  }
+}

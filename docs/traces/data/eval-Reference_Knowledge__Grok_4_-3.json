@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 296,
+    "suite_id": 62,
+    "col_order": 3,
+    "input": "What is the reference for the Ten Commandments?",
+    "expected": "Exodus 20",
+    "output": "Exodus 20:1-17",
+    "duration": 11882,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:11.284Z",
+    "score": 0.8333333333333334,
+    "scores": [
+      {
+        "id": 729,
+        "eval_id": 296,
+        "name": "Scripture Reference Accuracy",
+        "score": 0.5,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:10:23.185Z"
+      },
+      {
+        "id": 730,
+        "eval_id": 296,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:10:23.185Z"
+      },
+      {
+        "id": 731,
+        "eval_id": 296,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Exodus 20:1-17"
+        },
+        "created_at": "2025-12-30T00:10:23.185Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 276,
+        "eval_id": 296,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for the Ten Commandments?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Exodus 20:1-17",
+          "toolCalls": []
+        },
+        "start_time": 162.313791,
+        "end_time": 12040.292958,
+        "input_tokens": 735,
+        "output_tokens": 456,
+        "total_tokens": 1191,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 62,
+    "run_id": 1,
+    "name": "Reference Knowledge [Grok 4]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Grok 4",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:11.284Z"
+  }
+}

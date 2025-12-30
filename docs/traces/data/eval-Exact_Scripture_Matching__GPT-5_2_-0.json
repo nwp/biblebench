@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 127,
+    "suite_id": 13,
+    "col_order": 0,
+    "input": "Quote John 3:16 from the King James Version (KJV) exactly as written",
+    "expected": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life",
+    "output": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+    "duration": 2378,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:32:45.825Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 11,
+        "eval_id": 127,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:32:48.204Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 11,
+        "eval_id": 127,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote John 3:16 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+          "toolCalls": []
+        },
+        "start_time": 407.897417,
+        "end_time": 2761.864542,
+        "input_tokens": 90,
+        "output_tokens": 132,
+        "total_tokens": 222,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 13,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:32:45.825Z"
+  }
+}

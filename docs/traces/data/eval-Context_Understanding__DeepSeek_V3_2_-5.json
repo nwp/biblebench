@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 91,
+    "suite_id": 29,
+    "col_order": 5,
+    "input": "What was the purpose of the book of Revelation?",
+    "expected": "To encourage persecuted Christians with visions of God's ultimate victory and the return of Christ",
+    "output": "To encourage persecuted Christians with visions of God's ultimate victory and Christ's return",
+    "duration": 25866,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:45:15.574Z",
+    "score": 0.475,
+    "scores": [
+      {
+        "id": 314,
+        "eval_id": 91,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s answer accurately reflects the classic purpose of the book of Revelation: to encourage persecuted Christians by revealing God’s ultimate victory and the return of Christ. This aligns with Scripture (e.g., Revelation 1:1 about the revelation given to show servants what must soon take place, and the overarching eschatological hope of Christ’s return) and with historic Christian orthodoxy. The response is concise and focuses on the core thrust of Revelation’s message. It could be complemented by noting other aspects (e.g., exhortations to perseverance, worship, warnings against compromise), but as a succinct statement of purpose it remains faithful to biblical teaching."
+        },
+        "created_at": "2025-12-30T00:45:41.459Z"
+      },
+      {
+        "id": 315,
+        "eval_id": 91,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:45:41.459Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 116,
+        "eval_id": 91,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the purpose of the book of Revelation?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To encourage persecuted Christians with visions of God's ultimate victory and Christ's return",
+          "toolCalls": []
+        },
+        "start_time": 224.867042,
+        "end_time": 4935.447459,
+        "input_tokens": 137,
+        "output_tokens": 16,
+        "total_tokens": 153,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "DeepSeek V3.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:45:15.574Z"
+  }
+}

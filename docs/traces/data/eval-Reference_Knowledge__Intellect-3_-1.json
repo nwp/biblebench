@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 135,
+    "suite_id": 30,
+    "col_order": 1,
+    "input": "What is the reference for 'The Lord is my shepherd'?",
+    "expected": "Psalm 23:1",
+    "output": "The reference for \"The Lord is my shepherd\" is **Psalm 23:1**.",
+    "duration": 6312,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:52:49.340Z",
+    "score": 0.8333333333333334,
+    "scores": [
+      {
+        "id": 223,
+        "eval_id": 135,
+        "name": "Scripture Reference Accuracy",
+        "score": 0.5,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:52:55.671Z"
+      },
+      {
+        "id": 224,
+        "eval_id": 135,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:52:55.671Z"
+      },
+      {
+        "id": 225,
+        "eval_id": 135,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "The reference for \"The Lord is my shepherd\" is **Psalm 23:1**."
+        },
+        "created_at": "2025-12-30T00:52:55.671Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 97,
+        "eval_id": 135,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for 'The Lord is my shepherd'?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The reference for \"The Lord is my shepherd\" is **Psalm 23:1**.",
+          "toolCalls": []
+        },
+        "start_time": 191.695833,
+        "end_time": 6502.507291,
+        "input_tokens": 63,
+        "output_tokens": 310,
+        "total_tokens": 373,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Reference Knowledge [Intellect-3]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Intellect-3",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:52:49.340Z"
+  }
+}

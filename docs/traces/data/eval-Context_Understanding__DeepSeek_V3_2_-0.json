@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 86,
+    "suite_id": 29,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "John the Apostle, one of the Twelve disciples, the disciple whom Jesus loved.",
+    "duration": 28047,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:45:15.574Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 346,
+        "eval_id": 86,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": false,
+          "nuance_captured": false,
+          "errors": [
+            "Authorship attribution to John the Apostle is not explicit in Scripture; it is a traditional claim rather than a biblically explicit fact.",
+            "The Gospel itself names the disciple as 'the disciple whom Jesus loved' but does not definitively identify this person as John the Apostle within the biblical text; traditional linkage to John stems from early church tradition, not scriptural citation.",
+            "Modern scholarship often debates the precise authorship of the Gospel of John and may propose alternative possibilities (e.g., a Johannine community). The response does not acknowledge these nuances."
+          ],
+          "rationale": "The answer aligns with long-standing traditional teaching that John the Apostle wrote the Gospel and identifies him as the disciple Jesus loved, which is historically orthodox. However, it omits important biblical-lexical nuance: Scripture does not explicitly name its author as John, and modern scholarship discusses alternate theories. The response is accurate to traditional doctrine but lacks critical nuance and scholarly caveats."
+        },
+        "created_at": "2025-12-30T00:45:43.621Z"
+      },
+      {
+        "id": 347,
+        "eval_id": 86,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:45:43.621Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 129,
+        "eval_id": 86,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "John the Apostle, one of the Twelve disciples, the disciple whom Jesus loved.",
+          "toolCalls": []
+        },
+        "start_time": 215.865792,
+        "end_time": 3859.444042,
+        "input_tokens": 141,
+        "output_tokens": 17,
+        "total_tokens": 158,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [DeepSeek V3.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "DeepSeek V3.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:45:15.574Z"
+  }
+}

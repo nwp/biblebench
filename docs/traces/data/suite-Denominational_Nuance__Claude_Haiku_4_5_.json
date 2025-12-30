@@ -1,0 +1,512 @@
+{
+  "history": [
+    {
+      "score": 0.88625,
+      "date": "2025-12-30T00:16:42.473Z"
+    }
+  ],
+  "suite": {
+    "id": 73,
+    "run_id": 1,
+    "name": "Denominational Nuance [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/denominational-nuance.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Denominational Nuance",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.473Z",
+    "evals": [
+      {
+        "id": 151,
+        "suite_id": 73,
+        "col_order": 0,
+        "input": "What are the main differences between Catholic and Protestant views on justification?",
+        "expected": "Catholics emphasize justification as a process involving faith plus works (sanctification), where grace infuses the believer and makes them actually righteous over time. Protestants emphasize justification as a one-time legal declaration where God imputes Christ's righteousness to the believer through faith alone, though they also affirm sanctification as a separate process. Both agree justification requires God's grace and Christ's work, but differ on the role of works and whether justification is declarative or transformative.",
+        "output": "# Catholic and Protestant Views on Justification\n\nThis is genuinely one of Christianity's most important theological divides. Here's how the major perspectives differ:\n\n## The Core Disagreement\n\n**Protestant View (Classical):**\n- Justification is a *forensic declaration*—God declares the sinner righteous through Christ's imputed righteousness\n- It occurs at a moment through faith alone (*sola fide*)\n- The believer's sins are covered; they stand before God in Christ's righteousness, not their own\n\n**Catholic View:**\n- Justification is *transformative*—God makes us actually righteous through grace infused into the soul\n- It requires both faith *and* works (understood as cooperation with grace)\n- Righteousness is genuinely internal, not merely imputed\n\n## Key Theological Points\n\n| Aspect | Protestant | Catholic |\n|--------|-----------|----------|\n| **Role of Works** | Evidence of faith; not meritorious for justification | Genuinely contribute; enabled by grace |\n| **Faith and Works** | Faith alone justifies | Faith formed by charity; works essential |\n| **God's Righteousness** | Imputed (external covering) | Infused (internal transformation) |\n| **Assurance** | Can have certainty of salvation | Ongoing cooperation required; humility advised |\n\n## Historical Context\n\nBoth sides appealed to Scripture, but read it differently:\n- Protestants emphasized Romans and Galatians\n- Catholics emphasized James and the Gospels' ethical demands\n\n## Modern Developments\n\n**The Joint Declaration on Justification (1999)** between Lutheran and Catholic churches found surprising convergence, suggesting some differences are semantic rather than absolute.\n\nWhat aspect would you like explored further?",
+        "duration": 51934,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.473Z",
+        "scores": [
+          {
+            "id": 851,
+            "eval_id": 151,
+            "name": "Theological Accuracy Judge",
+            "score": 0.78,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "The response presents a broad, mostly accurate contrast, but it overgeneralizes some Protestant positions as if they were monolithic (e.g., implying all Protestants teach ‘sola fide’ as a strict, momentary forensic declaration without living faith or growth in grace). In reality, there is substantial diversity among Protestant traditions (Lutheran, Reformed, Anglican, Methodist, etc.), and many affirm a living faith and sanctification closely connected to justification.",
+                "The claim that Protestants read Romans and Galatians while Catholics read James and ethical demands is a simplification. Both sides cite multiple biblical books in justification debates; James is commonly read by Catholics as addressing a living faith evidenced by works, while many Protestants also engage with James. The framing can obscure legitimate cross-reading and interpretive differences within each tradition.",
+                "The statement that the Catholic view requires “works” to be essential for justification risks endorsing a caricature. Catholic teaching indeed emphasizes grace-infused righteousness and cooperation with grace; however, the language of “works being essential for justification” should be carefully distinguished from the Catholic emphasis on justification being initially by grace and completed through sanctification, with meritorious cooperation understood within grace (not earned apart from grace). The nuance that some works are ",
+                " e.g., merits through grace, is not fully captured but implied.",
+                "The treatment of assurance blurs important distinctions. Many Protestants (especially Calvinist and some Reformed streams) emphasize perseverance of the saints and may deny unconditional certainty of salvation, while Arminian-influenced traditions emphasize conditional perseverance. The LLM’s blanket statement that Protestants “can have certainty of salvation” misses this variation.",
+                "The Modern Development section is concise but could mislead readers about the exact content and degree of agreement in the Joint Declaration on Justification (1999). The JDDJ notes alignment on the gracious nature of justification and the place of faith and works, but it remains a nuanced agreement with ongoing discussions, not a wholesale simplification into “semantic differences.”",
+                "The Catholic baptismal and sacramental understanding of justification (e.g., baptism as the means by which initial justification is conferred) is omitted. This is a major element of Catholic teaching and its absence reduces the completeness of the comparison.",
+                "Terminology caveats: The LLM uses classic labels like “imputed righteousness” and “infused righteousness.” While these terms map onto long-standing debates, their precise theological usage and biblical warrant are nuanced. The response could better acknowledge that “imputed” and “infused” are shorthand for deeper debates about how justification, forgiveness, and sanctification relate in Scripture and tradition.",
+                "Overall, while the answer captures the broad contours (forensic vs. transformative, faith vs. faith plus works, imputed vs. infused righteousness, and a note on modern dialogue), it oversimplifies, omits important Catholic sacramental elements (e.g., baptism, grace, and merit proper), and understates the diversity and nuance within Protestant traditions and biblical interpretation."
+              ],
+              "rationale": "The LLM’s response accurately contrasts the broad categories of Protestant (forensic, imputed righteousness, justification by faith) and Catholic (transformative, infused righteousness, cooperation with grace) frameworks, and it correctly references key scriptural anchors (Romans, Galatians, James) and the 1999 Joint Declaration. However, it overgeneralizes Protestant positions as uniform and momentary, minimizes importantCatholic sacramental elements (notably baptism as the instrument of justification), and understates the diversity of Protestant thought on assurance and the relationship between faith and works. It also presents James’s role in justification debates with an over-simplified emphasis, and it treats the JDDJ’s convergence as simplistic rather than nuanced. A more precise evaluation would acknowledge the variety within Protestant and Catholic streams, the sacramental grammar of Catholic justification, and the biblical nuances surrounding “imputation” and “transformation.”"
+            },
+            "created_at": "2025-12-30T00:17:34.410Z"
+          },
+          {
+            "id": 852,
+            "eval_id": 151,
+            "name": "Denominational Bias Detector",
+            "score": 0.65,
+            "description": "Detects denominational bias in theological responses",
+            "metadata": {
+              "bias_detected": true,
+              "denominations": [
+                "Catholic",
+                "Protestant"
+              ],
+              "bias_strength": "moderate",
+              "explanation": "The answer foregrounds a classical Protestant reading (forensic/ imputed righteousness, sola fide) while presenting Catholic justification as transformative and infused with grace. It labels the Protestant view as the primary difference and emphasizes certainty of salvation for Protestants, which biases the comparison toward Protestant framing. It does acknowledge Catholic position and cites the 1999 Joint Declaration as convergence, but it largely omits other traditions (e.g., Eastern Orthodoxy, Anglican nuances) and simplifies nuanced debates within both traditions (e.g., Catholic understanding of assurance and merit). Overall, it is reasonably balanced but leans toward Protestant framing, hence a moderate ecumenical bias."
+            },
+            "created_at": "2025-12-30T00:17:34.410Z"
+          },
+          {
+            "id": 853,
+            "eval_id": 151,
+            "name": "Multiple Perspectives",
+            "score": 1,
+            "description": "Checks if multiple denominational perspectives are represented",
+            "metadata": {
+              "perspectivesCount": 3,
+              "perspectives": [
+                "Catholic",
+                "Protestant",
+                "Lutheran"
+              ]
+            },
+            "created_at": "2025-12-30T00:17:34.410Z"
+          },
+          {
+            "id": 854,
+            "eval_id": 151,
+            "name": "Balanced Language",
+            "score": 1,
+            "description": "Checks for balanced, non-biased language",
+            "metadata": {
+              "balanceIndicators": 4,
+              "biasIndicators": 0
+            },
+            "created_at": "2025-12-30T00:17:34.410Z"
+          }
+        ]
+      },
+      {
+        "id": 152,
+        "suite_id": 73,
+        "col_order": 1,
+        "input": "Explain the different views on baptism held by various Christian traditions.",
+        "expected": "Christian traditions differ significantly on baptism: Catholics, Orthodox, Lutherans, and some others practice infant baptism, viewing it as a means of grace that initiates covenant membership. Baptists and many evangelicals practice believer's baptism only, requiring a personal profession of faith. Methods differ too: immersion (most Baptists), sprinkling (many Presbyterians), or pouring (some traditions). Some view baptism as essential for salvation (some Churches of Christ), while others see it as an important ordinance but not salvific (many evangelicals). Despite differences, most Christians affirm baptism's importance as commanded by Christ.",
+        "output": "# Christian Views on Baptism: A Survey of Denominational Perspectives\n\n## Core Agreement\n\nAll mainstream Christian traditions affirm baptism as:\n- A command of Christ (Matthew 28:19)\n- Biblically mandated for disciples\n- Spiritually significant, not merely symbolic\n- Connected to salvation, the Holy Spirit, and the church\n\n## Major Points of Divergence\n\n### **1. Subjects of Baptism**\n\n**Infant Baptism (Paedobaptism)**\n- **Catholic, Orthodox, Lutheran, Reformed, Methodist traditions** practice this\n- Theological rationale: Baptism parallels circumcision; children of believing parents belong to the covenant community; grace operates through the sacrament itself\n- Infants receive baptism; confirmation/chrismation comes later\n\n**Believer's Baptism Only (Credobaptism)**\n- **Baptist, Pentecostal, Evangelical, most Free Church traditions** hold this view\n- Theological rationale: Personal faith must precede baptism (Acts 2:38); baptism symbolizes an already-accomplished conversion; the New Testament depicts believers being baptized after faith\n\n### **2. Mode of Baptism**\n\n**Immersion**\n- Most Baptists, Orthodox, some Evangelicals\n- Emphasizes burial/resurrection symbolism (Romans 6:3-4)\n\n**Sprinkling/Pouring (Aspersion/Affusion)**\n- Many Reformed, Lutheran, Methodist, Catholic traditions\n- Considers mode less theologically essential; emphasizes application of water\n\n**Both Accepted**\n- Catholic Church officially allows both\n- Some Orthodox recognize sprinkling in emergencies\n\n### **3. Theological Significance**\n\n**Sacramental View**\n- **Catholic, Orthodox, many Lutheran and Anglican traditions**\n- Baptism *effects* grace (opus operatum—\"works by being worked\")\n- Removes original sin and imparts sanctifying grace\n- Essential for salvation (though exceptional circumstances acknowledged)\n\n**Covenantal View**\n- **Reformed traditions**\n- Baptism *seals* the covenant and God's promises\n- Incorporates into the visible church\n- Connects to predestination and election themes\n\n**Symbolic/Declarative View**\n- **Most Baptist and Evangelical traditions**\n- Baptism *symbolizes* an inward faith already present\n- Public profession and identification with Christ\n- Represents commitment to discipleship\n- Significance is profound but baptism follows rather than conveys salvation\n\n**Charismatic Emphasis**\n- **Pentecostal and some Charismatic churches**\n- Emphasis on Spirit baptism as distinct from water baptism\n- Speaking in tongues may be considered evidence of Spirit baptism\n\n### **4. Relationship to Salvation**\n\n**Necessary for Salvation**\n- Traditional Catholic, Orthodox, some Lutheran theology\n- Clarification: extraordinary means of grace exist for those who cannot receive it\n\n**Normative Sign of Salvation**\n- Reformed and many mainstream traditions\n- Typically follows faith; integral to salvation process\n\n**Response to Salvation**\n- Baptist and Evangelical view\n- Baptism follows conversion; expresses and confirms already-present salvation\n\n### **5. Frequency and Repetition**\n\n**Universal Agreement**\n- Baptism occurs once (ecumenical consensus)\n- Trinitarian formula required (though all three persons need not be explicitly named)\n\n## Historical Development Notes\n\nThese differences largely crystallized in:\n- **Medieval period**: Infant baptism became normative in Western Christendom\n- **Reformation**: Both Protestant and Catholic traditions reaffirmed infant baptism; Anabaptists revived credobaptism\n- **Modern era**: Evangelical, Pentecostal, and Baptist movements further developed believer's baptism theology\n\n## Areas of Genuine Ecumenical Agreement\n\n- Baptism is Christ's command\n- The Trinity is invoked\n- Baptism connects to faith, repentance, and the church\n- Baptism cannot be repeated\n- Valid baptisms across traditions are mutually recognized (with some qualifications in Orthodox theology)\n\n## Respectful Perspective\n\nEach tradition's view emerges from:\n- Sincere biblical interpretation\n- Theological coherence within their system\n- Historical and pastoral experience\n- Legitimate hermeneutical choices\n\nThe diversity reflects how different Christian communities have reasoned about:\n- How grace operates (sacramental vs. symbolic frameworks)\n- How we read the relationship between OT and NT covenants\n- How we understand faith and its development\n- Pneumatology (the role of the Holy Spirit)\n\nRather than one view being obviously \"correct,\" these represent different weights placed on biblical passages, different theological frameworks, and different pastoral priorities—all within orthodoxy's boundaries.",
+        "duration": 53254,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.474Z",
+        "scores": [
+          {
+            "id": 869,
+            "eval_id": 152,
+            "name": "Theological Accuracy Judge",
+            "score": 0.78,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Some nuances could be more precise: the LLM uses language like \"opus operatum\" to describe baptismal grace, which is a Catholic/Orthodox technical term; Protestant and specifically Lutheran reformers typically reject the ex opere operato framing and emphasize baptism as a means of grace rather to a claim of automatic grace from the rite itself.",
+                "The statement on salvation could overgeneralize: while Catholic, Orthodox, and some Lutheran theologians affirm baptism as closely tied to salvation, many Protestant traditions (notably Reformed and many evangelical theologies) emphasize salvation by faith and regard baptism as a significant, ecclesial sign or seal rather to say it is strictly essential for salvation in all cases.",
+                "The treated mode of baptism in Orthodoxy is a bit oversimplified: Orthodox baptism is typically immersion (often triple immersion) for infants as the norm; emergency cases may involve pouring, but immersion remains standard. The line could confuse readers by phrasing it as a broad “immersion for Orthodox” alongside “pouring/sprinkling” as common options.",
+                "The formulary nuance about baptismal formula (“Trinitarian formula required, though all three persons need not be explicitly named”) is potentially misleading: mainstream historic practice is triune baptism using the formula invoking Father, Son, and Holy Spirit; some groups (e.g., Oneness Pentecostals) expressly use non-trinitarian formulas (e.g., \"in the name of Jesus\"), and many ecumenical discussions treat explicit naming of all three persons as essential in traditional orthodoxy. The statement understates these variant traditions and could imply a broader acceptance of non-trinitarian practice than is accurate for most historic churches.",
+                "Some historical development notes could acknowledge more nuance: infant baptism became widespread in the early church and was firmly established in Western Christendom by late antiquity, but the Anabaptist rejection of infant baptism occurred in the Reformation era and was not simply a linear progression from medieval practice to modern denominational lines. A more precise timeline would help avoid over-simplification."
+              ],
+              "rationale": "The response provides a solid, multi-tradition overview and captures many important nuances. It correctly identifies major camps (paedobaptism vs credobaptism, sacramental vs covenantal vs symbolic theologies, and Spirit vs water baptism distinctions). However, it makes several technically sharp points that can mislead or oversimplify: (1) the use of opus operatum is a Catholic-theology term that should be carefully distinguished from Protestant soteriology; (2) the claim that baptism is “essential for salvation” is not uniformly held across traditions and needs nuanced qualification; (3) the treatment of baptismal formula could misrepresent the strong normativity of the Trinitarian formula and does not adequately acknowledge oneness/Non-Trinitarian cases; (4) Orthodox practice of modes is nuanced (immersion is standard, with occasional exceptions) that could be stated more clearly; (5) ecumenical recognition of baptisms has practical qualifications that could be more explicitly outlined. Despite these points, the overall depiction is accurate, balanced, and captures the key doctrinal strands and historical development."
+            },
+            "created_at": "2025-12-30T00:17:35.731Z"
+          },
+          {
+            "id": 870,
+            "eval_id": 152,
+            "name": "Denominational Bias Detector",
+            "score": 1,
+            "description": "Detects denominational bias in theological responses",
+            "metadata": {
+              "bias_detected": false,
+              "denominations": [],
+              "bias_strength": "none",
+              "explanation": "The response surveys baptism views across Catholic, Orthodox, Lutheran, Anglican, Reformed, Methodist, Baptist, Pentecostal, Evangelical, and Free Church traditions; it clearly presents multiple perspectives (infant baptism vs believer’s baptism, mode variations, theological significance, and relation to salvation) and notes ecumenical agreements and the historical development. It avoids endorsing a single tradition as normative, and it even acknowledges exceptions (e.g., sprinkling in emergencies, extraordinary means of grace). The tone and content aim for balance and inclusivity rather than advocacy for one denominational position."
+            },
+            "created_at": "2025-12-30T00:17:35.731Z"
+          },
+          {
+            "id": 871,
+            "eval_id": 152,
+            "name": "Multiple Perspectives",
+            "score": 1,
+            "description": "Checks if multiple denominational perspectives are represented",
+            "metadata": {
+              "perspectivesCount": 8,
+              "perspectives": [
+                "Catholic",
+                "Protestant",
+                "Orthodox",
+                "Reformed/Calvinist",
+                "Lutheran",
+                "Baptist",
+                "Pentecostal",
+                "Anglican"
+              ]
+            },
+            "created_at": "2025-12-30T00:17:35.731Z"
+          },
+          {
+            "id": 872,
+            "eval_id": 152,
+            "name": "Balanced Language",
+            "score": 0.8,
+            "description": "Checks for balanced, non-biased language",
+            "metadata": {
+              "balanceIndicators": 7,
+              "biasIndicators": 1
+            },
+            "created_at": "2025-12-30T00:17:35.731Z"
+          }
+        ]
+      },
+      {
+        "id": 153,
+        "suite_id": 73,
+        "col_order": 2,
+        "input": "What are the differences between Calvinist and Arminian theology?",
+        "expected": "Calvinism and Arminianism differ primarily on sovereignty and free will. Calvinists emphasize God's unconditional election, where God chooses who will be saved based solely on His will (TULIP: Total depravity, Unconditional election, Limited atonement, Irresistible grace, Perseverance of saints). Arminians emphasize that God's election is based on foreknowledge of who will freely choose faith, that Christ's atonement is unlimited, that grace can be resisted, and that believers can potentially lose salvation. Both affirm salvation by grace through faith and God's sovereignty, but differ on how divine sovereignty relates to human choice. Both views have been held by orthodox Christians throughout church history.",
+        "output": "# Calvinism vs. Arminianism: Core Differences\n\nThese represent genuinely different frameworks within orthodox Christianity, both traceable to the Reformation. Both affirm God's sovereignty, human responsibility, and salvation through Christ—they differ on *how* these work together.\n\n## The Central Tension\n\nBoth traditions attempt to reconcile:\n- God's complete sovereignty and foreknowledge\n- Human free will and moral responsibility\n- God's desire for all to be saved with the fact that not all are\n\nThey arrive at different emphases.\n\n## Calvinist Perspective\n\n**Key commitments:**\n- God's sovereignty is *exhaustive*—He foreknows and has decreed all things\n- Predestination: God predestines the elect to salvation (and non-elect to non-salvation)\n- Total depravity means humans cannot choose God without divine initiation\n- God's grace is *irresistible* to the elect\n- Perseverance: the elect will necessarily remain saved\n\n**Strengths (as Calvinists see them):** Protects God's absolute sovereignty and the gratuity of grace; explains why some respond to the gospel and others don't\n\n## Arminian Perspective\n\n**Key commitments:**\n- God's sovereignty includes giving genuine human freedom\n- Foreknowledge ≠ predestination; God foresees choices without determining them\n- Prevenient grace: God enables all humans to respond to the gospel\n- Resistible grace: humans can accept or reject God's offer\n- Conditional perseverance: ongoing faith is required for salvation\n\n**Strengths (as Arminians see them):** Better accounts for human responsibility; makes God's love and offer universal; avoids seeming to make God the author of damnation\n\n## On Key Disputed Points\n\n| Question | Calvinist | Arminian |\n|----------|-----------|----------|\n| Does God predestine individuals to salvation? | Yes, unconditionally | No; God predestines based on foreseen faith |\n| Can humans resist God's grace? | No (for the elect) | Yes, always |\n| Is Christ's atonement universal in scope? | Limited to the elect | Universal, though not all appropriate it |\n| What enables faith? | Irresistible grace | Prevenient grace that can be resisted |\n\n## Historical Context\n\n- **Calvinism** developed from John Calvin's theology and was systematized by later Reformed theologians\n- **Arminianism** arose from Jacob Arminius (1560-1609) as a modification of Reformed theology, emphasizing human agency\n- Both positions have substantial representation across denominations (Reformed, Evangelical, Pentecostal, Methodist, etc.)\n\n## Important Nuances\n\n- Modern Calvinists often reject *caricatures* of their position as making God \"unjust\"\n- Thoughtful Calvinists distinguish between God's sovereign will and moral responsibility\n- Modern Arminians often reject *caricatures* as denying God's sovereignty\n- Theologically serious figures exist on both sides\n\n## Why This Matters (Practically)\n\nThis isn't merely academic—it affects:\n- How churches understand evangelism (is it human persuasion or divine calling?)\n- Pastoral care (can believers lose salvation?)\n- Prayer (how do we pray if God has already decided?)\n- Assurance (how do I know I'm truly converted?)\n\n## The Broader Picture\n\nMany Christians hold positions that blend elements of both, or occupy genuinely different frameworks (Catholicism, Orthodoxy, Open Theism). Within Protestantism, these remain the dominant poles of serious theological reflection.\n\n**The charitable view:** Both traditions grapple seriously with genuine biblical tensions. Disagreement reflects the *difficulty* of the questions, not intellectual dishonesty on either side.",
+        "duration": 48680,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.474Z",
+        "scores": [
+          {
+            "id": 664,
+            "eval_id": 153,
+            "name": "Theological Accuracy Judge",
+            "score": 0.85,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Calvinist section omits an explicit mention of Limited Atonement (one of the classic tulip points) and instead only references sovereignty, predestination, total depravity, irresistible grace, and perseverance. The limited atonement element is conveyed only in the comparison table, not in the Calvinist subsection itself.",
+                "A central tension paragraph includes a truncated phrase ('not all are') which reduces clarity and coherence.",
+                "In the table, Arminian entry for 'Is Christ's atonement universal in scope?' says 'Universal, though not all appropriate it' which is awkward/garbled and could confuse readers. A clearer phrasing would say something like 'universal in scope; not all will apply it.'",
+                "The line 'Resistible grace: humans can accept or reject God's offer' is accurate for Arminians, but the corresponding Calvinist claim ('No, for the elect') could be nuanced: mainstream Calvinism teaches that grace is irresistible for the elect but not universally irresistible; stating it as a blanket 'No (for the elect)' is acceptable but could be misread as denying any possibility of resistance outside the elect, which is a nuanced distinction.",
+                "Overall phrasing occasionally relies on simplified heuristics (e.g., 'foreknows and decrees all things' vs. more nuanced Reformed frameworks that distinguish decrees from foreknowledge) without explicit caveats."
+              ],
+              "rationale": "The response is largely accurate and captures major doctrinal differences (sovereignty, grace, predestination, perseverance, prevenient/resistible grace). It aligns well with historic positions and common summaries of Calvinism and Arminianism, and it notes practical implications and historical context. However, it would be stronger with explicit invocation of Limited Atonement in the Calvinist section, clearer wording in the contested points (especially around universal atonement and the nature of grace), and a fully coherent central tension statement. The missing explicit scriptural grounding is a common limitation in such summaries; the content is biblically aligned even if not cited directly."
+            },
+            "created_at": "2025-12-30T00:17:31.157Z"
+          },
+          {
+            "id": 665,
+            "eval_id": 153,
+            "name": "Denominational Bias Detector",
+            "score": 0.9,
+            "description": "Detects denominational bias in theological responses",
+            "metadata": {
+              "bias_detected": false,
+              "denominations": [
+                "Calvinism",
+                "Arminianism"
+              ],
+              "bias_strength": "none",
+              "explanation": "The response fairly presents Calvinist and Arminian positions side by side, describing core commitments, common ground, and perceived strengths from each perspective. It notes historical context, broad Protestant varieties, and even references broader Christian traditions (Catholicism, Orthodoxy, Open Theism), aiming for an ecumenical overview. There is no clear favoring of one denomination over the other. A minor textual issue in the table (\"Universal, though not all appropriate it\") appears to be a typographical snag rather than substantive bias."
+            },
+            "created_at": "2025-12-30T00:17:31.157Z"
+          },
+          {
+            "id": 666,
+            "eval_id": 153,
+            "name": "Multiple Perspectives",
+            "score": 1,
+            "description": "Checks if multiple denominational perspectives are represented",
+            "metadata": {
+              "perspectivesCount": 6,
+              "perspectives": [
+                "Catholic",
+                "Protestant",
+                "Orthodox",
+                "Reformed/Calvinist",
+                "Arminian",
+                "Pentecostal"
+              ]
+            },
+            "created_at": "2025-12-30T00:17:31.157Z"
+          },
+          {
+            "id": 667,
+            "eval_id": 153,
+            "name": "Balanced Language",
+            "score": 1,
+            "description": "Checks for balanced, non-biased language",
+            "metadata": {
+              "balanceIndicators": 5,
+              "biasIndicators": 0
+            },
+            "created_at": "2025-12-30T00:17:31.157Z"
+          }
+        ]
+      },
+      {
+        "id": 154,
+        "suite_id": 73,
+        "col_order": 3,
+        "input": "How do different Christian traditions view the role of church tradition and authority?",
+        "expected": "Catholic and Orthodox traditions view church tradition as equally authoritative with Scripture, believing the church's teaching authority (magisterium in Catholicism) reliably interprets both. Protestants hold to 'sola scriptura' - Scripture alone as the final authority, though they value historical creeds and confessions as subordinate standards. Anglicans often take a middle position, valuing tradition and reason alongside Scripture (the 'three-legged stool'). These differences affect views on everything from papal authority to how doctrines develop. Despite differences, all agree Scripture is essential and authoritative.",
+        "output": "# Church Tradition and Authority: A Survey of Christian Perspectives\n\n## The Core Disagreement\n\nDifferent traditions fundamentally disagree about *how much* authority tradition carries alongside Scripture, not whether church history matters at all. Here's a representative overview:\n\n## Catholic Perspective\n\n**Authority Structure**: Sacred Tradition and Sacred Scripture form one \"sacred deposit of faith\" transmitted by the Magisterium (teaching office).\n\n**Key features:**\n- Tradition is living, developing, and authentically interpreted by the Church's hierarchy\n- The Pope and bishops in communion with Rome provide authoritative guidance\n- Councils (like Vatican II) can clarify doctrine for contemporary contexts\n- Development of doctrine is legitimate (e.g., Mary's Immaculate Conception formalized in 1854)\n\n**Strength they'd emphasize**: Prevents fragmentation; provides pastoral continuity and coherence.\n\n## Orthodox Perspective\n\n**Authority Structure**: Sacred Tradition encompasses Scripture, ecumenical councils, liturgy, and church fathers—held in dynamic balance.\n\n**Key features:**\n- Authority is more conciliar and collegial than hierarchical\n- Tradition is preserved through living communion rather than institutional pronouncements\n- Heavy emphasis on patristic consensus (especially the first seven councils)\n- Liturgy itself transmits doctrine\n- Skeptical of innovations after the patristic period\n\n**Strength they'd emphasize**: Maintains apostolic continuity while respecting the whole communion of saints across history.\n\n## Protestant (Reformed/Presbyterian) Perspective\n\n**Authority Structure**: *Sola scriptura*—Scripture is the supreme authority; tradition is subordinate and sometimes misleading.\n\n**Key features:**\n- Creeds are valued (Nicene, Chalcedon) but as *helpful summaries*, not binding\n- Church fathers are respected teachers, not authorities\n- Theology develops through careful biblical study\n- Tradition can obscure Scripture's meaning\n- Individual congregations may have significant autonomy\n\n**Strength they'd emphasize**: Prevents human authority from distorting God's Word; promotes direct engagement with Scripture.\n\n## Lutheran Perspective\n\n**Authority Structure**: A *via media*—Scripture is supreme, but creeds (especially the three ecumenical creeds) are binding; some traditional practices are retained.\n\n**Key features:**\n- The ancient ecumenical councils are authoritative for doctrine\n- Liturgical and theological tradition valued, but reformed where Scripture requires it\n- Church fathers are respected but not infallible\n- More positive toward tradition than many Protestants, more restrictive than Catholics\n\n**Strength they'd emphasize**: Preserves genuine tradition while remaining accountable to Scripture.\n\n## Pentecostal/Evangelical Perspective\n\n**Authority Structure**: Scripture alone; present-day Spirit encounter is vital, but not authoritative over Scripture.\n\n**Key features:**\n- Historic creeds may be affirmed but aren't binding\n- Tradition is often viewed with suspicion (associated with institutional deadness)\n- Emphasis on direct encounter with God through prayer, study, and the Holy Spirit\n- More flexibility in doctrine and practice\n- Rapid theological development in response to contemporary life\n\n**Strength they'd emphasize**: Keeps the faith fresh, responsive, and experiential rather than merely inherited.\n\n## Points of Legitimate Theological Tension\n\n**On development:**\n- Can doctrine develop while remaining faithful? (Catholics: yes; many Protestants: only recovery, not development)\n\n**On authority locus:**\n- Is authority personal (Scripture-reading individual), institutional (church offices), or diffuse (consensus of the faithful)?\n\n**On the nature of tradition:**\n- Is it supplementary (adding to Scripture) or interpretive (clarifying Scripture)?\n\n**On discerning truth:**\n- Who decides when traditions conflict with Scripture? Individual conscience? Councils? The magisterium?\n\n## Core Orthodox Agreements\n\nDespite differences, mainstream Christian traditions affirm:\n- The authority of Scripture as God's Word\n- The validity of the first ecumenical councils' doctrinal definitions\n- That tradition can illuminate but not contradict Scripture\n- That the church has received truth beyond isolated biblical proof-texts\n- That some continuity with the past is spiritually important\n\n## Why This Matters\n\nThese aren't merely academic disputes. They affect:\n- How liturgy functions\n- Whether church decisions bind individual conscience\n- How theology responds to new questions\n- Ecumenical dialogue possibilities\n- Spiritual formation practices\n\n## A Fair Assessment\n\n**No tradition dismisses the past entirely.** All wrestling with how to honor it faithfully. The Catholic/Orthodox difference is *degree and mechanism* of binding authority; the Protestant difference is *how tradition functions* relative to Scripture.\n\nEach framework has genuine strengths and real vulnerabilities that adherents themselves debate internally.\n\n---\n\n*Does this help clarify these distinctions? I'm happy to explore any tradition's perspective in greater depth.*",
+        "duration": 52902,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.474Z",
+        "scores": [
+          {
+            "id": 860,
+            "eval_id": 154,
+            "name": "Theological Accuracy Judge",
+            "score": 0.84,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Anglican perspective is not explicitly treated in the main sections (the answer leans into Catholic, Orthodox, Reformed/Presbyterian, Lutheran, and Pentecostal/Evangelical perspectives); this is a notable omission given the expected emphasis on Anglican via the 'three-legged stool' model.",
+                "Some Protestant generalizations are broad. For example, not all Protestant traditions treat creeds/confessions as merely subordinate or view church fathers as non-authoritative; practice varies (e.g., some Baptists or Evangelicals value confessions differently).",
+                "The Pentecostal section sometimes suggests rapid doctrinal development, which may overstate the pace and scope of doctrinal change within many Pentecostal/Charismatic communities where core doctrines tend to be stable even as various practices evolve.",
+                " While the response references important doctrinal markers (sola scriptura, magisterial authority, ecumenical creeds), it would be stronger with explicit biblical anchors to illustrate how scriptural texts undergird each tradition’s stance (e.g., passages cited to support sola scriptura, the role of tradition, or the authority of the Magisterium)."
+              ],
+              "rationale": "The answer is largely accurate and nuanced in presenting major traditions and their general positions on Scripture, Tradition, and authority. It correctly notes the main points of Catholic, Orthodox, Lutheran, Reformed/Presbyterian, and Pentecostal/Evangelical frameworks and captures ongoing tensions (development vs. recovery, locus of authority, nature of tradition). However, it omits a clear Anglican treatment, risks overgeneralizing Protestant attitudes toward confessions and creeds, and would benefit from more explicit biblical grounding to strengthen its scriptural basis. The assessment of Pentecostal doctrinal development could misrepresent some strands of that tradition, which often emphasizes continuity of core doctrines alongside experiential renewal rather than rapid doctrinal novelty. Overall, the response is doctrinally solid and nuanced but not perfectly balanced or fully biblically anchored."
+            },
+            "created_at": "2025-12-30T00:17:35.379Z"
+          },
+          {
+            "id": 861,
+            "eval_id": 154,
+            "name": "Denominational Bias Detector",
+            "score": 0.92,
+            "description": "Detects denominational bias in theological responses",
+            "metadata": {
+              "bias_detected": false,
+              "denominations": [],
+              "bias_strength": "none",
+              "explanation": "The response treats Catholic, Orthodox, Protestant (Reformed/Presbyterian), Lutheran, and Pentecostal/Evangelical perspectives with balanced, descriptive summaries of how each tradition views church tradition and authority. It presents strengths and cautions across traditions and explicitly notes the legitimate theological variety (e.g., development vs. sola scriptura). There is no clear endorsement of one tradition over others, and the tone remains ecumenical overall. Minor rhetorical nuances (such as attributing the view of tradition as 'institutional deadness' to some Pentecostal/Evangelical critiques or highlighting positive aspects of tradition) reflect common debates rather than a pointed bias toward a single group."
+            },
+            "created_at": "2025-12-30T00:17:35.379Z"
+          },
+          {
+            "id": 862,
+            "eval_id": 154,
+            "name": "Multiple Perspectives",
+            "score": 1,
+            "description": "Checks if multiple denominational perspectives are represented",
+            "metadata": {
+              "perspectivesCount": 6,
+              "perspectives": [
+                "Catholic",
+                "Protestant",
+                "Orthodox",
+                "Reformed/Calvinist",
+                "Lutheran",
+                "Pentecostal"
+              ]
+            },
+            "created_at": "2025-12-30T00:17:35.379Z"
+          },
+          {
+            "id": 863,
+            "eval_id": 154,
+            "name": "Balanced Language",
+            "score": 1,
+            "description": "Checks for balanced, non-biased language",
+            "metadata": {
+              "balanceIndicators": 6,
+              "biasIndicators": 0
+            },
+            "created_at": "2025-12-30T00:17:35.379Z"
+          }
+        ]
+      },
+      {
+        "id": 155,
+        "suite_id": 73,
+        "col_order": 4,
+        "input": "What are the different Christian views on the end times (eschatology)?",
+        "expected": "Christians hold various eschatological views: Premillennialism believes Christ returns before a literal thousand-year reign. Postmillennialism expects Christ returns after the church establishes God's kingdom on earth. Amillennialism sees the millennium as symbolic of the current church age. Within premillennialism, pretribulationists believe the rapture precedes tribulation, while post-tribulationists place it after. Preterists see many prophecies as fulfilled in 70 AD. Despite these differences, all orthodox Christians affirm Christ's personal return, final judgment, bodily resurrection, and eternal states of heaven and hell. The timing and details are disputed, but the core hope remains.",
+        "output": "# Christian Views on End Times (Eschatology)\n\nThis is a rich area of theological diversity within orthodoxy. I'll outline major frameworks and their adherents.\n\n## Primary Millennial Views\n\n**Premillennialism**\n- Christ returns *before* a literal 1,000-year reign\n- Common in: Evangelical, Pentecostal, many independent churches\n- Emphasizes: Literal biblical interpretation, Christ's imminent return\n- Variation: \"Dispensationalism\" divides history into distinct periods with different divine plans\n\n**Amillennialism**\n- The \"millennium\" is symbolic, representing the current church age\n- Common in: Catholic, Orthodox, Reformed, many mainline denominations\n- Emphasizes: Spiritual fulfillment of prophecy, symbolic interpretation\n- Views Christ's reign as present and spiritual, culminating in his final return\n\n**Postmillennialism**\n- Christ returns *after* a golden age of Christian influence\n- Common in: Some Reformed, historic Protestant traditions\n- Less prominent today than historically\n- Emphasizes: Christian cultural transformation before Christ's return\n\n## Shared Convictions (Orthodox Core)\n\nDespite differences, mainstream Christian traditions affirm:\n- Christ's literal, bodily return\n- Final judgment and resurrection\n- New heavens and new earth\n- God's sovereignty over history\n\n## Other Significant Variables\n\n- **Rapture timing**: Pre-, mid-, or post-tribulation (primarily within premillennialism)\n- **Israel's role**: Literal national restoration vs. spiritual fulfillment\n- **Prophecy interpretation**: Literal vs. typological vs. symbolic\n\n## Why These Differences Persist\n\nThese aren't settled by plain reading of Scripture alone because:\n- Revelation and Daniel use highly symbolic language\n- Different biblical passages emphasize different themes\n- Interpretation involves philosophical frameworks (literal vs. symbolic)\n\nEach tradition has sophisticated theological reasoning—this isn't frivolous disagreement.",
+        "duration": 62153,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.474Z",
+        "scores": [
+          {
+            "id": 1075,
+            "eval_id": 155,
+            "name": "Theological Accuracy Judge",
+            "score": 0.82,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Overgeneralization about Catholic/Orthodox eschatology being predominantly amillennial; Catholic and Orthodox eschatology are diverse and not uniformly classified under a single ‘amillennial’ label. The response would benefit from noting more explicitly the variety within those traditions (e.g., inaugurated/realized eschatology, symbolic readings of Revelation).",
+                "Lack of explicit distinction between historic premillennialism and dispensational premillennialism; the piece treats premillennialism monolithically while dispensationalism (a subset) has specific hermeneutical and eschatological commitments that deserve separate mention.",
+                "The discussion of the rapture could acknowledge that the doctrine of a separate rapture is contested across Christian traditions; not all premillennial or non-premillennial groups affirm a distinct rapture timetable, and some terminology (e.g., “rapture”) is not uniformly used or accepted.",
+                "Israel’s role is presented as a binary debate (literal restoration vs. spiritual fulfillment) without noting how many traditions interpret the Israel covenant differently (e.g., as ongoing corporate Israel, as the church replacing Israel in some strands, or as a complex teleology where both national and spiritual dimensions are read in various ways)."
+              ],
+              "rationale": "The answer does a solid job outlining the main millennial frameworks (premillennial, amillennial, postmillennial) and the common sub-views around the timing of the rapture, the interpretation of Revelation, and the role of Israel. It also rightly notes that Revelation and Daniel include symbolic language and that there is a diversity of hermeneutical approaches. However, there are a few caveats that affect precision and nuance: (1) It net-claims Catholic/Orthodox churches are broadly amillennial, which is an overgeneralization; eschatology in those traditions is diverse, and it is better to speak of predominant tendencies rather than a uniform label. (2) It treats premillennialism as a single package, whereas historic premillennialism and dispensational premillennialism differ in important ways (especially hermeneutics, soteriology, and ecclesiology). (3) It mentions the rapture as a timing mechanism but does not acknowledge that many Christian traditions reject a separate rapture or interpret it differently; the term itself is particularly associated with dispensational premillennialism. (4) The discussion of Israel’s role could be softened by naming more nuanced positions (ongoing scholarly debate about national restoration, covenant promises, and the church’s relationship to Israel). Overall, the response is doctrinally coherent and biblically aligned in broad strokes, with room for improved precision and nuance in specific ecclesial contexts."
+            },
+            "created_at": "2025-12-30T00:17:44.630Z"
+          },
+          {
+            "id": 1076,
+            "eval_id": 155,
+            "name": "Denominational Bias Detector",
+            "score": 0.92,
+            "description": "Detects denominational bias in theological responses",
+            "metadata": {
+              "bias_detected": false,
+              "denominations": [
+                "Catholic",
+                "Orthodox",
+                "Reformed",
+                "Evangelical",
+                "Pentecostal",
+                "Mainline Protestant",
+                "Independent Churches"
+              ],
+              "bias_strength": "none",
+              "explanation": "The response neutrally outlines three major eschatological frameworks (premillennialism, amillennialism, postmillennialism) and notes their prevalence across diverse Christian traditions. It consistently uses ecumenical language (e.g., 'within orthodoxy', 'Shared Convictions') and describes both literal and symbolic approaches, without endorsing a single tradition as definitive. It acknowledges varying interpretive methods and historical shifts, and includes examples from Catholic, Orthodox, Reformed, and various Protestant/evangelical groups. Minor quibbles: the phrasing 'Common in' for certain groups can oversimplify intra-tradition variation, but does not amount to a denominational endorsement."
+            },
+            "created_at": "2025-12-30T00:17:44.630Z"
+          },
+          {
+            "id": 1077,
+            "eval_id": 155,
+            "name": "Multiple Perspectives",
+            "score": 1,
+            "description": "Checks if multiple denominational perspectives are represented",
+            "metadata": {
+              "perspectivesCount": 5,
+              "perspectives": [
+                "Catholic",
+                "Protestant",
+                "Orthodox",
+                "Reformed/Calvinist",
+                "Pentecostal"
+              ]
+            },
+            "created_at": "2025-12-30T00:17:44.630Z"
+          },
+          {
+            "id": 1078,
+            "eval_id": 155,
+            "name": "Balanced Language",
+            "score": 1,
+            "description": "Checks for balanced, non-biased language",
+            "metadata": {
+              "balanceIndicators": 5,
+              "biasIndicators": 0
+            },
+            "created_at": "2025-12-30T00:17:44.630Z"
+          }
+        ]
+      },
+      {
+        "id": 156,
+        "suite_id": 73,
+        "col_order": 5,
+        "input": "How do charismatic/Pentecostal Christians differ from cessationist Christians on spiritual gifts?",
+        "expected": "Pentecostals and charismatics believe all spiritual gifts including tongues, prophecy, and healing continue today as the Spirit wills. They emphasize personal experience of the Spirit's power and often practice contemporary manifestations. Cessationists believe certain 'sign gifts' ceased with the apostolic age, as they served to authenticate apostolic ministry and Scripture. They emphasize gifts like teaching, service, and mercy continue. Both agree the Holy Spirit is active today and gives gifts to believers, but differ on which gifts continue and how prominently they should feature in church life. Both positions are held by Bible-believing Christians.",
+        "output": "# Spiritual Gifts: Charismatic and Cessationist Perspectives\n\n## Core Disagreement\n\nThe fundamental divide concerns whether **miraculous spiritual gifts (tongues, prophecy, healing, miracles) continue today** or ceased after the apostolic era.\n\n### Charismatic/Pentecostal Position\n\n**Core claims:**\n- Spiritual gifts remain available and active throughout church history\n- The Holy Spirit continues distributing all gifts listed in 1 Corinthians 12-14\n- Believers should expect and pursue these gifts, particularly speaking in tongues as evidence of Spirit baptism\n- Cessation reflects cessationist *assumptions*, not biblical teaching\n\n**Key scriptural appeals:**\n- Mark 16:17-18 (signs will accompany believers)\n- 1 Corinthians 14:1 (\"eagerly desire spiritual gifts\")\n- Joel 2:28-29 (\"I will pour out my Spirit on all people\")\n- Emphasis on God's consistency across time\n\n**Legitimate strengths of this view:**\n- Takes literally biblical promises about ongoing Spirit activity\n- Accounts for reported gifts throughout church history\n- Emphasizes the Holy Spirit's active role in the present church\n\n### Cessationist Position\n\n**Core claims:**\n- Miraculous gifts served a specific function: authenticating apostolic authority and the new revelation they brought\n- Once Scripture was completed and the apostles died, these gifts ceased\n- The transition from oral tradition to written Scripture removed the need for prophetic utterance\n- Continuing claims to these gifts often lack biblical support or involve fraud/psychology\n\n**Key scriptural appeals:**\n- 1 Corinthians 13:8-10 (gifts will \"cease,\" interpreted as occurring when Scripture was complete)\n- Hebrews 2:3-4 (miracles confirmed the apostolic message)\n- The absence of explicit commands to seek these gifts after the apostolic period\n- 1 John 4:1 (warnings about testing spirits, suggesting discernment was increasingly necessary)\n\n**Legitimate strengths of this view:**\n- Acknowledges Scripture as the completed revelation\n- Provides historical explanation for why apostolic signs were unique\n- Expresses appropriate caution about false claims\n- Respects the sufficiency of Scripture for Christian life\n\n## Nuanced Middle Positions\n\nMany Christians hold hybrid views:\n\n- **Continualist non-Pentecostals**: Gifts continue but tongues aren't required evidence of Spirit baptism\n- **Open but cautious charismatics**: Affirm gifts but emphasize rigorous testing against Scripture\n- **Soft cessationists**: Miraculous gifts were particularly prevalent apostolically but God isn't limited by our categories\n\n## Legitimate Common Ground\n\nBoth traditions:\n- Affirm the Holy Spirit's present reality and activity\n- Recognize non-miraculous gifts (teaching, encouragement, administration) clearly continue\n- Value Scripture as authoritative\n- Seek to glorify Jesus Christ\n- Can point to sincere, faithful believers on their side\n\n## Critical Questions Both Must Address\n\n1. How do we account for reported healings and supernatural phenomena across Christian history?\n2. What makes spiritual gifts genuinely \"from God\" versus psychological or demonic?\n3. How do we balance openness to God's power with protection against deception?\n4. Does the completion of Scripture necessarily mean the cessation of all extraordinary gifts?\n\n## Fair Assessment\n\nThis is a **legitimate theological disagreement** where sincere Bible-believing Christians reach different conclusions. The debate isn't fundamentally about the Bible's authority but about how to interpret specific passages and biblical patterns across different eras. Both positions require careful exegesis and humble acknowledgment of interpretive challenges.",
+        "duration": 45175,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T00:16:42.474Z",
+        "scores": [
+          {
+            "id": 594,
+            "eval_id": 156,
+            "name": "Theological Accuracy Judge",
+            "score": 0.79,
+            "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+            "metadata": {
+              "doctrinally_sound": true,
+              "biblically_grounded": true,
+              "nuance_captured": true,
+              "errors": [
+                "Overgeneralizes the charismatic position by stating tongues are the 'evidence' of Spirit baptism; some charismatics do not teach tongues as the exclusive or required evidence.",
+                "Relies on Mark 16:17-18 as a key proof-text without addressing manuscript variation; the longer ending of Mark (16:9-20) is disputed and not universally accepted as canonical, which affects how this text should be used in argument.",
+                "Treats 1 Corinthians 13:8-10 as a single decisive cessationist interpretive key (that 'perfect' refers to Scripture's completion) while this passage is widely debated among scholars; some argue 'perfect' could refer to Christ's return or to maturity of the church, not necessarily the canonization of Scripture.",
+                "Some wording assumes 'all gifts listed in 1 Corinthians 12-14' continue universally; in practice, continuationist positions often differentiate between categories of gifts (e.g., 'sign gifts' vs. non-sign gifts) and may not affirm every listed gift as actively ongoing in all contexts."
+              ],
+              "rationale": "The response offers a solid overview of the main positions and includes relevant biblical references, which reflects solid scriptural grounding. However, it enshrines some common but debated points (tongues as definitive evidence, Mark 16:17-18 as a clear canonical proof-text, and a single-dominant interpretation of 1 Cor 13:8-10) without noting significant scholarly and theological caveats. It also treats the continuationist claim about 'all gifts' as universally accepted, whereas many charismatics distinguish between different kinds of gifts. These nuances are important for a precise, biblically cautious treatment. Overall, the answer is accurate and nuanced but could improve by acknowledging manuscript issues, broader interpretive debates, and intra-tradition diversity."
+            },
+            "created_at": "2025-12-30T00:17:27.652Z"
+          },
+          {
+            "id": 595,
+            "eval_id": 156,
+            "name": "Denominational Bias Detector",
+            "score": 0.72,
+            "description": "Detects denominational bias in theological responses",
+            "metadata": {
+              "bias_detected": true,
+              "denominations": [
+                "Charismatic / Pentecostal",
+                "Non-charismatic Protestant / Cessationist"
+              ],
+              "bias_strength": "slight",
+              "explanation": "The response is largely balanced, presenting both Charismatic/Pentecostal and Cessationist perspectives and noting common ground. However, it uses phrasing that could be read as more critical of cessationist positions (e.g., claiming their claims “often lack biblical support or involve fraud/psychology”) and foregrounds tongues as evidence of the Spirit, which aligns with Charismatic theology. Overall, there is no explicit endorsement of one tradition over the other, and middle-ground positions are acknowledged, yielding a mostly ecumenical approach with a minor lean toward ongoing gifts."
+            },
+            "created_at": "2025-12-30T00:17:27.652Z"
+          },
+          {
+            "id": 596,
+            "eval_id": 156,
+            "name": "Multiple Perspectives",
+            "score": 0.5,
+            "description": "Checks if multiple denominational perspectives are represented",
+            "metadata": {
+              "perspectivesCount": 1,
+              "perspectives": [
+                "Pentecostal"
+              ]
+            },
+            "created_at": "2025-12-30T00:17:27.652Z"
+          },
+          {
+            "id": 597,
+            "eval_id": 156,
+            "name": "Balanced Language",
+            "score": 1,
+            "description": "Checks for balanced, non-biased language",
+            "metadata": {
+              "balanceIndicators": 6,
+              "biasIndicators": 0
+            },
+            "created_at": "2025-12-30T00:17:27.652Z"
+          }
+        ]
+      }
+    ]
+  }
+}

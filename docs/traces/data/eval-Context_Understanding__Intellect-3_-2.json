@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 146,
+    "suite_id": 31,
+    "col_order": 2,
+    "input": "To whom was the book of Romans written and why?",
+    "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+    "output": "The book of Romans was written **to all believers in Rome** (both Jewish and Gentile).  \n\n**Why:**  \n1. **To establish clear doctrine** on salvation, faith, grace, and the law.  \n2. **To resolve tensions** between Jewish and Gentile believers.  \n3. **To prepare for Paul’s upcoming visit** (Romans 1:10–15).  \n4. **To request support** for his mission to Spain (Romans 15:24).  \n\n*(Romans 1:7, 1:16–17, 3:21–26, 11:13–24, 15:22–33)*",
+    "duration": 43477,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:52:58.634Z",
+    "score": 0.45,
+    "scores": [
+      {
+        "id": 395,
+        "eval_id": 146,
+        "name": "Theological Accuracy Judge",
+        "score": 0.9,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s answer is largely accurate and well-supported by Scripture. It correctly identifies the recipients as the Roman church (Rom 1:7) and acknowledges key themes Paul emphasizes in Romans: salvation by faith (Rom 1:16–17), righteousness through Christ (Rom 3:21–26), the role of the Law, and the inclusion of both Jewish and Gentile believers (Rom 11:13–24; Rom 14–15). It also notes the practical aim of addressing tensions between Jewish and Gentile believers (Rom 14–15) and the explicit plan to visit Rome en route to Spain (Rom 15:22–29; 15:24). The citation list aligns with these claims. A minor caveat is that while the letter’s primary aim is to present the gospel and unify the community, it also serves to enable and solicit Paul’s broader mission support and travel plans; this nuance is accurately reflected but could be emphasized slightly more (i.e., the support aspect includes hospitality and resources, not solely monetary aid). Overall, no significant doctrinal errors are present, and the assessment aligns with historic Christian understanding of Romans.)"
+        },
+        "created_at": "2025-12-30T00:53:42.129Z"
+      },
+      {
+        "id": 396,
+        "eval_id": 146,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:53:42.129Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 150,
+        "eval_id": 146,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The book of Romans was written **to all believers in Rome** (both Jewish and Gentile).  \n\n**Why:**  \n1. **To establish clear doctrine** on salvation, faith, grace, and the law.  \n2. **To resolve tensions** between Jewish and Gentile believers.  \n3. **To prepare for Paul’s upcoming visit** (Romans 1:10–15).  \n4. **To request support** for his mission to Spain (Romans 15:24).  \n\n*(Romans 1:7, 1:16–17, 3:21–26, 11:13–24, 15:22–33)*",
+          "toolCalls": []
+        },
+        "start_time": 179.129333,
+        "end_time": 7404.3925,
+        "input_tokens": 139,
+        "output_tokens": 422,
+        "total_tokens": 561,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Context Understanding [Intellect-3]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Intellect-3",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:52:58.634Z"
+  }
+}

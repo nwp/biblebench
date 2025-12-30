@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "generatedAt": "2025-12-29T18:40:22.679Z",
+    "totalModels": 2,
+    "totalEvaluations": 11,
+    "totalTestCases": 149,
+    "overallBenchmarkScore": 0.5774885087363459
+  },
+  "models": [
+    {
+      "id": "gpt-oss-120b",
+      "displayName": "GPT-OSS-120B",
+      "provider": "OpenAI",
+      "overallScore": 0.655968813216405,
+      "categoryScores": {
+        "scripture": 0.4625694444444444,
+        "theology": 0.7284935765058901
+      },
+      "evaluationScores": {
+        "Context Understanding": 0.416875,
+        "Core Doctrines": 0.8583296095218685,
+        "Denominational Nuance": 0.9004166666666666,
+        "Exact Scripture Matching": 0.2708333333333333,
+        "Heresy Detection": 0.8847619047619046,
+        "Pastoral Application": 0.891,
+        "Reference Knowledge": 0.7,
+        "Sect Theology": 0.83734375,
+        "Steering Compliance - Conservative": 0.45681818181818185,
+        "Steering Compliance - Progressive": 0.48181818181818187,
+        "Theological Orientation": 0.5174603174603176
+      }
+    },
+    {
+      "id": "gpt-oss-20b",
+      "displayName": "GPT-OSS-20B",
+      "provider": "OpenAI",
+      "overallScore": 0.652685426107464,
+      "categoryScores": {
+        "scripture": 0.4959722222222222,
+        "theology": 0.7114528775644297
+      },
+      "evaluationScores": {
+        "Context Understanding": 0.40874999999999995,
+        "Core Doctrines": 0.7555735075284237,
+        "Denominational Nuance": 0.7704166666666667,
+        "Exact Scripture Matching": 0.3125,
+        "Heresy Detection": 0.8942857142857144,
+        "Pastoral Application": 0.7464999999999999,
+        "Reference Knowledge": 0.7666666666666667,
+        "Sect Theology": 0.8678125,
+        "Steering Compliance - Conservative": 0.5897727272727272,
+        "Steering Compliance - Progressive": 0.6125,
+        "Theological Orientation": 0.45476190476190476
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "context-understanding",
+      "name": "Context Understanding",
+      "category": "scripture",
+      "modelScores": {
+        "gpt-oss-120b": 0.416875,
+        "gpt-oss-20b": 0.40874999999999995
+      },
+      "description": "Tests understanding of biblical context, authorship, and historical background.",
+      "methodology": "Questions about authorship, audience, purpose, and historical context of biblical books. Uses LLM-as-judge for nuanced evaluation.",
+      "testCases": 8,
+      "interpretation": "Higher scores indicate deeper comprehension beyond mere recitation. Tests contextual and historical knowledge."
+    },
+    {
+      "id": "core-doctrines",
+      "name": "Core Doctrines",
+      "category": "theology",
+      "modelScores": {
+        "gpt-oss-120b": 0.8583296095218685,
+        "gpt-oss-20b": 0.7555735075284237
+      },
+      "description": "Tests understanding of foundational Christian theological concepts.",
+      "methodology": "Questions about Trinity, Hypostatic Union, Justification, Original Sin, Divine Sovereignty, Imago Dei, Gospel, and Resurrection. Evaluated with theological accuracy judge and completeness scoring.",
+      "testCases": 8,
+      "interpretation": "Higher scores indicate better understanding of historic Christian orthodoxy. Tests non-negotiable doctrinal foundations."
+    },
+    {
+      "id": "denominational-nuance",
+      "name": "Denominational Nuance",
+      "category": "theology",
+      "modelScores": {
+        "gpt-oss-120b": 0.9004166666666666,
+        "gpt-oss-20b": 0.7704166666666667
+      },
+      "description": "Tests fair representation of theological differences between Christian traditions without bias.",
+      "methodology": "Questions about Catholic vs. Protestant, baptism practices, Calvinist vs. Arminian, eschatology, and spiritual gifts. Measured with bias detection and balance scoring.",
+      "testCases": 6,
+      "interpretation": "Higher scores indicate better ability to represent multiple Christian traditions fairly without denominational bias."
+    },
+    {
+      "id": "exact-scripture-matching",
+      "name": "Exact Scripture Matching",
+      "category": "scripture",
+      "modelScores": {
+        "gpt-oss-120b": 0.2708333333333333,
+        "gpt-oss-20b": 0.3125
+      },
+      "description": "Tests LLMs' ability to recall Bible verses with exact wording across multiple translations.",
+      "methodology": "Precise recall of Bible verses across KJV, NIV, ESV, and NASB translations. Requires perfect matches—every word, comma, and punctuation mark must be correct.",
+      "testCases": 48,
+      "interpretation": "Higher scores indicate better memorization of scripture text across translations. Perfect score requires exact wording including punctuation."
+    },
+    {
+      "id": "heresy-detection",
+      "name": "Heresy Detection",
+      "category": "theology",
+      "modelScores": {
+        "gpt-oss-120b": 0.8847619047619046,
+        "gpt-oss-20b": 0.8942857142857144
+      },
+      "description": "Tests ability to correctly identify heretical teachings vs. orthodox doctrine.",
+      "methodology": "Questions about historical heresies (Adoptionism, Modalism, Pelagianism, Docetism, Marcionism, Gnosticism). Tests both identification and explanation.",
+      "testCases": 7,
+      "interpretation": "Higher scores indicate better ability to distinguish orthodoxy from heterodoxy. Tests theological discernment."
+    },
+    {
+      "id": "pastoral-application",
+      "name": "Pastoral Application",
+      "category": "theology",
+      "modelScores": {
+        "gpt-oss-120b": 0.891,
+        "gpt-oss-20b": 0.7464999999999999
+      },
+      "description": "Tests ability to apply theology to real-world situations with wisdom, sensitivity, and biblical grounding.",
+      "methodology": "Real-world pastoral care scenarios requiring theology + pastoral sensitivity + practical wisdom. Multi-dimensional LLM-as-judge evaluation.",
+      "testCases": 5,
+      "interpretation": "Higher scores indicate better ability to apply theology pastorally, balancing truth with grace in practical situations."
+    },
+    {
+      "id": "reference-knowledge",
+      "name": "Reference Knowledge",
+      "category": "scripture",
+      "modelScores": {
+        "gpt-oss-120b": 0.7,
+        "gpt-oss-20b": 0.7666666666666667
+      },
+      "description": "Tests ability to correctly identify where specific verses are found in the Bible.",
+      "methodology": "Questions about verse locations, testing knowledge of Bible book/chapter/verse structure and reference formats.",
+      "testCases": 10,
+      "interpretation": "Higher scores indicate better knowledge of where verses are located in scripture. Tests both famous and obscure passages."
+    },
+    {
+      "id": "sect-theology",
+      "name": "Sect Theology",
+      "category": "theology",
+      "modelScores": {
+        "gpt-oss-120b": 0.83734375,
+        "gpt-oss-20b": 0.8678125
+      },
+      "description": "Tests ability to identify teachings of groups outside historic Christian orthodoxy while maintaining respect.",
+      "methodology": "Questions about Mormonism (LDS), Jehovah's Witnesses, Christian Science, Oneness Pentecostalism, and Unitarian Universalism. Evaluates accuracy and respectful tone.",
+      "testCases": 16,
+      "interpretation": "Higher scores indicate ability to articulate how sect teachings depart from orthodoxy while maintaining respectful tone."
+    },
+    {
+      "id": "steering-compliance-conservative",
+      "name": "Steering Compliance - Conservative",
+      "category": "theology",
+      "modelScores": {
+        "gpt-oss-120b": 0.45681818181818185,
+        "gpt-oss-20b": 0.5897727272727272
+      },
+      "description": "Tests whether models comply with system prompts adopting conservative theological perspectives.",
+      "methodology": "System prompts adopting conservative positions on contested theological issues. Measures whether models comply or resist the steering.",
+      "testCases": 10,
+      "interpretation": "Higher scores indicate better compliance with conservative theological framing. Low scores may indicate refusal or hedging."
+    },
+    {
+      "id": "steering-compliance-progressive",
+      "name": "Steering Compliance - Progressive",
+      "category": "theology",
+      "modelScores": {
+        "gpt-oss-120b": 0.48181818181818187,
+        "gpt-oss-20b": 0.6125
+      },
+      "description": "Tests whether models comply with system prompts adopting progressive theological perspectives.",
+      "methodology": "System prompts adopting progressive positions on contested theological issues. Measures whether models comply or resist the steering.",
+      "testCases": 10,
+      "interpretation": "Higher scores indicate better compliance with progressive theological framing. Low scores may indicate refusal or hedging."
+    },
+    {
+      "id": "theological-orientation",
+      "name": "Theological Orientation",
+      "category": "theology",
+      "modelScores": {
+        "gpt-oss-120b": 0.5174603174603176,
+        "gpt-oss-20b": 0.45476190476190476
+      },
+      "description": "Descriptive assessment of where models fall on the theological spectrum (progressive to conservative).",
+      "methodology": "Questions across Biblical Authority, Gender & Ministry, Sexual Ethics, Gender Identity, Social Issues, and Ecclesiology. Not pass/fail—measures theological positioning.",
+      "testCases": 21,
+      "interpretation": "Scores from 0 (progressive) to 1 (conservative). Provides insight into models' theological default positions. Not prescriptive."
+    }
+  ],
+  "categories": {
+    "scripture": {
+      "name": "Scripture Accuracy",
+      "description": "Tests foundational knowledge of the Bible itself—verse recall, reference knowledge, and biblical context.",
+      "evaluations": [
+        "context-understanding",
+        "exact-scripture-matching",
+        "reference-knowledge"
+      ]
+    },
+    "theology": {
+      "name": "Theological Understanding",
+      "description": "Tests comprehension of Christian doctrine, orthodoxy, denominational diversity, and pastoral application.",
+      "evaluations": [
+        "core-doctrines",
+        "denominational-nuance",
+        "heresy-detection",
+        "pastoral-application",
+        "sect-theology",
+        "steering-compliance-conservative",
+        "steering-compliance-progressive",
+        "theological-orientation"
+      ]
+    }
+  }
+}

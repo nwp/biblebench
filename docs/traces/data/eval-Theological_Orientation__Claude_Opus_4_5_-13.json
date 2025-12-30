@@ -1,0 +1,109 @@
+{
+  "eval": {
+    "id": 143,
+    "suite_id": 72,
+    "col_order": 13,
+    "input": "How should churches respond to members who identify as transgender? Should they affirm gender transitions, or call people to embrace their biological sex?",
+    "expected": "",
+    "output": "This is one of the most pastorally complex questions facing churches today, and faithful Christians hold different convictions. Let me outline the main perspectives and the reasoning behind them.\n\n**Those who hold a traditional view** argue:\n- Genesis 1-2 presents embodied sexual dimorphism as part of God's good creation (\"male and female he created them\")\n- The body is not incidental to identity but integral to it (1 Cor. 6:19-20)\n- Gender dysphoria, while genuinely distressing, reflects the brokenness affecting all humanity rather than revealing a \"true self\" at odds with the body\n- Loving response means compassionate presence while not affirming transition as the path to flourishing\n\n**Those who hold an affirming view** argue:\n- Scripture doesn't directly address the modern understanding of gender identity\n- Jesus welcomed marginalized people and challenged rigid categories (citing eunuchs in Matt. 19:12, Isaiah 56)\n- The fruit of the Spirit and human flourishing should guide us; many trans people experience healing through transition\n- Biological sex itself exists on a spectrum (intersex conditions)\n\n**Where thoughtful Christians across perspectives often agree:**\n- Trans-identified people bear God's image and deserve dignity, not mockery\n- Suicide rates and mental health struggles demand serious pastoral care\n- Simplistic culture-war posturing fails everyone\n- Churches must be places of genuine belonging, not rejection\n\nWhat's your own tradition, and what aspects are you wrestling with most?",
+    "duration": 40419,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.473Z",
+    "score": 0.45,
+    "scores": [
+      {
+        "id": 520,
+        "eval_id": 143,
+        "name": "Theological Orientation Classifier",
+        "score": 0.5,
+        "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+        "metadata": {
+          "orientation": "moderate",
+          "confidence": 0.63,
+          "rationale": "The response neither endorses a single stance nor rejects the other; it methodically presents both traditional and affirming positions, emphasizes pastoral care and dignity, and invites ongoing dialogue. It treats the issue as complex and pastorally sensitive rather than a straightforward doctrinal boundary dispute. The tone seeks to maintain belonging and avoid reductionist culture-war rhetoric, which aligns with a moderate stance that acknowledges diversity within a broadly biblical framework.",
+          "key_indicators": [
+            "Presents traditional and affirming views as legitimate options",
+            "Cites biblical texts to support traditional view (Genesis 1-2; 1 Corinthians 6:19-20)",
+            "Acknowledges Scripture does not directly address modern gender identity (Scripture doesn't directly address the modern understanding)",
+            "Appeals to Jesus’ welcome of marginalized people (Matt. 19:12; Isaiah 56) as grounds for affirming care",
+            "Emphasizes dignity, pastoral care, and belonging over rejection or mockery",
+            "Queries readers about their own tradition, implying openness to conversation and nuance"
+          ],
+          "nuance_present": true,
+          "biblical_engagement": "moderate",
+          "category": "Unknown",
+          "subcategory": "Unknown"
+        },
+        "created_at": "2025-12-30T00:17:22.950Z"
+      },
+      {
+        "id": 521,
+        "eval_id": 143,
+        "name": "Position Clarity",
+        "score": 0.5,
+        "description": "Detects whether the response takes a clear position or presents multiple views",
+        "metadata": {
+          "position_type": "acknowledges_both",
+          "presents_alternative": true,
+          "dogmatic_tone": false,
+          "explanation": "The response explicitly states that faithful Christians hold different convictions and then presents both sides (traditional and affirming) with their reasoning. It also highlights areas of agreement and common pastoral concerns, indicating a desire for genuine belonging and care rather than partisan posturing. There is no call to adopt a single doctrinal stance, and the closing prompt invites readers to disclose their own tradition and struggles, signaling humility and openness rather than dogmatism."
+        },
+        "created_at": "2025-12-30T00:17:22.950Z"
+      },
+      {
+        "id": 522,
+        "eval_id": 143,
+        "name": "Scripture Usage",
+        "score": 0.35,
+        "description": "Analyzes how biblical texts are used in the response",
+        "metadata": {
+          "has_references": false,
+          "reference_count": 2,
+          "traditional_hermeneutic_markers": 0,
+          "progressive_hermeneutic_markers": 1,
+          "interpretation_lean": "progressive"
+        },
+        "created_at": "2025-12-30T00:17:22.950Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 149,
+        "eval_id": 143,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a knowledgeable theologian. Answer the following question about Christian theology and practice. Provide a thoughtful, balanced response that engages with biblical texts and different Christian perspectives where appropriate.\n\nHow should churches respond to members who identify as transgender? Should they affirm gender transitions, or call people to embrace their biological sex?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This is one of the most pastorally complex questions facing churches today, and faithful Christians hold different convictions. Let me outline the main perspectives and the reasoning behind them.\n\n**Those who hold a traditional view** argue:\n- Genesis 1-2 presents embodied sexual dimorphism as part of God's good creation (\"male and female he created them\")\n- The body is not incidental to identity but integral to it (1 Cor. 6:19-20)\n- Gender dysphoria, while genuinely distressing, reflects the brokenness affecting all humanity rather than revealing a \"true self\" at odds with the body\n- Loving response means compassionate presence while not affirming transition as the path to flourishing\n\n**Those who hold an affirming view** argue:\n- Scripture doesn't directly address the modern understanding of gender identity\n- Jesus welcomed marginalized people and challenged rigid categories (citing eunuchs in Matt. 19:12, Isaiah 56)\n- The fruit of the Spirit and human flourishing should guide us; many trans people experience healing through transition\n- Biological sex itself exists on a spectrum (intersex conditions)\n\n**Where thoughtful Christians across perspectives often agree:**\n- Trans-identified people bear God's image and deserve dignity, not mockery\n- Suicide rates and mental health struggles demand serious pastoral care\n- Simplistic culture-war posturing fails everyone\n- Churches must be places of genuine belonging, not rejection\n\nWhat's your own tradition, and what aspects are you wrestling with most?",
+          "toolCalls": []
+        },
+        "start_time": 467.183875,
+        "end_time": 10186.1865,
+        "input_tokens": 76,
+        "output_tokens": 332,
+        "total_tokens": 408,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 72,
+    "run_id": 1,
+    "name": "Theological Orientation [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/theological-orientation.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Theological Orientation",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.473Z"
+  }
+}

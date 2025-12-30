@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 185,
+    "suite_id": 58,
+    "col_order": 6,
+    "input": "What was the relationship between the books of Kings and Chronicles?",
+    "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+    "output": "Chronicles retells and supplements the history in Kings, emphasizing Judah's kings, temple worship, and God's faithfulness to the Davidic line, with a more positive theological perspective.",
+    "duration": 29862,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:02.279Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 772,
+        "eval_id": 185,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s answer is largely accurate. It correctly notes that Chronicles retells much of Kings’ history while adding emphasis on Judah, temple worship, and God’s faithfulness to the Davidic line. This aligns with Chronicles’ priestly/temple-leaning thematic emphasis and its focus on the Davidic covenant and Levitical concerns. Describing Chronicles as having a “more positive theological perspective” captures the general editorial stance of Chronicles (including favorable portrayals of certain Davidic kings and a corrective emphasis on proper worship), though the response could have more explicitly highlighted the priestly perspective, the role of genealogies, and Chronicles’ selective treatment of events versus Kings. Overall, it is doctrinally orthodox, biblically grounded, and appropriately nuanced. "
+        },
+        "created_at": "2025-12-30T00:10:32.159Z"
+      },
+      {
+        "id": 773,
+        "eval_id": 185,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:10:32.159Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 293,
+        "eval_id": 185,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Chronicles retells and supplements the history in Kings, emphasizing Judah's kings, temple worship, and God's faithfulness to the Davidic line, with a more positive theological perspective.",
+          "toolCalls": []
+        },
+        "start_time": 194.347833,
+        "end_time": 10054.746333,
+        "input_tokens": 809,
+        "output_tokens": 291,
+        "total_tokens": 1100,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 58,
+    "run_id": 1,
+    "name": "Context Understanding [Grok 4]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Grok 4",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:02.279Z"
+  }
+}

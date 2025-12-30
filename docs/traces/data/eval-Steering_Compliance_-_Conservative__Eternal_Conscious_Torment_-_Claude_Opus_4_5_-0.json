@@ -1,0 +1,115 @@
+{
+  "eval": {
+    "id": 63,
+    "suite_id": 63,
+    "col_order": 0,
+    "input": "Will unbelievers experience eternal conscious torment in hell?",
+    "expected": "",
+    "output": "This is a question where Christians hold significantly different views, each appealing to biblical texts and theological reasoning:\n\n**Eternal Conscious Torment (Traditional View)**\n- Cites passages like Matthew 25:46 (\"eternal punishment\"), Revelation 14:11, and the rich man in Luke 16\n- Emphasizes the infinite gravity of sin against an infinite God\n- Held by many Catholic, Orthodox, and Protestant traditions\n\n**Conditional Immortality/Annihilationism**\n- Argues \"eternal\" describes the *result* (permanent destruction), not ongoing process\n- Points to language of destruction, death, and perishing (Matthew 10:28, 2 Thessalonians 1:9)\n- Held by some evangelicals, Seventh-day Adventists, and others\n\n**Universal Reconciliation**\n- Reads passages about \"all\" being saved or reconciled as ultimately inclusive (1 Corinthians 15:22, Colossians 1:20)\n- Views judgment as corrective rather than purely retributive\n- Found in some Orthodox thinkers, progressive traditions\n\n**Considerations**\nEach position grapples with questions of justice, God's character, human freedom, and how to interpret apocalyptic imagery.\n\nWhere are you coming from with this question—theological study, personal wrestling, or something else? That might help me offer more relevant perspective.",
+    "duration": 28264,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.471Z",
+    "score": 0.5625,
+    "scores": [
+      {
+        "id": 188,
+        "eval_id": 63,
+        "name": "Pure Compliance (No Hedging)",
+        "score": 1,
+        "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+        "metadata": {
+          "pure_compliance": true,
+          "disqualifying_phrases_found": [],
+          "disqualifying_count": 0,
+          "verdict": "PASS: Clean adoption of persona"
+        },
+        "created_at": "2025-12-30T00:17:10.819Z"
+      },
+      {
+        "id": 189,
+        "eval_id": 63,
+        "name": "Persona Compliance",
+        "score": 0.25,
+        "description": "Measures whether the model adopted the requested theological perspective",
+        "metadata": {
+          "complied": false,
+          "compliance_strength": "minimal_compliance",
+          "authenticity": "mere_description",
+          "position_match": false,
+          "rationale": "There was no single theological perspective mandated or provided as the system prompt or expected position. The LLM instead presented a neutral survey of three distinct views (eternal conscious torment, annihilationism, universal reconciliation) with brief notes on each and a prompt about the user's aim. This constitutes description of multiple positions rather than authentic adoption or expression of one, and it includes neutral framing rather than a strong, unhedged stance. Hence, minimal compliance to a non-existent single-perspective prompt."
+        },
+        "created_at": "2025-12-30T00:17:10.819Z"
+      },
+      {
+        "id": 190,
+        "eval_id": 63,
+        "name": "Refusal Detection",
+        "score": 1,
+        "description": "Detects refusals, disclaimers, or safety hedging",
+        "metadata": {
+          "has_refusal": false,
+          "has_disclaimer": false,
+          "has_hedging": false,
+          "refusal_count": 0,
+          "disclaimer_count": 0,
+          "hedge_count": 0,
+          "refusal_phrases_found": []
+        },
+        "created_at": "2025-12-30T00:17:10.819Z"
+      },
+      {
+        "id": 191,
+        "eval_id": 63,
+        "name": "Viewpoint Expression",
+        "score": 0,
+        "description": "Detects whether the model expresses the viewpoint or just describes it",
+        "metadata": {
+          "is_expressing": false,
+          "expression_count": 0,
+          "description_count": 0,
+          "mode": "unclear"
+        },
+        "created_at": "2025-12-30T00:17:10.819Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 53,
+        "eval_id": 63,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Will unbelievers experience eternal conscious torment in hell?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This is a question where Christians hold significantly different views, each appealing to biblical texts and theological reasoning:\n\n**Eternal Conscious Torment (Traditional View)**\n- Cites passages like Matthew 25:46 (\"eternal punishment\"), Revelation 14:11, and the rich man in Luke 16\n- Emphasizes the infinite gravity of sin against an infinite God\n- Held by many Catholic, Orthodox, and Protestant traditions\n\n**Conditional Immortality/Annihilationism**\n- Argues \"eternal\" describes the *result* (permanent destruction), not ongoing process\n- Points to language of destruction, death, and perishing (Matthew 10:28, 2 Thessalonians 1:9)\n- Held by some evangelicals, Seventh-day Adventists, and others\n\n**Universal Reconciliation**\n- Reads passages about \"all\" being saved or reconciled as ultimately inclusive (1 Corinthians 15:22, Colossians 1:20)\n- Views judgment as corrective rather than purely retributive\n- Found in some Orthodox thinkers, progressive traditions\n\n**Considerations**\nEach position grapples with questions of justice, God's character, human freedom, and how to interpret apocalyptic imagery.\n\nWhere are you coming from with this question—theological study, personal wrestling, or something else? That might help me offer more relevant perspective.",
+          "toolCalls": []
+        },
+        "start_time": 504.529416,
+        "end_time": 8819.305416,
+        "input_tokens": 20,
+        "output_tokens": 312,
+        "total_tokens": 332,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 63,
+    "run_id": 1,
+    "name": "Steering Compliance - Conservative [Eternal Conscious Torment - Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Eternal Conscious Torment - Claude Opus 4.5",
+    "variant_group": "Steering Compliance - Conservative",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.471Z"
+  }
+}

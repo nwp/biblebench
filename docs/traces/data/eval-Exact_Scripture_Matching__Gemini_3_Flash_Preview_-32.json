@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 219,
+    "suite_id": 59,
+    "col_order": 32,
+    "input": "Quote Micah 6:8 from the English Standard Version (ESV) exactly as written",
+    "expected": "He has told you, O man, what is good; and what does the Lord require of you but to do justice, and to love kindness, and to walk humbly with your God",
+    "output": "He has told you, O man, what is good; and what does the LORD require of you but to do justice, and to love kindness, and to walk humbly with your God?",
+    "duration": 2667,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:46.381Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 557,
+        "eval_id": 219,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:14:49.049Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 184,
+        "eval_id": 219,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Micah 6:8 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "He has told you, O man, what is good; and what does the LORD require of you but to do justice, and to love kindness, and to walk humbly with your God?",
+          "toolCalls": []
+        },
+        "start_time": 189.886584,
+        "end_time": 2832.246167,
+        "input_tokens": 89,
+        "output_tokens": 38,
+        "total_tokens": 127,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:46.380Z"
+  }
+}

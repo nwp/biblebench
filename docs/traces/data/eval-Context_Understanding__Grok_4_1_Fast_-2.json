@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 173,
+    "suite_id": 57,
+    "col_order": 2,
+    "input": "To whom was the book of Romans written and why?",
+    "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+    "output": "The Christian church in Rome (Jewish and Gentile believers), to systematically explain the gospel, unify the divided congregation, and prepare for Paul's visit and mission support to Spain.",
+    "duration": 23530,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:02.279Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 739,
+        "eval_id": 173,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM response accurately reflects the book of Romans. It identifies the audience as the church in Rome composed of Jewish and Gentile believers, and it states key aims: to explain the gospel, to address and help unify a divided Jewish-Gentile church, and to prepare for Paul’s visit and his broader mission (including going to Spain). These elements are supported by Romans 1:11-15, Romans 15:24, and Romans 15:28 (as well as the broader context of Jew-Gentile reconciliation in Romans 9–11). The phrasing captures the treatise-like, explanatory nature of Romans as a letter that lays out the gospel, and it correctly notes Paul’s travel plans and anticipated support role. Minor additional details that could enrich accuracy include Romans’ exhortations to edify the Roman church, address Judaizing tensions, and the collection for Jerusalem (Romans 15:25-27), but their omission does not undermine the overall accuracy of the stated purpose."
+        },
+        "created_at": "2025-12-30T00:10:25.827Z"
+      },
+      {
+        "id": 740,
+        "eval_id": 173,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:10:25.827Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 280,
+        "eval_id": 173,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The Christian church in Rome (Jewish and Gentile believers), to systematically explain the gospel, unify the divided congregation, and prepare for Paul's visit and mission support to Spain.",
+          "toolCalls": []
+        },
+        "start_time": 192.644041,
+        "end_time": 3910.761416,
+        "input_tokens": 280,
+        "output_tokens": 397,
+        "total_tokens": 677,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Grok 4.1 Fast]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Grok 4.1 Fast",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:02.279Z"
+  }
+}

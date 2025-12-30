@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 274,
+    "suite_id": 59,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "Jesus used parables to reveal God’s kingdom in memorable, concrete stories that invited repentance and faith, while also concealing the truth from hardened, unbelieving listeners—fulfilling Isaiah’s prophecy and distinguishing true disciples from the crowds (Matthew 13:10–17; Mark 4:10–12; Luke 8:9–10).",
+    "duration": 28305,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.180Z",
+    "score": 0.45,
+    "scores": [
+      {
+        "id": 767,
+        "eval_id": 274,
+        "name": "Theological Accuracy Judge",
+        "score": 0.9,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s answer aligns well with biblical teaching: parables reveal truths about the kingdom to listeners with receptive hearts and function as a judgement or concealment for those who reject or are hardened, which echoes Jesus’ use of parables in Matthew 13:10–17; Mark 4:10–12; Luke 8:9–10. It correctly notes that parables are memorable, concrete stories that lead to repentance and faith, and that their purpose includes identifying true disciples versus the broader crowd. The statement about fulfilling Isaiah’s prophecy corresponds to the Gospel’s explanation (Isaiah 6:9–10 as cited in the synoptic Gospels). The response cites the right passages and maintains consistency with historic orthodoxy about revelation to insiders and concealment to outsiders. A minor nuance not fully explicit is that some aspects of how parables reveal or conceal truth can vary by context and audience, but the overall assessment is accurate and well-grounded in Scripture."
+        },
+        "created_at": "2025-12-30T00:34:36.504Z"
+      },
+      {
+        "id": 768,
+        "eval_id": 274,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:36.504Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 290,
+        "eval_id": 274,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus used parables to reveal God’s kingdom in memorable, concrete stories that invited repentance and faith, while also concealing the truth from hardened, unbelieving listeners—fulfilling Isaiah’s prophecy and distinguishing true disciples from the crowds (Matthew 13:10–17; Mark 4:10–12; Luke 8:9–10).",
+          "toolCalls": []
+        },
+        "start_time": 203.430917,
+        "end_time": 2881.457417,
+        "input_tokens": 134,
+        "output_tokens": 75,
+        "total_tokens": 209,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.179Z"
+  }
+}

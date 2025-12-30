@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 429,
+    "suite_id": 91,
+    "col_order": 5,
+    "input": "Where is the Beatitudes (Blessed are the poor in spirit...)?",
+    "expected": "Matthew 5:3-12",
+    "output": "Matthew 5:3-12",
+    "duration": 1088,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:37.306Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 907,
+        "eval_id": 429,
+        "name": "Scripture Reference Accuracy",
+        "score": 1,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": true,
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:17:38.395Z"
+      },
+      {
+        "id": 908,
+        "eval_id": 429,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:17:38.395Z"
+      },
+      {
+        "id": 909,
+        "eval_id": 429,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Matthew 5:3-12"
+        },
+        "created_at": "2025-12-30T00:17:38.395Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 362,
+        "eval_id": 429,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhere is the Beatitudes (Blessed are the poor in spirit...)?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Matthew 5:3-12",
+          "toolCalls": []
+        },
+        "start_time": 161.186334,
+        "end_time": 1228.45025,
+        "input_tokens": 68,
+        "output_tokens": 10,
+        "total_tokens": 78,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 91,
+    "run_id": 1,
+    "name": "Reference Knowledge [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:37.306Z"
+  }
+}

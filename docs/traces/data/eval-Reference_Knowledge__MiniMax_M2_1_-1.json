@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 143,
+    "suite_id": 31,
+    "col_order": 1,
+    "input": "What is the reference for 'The Lord is my shepherd'?",
+    "expected": "Psalm 23:1",
+    "output": "Psalm 23:1Psalm 23:1",
+    "duration": 3124,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:04:45.046Z",
+    "score": 0.8333333333333334,
+    "scores": [
+      {
+        "id": 285,
+        "eval_id": 143,
+        "name": "Scripture Reference Accuracy",
+        "score": 0.5,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": true
+        },
+        "created_at": "2025-12-30T01:04:48.189Z"
+      },
+      {
+        "id": 286,
+        "eval_id": 143,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T01:04:48.189Z"
+      },
+      {
+        "id": 287,
+        "eval_id": 143,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Psalm 23:1Psalm 23:1"
+        },
+        "created_at": "2025-12-30T01:04:48.189Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 116,
+        "eval_id": 143,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for 'The Lord is my shepherd'?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Psalm 23:1Psalm 23:1",
+          "toolCalls": []
+        },
+        "start_time": 154.306958,
+        "end_time": 3277.067542,
+        "input_tokens": 95,
+        "output_tokens": 91,
+        "total_tokens": 186,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:04:45.046Z"
+  }
+}

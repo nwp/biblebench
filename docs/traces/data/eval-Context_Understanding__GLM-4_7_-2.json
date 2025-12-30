@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 88,
+    "suite_id": 29,
+    "col_order": 2,
+    "input": "To whom was the book of Romans written and why?",
+    "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+    "output": "Christians in Rome to explain the gospel of justification by faith, resolve tensions between Jewish and Gentile believers, and prepare for Paul’s intended visit and mission to Spain.",
+    "duration": 73421,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:59:18.470Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 386,
+        "eval_id": 88,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s answer accurately reflects the biblical and historical understanding of Romans: Paul writes to the church in Rome, presenting the gospel with emphasis on justification by faith, addressing tensions between Jewish and Gentile believers, and stating his plan to visit Rome and then go on to Spain (Romans 15:22–29). These elements align with Paul’s purpose and the book’s themes (Romans 1:7; 1:16–17; 3:28; 9–11; 15:14–29). The response is doctrinally sound and biblically grounded, and it captures the major nuances (gospel to both Jew and Gentile, unity in Christ, and Paul’s missionary goals). A minor caveat is that Romans’ broader theme centers on the righteousness from God by faith for all who believe, not solely “justification by faith,” but this is a common and acceptable shorthand. Overall, high accuracy with minor nuance consideration."
+        },
+        "created_at": "2025-12-30T01:00:31.909Z"
+      },
+      {
+        "id": 387,
+        "eval_id": 88,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T01:00:31.909Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 145,
+        "eval_id": 88,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Christians in Rome to explain the gospel of justification by faith, resolve tensions between Jewish and Gentile believers, and prepare for Paul’s intended visit and mission to Spain.",
+          "toolCalls": []
+        },
+        "start_time": 162.493334,
+        "end_time": 44774.9705,
+        "input_tokens": 135,
+        "output_tokens": 902,
+        "total_tokens": 1037,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GLM-4.7",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:59:18.469Z"
+  }
+}

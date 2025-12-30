@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 177,
+    "suite_id": 57,
+    "col_order": 6,
+    "input": "What was the relationship between the books of Kings and Chronicles?",
+    "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+    "output": "Chronicles parallels and supplements Kings, retelling Israel's monarchy history from David to the exile with emphasis on the temple, priesthood, Judah, and themes of divine faithfulness and repentance.",
+    "duration": 34865,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:02.279Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 776,
+        "eval_id": 177,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM answer accurately identifies Chronicles as parallel to Kings and as supplementing that history, with an emphasis on temple, priesthood, and the David/Judah focus. It correctly highlights themes of divine faithfulness and repentance, which align with Chronicles’ theological framing, and it implicitly reflects the emphasis on covenant through the Davidic line. Minor caveats: Chronicles foregrounds the Davidic covenant and temple worship more explicitly and often reframes or omits certain northern-kingdom material found in Kings; it also includes extensive genealogies and begins with Adam to David, before focusing on Judah’s kings, which the response does not mention. The statement ‘from David to the exile’ is a simplification of Chronicles’ scope but not doctrinally harmful. Overall, the assessment is doctrinally sound, biblically grounded, and captures essential nuance with only minor gaps."
+        },
+        "created_at": "2025-12-30T00:10:37.161Z"
+      },
+      {
+        "id": 777,
+        "eval_id": 177,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:10:37.161Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 295,
+        "eval_id": 177,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Chronicles parallels and supplements Kings, retelling Israel's monarchy history from David to the exile with emphasis on the temple, priesthood, Judah, and themes of divine faithfulness and repentance.",
+          "toolCalls": []
+        },
+        "start_time": 193.290625,
+        "end_time": 5903.254416,
+        "input_tokens": 281,
+        "output_tokens": 490,
+        "total_tokens": 771,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Grok 4.1 Fast]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Grok 4.1 Fast",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:02.279Z"
+  }
+}

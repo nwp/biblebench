@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 118,
+    "suite_id": 28,
+    "col_order": 40,
+    "input": "Quote Lamentations 3:22-23 from the New International Version (NIV) exactly as written",
+    "expected": "Because of the Lord's great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness",
+    "output": "Because of the Lord's great love we are not consumed,\nfor his compassions never fail.\nThey are new every morning;\ngreat is your faithfulness.Because of the Lord's great love we are not consumed,\nfor his compassions never fail.\nThey are new every morning;\ngreat is your faithfulness.",
+    "duration": 4898,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:03:25.700Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 27,
+        "eval_id": 118,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T01:03:30.601Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 27,
+        "eval_id": 118,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Lamentations 3:22-23 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Because of the Lord's great love we are not consumed,\nfor his compassions never fail.\nThey are new every morning;\ngreat is your faithfulness.Because of the Lord's great love we are not consumed,\nfor his compassions never fail.\nThey are new every morning;\ngreat is your faithfulness.",
+          "toolCalls": []
+        },
+        "start_time": 412.130375,
+        "end_time": 5268.570125,
+        "input_tokens": 127,
+        "output_tokens": 214,
+        "total_tokens": 341,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 28,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:03:25.699Z"
+  }
+}

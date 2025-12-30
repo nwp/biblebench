@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 268,
+    "suite_id": 59,
+    "col_order": 1,
+    "input": "What was Paul's background before his conversion?",
+    "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+    "output": "Paul was a Jew from Tarsus in Cilicia, a Roman citizen, from the tribe of Benjamin, raised and educated in Jerusalem under Gamaliel as a Pharisee. He was zealous for the Law and actively persecuted the early church, approving and participating in arrests and violence against Christians.",
+    "duration": 27574,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.179Z",
+    "score": 0.475,
+    "scores": [
+      {
+        "id": 761,
+        "eval_id": 268,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The answer accurately summarizes Paul’s pre-conversion background with correct facts: born a Jew from Tarsus in Cilicia, a Roman citizen, of the tribe of Benjamin, raised in Jerusalem and educated under Gamaliel, a Pharisee, zealous for the Law, and actively persecuting the early church. Each claim has biblical support (Acts 22:3; 25; 23:6; Galatians 1:13–14; Philippians 3:5–6; Romans 11:1). The statement captures the key nuance that his zeal was for the Law and that he persecuted Christians before his conversion. There are no doctrinal errors and no significant missing nuance given the question’s scope."
+        },
+        "created_at": "2025-12-30T00:34:35.773Z"
+      },
+      {
+        "id": 762,
+        "eval_id": 268,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:35.773Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 288,
+        "eval_id": 268,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Paul was a Jew from Tarsus in Cilicia, a Roman citizen, from the tribe of Benjamin, raised and educated in Jerusalem under Gamaliel as a Pharisee. He was zealous for the Law and actively persecuted the early church, approving and participating in arrests and violence against Christians.",
+          "toolCalls": []
+        },
+        "start_time": 202.280917,
+        "end_time": 2886.798417,
+        "input_tokens": 132,
+        "output_tokens": 65,
+        "total_tokens": 197,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.179Z"
+  }
+}

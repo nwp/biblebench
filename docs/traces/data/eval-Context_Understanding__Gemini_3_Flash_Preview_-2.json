@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 173,
+    "suite_id": 57,
+    "col_order": 2,
+    "input": "To whom was the book of Romans written and why?",
+    "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+    "output": "To the various house churches in Rome, primarily to establish a missionary base for Paul’s journey to Spain, resolve tensions between Jewish and Gentile believers, and provide a systematic explanation of the Gospel.",
+    "duration": 27881,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:32.325Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 737,
+        "eval_id": 173,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Overemphasis on 'primarily establishing a missionary base' as the main purpose; Romans is best understood as a theological exposition addressed to a Roman Christian community, with secondary missionary aims tied to Paul’s future plans.",
+            "The phrase 'house churches in Rome' is plausible but not explicitly stated in Romans; the text speaks of 'saints in Rome' and likely ministry to a Roman church comprised of multiple house churches, which is a reasonable inference rather than a stated fact."
+          ],
+          "rationale": "The LLM’s answer aligns with mainstream scholarly consensus: Romans is written to believers in Rome (the church there) and aims to articulate the gospel, address Jew–Gentile tensions, and prepare for Paul’s visit, including his plan to move toward Spain. It captures the gospel-centric purpose and the corrective/teaching aims of the letter. The main caveat is treating Paul’s intent to visit Spain as the primary purpose; the letter’s primary function is theological exposition and pastoral instruction for the Roman church, with plans for future mission as a significant but secondary component."
+        },
+        "created_at": "2025-12-30T00:15:00.225Z"
+      },
+      {
+        "id": 738,
+        "eval_id": 173,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:15:00.225Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 270,
+        "eval_id": 173,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To the various house churches in Rome, primarily to establish a missionary base for Paul’s journey to Spain, resolve tensions between Jewish and Gentile believers, and provide a systematic explanation of the Gospel.",
+          "toolCalls": []
+        },
+        "start_time": 159.149875,
+        "end_time": 1771.667916,
+        "input_tokens": 137,
+        "output_tokens": 39,
+        "total_tokens": 176,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Gemini 3 Flash Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Gemini 3 Flash Preview",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:32.325Z"
+  }
+}

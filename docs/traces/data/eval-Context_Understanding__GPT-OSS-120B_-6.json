@@ -1,0 +1,91 @@
+{
+  "eval": {
+    "id": 92,
+    "suite_id": 29,
+    "col_order": 6,
+    "input": "What was the relationship between the books of Kings and Chronicles?",
+    "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+    "output": "Kings and Chronicles are parallel historical accounts covering the same period—from David’s reign to the Babylonian exile. Kings presents a largely political narrative of both Israel and Judah, including their failures. Chronicles retells that history from a post‑exilic perspective, focusing on Judah, the Davidic and priestly lines, the Temple, and covenant faithfulness, using many of the same source materials but reshaping them to encourage a restored community.",
+    "duration": 34574,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-29T23:45:20.286Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 385,
+        "eval_id": 92,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "The description of Kings as 'largely political' is an oversimplification; Kings includes substantial prophetic and theological material (calls to covenant faithfulness, warnings, and prophetic messages) in addition to political history.",
+            "The assessment that Chronicles is 'post‑exilic' is a common scholarly view, but dating can be debated; labeling it definitively as post‑exilic without noting the range of scholarly opinions is a minor overreach.",
+            "The phrase 'Davidic and priestly lines' correctly highlights Chronicles’ emphasis, but the statement could acknowledge that Chronicles also foregrounds liturgical reform, Levitical roles, and temple-centered worship as a core agenda beyond merely 'priestly lines.'",
+            "While generally accurate, the claim that Chronicles reshapes material to 'encourage a restored community' could be expanded to note Chronicles’ broader theological aims (e.g., emphasizing covenant fidelity, proper worship, and temple priorities) rather than reducing it to restoration ideology."
+          ],
+          "rationale": "The LLM’s answer is largely accurate and captures the main concordances between Kings and Chronicles: shared sources, Chronicles’ post‑exilic editorial lens, emphasis on Judah, the Davidic covenant, and temple worship. It correctly notes that Chronicles was shaped to foster a community-oriented, worship-centered identity. Some nuances are simplified: (1) Kings is not merely political but also theological; (2) Chronicles’ dating is debated among scholars (commonly dated post‑exile but with caution); (3) Chronicles’ portrayal of kings includes more than a simple focus on priestly lines, and (4) Chronicles’ aims include broader liturgical and covenant themes beyond restoration rhetoric. Overall, the evaluation is solid and well-grounded in biblical scholarship.)"
+        },
+        "created_at": "2025-12-29T23:45:54.879Z"
+      },
+      {
+        "id": 386,
+        "eval_id": 92,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-29T23:45:54.879Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 147,
+        "eval_id": 92,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Kings and Chronicles are parallel historical accounts covering the same period—from David’s reign to the Babylonian exile. Kings presents a largely political narrative of both Israel and Judah, including their failures. Chronicles retells that history from a post‑exilic perspective, focusing on Judah, the Davidic and priestly lines, the Temple, and covenant faithfulness, using many of the same source materials but reshaping them to encourage a restored community.",
+          "toolCalls": []
+        },
+        "start_time": 162.809333,
+        "end_time": 2548.538541,
+        "input_tokens": 199,
+        "output_tokens": 300,
+        "total_tokens": 499,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-OSS-120B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-OSS-120B",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-29T23:45:20.286Z"
+  }
+}

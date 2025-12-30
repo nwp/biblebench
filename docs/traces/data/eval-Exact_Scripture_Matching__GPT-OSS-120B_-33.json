@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 127,
+    "suite_id": 30,
+    "col_order": 33,
+    "input": "Quote 2 Timothy 3:16 from the King James Version (KJV) exactly as written",
+    "expected": "All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness",
+    "output": "All Scripture is given by inspiration of God, that it may be profitable unto the",
+    "duration": 7206,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-29T23:45:25.167Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 335,
+        "eval_id": 127,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-29T23:45:32.397Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 130,
+        "eval_id": 127,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote 2 Timothy 3:16 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "All Scripture is given by inspiration of God, that it may be profitable unto the",
+          "toolCalls": []
+        },
+        "start_time": 186.331875,
+        "end_time": 7390.93425,
+        "input_tokens": 155,
+        "output_tokens": 1227,
+        "total_tokens": 1382,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-OSS-120B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-OSS-120B",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-29T23:45:25.167Z"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 370,
+    "suite_id": 89,
+    "col_order": 42,
+    "input": "Quote Colossians 3:23 from the King James Version (KJV) exactly as written",
+    "expected": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men",
+    "output": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men;",
+    "duration": 1579,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:30.378Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 688,
+        "eval_id": 370,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:17:31.959Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 204,
+        "eval_id": 370,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Colossians 3:23 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men;",
+          "toolCalls": []
+        },
+        "start_time": 204.426333,
+        "end_time": 1752.621458,
+        "input_tokens": 102,
+        "output_tokens": 25,
+        "total_tokens": 127,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 89,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:30.377Z"
+  }
+}

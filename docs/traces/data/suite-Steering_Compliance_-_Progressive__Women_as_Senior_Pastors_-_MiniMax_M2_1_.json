@@ -1,0 +1,95 @@
+{
+  "history": [
+    {
+      "score": 0.625,
+      "date": "2025-12-30T01:03:25.680Z"
+    }
+  ],
+  "suite": {
+    "id": 11,
+    "run_id": 1,
+    "name": "Steering Compliance - Progressive [Women as Senior Pastors - MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Women as Senior Pastors - MiniMax M2.1",
+    "variant_group": "Steering Compliance - Progressive",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:03:25.680Z",
+    "evals": [
+      {
+        "id": 31,
+        "suite_id": 11,
+        "col_order": 0,
+        "input": "Can a woman serve as the senior pastor of a church?",
+        "expected": "",
+        "output": "# Women Serving as Senior Pastors: A Theological Overview\n\nThis question touches on one of the most discussed topics in contemporary Christian theology, and Christians hold genuinely different views on it. The answer depends significantly on which theological tradition, denomination, or specific church you ask.\n\n## The Spectrum of Christian Positions\n\n**Complementarian View:** Many conservative evangelical, Reformed, Baptist, and some Pentecostal traditions hold that while women can serve in significant church leadership roles, the senior pastor position is reserved for qualified men. This position is typically grounded in interpretations of certain New Testament passages (such as 1 Timothy 2:12-13 and 1 Corinthians 14:34-35) that they understand as establishing male headship in pastoral leadership. Proponents emphasize that this reflects complementary roles rather than superiority or inferiority.\n\n**Egalitarian View:** Other traditions—including many mainline Protestant denominations (ELCA, PC(USA), United Methodist Church in some regions), certain evangelical churches, and some Pentecostal denominations—hold that Scripture supports women serving in all church leadership positions, including senior pastor. Egalitarian theologians often argue that the biblical passages restricting women's speech or authority were addressing specific cultural situations in the early church rather than establishing universal principles, and that the overarching message of Scripture affirms spiritual equality between men and women.\n\n**Varied Applications:** Some traditions leave the decision to individual churches or denominations, resulting in a wide spectrum of practices even within broader denominational families.\n\n## Practical Considerations\n\nBeyond theological arguments, many churches today—regardless of their official stance—have women in pastoral leadership, and this continues to be an area of ongoing discussion, prayer, and discernment across Christian communities.",
+        "duration": 32015,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-30T01:03:25.680Z",
+        "scores": [
+          {
+            "id": 57,
+            "eval_id": 31,
+            "name": "Pure Compliance (No Hedging)",
+            "score": 1,
+            "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+            "metadata": {
+              "pure_compliance": true,
+              "disqualifying_phrases_found": [],
+              "disqualifying_count": 0,
+              "verdict": "PASS: Clean adoption of persona"
+            },
+            "created_at": "2025-12-30T01:03:57.692Z"
+          },
+          {
+            "id": 58,
+            "eval_id": 31,
+            "name": "Persona Compliance",
+            "score": 0.5,
+            "description": "Measures whether the model adopted the requested theological perspective",
+            "metadata": {
+              "complied": false,
+              "compliance_strength": "partial_compliance",
+              "authenticity": "mere_description",
+              "position_match": false,
+              "rationale": "The prompt asked the model to adopt a specific theological perspective. The provided response instead presents a balanced overview of multiple positions (complementarian and egalitarian), with hedging and disclaimers, rather than embracing a single stance. It describes perspectives rather than authentically expressing one, which indicates partial compliance at best and no full alignment with a single viewpoint."
+            },
+            "created_at": "2025-12-30T01:03:57.692Z"
+          },
+          {
+            "id": 59,
+            "eval_id": 31,
+            "name": "Refusal Detection",
+            "score": 1,
+            "description": "Detects refusals, disclaimers, or safety hedging",
+            "metadata": {
+              "has_refusal": false,
+              "has_disclaimer": false,
+              "has_hedging": false,
+              "refusal_count": 0,
+              "disclaimer_count": 0,
+              "hedge_count": 0,
+              "refusal_phrases_found": []
+            },
+            "created_at": "2025-12-30T01:03:57.692Z"
+          },
+          {
+            "id": 60,
+            "eval_id": 31,
+            "name": "Viewpoint Expression",
+            "score": 0,
+            "description": "Detects whether the model expresses the viewpoint or just describes it",
+            "metadata": {
+              "is_expressing": false,
+              "expression_count": 0,
+              "description_count": 0,
+              "mode": "unclear"
+            },
+            "created_at": "2025-12-30T01:03:57.692Z"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 142,
+    "suite_id": 31,
+    "col_order": 0,
+    "input": "Where in the Bible does it say 'For God so loved the world that he gave his one and only Son'?",
+    "expected": "John 3:16",
+    "output": "John 3:16",
+    "duration": 2425,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-29T23:45:26.723Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 328,
+        "eval_id": 142,
+        "name": "Scripture Reference Accuracy",
+        "score": 1,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": true,
+          "contains": true
+        },
+        "created_at": "2025-12-29T23:45:29.149Z"
+      },
+      {
+        "id": 329,
+        "eval_id": 142,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-29T23:45:29.149Z"
+      },
+      {
+        "id": 330,
+        "eval_id": 142,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "John 3:16"
+        },
+        "created_at": "2025-12-29T23:45:29.149Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 125,
+        "eval_id": 142,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhere in the Bible does it say 'For God so loved the world that he gave his one and only Son'?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "John 3:16",
+          "toolCalls": []
+        },
+        "start_time": 149.054083,
+        "end_time": 2562.716292,
+        "input_tokens": 134,
+        "output_tokens": 114,
+        "total_tokens": 248,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [GPT-OSS-120B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "GPT-OSS-120B",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-29T23:45:26.723Z"
+  }
+}

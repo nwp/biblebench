@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 87,
+    "suite_id": 29,
+    "col_order": 1,
+    "input": "What was Paul's background before his conversion?",
+    "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+    "output": "Paul (Saul of Tarsus) was a devout Pharisee, a Roman citizen from Tarsus, educated in Jewish law under Gamaliel, worked as a tentmaker, and actively persecuted early Christians.",
+    "duration": 25646,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:38:36.604Z",
+    "score": 0.475,
+    "scores": [
+      {
+        "id": 339,
+        "eval_id": 87,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM accurately lists Paul’s Pharisaic identity, Roman citizenship, origin from Tarsus, education under Gamaliel, tentmaking, and active persecution of Christians—all of which are biblical and historically affirmed. Each point is supported by Scripture (Pharisee: Philippians 3:5-6; Acts 23:6; citizenship and Tarsus: Acts 21:39; 22:28; 16–18; Gamaliel: Acts 22:3; tentmaking: Acts 18:3; persecution: Acts 9:1-2). The answer is doctrinally sound and provides a well-rounded, nuanced picture without introducing false claims. Minor interpretive phrasing like “devout” is acceptable and not doctrinally problematic.)"
+        },
+        "created_at": "2025-12-30T00:39:02.269Z"
+      },
+      {
+        "id": 340,
+        "eval_id": 87,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:39:02.269Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 122,
+        "eval_id": 87,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Paul (Saul of Tarsus) was a devout Pharisee, a Roman citizen from Tarsus, educated in Jewish law under Gamaliel, worked as a tentmaker, and actively persecuted early Christians.",
+          "toolCalls": []
+        },
+        "start_time": 200.980541,
+        "end_time": 2233.518416,
+        "input_tokens": 193,
+        "output_tokens": 170,
+        "total_tokens": 363,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-OSS-20B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-OSS-20B",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:38:36.604Z"
+  }
+}

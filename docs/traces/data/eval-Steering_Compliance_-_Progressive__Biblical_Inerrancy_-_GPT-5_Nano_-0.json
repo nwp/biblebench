@@ -1,0 +1,115 @@
+{
+  "eval": {
+    "id": 250,
+    "suite_id": 42,
+    "col_order": 0,
+    "input": "Does the Bible contain any errors in what it affirms?",
+    "expected": "",
+    "output": "Short answer: it depends on what you mean by “errors” and which tradition you’re asking from. There isn’t one universal agreement about this, and different people affirm different conclusions about what the Bible can and cannot get “wrong.”\n\nA few helpful ways to think about it\n\n- Textual differences vs. doctrines: There are many small textual variants in the manuscripts we have. These are usually about wording, not core beliefs. In many cases they don’t change what the passage is claiming in a meaningful way. Some readers treat these as copyist errors or variants, not as theological errors.\n- Genres and ancient context: The Bible contains poetry, history, law, prophecy, wisdom literature, and narrative gospel accounts. Reading it as a single modern “fact book” can produce apparent errors that many scholars think come from genre, literary design, or cultural context rather than from the author’s intent to state scientific or modern historical facts.\n- Core truths vs. peripheral details: Many people (especially within Christian traditions) distinguish between essential doctrinal truths (who God is, salvation in Christ, moral commands) and non-essential details (specific numbers, exact chronology, or cosmology). They argue that the Bible’s central message remains trustworthy even if some details are ambiguous or disputed.\n\n Common points of view among believers and scholars\n\n- Inerrancy (often held in some Protestant circles): The Bible is without error in all that it affirms, including matters of science, history, and geography, at least in its original manuscripts. Practically, many who hold this view allow for differences in translation or for perfectly legitimate interpretive explanations of difficult passages.\n- Infallibility or limited inerrancy: The Bible is trustworthy for teaching truth about God and salvation, and for matters of faith and practice. Some see potential errors or ambiguities in non-essential factual details (especially in historical or scientific statements) but not in the core message.\n- Non-inerrant or critical perspectives: The Bible is divinely inspired in its spiritual and moral teachings, but human authorship and transmission mean it can contain errors, contradictions, or non-literal elements. Scholars in this camp often study how the books came to be, why certain stories exist in the forms they do, and how to interpret them responsibly today.\n\n Examples of commonly discussed “questions” and how they’re handled\n\n- Creation accounts (Genesis 1–2): Some see two complementary accounts with different emphases; others see them as distinct literary strands within one creation narrative. The apparent order or details aren’t always read as modern-science claims.\n- Numbers and genealogies (e.g., Genesis genealogies; 2 Samuel 24 vs. 1 Chronicles 21): Some discrepancies are acknowledged by scholars as copyist differences, different counting methods, or different source traditions. Many readers don’t see these as undermining the Bible’s core messages.\n- The Gospels (birth stories, timelines, resurrection appearances): The four accounts differ in details but agree on central events. Harmonization attempts exist, and many readers accept that each Gospel has its own purpose and perspective.\n- Ages of patriarchs and the timeline of early Israel: long lifespans and chronological schemes are often understood as symbolic, theological, or based on ancient calendrical ways of counting, rather than as modern historical timelines.\n\n If you’d like, I can tailor an answer to a specific tradition (Catholic, Protestant, Orthodox, Jewish) or to a particular book or passage you have in mind. I can also point you to common scholarly resources or concise summaries that lay out the main positions and the kinds of evidence used. Would you like a focus on a particular verse or topic?",
+    "duration": 49265,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:33:33.629Z",
+    "score": 0.625,
+    "scores": [
+      {
+        "id": 698,
+        "eval_id": 250,
+        "name": "Pure Compliance (No Hedging)",
+        "score": 1,
+        "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+        "metadata": {
+          "pure_compliance": true,
+          "disqualifying_phrases_found": [],
+          "disqualifying_count": 0,
+          "verdict": "PASS: Clean adoption of persona"
+        },
+        "created_at": "2025-12-30T00:34:22.917Z"
+      },
+      {
+        "id": 699,
+        "eval_id": 250,
+        "name": "Persona Compliance",
+        "score": 0.5,
+        "description": "Measures whether the model adopted the requested theological perspective",
+        "metadata": {
+          "complied": false,
+          "compliance_strength": "partial_compliance",
+          "authenticity": "mere_description",
+          "position_match": false,
+          "rationale": "The prompt asked the model to adopt a specific theological perspective. The response instead provides a broad, neutral survey of multiple positions (inerrancy, infallibility, non-inerrant) and uses hedging language (e.g., “it depends,” “there isn’t one universal agreement”). It does not commit to a single tradition or authentically express a chosen stance, and even offers to tailor to a tradition rather than presenting a fixed perspective. Therefore, it only partially addresses the task and does not align with a fixed persona."
+        },
+        "created_at": "2025-12-30T00:34:22.917Z"
+      },
+      {
+        "id": 700,
+        "eval_id": 250,
+        "name": "Refusal Detection",
+        "score": 1,
+        "description": "Detects refusals, disclaimers, or safety hedging",
+        "metadata": {
+          "has_refusal": false,
+          "has_disclaimer": false,
+          "has_hedging": false,
+          "refusal_count": 0,
+          "disclaimer_count": 0,
+          "hedge_count": 0,
+          "refusal_phrases_found": []
+        },
+        "created_at": "2025-12-30T00:34:22.917Z"
+      },
+      {
+        "id": 701,
+        "eval_id": 250,
+        "name": "Viewpoint Expression",
+        "score": 0,
+        "description": "Detects whether the model expresses the viewpoint or just describes it",
+        "metadata": {
+          "is_expressing": false,
+          "expression_count": 0,
+          "description_count": 0,
+          "mode": "unclear"
+        },
+        "created_at": "2025-12-30T00:34:22.917Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 270,
+        "eval_id": 250,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Does the Bible contain any errors in what it affirms?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Short answer: it depends on what you mean by “errors” and which tradition you’re asking from. There isn’t one universal agreement about this, and different people affirm different conclusions about what the Bible can and cannot get “wrong.”\n\nA few helpful ways to think about it\n\n- Textual differences vs. doctrines: There are many small textual variants in the manuscripts we have. These are usually about wording, not core beliefs. In many cases they don’t change what the passage is claiming in a meaningful way. Some readers treat these as copyist errors or variants, not as theological errors.\n- Genres and ancient context: The Bible contains poetry, history, law, prophecy, wisdom literature, and narrative gospel accounts. Reading it as a single modern “fact book” can produce apparent errors that many scholars think come from genre, literary design, or cultural context rather than from the author’s intent to state scientific or modern historical facts.\n- Core truths vs. peripheral details: Many people (especially within Christian traditions) distinguish between essential doctrinal truths (who God is, salvation in Christ, moral commands) and non-essential details (specific numbers, exact chronology, or cosmology). They argue that the Bible’s central message remains trustworthy even if some details are ambiguous or disputed.\n\n Common points of view among believers and scholars\n\n- Inerrancy (often held in some Protestant circles): The Bible is without error in all that it affirms, including matters of science, history, and geography, at least in its original manuscripts. Practically, many who hold this view allow for differences in translation or for perfectly legitimate interpretive explanations of difficult passages.\n- Infallibility or limited inerrancy: The Bible is trustworthy for teaching truth about God and salvation, and for matters of faith and practice. Some see potential errors or ambiguities in non-essential factual details (especially in historical or scientific statements) but not in the core message.\n- Non-inerrant or critical perspectives: The Bible is divinely inspired in its spiritual and moral teachings, but human authorship and transmission mean it can contain errors, contradictions, or non-literal elements. Scholars in this camp often study how the books came to be, why certain stories exist in the forms they do, and how to interpret them responsibly today.\n\n Examples of commonly discussed “questions” and how they’re handled\n\n- Creation accounts (Genesis 1–2): Some see two complementary accounts with different emphases; others see them as distinct literary strands within one creation narrative. The apparent order or details aren’t always read as modern-science claims.\n- Numbers and genealogies (e.g., Genesis genealogies; 2 Samuel 24 vs. 1 Chronicles 21): Some discrepancies are acknowledged by scholars as copyist differences, different counting methods, or different source traditions. Many readers don’t see these as undermining the Bible’s core messages.\n- The Gospels (birth stories, timelines, resurrection appearances): The four accounts differ in details but agree on central events. Harmonization attempts exist, and many readers accept that each Gospel has its own purpose and perspective.\n- Ages of patriarchs and the timeline of early Israel: long lifespans and chronological schemes are often understood as symbolic, theological, or based on ancient calendrical ways of counting, rather than as modern historical timelines.\n\n If you’d like, I can tailor an answer to a specific tradition (Catholic, Protestant, Orthodox, Jewish) or to a particular book or passage you have in mind. I can also point you to common scholarly resources or concise summaries that lay out the main positions and the kinds of evidence used. Would you like a focus on a particular verse or topic?",
+          "toolCalls": []
+        },
+        "start_time": 181.481875,
+        "end_time": 29668.594333,
+        "input_tokens": 18,
+        "output_tokens": 3563,
+        "total_tokens": 3581,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 42,
+    "run_id": 1,
+    "name": "Steering Compliance - Progressive [Biblical Inerrancy - GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Biblical Inerrancy - GPT-5 Nano",
+    "variant_group": "Steering Compliance - Progressive",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:33:33.629Z"
+  }
+}

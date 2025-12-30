@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 269,
+    "suite_id": 59,
+    "col_order": 2,
+    "input": "To whom was the book of Romans written and why?",
+    "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+    "output": "**To whom:** The Christians in Rome (the church there, made up of both Jewish and Gentile believers).\n\n**Why:** To present Paul’s gospel and its implications (justification by faith for Jew and Gentile alike), to unite the mixed Roman church around that message, and to enlist their support for his planned mission to Spain via Rome.",
+    "duration": 23077,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.179Z",
+    "score": 0.475,
+    "scores": [
+      {
+        "id": 743,
+        "eval_id": 269,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM correctly identifies the audience as the church in Rome, including both Jewish and Gentile believers (Rom 1:7 and 1:11-12 support the emphasis on a church community). It accurately captures the purpose: to present the gospel and its implications, notably justification by faith for Jews and Gentiles, and to unite the Roman church around that message. It also mirrors Paul’s explicit aim to secure support for his planned mission to Spain (Rom 15:24, 28-29) and his desire to visit Rome (Rom 15:22-29). These elements align with the biblical text and with historic orthodox interpretation. The answer could be strengthened with explicit references to Romans 1:16-17 (the power and righteousness of God revealed in the gospel) and the Jew/Gentile relationship in Romans 9–11, but the core assessment is accurate and well-nuanced."
+        },
+        "created_at": "2025-12-30T00:34:31.276Z"
+      },
+      {
+        "id": 744,
+        "eval_id": 269,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:31.276Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 282,
+        "eval_id": 269,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "**To whom:** The Christians in Rome (the church there, made up of both Jewish and Gentile believers).\n\n**Why:** To present Paul’s gospel and its implications (justification by faith for Jew and Gentile alike), to unite the mixed Roman church around that message, and to enlist their support for his planned mission to Spain via Rome.",
+          "toolCalls": []
+        },
+        "start_time": 202.5785,
+        "end_time": 2919.512833,
+        "input_tokens": 135,
+        "output_tokens": 74,
+        "total_tokens": 209,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.179Z"
+  }
+}

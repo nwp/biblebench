@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 89,
+    "suite_id": 29,
+    "col_order": 3,
+    "input": "What was the historical context of the book of Exodus?",
+    "expected": "Exodus describes the Israelites' slavery in Egypt and their deliverance by God through Moses",
+    "output": "Exodus is set in the late Bronze Age New Kingdom of Egypt (c. 13th‑15th c. BCE) when a slave people—later identified as the Israelites—lived in Egyptian territories. The book recounts Moses confronting the ruling pharaoh, the ten plagues, the Passover, the Red Sea crossing, the covenant at Mount Sinai, and the foundation of Israelite law and identity.",
+    "duration": 28603,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:38:36.604Z",
+    "score": 0.425,
+    "scores": [
+      {
+        "id": 356,
+        "eval_id": 89,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Dating and historical placement are contested in scholarship. The statement that Exodus occurs in the late Bronze Age/New Kingdom (c. 13th–15th century BCE) reflects a common scholarly position but omits the substantial debate and uncertainty surrounding the Exodus timeline.",
+            "The reply could deepen theological nuance (e.g., the specific themes of redemption, covenant at Sinai, holiness, presence of God, obedience, and how the law shapes Israel’s identity) beyond simply naming events.",
+            "Some scholars view Exodus as a composite of traditions with debated historicity; the answer does not acknowledge this complexity or discuss literary sources/tradition considerations within the biblical text."
+          ],
+          "rationale": "The response accurately lists the core biblical events (slavery, Moses, plagues, Passover, Red Sea, Sinai Covenant, and the giving of the Law) and aligns with historic Christian orthodoxy on divine deliverance and covenant identity. The dating claim is the main area of contention and is not definitively settled in Scripture or in history, which reduces precision. Overall, it reflects sound biblical framing and orthodox themes but lacks nuance on the methodological debates and deeper theological implications present in Exodus (redemption, holiness, presence, and the development of Israelite identity)."
+        },
+        "created_at": "2025-12-30T00:39:05.226Z"
+      },
+      {
+        "id": 357,
+        "eval_id": 89,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:39:05.226Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 130,
+        "eval_id": 89,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the historical context of the book of Exodus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Exodus is set in the late Bronze Age New Kingdom of Egypt (c. 13th‑15th c. BCE) when a slave people—later identified as the Israelites—lived in Egyptian territories. The book recounts Moses confronting the ruling pharaoh, the ten plagues, the Passover, the Red Sea crossing, the covenant at Mount Sinai, and the foundation of Israelite law and identity.",
+          "toolCalls": []
+        },
+        "start_time": 201.532583,
+        "end_time": 1499.498583,
+        "input_tokens": 196,
+        "output_tokens": 365,
+        "total_tokens": 561,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-OSS-20B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-OSS-20B",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:38:36.604Z"
+  }
+}

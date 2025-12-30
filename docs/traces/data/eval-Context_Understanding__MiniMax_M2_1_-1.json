@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 135,
+    "suite_id": 30,
+    "col_order": 1,
+    "input": "What was Paul's background before his conversion?",
+    "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+    "output": "Paul was a Jew from Tarsus in Cilicia, born a Roman citizen. His Hebrew name was Saul, and he was trained as a tentmaker. He was a zealous Pharisee who studied under the renowned teacher Gamaliel in Jerusalem. Before his conversion, he actively persecuted Christians and was present at the stoning of Stephen.",
+    "duration": 36344,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T01:04:39.218Z",
+    "score": 0.475,
+    "scores": [
+      {
+        "id": 376,
+        "eval_id": 135,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s response is largely accurate and well-grounded scripturally and theologically:\n- Paul as a Jew from Tarsus in Cilicia is correct and aligns with Acts 21:39; 22:3.\n- Being born a Roman citizen is supported by Acts 22:28 (Paul asserts he was born a citizen) and Acts 16:37 (the importance of his status is recognized in context).\n- His Hebrew name Saul is supported by Acts 13:9 and the later usage (Acts 13:9, 26:14–15, where he is identified as Saul and Paul).\n- Training as a tentmaker is reflected in Acts 18:3, which describes Paul as a tentmaker by trade and his living arrangements with Priscilla and Aquila.\n- Studying under Gamaliel in Jerusalem is stated in Acts 22:3.\n- Being a zealous Pharisee is supported by Acts 23:6 and 26:5, where Paul identifies himself as a Pharisee or the son of a Pharisee.\n- Pre-conversion persecution of Christians and involvement in Stephen’s death is supported by Acts 7:58 and 8:1 (Saul/Paul’s stance and actions against Stephen, and his consent to Stephen’s execution).\n\nNuances captured: the answer includes multiple well-attested facets of Paul’s background beyond the basic expected response (ethnic/religious status, citizenship, education, trade, and pre-conversion activity), which reflects a fuller, orthodox portrait. \n\nMinor caveats: while the claim of “training” as a tentmaker is common in tradition, the biblical text more directly asserts that he practiced tentmaking as a trade (Acts 18:3), which is a subtle distinction but not doctrinally significant. Overall, the reply is in line with historic Christian orthodoxy and biblical grounding."
+        },
+        "created_at": "2025-12-30T01:05:15.581Z"
+      },
+      {
+        "id": 377,
+        "eval_id": 135,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T01:05:15.581Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 143,
+        "eval_id": 135,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Paul was a Jew from Tarsus in Cilicia, born a Roman citizen. His Hebrew name was Saul, and he was trained as a tentmaker. He was a zealous Pharisee who studied under the renowned teacher Gamaliel in Jerusalem. Before his conversion, he actively persecuted Christians and was present at the stoning of Stephen.",
+          "toolCalls": []
+        },
+        "start_time": 157.701958,
+        "end_time": 3523.791583,
+        "input_tokens": 162,
+        "output_tokens": 191,
+        "total_tokens": 353,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Context Understanding [MiniMax M2.1]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "MiniMax M2.1",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T01:04:39.218Z"
+  }
+}

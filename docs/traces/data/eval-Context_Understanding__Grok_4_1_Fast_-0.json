@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 171,
+    "suite_id": 57,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "John the Apostle, one of Jesus' twelve disciples and the disciple whom Jesus loved",
+    "duration": 29506,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:02.279Z",
+    "score": 0.375,
+    "scores": [
+      {
+        "id": 768,
+        "eval_id": 171,
+        "name": "Theological Accuracy Judge",
+        "score": 0.75,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": false,
+          "nuance_captured": false,
+          "errors": [
+            "Asserts authorship by John the Apostle as a biblical fact, but the Bible does not explicitly name the author; authorship is traditional/doctrinal but not stated in Scripture.",
+            "Does not acknowledge scholarly debate about the true identity of the 'beloved disciple' (some identify him as John the Apostle, others as another disciple or a Johannine community)."
+          ],
+          "rationale": "The answer aligns with historic Christian tradition that John the Apostle wrote the Gospel and is the 'disciple whom Jesus loved,' which is doctrinally orthodox. However, it presents the authorship as explicit biblical fact, whereas Scripture itself does not name John as the author. It also omits nuanced scholarly debate about the beloved disciple’s identity and the possibility of alternative authorship theories. The response is accurate in its core identification but lacks important biblical and scholarly caveats."
+        },
+        "created_at": "2025-12-30T00:10:31.786Z"
+      },
+      {
+        "id": 769,
+        "eval_id": 171,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:10:31.786Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 291,
+        "eval_id": 171,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "John the Apostle, one of Jesus' twelve disciples and the disciple whom Jesus loved",
+          "toolCalls": []
+        },
+        "start_time": 183.652541,
+        "end_time": 3040.119625,
+        "input_tokens": 283,
+        "output_tokens": 308,
+        "total_tokens": 591,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 57,
+    "run_id": 1,
+    "name": "Context Understanding [Grok 4.1 Fast]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Grok 4.1 Fast",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:02.279Z"
+  }
+}

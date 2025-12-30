@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 139,
+    "suite_id": 30,
+    "col_order": 45,
+    "input": "Quote 1 Peter 3:15 from the King James Version (KJV) exactly as written",
+    "expected": "But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear",
+    "output": "But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear:",
+    "duration": 1733,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:42:02.025Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 242,
+        "eval_id": 139,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:42:03.781Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 102,
+        "eval_id": 139,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote 1 Peter 3:15 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear:",
+          "toolCalls": []
+        },
+        "start_time": 216.057292,
+        "end_time": 1947.49,
+        "input_tokens": 94,
+        "output_tokens": 42,
+        "total_tokens": 136,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Mistral Large 2512]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Mistral Large 2512",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:42:02.025Z"
+  }
+}

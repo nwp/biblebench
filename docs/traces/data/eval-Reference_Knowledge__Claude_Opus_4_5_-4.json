@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 448,
+    "suite_id": 93,
+    "col_order": 4,
+    "input": "Where does Paul write about the armor of God?",
+    "expected": "Ephesians 6:10-18",
+    "output": "Ephesians 6:10-18",
+    "duration": 2121,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:37.306Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 992,
+        "eval_id": 448,
+        "name": "Scripture Reference Accuracy",
+        "score": 1,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": true,
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:17:39.450Z"
+      },
+      {
+        "id": 993,
+        "eval_id": 448,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:17:39.450Z"
+      },
+      {
+        "id": 994,
+        "eval_id": 448,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Ephesians 6:10-18"
+        },
+        "created_at": "2025-12-30T00:17:39.450Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 389,
+        "eval_id": 448,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhere does Paul write about the armor of God?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Ephesians 6:10-18",
+          "toolCalls": []
+        },
+        "start_time": 163.907542,
+        "end_time": 2284.010875,
+        "input_tokens": 62,
+        "output_tokens": 13,
+        "total_tokens": 75,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 93,
+    "run_id": 1,
+    "name": "Reference Knowledge [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:37.306Z"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 275,
+    "suite_id": 60,
+    "col_order": 40,
+    "input": "Quote Lamentations 3:22-23 from the New International Version (NIV) exactly as written",
+    "expected": "Because of the Lord's great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness",
+    "output": "Because of the LORD’s great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness.",
+    "duration": 11607,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:14:46.382Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 728,
+        "eval_id": 275,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T00:14:58.018Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 267,
+        "eval_id": 275,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Lamentations 3:22-23 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Because of the LORD’s great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness.",
+          "toolCalls": []
+        },
+        "start_time": 196.057542,
+        "end_time": 11799.651917,
+        "input_tokens": 93,
+        "output_tokens": 953,
+        "total_tokens": 1046,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Gemini 3 Pro Preview]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Gemini 3 Pro Preview",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:14:46.381Z"
+  }
+}

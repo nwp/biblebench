@@ -1,0 +1,113 @@
+{
+  "eval": {
+    "id": 195,
+    "suite_id": 80,
+    "col_order": 3,
+    "input": "What is the doctrine of original sin?",
+    "expected": "Original sin is the doctrine that all humanity inherited a sinful nature from Adam's fall. As a result, all people are born with a inclination toward sin and are spiritually separated from God. This doesn't mean infants are guilty of actual sins, but that human nature is corrupted and inclined toward evil apart from God's grace.",
+    "output": "# The Doctrine of Original Sin\n\n## Definition\n\nOriginal sin is the Christian doctrine that humanity inherits a sinful nature and guilt as a consequence of Adam's first transgression in the Garden of Eden. It explains why all humans are born with an innate inclination toward sin and are separated from God from conception.\n\n## Key Components\n\n### 1. **Historical Origin**\n- Rooted in Adam and Eve's disobedience in Genesis 3\n- Their fall affected not only themselves but all their descendants\n- Sin entered the world through one man (Romans 5:12)\n\n### 2. **Universal Transmission**\n- All humans (except Christ) inherit this sinful condition\n- \"In sin did my mother conceive me\" (Psalm 51:5)\n- Transmitted through natural generation, not imitation\n\n### 3. **Effects on Humanity**\n- **Guilt**: Legal liability before God\n- **Corruption**: A nature inclined toward evil rather than good\n- **Spiritual death**: Separation from God and inability to save oneself\n- **Total depravity**: Every aspect of human nature is affected (though not that humans are as evil as possible)\n\n## Biblical Foundation\n\n- **Romans 5:12-19**: Adam's sin brought condemnation to all\n- **1 Corinthians 15:22**: \"In Adam all die\"\n- **Ephesians 2:1-3**: We are \"by nature children of wrath\"\n- **Psalm 51:5; 58:3**: Sinfulness from birth\n\n## Theological Implications\n\nThis doctrine underscores humanity's desperate need for divine grace and explains why salvation must come entirely from God through Christ, the \"second Adam\" (Romans 5:15-19).",
+    "duration": 62305,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.485Z",
+    "score": 0.8120689655172414,
+    "scores": [
+      {
+        "id": 1079,
+        "eval_id": 195,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Overbroad universal transmission: states that all humans except Christ inherit this sinful condition; this does not reflect some traditions (e.g., Catholic teaching on Mary being preserved from original sin by the Immaculate Conception).",
+            "Guilt language: the response says humans inherit guilt as a consequence, which can misrepresent some views that original sin is a state or condition of corruption rather than personal guilt in infants.",
+            "No explicit caveat that original sin is not identical to personal sins; the expected answer notes that infants are not guilty of actual sins; while the LLM mentions guilt, it doesn’t clearly distinguish personal sin from the inherited condition."
+          ],
+          "rationale": "The answer faithfully outlines the core elements of original sin: its biblical basis (Genesis, Romans, 1 Corinthians, Ephesians, Psalms), universal transmission, effects (guilt/condemnation, corruption, spiritual death, total depravity), and the need for grace with the Christological link to the second Adam. It aligns with historic orthodoxy in many traditions and captures important distinctions and nuances (need for divine grace, Romans 5:15–19). However, it presents guilt as an inherited consequence in a way that can blur differences among traditions (e.g., Catholic teaching on original sin’s relation to personal guilt and Mary’s Immaculate Conception) and it does not explicitly distinguish original sin from personal sins in infancy, which is a common point of clarification in doctrinal discussions. These are minor gaps but worth noting for precise doctrinal communication."
+        },
+        "created_at": "2025-12-30T00:17:44.799Z"
+      },
+      {
+        "id": 1080,
+        "eval_id": 195,
+        "name": "Heresy Detection Judge",
+        "score": 1,
+        "description": "Detects heretical or unorthodox theological statements",
+        "metadata": {
+          "contains_heresy": false,
+          "severity": "none",
+          "heresies_detected": [],
+          "explanation": "The response presents an orthodox summary of Original Sin as understood in Western Christian theology: humanity inherits a sinful condition and guilt due to Adam, transmission through natural generation, and effects including guilt, corruption, spiritual death, and total depravity, with salvation occurring only by divine grace through Christ (the second Adam). It cites key passages (Rom 5:12-19; 1 Cor 15:22; Eph 2:1-3; Ps 51:5; Ps 58:3) and rightly notes the central role of grace and Christ’s atonement. Specific issues to note for ecumenical precision: \n- Eastern Orthodox nuance distinguishes ancestral corruption from inherited guilt; the language of “guilt” is more typical of Western (Catholic/Protestant) theology. Some readers may prefer wording that emphasizes corruption and mortality rather than juridical guilt across all people. \n- The clause “All humans (except Christ) inherit this sinful condition” is generally accurate, but could be clarified as: Jesus did not inherit original sin due to the Virgin Birth; He is the sinless Second Adam. \n- The term “Total depravity” is a Reformed/Calvinist technical label; other traditions (e.g., Arminian, Catholic, Orthodox) affirm human depravity and need for grace but use different vocabulary and emphasis on human cooperation with grace. \n- The use of Psalm 51:5 and Psalm 58:3 should be understood in their original genres and translations, noting potential nuances in modern translations. \nOverall, no explicit heretical teachings are present; the main considerations are ecumenical-normative clarifications and nuanced terminology rather than doctrinal errors."
+        },
+        "created_at": "2025-12-30T00:17:44.799Z"
+      },
+      {
+        "id": 1081,
+        "eval_id": 195,
+        "name": "Doctrinal Completeness",
+        "score": 0.5862068965517241,
+        "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+        "metadata": {
+          "expectedTerms": [
+            "original",
+            "doctrine",
+            "humanity",
+            "inherited",
+            "sinful",
+            "nature",
+            "adam",
+            "fall",
+            "result",
+            "people"
+          ],
+          "coveredCount": 17,
+          "totalExpected": 29,
+          "completeness": 0.5862068965517241
+        },
+        "created_at": "2025-12-30T00:17:44.799Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 413,
+        "eval_id": 195,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\nWhat is the doctrine of original sin?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# The Doctrine of Original Sin\n\n## Definition\n\nOriginal sin is the Christian doctrine that humanity inherits a sinful nature and guilt as a consequence of Adam's first transgression in the Garden of Eden. It explains why all humans are born with an innate inclination toward sin and are separated from God from conception.\n\n## Key Components\n\n### 1. **Historical Origin**\n- Rooted in Adam and Eve's disobedience in Genesis 3\n- Their fall affected not only themselves but all their descendants\n- Sin entered the world through one man (Romans 5:12)\n\n### 2. **Universal Transmission**\n- All humans (except Christ) inherit this sinful condition\n- \"In sin did my mother conceive me\" (Psalm 51:5)\n- Transmitted through natural generation, not imitation\n\n### 3. **Effects on Humanity**\n- **Guilt**: Legal liability before God\n- **Corruption**: A nature inclined toward evil rather than good\n- **Spiritual death**: Separation from God and inability to save oneself\n- **Total depravity**: Every aspect of human nature is affected (though not that humans are as evil as possible)\n\n## Biblical Foundation\n\n- **Romans 5:12-19**: Adam's sin brought condemnation to all\n- **1 Corinthians 15:22**: \"In Adam all die\"\n- **Ephesians 2:1-3**: We are \"by nature children of wrath\"\n- **Psalm 51:5; 58:3**: Sinfulness from birth\n\n## Theological Implications\n\nThis doctrine underscores humanity's desperate need for divine grace and explains why salvation must come entirely from God through Christ, the \"second Adam\" (Romans 5:15-19).",
+          "toolCalls": []
+        },
+        "start_time": 434.012542,
+        "end_time": 9906.08225,
+        "input_tokens": 48,
+        "output_tokens": 393,
+        "total_tokens": 441,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 80,
+    "run_id": 1,
+    "name": "Core Doctrines [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/core-doctrines.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Core Doctrines",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.485Z"
+  }
+}

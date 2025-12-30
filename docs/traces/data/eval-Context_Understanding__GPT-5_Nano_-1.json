@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 276,
+    "suite_id": 60,
+    "col_order": 1,
+    "input": "What was Paul's background before his conversion?",
+    "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
+    "output": "- Jew from the tribe of Benjamin\n- Born in Tarsus, Cilicia; Roman citizen\n- Pharisee; educated at the feet of Gamaliel\n- Tentmaker by trade\n- Zealous persecutor of the church; approved Stephen’s martyrdom and persecuted Christians\n\n(These summarize his background before his conversion on the road to Damascus.)",
+    "duration": 48505,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.180Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 789,
+        "eval_id": 276,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM accurately summarizes Paul's pre-conversion background as presented in Scripture: he was a Jew from the tribe of Benjamin (Philippians 3:5), born in Tarsus in Cilicia and a Roman citizen (Acts 22:3; Acts 16:37; Acts 28:.”), a Pharisee educated under Gamaliel (Acts 22:3; Acts 5:34-35), and he worked as a tentmaker (Acts 18:3). He was a zealous persecutor of the church and actively approved or participated in the martyrdom of Stephen and persecuted Christians (Acts 7:58; Acts 9:1-2). These details are directly supported by biblical texts and align with historic Christian teaching about Paul’s background before his conversion on the road to Damascus (Acts 9). The response could be enhanced by explicitly noting his upbringing in Jerusalem (as Acts 22:3 indicates) to emphasize the full scope of his rabbinic training, but the included points already imply that upbringing through his Gamaliel education. Overall, doctrinally sound, biblically grounded, and with appropriate nuance about the key pre-conversion identity factors."
+        },
+        "created_at": "2025-12-30T00:34:56.705Z"
+      },
+      {
+        "id": 790,
+        "eval_id": 276,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:56.705Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 299,
+        "eval_id": 276,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "- Jew from the tribe of Benjamin\n- Born in Tarsus, Cilicia; Roman citizen\n- Pharisee; educated at the feet of Gamaliel\n- Tentmaker by trade\n- Zealous persecutor of the church; approved Stephen’s martyrdom and persecuted Christians\n\n(These summarize his background before his conversion on the road to Damascus.)",
+          "toolCalls": []
+        },
+        "start_time": 203.790417,
+        "end_time": 15874.777958,
+        "input_tokens": 132,
+        "output_tokens": 1359,
+        "total_tokens": 1491,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.180Z"
+  }
+}

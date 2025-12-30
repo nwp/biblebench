@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 447,
+    "suite_id": 93,
+    "col_order": 3,
+    "input": "What is the reference for the Ten Commandments?",
+    "expected": "Exodus 20",
+    "output": "Exodus 20:1-17\n\n(Note: The Ten Commandments are also repeated in Deuteronomy 5:6-21)",
+    "duration": 2163,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:17:37.306Z",
+    "score": 0.8333333333333334,
+    "scores": [
+      {
+        "id": 1001,
+        "eval_id": 447,
+        "name": "Scripture Reference Accuracy",
+        "score": 0.5,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:17:39.493Z"
+      },
+      {
+        "id": 1002,
+        "eval_id": 447,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T00:17:39.493Z"
+      },
+      {
+        "id": 1003,
+        "eval_id": 447,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Exodus 20:1-17\n\n(Note: The Ten Commandments are also repeated in Deuteronomy 5:6-21)"
+        },
+        "created_at": "2025-12-30T00:17:39.493Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 392,
+        "eval_id": 447,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for the Ten Commandments?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Exodus 20:1-17\n\n(Note: The Ten Commandments are also repeated in Deuteronomy 5:6-21)",
+          "toolCalls": []
+        },
+        "start_time": 163.840542,
+        "end_time": 2326.517084,
+        "input_tokens": 63,
+        "output_tokens": 36,
+        "total_tokens": 99,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 93,
+    "run_id": 1,
+    "name": "Reference Knowledge [Claude Opus 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Claude Opus 4.5",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:17:37.306Z"
+  }
+}

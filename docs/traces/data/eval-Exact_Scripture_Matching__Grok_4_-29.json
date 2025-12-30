@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 264,
+    "suite_id": 60,
+    "col_order": 29,
+    "input": "Quote Matthew 28:19-20 from the English Standard Version (ESV) exactly as written",
+    "expected": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age",
+    "output": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.",
+    "duration": 7881,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:10:03.501Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 622,
+        "eval_id": 264,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:10:11.409Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 236,
+        "eval_id": 264,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Matthew 28:19-20 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.",
+          "toolCalls": []
+        },
+        "start_time": 195.225083,
+        "end_time": 8071.665458,
+        "input_tokens": 770,
+        "output_tokens": 297,
+        "total_tokens": 1067,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Grok 4]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Grok 4",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:10:03.501Z"
+  }
+}

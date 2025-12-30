@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 202,
+    "suite_id": 14,
+    "col_order": 27,
+    "input": "Quote Matthew 28:19-20 from the King James Version (KJV) exactly as written",
+    "expected": "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world",
+    "output": "Go ye therefore, and teach all nations, baptising them in the name of the Father, and of the Son, and of the Holy Ghost:\n\nTeaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world. Amen.",
+    "duration": 27971,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:32:45.827Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 92,
+        "eval_id": 202,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T00:33:13.848Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 92,
+        "eval_id": 202,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Matthew 28:19-20 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Go ye therefore, and teach all nations, baptising them in the name of the Father, and of the Son, and of the Holy Ghost:\n\nTeaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world. Amen.",
+          "toolCalls": []
+        },
+        "start_time": 461.134459,
+        "end_time": 28405.884584,
+        "input_tokens": 92,
+        "output_tokens": 1797,
+        "total_tokens": 1889,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 14,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:32:45.827Z"
+  }
+}

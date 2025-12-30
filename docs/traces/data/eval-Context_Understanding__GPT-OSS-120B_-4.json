@@ -1,0 +1,89 @@
+{
+  "eval": {
+    "id": 90,
+    "suite_id": 29,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "that.His disciples and the surrounding Jewish crowd gathered around him in Galilee.",
+    "duration": 31761,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-29T23:45:20.286Z",
+    "score": 0.44,
+    "scores": [
+      {
+        "id": 383,
+        "eval_id": 90,
+        "name": "Theological Accuracy Judge",
+        "score": 0.88,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Extraneous stray text 'that.' at the beginning of the sentence.",
+            "The phrase 'surrounding Jewish crowd' could be read as excluding Gentiles; while the sermon's primary audience included the disciples and the crowds, the biblical text does not limit the audience to Jews alone in all cases."
+          ],
+          "rationale": "The answer correctly identifies that the Sermon on the Mount was delivered to Jesus' disciples and the crowds that followed him, and it places the event in Galilee, aligning with Matthew 5:1. This corresponds to the commonly taught view that both the disciples and the broader crowd were present. The inclusion of 'Galilee' is accurate. The response is slightly hampered by a stray typographical element ('that.') and a wording choice that could be read as overly exclusive to Jews; more precise phrasing would acknowledge that the audience consisted of the disciples and the crowds, which included a broader mix beyond strictly Jewish listeners in the biblical account. Overall, the content is doctrinally sound, biblically grounded, and nuanced enough for the question. "
+        },
+        "created_at": "2025-12-29T23:45:52.067Z"
+      },
+      {
+        "id": 384,
+        "eval_id": 90,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-29T23:45:52.067Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 146,
+        "eval_id": 90,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "that.His disciples and the surrounding Jewish crowd gathered around him in Galilee.",
+          "toolCalls": []
+        },
+        "start_time": 162.525875,
+        "end_time": 1944.296833,
+        "input_tokens": 200,
+        "output_tokens": 199,
+        "total_tokens": 399,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-OSS-120B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-OSS-120B",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-29T23:45:20.286Z"
+  }
+}

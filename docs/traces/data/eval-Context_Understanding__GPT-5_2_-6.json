@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 273,
+    "suite_id": 59,
+    "col_order": 6,
+    "input": "What was the relationship between the books of Kings and Chronicles?",
+    "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
+    "output": "Chronicles is a later retelling of the history covered in Samuel–Kings, using Kings as a major source but reshaping it with a Judean, Davidic, and temple-centered focus. Kings narrates both Israel and Judah through the exile with emphasis on prophetic evaluation of the monarchy; Chronicles largely omits the northern kingdom’s story and many negative details, highlights worship reforms and the Levites, and retells the story to explain exile and call for renewed faithfulness.",
+    "duration": 29639,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.179Z",
+    "score": 0.44,
+    "scores": [
+      {
+        "id": 769,
+        "eval_id": 273,
+        "name": "Theological Accuracy Judge",
+        "score": 0.88,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response accurately characterizes Chronicles as a later retelling of the Samuel–Kings narrative, using Kings as a key source while reframing the material with a Judean, Davidic, temple-centered emphasis. It correctly notes Chronicles’ selective focus on Judah, the Levitical/priestly emphasis, and the Davidic line, as well as its tendency to downplay the Northern Kingdom and some negative details. It also aligns with the standard theological understanding that Chronicles interprets exile in terms of covenant faithfulness and calls for renewed devotion to temple worship. A minor caveat is that Kings ends with the exile of Judah (and includes material about the Northern kingdom earlier in the narrative), so the phrasing “through the exile” is a simplification, not a major doctrinal error. Overall, the answer is doctrinally sound, biblically grounded, and provides solid nuance."
+        },
+        "created_at": "2025-12-30T00:34:37.838Z"
+      },
+      {
+        "id": 770,
+        "eval_id": 273,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:37.838Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 291,
+        "eval_id": 273,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Chronicles is a later retelling of the history covered in Samuel–Kings, using Kings as a major source but reshaping it with a Judean, Davidic, and temple-centered focus. Kings narrates both Israel and Judah through the exile with emphasis on prophetic evaluation of the monarchy; Chronicles largely omits the northern kingdom’s story and many negative details, highlights worship reforms and the Levites, and retells the story to explain exile and call for renewed faithfulness.",
+          "toolCalls": []
+        },
+        "start_time": 203.29325,
+        "end_time": 5458.224375,
+        "input_tokens": 136,
+        "output_tokens": 152,
+        "total_tokens": 288,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 59,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5.2]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5.2",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.179Z"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 93,
+    "suite_id": 29,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "Jesus used parables to convey spiritual truths indirectly, making them memorable, exciting, and open to interpretation for those ready to understand while concealing the message from hostile or unprepared listeners.",
+    "duration": 27027,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:38:36.604Z",
+    "score": 0.4,
+    "scores": [
+      {
+        "id": 346,
+        "eval_id": 93,
+        "name": "Theological Accuracy Judge",
+        "score": 0.8,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s answer aligns with biblical teaching: parables convey spiritual truths indirectly and are most clearly understood by receptive hearers while appearing to conceal from those who reject or are unreceptive (as echoed in Matt 13:10–17). It also correctly notes that parables are memorable through everyday storytelling. These points are consistent with historic Christian orthodoxy and Scripture. Nuance is present but could be deeper: the answer could mention Jesus’ explicit statements about comprehending the mysteries of the kingdom and the prophetic fulfillment in Isaiah (e.g., Matt 13:11–17; Isa 6:9–10) and acknowledge that Jesus sometimes provided explanations to His disciples. The phrase “open to interpretation” is not inaccurate but risks implying ambiguity of meaning beyond what the text sometimes intends, which could be clarified. Overall, the core doctrinal and biblical points are sound with modest room for fuller nuance."
+        },
+        "created_at": "2025-12-30T00:39:03.650Z"
+      },
+      {
+        "id": 347,
+        "eval_id": 93,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:39:03.650Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 127,
+        "eval_id": 93,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Jesus used parables to convey spiritual truths indirectly, making them memorable, exciting, and open to interpretation for those ready to understand while concealing the message from hostile or unprepared listeners.",
+          "toolCalls": []
+        },
+        "start_time": 202.088041,
+        "end_time": 1524.289625,
+        "input_tokens": 195,
+        "output_tokens": 111,
+        "total_tokens": 306,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-OSS-20B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-OSS-20B",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:38:36.604Z"
+  }
+}

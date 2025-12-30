@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 93,
+    "suite_id": 29,
+    "col_order": 7,
+    "input": "Why did Jesus use parables in his teaching?",
+    "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
+    "output": "To reveal the mysteries of the Kingdom of God to those with spiritual insight while concealing truth from the hard-hearted, and to communicate profound spiritual truths through familiar, everyday imagery.",
+    "duration": 40911,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:59:18.470Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 351,
+        "eval_id": 93,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM’s answer aligns well with biblical teaching. It states that Jesus used parables to reveal the kingdom’s truths to those with spiritual insight (insiders) and to conceal them from the hard-hearted (outsiders), which mirrors the Matthew 13 dynamic of insiders receiving revelation while outsiders struggle to understand. It also correctly notes that parables convey profound truths through familiar, everyday imagery. This captures the core purpose of parables as a teaching method in Scripture. Minor gaps exist: (1) it does not mention Jesus’ private explanations to the disciples (e.g., Matthew 13:36-43) or the explicit fulfillment of Isaiah’s prophecy that underpins the parabolic method (Matthew 13:14-15; Isaiah 6). (2) It could more explicitly acknowledge that the parables serve both revelation to the receptive and judgment/response testing for unbelief. Nonetheless, the statement is consistent with historic orthodoxy and grounded in Scripture, and it captures the essential distinctions and imagery involved.)"
+        },
+        "created_at": "2025-12-30T00:59:59.399Z"
+      },
+      {
+        "id": 352,
+        "eval_id": 93,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:59:59.399Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 129,
+        "eval_id": 93,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhy did Jesus use parables in his teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To reveal the mysteries of the Kingdom of God to those with spiritual insight while concealing truth from the hard-hearted, and to communicate profound spiritual truths through familiar, everyday imagery.",
+          "toolCalls": []
+        },
+        "start_time": 163.515167,
+        "end_time": 16251.266125,
+        "input_tokens": 134,
+        "output_tokens": 777,
+        "total_tokens": 911,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 29,
+    "run_id": 1,
+    "name": "Context Understanding [GLM-4.7]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GLM-4.7",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:59:18.469Z"
+  }
+}

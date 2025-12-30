@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 137,
+    "suite_id": 30,
+    "col_order": 43,
+    "input": "Quote Colossians 3:23 from the New International Version (NIV) exactly as written",
+    "expected": "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters",
+    "output": "Whatever you do, work at it with all your heart, as if you were working for the Lord.",
+    "duration": 7087,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:38:54.225Z",
+    "score": 0,
+    "scores": [
+      {
+        "id": 337,
+        "eval_id": 137,
+        "name": "Exact Match",
+        "score": 0,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": false
+        },
+        "created_at": "2025-12-30T00:39:01.333Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 120,
+        "eval_id": 137,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Colossians 3:23 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Whatever you do, work at it with all your heart, as if you were working for the Lord.",
+          "toolCalls": []
+        },
+        "start_time": 215.362458,
+        "end_time": 7299.265541,
+        "input_tokens": 155,
+        "output_tokens": 284,
+        "total_tokens": 439,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-OSS-20B]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-OSS-20B",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:38:54.224Z"
+  }
+}

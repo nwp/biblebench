@@ -1,0 +1,109 @@
+{
+  "eval": {
+    "id": 198,
+    "suite_id": 80,
+    "col_order": 6,
+    "input": "What is the gospel?",
+    "expected": "The gospel is the good news that Jesus Christ, the eternal Son of God, became human, lived a perfect life, died on the cross as a substitute for sinners, rose from the dead, and now offers salvation and reconciliation with God to all who repent and believe in him. It proclaims that salvation is a free gift of God's grace, not earned by human effort, received through faith in Christ alone.",
+    "output": "# The Gospel\n\n## Definition\n\nThe gospel (from Greek *euangelion*, meaning \"good news\") is the announcement that God has accomplished salvation for sinners through the life, death, and resurrection of Jesus Christ.\n\n## Core Elements\n\nThe gospel centers on these historical and theological realities:\n\n### 1. **The Problem: Human Sin**\n- All people have sinned and fall short of God's glory (Romans 3:23)\n- Sin separates us from God and deserves death (Romans 6:23)\n- We cannot save ourselves through good works (Ephesians 2:8-9)\n\n### 2. **God's Solution: Jesus Christ**\n- **His Life**: Jesus lived the perfect, sinless life we could not live (2 Corinthians 5:21)\n- **His Death**: Christ died as a substitute, bearing God's wrath for our sins (1 Peter 3:18; Isaiah 53:5-6)\n- **His Resurrection**: God raised Jesus from the dead, vindicating Him and defeating sin and death (1 Corinthians 15:3-4, 17)\n\n### 3. **The Response: Repentance and Faith**\n- We must repent (turn from sin) and believe in Jesus Christ (Mark 1:15; Acts 20:21)\n- Salvation is received by grace through faith, not earned (Ephesians 2:8-9)\n\n### 4. **The Result: Salvation and New Life**\n- Forgiveness of sins and reconciliation with God (Colossians 1:13-14)\n- Eternal life and adoption into God's family (John 3:16; Romans 8:15)\n- Transformation by the Holy Spirit (2 Corinthians 5:17)\n\n## Summary\n\nThe gospel is God's rescue plan: sinners are saved by grace alone, through faith alone, in Christ alone, for God's glory alone.",
+    "duration": 43909,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.485Z",
+    "score": 0.9004761904761905,
+    "scores": [
+      {
+        "id": 580,
+        "eval_id": 198,
+        "name": "Theological Accuracy Judge",
+        "score": 0.93,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response accurately presents the gospel in terms of the problem of sin, the provision of salvation through Jesus’ life, death, and resurrection, the appropriate human response of repentance and faith, and the resulting forgiveness, reconciliation, and new life. It aligns with historic Christian orthodoxy (substitutionary atonement, grace through faith, Christ-alone, etc.) and supports its claims with biblically grounded citations (Rom 3:23; 6:23; Eph 2:8-9; 2 Cor 5:21; 1 Pet 3:18; Isa 53; 1 Cor 15:3-4,17; Mark 1:15; Acts 20:21; Col 1:13-14; John 3:16; Rom 8:15; 2 Cor 5:17). The structure (Problem-Solution-Response-Result) and the inclusion of grace, faith, repentance, and the transformative work of the Spirit capture important theological nuances. A minor caveat: the incarnation is not expressly stated as a separate point (it’s implied by “life” of Jesus), but this is a minor omission and does not undermine the overall accuracy. The final summary line about grace alone, faith alone, Christ alone, and to God’s glory alone is faithful to Reformation-era confessional language."
+        },
+        "created_at": "2025-12-30T00:17:26.402Z"
+      },
+      {
+        "id": 581,
+        "eval_id": 198,
+        "name": "Heresy Detection Judge",
+        "score": 1,
+        "description": "Detects heretical or unorthodox theological statements",
+        "metadata": {
+          "contains_heresy": false,
+          "severity": "none",
+          "heresies_detected": [],
+          "explanation": "The response presents a standard, orthodox gospel summary: humanity in sin, Christ’s life, death (as a penal substitution), and resurrection, plus repentance and faith, by grace through faith, resulting in forgiveness, reconciliation, and new life via the Holy Spirit. It affirms sola gratia, solus Christus, and sola fide, and does not endorse any of the listed heresies (Arianism, Modalism, Pelagianism, Gnosticism, Docetism, etc.). No explicit denial of orthodox doctrines (such as the Trinity or the full deity and humanity of Christ) is present; the substitutionary atonement statement implies classical Christology. Minor clarifications could include explicit statements about the Trinity and the full deity of Christ, but no heretical content is detected."
+        },
+        "created_at": "2025-12-30T00:17:26.402Z"
+      },
+      {
+        "id": 582,
+        "eval_id": 198,
+        "name": "Doctrinal Completeness",
+        "score": 0.7714285714285715,
+        "description": "Evaluates how completely the response covers essential aspects of the doctrine",
+        "metadata": {
+          "expectedTerms": [
+            "gospel",
+            "good",
+            "news",
+            "jesus",
+            "christ",
+            "eternal",
+            "became",
+            "human",
+            "lived",
+            "perfect"
+          ],
+          "coveredCount": 27,
+          "totalExpected": 35,
+          "completeness": 0.7714285714285715
+        },
+        "created_at": "2025-12-30T00:17:26.402Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 167,
+        "eval_id": 198,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\nWhat is the gospel?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# The Gospel\n\n## Definition\n\nThe gospel (from Greek *euangelion*, meaning \"good news\") is the announcement that God has accomplished salvation for sinners through the life, death, and resurrection of Jesus Christ.\n\n## Core Elements\n\nThe gospel centers on these historical and theological realities:\n\n### 1. **The Problem: Human Sin**\n- All people have sinned and fall short of God's glory (Romans 3:23)\n- Sin separates us from God and deserves death (Romans 6:23)\n- We cannot save ourselves through good works (Ephesians 2:8-9)\n\n### 2. **God's Solution: Jesus Christ**\n- **His Life**: Jesus lived the perfect, sinless life we could not live (2 Corinthians 5:21)\n- **His Death**: Christ died as a substitute, bearing God's wrath for our sins (1 Peter 3:18; Isaiah 53:5-6)\n- **His Resurrection**: God raised Jesus from the dead, vindicating Him and defeating sin and death (1 Corinthians 15:3-4, 17)\n\n### 3. **The Response: Repentance and Faith**\n- We must repent (turn from sin) and believe in Jesus Christ (Mark 1:15; Acts 20:21)\n- Salvation is received by grace through faith, not earned (Ephesians 2:8-9)\n\n### 4. **The Result: Salvation and New Life**\n- Forgiveness of sins and reconciliation with God (Colossians 1:13-14)\n- Eternal life and adoption into God's family (John 3:16; Romans 8:15)\n- Transformation by the Holy Spirit (2 Corinthians 5:17)\n\n## Summary\n\nThe gospel is God's rescue plan: sinners are saved by grace alone, through faith alone, in Christ alone, for God's glory alone.",
+          "toolCalls": []
+        },
+        "start_time": 434.28275,
+        "end_time": 10543.956667,
+        "input_tokens": 45,
+        "output_tokens": 445,
+        "total_tokens": 490,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 80,
+    "run_id": 1,
+    "name": "Core Doctrines [Claude Sonnet 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/core-doctrines.eval.ts",
+    "variant_name": "Claude Sonnet 4.5",
+    "variant_group": "Core Doctrines",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.485Z"
+  }
+}

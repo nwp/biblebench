@@ -1,0 +1,86 @@
+{
+  "eval": {
+    "id": 277,
+    "suite_id": 60,
+    "col_order": 2,
+    "input": "To whom was the book of Romans written and why?",
+    "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+    "output": "To the church in Rome—the believers there, both Jewish and Gentile Christians. Its purpose is to present the gospel of God’s righteousness by faith, explain God’s plan for Jews and Gentiles, exhort them to live by faith, and prepare for Paul’s planned visit to Rome and his mission to Spain (seeking their support).",
+    "duration": 45540,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:34:08.180Z",
+    "score": 0.46,
+    "scores": [
+      {
+        "id": 787,
+        "eval_id": 277,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The answer accurately identifies the addressees as the church in Rome, consisting of both Jewish and Gentile believers. It correctly states the gospel focus as God’s righteousness revealed by faith and notes the broader program of God’s plan for Jews and Gentiles, which Romans develops (including the unity of Jew and Gentile and salvation by faith). It also correctly notes that Romans exhorts living by faith and that Paul intended to visit Rome and seek support for his mission to Spain, which is explicitly stated in Romans 15:24 and 28–29. This aligns with biblical teaching and traditional orthodoxy regarding Romans’ purpose and audience. Nuance-wise, it captures the main aims (doctrine, exhortation, and facilitating Paul’s future plans) and acknowledges the Jew-Gentile dimension; a fuller nuance would emphasize the theme of justification by faith across both groups and the resulting unity of the church, but the core distinctions are present."
+        },
+        "created_at": "2025-12-30T00:34:53.738Z"
+      },
+      {
+        "id": 788,
+        "eval_id": 277,
+        "name": "Key Points Coverage",
+        "score": 0,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPoints": [],
+          "matchedPoints": [],
+          "missedPoints": [],
+          "coverage": 0,
+          "totalPoints": 0,
+          "pointsFound": 0
+        },
+        "created_at": "2025-12-30T00:34:53.738Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 298,
+        "eval_id": 277,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "To the church in Rome—the believers there, both Jewish and Gentile Christians. Its purpose is to present the gospel of God’s righteousness by faith, explain God’s plan for Jews and Gentiles, exhort them to live by faith, and prepare for Paul’s planned visit to Rome and his mission to Spain (seeking their support).",
+          "toolCalls": []
+        },
+        "start_time": 203.988792,
+        "end_time": 17511.863417,
+        "input_tokens": 135,
+        "output_tokens": 1097,
+        "total_tokens": 1232,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 60,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5 Nano]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5 Nano",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:34:08.180Z"
+  }
+}

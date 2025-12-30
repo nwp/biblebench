@@ -1,0 +1,104 @@
+{
+  "eval": {
+    "id": 72,
+    "suite_id": 67,
+    "col_order": 5,
+    "input": "A group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?",
+    "expected": "This is Gnosticism, an ancient heresy. It contradicts Christianity in multiple ways: Christianity teaches salvation through faith in Christ's public work (not secret knowledge), affirms the goodness of God's material creation (Genesis 1), and proclaims resurrection of the body (not escape from physicality). Gnosticism was explicitly condemned by early church fathers and the New Testament writings (especially 1 John and Colossians).",
+    "output": "# Analysis: Gnostic Heresy, Not Orthodox Christianity\n\n## Classification\nThis represents **classical Gnosticism**, one of Christianity's earliest and most significant heresies (2nd-3rd centuries CE).\n\n## Why This Is Heretical\n\n### 1. **Denial of God's Created Order**\n- **Orthodox position**: God created matter and declared it \"good\" (Genesis 1:31)\n- **Gnostic error**: Matter is inherently evil, requiring escape rather than redemption\n- This undermines the goodness of creation and God's sovereignty\n\n### 2. **Distortion of Incarnation**\n- **Orthodox position**: Christ took on real flesh; resurrection of the body is promised\n- **Gnostic error**: Denies genuine incarnation; the material body cannot be redeemed\n- This contradicts 1 John 4:2-3 and fundamental Christology\n\n### 3. **False Soteriology**\n- **Orthodox position**: Salvation through Christ's work, available to all who believe (Romans 3:22)\n- **Gnostic error**: Salvation restricted to those with secret knowledge; creates spiritual elitism\n- Contradicts Christ's inclusive gospel\n\n### 4. **Rejection of Scripture's Authority**\n- Gnostics claimed hidden teachings unavailable in public Scripture\n- This denies sola scriptura and the sufficiency of revelation\n\n## Historical Condemnation\n- Early Church Fathers (Irenaeus, Tertullian, Hippolytus) condemned Gnosticism explicitly\n- Church Councils rejected it as incompatible with apostolic teaching\n\n## Answer\n**No**—this is decisively non-Christian teaching.",
+    "duration": 46893,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.472Z",
+    "score": 0.9500000000000001,
+    "scores": [
+      {
+        "id": 634,
+        "eval_id": 72,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Genesis 1:31 states 'very good' rather than simply 'good' (minor factual slip).",
+            "Describing rejection of 'sola scriptura' as a universal early-Gnostic stance is slightly anachronistic; Gnostics typically claimed extra or secret writings/knowledge beyond public Scripture rather than a formal Protestant-like doctrine of 'sola scriptura'."
+          ],
+          "rationale": "The response correctly identifies classical Gnosticism, its key errors (cosmic/material dualism, belief in salvation through secret knowledge, denial of the full incarnation, and the improper view of Scripture/public revelation). It rightly notes historical condemnations by church fathers. Minor factual slips (Genesis 1:31 wording) and anachronistic labeling of 'sola scriptura' should be noted, but do not undermine the overall accuracy and doctrinal stance. The answer is well-grounded in biblical references (1 John 4:2-3, Romans 3:22, Genesis creation motif) and in historical orthodoxy."
+        },
+        "created_at": "2025-12-30T00:17:29.369Z"
+      },
+      {
+        "id": 635,
+        "eval_id": 72,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T00:17:29.369Z"
+      },
+      {
+        "id": 636,
+        "eval_id": 72,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "scripture",
+            "heretical",
+            "heresy",
+            "false",
+            "error",
+            "contradicts"
+          ],
+          "count": 7
+        },
+        "created_at": "2025-12-30T00:17:29.369Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 182,
+        "eval_id": 72,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA group teaches: 'Salvation comes through secret spiritual knowledge that has been hidden from the masses. Matter is evil, and salvation is escape from the material world into the spiritual realm.' Is this Christian teaching?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "# Analysis: Gnostic Heresy, Not Orthodox Christianity\n\n## Classification\nThis represents **classical Gnosticism**, one of Christianity's earliest and most significant heresies (2nd-3rd centuries CE).\n\n## Why This Is Heretical\n\n### 1. **Denial of God's Created Order**\n- **Orthodox position**: God created matter and declared it \"good\" (Genesis 1:31)\n- **Gnostic error**: Matter is inherently evil, requiring escape rather than redemption\n- This undermines the goodness of creation and God's sovereignty\n\n### 2. **Distortion of Incarnation**\n- **Orthodox position**: Christ took on real flesh; resurrection of the body is promised\n- **Gnostic error**: Denies genuine incarnation; the material body cannot be redeemed\n- This contradicts 1 John 4:2-3 and fundamental Christology\n\n### 3. **False Soteriology**\n- **Orthodox position**: Salvation through Christ's work, available to all who believe (Romans 3:22)\n- **Gnostic error**: Salvation restricted to those with secret knowledge; creates spiritual elitism\n- Contradicts Christ's inclusive gospel\n\n### 4. **Rejection of Scripture's Authority**\n- Gnostics claimed hidden teachings unavailable in public Scripture\n- This denies sola scriptura and the sufficiency of revelation\n\n## Historical Condemnation\n- Early Church Fathers (Irenaeus, Tertullian, Hippolytus) condemned Gnosticism explicitly\n- Church Councils rejected it as incompatible with apostolic teaching\n\n## Answer\n**No**—this is decisively non-Christian teaching.",
+          "toolCalls": []
+        },
+        "start_time": 437.285667,
+        "end_time": 5726.934625,
+        "input_tokens": 87,
+        "output_tokens": 384,
+        "total_tokens": 471,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 67,
+    "run_id": 1,
+    "name": "Heresy Detection [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.472Z"
+  }
+}

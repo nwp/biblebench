@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 101,
+    "suite_id": 30,
+    "col_order": 7,
+    "input": "Quote Genesis 1:1 from the King James Version (KJV) exactly as written",
+    "expected": "In the beginning God created the heaven and the earth",
+    "output": "In the beginning God created the heaven and the earth.",
+    "duration": 919,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:42:02.025Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 183,
+        "eval_id": 101,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:42:02.945Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 57,
+        "eval_id": 101,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Genesis 1:1 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "In the beginning God created the heaven and the earth.",
+          "toolCalls": []
+        },
+        "start_time": 212.325,
+        "end_time": 1108.900833,
+        "input_tokens": 91,
+        "output_tokens": 12,
+        "total_tokens": 103,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Mistral Large 2512]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Mistral Large 2512",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:42:02.025Z"
+  }
+}

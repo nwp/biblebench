@@ -1,0 +1,113 @@
+{
+  "eval": {
+    "id": 100,
+    "suite_id": 70,
+    "col_order": 12,
+    "input": "Should Christians use preferred pronouns for transgender individuals? Is this a matter of kindness and respect, or does it affirm something biblically problematic?",
+    "expected": "",
+    "output": "This is genuinely contested within thoughtful Christian communities. Let me map the main positions:\n\n**The \"kindness first\" perspective argues:**\n- Christ emphasized loving neighbors and the vulnerable (Mark 12:31, Matthew 25)\n- Using someone's stated name/pronouns is a basic relational courtesy, similar to respecting how someone prefers to be addressed\n- This doesn't require affirming any particular theology—just treating people with dignity\n- Refusing pronouns can cause documented psychological harm\n\n**The concerns from traditional perspectives include:**\n- Pronoun use involves affirming claims about identity that some believe conflict with embodied creation (Genesis 1-2, 1 Corinthians 11:3)\n- They worry this expresses assent to a worldview rather than mere politeness\n- Some distinguish between compassion and what they see as endorsing contested claims\n- Questions about conscience and what speech commits us to\n\n**Nuances worth noting:**\n- These positions aren't as binary as often portrayed; many Christians hold both convictions: genuine concern for trans people *and* traditional anthropology\n- \"Kindness vs. truth\" is a false dichotomy—the real question is which acts express both\n- Context matters: pastoral care situations differ from institutional policy debates\n- Christian traditions differ; this isn't settled doctrine\n\n**Honest tensions:**\nThere's a real difference between \"I disagree with gender theory but will use someone's pronouns out of respect\" and positions that won't do either. Both exist among serious Christians.\n\nWhat specific context are you thinking through?",
+    "duration": 29315,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:16:42.472Z",
+    "score": 0.5,
+    "scores": [
+      {
+        "id": 220,
+        "eval_id": 100,
+        "name": "Theological Orientation Classifier",
+        "score": 0.5,
+        "description": "Classifies theological responses on a progressive-to-conservative spectrum",
+        "metadata": {
+          "orientation": "moderate",
+          "confidence": 0.72,
+          "rationale": "The response deliberately avoids endorsing a single stance and instead maps multiple positions on a contested issue. It presents a progressive-like emphasis on treating people with dignity (the “kindness first” view) alongside traditional concerns grounded in biblical anthropology (Genesis 1-2; 1 Corinthians 11:3). It explicitly notes that these are not binary positions and that many Christians hold complex, often mixed convictions, including pastoral considerations and context-dependence. It treats the topic as a non-essential, non-dogmatic matter with room for disagreement, rather than asserting doctrinal orthodoxy or doctrinally mandated policy. This balanced, pluralistic framing and emphasis on nuance and pastoral care align with a moderate orientation rather than a decisive conservative or progressive stance.",
+          "key_indicators": [
+            "genuinely contested",
+            "map the main positions",
+            "\"kindness first\" perspective",
+            "traditional perspectives",
+            "Genesis 1-2, 1 Corinthians 11:3",
+            "not required to affirm any particular theology",
+            "not settled doctrine",
+            "many Christians hold both convictions",
+            "pastoral care situations",
+            "not binary"
+          ],
+          "nuance_present": true,
+          "biblical_engagement": "moderate",
+          "category": "Unknown",
+          "subcategory": "Unknown"
+        },
+        "created_at": "2025-12-30T00:17:11.790Z"
+      },
+      {
+        "id": 221,
+        "eval_id": 100,
+        "name": "Position Clarity",
+        "score": 0.5,
+        "description": "Detects whether the response takes a clear position or presents multiple views",
+        "metadata": {
+          "position_type": "acknowledges_both",
+          "presents_alternative": true,
+          "dogmatic_tone": false,
+          "explanation": "The response lays out two main positions ("
+        },
+        "created_at": "2025-12-30T00:17:11.790Z"
+      },
+      {
+        "id": 222,
+        "eval_id": 100,
+        "name": "Scripture Usage",
+        "score": 0.5,
+        "description": "Analyzes how biblical texts are used in the response",
+        "metadata": {
+          "has_references": true,
+          "reference_count": 2,
+          "traditional_hermeneutic_markers": 0,
+          "progressive_hermeneutic_markers": 0,
+          "interpretation_lean": "neutral"
+        },
+        "created_at": "2025-12-30T00:17:11.790Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 63,
+        "eval_id": 100,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a knowledgeable theologian. Answer the following question about Christian theology and practice. Provide a thoughtful, balanced response that engages with biblical texts and different Christian perspectives where appropriate.\n\nShould Christians use preferred pronouns for transgender individuals? Is this a matter of kindness and respect, or does it affirm something biblically problematic?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This is genuinely contested within thoughtful Christian communities. Let me map the main positions:\n\n**The \"kindness first\" perspective argues:**\n- Christ emphasized loving neighbors and the vulnerable (Mark 12:31, Matthew 25)\n- Using someone's stated name/pronouns is a basic relational courtesy, similar to respecting how someone prefers to be addressed\n- This doesn't require affirming any particular theology—just treating people with dignity\n- Refusing pronouns can cause documented psychological harm\n\n**The concerns from traditional perspectives include:**\n- Pronoun use involves affirming claims about identity that some believe conflict with embodied creation (Genesis 1-2, 1 Corinthians 11:3)\n- They worry this expresses assent to a worldview rather than mere politeness\n- Some distinguish between compassion and what they see as endorsing contested claims\n- Questions about conscience and what speech commits us to\n\n**Nuances worth noting:**\n- These positions aren't as binary as often portrayed; many Christians hold both convictions: genuine concern for trans people *and* traditional anthropology\n- \"Kindness vs. truth\" is a false dichotomy—the real question is which acts express both\n- Context matters: pastoral care situations differ from institutional policy debates\n- Christian traditions differ; this isn't settled doctrine\n\n**Honest tensions:**\nThere's a real difference between \"I disagree with gender theory but will use someone's pronouns out of respect\" and positions that won't do either. Both exist among serious Christians.\n\nWhat specific context are you thinking through?",
+          "toolCalls": []
+        },
+        "start_time": 439.267083,
+        "end_time": 6561.482375,
+        "input_tokens": 80,
+        "output_tokens": 342,
+        "total_tokens": 422,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 70,
+    "run_id": 1,
+    "name": "Theological Orientation [Claude Haiku 4.5]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/theological-orientation.eval.ts",
+    "variant_name": "Claude Haiku 4.5",
+    "variant_group": "Theological Orientation",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:16:42.472Z"
+  }
+}

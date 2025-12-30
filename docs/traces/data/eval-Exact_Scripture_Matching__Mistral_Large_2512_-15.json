@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 109,
+    "suite_id": 30,
+    "col_order": 15,
+    "input": "Quote Proverbs 3:5-6 from the English Standard Version (ESV) exactly as written",
+    "expected": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths",
+    "output": "Trust in the Lord with all your heart,\nand do not lean on your own understanding.\nIn all your ways acknowledge him,\nand he will make straight your paths.",
+    "duration": 1360,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T00:42:02.025Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 218,
+        "eval_id": 109,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T00:42:03.387Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 81,
+        "eval_id": 109,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Proverbs 3:5-6 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Trust in the Lord with all your heart,\nand do not lean on your own understanding.\nIn all your ways acknowledge him,\nand he will make straight your paths.",
+          "toolCalls": []
+        },
+        "start_time": 213.224667,
+        "end_time": 1552.637417,
+        "input_tokens": 94,
+        "output_tokens": 34,
+        "total_tokens": 128,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Mistral Large 2512]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Mistral Large 2512",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T00:42:02.025Z"
+  }
+}
