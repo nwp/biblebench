@@ -78,8 +78,8 @@ export class ChartManager {
       datasets: [{
         label: 'Overall Score',
         data: displayModels.map(m => m.score),
-        backgroundColor: displayModels.map(m => this.getScoreColor(m.score)),
-        borderColor: displayModels.map(m => this.getScoreColor(m.score, 0.8)),
+        backgroundColor: displayModels.map((m, index) => this.getJewelToneColor(index)),
+        borderColor: displayModels.map((m, index) => this.getJewelToneColor(index, 0.9)),
         borderWidth: 1
       }]
     };
@@ -163,6 +163,12 @@ export class ChartManager {
 
     const ctx = canvas.getContext('2d');
 
+    // Special handling for theological orientation diverging bar chart
+    if (evaluation.id === 'theological-orientation') {
+      this.renderTheologicalOrientationChart(evaluation, selectedModelIds, canvas, ctx);
+      return;
+    }
+
     // Get selected models with scores for this evaluation
     const modelsWithScores = this.data.models
       .filter(m => selectedModelIds.includes(m.id))
@@ -236,9 +242,141 @@ export class ChartManager {
     this.renderEvaluationChart(evaluation, selectedModelIds);
   }
 
+  renderTheologicalOrientationChart(evaluation, selectedModelIds, canvas, ctx) {
+    // Get selected models with scores for this evaluation
+    const modelsWithScores = this.data.models
+      .filter(m => selectedModelIds.includes(m.id))
+      .filter(m => evaluation.modelScores[m.id] !== undefined)
+      .map(m => ({
+        id: m.id,
+        name: m.displayName,
+        score: evaluation.modelScores[m.id],
+        provider: m.provider
+      }))
+      .sort((a, b) => b.score - a.score); // Sort by score descending
+
+    // Transform scores into progressive/conservative percentages
+    const progressiveData = modelsWithScores.map(m => (1 - m.score) * 100);
+    const conservativeData = modelsWithScores.map(m => m.score * 100);
+
+    const chartData = {
+      labels: modelsWithScores.map(m => m.name),
+      datasets: [
+        {
+          label: 'Progressive',
+          data: progressiveData,
+          backgroundColor: '#6b8caf',
+          borderWidth: 0
+        },
+        {
+          label: 'Conservative',
+          data: conservativeData,
+          backgroundColor: '#a04848',
+          borderWidth: 0
+        }
+      ]
+    };
+
+    const config = {
+      type: 'bar',
+      data: chartData,
+      options: {
+        indexAxis: 'y', // Horizontal bars
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top',
+            labels: {
+              boxWidth: 20,
+              padding: 15,
+              font: {
+                size: 12,
+                weight: '600'
+              }
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: (context) => {
+                const model = modelsWithScores[context.dataIndex];
+                const progressive = progressiveData[context.dataIndex].toFixed(1);
+                const conservative = conservativeData[context.dataIndex].toFixed(1);
+                return [
+                  `Progressive: ${progressive}%`,
+                  `Conservative: ${conservative}%`,
+                  `Provider: ${model.provider}`
+                ];
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            stacked: true,
+            min: 0,
+            max: 100,
+            ticks: {
+              display: false
+            },
+            title: {
+              display: true,
+              text: 'Theological Orientation (Progressive ← → Conservative)'
+            }
+          },
+          y: {
+            stacked: true,
+            ticks: {
+              autoSkip: false
+            }
+          }
+        }
+      }
+    };
+
+    this.charts[evaluation.id] = new Chart(ctx, config);
+  }
+
   // ===================================================================
   // Utility Functions
   // ===================================================================
+
+  getJewelToneColor(index, opacity = 0.75) {
+    const jewelTones = [
+      '#8b5a8b',  // Amethyst
+      '#0f4c81',  // Sapphire
+      '#2d6a4f',  // Emerald
+      '#b85450',  // Ruby
+      '#c08552',  // Topaz
+      '#4a5899',  // Tanzanite
+      '#6b8e23',  // Peridot
+      '#8b4789',  // Garnet
+      '#2c5f6f',  // Aquamarine
+      '#b8860b',  // Citrine
+      '#4a4e69',  // Iolite
+      '#704214',  // Tiger's Eye
+      '#5c4742',  // Smoky Quartz
+      '#6a5acd',  // Alexandrite
+      '#c17817',  // Amber
+      '#8fbc8f',  // Jade
+      '#483d8b',  // Lapis Lazuli
+      '#d2691e',  // Carnelian
+      '#556b2f',  // Tourmaline
+      '#a0522d'   // Jasper
+    ];
+
+    const color = jewelTones[index % jewelTones.length];
+
+    if (opacity === 1) return color;
+
+    // Convert hex to rgba
+    const r = parseInt(color.slice(1, 3), 16);
+    const g = parseInt(color.slice(3, 5), 16);
+    const b = parseInt(color.slice(5, 7), 16);
+
+    return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+  }
 
   getScoreColor(score, opacity = 0.7) {
     // Generate color based on score using HSL
