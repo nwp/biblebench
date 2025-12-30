@@ -144,14 +144,22 @@ export class FilterManager {
   }
 
   filterBySearch(query) {
-    const lowerQuery = query.toLowerCase();
+    const lowerQuery = query.toLowerCase().trim();
 
     document.querySelectorAll('.model-checkbox').forEach(checkbox => {
-      const modelName = checkbox.dataset.modelId.toLowerCase();
       const label = checkbox.parentElement;
-      const shouldShow = modelName.includes(lowerQuery);
+      const labelText = label.textContent.toLowerCase().trim();
+      const shouldShow = lowerQuery === '' || labelText.includes(lowerQuery);
 
-      label.hidden = !shouldShow;
+      label.style.display = shouldShow ? '' : 'none';
+    });
+
+    // Hide/show provider sections if all their models are hidden
+    document.querySelectorAll('#model-groups details').forEach(details => {
+      const visibleLabels = Array.from(details.querySelectorAll('label')).filter(
+        label => label.style.display !== 'none'
+      );
+      details.style.display = visibleLabels.length > 0 ? '' : 'none';
     });
   }
 

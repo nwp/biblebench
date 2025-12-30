@@ -7,8 +7,6 @@ export class ChartManager {
   constructor(data) {
     this.data = data;
     this.charts = {};
-    this.maxModelsDefault = 15; // Show top 15 by default
-    this.showingAllModels = false;
     this.filterManager = null;
   }
 
@@ -22,8 +20,6 @@ export class ChartManager {
   }
 
   updateAllCharts(selectedModelIds) {
-    // Reset "show all" state when model selection changes
-    this.showingAllModels = false;
     this.updateOverallLeaderboard(selectedModelIds);
     this.updateEvaluationCharts(selectedModelIds);
   }
@@ -39,7 +35,7 @@ export class ChartManager {
     const ctx = canvas.getContext('2d');
 
     // Get selected models with their overall scores
-    const models = this.data.models
+    const displayModels = this.data.models
       .filter(m => selectedModelIds.includes(m.id))
       .map(m => ({
         id: m.id,
@@ -49,37 +45,14 @@ export class ChartManager {
       }))
       .sort((a, b) => b.score - a.score); // Sort by score descending
 
-    // Limit to top N models initially
-    const displayModels = this.showingAllModels ? models : models.slice(0, this.maxModelsDefault);
-
-    // Show/hide "Show All" button
+    // Hide "Show All" button - we always show all selected models
     const showAllButton = document.getElementById('show-all-models');
     const leaderboardNote = document.getElementById('leaderboard-note');
 
-    // Only show button if we have more models than the default limit AND we're not showing all yet
-    if (models.length > this.maxModelsDefault) {
-      if (!this.showingAllModels) {
-        // Not showing all - display button
-        showAllButton.hidden = false;
-        leaderboardNote.textContent = `Showing top ${this.maxModelsDefault} of ${models.length} models`;
-
-        showAllButton.onclick = () => {
-          this.showingAllModels = true;
-          // Clear all filters to show all models across all charts
-          if (this.filterManager) {
-            this.filterManager.selectAll();
-          } else {
-            this.updateOverallLeaderboard(selectedModelIds);
-          }
-        };
-      } else {
-        // Showing all - hide button
-        showAllButton.hidden = true;
-        leaderboardNote.textContent = `Showing all ${models.length} models`;
-      }
-    } else {
-      // Not enough models to need the button - always hide it
+    if (showAllButton) {
       showAllButton.hidden = true;
+    }
+    if (leaderboardNote) {
       leaderboardNote.textContent = '';
     }
 
@@ -139,6 +112,7 @@ export class ChartManager {
     };
 
     this.charts['overall-leaderboard'] = new Chart(ctx, config);
+    this.addChartClickHandler(canvas, this.charts['overall-leaderboard'], displayModels);
   }
 
   updateOverallLeaderboard(selectedModelIds) {
@@ -191,13 +165,19 @@ export class ChartManager {
       }))
       .sort((a, b) => b.score - a.score); // Sort by score descending
 
+    // Choose color function based on evaluation type
+    // Use strict threshold (90%+ green) for all evaluations except theological orientation
+    const colorFunction = evaluation.id === 'theological-orientation'
+      ? (score) => this.getScoreColor(score)
+      : (score) => this.getScriptureMatchingColor(score);
+
     const chartData = {
       labels: modelsWithScores.map(m => m.name),
       datasets: [{
         label: evaluation.name,
         data: modelsWithScores.map(m => m.score),
-        backgroundColor: modelsWithScores.map(m => this.getScoreColor(m.score)),
-        borderColor: modelsWithScores.map(m => this.getScoreColor(m.score, 0.8)),
+        backgroundColor: modelsWithScores.map(m => colorFunction(m.score)),
+        borderColor: modelsWithScores.map(m => colorFunction(m.score)),
         borderWidth: 1
       }]
     };
@@ -243,6 +223,7 @@ export class ChartManager {
     };
 
     this.charts[evaluation.id] = new Chart(ctx, config);
+    this.addChartClickHandler(canvas, this.charts[evaluation.id], modelsWithScores);
   }
 
   updateEvaluationChart(evaluation, selectedModelIds) {
@@ -368,6 +349,7 @@ export class ChartManager {
     };
 
     this.charts[evaluation.id] = new Chart(ctx, config);
+    this.addChartClickHandler(canvas, this.charts[evaluation.id], modelsWithScores);
   }
 
   // ===================================================================
@@ -420,6 +402,24 @@ export class ChartManager {
     return `hsla(${hue}, ${saturation}%, ${lightness}%, ${opacity})`;
   }
 
+  getScriptureMatchingColor(score, opacity = 0.7) {
+    // Scripture matching: 90%+ is green, below 90% fades yellow to red
+    if (score >= 0.9) {
+      // 90-100%: Green
+      const hue = 120; // Green
+      const saturation = 70;
+      const lightness = 50;
+      return `hsla(${hue}, ${saturation}%, ${lightness}%, ${opacity})`;
+    } else {
+      // 0-90%: Red (0) to Yellow (60)
+      // Map 0-0.9 to hue 0-60
+      const hue = (score / 0.9) * 60;
+      const saturation = 70;
+      const lightness = 50;
+      return `hsla(${hue}, ${saturation}%, ${lightness}%, ${opacity})`;
+    }
+  }
+
   getProviderColor(provider) {
     const colors = {
       'OpenAI': '#10a37f',
@@ -433,5 +433,29 @@ export class ChartManager {
     };
 
     return colors[provider] || '#64748b';
+  }
+
+  nameToId(name) {
+    return name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  }
+
+  addChartClickHandler(canvas, chart, models) {
+    canvas.style.cursor = 'pointer';
+
+    canvas.addEventListener('click', (event) => {
+      const elements = chart.getElementsAtEventForMode(
+        event,
+        'nearest',
+        { intersect: true },
+        false
+      );
+
+      if (elements.length > 0) {
+        const index = elements[0].index;
+        const model = models[index];
+        const modelId = this.nameToId(model.name);
+        window.location.href = `models.html#${modelId}`;
+      }
+    });
   }
 }

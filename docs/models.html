@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detailed specifications and evaluation costs for all LLM models tested in BibleBench">
+  <title>Model Specifications - BibleBench</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nwp.github.io/biblebench/models.html">
+  <meta property="og:title" content="Model Specifications - BibleBench">
+  <meta property="og:description" content="Comprehensive specifications, pricing, and evaluation costs for all AI models tested in the BibleBench theological benchmark.">
+  <meta property="og:image" content="https://nwp.github.io/biblebench/logo.png">
+  <meta property="og:site_name" content="BibleBench">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://nwp.github.io/biblebench/models.html">
+  <meta name="twitter:title" content="Model Specifications - BibleBench">
+  <meta name="twitter:description" content="Comprehensive specifications, pricing, and evaluation costs for all AI models tested in the BibleBench theological benchmark.">
+  <meta name="twitter:image" content="https://nwp.github.io/biblebench/logo.png">
+
+  <!-- Additional SEO -->
+  <meta name="author" content="BibleBench Contributors">
+  <meta name="keywords" content="LLM models, AI specifications, model pricing, token costs, context length, GPT, Claude, Gemini, model comparison">
+  <link rel="canonical" href="https://nwp.github.io/biblebench/models.html">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="./data/models-metadata.json" as="fetch" crossorigin>
+  <link rel="preload" href="./data/models-usage.json" as="fetch" crossorigin>
+  <link rel="preload" href="./data/dashboard.json" as="fetch" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/models.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- Application JavaScript (ES6 modules) -->
+  <script type="module" src="./js/models-page.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header header-compact">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-brand">
+          <img src="./logo.png" alt="BibleBench Logo" class="logo">
+          <h1 class="title">
+            <span class="title-main">BibleBench</span>
+            <span class="title-sub">Model Specifications</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav class="nav-menu">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="./index.html">Dashboard</a></li>
+        <li><a href="./models.html" class="active">Models</a></li>
+        <li><a href="https://github.com/nwp/biblebench" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Intro Section -->
+      <section class="intro-section">
+        <h2>Benchmark Models</h2>
+        <p class="lead">
+          Comprehensive specifications, pricing, and evaluation costs for all AI models tested in BibleBench.
+          Each model's performance data is available on the <a href="./index.html">dashboard</a>.
+        </p>
+        <div class="sort-controls">
+          <label for="sort-select">Sort by:</label>
+          <select id="sort-select" class="sort-select">
+            <option value="score-high">Overall Score (High to Low)</option>
+            <option value="score-low">Overall Score (Low to High)</option>
+            <option value="provider">Provider (A-Z)</option>
+            <option value="cost-high">Evaluation Cost (High to Low)</option>
+            <option value="cost-low">Evaluation Cost (Low to High)</option>
+            <option value="name">Model Name (A-Z)</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Models Grid -->
+      <section class="models-grid" id="models-grid">
+        <!-- Model cards will be populated by JavaScript -->
+        <div class="loading-state">
+          <p>Loading model specifications...</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        BibleBench is an open-source benchmark for evaluating LLMs on Christian scripture and theology.
+        <br>
+        Built with <a href="https://evalite.dev" target="_blank" rel="noopener">Evalite</a> and <a href="https://sdk.vercel.ai" target="_blank" rel="noopener">AI SDK v5</a>.
+      </p>
+      <p class="footer-links">
+        <a href="https://github.com/nwp/biblebench" target="_blank" rel="noopener">GitHub</a> •
+        <a href="./traces/" target="_blank">Detailed Traces</a> •
+        <a href="https://raw.githubusercontent.com/nwp/biblebench/refs/heads/master/LICENSE" target="_blank" rel="noopener">MIT License</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

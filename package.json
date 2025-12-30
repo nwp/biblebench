@@ -12,7 +12,11 @@
     "dashboard:build": "node scripts/build-dashboard.js",
     "dashboard:serve": "pnpm dlx serve ./docs",
     "dashboard:dev": "pnpm dashboard:build && pnpm dashboard:serve",
-    "deploy": "pnpm eval:export && pnpm eval:merge && pnpm dashboard:build"
+    "models:fetch": "node scripts/fetch-openrouter-models.js",
+    "models:metadata": "node scripts/build-models-metadata.js",
+    "models:usage": "node scripts/build-models-usage.js",
+    "models:build": "pnpm models:metadata && pnpm models:usage",
+    "deploy": "pnpm eval:export && pnpm eval:merge && pnpm dashboard:build && pnpm models:build"
   },
   "keywords": [
     "llm",
