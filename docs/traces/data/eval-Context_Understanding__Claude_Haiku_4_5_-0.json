@@ -5,48 +5,61 @@
     "col_order": 0,
     "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
     "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
-    "output": "# Authorship of the Gospel of John\n\n## Traditional Attribution\n\nThe Gospel of John has been traditionally attributed to **John the Apostle**, one of Jesus's twelve disciples and the brother of James. This attribution dates back to early Church fathers like Irenaeus (2nd century) and has been the majority Christian view for nearly 2,000 years.\n\nAccording to this tradition, John was:\n- One of Jesus's closest disciples (part of the \"inner circle\" with Peter and James)\n- Present at key events (the Transfiguration, Last Supper, crucifixion)\n- An eyewitness to Jesus's ministry\n- The \"Beloved Disciple\" mentioned in the Gospel\n\n## Modern Scholarly Perspectives\n\nMost contemporary scholars hold different views:\n\n- **The Gospel was likely written by an unknown author or community** in the late 1st century (80-110 CE), decades after Jesus's death\n- **The author may have used traditions** from John the Apostle or his circle, but direct authorship is considered unlikely\n- **The text shows theological development** and literary sophistication suggesting a later, deliberate composition rather than direct eyewitness account\n- **Internal evidence** (references to \"we\" and \"the disciple whom Jesus loved\") suggests the author may have drawn on source material rather than being an eyewitness\n\n## Consensus\n\nMost scholars agree the Gospel was written for a specific Christian community with theological purposes, written well after the events described, though it may preserve some authentic traditions about Jesus.",
-    "duration": 68004,
+    "output": "# Authorship of the Gospel of John\n\n## Traditional Attribution\n\nThe Gospel of John has been traditionally attributed to **John the Apostle** (also called \"the Beloved Disciple\"), one of Jesus's twelve disciples and brother of James. Early Church fathers like Irenaeus (2nd century) and others firmly supported this attribution.\n\nAccording to tradition, John wrote this gospel in Ephesus late in his life, possibly around 90-110 CE.\n\n## His Relationship to Jesus\n\nIf written by the apostle John, he would have been:\n- One of Jesus's twelve closest disciples\n- Part of Jesus's inner circle (along with Peter and James)\n- Present at major events including the crucifixion\n- An eyewitness to Jesus's resurrection appearances\n- A founder and leader of the early Jerusalem church\n\n## Scholarly Perspectives\n\nModern scholarship presents more complex views:\n\n- **Many scholars** question direct apostolic authorship, suggesting the gospel developed within a Johannine community over time, possibly drawing on eyewitness testimony but written by a later community member\n- **Some scholars** propose a two-stage authorship: an apostolic eyewitness account later edited and compiled by community members\n- **There is broad consensus** that the text reflects the theological perspective of a specific community rather than a simple biographical account\n\n## Key Point\n\nRegardless of authorship, the gospel itself claims to be based on the testimony of \"the disciple whom Jesus loved\" (John 21:24), presenting itself as rooted in apostolic witness.",
+    "duration": 33534,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T13:52:43.736Z",
-    "score": 0.425,
+    "created_at": "2025-12-30T14:26:41.875Z",
+    "score": 0.875,
     "scores": [
       {
-        "id": 99,
+        "id": 15,
         "eval_id": 33,
         "name": "Historical Accuracy Judge",
-        "score": 0.85,
+        "score": 0.75,
         "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
-          "doctrinally_sound": true,
+          "doctrinally_sound": false,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [],
-          "rationale": "The response correctly presents the traditional attribution to John the Apostle (one of Jesus’ twelve, traditionally identified as the Beloved Disciple) and explains the modern scholarly consensus that the Gospel was likely written by an unknown author or community in the late 1st century, possibly using traditions associated with John or his circle. It notes the theological purpose and community-oriented nature of the work, which are standard scholarly views. The piece appropriately contrasts traditional views with contemporary scholarship and maintains warranted uncertainty. Minor caveats worth noting but not errors: the Beloved Disciple's precise identity is debated in modern scholarship, and there is nuanced discussion about eyewitness testimony versus community-authored sources; the response adequately signals this without misrepresenting the overall position. The answer directly addresses who wrote the Gospel of John and the author’s relationship to Jesus, and covers essential historical perspectives. "
+          "errors": [
+            "The response asserts that John 'founded and led the early Jerusalem church.' Mainstream scholarly consensus does not support John as founder/leader of the Jerusalem church; leadership there is generally associated with James (the Just) and Peter in the earliest period.",
+            "The claim that John was an eyewitness to Jesus's resurrection appearances is traditional, but modern scholarship often treats the Gospel as having a Johannine community as its primary context, with uncertain direct eyewitness authorship; labeling John as an eyewitness to all resurrection appearances overstates current consensus."
+          ],
+          "rationale": "The answer correctly summarizes traditional attribution (John the Apostle) and common scholarly approaches (Johannine community, later edits) and notes the gospel’s own claim to apostolic witness (John 21:24). However, it includes a historically disputed claim (John founding/leading the Jerusalem church) that is not supported by mainstream scholarship, which reduces factual accuracy despite overall nuance."
         },
-        "created_at": "2025-12-30T13:53:51.758Z"
+        "created_at": "2025-12-30T14:27:15.428Z"
       },
       {
-        "id": 100,
+        "id": 16,
         "eval_id": 33,
         "name": "Key Points Coverage",
-        "score": 0,
+        "score": 1,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPhrases": [],
-          "matchedPoints": [],
+          "keyPhrases": [
+            "John",
+            "apostle",
+            "disciple",
+            "loved"
+          ],
+          "matchedPoints": [
+            "John",
+            "apostle",
+            "disciple",
+            "loved"
+          ],
           "missedPoints": [],
-          "coverage": 0,
-          "totalPoints": 0,
-          "pointsFound": 0
+          "coverage": 1,
+          "totalPoints": 4,
+          "pointsFound": 4
         },
-        "created_at": "2025-12-30T13:53:51.758Z"
+        "created_at": "2025-12-30T14:27:15.428Z"
       }
     ],
     "traces": [
       {
-        "id": 50,
+        "id": 8,
         "eval_id": 33,
         "input": [
           {
@@ -60,14 +73,14 @@
           }
         ],
         "output": {
-          "text": "# Authorship of the Gospel of John\n\n## Traditional Attribution\n\nThe Gospel of John has been traditionally attributed to **John the Apostle**, one of Jesus's twelve disciples and the brother of James. This attribution dates back to early Church fathers like Irenaeus (2nd century) and has been the majority Christian view for nearly 2,000 years.\n\nAccording to this tradition, John was:\n- One of Jesus's closest disciples (part of the \"inner circle\" with Peter and James)\n- Present at key events (the Transfiguration, Last Supper, crucifixion)\n- An eyewitness to Jesus's ministry\n- The \"Beloved Disciple\" mentioned in the Gospel\n\n## Modern Scholarly Perspectives\n\nMost contemporary scholars hold different views:\n\n- **The Gospel was likely written by an unknown author or community** in the late 1st century (80-110 CE), decades after Jesus's death\n- **The author may have used traditions** from John the Apostle or his circle, but direct authorship is considered unlikely\n- **The text shows theological development** and literary sophistication suggesting a later, deliberate composition rather than direct eyewitness account\n- **Internal evidence** (references to \"we\" and \"the disciple whom Jesus loved\") suggests the author may have drawn on source material rather than being an eyewitness\n\n## Consensus\n\nMost scholars agree the Gospel was written for a specific Christian community with theological purposes, written well after the events described, though it may preserve some authentic traditions about Jesus.",
+          "text": "# Authorship of the Gospel of John\n\n## Traditional Attribution\n\nThe Gospel of John has been traditionally attributed to **John the Apostle** (also called \"the Beloved Disciple\"), one of Jesus's twelve disciples and brother of James. Early Church fathers like Irenaeus (2nd century) and others firmly supported this attribution.\n\nAccording to tradition, John wrote this gospel in Ephesus late in his life, possibly around 90-110 CE.\n\n## His Relationship to Jesus\n\nIf written by the apostle John, he would have been:\n- One of Jesus's twelve closest disciples\n- Part of Jesus's inner circle (along with Peter and James)\n- Present at major events including the crucifixion\n- An eyewitness to Jesus's resurrection appearances\n- A founder and leader of the early Jerusalem church\n\n## Scholarly Perspectives\n\nModern scholarship presents more complex views:\n\n- **Many scholars** question direct apostolic authorship, suggesting the gospel developed within a Johannine community over time, possibly drawing on eyewitness testimony but written by a later community member\n- **Some scholars** propose a two-stage authorship: an apostolic eyewitness account later edited and compiled by community members\n- **There is broad consensus** that the text reflects the theological perspective of a specific community rather than a simple biographical account\n\n## Key Point\n\nRegardless of authorship, the gospel itself claims to be based on the testimony of \"the disciple whom Jesus loved\" (John 21:24), presenting itself as rooted in apostolic witness.",
           "toolCalls": []
         },
-        "start_time": 310.500708,
-        "end_time": 5362.93475,
+        "start_time": 310.847417,
+        "end_time": 4792.421792,
         "input_tokens": 99,
-        "output_tokens": 338,
-        "total_tokens": 437,
+        "output_tokens": 339,
+        "total_tokens": 438,
         "col_order": 1
       }
     ]
@@ -81,6 +94,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T13:52:43.736Z"
+    "created_at": "2025-12-30T14:26:41.875Z"
   }
 }

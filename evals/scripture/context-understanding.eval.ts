@@ -55,6 +55,13 @@ const contextUnderstandingData = [
   }
 ];
 
+// Create a lookup map for keyPhrases indexed by input question
+// Since Evalite only passes {input, output, expected} to scorers,
+// we use this map to look up metadata using the input string as the key
+const keyPhrasesMap = new Map(
+  contextUnderstandingData.map(item => [item.input, item.keyPhrases || []])
+);
+
 // Run A/B testing across all models
 evalite.each(
   selectedModels.map(({ name, model }) => ({ name, input: { model } }))
@@ -78,9 +85,13 @@ Question: ${input}`,
         name: "Key Points Coverage",
         description: "Checks if the response includes key factual points using word overlap",
         scorer: (scoreInput: any) => {
-          const { output } = scoreInput;
-          const extendedInput = scoreInput as ExtendedScorerInput;
-          const keyPhrases = extendedInput.keyPhrases || [];
+          const { input, output } = scoreInput;
+
+          // Look up keyPhrases using the input question as the key
+          // Evalite only passes {input, output, expected} to scorers,
+          // so we use the Map to retrieve metadata
+          const keyPhrases = keyPhrasesMap.get(input) || [];
+
           const outputLower = output.toLowerCase();
 
           // Count how many key points are present (flexible matching)

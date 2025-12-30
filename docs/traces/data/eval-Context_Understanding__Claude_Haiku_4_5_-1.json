@@ -5,15 +5,15 @@
     "col_order": 1,
     "input": "What was Paul's background before his conversion?",
     "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
-    "output": "# Paul's Background Before His Conversion\n\n## Jewish Heritage and Education\n\nPaul was a **Hellenistic Jew** born in **Tarsus** (in Cilicia, modern-day Turkey), a major city with significant Greek influence. He was born with the Roman name **Saul** and held Roman citizenship—an unusual status for a provincial Jew that likely reflected his family's elevated social position.\n\nHe received rigorous training in **Jewish law and theology**, studying under **Gamaliel**, one of the most respected Pharisaic teachers in first-century Jerusalem (Acts 22:3). This education made him exceptionally knowledgeable in Torah and Jewish tradition.\n\n## Religious Identity\n\nPaul identified as a **Pharisee**, the Jewish sect known for strict adherence to Torah observance and oral tradition. He was zealous about Jewish law and devoted to maintaining Jewish religious practice—characteristics he later emphasized when recounting his pre-conversion life (Philippians 3:4-6).\n\n## Persecution of Christians\n\nMost significantly, Paul actively **persecuted the early Christian movement**. He held the cloaks of those who stoned Stephen (Acts 7:58) and obtained authority to arrest Christians in Damascus (Acts 9:1-2). By his own account, he violently opposed the church and \"advanced in Judaism beyond many Jews of [his] age\" through his zealousness (Galatians 1:13-14).\n\n## Historical Significance\n\nThis background is crucial for understanding Paul's transformation: his persecution of Christians and later dramatic conversion (c. 33-35 CE) made him a controversial figure initially, yet his deep Jewish training later enabled him to articulate Christianity's relationship to Judaism.",
-    "duration": 43320,
+    "output": "# Paul's Background Before His Conversion\n\n## Birth and Origins\nPaul was born as **Saul of Tarsus** in the first century CE in Tarsus, a major city in Cilicia (modern-day Turkey). He was a **Hellenistic Jew** with Roman citizenship, which was relatively uncommon and significant for his later missionary work.\n\n## Religious Training\n- **Pharisaic Judaism**: Saul was trained as a Pharisee, one of the strictest Jewish sects focused on meticulous observance of Torah and oral traditions\n- **Under Gamaliel**: According to Acts 22:3, he received formal rabbinic training under the respected teacher Gamaliel in Jerusalem\n- He became highly zealous for Jewish law and tradition\n\n## Opposition to Early Christians\nBefore his conversion, Saul was a **persecutor of the early Church**:\n- He actively opposed followers of Jesus whom he saw as heretics\n- Acts describes him as present at and approving the execution of Stephen, the first Christian martyr (Acts 7:58-8:1)\n- He obtained authorization to arrest Christians in Damascus (Acts 9:1-2)\n- He describes himself as having \"persecuted the church of God violently\" (Galatians 1:13)\n\n## Conversion Event\nHis dramatic conversion occurred on the Damascus Road (Acts 9), where he reported experiencing a vision of the resurrected Jesus. This transformed him from persecutor to apostle, fundamentally redirecting his religious zeal toward Christianity.",
+    "duration": 25192,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T13:52:43.736Z",
-    "score": 0.46,
+    "created_at": "2025-12-30T14:26:41.875Z",
+    "score": 0.96,
     "scores": [
       {
-        "id": 15,
+        "id": 1,
         "eval_id": 34,
         "name": "Historical Accuracy Judge",
         "score": 0.92,
@@ -23,30 +23,40 @@
           "biblically_grounded": true,
           "nuance_captured": true,
           "errors": [],
-          "rationale": "The response accurately presents Paul's pre-conversion background as a Jew from Tarsus with Roman citizenship, educated in Jewish law, and identified as a Pharisee. It correctly notes his zealous persecution of Christians (including the Stephen incident and Damascus arrest attempt), and cites Paul’s own statements in Galatians 1:13–14 and his Philippians 3:4–6 to support this characterization. It also acknowledges the Damascus road conversion and places the event in the commonly dated window around AD 33–35, which aligns with scholarly consensus. The reference to Gamaliel (Acts 22:3) and the claim of Roman citizenship are well-supported by the biblical text. The discussion of being a Hellenistic/Diaspora Jew and a probable but not explicitly stated social status is a reasonable, cautious interpretation, though not explicitly mandated by the text. Overall, the answer directly addresses the question with appropriate level of detail and context."
+          "rationale": "The response accurately states Paul's background before conversion: born Saul of Tarsus in Cilicia (Tarsus, modern Turkey); a Jew of the Diaspora described as a Hellenistic Jew; a Roman citizen; trained as a Pharisee (education “at the feet of Gamaliel” per Acts 22:3); a zealous opponent of the early Christian movement (present at Stephen’s death in Acts 7:58–8:1; authorized to arrest Christians in Damascus per Acts 9; Galatians 1:13 for persecuting the church). It correctly identifies the Damascus Road conversion event where he encountered the risen Jesus (Acts 9). The answer provides a concise, historically grounded account aligned with mainstream scholarship and the biblical text, without overstepping into doctrinal interpretation. It adds contextual details (birthplace, citizenship, Pharisaic training) that are commonly accepted and supported by the sources. Minor scholarly nuances exist (e.g., debates about the exact nature of his upbringing or terminology like “Hellenistic Jew”), but nothing in the response misstates the core facts. Therefore, it is nearly complete and appropriately nuanced for a historical/contextual question."
         },
-        "created_at": "2025-12-30T13:53:27.074Z"
+        "created_at": "2025-12-30T14:27:07.088Z"
       },
       {
-        "id": 16,
+        "id": 2,
         "eval_id": 34,
         "name": "Key Points Coverage",
-        "score": 0,
+        "score": 1,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPhrases": [],
-          "matchedPoints": [],
+          "keyPhrases": [
+            "Pharisee",
+            "persecutor",
+            "Damascus",
+            "conversion"
+          ],
+          "matchedPoints": [
+            "Pharisee",
+            "persecutor",
+            "Damascus",
+            "conversion"
+          ],
           "missedPoints": [],
-          "coverage": 0,
-          "totalPoints": 0,
-          "pointsFound": 0
+          "coverage": 1,
+          "totalPoints": 4,
+          "pointsFound": 4
         },
-        "created_at": "2025-12-30T13:53:27.074Z"
+        "created_at": "2025-12-30T14:27:07.088Z"
       }
     ],
     "traces": [
       {
-        "id": 8,
+        "id": 1,
         "eval_id": 34,
         "input": [
           {
@@ -60,14 +70,14 @@
           }
         ],
         "output": {
-          "text": "# Paul's Background Before His Conversion\n\n## Jewish Heritage and Education\n\nPaul was a **Hellenistic Jew** born in **Tarsus** (in Cilicia, modern-day Turkey), a major city with significant Greek influence. He was born with the Roman name **Saul** and held Roman citizenship—an unusual status for a provincial Jew that likely reflected his family's elevated social position.\n\nHe received rigorous training in **Jewish law and theology**, studying under **Gamaliel**, one of the most respected Pharisaic teachers in first-century Jerusalem (Acts 22:3). This education made him exceptionally knowledgeable in Torah and Jewish tradition.\n\n## Religious Identity\n\nPaul identified as a **Pharisee**, the Jewish sect known for strict adherence to Torah observance and oral tradition. He was zealous about Jewish law and devoted to maintaining Jewish religious practice—characteristics he later emphasized when recounting his pre-conversion life (Philippians 3:4-6).\n\n## Persecution of Christians\n\nMost significantly, Paul actively **persecuted the early Christian movement**. He held the cloaks of those who stoned Stephen (Acts 7:58) and obtained authority to arrest Christians in Damascus (Acts 9:1-2). By his own account, he violently opposed the church and \"advanced in Judaism beyond many Jews of [his] age\" through his zealousness (Galatians 1:13-14).\n\n## Historical Significance\n\nThis background is crucial for understanding Paul's transformation: his persecution of Christians and later dramatic conversion (c. 33-35 CE) made him a controversial figure initially, yet his deep Jewish training later enabled him to articulate Christianity's relationship to Judaism.",
+          "text": "# Paul's Background Before His Conversion\n\n## Birth and Origins\nPaul was born as **Saul of Tarsus** in the first century CE in Tarsus, a major city in Cilicia (modern-day Turkey). He was a **Hellenistic Jew** with Roman citizenship, which was relatively uncommon and significant for his later missionary work.\n\n## Religious Training\n- **Pharisaic Judaism**: Saul was trained as a Pharisee, one of the strictest Jewish sects focused on meticulous observance of Torah and oral traditions\n- **Under Gamaliel**: According to Acts 22:3, he received formal rabbinic training under the respected teacher Gamaliel in Jerusalem\n- He became highly zealous for Jewish law and tradition\n\n## Opposition to Early Christians\nBefore his conversion, Saul was a **persecutor of the early Church**:\n- He actively opposed followers of Jesus whom he saw as heretics\n- Acts describes him as present at and approving the execution of Stephen, the first Christian martyr (Acts 7:58-8:1)\n- He obtained authorization to arrest Christians in Damascus (Acts 9:1-2)\n- He describes himself as having \"persecuted the church of God violently\" (Galatians 1:13)\n\n## Conversion Event\nHis dramatic conversion occurred on the Damascus Road (Acts 9), where he reported experiencing a vision of the resurrected Jesus. This transformed him from persecutor to apostle, fundamentally redirecting his religious zeal toward Christianity.",
           "toolCalls": []
         },
-        "start_time": 310.56375,
-        "end_time": 5915.85575,
+        "start_time": 310.891792,
+        "end_time": 4690.633167,
         "input_tokens": 94,
-        "output_tokens": 376,
-        "total_tokens": 470,
+        "output_tokens": 347,
+        "total_tokens": 441,
         "col_order": 1
       }
     ]
@@ -81,6 +91,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T13:52:43.736Z"
+    "created_at": "2025-12-30T14:26:41.875Z"
   }
 }

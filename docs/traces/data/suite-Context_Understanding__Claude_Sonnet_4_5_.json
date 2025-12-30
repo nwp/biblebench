@@ -1,8 +1,8 @@
 {
   "history": [
     {
-      "score": 0.44875,
-      "date": "2025-12-30T13:52:43.736Z"
+      "score": 0.8631249999999999,
+      "date": "2025-12-30T14:26:41.875Z"
     }
   ],
   "suite": {
@@ -14,7 +14,7 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T13:52:43.736Z",
+    "created_at": "2025-12-30T14:26:41.875Z",
     "evals": [
       {
         "id": 41,
@@ -22,42 +22,55 @@
         "col_order": 0,
         "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
         "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
-        "output": "# Authorship of the Gospel of John\n\n## Traditional View\n\nThe traditional attribution is that **John the Apostle**, son of Zebedee and brother of James, wrote this Gospel. According to this view:\n\n- John was one of Jesus's twelve disciples and part of the \"inner circle\" (along with Peter and James)\n- He was likely the \"beloved disciple\" mentioned in the Gospel (John 13:23, 19:26, 21:20)\n- He was an eyewitness to Jesus's ministry, crucifixion, and resurrection\n- Early church fathers (including Irenaeus, writing around 180 AD) affirmed John's authorship\n\n## What the Gospel Says About Itself\n\nThe Gospel doesn't explicitly name its author but states it was written by:\n- The \"disciple whom Jesus loved\" (John 21:20-24)\n- Someone who witnessed key events, including the crucifixion (John 19:35)\n\n## Scholarly Perspectives\n\nModern biblical scholarship presents various views:\n\n- **Traditional view supporters** point to early church testimony and internal evidence\n- **Alternative theories** suggest:\n  - A \"Johannine community\" or school of John's followers may have compiled/edited the Gospel\n  - The final form may reflect both eyewitness testimony and later editorial work\n  - Some question whether a Galilean fisherman would have produced such sophisticated Greek theology\n\n## Consensus Points\n\nMost scholars agree:\n- The Gospel has connections to eyewitness testimony about Jesus\n- It was likely completed around 90-100 AD\n- It emerged from a community with distinct theological perspectives\n- The author had intimate knowledge of Jesus's ministry and teachings",
-        "duration": 75003,
+        "output": "# Authorship of the Gospel of John\n\n## Traditional View\n\nThe traditional view, held since the early church (late 2nd century), identifies the author as **John the Apostle**, the son of Zebedee and brother of James. According to this view:\n\n- John was one of Jesus's twelve disciples and part of the \"inner circle\" (along with Peter and James)\n- He is identified as the \"beloved disciple\" mentioned in the Gospel (John 13:23, 19:26, 21:20)\n- He was an eyewitness to Jesus's ministry, crucifixion, and resurrection\n- Early church fathers like Irenaeus (c. 180 AD) attributed the Gospel to John\n\n## Internal Evidence\n\nThe Gospel itself claims to be based on eyewitness testimony:\n- The author identifies as \"the disciple whom Jesus loved\" (John 21:20-24)\n- The text shows detailed knowledge of Jewish customs, Palestinian geography, and specific events\n- The writing suggests intimate familiarity with Jesus's teachings and private moments\n\n## Scholarly Perspectives\n\nModern scholarship presents several views:\n\n- **Traditional authorship**: Some scholars still support John the Apostle as author\n- **Johannine community theory**: Many scholars suggest the Gospel emerged from a community of John's followers, possibly with an elder disciple as the primary source\n- **Anonymous authorship**: The Gospel itself doesn't explicitly name its author\n- **Dating considerations**: Most scholars date the Gospel to 90-110 AD, which raises questions about direct apostolic authorship\n\nThe relationship to Jesus, according to tradition, was that of a close disciple who witnessed Jesus's ministry firsthand and had a particularly intimate relationship with him.",
+        "duration": 53812,
         "status": "success",
         "rendered_columns": [],
-        "created_at": "2025-12-30T13:52:43.736Z",
+        "created_at": "2025-12-30T14:26:41.875Z",
         "scores": [
           {
-            "id": 137,
+            "id": 105,
             "eval_id": 41,
             "name": "Historical Accuracy Judge",
-            "score": 0.92,
+            "score": 0.78,
             "description": "LLM-based evaluation of historical and contextual accuracy",
             "metadata": {
-              "doctrinally_sound": true,
+              "doctrinally_sound": false,
               "biblically_grounded": true,
               "nuance_captured": true,
-              "errors": [],
-              "rationale": "The answer accurately presents the traditional attribution to John the Apostle, his role as one of Jesus’ twelve, and the identification with the ‘beloved disciple.’ It correctly notes that the Gospel itself does not name the author explicitly, but refers to the disciple Jesus loved (and to a witness who saw the crucifixion) in verses such as John 19:35 and John 21:24. It also fairly surveys scholarly perspectives (Johannine community hypothesis, later editorial work, and debates about dating and authorship) and provides a reasonable dating window (roughly 90–100 CE) that aligns with mainstream scholarship. The response includes appropriate caveats about competing views and the possibility that the author was part of a Johannine community rather than a single, identifiable individual. Overall, it answers the question directly and with warranted nuance. Subtle nuance: while the Gospel mentions the “disciple whom Jesus loved,” the traditional identification of this figure with John the Apostle is not explicit in the text and remains a matter of tradition; the LLM acknowledges this by presenting multiple viewpoints."
+              "errors": [
+                "Misstated internal evidence: The Gospel does not explicitly have the author identify himself as 'the disciple whom Jesus loved'; the text presents the 'beloved disciple' as a narrative figure within the gospel, and traditional attribution to John comes from later patristic sources (e.g., Irenaeus). The author is not plainly identified in the text as 'the disciple whom Jesus loved.'",
+                "Other minor nuance: The answer correctly covers main positions (traditional authorship, Johannine community theory, anonymous authorship) and dating range, but could acknowledge that some scholars question even John the Apostle as the source in the traditional sense, and that the designation of 'the beloved disciple' is an interpretive tradition rather than an explicit self-identification by the author."
+              ],
+              "rationale": "The response is largely accurate and well-rounded, outlining traditional attribution, internal/narrative evidence, and scholarly debates. The principal factual issue is a nuanced misreading: the Gospel text does not explicitly identify the author as 'the disciple whom Jesus loved,' though it does present the beloved disciple as a key figure. This misstatement affects the factual accuracy while the broader discussion remains valid and well-contextualized."
             },
-            "created_at": "2025-12-30T13:53:58.757Z"
+            "created_at": "2025-12-30T14:27:35.706Z"
           },
           {
-            "id": 138,
+            "id": 106,
             "eval_id": 41,
             "name": "Key Points Coverage",
-            "score": 0,
+            "score": 1,
             "description": "Checks if the response includes key factual points using word overlap",
             "metadata": {
-              "keyPhrases": [],
-              "matchedPoints": [],
+              "keyPhrases": [
+                "John",
+                "apostle",
+                "disciple",
+                "loved"
+              ],
+              "matchedPoints": [
+                "John",
+                "apostle",
+                "disciple",
+                "loved"
+              ],
               "missedPoints": [],
-              "coverage": 0,
-              "totalPoints": 0,
-              "pointsFound": 0
+              "coverage": 1,
+              "totalPoints": 4,
+              "pointsFound": 4
             },
-            "created_at": "2025-12-30T13:53:58.757Z"
+            "created_at": "2025-12-30T14:27:35.706Z"
           }
         ]
       },
@@ -67,42 +80,54 @@
         "col_order": 1,
         "input": "What was Paul's background before his conversion?",
         "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
-        "output": "# Paul's Background Before His Conversion\n\n## Jewish Heritage and Identity\n\nPaul (originally named Saul) was born a Jew of the tribe of Benjamin (Philippians 3:5). He was from Tarsus in Cilicia (modern-day Turkey), which he described as \"no obscure city\" (Acts 21:39). Significantly, he was born a Roman citizen (Acts 22:28), a valuable status that would later prove important in his missionary work.\n\n## Education and Religious Training\n\nPaul was highly educated in Jewish law and tradition. He studied in Jerusalem under **Gamaliel** (Acts 22:3), one of the most respected Pharisaic teachers of that era. Paul identified himself as:\n- A Pharisee and \"son of Pharisees\" (Acts 23:6)\n- Extremely zealous for Jewish traditions (Galatians 1:14)\n- \"Blameless\" in observing the righteousness of the law (Philippians 3:6)\n\n## Occupation\n\nPaul was trained as a **tentmaker** or leather-worker (Acts 18:3), a practical trade he continued to use during his missionary journeys to support himself.\n\n## Persecutor of the Church\n\nBefore his conversion, Paul was a vigorous **persecutor of Christians**:\n- He was present at and approved of Stephen's stoning (Acts 7:58; 8:1)\n- He \"ravaged the church\" by entering houses and dragging believers to prison (Acts 8:3)\n- He sought authority to pursue Christians even to foreign cities like Damascus (Acts 9:1-2)\n- He later described himself as the \"foremost\" of sinners for this persecution (1 Timothy 1:15)\n\nThis background of religious zeal and persecution makes his dramatic conversion and subsequent ministry particularly remarkable.",
-        "duration": 60001,
+        "output": "# Paul's Background Before His Conversion\n\n## Jewish Heritage and Identity\n\nPaul (originally named Saul) was born a Jew in **Tarsus**, a major city in Cilicia (modern-day Turkey). He described himself as:\n- A Hebrew of Hebrews\n- From the tribe of Benjamin\n- Circumcised on the eighth day (Philippians 3:5)\n\n## Education and Religious Training\n\nPaul was a **Pharisee**, representing the strictest sect of Judaism (Philippians 3:5; Acts 23:6). He studied in Jerusalem under **Gamaliel**, one of the most respected rabbis of his time (Acts 22:3). This education gave him:\n- Expert knowledge of Jewish Law (Torah)\n- Training in rabbinical interpretation and debate\n- A zealous commitment to Jewish traditions\n\n## Roman Citizenship\n\nPaul possessed **Roman citizenship** from birth (Acts 22:28), which was unusual and valuable. This status:\n- Provided legal protections and rights\n- Allowed him to appeal to Caesar\n- Gave him social standing in the Roman world\n\n## Occupation\n\nPaul was trained as a **tentmaker** or leatherworker (Acts 18:3), following the Jewish custom that rabbis should have a trade.\n\n## Persecution of Christians\n\nBefore conversion, Paul was a **fierce persecutor of the early Church**:\n- He approved of Stephen's stoning (Acts 7:58; 8:1)\n- He sought to destroy the church, entering houses and dragging believers to prison (Acts 8:3)\n- He traveled to Damascus with authority to arrest Christians (Acts 9:1-2)\n\nThis zealous opposition made his later conversion all the more dramatic and significant.",
+        "duration": 49687,
         "status": "success",
         "rendered_columns": [],
-        "created_at": "2025-12-30T13:52:43.736Z",
+        "created_at": "2025-12-30T14:26:41.875Z",
         "scores": [
           {
-            "id": 67,
+            "id": 87,
             "eval_id": 42,
             "name": "Historical Accuracy Judge",
-            "score": 0.92,
+            "score": 0.95,
             "description": "LLM-based evaluation of historical and contextual accuracy",
             "metadata": {
               "doctrinally_sound": true,
               "biblically_grounded": true,
               "nuance_captured": true,
-              "errors": [],
-              "rationale": "The response accurately recaps Paul’s background prior to his conversion: Jewish heritage (tribe of Benjamin, from Tarsus in Cilicia), Roman citizenship by birth, educated in Jerusalem under Gamaliel, identified as a Pharisee and zealous for Jewish tradition, and the claim of “blameless” righteousness under the Law (Philippians 3:6). It also correctly notes his occupation as a tentmaker (Acts 18:3) and his pre-conversion role as a persecutor of the Church (Acts 7–9; 8:3; 9:1–2) and his own statement as the “foremost” of sinners (1 Timothy 1:15). These elements are the standard, widely accepted facts about Paul’s background before his conversion. The answer also mentions the significance of his Roman citizenship for later events, which is historically accurate. Minor caveats exist in how some details are framed in scripture (e.g., Acts 21:39’s phrasing “a citizen of no obscure city” and the exact nature of his birth, whether citizenship was by birth or purchase), but these do not meaningfully detract from the overall factual accuracy or completeness of the overview. The response is directly relevant to the question and provides appropriate scholarly-contextual framing without venturing into doctrinal interpretation."
+              "errors": [
+                "The phrase 'tentmaker or leatherworker' is not supported by the biblical text; Paul is consistently described as a 'tentmaker' by trade. Leatherworking is not indicated in Acts and should not be presented as part of his known occupation."
+              ],
+              "rationale": "The answer accurately identifies Paul's pre-conversion background: Jewish heritage from Tarsus, educated as a Pharisee under Gamaliel, Roman citizenship by birth, and occupation as a tentmaker (Acts 18:3). It also correctly notes his zealous persecution of Christians (Acts 7–9; Galatians 1). The details align with primary sources (Acts, Philippians) and reflect common scholarly consensus. A minor imprecision is the characterization of his trade as 'tentmaker or leatherworker'; biblical text specifies 'tentmaker' (Acts 18:3), so this should be stated as 'tentmaker' only. The response directly answers the question and presents relevant context without venturing into theological interpretation beyond historical context."
             },
-            "created_at": "2025-12-30T13:53:43.755Z"
+            "created_at": "2025-12-30T14:27:31.581Z"
           },
           {
-            "id": 68,
+            "id": 88,
             "eval_id": 42,
             "name": "Key Points Coverage",
-            "score": 0,
+            "score": 1,
             "description": "Checks if the response includes key factual points using word overlap",
             "metadata": {
-              "keyPhrases": [],
-              "matchedPoints": [],
+              "keyPhrases": [
+                "Pharisee",
+                "persecutor",
+                "Damascus",
+                "conversion"
+              ],
+              "matchedPoints": [
+                "Pharisee",
+                "persecutor",
+                "Damascus",
+                "conversion"
+              ],
               "missedPoints": [],
-              "coverage": 0,
-              "totalPoints": 0,
-              "pointsFound": 0
+              "coverage": 1,
+              "totalPoints": 4,
+              "pointsFound": 4
             },
-            "created_at": "2025-12-30T13:53:43.755Z"
+            "created_at": "2025-12-30T14:27:31.581Z"
           }
         ]
       },
@@ -112,45 +137,50 @@
         "col_order": 2,
         "input": "To whom was the book of Romans written and why?",
         "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
-        "output": "# The Book of Romans: Recipients and Purpose\n\n## To Whom It Was Written\n\nThe book of Romans was written to **the Christian community in Rome** (Romans 1:7). This audience included:\n\n- **Both Jewish and Gentile believers**, though the letter suggests a predominantly Gentile composition (Romans 1:13; 11:13)\n- Multiple house churches scattered throughout Rome (no single central meeting place yet existed)\n- A community Paul had not personally founded or yet visited (Romans 1:10-13; 15:22-23)\n\n## Why It Was Written\n\nPaul wrote Romans with several interconnected purposes:\n\n### 1. **Preparation for His Visit**\nPaul planned to visit Rome on his way to Spain and wanted to introduce himself and his gospel message to a church he hadn't established (Romans 15:24, 28-29).\n\n### 2. **Theological Foundation**\nHe provided the most systematic presentation of the gospel found in his letters, covering:\n- Universal human sinfulness (chapters 1-3)\n- Justification by faith alone (chapters 3-5)\n- Sanctification and life in the Spirit (chapters 6-8)\n- God's faithfulness to Israel (chapters 9-11)\n- Practical Christian living (chapters 12-15)\n\n### 3. **Unity Between Jewish and Gentile Christians**\nEvidence suggests tensions existed between these groups in Rome. Paul addressed:\n- The relationship between faith and the Mosaic Law\n- God's ongoing plan for Israel\n- Mutual acceptance despite differences in practices (Romans 14-15)\n\n### 4. **Request for Support**\nPaul sought the Roman church's prayer and material support for his planned missionary journey to Spain (Romans 15:24, 30-32).",
-        "duration": 72928,
+        "output": "# The Book of Romans: Audience and Purpose\n\n## Primary Audience\n\nThe book of Romans was written to **the Christian community in Rome**, comprising both Jewish and Gentile believers. Paul addresses this mixed congregation throughout the letter, sometimes speaking directly to Gentile Christians (Romans 1:13, 11:13) and other times engaging with Jewish concerns and objections (Romans 2:17-29, 3:1-8).\n\n### Evidence about the Roman Church:\n- Paul had not yet visited Rome when he wrote this letter (Romans 1:10-13, 15:22-24)\n- The church likely consisted of multiple house churches scattered throughout the city\n- There appears to have been some tension between Jewish and Gentile believers (Romans 14:1-15:13)\n\n## Purpose for Writing\n\nPaul had **multiple interconnected purposes**:\n\n### 1. **Introduce Himself and His Gospel**\n- Planning to visit Rome on his way to Spain (Romans 15:24, 28)\n- Wanted to establish a relationship and secure their support for his missionary work\n- Provided his most systematic presentation of the gospel message\n\n### 2. **Address Theological Issues**\n- Explained the relationship between faith and works, law and grace\n- Clarified how Jews and Gentiles are both saved through faith in Christ\n- Addressed questions about Israel's role in God's plan (chapters 9-11)\n\n### 3. **Promote Unity**\n- Reconciled tensions between Jewish and Gentile Christians\n- Urged mutual acceptance despite differences in practices (Romans 14-15)\n- Emphasized that all have sinned and all are justified by faith alone\n\n### 4. **Practical Application**\n- Provided ethical instruction for Christian living (Romans 12-13)\n- Addressed specific issues like obedience to governing authorities\n\nThis letter, written around **AD 57-58** from Corinth, became Christianity's most influential theological treatise.",
+        "duration": 56696,
         "status": "success",
         "rendered_columns": [],
-        "created_at": "2025-12-30T13:52:43.736Z",
+        "created_at": "2025-12-30T14:26:41.875Z",
         "scores": [
           {
-            "id": 125,
+            "id": 119,
             "eval_id": 43,
             "name": "Historical Accuracy Judge",
-            "score": 0.85,
+            "score": 0.93,
             "description": "LLM-based evaluation of historical and contextual accuracy",
             "metadata": {
               "doctrinally_sound": true,
               "biblically_grounded": true,
               "nuance_captured": true,
-              "errors": [
-                "The claim that Romans 1:13; 11:13 show a predominantly Gentile church is debated; most scholars view the Roman church as a mixed Jewish–Gentile community, with evidence for both groups and varying leadership roles. The assertion of a “predominantly Gentile” composition should be hedged.",
-                "The statement that there was “no single central meeting place yet existed” is a reasonable inference about early Roman house churches but is not explicitly stated in Romans; the historical structure of the Roman church is not clearly documented in the text."
-              ],
-              "rationale": "The answer correctly identifies the recipients as the Christian community in Rome and outlines key purposes of Romans: (1) preparation for Paul’s visit (on the way to Spain), (2) a theological foundation of the gospel, (3) addressing Jewish–Gentile tensions and unity, and (4) requesting prayer and financial support for the Spain mission. It aligns with standard scholarly understanding. Some points require hedging due to ongoing scholarly debate (audience composition) and the absence of explicit architectural details about meeting locations in the text."
+              "errors": [],
+              "rationale": "The LLM answer accurately identifies the audience as the Roman church consisting of Jewish and Gentile believers and notes supporting details (Romans 1:10–13; 15:22–24) that Paul had not yet visited Rome when writing. It correctly cites evidence for house churches and tensions between Jewish and Gentile believers (Rom 14–15). It lays out the letter’s purposes: to introduce Paul and his gospel (including his plan to visit Spain, Romans 15:24, 28), address theological issues (faith vs. works, law and grace; Israel’s role in Rom 9–11), promote unity (Rom 14–15), and provide practical instruction (Rom 12–13). It also consistently places the composition in the broader scholarly consensus: ca. 57–58 AD, from Corinth, preparing for a visit to Rome and onward to Spain. The answer is relevant to the question and uses cautious wording where appropriate (e.g., “likely” for house churches). Minor caveat: the framing of “prepare for his visit” is implicit in the plan to visit and seek support, rather than stated as a separate explicit aim, but this does not materially affect accuracy. Overall, a strong, well-supported assessment. "
             },
-            "created_at": "2025-12-30T13:53:56.682Z"
+            "created_at": "2025-12-30T14:27:38.590Z"
           },
           {
-            "id": 126,
+            "id": 120,
             "eval_id": 43,
             "name": "Key Points Coverage",
-            "score": 0,
+            "score": 1,
             "description": "Checks if the response includes key factual points using word overlap",
             "metadata": {
-              "keyPhrases": [],
-              "matchedPoints": [],
+              "keyPhrases": [
+                "church in Rome",
+                "gospel",
+                "Paul"
+              ],
+              "matchedPoints": [
+                "church in Rome",
+                "gospel",
+                "Paul"
+              ],
               "missedPoints": [],
-              "coverage": 0,
-              "totalPoints": 0,
-              "pointsFound": 0
+              "coverage": 1,
+              "totalPoints": 3,
+              "pointsFound": 3
             },
-            "created_at": "2025-12-30T13:53:56.682Z"
+            "created_at": "2025-12-30T14:27:38.590Z"
           }
         ]
       },
@@ -160,42 +190,59 @@
         "col_order": 3,
         "input": "What was the historical context of the book of Exodus?",
         "expected": "Exodus describes the Israelites' slavery in Egypt and their deliverance by God through Moses",
-        "output": "# Historical Context of the Book of Exodus\n\n## Traditional Dating and Setting\n\nThe book of Exodus is set during Israel's enslavement in Egypt and their subsequent liberation. The narrative spans approximately 80 years, from Moses' birth to the completion of the Tabernacle.\n\n**Two main chronological theories exist:**\n\n1. **Early Date (c. 1446 BC)** - Based on 1 Kings 6:1, which states the Exodus occurred 480 years before Solomon's temple (c. 966 BC). This places the events during Egypt's 18th Dynasty, possibly under Thutmose III or Amenhotep II.\n\n2. **Late Date (c. 1260-1250 BC)** - Favored by many scholars based on archaeological evidence, including the storage cities Pithom and Rameses (possibly built under Rameses II of the 19th Dynasty).\n\n## Egyptian Context\n\nThe Israelites' experience reflects the realities of ancient Egypt:\n- **Forced labor** on building projects was common for both foreign populations and Egyptian citizens\n- **Semitic peoples** in Egypt's Nile Delta region is well-documented\n- **Egypt's power** during the New Kingdom period (1550-1070 BC) dominated the ancient Near East\n\n## Israelite Religious Development\n\nExodus marks a pivotal transition:\n- Formal establishment of **Yahweh worship** and the covenant relationship\n- Introduction of the **Law (Torah)** at Mount Sinai\n- Creation of Israel as a **nation** rather than just a family clan\n\n## Scholarly Considerations\n\nWhile the biblical account presents these events as occurring in a specific historical period, extra-biblical evidence for the Exodus itself remains debated among scholars, with ongoing discussion about historicity and dating.",
-        "duration": 72665,
+        "output": "# Historical Context of the Book of Exodus\n\n## Traditional Dating and Setting\n\nThe book of Exodus is set during Israel's enslavement in Egypt and their subsequent liberation. The narrative spans approximately 80-120 years, from the oppression under a pharaoh \"who did not know Joseph\" through the wilderness wanderings to Mount Sinai.\n\n## Scholarly Debate on Timing\n\n**Early Date (15th century BC - c. 1446 BC):**\n- Based on 1 Kings 6:1, which states the Exodus occurred 480 years before Solomon's temple (c. 966 BC)\n- Would place events during Egypt's 18th Dynasty\n- Possible pharaohs: Thutmose III or Amenhotep II\n\n**Late Date (13th century BC - c. 1260-1250 BC):**\n- Favored by many scholars based on archaeological evidence\n- Aligns with the reign of Ramesses II\n- Corresponds to evidence of destruction in Canaanite cities and new settlements in the 13th century\n\n## Egyptian Historical Context\n\nThe historical backdrop includes:\n- **New Kingdom Egypt** at the height of its power\n- Extensive building projects using forced labor\n- Egypt's control over Canaan and surrounding regions\n- No Egyptian records explicitly mention the Exodus (not unusual, as Egyptian records typically omitted defeats)\n\n## Archaeological Considerations\n\nEvidence remains debated, with challenges including:\n- Limited archaeological evidence for a mass migration\n- The Merneptah Stele (c. 1208 BC) - first mention of \"Israel\" in Egyptian records\n- Debates about the scale and nature of the departure\n\nThe Exodus fundamentally shaped Israelite identity and theology, regardless of the precise historical details.",
+        "duration": 80505,
         "status": "success",
         "rendered_columns": [],
-        "created_at": "2025-12-30T13:52:43.736Z",
+        "created_at": "2025-12-30T14:26:41.875Z",
         "scores": [
           {
-            "id": 123,
+            "id": 227,
             "eval_id": 44,
             "name": "Historical Accuracy Judge",
-            "score": 0.9,
+            "score": 0.66,
             "description": "LLM-based evaluation of historical and contextual accuracy",
             "metadata": {
-              "doctrinally_sound": true,
-              "biblically_grounded": true,
+              "doctrinally_sound": false,
+              "biblically_grounded": false,
               "nuance_captured": true,
-              "errors": [],
-              "rationale": "The response accurately presents the Exodus context as involving Israelite slavery in Egypt and divine deliverance, then expands to scholarly dating debates (early date ~1446 BCE vs late date ~1260–1250 BCE) with citations to the 1 Kings 6:1 formula and the Ramesses/Pithom link. It correctly notes the broader Egyptian context (New Kingdom power, presence of Semitic groups) and the major religious developments (covenant/Yahweh worship, Sinai law, nation formation). It also appropriately acknowledges the lack of extrabiblical evidence for the Exodus and that dating remains debated. The discussion is balanced, cites standard scholarly positions, and avoids definitive claims where evidence is contested. A potential caveat is the simplifying timeline statement (80 years from Moses’ birth to Tabernacle completion), which is a common but approximate summary rather than a fixed chronology; however, it is not misleading for a contextual overview.)"
+              "errors": [
+                "The response asserts the Exodus narrative spans about 80–120 years from oppression to Mount Sinai. This is not a standard or well-supported biblical chronology; the wilderness wandering alone is described as 40 years, and the broader chronology from Abraham's descendants’ arrival in Egypt to Sinai is commonly dated differently in scholarly discussions (often framed around generations and/or the traditional 430 years of sojourning in Egypt, per Genesis 15:13 and Exodus 12:40–41).",
+                "Key biblical chronology is under-emphasized or omitted. The answer does not mention the biblical 430-year sojourn in Egypt and the 40-year wilderness period, which are central to understanding the Exodus timeframe in the biblical text.",
+                "The association of a late dating with destruction in Canaanite cities and new settlements is presented as a broadly accepted stance; in archaeology, the late-date exodus/Conquest model is debated and nuanced, and the evidence is far from universally accepted as establishing a direct Exodus chronology.",
+                "Some dating claims (e.g., 1 Kings 6:1 anchoring Exodus ~1445–1446 BC; Ramesses II as the contextual king) are presented with confidence that may oversimplify scholarly diversity. These connections are contested and should be framed as one among several competing proposals rather than a consensus.",
+                "The statement that “no Egyptian records explicitly mention the Exodus” is broadly true, but the response could acknowledge that Egyptology frequently treats such events as unlikely to be recorded in a straightforward way, and that scholars debate whether there are indirect textual hints or later reinterpretations related to the Exodus context."
+              ],
+              "rationale": "The answer provides a solid overview of the main scholarly dating debates, Egyptian context, and archaeological considerations, and it notes the uncertainty. However, it contains a factual inaccuracy regarding the Exodus timeframe (80–120 years from oppression to Sinai) and omits essential biblical chronology elements (430-year sojourn, 40 years in the wilderness). It also presents the late-date position with broad confidence as “favored by many scholars,” which overstates consensus in archaeology and biblical scholarship. These issues affect factual accuracy and completeness, though the treatment remains appropriately nuanced overall."
             },
-            "created_at": "2025-12-30T13:53:56.419Z"
+            "created_at": "2025-12-30T14:28:02.399Z"
           },
           {
-            "id": 124,
+            "id": 228,
             "eval_id": 44,
             "name": "Key Points Coverage",
-            "score": 0,
+            "score": 0.25,
             "description": "Checks if the response includes key factual points using word overlap",
             "metadata": {
-              "keyPhrases": [],
-              "matchedPoints": [],
-              "missedPoints": [],
-              "coverage": 0,
-              "totalPoints": 0,
-              "pointsFound": 0
+              "keyPhrases": [
+                "slavery",
+                "Egypt",
+                "deliverance",
+                "Moses"
+              ],
+              "matchedPoints": [
+                "Egypt"
+              ],
+              "missedPoints": [
+                "slavery",
+                "deliverance",
+                "Moses"
+              ],
+              "coverage": 0.25,
+              "totalPoints": 4,
+              "pointsFound": 1
             },
-            "created_at": "2025-12-30T13:53:56.419Z"
+            "created_at": "2025-12-30T14:28:02.399Z"
           }
         ]
       },
@@ -205,14 +252,14 @@
         "col_order": 4,
         "input": "Who was the primary audience of the Sermon on the Mount?",
         "expected": "Jesus' disciples and the crowds who followed him",
-        "output": "# Primary Audience of the Sermon on the Mount\n\n## The Immediate Audience\n\nThe Sermon on the Mount (Matthew 5-7) was delivered to **two distinct groups**:\n\n1. **Jesus' disciples** (primary focus)\n2. **Large crowds** who followed Jesus (secondary observers)\n\nMatthew 5:1-2 establishes this clearly: *\"Now when Jesus saw the crowds, he went up on a mountainside and sat down. His disciples came to him, and he began to teach them.\"*\n\n## The Disciples as Primary Recipients\n\nThe sermon appears specifically directed at Jesus' **committed followers** for several reasons:\n\n- **The content's demanding nature**: The teachings require radical commitment (turning the other cheek, loving enemies, seeking God's kingdom first)\n- **The direct address**: Jesus speaks in second person (\"you are the salt of the earth,\" \"you are the light of the world\")\n- **The assumption of belief**: The sermon presupposes acceptance of Jesus' authority and God's kingdom\n\n## The Crowds as Witnesses\n\nMatthew 7:28 notes that *\"the crowds were amazed at his teaching.\"* This indicates they were present and listening, though the instruction was primarily aimed at shaping the disciples' understanding of kingdom life.\n\n## Broader Application\n\nWhile immediately addressing first-century disciples, Matthew's Gospel presents this sermon as instruction for **all followers of Jesus** throughout church history, establishing the ethical and spiritual principles of life in God's kingdom.",
-        "duration": 57020,
+        "output": "# Primary Audience of the Sermon on the Mount\n\n## The Immediate Audience\n\nThe primary audience of the Sermon on the Mount consisted of **Jesus' disciples**, with a larger crowd of people also present as listeners.\n\n### Biblical Evidence\n\nMatthew 5:1-2 clearly establishes this: *\"When Jesus saw the crowds, he went up on a mountainside. And after he sat down, his disciples came to him, and he began to teach them.\"*\n\nThe sermon concludes with a note that \"the crowds were amazed at his teaching\" (Matthew 7:28-29), indicating they were present and listening throughout.\n\n## Two-Tiered Audience Structure\n\n1. **Primary/Direct audience**: The disciples - those who had committed to following Jesus\n2. **Secondary audience**: The larger crowds - those curious about or interested in Jesus' ministry\n\n## Evidence for Disciples as Primary Audience\n\nThe **content and demands** of the sermon support disciples as the primary target:\n- The radical ethical teachings (turning the other cheek, loving enemies)\n- The \"you are the salt of the earth\" and \"light of the world\" statements (5:13-14)\n- Instructions about prayer, fasting, and righteous living assume committed followers\n- The challenging nature of these teachings fits those making a life commitment\n\n## Scholarly Consensus\n\nMost biblical scholars agree the sermon was directed primarily at Jesus' followers while being overheard by the crowds, making it both instructional for disciples and invitational for those considering discipleship.",
+        "duration": 37059,
         "status": "success",
         "rendered_columns": [],
-        "created_at": "2025-12-30T13:52:43.736Z",
+        "created_at": "2025-12-30T14:26:41.875Z",
         "scores": [
           {
-            "id": 55,
+            "id": 31,
             "eval_id": 45,
             "name": "Historical Accuracy Judge",
             "score": 0.9,
@@ -222,25 +269,33 @@
               "biblically_grounded": true,
               "nuance_captured": true,
               "errors": [],
-              "rationale": "The response accurately identifies the immediate textual cues: Mt 5:1-2 sets the scene with the crowds and Jesus’ disciples, and Mt 7:28 describes the crowds’ reaction, supporting the claim that the disciples were the primary audience with the crowds as listeners/witnesses. It correctly argues that the sermon targets committed followers (the disciples) while also functioning as teaching that the crowds overhear and that its ethical instructions have broader applicability for all followers of Jesus. This aligns with common scholarly readings that acknowledge both a primary audience (the disciples) and a broader audience-in-progress (the crowds). The answer could be slightly more explicit about ongoing scholarly debate on how tightly the “you” is scoped (disciples vs. inclusively addressed hearers); however, the core facts and interpretation are solid and relevant to the question. "
+              "rationale": "The answer accurately identifies the Sermon on the Mount’s immediate audience as Jesus’ disciples, with a larger crowd listening. It uses Matthew 5:1-2 to support the claim that the disciples were the primary addressees while the crowds were present, and Mt 7:28-29 to illustrate that the crowd overheard the teaching. It correctly presents a two-tier audience model (primary/disciples and secondary/crowds) and notes that the sermon assumes a committed following (ethical demands, prayer, etc.). It also aligns with a scholarly consensus that the sermon was directed primarily to Jesus’ followers while being overheard by the crowds. The response is directly relevant to the question and includes textual evidence and scholarly context. A potential nuance for fuller balance would be to acknowledge a wider range of scholarly views on the degree of audience specificity, but the answer already signals this with the two-tier framing and the stated consensus."
             },
-            "created_at": "2025-12-30T13:53:40.775Z"
+            "created_at": "2025-12-30T14:27:18.953Z"
           },
           {
-            "id": 56,
+            "id": 32,
             "eval_id": 45,
             "name": "Key Points Coverage",
-            "score": 0,
+            "score": 1,
             "description": "Checks if the response includes key factual points using word overlap",
             "metadata": {
-              "keyPhrases": [],
-              "matchedPoints": [],
+              "keyPhrases": [
+                "disciples",
+                "crowds",
+                "Jesus"
+              ],
+              "matchedPoints": [
+                "disciples",
+                "crowds",
+                "Jesus"
+              ],
               "missedPoints": [],
-              "coverage": 0,
-              "totalPoints": 0,
-              "pointsFound": 0
+              "coverage": 1,
+              "totalPoints": 3,
+              "pointsFound": 3
             },
-            "created_at": "2025-12-30T13:53:40.775Z"
+            "created_at": "2025-12-30T14:27:18.953Z"
           }
         ]
       },
@@ -250,44 +305,55 @@
         "col_order": 5,
         "input": "What was the purpose of the book of Revelation?",
         "expected": "To encourage persecuted Christians with visions of God's ultimate victory and the return of Christ",
-        "output": "# Purpose of the Book of Revelation\n\n## Primary Purposes\n\nThe Book of Revelation served several interconnected purposes for its original audience and the broader church:\n\n### 1. **Comfort and Encouragement During Persecution**\nWritten to seven churches in Asia Minor (modern-day Turkey) during a time of Roman persecution, Revelation aimed to strengthen Christians facing suffering, imprisonment, and martyrdom. It assured believers that God remained sovereign despite their circumstances.\n\n### 2. **Call to Faithful Endurance**\nThe book repeatedly urges Christians to remain faithful, resist compromise with pagan Roman culture, and persevere through trials. The recurring phrase \"he who overcomes\" emphasizes active faithfulness over passive survival.\n\n### 3. **Theological Assurance of God's Ultimate Victory**\nRevelation provides a cosmic perspective showing that despite present evil and suffering, God will ultimately triumph over Satan, evil powers, and death itself. Christ is portrayed as the victorious Lamb who has already won the decisive battle.\n\n### 4. **Warning and Correction**\nThe letters to the seven churches (chapters 2-3) address specific spiritual problems including false teaching, complacency, and moral compromise, calling churches to repentance.\n\n### 5. **Worship and Doxology**\nThe book draws readers into heavenly worship, reorienting their perspective from earthly troubles to God's throne room, emphasizing that worship is the proper response to God's character and actions.\n\n## Context\n\nMost scholars date Revelation to approximately 95-96 AD during Emperor Domitian's reign, though some argue for an earlier date around 68-70 AD during Nero's persecution.",
-        "duration": 50575,
+        "output": "# Purpose of the Book of Revelation\n\n## Primary Purposes\n\nThe Book of Revelation served several interconnected purposes for its original audience and subsequent readers:\n\n### 1. **Comfort and Encouragement Under Persecution**\nRevelation was written to encourage Christians facing persecution, likely during the reign of Emperor Domitian (c. 95 AD). The book assures believers that despite present suffering, God remains sovereign and will ultimately triumph over evil.\n\n### 2. **Call to Faithful Endurance**\nThe repeated refrain \"let the one who has an ear hear\" and promises to \"those who overcome\" emphasize perseverance. The book warns against compromise with Roman imperial religion and pagan practices while encouraging believers to remain faithful even unto death.\n\n### 3. **Unveiling of Jesus Christ**\nThe opening verse describes it as \"the revelation of Jesus Christ\" - unveiling His true identity as the risen Lord, sovereign King, and coming Judge. This cosmic perspective of Christ contrasts with the earthly power of Rome.\n\n### 4. **Prophetic Warning and Hope**\nRevelation describes coming judgment on God's enemies and the ultimate establishment of God's kingdom. It assures readers that history is moving toward God's predetermined goal - a new heaven and new earth where God dwells with His people.\n\n### 5. **Worship and Doxology**\nThe book contains numerous scenes of heavenly worship, reminding readers that true worship belongs to God and the Lamb alone, not to Caesar or other earthly powers.\n\n## Contemporary Application\n\nWhile written to a specific historical context, Revelation continues to provide hope to persecuted Christians and reminds all believers of God's ultimate victory and faithful promises.",
+        "duration": 38170,
         "status": "success",
         "rendered_columns": [],
-        "created_at": "2025-12-30T13:52:43.736Z",
+        "created_at": "2025-12-30T14:26:41.875Z",
         "scores": [
           {
             "id": 33,
             "eval_id": 46,
             "name": "Historical Accuracy Judge",
-            "score": 0.92,
+            "score": 0.9,
             "description": "LLM-based evaluation of historical and contextual accuracy",
             "metadata": {
               "doctrinally_sound": true,
               "biblically_grounded": true,
               "nuance_captured": true,
               "errors": [
-                "Omission: Explicitly stating the return of Christ (parousia) as a purpose would align with common scholarly summaries; the response emphasizes 'ultimate victory' but does not explicitly mention Christ's return."
+                "Omission: The answer does not mention the traditional attribution to John the Apostle or the scholarly debate about authorship and dating beyond the Domitian reference.",
+                "Omission: It does not explicitly acknowledge that Revelation is a highly symbolic apocalyptic document and that there are multiple scholarly interpretive frameworks (preterist, historicist, futurist, idealist) that discuss its purposes and timing."
               ],
-              "rationale": "The answer accurately identifies the main original-audience purposes of Revelation (comfort during persecution, call to endurance, assurance of God's ultimate victory, the specific warnings to the seven churches, and emphasis on worship). It also correctly notes the typical dating around 95–96 CE under Domitian, while acknowledging earlier-date proposals. The only notable gap is an explicit mention of the return of Christ, which is a standard aspect of Revelation’s eschatology, though its themes of victory and the Lamb imply this. Overall, the response is factually accurate, comprehensive, and appropriately nuanced."
+              "rationale": "The response accurately identifies the main historical purposes commonly associated with Revelation: comfort under persecution (late 1st century, Domitian era), call to perseverance, unveiling of Christ’s identity, prophetic warnings with hope for God’s ultimate victory, and emphasis on worship. It aligns with mainstream dating (late 1st century, Domitian) and the book’s cosmic scope. Nuance is present via hedging the dating. However, it omits discussion of authorship debates and the symbolic/apocalyptic nature of the text, as well as the variety of interpretive approaches, which are relevant to a fuller contextual understanding."
             },
-            "created_at": "2025-12-30T13:53:34.329Z"
+            "created_at": "2025-12-30T14:27:20.064Z"
           },
           {
             "id": 34,
             "eval_id": 46,
             "name": "Key Points Coverage",
-            "score": 0,
+            "score": 1,
             "description": "Checks if the response includes key factual points using word overlap",
             "metadata": {
-              "keyPhrases": [],
-              "matchedPoints": [],
+              "keyPhrases": [
+                "encourage",
+                "persecuted",
+                "victory",
+                "return of Christ"
+              ],
+              "matchedPoints": [
+                "encourage",
+                "persecuted",
+                "victory",
+                "return of Christ"
+              ],
               "missedPoints": [],
-              "coverage": 0,
-              "totalPoints": 0,
-              "pointsFound": 0
+              "coverage": 1,
+              "totalPoints": 4,
+              "pointsFound": 4
             },
-            "created_at": "2025-12-30T13:53:34.329Z"
+            "created_at": "2025-12-30T14:27:20.064Z"
           }
         ]
       },
@@ -297,14 +363,14 @@
         "col_order": 6,
         "input": "What was the relationship between the books of Kings and Chronicles?",
         "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
-        "output": "# Relationship Between Kings and Chronicles\n\n## Overlapping Content\n\nThe books of Kings and Chronicles cover much of the same historical period—from the united monarchy under David and Solomon through the divided kingdom to the Babylonian exile. However, they are **not identical accounts** but rather complementary works with different perspectives and purposes.\n\n## Key Differences\n\n**1. Perspective and Focus:**\n- **Kings**: Presents a more balanced view of both northern (Israel) and southern (Judah) kingdoms, with significant attention to prophets like Elijah and Elisha\n- **Chronicles**: Focuses almost exclusively on Judah and the Davidic line, with greater emphasis on temple worship, priests, and Levites\n\n**2. Theological Emphasis:**\n- **Kings**: Emphasizes the prophetic perspective and evaluates kings based on covenant faithfulness\n- **Chronicles**: Emphasizes the priestly perspective, temple worship, and God's faithfulness to David's dynasty\n\n**3. Genealogical Material:**\n- Chronicles begins with extensive genealogies (1 Chronicles 1-9) not found in Kings\n\n## Historical Relationship\n\n**Authorship and Dating:**\n- Kings was likely compiled during or shortly after the Babylonian exile (6th century BC)\n- Chronicles was written later, probably in the post-exilic period (5th-4th century BC)\n- The Chronicler likely **used Kings as a source** along with other materials\n\n**Purpose:**\nChronicles wasn't simply copying Kings but was addressing the concerns of the post-exilic community, encouraging them about their identity, temple worship, and God's continued faithfulness to His promises.",
-        "duration": 57045,
+        "output": "# Relationship Between Kings and Chronicles\n\n## Historical Coverage\n\nBoth Kings and Chronicles cover largely the **same historical period** - from the united monarchy under David and Solomon through the divided kingdom to the Babylonian exile (roughly 1000-586 BC). However, they approach this history from different perspectives and purposes.\n\n## Key Differences\n\n**Chronicles as a Retelling:**\n- Chronicles was written **later** than Kings (likely post-exilic period, 450-400 BC vs. Kings' completion around 560 BC)\n- Chronicles clearly **used Kings as a source**, along with other materials\n- The author(s) of Chronicles selectively retold the same events with different theological emphases\n\n**Different Perspectives:**\n\n1. **Focus**: Kings covers both northern (Israel) and southern (Judah) kingdoms, while Chronicles focuses almost exclusively on Judah and the Davidic line\n\n2. **Priestly emphasis**: Chronicles gives much more attention to temple worship, priests, Levites, and religious reforms\n\n3. **Theological tone**: Chronicles emphasizes God's faithfulness to David's line and presents a more hopeful, restoration-oriented message for the post-exilic community\n\n4. **Omissions**: Chronicles omits many negative details about David and Solomon found in Kings (e.g., David's sin with Bathsheba, Solomon's apostasy)\n\n## Purpose\n\nWhile Kings was written to explain *why* the exile happened (theological failure), Chronicles was written to encourage the returned exiles by emphasizing God's covenant faithfulness and proper worship as central to restoration.\n\nThe two works are **complementary** rather than contradictory, offering different inspired interpretations of Israel's history for different audiences and purposes.",
+        "duration": 48416,
         "status": "success",
         "rendered_columns": [],
-        "created_at": "2025-12-30T13:52:43.736Z",
+        "created_at": "2025-12-30T14:26:41.875Z",
         "scores": [
           {
-            "id": 57,
+            "id": 81,
             "eval_id": 47,
             "name": "Historical Accuracy Judge",
             "score": 0.92,
@@ -314,25 +380,38 @@
               "biblically_grounded": true,
               "nuance_captured": true,
               "errors": [],
-              "rationale": "The LLM’s response accurately summarizes the relationship between Kings and Chronicles. It notes overlapping historical coverage and the distinct purposes: Kings presents a broader view including the northern kingdom and prophetic material, while Chronicles emphasizes Judah, the Davidic line, temple worship, and priestly concerns. It correctly identifies genealogical material unique to Chronicles, and the scholarly consensus that Kings was compiled in or after the exile while Chronicles is post-exilic and used Kings as a source among others. It also articulates the Chronicler’s likely aims for a post-exilic audience. Minor caveats exist in dating specifics and scholarly debates about sources/editors, which could be acknowledged with hedges, but the core facts and relationships are accurately represented."
+              "rationale": "The LLM’s answer aligns well with mainstream scholarly view: Kings and Chronicles cover the same general historical span (Davidic/United monarchy through the divided kingdom to the exile) but with different aims and emphases. It correctly notes that Chronicles is later (post-exilic are commonly dated to the Persian period, roughly 5th century BCE, sometimes extending to the 4th century BCE), and that Chronicles used Kings as a principal source along with other materials. It accurately describes Chronicles’ emphasis on Judah, Davidic lineage, temple worship, and priestly concerns, and its generally more hopeful, restoration-oriented tone. It also reflects the common claim that Chronicles omits some of the negative episodes found in Kings (e.g., the Bathsheba narrative, Solomon’s idolatry), and it presents the works as complementary rather than contradictory, serving different audiences and purposes. The answer could be slightly more cautious about dating ranges and headline claims (e.g., Chronicles’ exact sources and the extent of omissions), but these are minor nuances within standard scholarly debate, and the overall response is factually accurate, complete, and appropriately nuanced."
             },
-            "created_at": "2025-12-30T13:53:40.799Z"
+            "created_at": "2025-12-30T14:27:30.310Z"
           },
           {
-            "id": 58,
+            "id": 82,
             "eval_id": 47,
             "name": "Key Points Coverage",
-            "score": 0,
+            "score": 0.8,
             "description": "Checks if the response includes key factual points using word overlap",
             "metadata": {
-              "keyPhrases": [],
-              "matchedPoints": [],
-              "missedPoints": [],
-              "coverage": 0,
-              "totalPoints": 0,
-              "pointsFound": 0
+              "keyPhrases": [
+                "retells",
+                "Kings",
+                "priestly",
+                "temple",
+                "David"
+              ],
+              "matchedPoints": [
+                "Kings",
+                "priestly",
+                "temple",
+                "David"
+              ],
+              "missedPoints": [
+                "retells"
+              ],
+              "coverage": 0.8,
+              "totalPoints": 5,
+              "pointsFound": 4
             },
-            "created_at": "2025-12-30T13:53:40.799Z"
+            "created_at": "2025-12-30T14:27:30.310Z"
           }
         ]
       },
@@ -342,45 +421,55 @@
         "col_order": 7,
         "input": "Why did Jesus use parables in his teaching?",
         "expected": "Jesus used parables to reveal truth to those with receptive hearts while concealing it from those who rejected him, and to make spiritual truths memorable through everyday stories",
-        "output": "# Why Jesus Used Parables in His Teaching\n\nJesus employed parables as a central teaching method for several interconnected reasons, which He explained directly to His disciples and which scholars have identified through careful study of the texts.\n\n## Jesus' Own Explanation\n\nThe most direct answer comes from Jesus Himself in Matthew 13:10-17, Mark 4:10-12, and Luke 8:9-10. When His disciples asked why He spoke in parables, Jesus explained that parables served a **dual purpose**:\n\n1. **To reveal truth to receptive hearts**: \"To you it has been given to know the secrets of the kingdom of heaven\" (Matthew 13:11)\n2. **To conceal truth from hardened hearts**: \"But to them it has not been given\" (Matthew 13:11)\n\nJesus quoted Isaiah 6:9-10, indicating that parables fulfilled prophecy about people who \"seeing do not see, and hearing do not hear.\"\n\n## Pedagogical Advantages\n\nParables were highly effective teaching tools because they:\n\n- **Made abstract concepts concrete**: Using everyday images (farmers, seeds, nets, coins) made spiritual truths accessible\n- **Were memorable**: Stories stick in the mind far better than abstract propositions\n- **Invited reflection**: Parables required listeners to think deeply and personally apply the meaning\n- **Disarmed opposition**: Stories were harder to immediately attack than direct doctrinal statements\n\n## Cultural Context\n\nParables fit perfectly within the **Jewish rabbinical tradition** of the time. Teachers regularly used *meshalim* (Hebrew parables/analogies) to communicate wisdom, making Jesus' method familiar yet distinctively powerful.\n\n## Progressive Revelation\n\nParables allowed Jesus to reveal the nature of God's kingdom **gradually**, matching the spiritual readiness of His audience while avoiding premature political confrontation about Messianic claims.",
-        "duration": 71288,
+        "output": "# Why Jesus Used Parables in His Teaching\n\n## Jesus's Own Explanation\n\nJesus directly addressed this question when his disciples asked him. According to **Matthew 13:10-17**, Mark 4:10-12, and Luke 8:9-10, Jesus explained that parables served a dual purpose:\n\n1. **To reveal truth to receptive hearts** - \"To you it has been given to know the secrets of the kingdom of heaven\" (Matthew 13:11)\n\n2. **To conceal truth from hardened hearts** - \"But to them it has not been given\" (Matthew 13:11). He quoted Isaiah 6:9-10, indicating that those who willfully rejected his message would hear but not understand.\n\n## Additional Purposes\n\n### Making Complex Truths Accessible\nParables used familiar, everyday imagery (farming, fishing, family relationships) to explain abstract spiritual concepts about God's kingdom. This made deep theological truths memorable and relatable to common people.\n\n### Provoking Thought and Response\nRather than simply stating facts, parables engaged listeners actively. They required reflection and often challenged conventional assumptions, forcing people to wrestle with the meaning and apply it personally.\n\n### Avoiding Direct Political Confrontation\nParables allowed Jesus to critique religious and political authorities indirectly (e.g., the parable of the wicked tenants in Matthew 21:33-46), providing some protection from immediate arrest while still conveying his message.\n\n### Fulfilling Prophecy\nMatthew 13:34-35 notes that Jesus's use of parables fulfilled Psalm 78:2: \"I will open my mouth in parables; I will utter what has been hidden since the foundation of the world.\"\n\nThe paradoxical nature of parables—simultaneously revealing and concealing—reflects Jesus's ministry to both illuminate truth for seekers and respect the free will of those who chose to reject him.",
+        "duration": 46878,
         "status": "success",
         "rendered_columns": [],
-        "created_at": "2025-12-30T13:52:43.736Z",
+        "created_at": "2025-12-30T14:26:41.875Z",
         "scores": [
           {
-            "id": 117,
+            "id": 71,
             "eval_id": 48,
             "name": "Historical Accuracy Judge",
-            "score": 0.85,
+            "score": 0.92,
             "description": "LLM-based evaluation of historical and contextual accuracy",
             "metadata": {
               "doctrinally_sound": true,
               "biblically_grounded": true,
               "nuance_captured": true,
-              "errors": [
-                "Some statements reflect interpretive debates rather than explicit biblical data: the claim that Jesus used parables to ‘avoid premature political confrontation about Messianic claims’ is debated among scholars and not universally accepted.",
-                "The assertion that parables 'disarmed opposition' and primarily served to conceal truth from those who rejected him is plausible but not explicitly stated in the Gospel texts; it is an interpretive reading rather than a direct claim from Scripture."
-              ],
-              "rationale": "The answer accurately reflects Jesus’ own explanation of parables (dual purpose: reveal to receptive listeners, conceal from others) and cites Matthew 13:11, along with Mark 4:10–12 and Luke 8:9–10. It correctly notes the use of familiar imagery, the memorability of parables, and their place in a Jewish rabbinic milieu. It also offers sensible pedagogical and contextual factors. However, it introduces interpretive claims (e.g., avoidance of political confrontation, deliberate ‘disarming’ of opposition) that are debated among scholars and should be clearly framed as interpretation rather than settled fact. The response covers the essential points but could more explicitly signal the range of scholarly viewpoints on these interpretive aspects."
+              "errors": [],
+              "rationale": "The LLM’s answer aligns well with the Synoptic Gospel material. It accurately cites Jesus’ own explanation in Matthew 13:11 (and the parallel in Mark 4:11–12 and Luke 8:10) about parables revealing truth to listeners with receptive hearts and concealing it from those outside or unreceptive, and notes the Isaiah 6:9–10 backdrop. It correctly adds widely attested purposes: making spiritual truths memorable through familiar, everyday imagery; provoking reflection and interpretive engagement; and the interpretive claim that parables could function as a gentler or indirect critique of authorities (and thus, in part, avoid direct confrontation). It also notes the Matthew/Jesus fulfillment motif via Psalm 78:2 as used in Matthew 13:34–35, which is standard scholarly interpretation. The closing synthesis about the paradox of revelation/concealment and free will is a common scholarly reading. Minor caveats (not factual errors): some nuances inherit different translation choices (e.g., “mysteries” vs. “secrets” in Matthew 13:11) and the claim about “protecting Jesus from arrest” via parables is interpretive and debated among scholars; these do not undermine the overall accuracy. Overall, the answer is factually solid, covers essential information, and presents appropriate nuance for a historical/contextual question.)"
             },
-            "created_at": "2025-12-30T13:53:55.042Z"
+            "created_at": "2025-12-30T14:27:28.772Z"
           },
           {
-            "id": 118,
+            "id": 72,
             "eval_id": 48,
             "name": "Key Points Coverage",
-            "score": 0,
+            "score": 0.8,
             "description": "Checks if the response includes key factual points using word overlap",
             "metadata": {
-              "keyPhrases": [],
-              "matchedPoints": [],
-              "missedPoints": [],
-              "coverage": 0,
-              "totalPoints": 0,
-              "pointsFound": 0
+              "keyPhrases": [
+                "reveal truth",
+                "receptive",
+                "concealing",
+                "memorable",
+                "stories"
+              ],
+              "matchedPoints": [
+                "reveal truth",
+                "receptive",
+                "concealing",
+                "memorable"
+              ],
+              "missedPoints": [
+                "stories"
+              ],
+              "coverage": 0.8,
+              "totalPoints": 5,
+              "pointsFound": 4
             },
-            "created_at": "2025-12-30T13:53:55.042Z"
+            "created_at": "2025-12-30T14:27:28.772Z"
           }
         ]
       }

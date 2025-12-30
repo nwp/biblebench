@@ -5,48 +5,60 @@
     "col_order": 1,
     "input": "What was Paul's background before his conversion?",
     "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
-    "output": "# Paul's Background Before His Conversion\n\n## Jewish Identity and Heritage\n- **Birth name**: Saul (Hebrew), also held the Roman name Paul\n- **Tribe**: Benjamin (Philippians 3:5)\n- **Born in Tarsus**, a significant city in Cilicia (modern-day Turkey), making him a **Roman citizen by birth** — a privileged status (Acts 22:3, 28)\n- Described himself as \"a Hebrew of Hebrews\" (Philippians 3:5), indicating deep cultural and linguistic ties to Jewish tradition\n\n## Education and Training\n- Studied in Jerusalem **\"at the feet of Gamaliel\"** (Acts 22:3), one of the most respected Pharisaic teachers of the era\n- Trained in the strict interpretation of the Torah according to Pharisaic tradition\n- Described himself as advancing in Judaism beyond many contemporaries, being \"extremely zealous for the traditions of my fathers\" (Galatians 1:14)\n\n## Religious Standing\n- A **Pharisee** — the sect known for rigorous observance of the Law (Philippians 3:5; Acts 23:6)\n- Considered himself \"faultless\" regarding legalistic righteousness (Philippians 3:6)\n\n## Occupation\n- A **tentmaker** by trade (Acts 18:3), consistent with rabbinic practice of learning a manual skill\n\n## Persecution of Christians\n- Actively persecuted the early church \"violently\" (Galatians 1:13)\n- Present at Stephen's martyrdom (Acts 7:58–8:1)\n- Sought authority to arrest Christians in Damascus (Acts 9:1–2)",
-    "duration": 42964,
+    "output": "# Paul's Background Before His Conversion\n\n## Jewish Identity and Heritage\n- **Birth name**: Saul (Hebrew), also bore the Roman name Paul\n- **Tribe**: Benjamin (Philippians 3:5)\n- **Birthplace**: Tarsus in Cilicia (Acts 22:3), a significant Hellenistic city\n- **Citizenship**: Roman citizen by birth (Acts 22:28), a privileged status\n\n## Religious Training and Status\n- **Pharisee**: Belonged to this strict sect known for rigorous Torah observance (Philippians 3:5; Acts 23:6)\n- **Education**: Studied in Jerusalem under **Gamaliel**, one of the most respected rabbis of the era (Acts 22:3)\n- **Zeal**: Described himself as \"extremely zealous for the traditions of my fathers\" (Galatians 1:14)\n- Claimed to be \"blameless\" regarding legalistic righteousness (Philippians 3:6)\n\n## Trade\n- **Tentmaker** (or leatherworker) by occupation (Acts 18:3), consistent with rabbinic practice of learning a trade\n\n## Persecutor of the Church\n- Actively persecuted early Christians with violent zeal (Galatians 1:13; 1 Corinthians 15:9)\n- Present at and approved of Stephen's execution (Acts 7:58–8:1)\n- Sought authority to arrest Christians in Damascus (Acts 9:1-2)\n\n## Significance\nThis combination of **Jewish scholarship**, **Hellenistic culture**, and **Roman citizenship** uniquely equipped Paul for his later missionary work across the Roman Empire.",
+    "duration": 53610,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T13:52:43.736Z",
-    "score": 0.465,
+    "created_at": "2025-12-30T14:26:41.875Z",
+    "score": 0.96,
     "scores": [
       {
-        "id": 13,
+        "id": 103,
         "eval_id": 50,
         "name": "Historical Accuracy Judge",
-        "score": 0.93,
+        "score": 0.92,
         "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [],
-          "rationale": "The LLM's answer accurately reflects Paul's pre-conversion background as presented in the New Testament: he was Saul of Tarsus, a Hebrew of Hebrews, from the tribe of Benjamin, born in Tarsus (Cilicia) and a Roman citizen by birth; he studied under Gamaliel in Jerusalem; he was a Pharisee, zealous for the traditions of the fathers, and blameless under the law; he earned a living as a tentmaker; he persecuted the church (present at Stephen's martyrdom) and sought authority to arrest Christians in Damascus. These points align with Acts (22:3; 28; 7–9; 18:3) and Galatians (1:14) and Philippians (3:5, 3:6). The answer provides appropriate nuance by citing sources and acknowledging Paul's own self-description. A minor caveat is that some scholarly discussions discuss whether Paul's Roman citizenship was inherited or acquired; the text itself presents his claim of birthright citizenship (Acts 22:28), which is the basis for the statement. Overall, it directly answers the question with a comprehensive, well-sourced background."
+          "errors": [
+            "Leatherworker is not a standard translation for Paul's trade; the Greek tekton is usually rendered tentmaker or craftsman, and leatherworking is not widely supported as his occupation."
+          ],
+          "rationale": "The answer accurately covers Paul's background before his conversion: Jewish identity (Saul of Tarsus, tribe of Benjamin), birthplace (Tarsus in Cilicia), Roman citizenship (by birth, with Acts 22:28 supporting the 'born a citizen' claim), religious training (Pharisee, studied under Gamaliel per Acts 22:3), zeal for tradition (Galatians 1:14), perceived moral righteousness (Philippians 3:6, blamelessness under the law), occupation (tentmaker, Acts 18:3), and his persecutory role and events surrounding Stephen (Acts 7:58–8:1; Galatians 1:13; 1 Cor 15:9; Acts 9:1–2). It also notes the road to Damascus as the conversion event. The only notable quibble is the parenthetical claim that he was a leatherworker; the standard reading is tentmaker. Overall, the response is directly relevant and substantially accurate, with appropriate sourcing references baked into the statements."
         },
-        "created_at": "2025-12-30T13:53:26.718Z"
+        "created_at": "2025-12-30T14:27:35.504Z"
       },
       {
-        "id": 14,
+        "id": 104,
         "eval_id": 50,
         "name": "Key Points Coverage",
-        "score": 0,
+        "score": 1,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPhrases": [],
-          "matchedPoints": [],
+          "keyPhrases": [
+            "Pharisee",
+            "persecutor",
+            "Damascus",
+            "conversion"
+          ],
+          "matchedPoints": [
+            "Pharisee",
+            "persecutor",
+            "Damascus",
+            "conversion"
+          ],
           "missedPoints": [],
-          "coverage": 0,
-          "totalPoints": 0,
-          "pointsFound": 0
+          "coverage": 1,
+          "totalPoints": 4,
+          "pointsFound": 4
         },
-        "created_at": "2025-12-30T13:53:26.718Z"
+        "created_at": "2025-12-30T14:27:35.504Z"
       }
     ],
     "traces": [
       {
-        "id": 7,
+        "id": 52,
         "eval_id": 50,
         "input": [
           {
@@ -60,11 +72,11 @@
           }
         ],
         "output": {
-          "text": "# Paul's Background Before His Conversion\n\n## Jewish Identity and Heritage\n- **Birth name**: Saul (Hebrew), also held the Roman name Paul\n- **Tribe**: Benjamin (Philippians 3:5)\n- **Born in Tarsus**, a significant city in Cilicia (modern-day Turkey), making him a **Roman citizen by birth** — a privileged status (Acts 22:3, 28)\n- Described himself as \"a Hebrew of Hebrews\" (Philippians 3:5), indicating deep cultural and linguistic ties to Jewish tradition\n\n## Education and Training\n- Studied in Jerusalem **\"at the feet of Gamaliel\"** (Acts 22:3), one of the most respected Pharisaic teachers of the era\n- Trained in the strict interpretation of the Torah according to Pharisaic tradition\n- Described himself as advancing in Judaism beyond many contemporaries, being \"extremely zealous for the traditions of my fathers\" (Galatians 1:14)\n\n## Religious Standing\n- A **Pharisee** — the sect known for rigorous observance of the Law (Philippians 3:5; Acts 23:6)\n- Considered himself \"faultless\" regarding legalistic righteousness (Philippians 3:6)\n\n## Occupation\n- A **tentmaker** by trade (Acts 18:3), consistent with rabbinic practice of learning a manual skill\n\n## Persecution of Christians\n- Actively persecuted the early church \"violently\" (Galatians 1:13)\n- Present at Stephen's martyrdom (Acts 7:58–8:1)\n- Sought authority to arrest Christians in Damascus (Acts 9:1–2)",
+          "text": "# Paul's Background Before His Conversion\n\n## Jewish Identity and Heritage\n- **Birth name**: Saul (Hebrew), also bore the Roman name Paul\n- **Tribe**: Benjamin (Philippians 3:5)\n- **Birthplace**: Tarsus in Cilicia (Acts 22:3), a significant Hellenistic city\n- **Citizenship**: Roman citizen by birth (Acts 22:28), a privileged status\n\n## Religious Training and Status\n- **Pharisee**: Belonged to this strict sect known for rigorous Torah observance (Philippians 3:5; Acts 23:6)\n- **Education**: Studied in Jerusalem under **Gamaliel**, one of the most respected rabbis of the era (Acts 22:3)\n- **Zeal**: Described himself as \"extremely zealous for the traditions of my fathers\" (Galatians 1:14)\n- Claimed to be \"blameless\" regarding legalistic righteousness (Philippians 3:6)\n\n## Trade\n- **Tentmaker** (or leatherworker) by occupation (Acts 18:3), consistent with rabbinic practice of learning a trade\n\n## Persecutor of the Church\n- Actively persecuted early Christians with violent zeal (Galatians 1:13; 1 Corinthians 15:9)\n- Present at and approved of Stephen's execution (Acts 7:58–8:1)\n- Sought authority to arrest Christians in Damascus (Acts 9:1-2)\n\n## Significance\nThis combination of **Jewish scholarship**, **Hellenistic culture**, and **Roman citizenship** uniquely equipped Paul for his later missionary work across the Roman Empire.",
           "toolCalls": []
         },
-        "start_time": 311.403167,
-        "end_time": 9502.754833,
+        "start_time": 311.702708,
+        "end_time": 10373.048708,
         "input_tokens": 94,
         "output_tokens": 391,
         "total_tokens": 485,
@@ -81,6 +93,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T13:52:43.736Z"
+    "created_at": "2025-12-30T14:26:41.875Z"
   }
 }
