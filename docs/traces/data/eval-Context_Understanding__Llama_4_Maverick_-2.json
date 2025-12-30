@@ -1,0 +1,94 @@
+{
+  "eval": {
+    "id": 66,
+    "suite_id": 7,
+    "col_order": 2,
+    "input": "To whom was the book of Romans written and why?",
+    "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
+    "output": "The book of Romans was written to the Christian community in Rome, the capital city of the Roman Empire. The traditional and majority view is that the Apostle Paul authored the letter.\n\nThe purpose of the letter to the Romans is multifaceted. Paul's primary intention was to introduce himself to the Roman Christians and explain the gospel of Jesus Christ, which he had preached in various regions. He had long desired to visit Rome and wanted to prepare the church for his planned visit (Romans 1:10-15, 15:22-24).\n\nPaul's letter aimed to:\n\n1. **Establish a connection**: Paul sought to build a relationship with the Roman Christians, as he hoped to receive their support for his future missionary endeavors to Spain (Romans 15:24).\n2. **Clarify the gospel**: The letter provides a comprehensive exposition of the gospel, addressing key theological themes, such as justification by faith, the relationship between faith and works, and the role of the law in the life of believers.\n3. **Address Jewish-Gentile relations**: The Roman church was composed of both Jewish and Gentile (non-Jewish) believers. Paul addressed the tensions between these groups, emphasizing the unity of believers in Christ and explaining how the gospel relates to Israel's history and scripture.\n4. **Prepare the church for his visit**: By writing to the Romans, Paul was preparing the church for his impending visit, during which he hoped to receive hospitality and support.\n\nThe letter to the Romans is considered one of Paul's most important writings, and its themes and ideas have had a profound impact on Christian theology and practice throughout history.\n\nIt's worth noting that while the majority view attributes the authorship of Romans to Paul, some scholars have questioned the authorship or suggested that the letter may have undergone editing or redaction. However, the traditional attribution to Paul remains the most widely accepted view.",
+    "duration": 28473,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T19:42:47.492Z",
+    "score": 0.95,
+    "scores": [
+      {
+        "id": 16,
+        "eval_id": 66,
+        "name": "Historical Accuracy Judge",
+        "score": 0.9,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response accurately states that Romans was written to the Christian community in Rome and that Paul is the traditional author. It outlines plausible primary purposes: to introduce himself and explain the gospel, to prepare for a visit to Rome, and to address issues arising from Jew–Gentile relations. It also correctly notes the historical significance of Romans and acknowledges that some scholars question authorship or suggest textual editing, while presenting the traditional view as the mainstream stance. Scholarly debate is mentioned, though the response could have noted the minor technical point that Romans 16:22 indicates a scribe (Tertius) who wrote the letter, which is a nuanced detail sometimes highlighted in discussions of authorship. Overall, the answer directly addresses the question, is factually accurate, and provides appropriate context."
+        },
+        "created_at": "2025-12-30T19:43:15.969Z"
+      },
+      {
+        "id": 17,
+        "eval_id": 66,
+        "name": "Key Points Coverage",
+        "score": 1,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPhrases": [
+            "church in Rome",
+            "gospel",
+            "Paul"
+          ],
+          "matchedPoints": [
+            "church in Rome",
+            "gospel",
+            "Paul"
+          ],
+          "missedPoints": [],
+          "coverage": 1,
+          "totalPoints": 3,
+          "pointsFound": 3
+        },
+        "created_at": "2025-12-30T19:43:15.969Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 6,
+        "eval_id": 66,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: To whom was the book of Romans written and why?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The book of Romans was written to the Christian community in Rome, the capital city of the Roman Empire. The traditional and majority view is that the Apostle Paul authored the letter.\n\nThe purpose of the letter to the Romans is multifaceted. Paul's primary intention was to introduce himself to the Roman Christians and explain the gospel of Jesus Christ, which he had preached in various regions. He had long desired to visit Rome and wanted to prepare the church for his planned visit (Romans 1:10-15, 15:22-24).\n\nPaul's letter aimed to:\n\n1. **Establish a connection**: Paul sought to build a relationship with the Roman Christians, as he hoped to receive their support for his future missionary endeavors to Spain (Romans 15:24).\n2. **Clarify the gospel**: The letter provides a comprehensive exposition of the gospel, addressing key theological themes, such as justification by faith, the relationship between faith and works, and the role of the law in the life of believers.\n3. **Address Jewish-Gentile relations**: The Roman church was composed of both Jewish and Gentile (non-Jewish) believers. Paul addressed the tensions between these groups, emphasizing the unity of believers in Christ and explaining how the gospel relates to Israel's history and scripture.\n4. **Prepare the church for his visit**: By writing to the Romans, Paul was preparing the church for his impending visit, during which he hoped to receive hospitality and support.\n\nThe letter to the Romans is considered one of Paul's most important writings, and its themes and ideas have had a profound impact on Christian theology and practice throughout history.\n\nIt's worth noting that while the majority view attributes the authorship of Romans to Paul, some scholars have questioned the authorship or suggested that the letter may have undergone editing or redaction. However, the traditional attribution to Paul remains the most widely accepted view.",
+          "toolCalls": []
+        },
+        "start_time": 434.066625,
+        "end_time": 1639.543708,
+        "input_tokens": 94,
+        "output_tokens": 384,
+        "total_tokens": 478,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 7,
+    "run_id": 1,
+    "name": "Context Understanding [Llama 4 Maverick]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Llama 4 Maverick",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T19:42:47.492Z"
+  }
+}

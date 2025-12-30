@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 129,
+    "suite_id": 30,
+    "col_order": 35,
+    "input": "Quote 2 Timothy 3:16 from the English Standard Version (ESV) exactly as written",
+    "expected": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness",
+    "output": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,",
+    "duration": 914,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T19:46:51.001Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 294,
+        "eval_id": 129,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-30T19:46:51.916Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 98,
+        "eval_id": 129,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote 2 Timothy 3:16 from the English Standard Version (ESV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,",
+          "toolCalls": []
+        },
+        "start_time": 201.124333,
+        "end_time": 1092.949833,
+        "input_tokens": 96,
+        "output_tokens": 27,
+        "total_tokens": 123,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [Llama 4 Maverick]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "Llama 4 Maverick",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T19:46:51.000Z"
+  }
+}

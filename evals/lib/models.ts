@@ -89,6 +89,7 @@ function wrapWithRateLimit(modelName: string): LanguageModelV2 {
  * OpenAI Models (via OpenRouter)
  */
 export const gpt52 = wrapAISDKModel(openrouter.chat("openai/gpt-5.2"));
+export const gpt52Pro = wrapAISDKModel(openrouter.chat("openai/gpt-5.2-pro"));
 export const gpt5Nano = wrapAISDKModel(openrouter.chat("openai/gpt-5-nano"));
 export const gpt5Mini = wrapAISDKModel(openrouter.chat("openai/gpt-5-mini"));
 export const gptOss120b = wrapAISDKModel(openrouter.chat("openai/gpt-oss-120b"));
@@ -107,6 +108,11 @@ export const claudeOpus45 = wrapAISDKModel(openrouter.chat("anthropic/claude-opu
  */
 export const grok41Fast = wrapAISDKModel(openrouter.chat("x-ai/grok-4.1-fast"));
 export const grok4 = wrapAISDKModel(openrouter.chat("x-ai/grok-4"));
+
+/**
+ * Meta Models (via OpenRouter)
+ */
+export const llama4Maverick = wrapAISDKModel(openrouter.chat("meta-llama/llama-4-maverick"));
 
 /**
  * Google Models (via OpenRouter)
@@ -155,6 +161,7 @@ export const defaultJudgeModel = gpt5Nano;
 export const benchmarkModels: readonly ModelConfig[] = [
   // OpenAI models
   { name: "GPT-5.2", model: gpt52, provider: "openai" },
+  { name: "GPT-5.2 Pro", model: gpt52Pro, provider: "openai" },
   { name: "GPT-5 Nano", model: gpt5Nano, provider: "openai" },
   { name: "GPT-OSS-120B", model: gptOss120b, provider: "openai" },
   { name: "GPT-OSS-20B", model: gptOss20b, provider: "openai" },
@@ -167,6 +174,9 @@ export const benchmarkModels: readonly ModelConfig[] = [
   // X.AI models
   { name: "Grok 4.1 Fast", model: grok41Fast, provider: "xai" },
   { name: "Grok 4", model: grok4, provider: "xai" },
+
+  // Meta models
+  { name: "Llama 4 Maverick", model: llama4Maverick, provider: "meta" },
 
   // Google models
   { name: "Gemini 3 Flash Preview", model: gemini3FlashPreview, provider: "google" },
@@ -192,9 +202,10 @@ export const benchmarkModels: readonly ModelConfig[] = [
  * Model Categories for Organization
  * You can use these to run evaluations on specific categories
  */
-export const openaiModels = [gpt52, gpt5Nano, gptOss120b, gptOss20b];
+export const openaiModels = [gpt52, gpt52Pro, gpt5Nano, gptOss120b, gptOss20b];
 export const anthropicModels = [claudeHaiku45, claudeSonnet45, claudeOpus45];
 export const xaiModels = [grok41Fast, grok4];
+export const metaModels = [llama4Maverick];
 export const googleModels = [gemini3FlashPreview, gemini3ProPreview];
 export const mistralModels = [mistralLarge2512];
 export const deepseekModels = [deepseekV32];

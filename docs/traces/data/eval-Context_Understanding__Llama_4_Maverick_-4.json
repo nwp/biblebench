@@ -1,0 +1,94 @@
+{
+  "eval": {
+    "id": 68,
+    "suite_id": 7,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "The primary audience of the Sermon on the Mount, as recorded in Matthew 5-7, is a matter of some discussion among scholars. The traditional and majority view is that the sermon was delivered by Jesus to his disciples, with the crowds (Matthew 7:28-29) listening in.\n\nAccording to the Gospel of Matthew, Jesus delivers the Sermon on the Mount to his disciples (Matthew 5:1-2), who are the primary audience. The sermon is part of Jesus' teaching on the kingdom of heaven, and its contents reflect a deeper instruction for those who are already followers of Jesus. While the crowds are present and listen to the sermon (Matthew 7:28-29), Jesus' teaching is directed primarily at his disciples.\n\nSome scholars suggest that the sermon may have been intended for a broader audience, such as the Jewish people or even a mixed audience of Jews and Gentiles. However, the text itself indicates that Jesus' primary intention was to instruct his disciples.\n\nIt's worth noting that the parallel passage in Luke 6:20-49, known as the Sermon on the Plain, has some differences in audience and context. In Luke's account, Jesus is surrounded by a crowd of disciples and a great multitude of people from all Judea and Jerusalem, and he delivers the sermon to his disciples.\n\nIn summary, the primary audience of the Sermon on the Mount, according to Matthew's account, is Jesus' disciples, although the crowds are also present and listening. This understanding is based on the text itself and is the traditional and majority view among scholars.",
+    "duration": 136310,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T19:42:47.492Z",
+    "score": 0.9650000000000001,
+    "scores": [
+      {
+        "id": 156,
+        "eval_id": 68,
+        "name": "Historical Accuracy Judge",
+        "score": 0.93,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response faithfully reflects the traditional scholarly view that Matthew presents Jesus as teaching primarily his disciples, with the crowd listening (as supported by Matthew 5:1–2 and 7:28–29). It acknowledges scholarly debate about audience breadth and useful parallel material from Luke 6:17–19 (the Sermon on the Plain) that describes a broader audience. It notes that some scholars argue for a wider audience, which is appropriate nuance. The answer stays close to the text and mainstream interpretation without overclaiming universality, and it directly addresses the question. A minor improvement could be to specify the precise scholarly positions (e.g., Jewish-Christian audience in Matthew vs. broader Gentile inclusion), but the core facts and nuance are accurate and sufficient."
+        },
+        "created_at": "2025-12-30T19:45:03.806Z"
+      },
+      {
+        "id": 157,
+        "eval_id": 68,
+        "name": "Key Points Coverage",
+        "score": 1,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPhrases": [
+            "disciples",
+            "crowds",
+            "Jesus"
+          ],
+          "matchedPoints": [
+            "disciples",
+            "crowds",
+            "Jesus"
+          ],
+          "missedPoints": [],
+          "coverage": 1,
+          "totalPoints": 3,
+          "pointsFound": 3
+        },
+        "created_at": "2025-12-30T19:45:03.806Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 48,
+        "eval_id": 68,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The primary audience of the Sermon on the Mount, as recorded in Matthew 5-7, is a matter of some discussion among scholars. The traditional and majority view is that the sermon was delivered by Jesus to his disciples, with the crowds (Matthew 7:28-29) listening in.\n\nAccording to the Gospel of Matthew, Jesus delivers the Sermon on the Mount to his disciples (Matthew 5:1-2), who are the primary audience. The sermon is part of Jesus' teaching on the kingdom of heaven, and its contents reflect a deeper instruction for those who are already followers of Jesus. While the crowds are present and listen to the sermon (Matthew 7:28-29), Jesus' teaching is directed primarily at his disciples.\n\nSome scholars suggest that the sermon may have been intended for a broader audience, such as the Jewish people or even a mixed audience of Jews and Gentiles. However, the text itself indicates that Jesus' primary intention was to instruct his disciples.\n\nIt's worth noting that the parallel passage in Luke 6:20-49, known as the Sermon on the Plain, has some differences in audience and context. In Luke's account, Jesus is surrounded by a crowd of disciples and a great multitude of people from all Judea and Jerusalem, and he delivers the sermon to his disciples.\n\nIn summary, the primary audience of the Sermon on the Mount, according to Matthew's account, is Jesus' disciples, although the crowds are also present and listening. This understanding is based on the text itself and is the traditional and majority view among scholars.",
+          "toolCalls": []
+        },
+        "start_time": 434.444083,
+        "end_time": 105863.469375,
+        "input_tokens": 97,
+        "output_tokens": 322,
+        "total_tokens": 419,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 7,
+    "run_id": 1,
+    "name": "Context Understanding [Llama 4 Maverick]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Llama 4 Maverick",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T19:42:47.492Z"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "eval": {
+    "id": 52,
+    "suite_id": 5,
+    "col_order": 10,
+    "input": "Mary Baker Eddy, founder of Christian Science, wrote 'Science and Health with Key to the Scriptures,' which Christian Scientists study alongside the Bible as authoritative revelation. What's the orthodox Christian perspective on this?",
+    "expected": "Orthodox Christianity rejects placing any human writing on par with Scripture's unique divine authority. While commentaries, theological works, and devotional writings can be helpful, the Bible alone is the inspired, inerrant Word of God (2 Timothy 3:16-17). The canon of Scripture was closed by the early church, and no new revelations carry the same authority. Elevating Mary Baker Eddy's writings to scriptural status contradicts the sufficiency of Scripture and opens the door to doctrinal error. When Christian Science teachings contradict clear biblical doctrine (like the reality of sin, the nature of Christ's atonement, or the personality of God), this demonstrates the danger of adding extra-biblical authorities.",
+    "output": "Mary Baker Eddy's 'Science and Health with Key to the Scriptures' is a foundational text for Christian Science, a new religious movement that emerged in the 19th century. The orthodox Christian perspective on this text and the Christian Science movement is complex and multifaceted. Here's a breakdown of the key issues:\n\n1. Authority: Christian Science regards 'Science and Health' as authoritative and inspired, alongside the Bible. In contrast, orthodox Christianity affirms the Bible as the sole, supreme authority in matters of faith and practice (2 Timothy 3:16-17; 2 Peter 1:3). The elevation of 'Science and Health' to a status equal to or even above Scripture is seen as unorthodox and potentially divisive.\n\n2. Doctrine of God: Christian Science teaches that God is \"All-in-all\" and that \"God is the only Mind\" (Science and Health, p. 113, 275). While this language might seem to echo some orthodox Christian expressions, it deviates significantly in its underlying metaphysics. Christian Science posits that God is impersonal and that matter is an illusion. In contrast, orthodox Christianity affirms a personal, triune God who created the world (Genesis 1:1; John 1:1-3) and regards matter as real.\n\n3. Christology: Christian Science understands Jesus as a human being who demonstrated the Christ, a divine principle (Science and Health, p. 332-333). This view diverges from orthodox Christian Christology, which affirms Jesus as fully human and fully divine, the second person of the Trinity (John 1:1, 14; Colossians 2:9).\n\n4. Salvation and Healing: Christian Science emphasizes spiritual healing through prayer, which is in line with orthodox Christianity's emphasis on the power of prayer. However, Christian Science rejects the idea of a physical resurrection and views sin, sickness, and death as illusions to be overcome through spiritual understanding (Science and Health, p. 287-288). Orthodox Christianity affirms the bodily resurrection of Jesus (1 Corinthians 15:3-4) and understands salvation as involving physical redemption (Romans 8:23).\n\n5. View of Sin and Evil: Christian Science regards sin and evil as errors of the human mind, rather than as rebellions against a holy God (Science and Health, p. 468-469). In contrast, orthodox Christianity sees sin as a fundamental problem that separates humanity from God and necessitates redemption through Jesus Christ (Romans 3:23; 6:23).\n\nIn conclusion, while Christian Science shares some superficial similarities with orthodox Christianity, its distinctive teachings and emphases diverge significantly from historic Christian doctrine. The Christian Science movement's elevation of 'Science and Health' to a status alongside Scripture, its impersonal view of God, its Christology, and its understanding of salvation and sin all mark significant departures from orthodox Christian theology. As such, Christian Science is generally regarded as a heterodox or unorthodox expression of Christianity. A respectful and truthful analysis should acknowledge both the areas of overlap and the substantial theological differences between Christian Science and orthodox Christianity.",
+    "duration": 75226,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T19:42:47.463Z",
+    "score": 0.8625,
+    "scores": [
+      {
+        "id": 126,
+        "eval_id": 52,
+        "name": "Theological Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "The claim that Science and Health is 'inspired alongside the Bible' may overstate how Christian Science regards inspiration; the text is authoritative within Christian Science but is not canonical Scripture. The movement typically treats it as a revelatory companion text rather than a second canon equal to Scripture."
+          ],
+          "rationale": "The LLM correctly identifies that orthodox Christianity rejects elevating Christian Science writings to Scriptural status, accurately contrasts God as personal Trinity with Christian Science’s Mind/impersonal God, presents Christology differences, and notes the shared emphasis on prayer and healing, along with the orthodox emphasis on physical resurrection and the reality of sin. It captures essential nuances and provides biblically grounded contrasts. A minor refinement would be to more precisely characterize the status of Science and Health in Christian Science (authoritative but not canonical)."
+        },
+        "created_at": "2025-12-30T19:44:02.743Z"
+      },
+      {
+        "id": 127,
+        "eval_id": 52,
+        "name": "Sect Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies which sect/group is involved",
+        "metadata": {
+          "type": "no sect specified"
+        },
+        "created_at": "2025-12-30T19:44:02.743Z"
+      },
+      {
+        "id": 128,
+        "eval_id": 52,
+        "name": "Orthodox Defense",
+        "score": 0.6,
+        "description": "Checks if response articulates orthodox Christian position",
+        "metadata": {
+          "presentMarkers": [
+            "orthodox",
+            "scripture",
+            "trinity"
+          ],
+          "count": 3,
+          "evaluation": "Moderate orthodox defense"
+        },
+        "created_at": "2025-12-30T19:44:02.743Z"
+      },
+      {
+        "id": 129,
+        "eval_id": 52,
+        "name": "Respectful Tone",
+        "score": 1,
+        "description": "Checks that response maintains respect while being truthful",
+        "metadata": {
+          "hasDisrespectful": false,
+          "respectfulCount": 7,
+          "tone": "Respectful"
+        },
+        "created_at": "2025-12-30T19:44:02.743Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 40,
+        "eval_id": 52,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in Christian doctrine and comparative religion. Analyze the following theological question or teaching with accuracy and fairness. Explain how it relates to orthodox Christian theology, identifying areas of agreement or departure. Be truthful but respectful in your analysis.\n\nMary Baker Eddy, founder of Christian Science, wrote 'Science and Health with Key to the Scriptures,' which Christian Scientists study alongside the Bible as authoritative revelation. What's the orthodox Christian perspective on this?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Mary Baker Eddy's 'Science and Health with Key to the Scriptures' is a foundational text for Christian Science, a new religious movement that emerged in the 19th century. The orthodox Christian perspective on this text and the Christian Science movement is complex and multifaceted. Here's a breakdown of the key issues:\n\n1. Authority: Christian Science regards 'Science and Health' as authoritative and inspired, alongside the Bible. In contrast, orthodox Christianity affirms the Bible as the sole, supreme authority in matters of faith and practice (2 Timothy 3:16-17; 2 Peter 1:3). The elevation of 'Science and Health' to a status equal to or even above Scripture is seen as unorthodox and potentially divisive.\n\n2. Doctrine of God: Christian Science teaches that God is \"All-in-all\" and that \"God is the only Mind\" (Science and Health, p. 113, 275). While this language might seem to echo some orthodox Christian expressions, it deviates significantly in its underlying metaphysics. Christian Science posits that God is impersonal and that matter is an illusion. In contrast, orthodox Christianity affirms a personal, triune God who created the world (Genesis 1:1; John 1:1-3) and regards matter as real.\n\n3. Christology: Christian Science understands Jesus as a human being who demonstrated the Christ, a divine principle (Science and Health, p. 332-333). This view diverges from orthodox Christian Christology, which affirms Jesus as fully human and fully divine, the second person of the Trinity (John 1:1, 14; Colossians 2:9).\n\n4. Salvation and Healing: Christian Science emphasizes spiritual healing through prayer, which is in line with orthodox Christianity's emphasis on the power of prayer. However, Christian Science rejects the idea of a physical resurrection and views sin, sickness, and death as illusions to be overcome through spiritual understanding (Science and Health, p. 287-288). Orthodox Christianity affirms the bodily resurrection of Jesus (1 Corinthians 15:3-4) and understands salvation as involving physical redemption (Romans 8:23).\n\n5. View of Sin and Evil: Christian Science regards sin and evil as errors of the human mind, rather than as rebellions against a holy God (Science and Health, p. 468-469). In contrast, orthodox Christianity sees sin as a fundamental problem that separates humanity from God and necessitates redemption through Jesus Christ (Romans 3:23; 6:23).\n\nIn conclusion, while Christian Science shares some superficial similarities with orthodox Christianity, its distinctive teachings and emphases diverge significantly from historic Christian doctrine. The Christian Science movement's elevation of 'Science and Health' to a status alongside Scripture, its impersonal view of God, its Christology, and its understanding of salvation and sin all mark significant departures from orthodox Christian theology. As such, Christian Science is generally regarded as a heterodox or unorthodox expression of Christianity. A respectful and truthful analysis should acknowledge both the areas of overlap and the substantial theological differences between Christian Science and orthodox Christianity.",
+          "toolCalls": []
+        },
+        "start_time": 428.037417,
+        "end_time": 37006.620583,
+        "input_tokens": 101,
+        "output_tokens": 643,
+        "total_tokens": 744,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 5,
+    "run_id": 1,
+    "name": "Sect Theology [Llama 4 Maverick]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/sect-theology.eval.ts",
+    "variant_name": "Llama 4 Maverick",
+    "variant_group": "Sect Theology",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T19:42:47.463Z"
+  }
+}

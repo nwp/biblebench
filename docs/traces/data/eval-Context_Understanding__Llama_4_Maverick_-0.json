@@ -1,0 +1,101 @@
+{
+  "eval": {
+    "id": 64,
+    "suite_id": 7,
+    "col_order": 0,
+    "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
+    "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
+    "output": "The Gospel of John is attributed to John, one of Jesus' twelve apostles, traditionally known as the \"Beloved Disciple\" or \"the disciple whom Jesus loved\" (John 13:23, 19:26, 20:2, 21:7, 21:20). \n\nThe traditional view, held by the early Church Fathers, such as Irenaeus (c. 130-202 AD), is that the Gospel of John was written by John, the son of Zebedee, who was one of Jesus' twelve apostles and is often identified as one of Jesus' inner circle, along with Peter and James.\n\nThe Gospel of John itself does not explicitly state the author's name, but the text implies that the author was an eyewitness to Jesus' ministry and was closely associated with Him (John 19:35, 21:24). The author is referred to as the \"disciple whom Jesus loved,\" which suggests a particularly close relationship with Jesus.\n\nWhile the traditional view attributes the Gospel of John to John, the son of Zebedee, some scholars have raised questions about the authorship, suggesting alternative possibilities, such as John the Presbyter or another follower of Jesus. However, the majority of scholars still accept that the Gospel was written by a person named John, who was closely associated with Jesus and the early Christian community.\n\nIn terms of his relationship to Jesus, John is often depicted as being particularly close to Jesus, being part of His inner circle, and being referred to as the \"disciple whom Jesus loved.\" This close relationship is highlighted throughout the Gospel, where John is often present at significant events in Jesus' life, such as the Last Supper (John 13:23-25) and the Crucifixion (John 19:25-27).\n\nIt's worth noting that some scholars have debated the identity of the \"Beloved Disciple\" and whether this refers to John or another disciple. While the traditional view is that John is the \"Beloved Disciple,\" some scholars have suggested that this may be a symbolic or literary device rather than a historical figure. Nonetheless, the majority view remains that John, the son of Zebedee, is the author of the Gospel and was closely associated with Jesus during His ministry.",
+    "duration": 38663,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T19:42:47.492Z",
+    "score": 0.875,
+    "scores": [
+      {
+        "id": 32,
+        "eval_id": 64,
+        "name": "Historical Accuracy Judge",
+        "score": 0.75,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
+        "metadata": {
+          "doctrinally_sound": false,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Overstated scholarly consensus: the claim that 'the majority of scholars still accept the Gospel was written by a person named John' is not accurate. Modern scholarship is varied and many scholars question apostolic authorship, favoring either an anonymous author or a Johannine community (often referred to as 'the Elder') as the likely origin rather than a single John the Apostle.",
+            "The response could have clarified dating and evidence: it mentions tradition and internal clues but does not engage with the dating debates or the nature of the evidence (internal testimony in the text vs. external testimony from church fathers).",
+            "The reference to 'John the Presbyter' as an alternative is a traditional possibility but not universally accepted; the phrasing could overstate this as a mainstream option without noting its contested status.",
+            "While the answer covers the basics, the one-sided emphasis on apostolic authorship as the majority view (and lack of discussion of dating and evidentiary considerations) is an important gap."
+          ],
+          "rationale": "The LLM correctly presents the traditional view (John the Apostle), the 'Beloved Disciple' motif, and acknowledges debate over identity. It accurately notes that the author is not named in the text and cites early patristic testimony (Irenaeus). The main issue is an overstated claim about scholarly consensus on apostolic authorship, which is not as clear-cut in modern scholarship. The answer would be strengthened by explicitly noting dating debates, the possibility of a Johannine community or the Elder, and by citing representative scholarly positions. Nevertheless, it covers the essential facts and presents the topic with appropriate nuance about debate."
+        },
+        "created_at": "2025-12-30T19:43:26.159Z"
+      },
+      {
+        "id": 33,
+        "eval_id": 64,
+        "name": "Key Points Coverage",
+        "score": 1,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPhrases": [
+            "John",
+            "apostle",
+            "disciple",
+            "loved"
+          ],
+          "matchedPoints": [
+            "John",
+            "apostle",
+            "disciple",
+            "loved"
+          ],
+          "missedPoints": [],
+          "coverage": 1,
+          "totalPoints": 4,
+          "pointsFound": 4
+        },
+        "created_at": "2025-12-30T19:43:26.159Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 11,
+        "eval_id": 64,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who wrote the Gospel of John and what was his relationship to Jesus?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The Gospel of John is attributed to John, one of Jesus' twelve apostles, traditionally known as the \"Beloved Disciple\" or \"the disciple whom Jesus loved\" (John 13:23, 19:26, 20:2, 21:7, 21:20). \n\nThe traditional view, held by the early Church Fathers, such as Irenaeus (c. 130-202 AD), is that the Gospel of John was written by John, the son of Zebedee, who was one of Jesus' twelve apostles and is often identified as one of Jesus' inner circle, along with Peter and James.\n\nThe Gospel of John itself does not explicitly state the author's name, but the text implies that the author was an eyewitness to Jesus' ministry and was closely associated with Him (John 19:35, 21:24). The author is referred to as the \"disciple whom Jesus loved,\" which suggests a particularly close relationship with Jesus.\n\nWhile the traditional view attributes the Gospel of John to John, the son of Zebedee, some scholars have raised questions about the authorship, suggesting alternative possibilities, such as John the Presbyter or another follower of Jesus. However, the majority of scholars still accept that the Gospel was written by a person named John, who was closely associated with Jesus and the early Christian community.\n\nIn terms of his relationship to Jesus, John is often depicted as being particularly close to Jesus, being part of His inner circle, and being referred to as the \"disciple whom Jesus loved.\" This close relationship is highlighted throughout the Gospel, where John is often present at significant events in Jesus' life, such as the Last Supper (John 13:23-25) and the Crucifixion (John 19:25-27).\n\nIt's worth noting that some scholars have debated the identity of the \"Beloved Disciple\" and whether this refers to John or another disciple. While the traditional view is that John is the \"Beloved Disciple,\" some scholars have suggested that this may be a symbolic or literary device rather than a historical figure. Nonetheless, the majority view remains that John, the son of Zebedee, is the author of the Gospel and was closely associated with Jesus during His ministry.",
+          "toolCalls": []
+        },
+        "start_time": 425.28375,
+        "end_time": 1727.55425,
+        "input_tokens": 97,
+        "output_tokens": 467,
+        "total_tokens": 564,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 7,
+    "run_id": 1,
+    "name": "Context Understanding [Llama 4 Maverick]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "Llama 4 Maverick",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T19:42:47.492Z"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 148,
+    "suite_id": 31,
+    "col_order": 6,
+    "input": "What is the reference for the love chapter that starts with 'If I speak in the tongues of men or of angels'?",
+    "expected": "1 Corinthians 13",
+    "output": "1 Corinthians 13:1",
+    "duration": 6690,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T19:46:56.502Z",
+    "score": 0.8333333333333334,
+    "scores": [
+      {
+        "id": 363,
+        "eval_id": 148,
+        "name": "Scripture Reference Accuracy",
+        "score": 0.5,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": true
+        },
+        "created_at": "2025-12-30T19:47:03.212Z"
+      },
+      {
+        "id": 364,
+        "eval_id": 148,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-30T19:47:03.212Z"
+      },
+      {
+        "id": 365,
+        "eval_id": 148,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "1 Corinthians 13:1"
+        },
+        "created_at": "2025-12-30T19:47:03.212Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 142,
+        "eval_id": 148,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for the love chapter that starts with 'If I speak in the tongues of men or of angels'?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "1 Corinthians 13:1",
+          "toolCalls": []
+        },
+        "start_time": 160.544542,
+        "end_time": 6848.29525,
+        "input_tokens": 79,
+        "output_tokens": 7,
+        "total_tokens": 86,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [Llama 4 Maverick]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "Llama 4 Maverick",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T19:46:56.502Z"
+  }
+}

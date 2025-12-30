@@ -1,0 +1,100 @@
+{
+  "eval": {
+    "id": 25,
+    "suite_id": 2,
+    "col_order": 3,
+    "input": "A teacher says: 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human.' Evaluate this teaching.",
+    "expected": "This is the heresy of Docetism. It denies the true humanity of Christ. Orthodox Christianity teaches the hypostatic union - Jesus is fully God AND fully human. He had a real physical body, experienced hunger, thirst, fatigue, and truly died on the cross. 1 John 4:2-3 explicitly condemns denying that Jesus came in the flesh, and Hebrews 2:17 states he had to be made fully human to be our high priest.",
+    "output": "The statement 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human' is not in line with orthodox Christian teaching; it represents a heretical view known as Docetism.\n\n### Orthodox Christian Teaching on the Incarnation\n\nOrthodox Christian doctrine affirms that Jesus Christ is fully human and fully divine, a doctrine established at the Council of Nicaea (325 AD) and further clarified at the Council of Chalcedon (451 AD). The Chalcedonian Definition states that Jesus is to be recognized as one person in two natures, divine and human, \"without confusion, change, division, or separation.\" This definition emphasizes that the divine and human natures of Christ are united in one person (hypostatic union) without diminishing the integrity of either nature.\n\n### Docetism: A Heretical View\n\nThe statement in question aligns with Docetism, a 2nd-century heresy that denied the true humanity of Jesus Christ. Docetism posits that Jesus was not truly human but only appeared to be so. This view undermines the reality of Jesus' physical existence, including his birth, life, suffering, death, and resurrection. According to Docetism, Jesus was a purely spiritual being who merely seemed to have a physical body.\n\n### Why Docetism is Considered Heretical\n\n1. **Denial of True Humanity**: By denying Jesus' true humanity, Docetism challenges the orthodox understanding of the Incarnation. The Bible teaches that Jesus was fully human (Hebrews 2:9, 14; 1 John 4:2-3), experiencing human emotions, weaknesses, and physical sufferings, which is essential for his role as a sympathetic high priest and redeemer.\n\n2. **Implications for Salvation**: The orthodox view holds that Jesus' true humanity and divinity are crucial for the salvation of humanity. Jesus had to be fully human to represent humanity and fully divine to provide an effective sacrifice and to conquer death (1 Timothy 2:5; Hebrews 9:14-15). Docetism, by denying Jesus' true humanity, undermines this soteriological framework.\n\n3. **Scriptural Evidence**: The New Testament presents Jesus as a real human being who was born (Luke 2:1-20), grew in wisdom and stature (Luke 2:52), suffered (Matthew 26:38), and died on the cross (John 19:30-33). Passages like 1 John 4:2-3 and 2 John 1:7 directly counter Docetism by affirming that Jesus Christ came in the flesh.\n\n### Conclusion\n\nThe statement that 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human' is heretical because it denies the true humanity of Jesus Christ, a foundational doctrine of Christianity. This view is contrary to the biblical witness and the orthodox Christian understanding of the Incarnation as defined by the early ecumenical councils.",
+    "duration": 38097,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-30T19:42:47.459Z",
+    "score": 0.9733333333333333,
+    "scores": [
+      {
+        "id": 29,
+        "eval_id": 25,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [
+            "Historical nuance: The statement attributes the formal hypostatic union definition to both Nicaea and Chalcedon (with Chalcedon providing the definitive formulation of one person in two natures). A more precise account is that Chalcedon (451 AD) provided the formal definition of the hypostatic union, while Nicaea (325 AD) affirmed the full divinity of Christ against Arianism. This is a minor historical oversimplification rather than a doctrinal error."
+          ],
+          "rationale": "The LLM accurately identifies Docetism as a denial of Christ’s true humanity and presents the orthodox Christology of the hypostatic union (one person in two natures, divine and human). It correctly notes key biblical arguments against Docetism (e.g., Jesus’ birth, growth, suffering, death, and explicit statements that Jesus came in the flesh). The response references appropriate Ecumenical Councils (Nicaea and Chalcedon) and cites relevant scriptures (1 John 4:2-3, 2 John 1:7, Hebrews 2:17, Luke 2:1–20, Luke 2:52, Matthew 26:38, John 19:30–33, etc.). The treatment is doctrinally sound, biblically grounded, and captures important nuances about incarnation and salvation. The only subtle issue is a simplified historical claim about Nicaea’s role in defining the hypostatic union, which is clarified by noting Chalcedon as the formal definition."
+        },
+        "created_at": "2025-12-30T19:43:25.584Z"
+      },
+      {
+        "id": 30,
+        "eval_id": 25,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-30T19:43:25.584Z"
+      },
+      {
+        "id": 31,
+        "eval_id": 25,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "biblical",
+            "heretical",
+            "heresy"
+          ],
+          "count": 4
+        },
+        "created_at": "2025-12-30T19:43:25.584Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 10,
+        "eval_id": 25,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA teacher says: 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human.' Evaluate this teaching."
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "The statement 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human' is not in line with orthodox Christian teaching; it represents a heretical view known as Docetism.\n\n### Orthodox Christian Teaching on the Incarnation\n\nOrthodox Christian doctrine affirms that Jesus Christ is fully human and fully divine, a doctrine established at the Council of Nicaea (325 AD) and further clarified at the Council of Chalcedon (451 AD). The Chalcedonian Definition states that Jesus is to be recognized as one person in two natures, divine and human, \"without confusion, change, division, or separation.\" This definition emphasizes that the divine and human natures of Christ are united in one person (hypostatic union) without diminishing the integrity of either nature.\n\n### Docetism: A Heretical View\n\nThe statement in question aligns with Docetism, a 2nd-century heresy that denied the true humanity of Jesus Christ. Docetism posits that Jesus was not truly human but only appeared to be so. This view undermines the reality of Jesus' physical existence, including his birth, life, suffering, death, and resurrection. According to Docetism, Jesus was a purely spiritual being who merely seemed to have a physical body.\n\n### Why Docetism is Considered Heretical\n\n1. **Denial of True Humanity**: By denying Jesus' true humanity, Docetism challenges the orthodox understanding of the Incarnation. The Bible teaches that Jesus was fully human (Hebrews 2:9, 14; 1 John 4:2-3), experiencing human emotions, weaknesses, and physical sufferings, which is essential for his role as a sympathetic high priest and redeemer.\n\n2. **Implications for Salvation**: The orthodox view holds that Jesus' true humanity and divinity are crucial for the salvation of humanity. Jesus had to be fully human to represent humanity and fully divine to provide an effective sacrifice and to conquer death (1 Timothy 2:5; Hebrews 9:14-15). Docetism, by denying Jesus' true humanity, undermines this soteriological framework.\n\n3. **Scriptural Evidence**: The New Testament presents Jesus as a real human being who was born (Luke 2:1-20), grew in wisdom and stature (Luke 2:52), suffered (Matthew 26:38), and died on the cross (John 19:30-33). Passages like 1 John 4:2-3 and 2 John 1:7 directly counter Docetism by affirming that Jesus Christ came in the flesh.\n\n### Conclusion\n\nThe statement that 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human' is heretical because it denies the true humanity of Jesus Christ, a foundational doctrine of Christianity. This view is contrary to the biblical witness and the orthodox Christian understanding of the Incarnation as defined by the early ecumenical councils.",
+          "toolCalls": []
+        },
+        "start_time": 399.430042,
+        "end_time": 4119.941542,
+        "input_tokens": 80,
+        "output_tokens": 632,
+        "total_tokens": 712,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 2,
+    "run_id": 1,
+    "name": "Heresy Detection [Llama 4 Maverick]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "Llama 4 Maverick",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-30T19:42:47.459Z"
+  }
+}
