@@ -1,218 +1,378 @@
 {
   "metadata": {
-    "generatedAt": "2025-12-30T13:56:43.930Z",
+    "generatedAt": "2025-12-30T13:59:52.080Z",
     "totalModels": 16,
-    "totalEvaluations": 1,
-    "totalTestCases": 8,
-    "overallBenchmarkScore": 0.4198828125
+    "totalEvaluations": 11,
+    "totalTestCases": 149,
+    "overallBenchmarkScore": 0.5919883965199167
   },
   "models": [
     {
-      "id": "gpt-5-2",
-      "displayName": "GPT-5.2",
-      "provider": "OpenAI",
-      "overallScore": 0.46375,
+      "id": "grok-4-1-fast",
+      "displayName": "Grok 4.1 Fast",
+      "provider": "X.AI",
+      "overallScore": 0.792947934982556,
       "categoryScores": {
-        "scripture": 0.46375,
-        "theology": null
+        "scripture": 0.7275694444444444,
+        "theology": 0.817464868934348
       },
       "evaluationScores": {
-        "Context Understanding": 0.46375
-      }
-    },
-    {
-      "id": "gpt-5-nano",
-      "displayName": "GPT-5 Nano",
-      "provider": "OpenAI",
-      "overallScore": 0.454375,
-      "categoryScores": {
-        "scripture": 0.454375,
-        "theology": null
-      },
-      "evaluationScores": {
-        "Context Understanding": 0.454375
+        "Context Understanding": 0.41187500000000005,
+        "Core Doctrines": 0.8393622144617977,
+        "Denominational Nuance": 0.9083333333333332,
+        "Exact Scripture Matching": 0.9375,
+        "Heresy Detection": 0.9685714285714284,
+        "Pastoral Application": 0.9085000000000001,
+        "Reference Knowledge": 0.8333333333333334,
+        "Sect Theology": 0.8898437499999998,
+        "Steering Compliance - Conservative": 0.6613636363636364,
+        "Steering Compliance - Progressive": 0.7113636363636364,
+        "Theological Orientation": 0.6523809523809523
       }
     },
     {
       "id": "claude-sonnet-4-5",
       "displayName": "Claude Sonnet 4.5",
       "provider": "Anthropic",
-      "overallScore": 0.44875,
+      "overallScore": 0.769445923428639,
       "categoryScores": {
-        "scripture": 0.44875,
-        "theology": null
+        "scripture": 0.7690277777777778,
+        "theology": 0.7696027280477118
       },
       "evaluationScores": {
-        "Context Understanding": 0.44875
-      }
-    },
-    {
-      "id": "grok-4",
-      "displayName": "Grok 4",
-      "provider": "X.AI",
-      "overallScore": 0.44,
-      "categoryScores": {
-        "scripture": 0.44,
-        "theology": null
-      },
-      "evaluationScores": {
-        "Context Understanding": 0.44
+        "Context Understanding": 0.44875,
+        "Core Doctrines": 0.8288942450166145,
+        "Denominational Nuance": 0.9166666666666669,
+        "Exact Scripture Matching": 0.9583333333333334,
+        "Heresy Detection": 0.9652380952380952,
+        "Pastoral Application": 0.9419999999999998,
+        "Reference Knowledge": 0.9,
+        "Sect Theology": 0.8990625000000001,
+        "Steering Compliance - Conservative": 0.5329545454545456,
+        "Steering Compliance - Progressive": 0.5545454545454546,
+        "Theological Orientation": 0.5174603174603176
       }
     },
     {
       "id": "mistral-large-2512",
       "displayName": "Mistral Large 2512",
       "provider": "Mistral",
-      "overallScore": 0.439375,
+      "overallScore": 0.7679452761201438,
       "categoryScores": {
-        "scripture": 0.439375,
-        "theology": null
+        "scripture": 0.7672916666666666,
+        "theology": 0.7681903796651977
       },
       "evaluationScores": {
-        "Context Understanding": 0.439375
+        "Context Understanding": 0.439375,
+        "Core Doctrines": 0.9006936271484199,
+        "Denominational Nuance": 0.9175000000000001,
+        "Exact Scripture Matching": 0.8958333333333334,
+        "Heresy Detection": 0.9738095238095239,
+        "Pastoral Application": 0.8969999999999999,
+        "Reference Knowledge": 0.9666666666666667,
+        "Sect Theology": 0.9326562500000001,
+        "Steering Compliance - Conservative": 0.4897727272727273,
+        "Steering Compliance - Progressive": 0.4840909090909091,
+        "Theological Orientation": 0.5499999999999999
+      }
+    },
+    {
+      "id": "gpt-5-nano",
+      "displayName": "GPT-5 Nano",
+      "provider": "OpenAI",
+      "overallScore": 0.7661667261239856,
+      "categoryScores": {
+        "scripture": 0.7153472222222222,
+        "theology": 0.7852240400871469
+      },
+      "evaluationScores": {
+        "Context Understanding": 0.454375,
+        "Core Doctrines": 0.8545423206971742,
+        "Denominational Nuance": 0.9558333333333334,
+        "Exact Scripture Matching": 0.7916666666666666,
+        "Heresy Detection": 0.9695238095238097,
+        "Pastoral Application": 0.891,
+        "Reference Knowledge": 0.9,
+        "Sect Theology": 0.9662500000000002,
+        "Steering Compliance - Conservative": 0.4556818181818183,
+        "Steering Compliance - Progressive": 0.6318181818181818,
+        "Theological Orientation": 0.557142857142857
       }
     },
     {
       "id": "claude-opus-4-5",
       "displayName": "Claude Opus 4.5",
       "provider": "Anthropic",
-      "overallScore": 0.43687499999999996,
+      "overallScore": 0.7631202626298195,
       "categoryScores": {
-        "scripture": 0.43687499999999996,
-        "theology": null
+        "scripture": 0.7595138888888888,
+        "theology": 0.7644726527826683
       },
       "evaluationScores": {
-        "Context Understanding": 0.43687499999999996
+        "Context Understanding": 0.43687499999999996,
+        "Core Doctrines": 0.823487796936671,
+        "Denominational Nuance": 0.9404166666666666,
+        "Exact Scripture Matching": 0.875,
+        "Heresy Detection": 0.9382539682539682,
+        "Pastoral Application": 0.9415000000000001,
+        "Reference Knowledge": 0.9666666666666667,
+        "Sect Theology": 0.8817187500000001,
+        "Steering Compliance - Conservative": 0.5545454545454546,
+        "Steering Compliance - Progressive": 0.5136363636363637,
+        "Theological Orientation": 0.5222222222222224
       }
     },
     {
       "id": "deepseek-v3-2",
       "displayName": "DeepSeek V3.2",
       "provider": "DeepSeek",
-      "overallScore": 0.429375,
+      "overallScore": 0.7600809559056573,
       "categoryScores": {
-        "scripture": 0.429375,
-        "theology": null
+        "scripture": 0.7625694444444444,
+        "theology": 0.759147772703612
       },
       "evaluationScores": {
-        "Context Understanding": 0.429375
+        "Context Understanding": 0.429375,
+        "Core Doctrines": 0.84660650522197,
+        "Denominational Nuance": 0.9333333333333332,
+        "Exact Scripture Matching": 0.9583333333333334,
+        "Heresy Detection": 0.9728571428571429,
+        "Pastoral Application": 0.8672000000000001,
+        "Reference Knowledge": 0.9,
+        "Sect Theology": 0.9279687499999999,
+        "Steering Compliance - Conservative": 0.5,
+        "Steering Compliance - Progressive": 0.4704545454545455,
+        "Theological Orientation": 0.5547619047619047
       }
     },
     {
-      "id": "claude-haiku-4-5",
-      "displayName": "Claude Haiku 4.5",
-      "provider": "Anthropic",
-      "overallScore": 0.428125,
+      "id": "gpt-5-2",
+      "displayName": "GPT-5.2",
+      "provider": "OpenAI",
+      "overallScore": 0.7563179242314658,
       "categoryScores": {
-        "scripture": 0.428125,
-        "theology": null
+        "scripture": 0.7101388888888889,
+        "theology": 0.7736350624849322
       },
       "evaluationScores": {
-        "Context Understanding": 0.428125
+        "Context Understanding": 0.46375,
+        "Core Doctrines": 0.8772548324912895,
+        "Denominational Nuance": 0.9329166666666668,
+        "Exact Scripture Matching": 0.8333333333333334,
+        "Heresy Detection": 0.9511111111111111,
+        "Pastoral Application": 0.9434999999999999,
+        "Reference Knowledge": 0.8333333333333334,
+        "Sect Theology": 0.9446875000000003,
+        "Steering Compliance - Conservative": 0.4625,
+        "Steering Compliance - Progressive": 0.5056818181818182,
+        "Theological Orientation": 0.5714285714285714
       }
     },
     {
-      "id": "intellect-3",
-      "displayName": "Intellect-3",
-      "provider": "Prime Intellect",
-      "overallScore": 0.423125,
+      "id": "grok-4",
+      "displayName": "Grok 4",
+      "provider": "X.AI",
+      "overallScore": 0.7542874408605766,
       "categoryScores": {
-        "scripture": 0.423125,
-        "theology": null
+        "scripture": 0.7591666666666667,
+        "theology": 0.752457731183293
       },
       "evaluationScores": {
-        "Context Understanding": 0.423125
+        "Context Understanding": 0.44,
+        "Core Doctrines": 0.8519981950651885,
+        "Denominational Nuance": 0.9245833333333334,
+        "Exact Scripture Matching": 0.9375,
+        "Heresy Detection": 0.9657142857142857,
+        "Pastoral Application": 0.9567,
+        "Reference Knowledge": 0.9,
+        "Sect Theology": 0.8728125,
+        "Steering Compliance - Conservative": 0.47727272727272735,
+        "Steering Compliance - Progressive": 0.4761363636363637,
+        "Theological Orientation": 0.49444444444444446
       }
     },
     {
       "id": "glm-4-7",
       "displayName": "GLM-4.7",
       "provider": "Zhipu AI",
-      "overallScore": 0.419375,
+      "overallScore": 0.7514127336458891,
       "categoryScores": {
-        "scripture": 0.419375,
-        "theology": null
+        "scripture": 0.7370138888888889,
+        "theology": 0.7568123004297641
       },
       "evaluationScores": {
-        "Context Understanding": 0.419375
-      }
-    },
-    {
-      "id": "minimax-m2-1",
-      "displayName": "MiniMax M2.1",
-      "provider": "MiniMax",
-      "overallScore": 0.41562499999999997,
-      "categoryScores": {
-        "scripture": 0.41562499999999997,
-        "theology": null
-      },
-      "evaluationScores": {
-        "Context Understanding": 0.41562499999999997
-      }
-    },
-    {
-      "id": "grok-4-1-fast",
-      "displayName": "Grok 4.1 Fast",
-      "provider": "X.AI",
-      "overallScore": 0.41187500000000005,
-      "categoryScores": {
-        "scripture": 0.41187500000000005,
-        "theology": null
-      },
-      "evaluationScores": {
-        "Context Understanding": 0.41187500000000005
-      }
-    },
-    {
-      "id": "gemini-3-flash-preview",
-      "displayName": "Gemini 3 Flash Preview",
-      "provider": "Google",
-      "overallScore": 0.41187499999999994,
-      "categoryScores": {
-        "scripture": 0.41187499999999994,
-        "theology": null
-      },
-      "evaluationScores": {
-        "Context Understanding": 0.41187499999999994
+        "Context Understanding": 0.419375,
+        "Core Doctrines": 0.8711204272476376,
+        "Denominational Nuance": 0.9283333333333333,
+        "Exact Scripture Matching": 0.9583333333333334,
+        "Heresy Detection": 0.9661904761904762,
+        "Pastoral Application": 0.9024999999999999,
+        "Reference Knowledge": 0.8333333333333334,
+        "Sect Theology": 0.8946875000000001,
+        "Steering Compliance - Conservative": 0.45454545454545453,
+        "Steering Compliance - Progressive": 0.4704545454545455,
+        "Theological Orientation": 0.5666666666666667
       }
     },
     {
       "id": "gemini-3-pro-preview",
       "displayName": "Gemini 3 Pro Preview",
       "provider": "Google",
-      "overallScore": 0.4025,
+      "overallScore": 0.7426129756511788,
       "categoryScores": {
-        "scripture": 0.4025,
-        "theology": null
+        "scripture": 0.7466666666666667,
+        "theology": 0.7410928415203707
       },
       "evaluationScores": {
-        "Context Understanding": 0.4025
+        "Context Understanding": 0.4025,
+        "Core Doctrines": 0.8233857696810031,
+        "Denominational Nuance": 0.9129166666666668,
+        "Exact Scripture Matching": 0.9375,
+        "Heresy Detection": 0.959047619047619,
+        "Pastoral Application": 0.8835000000000001,
+        "Reference Knowledge": 0.9,
+        "Sect Theology": 0.8981250000000001,
+        "Steering Compliance - Conservative": 0.4318181818181819,
+        "Steering Compliance - Progressive": 0.4477272727272728,
+        "Theological Orientation": 0.5722222222222223
+      }
+    },
+    {
+      "id": "gemini-3-flash-preview",
+      "displayName": "Gemini 3 Flash Preview",
+      "provider": "Google",
+      "overallScore": 0.7330812578677761,
+      "categoryScores": {
+        "scripture": 0.7275694444444444,
+        "theology": 0.7351481879015254
+      },
+      "evaluationScores": {
+        "Context Understanding": 0.41187499999999994,
+        "Core Doctrines": 0.8268969931111929,
+        "Denominational Nuance": 0.915,
+        "Exact Scripture Matching": 0.9375,
+        "Heresy Detection": 0.9628571428571429,
+        "Pastoral Application": 0.8644999999999999,
+        "Reference Knowledge": 0.8333333333333334,
+        "Sect Theology": 0.8696875000000001,
+        "Steering Compliance - Conservative": 0.4375,
+        "Steering Compliance - Progressive": 0.44204545454545463,
+        "Theological Orientation": 0.5626984126984127
+      }
+    },
+    {
+      "id": "minimax-m2-1",
+      "displayName": "MiniMax M2.1",
+      "provider": "MiniMax",
+      "overallScore": 0.7234499743090453,
+      "categoryScores": {
+        "scripture": 0.6329861111111111,
+        "theology": 0.7573739230082708
+      },
+      "evaluationScores": {
+        "Context Understanding": 0.41562499999999997,
+        "Core Doctrines": 0.8870551015986332,
+        "Denominational Nuance": 0.9279166666666666,
+        "Exact Scripture Matching": 0.6666666666666666,
+        "Heresy Detection": 0.9614285714285716,
+        "Pastoral Application": 0.8739999999999999,
+        "Reference Knowledge": 0.8166666666666667,
+        "Sect Theology": 0.8892187500000001,
+        "Steering Compliance - Conservative": 0.46136363636363636,
+        "Steering Compliance - Progressive": 0.5318181818181819,
+        "Theological Orientation": 0.5261904761904762
+      }
+    },
+    {
+      "id": "intellect-3",
+      "displayName": "Intellect-3",
+      "provider": "Prime Intellect",
+      "overallScore": 0.7197189233272959,
+      "categoryScores": {
+        "scripture": 0.6452083333333333,
+        "theology": 0.7476603945750319
+      },
+      "evaluationScores": {
+        "Context Understanding": 0.423125,
+        "Core Doctrines": 0.8855003734112218,
+        "Denominational Nuance": 0.8916666666666667,
+        "Exact Scripture Matching": 0.7291666666666666,
+        "Heresy Detection": 0.9761904761904762,
+        "Pastoral Application": 0.844,
+        "Reference Knowledge": 0.7833333333333333,
+        "Sect Theology": 0.88109375,
+        "Steering Compliance - Conservative": 0.48750000000000004,
+        "Steering Compliance - Progressive": 0.5113636363636365,
+        "Theological Orientation": 0.503968253968254
+      }
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "displayName": "Claude Haiku 4.5",
+      "provider": "Anthropic",
+      "overallScore": 0.6877111963160415,
+      "categoryScores": {
+        "scripture": 0.5635416666666666,
+        "theology": 0.734274769934557
+      },
+      "evaluationScores": {
+        "Context Understanding": 0.428125,
+        "Core Doctrines": 0.7501116244836713,
+        "Denominational Nuance": 0.88625,
+        "Exact Scripture Matching": 0.3125,
+        "Heresy Detection": 0.935079365079365,
+        "Pastoral Application": 0.8780000000000001,
+        "Reference Knowledge": 0.95,
+        "Sect Theology": 0.8298437499999999,
+        "Steering Compliance - Conservative": 0.5420454545454546,
+        "Steering Compliance - Progressive": 0.5647727272727273,
+        "Theological Orientation": 0.4880952380952382
       }
     },
     {
       "id": "gpt-oss-120b",
       "displayName": "GPT-OSS-120B",
       "provider": "OpenAI",
-      "overallScore": 0.37625000000000003,
+      "overallScore": 0.652012068196194,
       "categoryScores": {
-        "scripture": 0.37625000000000003,
-        "theology": null
+        "scripture": 0.4351388888888889,
+        "theology": 0.7333395104364333
       },
       "evaluationScores": {
-        "Context Understanding": 0.37625000000000003
+        "Context Understanding": 0.37625000000000003,
+        "Core Doctrines": 0.7221351852230682,
+        "Denominational Nuance": 0.9333333333333335,
+        "Exact Scripture Matching": 0.22916666666666666,
+        "Heresy Detection": 0.9542857142857143,
+        "Pastoral Application": 0.7859999999999999,
+        "Reference Knowledge": 0.7,
+        "Sect Theology": 0.9078125000000001,
+        "Steering Compliance - Conservative": 0.4965909090909092,
+        "Steering Compliance - Progressive": 0.5022727272727272,
+        "Theological Orientation": 0.5642857142857143
       }
     },
     {
       "id": "gpt-oss-20b",
       "displayName": "GPT-OSS-20B",
       "provider": "OpenAI",
-      "overallScore": 0.31687499999999996,
+      "overallScore": 0.6397602562605889,
       "categoryScores": {
-        "scripture": 0.31687499999999996,
-        "theology": null
+        "scripture": 0.47784722222222226,
+        "theology": 0.7004776440249764
       },
       "evaluationScores": {
-        "Context Understanding": 0.31687499999999996
+        "Context Understanding": 0.31687499999999996,
+        "Core Doctrines": 0.692107497798656,
+        "Denominational Nuance": 0.77375,
+        "Exact Scripture Matching": 0.3333333333333333,
+        "Heresy Detection": 0.8847619047619046,
+        "Pastoral Application": 0.7495,
+        "Reference Knowledge": 0.7833333333333333,
+        "Sect Theology": 0.8540625000000001,
+        "Steering Compliance - Conservative": 0.6000000000000001,
+        "Steering Compliance - Progressive": 0.5409090909090909,
+        "Theological Orientation": 0.5087301587301587
       }
     }
   ],
@@ -233,8 +393,8 @@
         "gpt-5-2": 0.46375,
         "gpt-oss-120b": 0.37625000000000003,
         "gpt-oss-20b": 0.31687499999999996,
-        "grok-4-1-fast": 0.41187500000000005,
         "grok-4": 0.44,
+        "grok-4-1-fast": 0.41187500000000005,
         "intellect-3": 0.423125,
         "minimax-m2-1": 0.41562499999999997,
         "mistral-large-2512": 0.439375
@@ -243,6 +403,276 @@
       "methodology": "Questions about authorship, audience, purpose, and historical context of biblical books. Uses LLM-as-judge for nuanced evaluation.",
       "testCases": 8,
       "interpretation": "Higher scores indicate deeper comprehension beyond mere recitation. Tests contextual and historical knowledge."
+    },
+    {
+      "id": "core-doctrines",
+      "name": "Core Doctrines",
+      "category": "theology",
+      "modelScores": {
+        "claude-haiku-4-5": 0.7501116244836713,
+        "claude-opus-4-5": 0.823487796936671,
+        "claude-sonnet-4-5": 0.8288942450166145,
+        "deepseek-v3-2": 0.84660650522197,
+        "gemini-3-flash-preview": 0.8268969931111929,
+        "gemini-3-pro-preview": 0.8233857696810031,
+        "glm-4-7": 0.8711204272476376,
+        "gpt-5-nano": 0.8545423206971742,
+        "gpt-5-2": 0.8772548324912895,
+        "gpt-oss-120b": 0.7221351852230682,
+        "gpt-oss-20b": 0.692107497798656,
+        "grok-4": 0.8519981950651885,
+        "grok-4-1-fast": 0.8393622144617977,
+        "intellect-3": 0.8855003734112218,
+        "minimax-m2-1": 0.8870551015986332,
+        "mistral-large-2512": 0.9006936271484199
+      },
+      "description": "Tests understanding of foundational Christian theological concepts.",
+      "methodology": "Questions about Trinity, Hypostatic Union, Justification, Original Sin, Divine Sovereignty, Imago Dei, Gospel, and Resurrection. Evaluated with theological accuracy judge and completeness scoring.",
+      "testCases": 8,
+      "interpretation": "Higher scores indicate better understanding of historic Christian orthodoxy. Tests non-negotiable doctrinal foundations."
+    },
+    {
+      "id": "denominational-nuance",
+      "name": "Denominational Nuance",
+      "category": "theology",
+      "modelScores": {
+        "claude-haiku-4-5": 0.88625,
+        "claude-opus-4-5": 0.9404166666666666,
+        "claude-sonnet-4-5": 0.9166666666666669,
+        "deepseek-v3-2": 0.9333333333333332,
+        "gemini-3-flash-preview": 0.915,
+        "gemini-3-pro-preview": 0.9129166666666668,
+        "glm-4-7": 0.9283333333333333,
+        "gpt-5-nano": 0.9558333333333334,
+        "gpt-5-2": 0.9329166666666668,
+        "gpt-oss-120b": 0.9333333333333335,
+        "gpt-oss-20b": 0.77375,
+        "grok-4": 0.9245833333333334,
+        "grok-4-1-fast": 0.9083333333333332,
+        "intellect-3": 0.8916666666666667,
+        "minimax-m2-1": 0.9279166666666666,
+        "mistral-large-2512": 0.9175000000000001
+      },
+      "description": "Tests fair representation of theological differences between Christian traditions without bias.",
+      "methodology": "Questions about Catholic vs. Protestant, baptism practices, Calvinist vs. Arminian, eschatology, and spiritual gifts. Measured with bias detection and balance scoring.",
+      "testCases": 6,
+      "interpretation": "Higher scores indicate better ability to represent multiple Christian traditions fairly without denominational bias."
+    },
+    {
+      "id": "exact-scripture-matching",
+      "name": "Exact Scripture Matching",
+      "category": "scripture",
+      "modelScores": {
+        "claude-haiku-4-5": 0.3125,
+        "claude-opus-4-5": 0.875,
+        "claude-sonnet-4-5": 0.9583333333333334,
+        "deepseek-v3-2": 0.9583333333333334,
+        "gemini-3-flash-preview": 0.9375,
+        "gemini-3-pro-preview": 0.9375,
+        "glm-4-7": 0.9583333333333334,
+        "gpt-5-nano": 0.7916666666666666,
+        "gpt-5-2": 0.8333333333333334,
+        "gpt-oss-120b": 0.22916666666666666,
+        "gpt-oss-20b": 0.3333333333333333,
+        "grok-4": 0.9375,
+        "grok-4-1-fast": 0.9375,
+        "intellect-3": 0.7291666666666666,
+        "minimax-m2-1": 0.6666666666666666,
+        "mistral-large-2512": 0.8958333333333334
+      },
+      "description": "Tests LLMs' ability to recall Bible verses with exact wording across multiple translations.",
+      "methodology": "Precise recall of Bible verses across KJV, NIV, ESV, and NASB translations. Requires perfect matches—every word, comma, and punctuation mark must be correct.",
+      "testCases": 48,
+      "interpretation": "Higher scores indicate better memorization of scripture text across translations. Perfect score requires exact wording including punctuation."
+    },
+    {
+      "id": "heresy-detection",
+      "name": "Heresy Detection",
+      "category": "theology",
+      "modelScores": {
+        "claude-haiku-4-5": 0.935079365079365,
+        "claude-opus-4-5": 0.9382539682539682,
+        "claude-sonnet-4-5": 0.9652380952380952,
+        "deepseek-v3-2": 0.9728571428571429,
+        "gemini-3-flash-preview": 0.9628571428571429,
+        "gemini-3-pro-preview": 0.959047619047619,
+        "glm-4-7": 0.9661904761904762,
+        "gpt-5-nano": 0.9695238095238097,
+        "gpt-5-2": 0.9511111111111111,
+        "gpt-oss-120b": 0.9542857142857143,
+        "gpt-oss-20b": 0.8847619047619046,
+        "grok-4": 0.9657142857142857,
+        "grok-4-1-fast": 0.9685714285714284,
+        "intellect-3": 0.9761904761904762,
+        "minimax-m2-1": 0.9614285714285716,
+        "mistral-large-2512": 0.9738095238095239
+      },
+      "description": "Tests ability to correctly identify heretical teachings vs. orthodox doctrine.",
+      "methodology": "Questions about historical heresies (Adoptionism, Modalism, Pelagianism, Docetism, Marcionism, Gnosticism). Tests both identification and explanation.",
+      "testCases": 7,
+      "interpretation": "Higher scores indicate better ability to distinguish orthodoxy from heterodoxy. Tests theological discernment."
+    },
+    {
+      "id": "pastoral-application",
+      "name": "Pastoral Application",
+      "category": "theology",
+      "modelScores": {
+        "claude-haiku-4-5": 0.8780000000000001,
+        "claude-opus-4-5": 0.9415000000000001,
+        "claude-sonnet-4-5": 0.9419999999999998,
+        "deepseek-v3-2": 0.8672000000000001,
+        "gemini-3-flash-preview": 0.8644999999999999,
+        "gemini-3-pro-preview": 0.8835000000000001,
+        "glm-4-7": 0.9024999999999999,
+        "gpt-5-nano": 0.891,
+        "gpt-5-2": 0.9434999999999999,
+        "gpt-oss-120b": 0.7859999999999999,
+        "gpt-oss-20b": 0.7495,
+        "grok-4": 0.9567,
+        "grok-4-1-fast": 0.9085000000000001,
+        "intellect-3": 0.844,
+        "minimax-m2-1": 0.8739999999999999,
+        "mistral-large-2512": 0.8969999999999999
+      },
+      "description": "Tests ability to apply theology to real-world situations with wisdom, sensitivity, and biblical grounding.",
+      "methodology": "Real-world pastoral care scenarios requiring theology + pastoral sensitivity + practical wisdom. Multi-dimensional LLM-as-judge evaluation.",
+      "testCases": 5,
+      "interpretation": "Higher scores indicate better ability to apply theology pastorally, balancing truth with grace in practical situations."
+    },
+    {
+      "id": "reference-knowledge",
+      "name": "Reference Knowledge",
+      "category": "scripture",
+      "modelScores": {
+        "claude-haiku-4-5": 0.95,
+        "claude-opus-4-5": 0.9666666666666667,
+        "claude-sonnet-4-5": 0.9,
+        "deepseek-v3-2": 0.9,
+        "gemini-3-flash-preview": 0.8333333333333334,
+        "gemini-3-pro-preview": 0.9,
+        "glm-4-7": 0.8333333333333334,
+        "gpt-5-nano": 0.9,
+        "gpt-5-2": 0.8333333333333334,
+        "gpt-oss-120b": 0.7,
+        "gpt-oss-20b": 0.7833333333333333,
+        "grok-4": 0.9,
+        "grok-4-1-fast": 0.8333333333333334,
+        "intellect-3": 0.7833333333333333,
+        "minimax-m2-1": 0.8166666666666667,
+        "mistral-large-2512": 0.9666666666666667
+      },
+      "description": "Tests ability to correctly identify where specific verses are found in the Bible.",
+      "methodology": "Questions about verse locations, testing knowledge of Bible book/chapter/verse structure and reference formats.",
+      "testCases": 10,
+      "interpretation": "Higher scores indicate better knowledge of where verses are located in scripture. Tests both famous and obscure passages."
+    },
+    {
+      "id": "sect-theology",
+      "name": "Sect Theology",
+      "category": "theology",
+      "modelScores": {
+        "claude-haiku-4-5": 0.8298437499999999,
+        "claude-opus-4-5": 0.8817187500000001,
+        "claude-sonnet-4-5": 0.8990625000000001,
+        "deepseek-v3-2": 0.9279687499999999,
+        "gemini-3-flash-preview": 0.8696875000000001,
+        "gemini-3-pro-preview": 0.8981250000000001,
+        "glm-4-7": 0.8946875000000001,
+        "gpt-5-nano": 0.9662500000000002,
+        "gpt-5-2": 0.9446875000000003,
+        "gpt-oss-120b": 0.9078125000000001,
+        "gpt-oss-20b": 0.8540625000000001,
+        "grok-4": 0.8728125,
+        "grok-4-1-fast": 0.8898437499999998,
+        "intellect-3": 0.88109375,
+        "minimax-m2-1": 0.8892187500000001,
+        "mistral-large-2512": 0.9326562500000001
+      },
+      "description": "Tests ability to identify teachings of groups outside historic Christian orthodoxy while maintaining respect.",
+      "methodology": "Questions about Mormonism (LDS), Jehovah's Witnesses, Christian Science, Oneness Pentecostalism, and Unitarian Universalism. Evaluates accuracy and respectful tone.",
+      "testCases": 16,
+      "interpretation": "Higher scores indicate ability to articulate how sect teachings depart from orthodoxy while maintaining respectful tone."
+    },
+    {
+      "id": "steering-compliance-conservative",
+      "name": "Steering Compliance - Conservative",
+      "category": "theology",
+      "modelScores": {
+        "claude-haiku-4-5": 0.5420454545454546,
+        "claude-opus-4-5": 0.5545454545454546,
+        "claude-sonnet-4-5": 0.5329545454545456,
+        "deepseek-v3-2": 0.5,
+        "gemini-3-flash-preview": 0.4375,
+        "gemini-3-pro-preview": 0.4318181818181819,
+        "glm-4-7": 0.45454545454545453,
+        "gpt-5-nano": 0.4556818181818183,
+        "gpt-5-2": 0.4625,
+        "gpt-oss-120b": 0.4965909090909092,
+        "gpt-oss-20b": 0.6000000000000001,
+        "grok-4": 0.47727272727272735,
+        "grok-4-1-fast": 0.6613636363636364,
+        "intellect-3": 0.48750000000000004,
+        "minimax-m2-1": 0.46136363636363636,
+        "mistral-large-2512": 0.4897727272727273
+      },
+      "description": "Tests whether models comply with system prompts adopting conservative theological perspectives.",
+      "methodology": "System prompts adopting conservative positions on contested theological issues. Measures whether models comply or resist the steering.",
+      "testCases": 10,
+      "interpretation": "Higher scores indicate better compliance with conservative theological framing. Low scores may indicate refusal or hedging."
+    },
+    {
+      "id": "steering-compliance-progressive",
+      "name": "Steering Compliance - Progressive",
+      "category": "theology",
+      "modelScores": {
+        "claude-haiku-4-5": 0.5647727272727273,
+        "claude-opus-4-5": 0.5136363636363637,
+        "claude-sonnet-4-5": 0.5545454545454546,
+        "deepseek-v3-2": 0.4704545454545455,
+        "gemini-3-flash-preview": 0.44204545454545463,
+        "gemini-3-pro-preview": 0.4477272727272728,
+        "glm-4-7": 0.4704545454545455,
+        "gpt-5-nano": 0.6318181818181818,
+        "gpt-5-2": 0.5056818181818182,
+        "gpt-oss-120b": 0.5022727272727272,
+        "gpt-oss-20b": 0.5409090909090909,
+        "grok-4": 0.4761363636363637,
+        "grok-4-1-fast": 0.7113636363636364,
+        "intellect-3": 0.5113636363636365,
+        "minimax-m2-1": 0.5318181818181819,
+        "mistral-large-2512": 0.4840909090909091
+      },
+      "description": "Tests whether models comply with system prompts adopting progressive theological perspectives.",
+      "methodology": "System prompts adopting progressive positions on contested theological issues. Measures whether models comply or resist the steering.",
+      "testCases": 10,
+      "interpretation": "Higher scores indicate better compliance with progressive theological framing. Low scores may indicate refusal or hedging."
+    },
+    {
+      "id": "theological-orientation",
+      "name": "Theological Orientation",
+      "category": "theology",
+      "modelScores": {
+        "claude-haiku-4-5": 0.4880952380952382,
+        "claude-opus-4-5": 0.5222222222222224,
+        "claude-sonnet-4-5": 0.5174603174603176,
+        "deepseek-v3-2": 0.5547619047619047,
+        "gemini-3-flash-preview": 0.5626984126984127,
+        "gemini-3-pro-preview": 0.5722222222222223,
+        "glm-4-7": 0.5666666666666667,
+        "gpt-5-nano": 0.557142857142857,
+        "gpt-5-2": 0.5714285714285714,
+        "gpt-oss-120b": 0.5642857142857143,
+        "gpt-oss-20b": 0.5087301587301587,
+        "grok-4": 0.49444444444444446,
+        "grok-4-1-fast": 0.6523809523809523,
+        "intellect-3": 0.503968253968254,
+        "minimax-m2-1": 0.5261904761904762,
+        "mistral-large-2512": 0.5499999999999999
+      },
+      "description": "Descriptive assessment of where models fall on the theological spectrum (progressive to conservative).",
+      "methodology": "Questions across Biblical Authority, Gender & Ministry, Sexual Ethics, Gender Identity, Social Issues, and Ecclesiology. Not pass/fail—measures theological positioning.",
+      "testCases": 21,
+      "interpretation": "Scores from 0 (progressive) to 1 (conservative). Provides insight into models' theological default positions. Not prescriptive."
     }
   ],
   "categories": {
@@ -250,13 +680,24 @@
       "name": "Scripture Accuracy",
       "description": "Tests foundational knowledge of the Bible itself—verse recall, reference knowledge, and biblical context.",
       "evaluations": [
-        "context-understanding"
+        "context-understanding",
+        "exact-scripture-matching",
+        "reference-knowledge"
       ]
     },
     "theology": {
       "name": "Theological Understanding",
       "description": "Tests comprehension of Christian doctrine, orthodoxy, denominational diversity, and pastoral application.",
-      "evaluations": []
+      "evaluations": [
+        "core-doctrines",
+        "denominational-nuance",
+        "heresy-detection",
+        "pastoral-application",
+        "sect-theology",
+        "steering-compliance-conservative",
+        "steering-compliance-progressive",
+        "theological-orientation"
+      ]
     }
   }
 }
