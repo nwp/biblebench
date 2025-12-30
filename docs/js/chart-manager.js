@@ -9,6 +9,11 @@ export class ChartManager {
     this.charts = {};
     this.maxModelsDefault = 15; // Show top 15 by default
     this.showingAllModels = false;
+    this.filterManager = null;
+  }
+
+  setFilterManager(filterManager) {
+    this.filterManager = filterManager;
   }
 
   renderAll(selectedModelIds) {
@@ -60,7 +65,12 @@ export class ChartManager {
 
         showAllButton.onclick = () => {
           this.showingAllModels = true;
-          this.updateOverallLeaderboard(selectedModelIds);
+          // Clear all filters to show all models across all charts
+          if (this.filterManager) {
+            this.filterManager.selectAll();
+          } else {
+            this.updateOverallLeaderboard(selectedModelIds);
+          }
         };
       } else {
         // Showing all - hide button
@@ -332,7 +342,29 @@ export class ChartManager {
             }
           }
         }
-      }
+      },
+      plugins: [{
+        id: 'midpointLine',
+        afterDraw: (chart) => {
+          const ctx = chart.ctx;
+          const xAxis = chart.scales.x;
+          const yAxis = chart.scales.y;
+
+          // Calculate x position for 50%
+          const xPos = xAxis.getPixelForValue(50);
+
+          // Draw vertical line at 50%
+          ctx.save();
+          ctx.strokeStyle = 'rgba(0, 0, 0, 0.25)';
+          ctx.lineWidth = 2;
+          ctx.setLineDash([5, 5]);
+          ctx.beginPath();
+          ctx.moveTo(xPos, yAxis.top);
+          ctx.lineTo(xPos, yAxis.bottom);
+          ctx.stroke();
+          ctx.restore();
+        }
+      }]
     };
 
     this.charts[evaluation.id] = new Chart(ctx, config);

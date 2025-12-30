@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const evaluationCards = new EvaluationCards(data);
     const filterManager = new FilterManager(data, chartManager);
 
+    // Connect managers for cross-communication
+    chartManager.setFilterManager(filterManager);
+
     // Render initial state (all models selected)
     const allModelIds = data.models.map(m => m.id);
     chartManager.renderAll(allModelIds);
