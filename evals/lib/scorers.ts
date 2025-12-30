@@ -182,6 +182,79 @@ Provide a score from 0 to 1, where:
 });
 
 /**
+ * Historical Accuracy Judge
+ * LLM-as-judge scorer for evaluating factual accuracy of historical/contextual answers
+ */
+export const historicalAccuracyJudge = createScorer<string, string, string>({
+  name: "Historical Accuracy Judge",
+  description: "LLM-based evaluation of historical and contextual accuracy",
+  scorer: async ({
+    input,
+    output,
+    expected,
+  }): Promise<ScorerResult<TheologicalScorerMetadata>> => {
+    try {
+      const result = await generateObject({
+        model: defaultJudgeModel,
+        maxRetries: 3,
+        schema: z.object({
+          score: z.number().min(0).max(1).describe("Score from 0 to 1 indicating historical accuracy"),
+          factually_correct: z.boolean().describe("Whether the response is factually correct"),
+          complete: z.boolean().describe("Whether the response covers the essential facts"),
+          appropriately_nuanced: z.boolean().describe("Whether scholarly uncertainty is appropriately expressed"),
+          errors: z.array(z.string()).describe("List of factual errors or omissions"),
+          rationale: z.string().describe("Detailed explanation of the score")
+        }),
+        prompt: `You are an expert in biblical history, authorship, and historical context. Evaluate the factual accuracy of an LLM's response to a historical/contextual question about the Bible.
+
+Question: ${input}
+
+Expected Answer: ${expected}
+
+LLM's Response: ${output}
+
+Evaluate the LLM's response for:
+1. Factual accuracy - Are the historical facts correct?
+2. Completeness - Does it cover the essential information?
+3. Appropriate nuance - If there's scholarly debate, is uncertainty appropriately expressed?
+4. Relevance - Does it directly answer the question asked?
+
+Note: These are historical/contextual questions, not theological doctrine questions. Scholarly phrases like "according to tradition" or "most scholars believe" are appropriate when discussing debated topics like authorship.
+
+Provide a score from 0 to 1, where:
+- 1.0 = Completely accurate, covers key facts, appropriately nuanced
+- 0.7-0.9 = Mostly accurate with minor gaps or imprecision
+- 0.4-0.6 = Partially correct but missing important information
+- 0.0-0.3 = Factually inaccurate or severely incomplete`
+      });
+
+      return {
+        score: result.object.score,
+        metadata: {
+          doctrinally_sound: result.object.factually_correct, // Reusing type
+          biblically_grounded: result.object.complete,
+          nuance_captured: result.object.appropriately_nuanced,
+          errors: result.object.errors,
+          rationale: result.object.rationale,
+        },
+      };
+    } catch (error) {
+      return {
+        score: 0,
+        metadata: {
+          doctrinally_sound: false,
+          biblically_grounded: false,
+          nuance_captured: false,
+          errors: [`Scoring failed: ${error instanceof Error ? error.message : String(error)}`],
+          rationale: "Judge model failed to evaluate this response after multiple retries",
+          scoringError: true,
+        },
+      };
+    }
+  },
+});
+
+/**
  * Heresy Detection Judge
  * LLM-as-judge scorer specifically for detecting heretical or unorthodox teachings
  */
