@@ -6,8 +6,9 @@
  */
 
 import { evalite } from "evalite";
-import { generateText } from "ai";
+
 import { selectedModels } from "../lib/models.js";
+import { safeGenerateText } from "../lib/utils.js";
 import { theologicalAccuracyJudge } from "../lib/scorers.js";
 import type { ExtendedScorerInput } from "../lib/types.js";
 
@@ -55,11 +56,10 @@ evalite.each(
 )("Heresy Detection", {
   data: async () => heresyDetectionData,
   task: async (input, variant: any) => {
-    const result = await generateText({
-      model: variant.model,
-      prompt: `You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\n${input}`,
-    });
-    return result.text;
+    return await safeGenerateText(
+      variant.model,
+      `You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\n${input}`,
+    );
   },
     scorers: [
       theologicalAccuracyJudge,

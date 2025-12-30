@@ -1,24 +1,18 @@
 {
   "name": "biblebench",
   "version": "1.0.0",
-  "description": "Industry-standard LLM benchmark for Christian scripture accuracy and theological understanding",
+  "description": "LLM benchmark for Christian scripture accuracy and theological understanding",
   "type": "module",
   "scripts": {
     "eval:dev": "evalite watch",
     "eval": "evalite run",
     "eval:ui": "evalite serve",
-    "eval:scripture": "evalite run evals/scripture/",
-    "eval:theology": "evalite run evals/theology/",
-    "eval:quick": "evalite run evals/scripture/verse-recall.eval.ts && evalite run evals/theology/core-doctrines.eval.ts",
-    "eval:gpt": "MODELS=gpt evalite run",
-    "eval:claude": "MODELS=claude evalite run",
-    "eval:single": "MODELS='gpt-oss-20b' evalite serve evals/theology/theological-orientation.eval.ts",
-    "eval:export": "MODELS='gpt-oss' evalite export --output=docs/traces --basePath=/traces",
-    "eval:view": "pnpm dlx serve -s ./docs/traces",
+    "eval:export": "evalite export --output=docs/traces --basePath=/traces",
+    "eval:merge": "node scripts/merge-eval-results.js",
     "dashboard:build": "node scripts/build-dashboard.js",
-    "dashboard:serve": "pnpm dlx serve -s ./docs",
+    "dashboard:serve": "pnpm dlx serve ./docs",
     "dashboard:dev": "pnpm dashboard:build && pnpm dashboard:serve",
-    "deploy": "pnpm eval:export && pnpm dashboard:build"
+    "deploy": "pnpm eval:export && pnpm eval:merge && pnpm dashboard:build"
   },
   "keywords": [
     "llm",

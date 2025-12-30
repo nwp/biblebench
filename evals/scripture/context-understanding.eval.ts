@@ -6,8 +6,9 @@
  */
 
 import { evalite } from "evalite";
-import { generateText } from "ai";
+
 import { selectedModels } from "../lib/models.js";
+import { safeGenerateText } from "../lib/utils.js";
 import { containsAnswer, theologicalAccuracyJudge } from "../lib/scorers.js";
 
 const contextUnderstandingData = [
@@ -59,9 +60,9 @@ evalite.each(
 )("Context Understanding", {
   data: async () => contextUnderstandingData,
   task: async (input, variant: any) => {
-    const result = await generateText({
-      model: variant.model,
-      prompt: `You are a Bible scholar with deep knowledge of scripture, history, and context.
+    return await safeGenerateText(
+      variant.model,
+      `You are a Bible scholar with deep knowledge of scripture, history, and context.
 
 Answer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.
 
@@ -74,8 +75,7 @@ Examples of good answers:
 Do NOT add phrases like "According to tradition" or "The text was written by" - just state the facts directly.
 
 ${input}`,
-    });
-    return result.text;
+    );
   },
     scorers: [
       theologicalAccuracyJudge,

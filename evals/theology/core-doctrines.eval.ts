@@ -6,8 +6,9 @@
  */
 
 import { evalite } from "evalite";
-import { generateText } from "ai";
+
 import { selectedModels } from "../lib/models.js";
+import { safeGenerateText } from "../lib/utils.js";
 import { theologicalAccuracyJudge, heresyDetectionJudge } from "../lib/scorers.js";
 import { extractKeyTerms } from "../lib/utils.js";
 
@@ -60,11 +61,10 @@ evalite.each(
 )("Core Doctrines", {
   data: async () => coreDoctrinesData,
   task: async (input, variant: any) => {
-    const result = await generateText({
-      model: variant.model,
-      prompt: `You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\n${input}`,
-    });
-    return result.text;
+    return await safeGenerateText(
+      variant.model,
+      `You are a systematic theologian with deep knowledge of Christian doctrine. Provide a clear, accurate, and biblically grounded explanation of the following theological concept.\n\n${input}`,
+    );
   },
     scorers: [
       theologicalAccuracyJudge,

@@ -89,7 +89,6 @@ function wrapWithRateLimit(modelName: string): LanguageModelV2 {
  * OpenAI Models (via OpenRouter)
  */
 export const gpt52 = wrapAISDKModel(openrouter.chat("openai/gpt-5.2"));
-export const gpt51 = wrapAISDKModel(openrouter.chat("openai/gpt-5.1"));
 export const gpt5Nano = wrapAISDKModel(openrouter.chat("openai/gpt-5-nano"));
 export const gpt5Mini = wrapAISDKModel(openrouter.chat("openai/gpt-5-mini"));
 export const gptOss120b = wrapAISDKModel(openrouter.chat("openai/gpt-oss-120b"));
@@ -131,16 +130,6 @@ export const deepseekV32 = wrapAISDKModel(openrouter.chat("deepseek/deepseek-v3.
 export const intellect3 = wrapAISDKModel(openrouter.chat("prime-intellect/intellect-3"));
 
 /**
- * AllenAI Models (via OpenRouter)
- */
-export const olmo3132bThink = wrapAISDKModel(openrouter.chat("allenai/olmo-3.1-32b-think"));
-
-/**
- * NVIDIA Models (via OpenRouter)
- */
-export const nemotron3Nano30b = wrapAISDKModel(openrouter.chat("nvidia/nemotron-3-nano-30b-a3b"));
-
-/**
  * Zhipu AI Models (via OpenRouter)
  */
 export const glm47 = wrapAISDKModel(openrouter.chat("z-ai/glm-4.7"));
@@ -166,7 +155,6 @@ export const defaultJudgeModel = gpt5Nano;
 export const benchmarkModels: readonly ModelConfig[] = [
   // OpenAI models
   { name: "GPT-5.2", model: gpt52, provider: "openai" },
-  { name: "GPT-5.1", model: gpt51, provider: "openai" },
   { name: "GPT-5 Nano", model: gpt5Nano, provider: "openai" },
   { name: "GPT-OSS-120B", model: gptOss120b, provider: "openai" },
   { name: "GPT-OSS-20B", model: gptOss20b, provider: "openai" },
@@ -193,12 +181,6 @@ export const benchmarkModels: readonly ModelConfig[] = [
   // Prime Intellect models
   { name: "Intellect-3", model: intellect3, provider: "prime-intellect" },
 
-  // AllenAI models
-  { name: "OLMo 3.1 32B Think", model: olmo3132bThink, provider: "allenai" },
-
-  // NVIDIA models
-  { name: "Nemotron 3 Nano 30B", model: nemotron3Nano30b, provider: "nvidia" },
-
   // Zhipu AI models
   { name: "GLM-4.7", model: glm47, provider: "zhipu" },
 
@@ -210,15 +192,13 @@ export const benchmarkModels: readonly ModelConfig[] = [
  * Model Categories for Organization
  * You can use these to run evaluations on specific categories
  */
-export const openaiModels = [gpt52, gpt51, gpt5Nano, gptOss120b, gptOss20b];
+export const openaiModels = [gpt52, gpt5Nano, gptOss120b, gptOss20b];
 export const anthropicModels = [claudeHaiku45, claudeSonnet45, claudeOpus45];
 export const xaiModels = [grok41Fast, grok4];
 export const googleModels = [gemini3FlashPreview, gemini3ProPreview];
 export const mistralModels = [mistralLarge2512];
 export const deepseekModels = [deepseekV32];
 export const primeIntellectModels = [intellect3];
-export const allenaiModels = [olmo3132bThink];
-export const nvidiaModels = [nemotron3Nano30b];
 export const zhipuModels = [glm47];
 export const minimaxModels = [minimaxM21];
 

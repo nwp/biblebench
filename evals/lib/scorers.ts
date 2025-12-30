@@ -122,17 +122,19 @@ export const theologicalAccuracyJudge = createScorer<string, string, string>({
     output,
     expected,
   }): Promise<ScorerResult<TheologicalScorerMetadata>> => {
-    const result = await generateObject({
-      model: defaultJudgeModel,
-      schema: z.object({
-        score: z.number().min(0).max(1).describe("Score from 0 to 1 indicating theological accuracy"),
-        doctrinally_sound: z.boolean().describe("Whether the response is doctrinally sound"),
-        biblically_grounded: z.boolean().describe("Whether the response is grounded in scripture"),
-        nuance_captured: z.boolean().describe("Whether important theological nuances are captured"),
-        errors: z.array(z.string()).describe("List of theological errors or inaccuracies"),
-        rationale: z.string().describe("Detailed explanation of the score")
-      }),
-      prompt: `You are an expert in Christian theology and doctrine. Evaluate the theological accuracy of an LLM's response.
+    try {
+      const result = await generateObject({
+        model: defaultJudgeModel,
+        maxRetries: 3,
+        schema: z.object({
+          score: z.number().min(0).max(1).describe("Score from 0 to 1 indicating theological accuracy"),
+          doctrinally_sound: z.boolean().describe("Whether the response is doctrinally sound"),
+          biblically_grounded: z.boolean().describe("Whether the response is grounded in scripture"),
+          nuance_captured: z.boolean().describe("Whether important theological nuances are captured"),
+          errors: z.array(z.string()).describe("List of theological errors or inaccuracies"),
+          rationale: z.string().describe("Detailed explanation of the score")
+        }),
+        prompt: `You are an expert in Christian theology and doctrine. Evaluate the theological accuracy of an LLM's response.
 
 Question: ${input}
 
@@ -151,18 +153,31 @@ Provide a score from 0 to 1, where:
 - 0.7-0.9 = Mostly accurate with minor issues
 - 0.4-0.6 = Partially correct but with significant gaps
 - 0.0-0.3 = Theologically inaccurate or misleading`
-    });
+      });
 
-    return {
-      score: result.object.score,
-      metadata: {
-        doctrinally_sound: result.object.doctrinally_sound,
-        biblically_grounded: result.object.biblically_grounded,
-        nuance_captured: result.object.nuance_captured,
-        errors: result.object.errors,
-        rationale: result.object.rationale,
-      },
-    };
+      return {
+        score: result.object.score,
+        metadata: {
+          doctrinally_sound: result.object.doctrinally_sound,
+          biblically_grounded: result.object.biblically_grounded,
+          nuance_captured: result.object.nuance_captured,
+          errors: result.object.errors,
+          rationale: result.object.rationale,
+        },
+      };
+    } catch (error) {
+      return {
+        score: 0,
+        metadata: {
+          doctrinally_sound: false,
+          biblically_grounded: false,
+          nuance_captured: false,
+          errors: [`Scoring failed: ${error instanceof Error ? error.message : String(error)}`],
+          rationale: "Judge model failed to evaluate this response after multiple retries",
+          scoringError: true,
+        },
+      };
+    }
   },
 });
 
@@ -174,15 +189,17 @@ export const heresyDetectionJudge = createScorer<string, string, string | undefi
   name: "Heresy Detection Judge",
   description: "Detects heretical or unorthodox theological statements",
   scorer: async ({ output }): Promise<ScorerResult<HeresyScorerMetadata>> => {
-    const result = await generateObject({
-      model: defaultJudgeModel,
-      schema: z.object({
-        contains_heresy: z.boolean().describe("Whether the response contains heretical teaching"),
-        severity: z.enum(["none", "minor", "moderate", "severe"]).describe("Severity of any heretical content"),
-        heresies_detected: z.array(z.string()).describe("List of specific heresies or errors detected"),
-        explanation: z.string().describe("Explanation of detected heresies")
-      }),
-      prompt: `You are an expert in Christian theology and church history. Analyze this LLM response for heretical or unorthodox teachings.
+    try {
+      const result = await generateObject({
+        model: defaultJudgeModel,
+        maxRetries: 3,
+        schema: z.object({
+          contains_heresy: z.boolean().describe("Whether the response contains heretical teaching"),
+          severity: z.enum(["none", "minor", "moderate", "severe"]).describe("Severity of any heretical content"),
+          heresies_detected: z.array(z.string()).describe("List of specific heresies or errors detected"),
+          explanation: z.string().describe("Explanation of detected heresies")
+        }),
+        prompt: `You are an expert in Christian theology and church history. Analyze this LLM response for heretical or unorthodox teachings.
 
 Response to evaluate: ${output}
 
@@ -195,27 +212,39 @@ Check for common heresies including but not limited to:
 - And other departures from historic Christian orthodoxy
 
 Rate the severity and identify specific issues.`
-    });
+      });
 
-    const score = result.object.contains_heresy
-      ? result.object.severity === "severe"
-        ? 0
-        : result.object.severity === "moderate"
-          ? 0.3
-          : result.object.severity === "minor"
-            ? 0.7
-            : 1
-      : 1;
+      const score = result.object.contains_heresy
+        ? result.object.severity === "severe"
+          ? 0
+          : result.object.severity === "moderate"
+            ? 0.3
+            : result.object.severity === "minor"
+              ? 0.7
+              : 1
+        : 1;
 
-    return {
-      score,
-      metadata: {
-        contains_heresy: result.object.contains_heresy,
-        severity: result.object.severity,
-        heresies_detected: result.object.heresies_detected,
-        explanation: result.object.explanation,
-      },
-    };
+      return {
+        score,
+        metadata: {
+          contains_heresy: result.object.contains_heresy,
+          severity: result.object.severity,
+          heresies_detected: result.object.heresies_detected,
+          explanation: result.object.explanation,
+        },
+      };
+    } catch (error) {
+      return {
+        score: 0,
+        metadata: {
+          contains_heresy: false,
+          severity: "none" as const,
+          heresies_detected: [],
+          explanation: `Scoring failed: ${error instanceof Error ? error.message : String(error)}`,
+          scoringError: true,
+        },
+      };
+    }
   },
 });
 
@@ -234,16 +263,18 @@ export const denominationalBiasDetector = createScorer<
     output,
     input,
   }): Promise<ScorerResult<DenominationalScorerMetadata>> => {
-    const result = await generateObject({
-      model: defaultJudgeModel,
-      schema: z.object({
-        bias_detected: z.boolean().describe("Whether denominational bias is present"),
-        denominations: z.array(z.string()).describe("Denominations the response appears biased toward"),
-        bias_strength: z.enum(["none", "slight", "moderate", "strong"]).describe("Strength of the bias"),
-        ecumenical_score: z.number().min(0).max(1).describe("How ecumenical/balanced the response is"),
-        explanation: z.string().describe("Explanation of any bias detected")
-      }),
-      prompt: `You are an expert in Christian denominational differences and theology. Evaluate this response for denominational bias.
+    try {
+      const result = await generateObject({
+        model: defaultJudgeModel,
+        maxRetries: 3,
+        schema: z.object({
+          bias_detected: z.boolean().describe("Whether denominational bias is present"),
+          denominations: z.array(z.string()).describe("Denominations the response appears biased toward"),
+          bias_strength: z.enum(["none", "slight", "moderate", "strong"]).describe("Strength of the bias"),
+          ecumenical_score: z.number().min(0).max(1).describe("How ecumenical/balanced the response is"),
+          explanation: z.string().describe("Explanation of any bias detected")
+        }),
+        prompt: `You are an expert in Christian denominational differences and theology. Evaluate this response for denominational bias.
 
 Question: ${input}
 
@@ -256,17 +287,29 @@ Determine if the response:
 4. Maintains an ecumenical, balanced approach
 
 Rate the ecumenical score from 0 to 1, where 1 is perfectly balanced and 0 is extremely biased.`
-    });
+      });
 
-    return {
-      score: result.object.ecumenical_score,
-      metadata: {
-        bias_detected: result.object.bias_detected,
-        denominations: result.object.denominations,
-        bias_strength: result.object.bias_strength,
-        explanation: result.object.explanation,
-      },
-    };
+      return {
+        score: result.object.ecumenical_score,
+        metadata: {
+          bias_detected: result.object.bias_detected,
+          denominations: result.object.denominations,
+          bias_strength: result.object.bias_strength,
+          explanation: result.object.explanation,
+        },
+      };
+    } catch (error) {
+      return {
+        score: 0,
+        metadata: {
+          bias_detected: false,
+          denominations: [],
+          bias_strength: "none" as const,
+          explanation: `Scoring failed: ${error instanceof Error ? error.message : String(error)}`,
+          scoringError: true,
+        },
+      };
+    }
   },
 });
 
@@ -390,15 +433,17 @@ export const translationIdentificationJudge = createScorer<
     output,
     expected,
   }): Promise<ScorerResult<Record<string, unknown>>> => {
-    const result = await generateObject({
-      model: defaultJudgeModel,
-      schema: z.object({
-        correct_translation: z.boolean().describe("Whether the identified translation is correct"),
-        confidence: z.number().min(0).max(1).describe("Confidence in the identification"),
-        reasoning: z.string().describe("Reasoning for the identification"),
-        alternative_possibilities: z.array(z.string()).describe("Other possible translations mentioned")
-      }),
-      prompt: `You are a Bible translation expert. Evaluate whether the LLM correctly identified the Bible translation.
+    try {
+      const result = await generateObject({
+        model: defaultJudgeModel,
+        maxRetries: 3,
+        schema: z.object({
+          correct_translation: z.boolean().describe("Whether the identified translation is correct"),
+          confidence: z.number().min(0).max(1).describe("Confidence in the identification"),
+          reasoning: z.string().describe("Reasoning for the identification"),
+          alternative_possibilities: z.array(z.string()).describe("Other possible translations mentioned")
+        }),
+        prompt: `You are a Bible translation expert. Evaluate whether the LLM correctly identified the Bible translation.
 
 Question: ${input}
 
@@ -416,20 +461,32 @@ Major English translations include:
 - CSB (Christian Standard Bible) - Balance of literal and readable
 
 Determine if the LLM correctly identified the translation based on distinctive vocabulary and phrasing.`
-    });
+      });
 
-    const score = result.object.correct_translation
-      ? result.object.confidence
-      : 0;
+      const score = result.object.correct_translation
+        ? result.object.confidence
+        : 0;
 
-    return {
-      score,
-      metadata: {
-        correct_translation: result.object.correct_translation,
-        confidence: result.object.confidence,
-        reasoning: result.object.reasoning,
-        alternative_possibilities: result.object.alternative_possibilities,
-      },
-    };
+      return {
+        score,
+        metadata: {
+          correct_translation: result.object.correct_translation,
+          confidence: result.object.confidence,
+          reasoning: result.object.reasoning,
+          alternative_possibilities: result.object.alternative_possibilities,
+        },
+      };
+    } catch (error) {
+      return {
+        score: 0,
+        metadata: {
+          correct_translation: false,
+          confidence: 0,
+          reasoning: `Scoring failed: ${error instanceof Error ? error.message : String(error)}`,
+          alternative_possibilities: [],
+          scoringError: true,
+        },
+      };
+    }
   },
 });

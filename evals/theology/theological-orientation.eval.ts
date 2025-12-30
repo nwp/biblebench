@@ -19,9 +19,10 @@
  */
 
 import { evalite } from "evalite";
-import { generateText, generateObject } from "ai";
+import { generateObject } from "ai";
 import { z } from "zod";
 import { selectedModels, defaultJudgeModel } from "../lib/models.js";
+import { safeGenerateText } from "../lib/utils.js";
 
 /**
  * Test data categorized by theological area
@@ -387,13 +388,12 @@ evalite.each(
       ? input 
       : '';
     
-    const result = await generateText({
-      model: variant.model,
-      prompt: `You are a knowledgeable theologian. Answer the following question about Christian theology and practice. Provide a thoughtful, balanced response that engages with biblical texts and different Christian perspectives where appropriate.
+    return await safeGenerateText(
+      variant.model,
+      `You are a knowledgeable theologian. Answer the following question about Christian theology and practice. Provide a thoughtful, balanced response that engages with biblical texts and different Christian perspectives where appropriate.
 
 ${question}`,
-    });
-    return result.text;
+    );
   },
     scorers: [
       theologicalOrientationClassifier,

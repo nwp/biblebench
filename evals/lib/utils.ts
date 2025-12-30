@@ -5,6 +5,8 @@
  * Centralizes text processing, normalization, and validation logic.
  */
 
+import { generateText } from "ai";
+import type { LanguageModelV2 } from "@ai-sdk/provider";
 import type { EnvironmentConfig } from "./types.js";
 
 /**
@@ -340,4 +342,72 @@ export function isValidTranslation(
   translation: string
 ): translation is BibleTranslation {
   return translation in TRANSLATION_MARKERS;
+}
+
+/**
+ * Fault-tolerant wrapper for generateText that handles API failures gracefully
+ *
+ * When a model fails (API errors, rate limits, etc.), this function:
+ * - Retries with exponential backoff (3 attempts)
+ * - Returns a fallback error message instead of crashing
+ * - Logs the error for debugging
+ *
+ * This prevents individual model failures from crashing entire eval runs.
+ *
+ * @param model - The language model to use
+ * @param prompt - The prompt to generate text from
+ * @param options - Optional configuration (system prompt, maxRetries)
+ * @returns Generated text or error fallback
+ *
+ * @example
+ * const result = await safeGenerateText(model, "Question: ...")
+ * // If model fails after retries: "[MODEL_ERROR: Provider returned error]"
+ *
+ * @example
+ * const result = await safeGenerateText(model, "Question: ...", { system: "You are a theologian" })
+ */
+export async function safeGenerateText(
+  model: LanguageModelV2,
+  prompt: string,
+  options?: { system?: string; maxRetries?: number }
+): Promise<string> {
+  const maxRetries = options?.maxRetries ?? 3;
+  let lastError: Error | null = null;
+
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    try {
+      const result = await generateText({
+        model,
+        prompt,
+        ...(options?.system && { system: options.system }),
+        maxRetries: 2, // AI SDK internal retries
+      });
+      return result.text;
+    } catch (error) {
+      lastError = error as Error;
+
+      // Log the error for debugging
+      console.error(
+        `[Attempt ${attempt + 1}/${maxRetries}] Model generation failed:`,
+        error instanceof Error ? error.message : String(error)
+      );
+
+      // Wait before retrying (exponential backoff: 1s, 2s, 4s)
+      if (attempt < maxRetries - 1) {
+        const delayMs = Math.pow(2, attempt) * 1000;
+        await delay(delayMs);
+      }
+    }
+  }
+
+  // All retries failed - return error message instead of crashing
+  const errorMessage = lastError instanceof Error
+    ? lastError.message
+    : String(lastError);
+
+  console.error(
+    `❌ Model failed after ${maxRetries} attempts. Returning error fallback.`
+  );
+
+  return `[MODEL_ERROR: ${errorMessage}]`;
 }

@@ -10,9 +10,9 @@
  */
 
 import { evalite } from "evalite";
-import { generateText } from "ai";
 import { selectedModels } from "../lib/models.js";
 import { exactMatch } from "../lib/scorers.js";
+import { safeGenerateText } from "../lib/utils.js";
 import type { ScriptureTestData } from "../lib/types.js";
 
 /**
@@ -397,16 +397,15 @@ evalite.each(
 )("Exact Scripture Matching", {
   data: async () => exactScriptureData,
   task: async (input, variant: any) => {
-    const result = await generateText({
-      model: variant.model,
-      prompt: `You are a Bible scholar with expertise in various Bible translations.
+    return await safeGenerateText(
+      variant.model,
+      `You are a Bible scholar with expertise in various Bible translations.
 Your task is to quote the exact verse text from the specified translation.
 Be EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.
 Quote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.
 
-${input}`,
-    });
-    return result.text;
+${input}`
+    );
   },
   scorers: [exactMatch],
 });

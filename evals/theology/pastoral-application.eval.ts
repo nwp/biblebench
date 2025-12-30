@@ -7,10 +7,11 @@
  */
 
 import { evalite, createScorer } from "evalite";
-import { generateText, generateObject } from "ai";
+import { generateObject } from "ai";
 import { z } from "zod";
 import { defaultJudgeModel, selectedModels } from "../lib/models.js";
 import { theologicalAccuracyJudge } from "../lib/scorers.js";
+import { safeGenerateText } from "../lib/utils.js";
 
 /**
  * Pastoral Wisdom Judge
@@ -101,13 +102,12 @@ evalite.each(
 )("Pastoral Application", {
   data: async () => pastoralApplicationData,
   task: async (input, variant: any) => {
-    const result = await generateText({
-      model: variant.model,
-      prompt: `You are a wise, biblically grounded pastor providing counsel. Someone comes to you with the following situation. Provide a response that is theologically sound, pastorally sensitive, practically helpful, and grounded in Scripture. Balance truth with grace, conviction with compassion.
+    return await safeGenerateText(
+      variant.model,
+      `You are a wise, biblically grounded pastor providing counsel. Someone comes to you with the following situation. Provide a response that is theologically sound, pastorally sensitive, practically helpful, and grounded in Scripture. Balance truth with grace, conviction with compassion.
 
 ${input}`,
-    });
-    return result.text;
+    );
   },
     scorers: [
       theologicalAccuracyJudge,

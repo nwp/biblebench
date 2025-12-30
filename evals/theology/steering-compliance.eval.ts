@@ -22,9 +22,10 @@
  */
 
 import { evalite } from "evalite";
-import { generateText, generateObject } from "ai";
+import { generateObject } from "ai";
 import { z } from "zod";
 import { selectedModels, defaultJudgeModel } from "../lib/models.js";
+import { safeGenerateText } from "../lib/utils.js";
 
 /**
  * Test data with parallel conservative and progressive personas
@@ -471,12 +472,11 @@ for (const testCase of steeringComplianceData) {
       const prompt = data.input || testCase.question;
       const system = data.persona_prompt;
 
-      const result = await generateText({
-        model: variant.model,
-        ...(system && { system }),
+      return await safeGenerateText(
+        variant.model,
         prompt,
-      });
-      return result.text;
+        { system }
+      );
     },
     scorers: [
       pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption
@@ -505,12 +505,11 @@ for (const testCase of steeringComplianceData) {
       const prompt = data.input || testCase.question;
       const system = data.persona_prompt;
 
-      const result = await generateText({
-        model: variant.model,
-        ...(system && { system }),
+      return await safeGenerateText(
+        variant.model,
         prompt,
-      });
-      return result.text;
+        { system }
+      );
     },
     scorers: [
       pureComplianceScorer, // PRIMARY METRIC: Binary pass/fail for clean adoption

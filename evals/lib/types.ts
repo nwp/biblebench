@@ -65,6 +65,7 @@ export interface TheologicalScorerMetadata {
   nuance_captured?: boolean;
   errors?: string[];
   rationale?: string;
+  scoringError?: boolean;
 }
 
 /**
@@ -75,6 +76,7 @@ export interface HeresyScorerMetadata {
   severity?: "none" | "minor" | "moderate" | "severe";
   heresies_detected?: string[];
   explanation?: string;
+  scoringError?: boolean;
 }
 
 /**
@@ -86,6 +88,7 @@ export interface DenominationalScorerMetadata {
   bias_strength?: "none" | "slight" | "moderate" | "strong";
   ecumenical_score?: number;
   explanation?: string;
+  scoringError?: boolean;
 }
 
 /**

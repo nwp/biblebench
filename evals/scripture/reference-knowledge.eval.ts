@@ -6,8 +6,9 @@
  */
 
 import { evalite } from "evalite";
-import { generateText } from "ai";
+
 import { selectedModels } from "../lib/models.js";
+import { safeGenerateText } from "../lib/utils.js";
 import { scriptureReferenceAccuracy, containsAnswer } from "../lib/scorers.js";
 
 const referenceKnowledgeData = [
@@ -59,11 +60,10 @@ evalite.each(
 )("Reference Knowledge", {
   data: async () => referenceKnowledgeData,
   task: async (input, variant: any) => {
-    const result = await generateText({
-      model: variant.model,
-      prompt: `You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., "John 3:16").\n\n${input}`,
-    });
-    return result.text;
+    return await safeGenerateText(
+      variant.model,
+      `You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., "John 3:16").\n\n${input}`,
+    );
   },
     scorers: [
       scriptureReferenceAccuracy,
