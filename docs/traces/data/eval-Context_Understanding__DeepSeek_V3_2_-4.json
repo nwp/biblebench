@@ -1,81 +1,82 @@
 {
   "eval": {
-    "id": 90,
-    "suite_id": 29,
+    "id": 101,
+    "suite_id": 13,
     "col_order": 4,
     "input": "Who was the primary audience of the Sermon on the Mount?",
     "expected": "Jesus' disciples and the crowds who followed him",
-    "output": "Jesus's disciples and a large crowd of Galilean followers.",
-    "duration": 26963,
+    "output": "Based on the biblical text and historical context, the **primary audience of the Sermon on the Mount was Jesus' disciples**, though it was delivered within earshot of a larger, general crowd from Galilee and beyond.\n\nHere are the essential facts and key information:\n\n1.  **The Textual Evidence (Gospel of Matthew):**\n    *   The sermon begins with Jesus seeing \"the crowds,\" so he goes up on a mountainside and sits down. \"His disciples came to him, and he began to teach them\" (Matthew 5:1-2). This clearly identifies his disciples as the primary, intended audience.\n    *   The sermon concludes in Matthew 7:28-29 by noting that after Jesus finished, \"the crowds were amazed at his teaching.\" This confirms that a larger multitude was present and listening.\n\n2.  **The Nature of the Teaching:** The content of the sermon (e.g., the Beatitudes, the higher righteousness of the Kingdom, the Lord's Prayer, ethical imperatives) is fundamentally instruction for those committed to following Jesus and living as citizens of God's Kingdom. It outlines the character and conduct expected of his followers, making disciples the logical primary recipients.\n\n3.  **Historical and Social Context:**\n    *   Jesus' ministry was centered in Galilee, a mixed Jewish-Gentile region. The \"large crowds\" mentioned (Matthew 4:25) were likely composed of Jews from various social and religious backgrounds (peasants, artisans, some religious leaders, etc.), as well as potentially some Gentiles from the Decapolis and other nearby regions.\n    *   The setting \"on a mountain\" (traditionally associated with the hills near Capernaum) echoes Moses on Mount Sinai, positioning Jesus as a new authoritative teacher delivering a charter for the new covenant community.\n\n4.  **Scholarly Consensus:** There is strong agreement among scholars that the Sermon on the Mount, as presented in Matthew, is **didactic material shaped for the early church**. While its core originates from the historical Jesus, Matthew likely compiled and arranged teachings Jesus gave on multiple occasions (a practice common among ancient teachers) into this comprehensive discourse. Therefore, its *literary* audience is also the Matthean community—a likely Jewish-Christian church grappling with its identity and mission.\n\n**In summary:**\n\n*   **Immediate Primary Audience:** Jesus' core group of disciples.\n*   **Immediate Secondary Audience:** A large, mixed crowd from Galilee and surrounding regions.\n*   **Literary Audience:** The early Christian community for whom the Gospel of Matthew was written, serving as a manual for discipleship and community life.\n\nThis dual audience—disciples and crowd—reflects a common dynamic in Jesus' ministry: he invested deeply in his close followers while also proclaiming his transformative message publicly to all who would listen.",
+    "duration": 65287,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:45:15.574Z",
-    "score": 0.46,
+    "created_at": "2025-12-30T13:52:43.737Z",
+    "score": 0.425,
     "scores": [
       {
-        "id": 328,
-        "eval_id": 90,
-        "name": "Theological Accuracy Judge",
-        "score": 0.92,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 91,
+        "eval_id": 101,
+        "name": "Historical Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
           "errors": [
-            "The phrase 'Galilean followers' could be read as implying only Galileans attended; the Gospel accounts describe crowds that included people from various regions beyond Galilee."
+            "The claim of 'strong agreement among scholars' that the Sermon on the Mount is didactic material shaped for the early church may overstate the consensus; there is substantial scholarly debate about the precise literary audience (Matthean community) and the Sitz im Luke (life) of the sermon.",
+            "Some speculative elements about Gentile crowds from the Decapolis are not explicitly supported by the text and should be framed as plausible possibilities rather than established facts."
           ],
-          "rationale": "The Sermon on the Mount is given to Jesus' disciples in the presence of the crowds (Matthew 5:1). The LLM correctly identifies both groups as audiences: the disciples and a large crowd. The addition 'Galilean followers' is geographically plausible and aligns with the setting near Galilee, but it slightly narrows the crowd’s composition, which could include attendees from other regions. Overall, the answer aligns with biblical teaching and orthodox interpretation, and captures the core nuance that both disciples and the accompanying crowds are in view."
+          "rationale": "The answer correctly identifies the Sermon’s primary audience as Jesus' disciples and acknowledges that a larger crowd was present, aligning with the textual cues in Matthew 5:1–2 and 7:28–29. It also notes the Matthean community as a literary audience, which is a common scholarly view, and it discusses the public nature of the teaching. However, it overstates the unanimity of scholarly consensus on the Matthean/early-church readership and includes a speculative note about Gentile crowds (e.g., Decapolis) that is not explicit in the text. Overall, the response is accurate, thorough, and nuanced enough for the question, with minor overstatements and speculative language."
         },
-        "created_at": "2025-12-30T00:45:42.555Z"
+        "created_at": "2025-12-30T13:53:49.041Z"
       },
       {
-        "id": 329,
-        "eval_id": 90,
+        "id": 92,
+        "eval_id": 101,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:45:42.555Z"
+        "created_at": "2025-12-30T13:53:49.041Z"
       }
     ],
     "traces": [
       {
-        "id": 121,
-        "eval_id": 90,
+        "id": 46,
+        "eval_id": 101,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who was the primary audience of the Sermon on the Mount?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Jesus's disciples and a large crowd of Galilean followers.",
+          "text": "Based on the biblical text and historical context, the **primary audience of the Sermon on the Mount was Jesus' disciples**, though it was delivered within earshot of a larger, general crowd from Galilee and beyond.\n\nHere are the essential facts and key information:\n\n1.  **The Textual Evidence (Gospel of Matthew):**\n    *   The sermon begins with Jesus seeing \"the crowds,\" so he goes up on a mountainside and sits down. \"His disciples came to him, and he began to teach them\" (Matthew 5:1-2). This clearly identifies his disciples as the primary, intended audience.\n    *   The sermon concludes in Matthew 7:28-29 by noting that after Jesus finished, \"the crowds were amazed at his teaching.\" This confirms that a larger multitude was present and listening.\n\n2.  **The Nature of the Teaching:** The content of the sermon (e.g., the Beatitudes, the higher righteousness of the Kingdom, the Lord's Prayer, ethical imperatives) is fundamentally instruction for those committed to following Jesus and living as citizens of God's Kingdom. It outlines the character and conduct expected of his followers, making disciples the logical primary recipients.\n\n3.  **Historical and Social Context:**\n    *   Jesus' ministry was centered in Galilee, a mixed Jewish-Gentile region. The \"large crowds\" mentioned (Matthew 4:25) were likely composed of Jews from various social and religious backgrounds (peasants, artisans, some religious leaders, etc.), as well as potentially some Gentiles from the Decapolis and other nearby regions.\n    *   The setting \"on a mountain\" (traditionally associated with the hills near Capernaum) echoes Moses on Mount Sinai, positioning Jesus as a new authoritative teacher delivering a charter for the new covenant community.\n\n4.  **Scholarly Consensus:** There is strong agreement among scholars that the Sermon on the Mount, as presented in Matthew, is **didactic material shaped for the early church**. While its core originates from the historical Jesus, Matthew likely compiled and arranged teachings Jesus gave on multiple occasions (a practice common among ancient teachers) into this comprehensive discourse. Therefore, its *literary* audience is also the Matthean community—a likely Jewish-Christian church grappling with its identity and mission.\n\n**In summary:**\n\n*   **Immediate Primary Audience:** Jesus' core group of disciples.\n*   **Immediate Secondary Audience:** A large, mixed crowd from Galilee and surrounding regions.\n*   **Literary Audience:** The early Christian community for whom the Gospel of Matthew was written, serving as a manual for discipleship and community life.\n\nThis dual audience—disciples and crowd—reflects a common dynamic in Jesus' ministry: he invested deeply in his close followers while also proclaiming his transformative message publicly to all who would listen.",
           "toolCalls": []
         },
-        "start_time": 224.730875,
-        "end_time": 2435.4805,
-        "input_tokens": 134,
-        "output_tokens": 13,
-        "total_tokens": 147,
+        "start_time": 313.915792,
+        "end_time": 30620.569625,
+        "input_tokens": 125,
+        "output_tokens": 727,
+        "total_tokens": 852,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 29,
+    "id": 13,
     "run_id": 1,
     "name": "Context Understanding [DeepSeek V3.2]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -83,6 +84,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:45:15.574Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

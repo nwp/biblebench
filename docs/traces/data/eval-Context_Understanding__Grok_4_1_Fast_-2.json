@@ -1,79 +1,81 @@
 {
   "eval": {
-    "id": 173,
-    "suite_id": 57,
+    "id": 59,
+    "suite_id": 8,
     "col_order": 2,
     "input": "To whom was the book of Romans written and why?",
     "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
-    "output": "The Christian church in Rome (Jewish and Gentile believers), to systematically explain the gospel, unify the divided congregation, and prepare for Paul's visit and mission support to Spain.",
-    "duration": 23530,
+    "output": "### Recipients\nThe Epistle to the Romans was written **to the Christian community in Rome** (Romans 1:7: \"To all God's beloved in Rome, who are called to be saints\"). \n\n- This church was a mixed congregation of **Jewish and Gentile (non-Jewish) believers**.\n- Historical context: Christianity reached Rome early (likely via travelers from Pentecost, Acts 2:10), but the church faced tensions after Emperor Claudius expelled Jews (including Jewish Christians) from Rome around AD 49 (Suetonius, *Claudius* 25.4; cf. Acts 18:2). Many Jews, including Christians, returned after Claudius's death in AD 54 under Nero, leading to friction over issues like Gentile inclusion and Jewish law observance. By Paul's writing (ca. AD 57), the church was likely **predominantly Gentile** in leadership and makeup.\n\n### Purpose\nPaul wrote Romans as a **systematic presentation of the gospel** (\"my gospel,\" Romans 1:16; 2:16), while serving practical aims:\n\n1. **Self-introduction**: Paul had not yet visited Rome (Romans 1:10–13; 15:22–24) and wanted to acquaint the church with his theology and ministry to build rapport and avoid suspicion as the \"apostle to the Gentiles\" (Romans 11:13).\n\n2. **Mutual encouragement and unity**: He sought to strengthen their faith, impart spiritual gifts (Romans 1:11), and foster unity amid Jew-Gentile divides by emphasizing salvation by faith apart from the law (e.g., Romans 3–4; 9–11).\n\n3. **Mission support**: Paul requested their prayers (Romans 15:30–32) and planned to use Rome as a base for his impending mission to Spain (Romans 15:23–29), while first delivering aid to Jerusalem (Romans 15:25–27).\n\n**Scholarly consensus**: Authorship by Paul (ca. AD 57 from Corinth) and core purposes are undisputed. Some scholars emphasize its role as a theological compendium (addressing justification, sin, grace), possibly influenced by Paul's impending trial themes, but the audience and stated aims align with the text itself. No significant alternative views challenge the Roman destination.",
+    "duration": 56526,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:10:02.279Z",
+    "created_at": "2025-12-30T13:52:43.736Z",
     "score": 0.46,
     "scores": [
       {
-        "id": 739,
-        "eval_id": 173,
-        "name": "Theological Accuracy Judge",
+        "id": 51,
+        "eval_id": 59,
+        "name": "Historical Accuracy Judge",
         "score": 0.92,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [],
-          "rationale": "The LLM response accurately reflects the book of Romans. It identifies the audience as the church in Rome composed of Jewish and Gentile believers, and it states key aims: to explain the gospel, to address and help unify a divided Jewish-Gentile church, and to prepare for Paul’s visit and his broader mission (including going to Spain). These elements are supported by Romans 1:11-15, Romans 15:24, and Romans 15:28 (as well as the broader context of Jew-Gentile reconciliation in Romans 9–11). The phrasing captures the treatise-like, explanatory nature of Romans as a letter that lays out the gospel, and it correctly notes Paul’s travel plans and anticipated support role. Minor additional details that could enrich accuracy include Romans’ exhortations to edify the Roman church, address Judaizing tensions, and the collection for Jerusalem (Romans 15:25-27), but their omission does not undermine the overall accuracy of the stated purpose."
+          "errors": [
+            "The claim that there is universal scholarly consensus that the destination (Rome) has no significant alternative views is overstated; there are minority positions and ongoing discussions about audience and dating, though the mainstream view is indeed Rome as the destination and ca. AD 57 composition."
+          ],
+          "rationale": "The answer accurately identifies the recipients (the church inRome), notes the Jewish–Gentile mix and historical context (Claudius's expulsion, return under Nero), and presents the book’s stated and implied purposes (gospel presentation, self-introduction, unity, and mission to Spain with Jerusalem aid). It aligns with the common dating (ca. AD 57, likely from Corinth) and addresses the Jew–Gentile tension effectively. The main area for caution is the strongest phrasing about consensus; there are minority scholarly views, though they do not outweigh the mainstream position."
         },
-        "created_at": "2025-12-30T00:10:25.827Z"
+        "created_at": "2025-12-30T13:53:40.280Z"
       },
       {
-        "id": 740,
-        "eval_id": 173,
+        "id": 52,
+        "eval_id": 59,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:10:25.827Z"
+        "created_at": "2025-12-30T13:53:40.280Z"
       }
     ],
     "traces": [
       {
-        "id": 280,
-        "eval_id": 173,
+        "id": 26,
+        "eval_id": 59,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: To whom was the book of Romans written and why?"
               }
             ]
           }
         ],
         "output": {
-          "text": "The Christian church in Rome (Jewish and Gentile believers), to systematically explain the gospel, unify the divided congregation, and prepare for Paul's visit and mission support to Spain.",
+          "text": "### Recipients\nThe Epistle to the Romans was written **to the Christian community in Rome** (Romans 1:7: \"To all God's beloved in Rome, who are called to be saints\"). \n\n- This church was a mixed congregation of **Jewish and Gentile (non-Jewish) believers**.\n- Historical context: Christianity reached Rome early (likely via travelers from Pentecost, Acts 2:10), but the church faced tensions after Emperor Claudius expelled Jews (including Jewish Christians) from Rome around AD 49 (Suetonius, *Claudius* 25.4; cf. Acts 18:2). Many Jews, including Christians, returned after Claudius's death in AD 54 under Nero, leading to friction over issues like Gentile inclusion and Jewish law observance. By Paul's writing (ca. AD 57), the church was likely **predominantly Gentile** in leadership and makeup.\n\n### Purpose\nPaul wrote Romans as a **systematic presentation of the gospel** (\"my gospel,\" Romans 1:16; 2:16), while serving practical aims:\n\n1. **Self-introduction**: Paul had not yet visited Rome (Romans 1:10–13; 15:22–24) and wanted to acquaint the church with his theology and ministry to build rapport and avoid suspicion as the \"apostle to the Gentiles\" (Romans 11:13).\n\n2. **Mutual encouragement and unity**: He sought to strengthen their faith, impart spiritual gifts (Romans 1:11), and foster unity amid Jew-Gentile divides by emphasizing salvation by faith apart from the law (e.g., Romans 3–4; 9–11).\n\n3. **Mission support**: Paul requested their prayers (Romans 15:30–32) and planned to use Rome as a base for his impending mission to Spain (Romans 15:23–29), while first delivering aid to Jerusalem (Romans 15:25–27).\n\n**Scholarly consensus**: Authorship by Paul (ca. AD 57 from Corinth) and core purposes are undisputed. Some scholars emphasize its role as a theological compendium (addressing justification, sin, grace), possibly influenced by Paul's impending trial themes, but the audience and stated aims align with the text itself. No significant alternative views challenge the Roman destination.",
           "toolCalls": []
         },
-        "start_time": 192.644041,
-        "end_time": 3910.761416,
-        "input_tokens": 280,
-        "output_tokens": 397,
-        "total_tokens": 677,
+        "start_time": 311.860583,
+        "end_time": 10652.858792,
+        "input_tokens": 238,
+        "output_tokens": 891,
+        "total_tokens": 1129,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 57,
+    "id": 8,
     "run_id": 1,
     "name": "Context Understanding [Grok 4.1 Fast]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +83,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:10:02.279Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

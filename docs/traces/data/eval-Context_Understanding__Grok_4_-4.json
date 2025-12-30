@@ -1,82 +1,79 @@
 {
   "eval": {
-    "id": 183,
-    "suite_id": 58,
+    "id": 69,
+    "suite_id": 9,
     "col_order": 4,
     "input": "Who was the primary audience of the Sermon on the Mount?",
     "expected": "Jesus' disciples and the crowds who followed him",
-    "output": "Jesus' disciples",
-    "duration": 29514,
+    "output": "### Primary Audience of the Sermon on the Mount\n\nThe Sermon on the Mount, as recorded in the Gospel of Matthew (chapters 5–7), is one of Jesus' most extensive teachings in the New Testament, covering topics like the Beatitudes, ethical living, prayer, and the nature of the kingdom of God. Based on the biblical text and historical context, here's a clear breakdown of its primary audience:\n\n#### In the Biblical Narrative\n- **Primary Audience: Jesus' Disciples**  \n  The sermon is explicitly directed toward Jesus' closest followers, often referred to as his \"disciples.\" Matthew 5:1–2 describes the setting: \"Seeing the crowds, he [Jesus] went up on the mountain, and when he sat down, his disciples came to him. And he opened his mouth and taught them, saying...\" This indicates that Jesus positioned himself to teach his inner circle intimately, using direct address like \"you\" (e.g., \"Blessed are you...\" in the Beatitudes, or instructions on prayer and ethics). The teachings emphasize how disciples should live as part of God's kingdom, contrasting with broader religious practices of the time (e.g., Pharisaic legalism).\n\n- **Secondary Presence: The Crowds**  \n  While the disciples are the focus, a larger crowd is present and overhears the teaching. Matthew 7:28–29 notes that \"when Jesus finished these sayings, the crowds were astonished at his teaching, for he was teaching them as one who had authority, and not as their scribes.\" This suggests the sermon had a ripple effect, inspiring awe among the multitudes who followed Jesus out of curiosity or spiritual interest (as mentioned in Matthew 4:25, describing \"great crowds\" from Galilee, Jerusalem, and beyond). However, the content is not primarily tailored to the crowds but to those committed to following Jesus.\n\nThis structure reflects a common ancient Near Eastern teaching style, where a teacher (like a rabbi) would sit to instruct students, with others potentially listening in. Historically, this event is set during Jesus' Galilean ministry (around 28–30 CE), amid growing public interest in his message, healings, and miracles.\n\n#### Scholarly Perspectives\n- **Traditional/Majority View**: Most biblical scholars, including conservative and evangelical traditions, view the disciples as the primary audience, with the sermon serving as a foundational \"discipleship manual\" for Jesus' followers. This aligns with Matthew's overall emphasis on Jesus as the fulfillment of Jewish law and prophecy, teaching a \"higher righteousness\" (Matthew 5:20) for his committed adherents.\n  \n- **Alternative Perspectives**: Some modern scholars (e.g., in historical-critical approaches) suggest the Sermon on the Mount may be a compilation of Jesus' sayings edited by Matthew's author(s) for a later Christian community, rather than a single historical event. In this view, the \"primary audience\" could extend to the Gospel's original readers—likely Jewish Christians in the late 1st century CE (around 80–90 CE), facing tensions with mainstream Judaism post the destruction of the Temple in 70 CE. A parallel but shorter version, the Sermon on the Plain in Luke 6:17–49, addresses a similar mixed audience but emphasizes the plain rather than a mount, leading some to debate if these represent the same event or distinct traditions. However, there is broad consensus that the Matthean version prioritizes instruction for disciples.\n\nIn summary, within the story, the Sermon on the Mount was primarily for Jesus' disciples as a guide for kingdom living, while also impacting the surrounding crowds. If you're interested in specific themes, historical parallels, or comparisons with Luke's account, let me know for more details!",
+    "duration": 75155,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:10:02.279Z",
-    "score": 0.275,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.475,
     "scores": [
       {
-        "id": 770,
-        "eval_id": 183,
-        "name": "Theological Accuracy Judge",
-        "score": 0.55,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 141,
+        "eval_id": 69,
+        "name": "Historical Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
-          "biblically_grounded": false,
-          "nuance_captured": false,
-          "errors": [
-            "The answer asserts the Sermon on the Mount was addressed only to Jesus' disciples, but the Gospel of Matthew presents the context as addressing the crowds as well (e.g., Matthew 5:1-2: 'When Jesus saw the crowds, he went up on the mountain... and taught them').",
-            "Lacks the nuance that the sermon was delivered to a mixed audience—initially the disciples present, yet also many others who followed Jesus—and that some statements are aimed specifically to the disciples while others apply more broadly."
-          ],
-          "rationale": "The Sermon on the Mount is introduced with the crowds present (Matthew 5:1), and while Jesus teaches his disciples, the audience includes both disciples and the broader crowd. Thus, labeling the primary audience as 'the disciples' is incomplete and misses an important biblical nuance. The judgment is doctrinally sound (orthodox in its acceptance of biblical teaching) but not biblically grounded in full context due to the omission of the crowd. "
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The answer correctly identifies the primary audience as Jesus' disciples, with the crowds present as a secondary audience. It cites key biblical texts (Matt 5:1–2; 7:28–29) and situates the setting in the Galilean ministry. It notes the common scholarly view that the Sermon is primarily for disciples, while acknowledging alternative historical-critical perspectives that frame the material as Matthew’s edited compilation for a Christian community, and it mentions Luke's parallel as related tradition. This provides appropriate nuance about authorship and audience without overstating certainty. The response is directly relevant to the question and covers the main points; minor interpretive variations are appropriately flagged."
         },
-        "created_at": "2025-12-30T00:10:31.811Z"
+        "created_at": "2025-12-30T13:53:58.910Z"
       },
       {
-        "id": 771,
-        "eval_id": 183,
+        "id": 142,
+        "eval_id": 69,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:10:31.811Z"
+        "created_at": "2025-12-30T13:53:58.910Z"
       }
     ],
     "traces": [
       {
-        "id": 292,
-        "eval_id": 183,
+        "id": 71,
+        "eval_id": 69,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who was the primary audience of the Sermon on the Mount?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Jesus' disciples",
+          "text": "### Primary Audience of the Sermon on the Mount\n\nThe Sermon on the Mount, as recorded in the Gospel of Matthew (chapters 5–7), is one of Jesus' most extensive teachings in the New Testament, covering topics like the Beatitudes, ethical living, prayer, and the nature of the kingdom of God. Based on the biblical text and historical context, here's a clear breakdown of its primary audience:\n\n#### In the Biblical Narrative\n- **Primary Audience: Jesus' Disciples**  \n  The sermon is explicitly directed toward Jesus' closest followers, often referred to as his \"disciples.\" Matthew 5:1–2 describes the setting: \"Seeing the crowds, he [Jesus] went up on the mountain, and when he sat down, his disciples came to him. And he opened his mouth and taught them, saying...\" This indicates that Jesus positioned himself to teach his inner circle intimately, using direct address like \"you\" (e.g., \"Blessed are you...\" in the Beatitudes, or instructions on prayer and ethics). The teachings emphasize how disciples should live as part of God's kingdom, contrasting with broader religious practices of the time (e.g., Pharisaic legalism).\n\n- **Secondary Presence: The Crowds**  \n  While the disciples are the focus, a larger crowd is present and overhears the teaching. Matthew 7:28–29 notes that \"when Jesus finished these sayings, the crowds were astonished at his teaching, for he was teaching them as one who had authority, and not as their scribes.\" This suggests the sermon had a ripple effect, inspiring awe among the multitudes who followed Jesus out of curiosity or spiritual interest (as mentioned in Matthew 4:25, describing \"great crowds\" from Galilee, Jerusalem, and beyond). However, the content is not primarily tailored to the crowds but to those committed to following Jesus.\n\nThis structure reflects a common ancient Near Eastern teaching style, where a teacher (like a rabbi) would sit to instruct students, with others potentially listening in. Historically, this event is set during Jesus' Galilean ministry (around 28–30 CE), amid growing public interest in his message, healings, and miracles.\n\n#### Scholarly Perspectives\n- **Traditional/Majority View**: Most biblical scholars, including conservative and evangelical traditions, view the disciples as the primary audience, with the sermon serving as a foundational \"discipleship manual\" for Jesus' followers. This aligns with Matthew's overall emphasis on Jesus as the fulfillment of Jewish law and prophecy, teaching a \"higher righteousness\" (Matthew 5:20) for his committed adherents.\n  \n- **Alternative Perspectives**: Some modern scholars (e.g., in historical-critical approaches) suggest the Sermon on the Mount may be a compilation of Jesus' sayings edited by Matthew's author(s) for a later Christian community, rather than a single historical event. In this view, the \"primary audience\" could extend to the Gospel's original readers—likely Jewish Christians in the late 1st century CE (around 80–90 CE), facing tensions with mainstream Judaism post the destruction of the Temple in 70 CE. A parallel but shorter version, the Sermon on the Plain in Luke 6:17–49, addresses a similar mixed audience but emphasizes the plain rather than a mount, leading some to debate if these represent the same event or distinct traditions. However, there is broad consensus that the Matthean version prioritizes instruction for disciples.\n\nIn summary, within the story, the Sermon on the Mount was primarily for Jesus' disciples as a guide for kingdom living, while also impacting the surrounding crowds. If you're interested in specific themes, historical parallels, or comparisons with Luke's account, let me know for more details!",
           "toolCalls": []
         },
-        "start_time": 194.163916,
-        "end_time": 9985.8315,
-        "input_tokens": 809,
-        "output_tokens": 283,
-        "total_tokens": 1092,
+        "start_time": 312.357042,
+        "end_time": 34296.928083,
+        "input_tokens": 767,
+        "output_tokens": 1126,
+        "total_tokens": 1893,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 58,
+    "id": 9,
     "run_id": 1,
     "name": "Context Understanding [Grok 4]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -84,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:10:02.279Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

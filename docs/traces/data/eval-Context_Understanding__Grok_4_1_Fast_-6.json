@@ -1,79 +1,82 @@
 {
   "eval": {
-    "id": 177,
-    "suite_id": 57,
+    "id": 63,
+    "suite_id": 8,
     "col_order": 6,
     "input": "What was the relationship between the books of Kings and Chronicles?",
     "expected": "Chronicles retells much of the history in Kings but from a priestly perspective, emphasizing temple worship and God's covenant with David",
-    "output": "Chronicles parallels and supplements Kings, retelling Israel's monarchy history from David to the exile with emphasis on the temple, priesthood, Judah, and themes of divine faithfulness and repentance.",
-    "duration": 34865,
+    "output": "### Overview of the Books\n- **1-2 Kings**: Part of the Deuteronomistic History (Deuteronomy–2 Kings), covering the united monarchy under Solomon (ca. 970–930 BCE) through the divided kingdoms of Israel and Judah to the Babylonian exile (ca. 586 BCE) and Jehoiachin's release (562 BCE). Emphasizes theological themes of covenant obedience, prophetic judgment, and royal failure.\n- **1-2 Chronicles**: Covers the reigns from Saul (briefly), David, and Solomon through Judah's kings to the exile and the edict of Cyrus (538 BCE), permitting return. Focuses on Judah, the Davidic dynasty, the temple, priesthood, and Levites, with a post-exilic perspective promoting worship and restoration.\n\n### Chronological and Literary Relationship\n- **Majority scholarly view**: Kings predates Chronicles. Kings was likely composed/edited in the late 7th–6th centuries BCE (Josianic reform and exilic period), attributed to a \"Deuteronomistic Historian\" (possibly Jeremiah or scribal circles). Chronicles was written later, ca. 400–350 BCE (post-exilic, Persian period), by \"the Chronicler\" (possibly Ezra or a Levitical scribe).\n- **Dependency**: Chronicles draws heavily from Kings (and Samuel) as a primary source. About 30–50% of Chronicles parallels Kings verbatim or closely (e.g., the reigns of Solomon, Asa, Jehoshaphat, and Josiah's death in 2 Chron. 35 // 2 Kings 23). The Chronicler supplements with unique material from temple archives, genealogies (1 Chron. 1–9), and speeches (e.g., David's temple plans).\n- **Differences in perspective and content**:\n  | Aspect          | Kings                          | Chronicles                     |\n  |-----------------|--------------------------------|--------------------------------|\n  | **Scope**      | Balanced Israel/Judah focus   | Judah-centric (ignores Israel post-split) |\n  | **Tone**       | Critical (royal sins, exile)  | Positive (idealizes David/Solomon, omits scandals like Bathsheba, Uriah) |\n  | **Emphasis**   | Prophets, covenant failure    | Temple, Levites, worship, retribution theology |\n  | **Additions**  | Minimal unique material       | Genealogies, prayers, military census |\n\n### Scholarly Notes\n- **Traditional Jewish view**: Both part of the Prophets (Nevi'im); authorship linked to Jeremiah (Kings) and Ezra (Chronicles).\n- **Minority/alternative perspectives**: Older critical views (e.g., 19th century) proposed parallel independent traditions, but textual parallels, Chronicles' later Hebrew (Aramaisms, late vocabulary), and interpretive reshaping confirm dependency. No serious scholar today argues Chronicles predates Kings.\n- **Purpose**: Chronicles retells history to encourage post-exilic Judah, harmonizing Kings' judgment narrative with hope for temple restoration.\n\nThis relationship reflects how biblical historians reused and theologized earlier sources for new contexts. For deeper study, compare parallel texts in a synopsis Bible (e.g., *The Chronicler's History*).",
+    "duration": 64995,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:10:02.279Z",
-    "score": 0.425,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.325,
     "scores": [
       {
-        "id": 776,
-        "eval_id": 177,
-        "name": "Theological Accuracy Judge",
-        "score": 0.85,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 89,
+        "eval_id": 63,
+        "name": "Historical Accuracy Judge",
+        "score": 0.65,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
-          "doctrinally_sound": true,
+          "doctrinally_sound": false,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [],
-          "rationale": "The LLM answer accurately identifies Chronicles as parallel to Kings and as supplementing that history, with an emphasis on temple, priesthood, and the David/Judah focus. It correctly highlights themes of divine faithfulness and repentance, which align with Chronicles’ theological framing, and it implicitly reflects the emphasis on covenant through the Davidic line. Minor caveats: Chronicles foregrounds the Davidic covenant and temple worship more explicitly and often reframes or omits certain northern-kingdom material found in Kings; it also includes extensive genealogies and begins with Adam to David, before focusing on Judah’s kings, which the response does not mention. The statement ‘from David to the exile’ is a simplification of Chronicles’ scope but not doctrinally harmful. Overall, the assessment is doctrinally sound, biblically grounded, and captures essential nuance with only minor gaps."
+          "errors": [
+            "Traditional Jewish view misstates the canonical placement of Chronicles: Chronicles is part of the Ketuvim (Writings) in the Hebrew Bible, not the Prophets (Nevi'im). Some Christian tradition classifies books differently, and there are nuanced discussions about authorship, but the blanket claim that Chronicles is in Nevi'im is inaccurate.",
+            "While the response is largely accurate, the % overlap figure (30–50%) is a rough estimate and varies by scholastic method; many scholars describe substantial but not precisely quantified dependence."
+          ],
+          "rationale": "The LLM correctly outlines the Deuteronomistic History framework, the chronological dating, the source dependency on Kings/Samuel, and Chronicles’ emphasis on Judah, temple, and priesthood. It also accurately notes the scholarly consensus that Chronicles was written later (post-exilic Persian period) and aimed to promote temple restoration. The notable factual error concerns the canonical placement of Chronicles, which in Jewish tradition is not considered part of the Prophets (Nevi'im). The rest of the analysis is nuanced and aligns with mainstream scholarship, though the overlap percentage should be treated as an approximate figure rather than a precise statistic."
         },
-        "created_at": "2025-12-30T00:10:37.161Z"
+        "created_at": "2025-12-30T13:53:48.750Z"
       },
       {
-        "id": 777,
-        "eval_id": 177,
+        "id": 90,
+        "eval_id": 63,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:10:37.161Z"
+        "created_at": "2025-12-30T13:53:48.750Z"
       }
     ],
     "traces": [
       {
-        "id": 295,
-        "eval_id": 177,
+        "id": 45,
+        "eval_id": 63,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the relationship between the books of Kings and Chronicles?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: What was the relationship between the books of Kings and Chronicles?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Chronicles parallels and supplements Kings, retelling Israel's monarchy history from David to the exile with emphasis on the temple, priesthood, Judah, and themes of divine faithfulness and repentance.",
+          "text": "### Overview of the Books\n- **1-2 Kings**: Part of the Deuteronomistic History (Deuteronomy–2 Kings), covering the united monarchy under Solomon (ca. 970–930 BCE) through the divided kingdoms of Israel and Judah to the Babylonian exile (ca. 586 BCE) and Jehoiachin's release (562 BCE). Emphasizes theological themes of covenant obedience, prophetic judgment, and royal failure.\n- **1-2 Chronicles**: Covers the reigns from Saul (briefly), David, and Solomon through Judah's kings to the exile and the edict of Cyrus (538 BCE), permitting return. Focuses on Judah, the Davidic dynasty, the temple, priesthood, and Levites, with a post-exilic perspective promoting worship and restoration.\n\n### Chronological and Literary Relationship\n- **Majority scholarly view**: Kings predates Chronicles. Kings was likely composed/edited in the late 7th–6th centuries BCE (Josianic reform and exilic period), attributed to a \"Deuteronomistic Historian\" (possibly Jeremiah or scribal circles). Chronicles was written later, ca. 400–350 BCE (post-exilic, Persian period), by \"the Chronicler\" (possibly Ezra or a Levitical scribe).\n- **Dependency**: Chronicles draws heavily from Kings (and Samuel) as a primary source. About 30–50% of Chronicles parallels Kings verbatim or closely (e.g., the reigns of Solomon, Asa, Jehoshaphat, and Josiah's death in 2 Chron. 35 // 2 Kings 23). The Chronicler supplements with unique material from temple archives, genealogies (1 Chron. 1–9), and speeches (e.g., David's temple plans).\n- **Differences in perspective and content**:\n  | Aspect          | Kings                          | Chronicles                     |\n  |-----------------|--------------------------------|--------------------------------|\n  | **Scope**      | Balanced Israel/Judah focus   | Judah-centric (ignores Israel post-split) |\n  | **Tone**       | Critical (royal sins, exile)  | Positive (idealizes David/Solomon, omits scandals like Bathsheba, Uriah) |\n  | **Emphasis**   | Prophets, covenant failure    | Temple, Levites, worship, retribution theology |\n  | **Additions**  | Minimal unique material       | Genealogies, prayers, military census |\n\n### Scholarly Notes\n- **Traditional Jewish view**: Both part of the Prophets (Nevi'im); authorship linked to Jeremiah (Kings) and Ezra (Chronicles).\n- **Minority/alternative perspectives**: Older critical views (e.g., 19th century) proposed parallel independent traditions, but textual parallels, Chronicles' later Hebrew (Aramaisms, late vocabulary), and interpretive reshaping confirm dependency. No serious scholar today argues Chronicles predates Kings.\n- **Purpose**: Chronicles retells history to encourage post-exilic Judah, harmonizing Kings' judgment narrative with hope for temple restoration.\n\nThis relationship reflects how biblical historians reused and theologized earlier sources for new contexts. For deeper study, compare parallel texts in a synopsis Bible (e.g., *The Chronicler's History*).",
           "toolCalls": []
         },
-        "start_time": 193.290625,
-        "end_time": 5903.254416,
-        "input_tokens": 281,
-        "output_tokens": 490,
-        "total_tokens": 771,
+        "start_time": 312.062708,
+        "end_time": 12976.155792,
+        "input_tokens": 239,
+        "output_tokens": 1096,
+        "total_tokens": 1335,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 57,
+    "id": 8,
     "run_id": 1,
     "name": "Context Understanding [Grok 4.1 Fast]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +84,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:10:02.279Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

@@ -1,82 +1,79 @@
 {
   "eval": {
-    "id": 268,
-    "suite_id": 86,
+    "id": 45,
+    "suite_id": 6,
     "col_order": 4,
     "input": "Who was the primary audience of the Sermon on the Mount?",
     "expected": "Jesus' disciples and the crowds who followed him",
-    "output": "Jesus' disciples and the crowds of Jewish people following him in Galilee.",
-    "duration": 28468,
+    "output": "# Primary Audience of the Sermon on the Mount\n\n## The Immediate Audience\n\nThe Sermon on the Mount (Matthew 5-7) was delivered to **two distinct groups**:\n\n1. **Jesus' disciples** (primary focus)\n2. **Large crowds** who followed Jesus (secondary observers)\n\nMatthew 5:1-2 establishes this clearly: *\"Now when Jesus saw the crowds, he went up on a mountainside and sat down. His disciples came to him, and he began to teach them.\"*\n\n## The Disciples as Primary Recipients\n\nThe sermon appears specifically directed at Jesus' **committed followers** for several reasons:\n\n- **The content's demanding nature**: The teachings require radical commitment (turning the other cheek, loving enemies, seeking God's kingdom first)\n- **The direct address**: Jesus speaks in second person (\"you are the salt of the earth,\" \"you are the light of the world\")\n- **The assumption of belief**: The sermon presupposes acceptance of Jesus' authority and God's kingdom\n\n## The Crowds as Witnesses\n\nMatthew 7:28 notes that *\"the crowds were amazed at his teaching.\"* This indicates they were present and listening, though the instruction was primarily aimed at shaping the disciples' understanding of kingdom life.\n\n## Broader Application\n\nWhile immediately addressing first-century disciples, Matthew's Gospel presents this sermon as instruction for **all followers of Jesus** throughout church history, establishing the ethical and spiritual principles of life in God's kingdom.",
+    "duration": 57020,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.862Z",
-    "score": 0.415,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.45,
     "scores": [
       {
-        "id": 1121,
-        "eval_id": 268,
-        "name": "Theological Accuracy Judge",
-        "score": 0.83,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 55,
+        "eval_id": 45,
+        "name": "Historical Accuracy Judge",
+        "score": 0.9,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [
-            "The addition of 'Jewish' to describe the crowd is not explicitly stated in the text and excludes Gentiles who were present; the crowd may have included non-Jews.",
-            "The phrase 'in Galilee' is not wrong, but the Gospel describes crowds from multiple regions; focusing on Galilee risks oversimplifying the geographic scope of the audience."
-          ],
-          "rationale": "The LLM correctly identifies the Sermon on the Mount as addressed to Jesus' disciples with the surrounding crowds (as Matthew 5:1-2 indicates, where disciples come to him and he teaches them, while the crowds are also present). This aligns with biblical accounts and historic Christian understanding that the scene involves both a core group (disciples) and a larger audience. The response is doctrinally sound and biblically grounded. Nuance is captured in noting two groups present. However, it adds ethnic shorthand ('Jewish') and overly locational specificity ('in Galilee') that could be refined, since the crowds included people from various regions (and the Gospel notes multiple geographic origins)."
+          "errors": [],
+          "rationale": "The response accurately identifies the immediate textual cues: Mt 5:1-2 sets the scene with the crowds and Jesus’ disciples, and Mt 7:28 describes the crowds’ reaction, supporting the claim that the disciples were the primary audience with the crowds as listeners/witnesses. It correctly argues that the sermon targets committed followers (the disciples) while also functioning as teaching that the crowds overhear and that its ethical instructions have broader applicability for all followers of Jesus. This aligns with common scholarly readings that acknowledge both a primary audience (the disciples) and a broader audience-in-progress (the crowds). The answer could be slightly more explicit about ongoing scholarly debate on how tightly the “you” is scoped (disciples vs. inclusively addressed hearers); however, the core facts and interpretation are solid and relevant to the question. "
         },
-        "created_at": "2025-12-30T00:17:50.332Z"
+        "created_at": "2025-12-30T13:53:40.775Z"
       },
       {
-        "id": 1122,
-        "eval_id": 268,
+        "id": 56,
+        "eval_id": 45,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:17:50.332Z"
+        "created_at": "2025-12-30T13:53:40.775Z"
       }
     ],
     "traces": [
       {
-        "id": 429,
-        "eval_id": 268,
+        "id": 28,
+        "eval_id": 45,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who was the primary audience of the Sermon on the Mount?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Jesus' disciples and the crowds of Jewish people following him in Galilee.",
+          "text": "# Primary Audience of the Sermon on the Mount\n\n## The Immediate Audience\n\nThe Sermon on the Mount (Matthew 5-7) was delivered to **two distinct groups**:\n\n1. **Jesus' disciples** (primary focus)\n2. **Large crowds** who followed Jesus (secondary observers)\n\nMatthew 5:1-2 establishes this clearly: *\"Now when Jesus saw the crowds, he went up on a mountainside and sat down. His disciples came to him, and he began to teach them.\"*\n\n## The Disciples as Primary Recipients\n\nThe sermon appears specifically directed at Jesus' **committed followers** for several reasons:\n\n- **The content's demanding nature**: The teachings require radical commitment (turning the other cheek, loving enemies, seeking God's kingdom first)\n- **The direct address**: Jesus speaks in second person (\"you are the salt of the earth,\" \"you are the light of the world\")\n- **The assumption of belief**: The sermon presupposes acceptance of Jesus' authority and God's kingdom\n\n## The Crowds as Witnesses\n\nMatthew 7:28 notes that *\"the crowds were amazed at his teaching.\"* This indicates they were present and listening, though the instruction was primarily aimed at shaping the disciples' understanding of kingdom life.\n\n## Broader Application\n\nWhile immediately addressing first-century disciples, Matthew's Gospel presents this sermon as instruction for **all followers of Jesus** throughout church history, establishing the ethical and spiritual principles of life in God's kingdom.",
           "toolCalls": []
         },
-        "start_time": 198.030917,
-        "end_time": 1889.385125,
-        "input_tokens": 154,
-        "output_tokens": 19,
-        "total_tokens": 173,
+        "start_time": 311.149458,
+        "end_time": 9592.75225,
+        "input_tokens": 98,
+        "output_tokens": 325,
+        "total_tokens": 423,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 86,
+    "id": 6,
     "run_id": 1,
     "name": "Context Understanding [Claude Sonnet 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -84,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

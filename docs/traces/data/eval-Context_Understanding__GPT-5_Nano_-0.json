@@ -1,83 +1,79 @@
 {
   "eval": {
-    "id": 275,
-    "suite_id": 60,
+    "id": 9,
+    "suite_id": 2,
     "col_order": 0,
     "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
     "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
-    "output": "John the Apostle (the son of Zebedee), one of Jesus' twelve apostles, identified in the Gospel as the disciple whom Jesus loved.",
-    "duration": 50662,
+    "output": "Short answer\n- Traditional view: The Gospel of John was written by John the Apostle, the son of Zebedee, who was one of Jesus’ Twelve Apostles and one of His close followers. In the gospel itself, the author is identified (or identified by early tradition) with the “disciple whom Jesus loved,” an eyewitness who had a close relationship with Jesus.\n- Modern scholarly view: Most contemporary scholars do not accept the claim that John the Apostle wrote the gospel directly. They often regard the work as the product of a Johannine community or a later writer associated with that circle. In this view, the “disciple whom Jesus loved” may be a literary figure representing that community or may refer to an otherwise unnamed individual within the circle, rather than a known apostle.\n\nWhat the question means by “relationship to Jesus”\n- If the author is John the Apostle (traditional view): he was one of Jesus’ closest disciples, an eyewitness, and part of Jesus’ inner circle.\n- If the author is from the Johannine community (modern view): the author is a member (or leader) of a Christian community influenced by Jesus’ teaching and eyewitness traditions, but not necessarily the Apostle John himself.\n\nKey points and quick references\n- Gospel title and attribution: The text does not name its author. Early church tradition (e.g., Irenaeus, Clement of Alexandria, Eusebius) attributes the Gospel to John the Apostle.\n- Internal clue: The Gospel frequently refers to “the disciple whom Jesus loved” (e.g., John 13:23; 19:26–27; 21:7, 20–24). The author identifies himself in John 21:24 as the one who testifies to these things and wrote them down.\n- Date and place (scholarly consensus varies): Most scholars date the gospel to the late 1st century (roughly 90–110 CE), with suggested places including Ephesus or another location in Asia Minor. If it was written by John the Apostle, this would reflect his later ministry; if by a Johannine community, it reflects that community’s development in that period.\n- Why the difference matters: The question of authorship affects how we understand the gospel’s perspective—whether it is a first-hand eyewitness account or a later theological synthesis drawing on that circle’s memories and teachings.\n\nBottom line\n- Traditional answer: John the Apostle, a direct disciple of Jesus and eyewitness.\n- Scholarly nuance: The Gospel is widely attributed in various ways to a member of the Johannine circle, sometimes linked to John the Apostle in early tradition, but many scholars today view the exact authorship as uncertain. The author is at least closely connected to the apostolic tradition and is often called the “disciple whom Jesus loved,” but whether that figure is the Apostle John or someone else in that community remains debated.",
+    "duration": 77066,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:34:08.180Z",
-    "score": 0.375,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.46,
     "scores": [
       {
-        "id": 791,
-        "eval_id": 275,
-        "name": "Theological Accuracy Judge",
-        "score": 0.75,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 147,
+        "eval_id": 9,
+        "name": "Historical Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
-          "biblically_grounded": false,
-          "nuance_captured": false,
-          "errors": [
-            "The Gospel of John is anonymous in the text; traditional attribution to John the Apostle comes from church tradition rather than explicit scripture.",
-            "The LLM presents the author as factual scripture-based identification, but biblical text does not explicitly name the author as John the Apostle.",
-            "The response does not acknowledge scholarly debate about Johannine authorship and the identity of the 'beloved disciple' (whether the beloved disciple is John or another figure), nor does it note that such attribution is traditional rather than scripturally confirmed."
-          ],
-          "rationale": "The answer aligns with longstanding Christian tradition (John the Apostle as author and the 'disciple whom Jesus loved'), but it presents this as a doctrinally established biblical fact rather than a traditional attribution. Scripture itself does not explicitly name the author, and there is ongoing scholarly debate about authorship and identity. The reply could improve by noting the traditional attribution while signaling its non-scriptural basis and by mentioning the ambiguity surrounding the 'beloved disciple.'"
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response accurately presents both the traditional attribution (John the Apostle, a close disciple and eyewitness, associated with the “disciple whom Jesus loved”) and the contemporary scholarly view (the gospel is likely by a member of the Johannine circle or a community rather than the Apostle John himself). It notes that the text itself does not name an author, cites early tradition (Irenaeus, Clement, Eusebius) for the traditional view, and points to John 21:24 as the self-identifying marker, while also referencing key internal motifs (the beloved disciple) and the typical late-1st-century dating (roughly 90–110 CE) with possible locations like Ephesus. It clearly explains how authorship affects perceived eyewitness testimony versus later theological synthesis and remains balanced by presenting both positions without asserting certainty. The answer directly addresses the question about authorship and the author’s relationship to Jesus, with appropriate scholarly nuance and relevance."
         },
-        "created_at": "2025-12-30T00:34:58.861Z"
+        "created_at": "2025-12-30T13:54:00.820Z"
       },
       {
-        "id": 792,
-        "eval_id": 275,
+        "id": 148,
+        "eval_id": 9,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:34:58.861Z"
+        "created_at": "2025-12-30T13:54:00.820Z"
       }
     ],
     "traces": [
       {
-        "id": 300,
-        "eval_id": 275,
+        "id": 74,
+        "eval_id": 9,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who wrote the Gospel of John and what was his relationship to Jesus?"
               }
             ]
           }
         ],
         "output": {
-          "text": "John the Apostle (the son of Zebedee), one of Jesus' twelve apostles, identified in the Gospel as the disciple whom Jesus loved.",
+          "text": "Short answer\n- Traditional view: The Gospel of John was written by John the Apostle, the son of Zebedee, who was one of Jesus’ Twelve Apostles and one of His close followers. In the gospel itself, the author is identified (or identified by early tradition) with the “disciple whom Jesus loved,” an eyewitness who had a close relationship with Jesus.\n- Modern scholarly view: Most contemporary scholars do not accept the claim that John the Apostle wrote the gospel directly. They often regard the work as the product of a Johannine community or a later writer associated with that circle. In this view, the “disciple whom Jesus loved” may be a literary figure representing that community or may refer to an otherwise unnamed individual within the circle, rather than a known apostle.\n\nWhat the question means by “relationship to Jesus”\n- If the author is John the Apostle (traditional view): he was one of Jesus’ closest disciples, an eyewitness, and part of Jesus’ inner circle.\n- If the author is from the Johannine community (modern view): the author is a member (or leader) of a Christian community influenced by Jesus’ teaching and eyewitness traditions, but not necessarily the Apostle John himself.\n\nKey points and quick references\n- Gospel title and attribution: The text does not name its author. Early church tradition (e.g., Irenaeus, Clement of Alexandria, Eusebius) attributes the Gospel to John the Apostle.\n- Internal clue: The Gospel frequently refers to “the disciple whom Jesus loved” (e.g., John 13:23; 19:26–27; 21:7, 20–24). The author identifies himself in John 21:24 as the one who testifies to these things and wrote them down.\n- Date and place (scholarly consensus varies): Most scholars date the gospel to the late 1st century (roughly 90–110 CE), with suggested places including Ephesus or another location in Asia Minor. If it was written by John the Apostle, this would reflect his later ministry; if by a Johannine community, it reflects that community’s development in that period.\n- Why the difference matters: The question of authorship affects how we understand the gospel’s perspective—whether it is a first-hand eyewitness account or a later theological synthesis drawing on that circle’s memories and teachings.\n\nBottom line\n- Traditional answer: John the Apostle, a direct disciple of Jesus and eyewitness.\n- Scholarly nuance: The Gospel is widely attributed in various ways to a member of the Johannine circle, sometimes linked to John the Apostle in early tradition, but many scholars today view the exact authorship as uncertain. The author is at least closely connected to the apostolic tradition and is often called the “disciple whom Jesus loved,” but whether that figure is the Apostle John or someone else in that community remains debated.",
           "toolCalls": []
         },
-        "start_time": 203.585917,
-        "end_time": 16999.609667,
-        "input_tokens": 138,
-        "output_tokens": 1379,
-        "total_tokens": 1517,
+        "start_time": 308.562583,
+        "end_time": 35204.617542,
+        "input_tokens": 93,
+        "output_tokens": 3088,
+        "total_tokens": 3181,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 60,
+    "id": 2,
     "run_id": 1,
     "name": "Context Understanding [GPT-5 Nano]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -85,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:34:08.180Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

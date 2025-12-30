@@ -1,83 +1,79 @@
 {
   "eval": {
-    "id": 256,
-    "suite_id": 85,
+    "id": 33,
+    "suite_id": 5,
     "col_order": 0,
     "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
     "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
-    "output": "The authorship of the Gospel of John is debated, but tradition identifies John the Apostle, one of Jesus's twelve disciples and the brother of James. He was part of Jesus's inner circle and is described as \"the disciple whom Jesus loved\" in the gospel itself.\n\nModern scholarship often questions whether John the Apostle actually wrote it, suggesting instead an anonymous author from a Johannine community, possibly drawing on eyewitness testimony. The text itself does not name its author.",
-    "duration": 31655,
+    "output": "# Authorship of the Gospel of John\n\n## Traditional Attribution\n\nThe Gospel of John has been traditionally attributed to **John the Apostle**, one of Jesus's twelve disciples and the brother of James. This attribution dates back to early Church fathers like Irenaeus (2nd century) and has been the majority Christian view for nearly 2,000 years.\n\nAccording to this tradition, John was:\n- One of Jesus's closest disciples (part of the \"inner circle\" with Peter and James)\n- Present at key events (the Transfiguration, Last Supper, crucifixion)\n- An eyewitness to Jesus's ministry\n- The \"Beloved Disciple\" mentioned in the Gospel\n\n## Modern Scholarly Perspectives\n\nMost contemporary scholars hold different views:\n\n- **The Gospel was likely written by an unknown author or community** in the late 1st century (80-110 CE), decades after Jesus's death\n- **The author may have used traditions** from John the Apostle or his circle, but direct authorship is considered unlikely\n- **The text shows theological development** and literary sophistication suggesting a later, deliberate composition rather than direct eyewitness account\n- **Internal evidence** (references to \"we\" and \"the disciple whom Jesus loved\") suggests the author may have drawn on source material rather than being an eyewitness\n\n## Consensus\n\nMost scholars agree the Gospel was written for a specific Christian community with theological purposes, written well after the events described, though it may preserve some authentic traditions about Jesus.",
+    "duration": 68004,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.862Z",
+    "created_at": "2025-12-30T13:52:43.736Z",
     "score": 0.425,
     "scores": [
       {
-        "id": 1143,
-        "eval_id": 256,
-        "name": "Theological Accuracy Judge",
+        "id": 99,
+        "eval_id": 33,
+        "name": "Historical Accuracy Judge",
         "score": 0.85,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [
-            "The claim that the author is definitively 'John the Apostle' is traditional and not stated in Scripture; the response appropriately flags this as debated but could emphasize more clearly that this is a traditional attribution rather than a biblical assertion.",
-            "The reference to 'the brother of James' is a traditional identification (John the Apostle as brother of James) rather than something the Gospel explicitly states within its text; this nuance could be clarified to avoid implying the Gospel itself makes that identification.",
-            "The term 'inner circle' is a standard theological interpretation rather than a plainly stated biblically explicit fact; the answer treats it as a widely held view rather than a scriptural claim, which is fine, but should be flagged as interpretive rather than explicit biblical wording."
-          ],
-          "rationale": "The response correctly notes the Gospel of John is not named within the text and acknowledges traditional attribution to John the Apostle alongside modern scholarly doubt about authorship. It accurately cites the Gospel’s own mention of 'the disciple whom Jesus loved' as a textual clue. It captures important nuance by presenting both traditional attribution and scholarly competing theories (anonymous Johannine work or a Johannine community). The main caveat is that some attributions (John as the brother of James, inner-circle language) rest on tradition or interpretive categories rather than explicit biblical statements. Overall, the answer is doctrinally sound, biblically contextual, and nuanced, with minor clarifications needed regarding what the Bible itself states versus what tradition or scholarly theory claims."
+          "errors": [],
+          "rationale": "The response correctly presents the traditional attribution to John the Apostle (one of Jesus’ twelve, traditionally identified as the Beloved Disciple) and explains the modern scholarly consensus that the Gospel was likely written by an unknown author or community in the late 1st century, possibly using traditions associated with John or his circle. It notes the theological purpose and community-oriented nature of the work, which are standard scholarly views. The piece appropriately contrasts traditional views with contemporary scholarship and maintains warranted uncertainty. Minor caveats worth noting but not errors: the Beloved Disciple's precise identity is debated in modern scholarship, and there is nuanced discussion about eyewitness testimony versus community-authored sources; the response adequately signals this without misrepresenting the overall position. The answer directly addresses who wrote the Gospel of John and the author’s relationship to Jesus, and covers essential historical perspectives. "
         },
-        "created_at": "2025-12-30T00:17:53.518Z"
+        "created_at": "2025-12-30T13:53:51.758Z"
       },
       {
-        "id": 1144,
-        "eval_id": 256,
+        "id": 100,
+        "eval_id": 33,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:17:53.518Z"
+        "created_at": "2025-12-30T13:53:51.758Z"
       }
     ],
     "traces": [
       {
-        "id": 436,
-        "eval_id": 256,
+        "id": 50,
+        "eval_id": 33,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who wrote the Gospel of John and what was his relationship to Jesus?"
               }
             ]
           }
         ],
         "output": {
-          "text": "The authorship of the Gospel of John is debated, but tradition identifies John the Apostle, one of Jesus's twelve disciples and the brother of James. He was part of Jesus's inner circle and is described as \"the disciple whom Jesus loved\" in the gospel itself.\n\nModern scholarship often questions whether John the Apostle actually wrote it, suggesting instead an anonymous author from a Johannine community, possibly drawing on eyewitness testimony. The text itself does not name its author.",
+          "text": "# Authorship of the Gospel of John\n\n## Traditional Attribution\n\nThe Gospel of John has been traditionally attributed to **John the Apostle**, one of Jesus's twelve disciples and the brother of James. This attribution dates back to early Church fathers like Irenaeus (2nd century) and has been the majority Christian view for nearly 2,000 years.\n\nAccording to this tradition, John was:\n- One of Jesus's closest disciples (part of the \"inner circle\" with Peter and James)\n- Present at key events (the Transfiguration, Last Supper, crucifixion)\n- An eyewitness to Jesus's ministry\n- The \"Beloved Disciple\" mentioned in the Gospel\n\n## Modern Scholarly Perspectives\n\nMost contemporary scholars hold different views:\n\n- **The Gospel was likely written by an unknown author or community** in the late 1st century (80-110 CE), decades after Jesus's death\n- **The author may have used traditions** from John the Apostle or his circle, but direct authorship is considered unlikely\n- **The text shows theological development** and literary sophistication suggesting a later, deliberate composition rather than direct eyewitness account\n- **Internal evidence** (references to \"we\" and \"the disciple whom Jesus loved\") suggests the author may have drawn on source material rather than being an eyewitness\n\n## Consensus\n\nMost scholars agree the Gospel was written for a specific Christian community with theological purposes, written well after the events described, though it may preserve some authentic traditions about Jesus.",
           "toolCalls": []
         },
-        "start_time": 188.673667,
-        "end_time": 2924.515875,
-        "input_tokens": 155,
-        "output_tokens": 106,
-        "total_tokens": 261,
+        "start_time": 310.500708,
+        "end_time": 5362.93475,
+        "input_tokens": 99,
+        "output_tokens": 338,
+        "total_tokens": 437,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 85,
+    "id": 5,
     "run_id": 1,
     "name": "Context Understanding [Claude Haiku 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -85,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

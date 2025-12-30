@@ -1,79 +1,79 @@
 {
   "eval": {
-    "id": 258,
-    "suite_id": 85,
+    "id": 35,
+    "suite_id": 5,
     "col_order": 2,
     "input": "To whom was the book of Romans written and why?",
     "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
-    "output": "**To:** The church at Rome\n\n**Why:** To present Paul's gospel of salvation through faith in Christ, to explain justification by faith rather than works of the law, to address tensions between Jewish and Gentile believers, and to request their support for his planned mission to Spain.",
-    "duration": 23927,
+    "output": "# The Book of Romans: Recipient and Purpose\n\n## Primary Recipient\n\n**Romans was written to the Christian community in Rome**, the capital of the Roman Empire. Paul addresses \"all in Rome who are loved by God and called to be his holy people\" (Romans 1:7).\n\nThis was an established church that Paul had not founded himself, making it unique among his epistles. The community likely included both Jewish and Gentile believers.\n\n## Why It Was Written\n\nPaul's stated purposes include:\n\n1. **To introduce himself and his gospel** – Since Paul hadn't visited Rome, he wanted to present his theological understanding clearly before meeting them in person.\n\n2. **To explain his missionary approach** – Particularly how his gospel message to the Gentiles aligns with God's plan for Israel and the Jewish people.\n\n3. **To address theological tensions** – The letter works through issues of Jewish law, Gentile inclusion, and how faith in Christ relates to the Torah—likely reflecting actual tensions within the Roman church.\n\n4. **To encourage unity** – Between Jewish and Gentile believers who may have had different backgrounds and practices (evident in chapters 14-15).\n\n5. **To seek support for future ministry** – Paul mentions his planned journey to Spain and requests their prayers and possibly practical support.\n\n## Context\n\nPaul likely wrote Romans around **57-58 CE** from Corinth, while traveling to Jerusalem with a relief collection for the poor church there.",
+    "duration": 52209,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.862Z",
+    "created_at": "2025-12-30T13:52:43.736Z",
     "score": 0.46,
     "scores": [
       {
-        "id": 1093,
-        "eval_id": 258,
-        "name": "Theological Accuracy Judge",
+        "id": 39,
+        "eval_id": 35,
+        "name": "Historical Accuracy Judge",
         "score": 0.92,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
           "errors": [],
-          "rationale": "The LLM correctly identifies the addressees (the church in Rome) and the primary purposes of Romans: presenting the gospel, emphasizing justification by faith, addressing Jew-Gentile tensions, and indicating Paul’s plan to visit Rome and to gain their support for his mission to Spain. These points align with Scripture (Romans 1:16–17; 3:21–28 on justification by faith; Romans 9–11 on Jew/Gentile matters; Romans 15:24, 28–29 about travel plans). The answer is doctrinally orthodox and biblically grounded, and it captures the main aims and some significant nuances (plural aims, not a single monothematic purpose). A fuller treatment might note the broader themes of the righteousness of God and the universal need for the gospel, but the given points are accurate and well-supported by Romans. "
+          "rationale": "The answer accurately identifies the primary recipient as the church in Rome (Romans 1:7), notes that Paul had not yet founded that church, and correctly describes the likely Jewish+Gentile composition. It outlines the principal purposes of Romans (introducing Paul and his gospel, explaining his missionary approach, addressing tensions between Jew/Gentile and the Torah, promoting unity, and soliciting support for his forthcoming ministry, including the plan to go to Spain and the Jerusalem collection). The dating and location (circa 57–58 CE from Corinth, with a relief collection for Jerusalem) align with mainstream scholarship. The response also uses appropriate hedging where evidence is not absolute (e.g., “likely,” “probably”), reflecting scholarly uncertainty. The core information directly answers the question and remains within accepted historical context. No factual errors or significant omissions are present."
         },
-        "created_at": "2025-12-30T00:17:45.791Z"
+        "created_at": "2025-12-30T13:53:35.963Z"
       },
       {
-        "id": 1094,
-        "eval_id": 258,
+        "id": 40,
+        "eval_id": 35,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:17:45.791Z"
+        "created_at": "2025-12-30T13:53:35.963Z"
       }
     ],
     "traces": [
       {
-        "id": 418,
-        "eval_id": 258,
+        "id": 20,
+        "eval_id": 35,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: To whom was the book of Romans written and why?"
               }
             ]
           }
         ],
         "output": {
-          "text": "**To:** The church at Rome\n\n**Why:** To present Paul's gospel of salvation through faith in Christ, to explain justification by faith rather than works of the law, to address tensions between Jewish and Gentile believers, and to request their support for his planned mission to Spain.",
+          "text": "# The Book of Romans: Recipient and Purpose\n\n## Primary Recipient\n\n**Romans was written to the Christian community in Rome**, the capital of the Roman Empire. Paul addresses \"all in Rome who are loved by God and called to be his holy people\" (Romans 1:7).\n\nThis was an established church that Paul had not founded himself, making it unique among his epistles. The community likely included both Jewish and Gentile believers.\n\n## Why It Was Written\n\nPaul's stated purposes include:\n\n1. **To introduce himself and his gospel** – Since Paul hadn't visited Rome, he wanted to present his theological understanding clearly before meeting them in person.\n\n2. **To explain his missionary approach** – Particularly how his gospel message to the Gentiles aligns with God's plan for Israel and the Jewish people.\n\n3. **To address theological tensions** – The letter works through issues of Jewish law, Gentile inclusion, and how faith in Christ relates to the Torah—likely reflecting actual tensions within the Roman church.\n\n4. **To encourage unity** – Between Jewish and Gentile believers who may have had different backgrounds and practices (evident in chapters 14-15).\n\n5. **To seek support for future ministry** – Paul mentions his planned journey to Spain and requests their prayers and possibly practical support.\n\n## Context\n\nPaul likely wrote Romans around **57-58 CE** from Corinth, while traveling to Jerusalem with a relief collection for the poor church there.",
           "toolCalls": []
         },
-        "start_time": 196.428833,
-        "end_time": 1875.758292,
-        "input_tokens": 152,
-        "output_tokens": 62,
-        "total_tokens": 214,
+        "start_time": 310.607375,
+        "end_time": 5509.543333,
+        "input_tokens": 96,
+        "output_tokens": 316,
+        "total_tokens": 412,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 85,
+    "id": 5,
     "run_id": 1,
     "name": "Context Understanding [Claude Haiku 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

@@ -1,79 +1,79 @@
 {
   "eval": {
-    "id": 279,
-    "suite_id": 60,
+    "id": 13,
+    "suite_id": 2,
     "col_order": 4,
     "input": "Who was the primary audience of the Sermon on the Mount?",
     "expected": "Jesus' disciples and the crowds who followed him",
-    "output": "Jesus' disciples (his followers), though the larger crowd was present to hear.",
-    "duration": 31931,
+    "output": "The primary audience of the Sermon on the Mount is Jesus’ disciples (his followers).\n\n- Evidence: Matthew 5:1-2 says, “When Jesus saw the crowds, he went up on the mountain, and after he sat down, his disciples came to him. Then he opened his mouth and taught them…” The term “disciples” (mathētai) is explicit here, indicating the main audience.\n- Context: The crowds are present and listening, and the sermon functions as instruction for the community of Jesus’ followers, with ethical and kingdom-related teaching that also has broad relevance for those who would join or be shaped by that community.\n- Parallel in Luke: Luke’s version (Sermon on the Plain) explicitly mentions “disciples and a great crowd,” which underscores that, in Luke, a broader audience is included; in Matthew, the explicit wording foregrounds the disciples, though the larger crowd is still in view.\n\nScholarly note: The traditional view is that Matthew presents a teaching directed primarily to the disciples, forming and instructing the early Christian community. Some scholars also emphasize that the sermon was intended for a broader audience in the sense of guiding the moral life of the community and its relationship to Israel and the world.",
+    "duration": 52582,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:34:08.180Z",
-    "score": 0.475,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.425,
     "scores": [
       {
-        "id": 777,
-        "eval_id": 279,
-        "name": "Theological Accuracy Judge",
-        "score": 0.95,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 43,
+        "eval_id": 13,
+        "name": "Historical Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
           "errors": [],
-          "rationale": "The response correctly reflects biblical teaching: the Sermon on the Mount (Matthew 5–7) is delivered in a setting where Jesus is addressing his disciples, while the crowds are present to hear. This dual audience is well-documented in Scripture (e.g., 5:1–2 notes the crowds and the disciples; the sermon content is directed to the disciples but publicly delivered). The statement aligns with historic Christian orthodoxy and is grounded in Scripture. A fuller nuance could mention that the teaching functions as normative instruction for all who follow Jesus, not just the original listeners, but the core claim about the audience is accurate."
+          "rationale": "The answer correctly identifies the explicit audience in Matthew (the disciples) and notes the presence of the crowds in the narrative. It cites Matthew 5:1-2 as evidence and acknowledges Luke’s parallel (Sermon on the Plain) as illustrating a broader audience. The response also conveys scholarly nuance by mentioning the traditional view that Matthew targets the disciples primarily, while some scholars stress a broader (disciples plus crowds) readership and moral instruction for the community. This aligns with standard historical/contextual understandings and directly addresses the question, though the phrasing could be interpreted as prioritizing the disciples over the crowds (which is a common but not exclusive interpretation)."
         },
-        "created_at": "2025-12-30T00:34:40.130Z"
+        "created_at": "2025-12-30T13:53:36.337Z"
       },
       {
-        "id": 778,
-        "eval_id": 279,
+        "id": 44,
+        "eval_id": 13,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:34:40.130Z"
+        "created_at": "2025-12-30T13:53:36.337Z"
       }
     ],
     "traces": [
       {
-        "id": 294,
-        "eval_id": 279,
+        "id": 22,
+        "eval_id": 13,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who was the primary audience of the Sermon on the Mount?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Jesus' disciples (his followers), though the larger crowd was present to hear.",
+          "text": "The primary audience of the Sermon on the Mount is Jesus’ disciples (his followers).\n\n- Evidence: Matthew 5:1-2 says, “When Jesus saw the crowds, he went up on the mountain, and after he sat down, his disciples came to him. Then he opened his mouth and taught them…” The term “disciples” (mathētai) is explicit here, indicating the main audience.\n- Context: The crowds are present and listening, and the sermon functions as instruction for the community of Jesus’ followers, with ethical and kingdom-related teaching that also has broad relevance for those who would join or be shaped by that community.\n- Parallel in Luke: Luke’s version (Sermon on the Plain) explicitly mentions “disciples and a great crowd,” which underscores that, in Luke, a broader audience is included; in Matthew, the explicit wording foregrounds the disciples, though the larger crowd is still in view.\n\nScholarly note: The traditional view is that Matthew presents a teaching directed primarily to the disciples, forming and instructing the early Christian community. Some scholars also emphasize that the sermon was intended for a broader audience in the sense of guiding the moral life of the community and its relationship to Israel and the world.",
           "toolCalls": []
         },
-        "start_time": 204.179667,
-        "end_time": 12329.381333,
-        "input_tokens": 137,
-        "output_tokens": 598,
-        "total_tokens": 735,
+        "start_time": 309.167958,
+        "end_time": 31151.850625,
+        "input_tokens": 92,
+        "output_tokens": 2051,
+        "total_tokens": 2143,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 60,
+    "id": 2,
     "run_id": 1,
     "name": "Context Understanding [GPT-5 Nano]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:34:08.180Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

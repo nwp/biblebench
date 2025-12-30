@@ -1,79 +1,79 @@
 {
   "eval": {
-    "id": 277,
-    "suite_id": 60,
+    "id": 11,
+    "suite_id": 2,
     "col_order": 2,
     "input": "To whom was the book of Romans written and why?",
     "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
-    "output": "To the church in Rome—the believers there, both Jewish and Gentile Christians. Its purpose is to present the gospel of God’s righteousness by faith, explain God’s plan for Jews and Gentiles, exhort them to live by faith, and prepare for Paul’s planned visit to Rome and his mission to Spain (seeking their support).",
-    "duration": 45540,
+    "output": "- To whom: The book of Romans is written by the Apostle Paul to the Christian community in Rome—“to all in Rome who are loved by God and called to be saints” (Romans 1:7). The audience is best understood as the mixed Roman church (Jewish and Gentile believers together), not a single local “church” in isolation.\n\n- Why (the purpose): Paul has several aims, tied to both doctrine and practical outcomes:\n  - To announce and explain the gospel clearly as the power of God for salvation to everyone who believes (Romans 1:16–17).\n  - To address tensions between Jewish and Gentile believers, showing that both groups are included in God’s righteousness and promises, not kept apart by the Mosaic law (Romans 9–11; the broader argument in 1–4 and 5–8).\n  - To lay out a systematic theological framework—especially justification by faith, righteousness from God, and life in the Spirit—as a foundation for Christian living and for the church’s unity (Romans 1–8).\n  - To prepare for his planned visit to Rome and to enlist successful cooperation for his broader mission to Spain, including a request for financial support for the Jerusalem church (Romans 15:23–29, 30–33), and to seek their prayers as he travels (Romans 15:32–33).\n\n- Traditional/major view on authorship and setting: The letter is widely understood as written by Paul (often dated around AD 57–58, from Corinth, during his third missionary journey). The opening address shows the intended Roman audience as a broad community of believers in Rome (Romans 1:7), and the closing prophecies and plans (Romans 15:23–33) support the idea that it was written to prepare for his later visit and future mission.\n\n- Note on scholarly debate: The traditional view is Pauline authorship and a Roman audience. A few scholars occasionally propose alternative theories (e.g., rhetorical or later-echo additions, or a Pauline circle) but these are not mainstream. The predominant consensus remains that Romans was authored by Paul for the Roman Christian community.",
+    "duration": 77399,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:34:08.180Z",
+    "created_at": "2025-12-30T13:52:43.736Z",
     "score": 0.46,
     "scores": [
       {
-        "id": 787,
-        "eval_id": 277,
-        "name": "Theological Accuracy Judge",
+        "id": 149,
+        "eval_id": 11,
+        "name": "Historical Accuracy Judge",
         "score": 0.92,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
           "errors": [],
-          "rationale": "The answer accurately identifies the addressees as the church in Rome, consisting of both Jewish and Gentile believers. It correctly states the gospel focus as God’s righteousness revealed by faith and notes the broader program of God’s plan for Jews and Gentiles, which Romans develops (including the unity of Jew and Gentile and salvation by faith). It also correctly notes that Romans exhorts living by faith and that Paul intended to visit Rome and seek support for his mission to Spain, which is explicitly stated in Romans 15:24 and 28–29. This aligns with biblical teaching and traditional orthodoxy regarding Romans’ purpose and audience. Nuance-wise, it captures the main aims (doctrine, exhortation, and facilitating Paul’s future plans) and acknowledges the Jew-Gentile dimension; a fuller nuance would emphasize the theme of justification by faith across both groups and the resulting unity of the church, but the core distinctions are present."
+          "rationale": "The LLM response accurately identifies the primary addressees as the Christian community in Rome (likely a mixed Jewish and Gentile audience, rather than a single local church). It correctly outlines the main purposes of Romans: gospel proclamation and explanation, articulation of justification by faith, and the inclusion of Jews and Gentiles in God’s righteousness; it notes the Paul’s theological program (1–8) and the practical aim of unity (9–11). It also correctly connects Romans 15:23–33 with Paul’s stated plan to visit Rome and to promote his broader mission to Spain, including a collection for Jerusalem. On authorship, the traditional Pauline view and dating to around AD 57–58 from Corinth are accurately summarized, and the note on minority alternative theories is appropriately cautious. Overall, it directly answers the question with appropriate scholarly nuance and citations to key passages, with no significant factual inaccuracies or omissions."
         },
-        "created_at": "2025-12-30T00:34:53.738Z"
+        "created_at": "2025-12-30T13:54:01.153Z"
       },
       {
-        "id": 788,
-        "eval_id": 277,
+        "id": 150,
+        "eval_id": 11,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:34:53.738Z"
+        "created_at": "2025-12-30T13:54:01.153Z"
       }
     ],
     "traces": [
       {
-        "id": 298,
-        "eval_id": 277,
+        "id": 75,
+        "eval_id": 11,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: To whom was the book of Romans written and why?"
               }
             ]
           }
         ],
         "output": {
-          "text": "To the church in Rome—the believers there, both Jewish and Gentile Christians. Its purpose is to present the gospel of God’s righteousness by faith, explain God’s plan for Jews and Gentiles, exhort them to live by faith, and prepare for Paul’s planned visit to Rome and his mission to Spain (seeking their support).",
+          "text": "- To whom: The book of Romans is written by the Apostle Paul to the Christian community in Rome—“to all in Rome who are loved by God and called to be saints” (Romans 1:7). The audience is best understood as the mixed Roman church (Jewish and Gentile believers together), not a single local “church” in isolation.\n\n- Why (the purpose): Paul has several aims, tied to both doctrine and practical outcomes:\n  - To announce and explain the gospel clearly as the power of God for salvation to everyone who believes (Romans 1:16–17).\n  - To address tensions between Jewish and Gentile believers, showing that both groups are included in God’s righteousness and promises, not kept apart by the Mosaic law (Romans 9–11; the broader argument in 1–4 and 5–8).\n  - To lay out a systematic theological framework—especially justification by faith, righteousness from God, and life in the Spirit—as a foundation for Christian living and for the church’s unity (Romans 1–8).\n  - To prepare for his planned visit to Rome and to enlist successful cooperation for his broader mission to Spain, including a request for financial support for the Jerusalem church (Romans 15:23–29, 30–33), and to seek their prayers as he travels (Romans 15:32–33).\n\n- Traditional/major view on authorship and setting: The letter is widely understood as written by Paul (often dated around AD 57–58, from Corinth, during his third missionary journey). The opening address shows the intended Roman audience as a broad community of believers in Rome (Romans 1:7), and the closing prophecies and plans (Romans 15:23–33) support the idea that it was written to prepare for his later visit and future mission.\n\n- Note on scholarly debate: The traditional view is Pauline authorship and a Roman audience. A few scholars occasionally propose alternative theories (e.g., rhetorical or later-echo additions, or a Pauline circle) but these are not mainstream. The predominant consensus remains that Romans was authored by Paul for the Roman Christian community.",
           "toolCalls": []
         },
-        "start_time": 203.988792,
-        "end_time": 17511.863417,
-        "input_tokens": 135,
-        "output_tokens": 1097,
-        "total_tokens": 1232,
+        "start_time": 308.971625,
+        "end_time": 40404.012875,
+        "input_tokens": 90,
+        "output_tokens": 3133,
+        "total_tokens": 3223,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 60,
+    "id": 2,
     "run_id": 1,
     "name": "Context Understanding [GPT-5 Nano]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:34:08.180Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

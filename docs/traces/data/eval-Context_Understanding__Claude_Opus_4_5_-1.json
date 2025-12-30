@@ -1,79 +1,79 @@
 {
   "eval": {
-    "id": 273,
-    "suite_id": 87,
+    "id": 50,
+    "suite_id": 7,
     "col_order": 1,
     "input": "What was Paul's background before his conversion?",
     "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
-    "output": "Paul was a Pharisee from Tarsus, a Roman citizen by birth, and trained under the renowned rabbi Gamaliel in Jerusalem. He was a zealous persecutor of the early Christian church, present at Stephen's stoning and actively arresting believers before his Damascus road encounter with Christ.",
-    "duration": 27548,
+    "output": "# Paul's Background Before His Conversion\n\n## Jewish Identity and Heritage\n- **Birth name**: Saul (Hebrew), also held the Roman name Paul\n- **Tribe**: Benjamin (Philippians 3:5)\n- **Born in Tarsus**, a significant city in Cilicia (modern-day Turkey), making him a **Roman citizen by birth** — a privileged status (Acts 22:3, 28)\n- Described himself as \"a Hebrew of Hebrews\" (Philippians 3:5), indicating deep cultural and linguistic ties to Jewish tradition\n\n## Education and Training\n- Studied in Jerusalem **\"at the feet of Gamaliel\"** (Acts 22:3), one of the most respected Pharisaic teachers of the era\n- Trained in the strict interpretation of the Torah according to Pharisaic tradition\n- Described himself as advancing in Judaism beyond many contemporaries, being \"extremely zealous for the traditions of my fathers\" (Galatians 1:14)\n\n## Religious Standing\n- A **Pharisee** — the sect known for rigorous observance of the Law (Philippians 3:5; Acts 23:6)\n- Considered himself \"faultless\" regarding legalistic righteousness (Philippians 3:6)\n\n## Occupation\n- A **tentmaker** by trade (Acts 18:3), consistent with rabbinic practice of learning a manual skill\n\n## Persecution of Christians\n- Actively persecuted the early church \"violently\" (Galatians 1:13)\n- Present at Stephen's martyrdom (Acts 7:58–8:1)\n- Sought authority to arrest Christians in Damascus (Acts 9:1–2)",
+    "duration": 42964,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.863Z",
-    "score": 0.475,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.465,
     "scores": [
       {
-        "id": 1119,
-        "eval_id": 273,
-        "name": "Theological Accuracy Judge",
-        "score": 0.95,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 13,
+        "eval_id": 50,
+        "name": "Historical Accuracy Judge",
+        "score": 0.93,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
           "errors": [],
-          "rationale": "The response faithfully summarizes Paul's pre-conversion background: he was a Pharisee from Tarsus, a Roman citizen by birth, and educated under Gamaliel in Jerusalem. It correctly states his zealous persecution of the church, including involvement around Stephen’s martyrdom, and his conversion on the road to Damascus. All points have solid biblical support (Acts 21–22 for citizenship and Gamaliel, Acts 7–8 for persecution, Acts 9 for conversion; see also Galatians 1:14 and Philippians 3:5–6). The treatment is doctrinally orthodox and appropriately nuanced for the question. "
+          "rationale": "The LLM's answer accurately reflects Paul's pre-conversion background as presented in the New Testament: he was Saul of Tarsus, a Hebrew of Hebrews, from the tribe of Benjamin, born in Tarsus (Cilicia) and a Roman citizen by birth; he studied under Gamaliel in Jerusalem; he was a Pharisee, zealous for the traditions of the fathers, and blameless under the law; he earned a living as a tentmaker; he persecuted the church (present at Stephen's martyrdom) and sought authority to arrest Christians in Damascus. These points align with Acts (22:3; 28; 7–9; 18:3) and Galatians (1:14) and Philippians (3:5, 3:6). The answer provides appropriate nuance by citing sources and acknowledging Paul's own self-description. A minor caveat is that some scholarly discussions discuss whether Paul's Roman citizenship was inherited or acquired; the text itself presents his claim of birthright citizenship (Acts 22:28), which is the basis for the statement. Overall, it directly answers the question with a comprehensive, well-sourced background."
         },
-        "created_at": "2025-12-30T00:17:49.432Z"
+        "created_at": "2025-12-30T13:53:26.718Z"
       },
       {
-        "id": 1120,
-        "eval_id": 273,
+        "id": 14,
+        "eval_id": 50,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:17:49.433Z"
+        "created_at": "2025-12-30T13:53:26.718Z"
       }
     ],
     "traces": [
       {
-        "id": 428,
-        "eval_id": 273,
+        "id": 7,
+        "eval_id": 50,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: What was Paul's background before his conversion?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Paul was a Pharisee from Tarsus, a Roman citizen by birth, and trained under the renowned rabbi Gamaliel in Jerusalem. He was a zealous persecutor of the early Christian church, present at Stephen's stoning and actively arresting believers before his Damascus road encounter with Christ.",
+          "text": "# Paul's Background Before His Conversion\n\n## Jewish Identity and Heritage\n- **Birth name**: Saul (Hebrew), also held the Roman name Paul\n- **Tribe**: Benjamin (Philippians 3:5)\n- **Born in Tarsus**, a significant city in Cilicia (modern-day Turkey), making him a **Roman citizen by birth** — a privileged status (Acts 22:3, 28)\n- Described himself as \"a Hebrew of Hebrews\" (Philippians 3:5), indicating deep cultural and linguistic ties to Jewish tradition\n\n## Education and Training\n- Studied in Jerusalem **\"at the feet of Gamaliel\"** (Acts 22:3), one of the most respected Pharisaic teachers of the era\n- Trained in the strict interpretation of the Torah according to Pharisaic tradition\n- Described himself as advancing in Judaism beyond many contemporaries, being \"extremely zealous for the traditions of my fathers\" (Galatians 1:14)\n\n## Religious Standing\n- A **Pharisee** — the sect known for rigorous observance of the Law (Philippians 3:5; Acts 23:6)\n- Considered himself \"faultless\" regarding legalistic righteousness (Philippians 3:6)\n\n## Occupation\n- A **tentmaker** by trade (Acts 18:3), consistent with rabbinic practice of learning a manual skill\n\n## Persecution of Christians\n- Actively persecuted the early church \"violently\" (Galatians 1:13)\n- Present at Stephen's martyrdom (Acts 7:58–8:1)\n- Sought authority to arrest Christians in Damascus (Acts 9:1–2)",
           "toolCalls": []
         },
-        "start_time": 200.298875,
-        "end_time": 3465.124375,
-        "input_tokens": 150,
-        "output_tokens": 68,
-        "total_tokens": 218,
+        "start_time": 311.403167,
+        "end_time": 9502.754833,
+        "input_tokens": 94,
+        "output_tokens": 391,
+        "total_tokens": 485,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 87,
+    "id": 7,
     "run_id": 1,
     "name": "Context Understanding [Claude Opus 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

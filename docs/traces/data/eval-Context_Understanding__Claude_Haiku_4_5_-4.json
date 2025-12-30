@@ -1,79 +1,82 @@
 {
   "eval": {
-    "id": 260,
-    "suite_id": 85,
+    "id": 37,
+    "suite_id": 5,
     "col_order": 4,
     "input": "Who was the primary audience of the Sermon on the Mount?",
     "expected": "Jesus' disciples and the crowds who followed him",
-    "output": "Jesus's disciples and the crowds who followed him in Galilee.",
-    "duration": 21549,
+    "output": "# Primary Audience of the Sermon on the Mount\n\n## The Direct Audience\n\nAccording to Matthew's account (Matthew 5:1-2), the **immediate audience consisted of Jesus's disciples**, with a larger crowd of people also present:\n\n> \"Now when Jesus saw the crowds, he went up on a mountainside and sat down. His disciples came to him, and he began to teach them...\" (Matthew 5:1-2, NIV)\n\nThe text explicitly states that Jesus addressed his teaching to the disciples, though crowds were listening.\n\n## The Intended Audience\n\n**Scholars generally agree the primary intended audience was Jesus's followers/disciples** rather than the crowds, based on several textual clues:\n\n- The content addresses believers directly (\"Blessed are you...\")\n- It contains specific ethical instruction for community members\n- The tone assumes a commitment to follow Jesus's way\n\n## Important Context\n\n**Luke's parallel account** (Luke 6:17-49) differs significantly—it presents similar material as addressed directly to a mixed crowd of disciples and multitudes, suggesting these accounts may reflect different teaching occasions or Matthew's particular framing.\n\n**For Matthew's Gospel specifically**, the sermon functions as Jesus's foundational ethical teaching for his covenant community—setting out the character and conduct expected of Kingdom members.\n\n## Scholarly Note\n\nWhile there's broad consensus on the disciples as the primary audience, some scholars debate whether Matthew reshaped an original teaching to emphasize discipleship formation, but the textual evidence clearly points to the disciples as the intended recipients.",
+    "duration": 60634,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.862Z",
-    "score": 0.425,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.435,
     "scores": [
       {
-        "id": 1057,
-        "eval_id": 260,
-        "name": "Theological Accuracy Judge",
-        "score": 0.85,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 71,
+        "eval_id": 37,
+        "name": "Historical Accuracy Judge",
+        "score": 0.87,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [],
-          "rationale": "The response correctly identifies the audience as Jesus’ disciples and the crowd who followed him. The Beatitudes Sermon is indeed set in Galilee, and the Gospel accounts describe Jesus teaching the disciples after the crowds are present, so the addition 'in Galilee' is geographically accurate and does not alter the core point. This aligns with common exegesis that while the primary recipients were the disciples, the broader crowd also heard the teaching. The statement is biblically grounded and theologically orthodox. A minor nuance is the ongoing scholarly discussion about the distinction between the 'primary audience' (the disciples) and the broader audience (the crowds); however, the LLM’s wording remains faithful to scripture and standard Christian interpretation."
+          "errors": [
+            "The statement that the Sermon on the Mount directly 'addresses' the crowds is nuanced; the passage in Matthew 5:1-2 presents the disciples as the immediate addressees with crowds listening, so describing the crowds as the primary audience would be inaccurate. The answer could have more clearly separated 'immediate audience' (the disciples) from 'audience present' (the crowd).",
+            "The Luke 6:17-49 comparison is broadly accurate but the description that Luke's version 'differs significantly' in audience emphasis could be read as overstating the divergence; Luke presents a similar teaching to a large crowd with the disciples present, rather than a wholly separate teaching occasion."
+          ],
+          "rationale": "The LLM correctly identifies the Sermon on the Mount as directed primarily to Jesus' disciples, with crowds present, and notes Luke's parallel in a mixed-audience setting. It also accurately frames Matthew's use of the sermon as foundational for the community and acknowledges scholarly debate about redaction/reshaping. The main potential misstep is a slightly rigid claim about the 'primary audience' vs the audience present, and a minor nuance about Luke's differences; these are subtle interpretive shifts rather than factual errors. Overall, the answer is factually solid, complete for the question, and appropriately nuanced."
         },
-        "created_at": "2025-12-30T00:17:43.412Z"
+        "created_at": "2025-12-30T13:53:44.388Z"
       },
       {
-        "id": 1058,
-        "eval_id": 260,
+        "id": 72,
+        "eval_id": 37,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:17:43.412Z"
+        "created_at": "2025-12-30T13:53:44.388Z"
       }
     ],
     "traces": [
       {
-        "id": 407,
-        "eval_id": 260,
+        "id": 36,
+        "eval_id": 37,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who was the primary audience of the Sermon on the Mount?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Jesus's disciples and the crowds who followed him in Galilee.",
+          "text": "# Primary Audience of the Sermon on the Mount\n\n## The Direct Audience\n\nAccording to Matthew's account (Matthew 5:1-2), the **immediate audience consisted of Jesus's disciples**, with a larger crowd of people also present:\n\n> \"Now when Jesus saw the crowds, he went up on a mountainside and sat down. His disciples came to him, and he began to teach them...\" (Matthew 5:1-2, NIV)\n\nThe text explicitly states that Jesus addressed his teaching to the disciples, though crowds were listening.\n\n## The Intended Audience\n\n**Scholars generally agree the primary intended audience was Jesus's followers/disciples** rather than the crowds, based on several textual clues:\n\n- The content addresses believers directly (\"Blessed are you...\")\n- It contains specific ethical instruction for community members\n- The tone assumes a commitment to follow Jesus's way\n\n## Important Context\n\n**Luke's parallel account** (Luke 6:17-49) differs significantly—it presents similar material as addressed directly to a mixed crowd of disciples and multitudes, suggesting these accounts may reflect different teaching occasions or Matthew's particular framing.\n\n**For Matthew's Gospel specifically**, the sermon functions as Jesus's foundational ethical teaching for his covenant community—setting out the character and conduct expected of Kingdom members.\n\n## Scholarly Note\n\nWhile there's broad consensus on the disciples as the primary audience, some scholars debate whether Matthew reshaped an original teaching to emphasize discipleship formation, but the textual evidence clearly points to the disciples as the intended recipients.",
           "toolCalls": []
         },
-        "start_time": 196.813542,
-        "end_time": 1463.841875,
-        "input_tokens": 154,
-        "output_tokens": 17,
-        "total_tokens": 171,
+        "start_time": 310.715583,
+        "end_time": 5536.469875,
+        "input_tokens": 98,
+        "output_tokens": 332,
+        "total_tokens": 430,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 85,
+    "id": 5,
     "run_id": 1,
     "name": "Context Understanding [Claude Haiku 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +84,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

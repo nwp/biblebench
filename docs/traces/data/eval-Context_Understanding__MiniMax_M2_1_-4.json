@@ -1,82 +1,79 @@
 {
   "eval": {
-    "id": 138,
-    "suite_id": 30,
+    "id": 125,
+    "suite_id": 16,
     "col_order": 4,
     "input": "Who was the primary audience of the Sermon on the Mount?",
     "expected": "Jesus' disciples and the crowds who followed him",
-    "output": "Jesus' disciples. According to Matthew 5:1-2, \"his disciples came to him, and he opened his mouth and taught them.\"Jesus' disciples. According to Matthew 5:1-2, \"his disciples came to him, and he opened his mouth and taught them.\"",
-    "duration": 33730,
+    "output": "# The Primary Audience of the Sermon on the Mount\n\n## The Immediate Setting\n\nAccording to the Gospel accounts, Jesus went to a mountain to teach, and both his disciples and large crowds gathered to hear him. Matthew 5:1 specifically states: \"Now when Jesus saw the crowds, he went up on a mountain and sat down. His disciples came to him, and he began to teach them.\"\n\n## The Primary Audience: Jesus' Disciples\n\nThe primary audience of the Sermon on the Mount was Jesus' disciples. The text indicates that Jesus specifically addressed his followers, teaching them the principles of the Kingdom of Heaven. The Sermon contains what would become the core teachings of Christian ethics and discipleship: the Beatitudes, the Lord's Prayer (in Matthew's version), instructions on loving enemies, and the call to pursue righteousness exceeding that of the scribes and Pharisees.\n\n## The Presence of the Crowds\n\nHowever, Luke's account (Luke 6:17-19) reveals that a great multitude from Judea, Jerusalem, and surrounding regions had gathered to hear Jesus and be healed. This suggests that while Jesus' disciples were the primary audience, the crowds also listened and witnessed his teaching. Some scholars suggest the teachings had a dual application—both for intimate disciple formation and for public proclamation of the kingdom's values.\n\n## Scholarly Perspective\n\nThe traditional and majority view holds that Jesus was primarily training his disciples for their future ministry, with the crowds as witnesses. This interpretation aligns with Jesus' pattern throughout the Gospels of giving deeper instruction to his followers while teaching the public through parables and simpler messages.",
+    "duration": 51044,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T01:04:39.218Z",
-    "score": 0.375,
+    "created_at": "2025-12-30T13:52:43.737Z",
+    "score": 0.46,
     "scores": [
       {
-        "id": 363,
-        "eval_id": 138,
-        "name": "Theological Accuracy Judge",
-        "score": 0.75,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 35,
+        "eval_id": 125,
+        "name": "Historical Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
-          "nuance_captured": false,
-          "errors": [
-            "Misses the broader nuance that the Sermon on the Mount is delivered to disciples but held in the presence of the gathered crowds; the crowds are explicitly present in Matthew 5:1-2 and in the narrative later (e.g., Matt 7:28), so the audience cannot be limited to the disciples alone.",
-            "Redundant quotation/duplication of Matthew 5:1-2; not necessary and could signal a lack of conciseness."
-          ],
-          "rationale": "The LLM accurately cites Matthew 5:1-2 to support that the disciples approached Jesus and He began teaching them; this aligns with the text which identifies the disciples as the immediate recipients. However, the Sermon on the Mount is commonly understood to be delivered in the context of both disciples and the listening crowds. The Gospel narrative shows Jesus addressing his disciples but teaching in a setting where the crowds are present and listening (and the crowds react later in the account). Therefore, stating that the primary audience is 'Jesus' disciples' without acknowledging the crowds' presence is a partial accounting. The response is doctrinally sound and biblically grounded in the specific verse, but it fails to capture a significant exegetical nuance. Thus a mostly accurate but incomplete answer."
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The answer accurately reflects the scholarly consensus and the biblical text. It correctly notes Matthew 5:1 presents Jesus addressing his disciples, with the crowds also present, and cites Luke 6:17-19 to show the broader crowd/healing context. It acknowledges the traditional/majority view that the Sermon primarily trained Jesus’ disciples, while also recognizing that the crowds could hear and witness, suggesting a dual audience or dual application. It also references the broader pattern in the Gospels (deeper instruction for disciples vs. public teaching through parables) to provide nuance. A minor omission is the explicit distinction that Luke’s account is typically labeled the Sermon on the Plain rather than on a mountain, but this does not detract from answering the primary audience question. Overall, the response is accurate, reasonably complete, and appropriately nuanced.}"
         },
-        "created_at": "2025-12-30T01:05:12.967Z"
+        "created_at": "2025-12-30T13:53:34.799Z"
       },
       {
-        "id": 364,
-        "eval_id": 138,
+        "id": 36,
+        "eval_id": 125,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T01:05:12.967Z"
+        "created_at": "2025-12-30T13:53:34.799Z"
       }
     ],
     "traces": [
       {
-        "id": 139,
-        "eval_id": 138,
+        "id": 18,
+        "eval_id": 125,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who was the primary audience of the Sermon on the Mount?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Jesus' disciples. According to Matthew 5:1-2, \"his disciples came to him, and he opened his mouth and taught them.\"Jesus' disciples. According to Matthew 5:1-2, \"his disciples came to him, and he opened his mouth and taught them.\"",
+          "text": "# The Primary Audience of the Sermon on the Mount\n\n## The Immediate Setting\n\nAccording to the Gospel accounts, Jesus went to a mountain to teach, and both his disciples and large crowds gathered to hear him. Matthew 5:1 specifically states: \"Now when Jesus saw the crowds, he went up on a mountain and sat down. His disciples came to him, and he began to teach them.\"\n\n## The Primary Audience: Jesus' Disciples\n\nThe primary audience of the Sermon on the Mount was Jesus' disciples. The text indicates that Jesus specifically addressed his followers, teaching them the principles of the Kingdom of Heaven. The Sermon contains what would become the core teachings of Christian ethics and discipleship: the Beatitudes, the Lord's Prayer (in Matthew's version), instructions on loving enemies, and the call to pursue righteousness exceeding that of the scribes and Pharisees.\n\n## The Presence of the Crowds\n\nHowever, Luke's account (Luke 6:17-19) reveals that a great multitude from Judea, Jerusalem, and surrounding regions had gathered to hear Jesus and be healed. This suggests that while Jesus' disciples were the primary audience, the crowds also listened and witnessed his teaching. Some scholars suggest the teachings had a dual application—both for intimate disciple formation and for public proclamation of the kingdom's values.\n\n## Scholarly Perspective\n\nThe traditional and majority view holds that Jesus was primarily training his disciples for their future ministry, with the crowds as witnesses. This interpretation aligns with Jesus' pattern throughout the Gospels of giving deeper instruction to his followers while teaching the public through parables and simpler messages.",
           "toolCalls": []
         },
-        "start_time": 158.417208,
-        "end_time": 5602.048542,
-        "input_tokens": 166,
-        "output_tokens": 193,
-        "total_tokens": 359,
+        "start_time": 315.200833,
+        "end_time": 13226.711208,
+        "input_tokens": 123,
+        "output_tokens": 712,
+        "total_tokens": 835,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 30,
+    "id": 16,
     "run_id": 1,
     "name": "Context Understanding [MiniMax M2.1]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -84,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T01:04:39.218Z"
+    "created_at": "2025-12-30T13:52:43.737Z"
   }
 }

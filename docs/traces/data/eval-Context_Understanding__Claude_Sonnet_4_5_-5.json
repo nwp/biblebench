@@ -1,79 +1,81 @@
 {
   "eval": {
-    "id": 269,
-    "suite_id": 86,
+    "id": 46,
+    "suite_id": 6,
     "col_order": 5,
     "input": "What was the purpose of the book of Revelation?",
     "expected": "To encourage persecuted Christians with visions of God's ultimate victory and the return of Christ",
-    "output": "To encourage persecuted Christians with visions of God's ultimate victory over evil, Christ's return, and the establishment of a new heaven and new earth.",
-    "duration": 23501,
+    "output": "# Purpose of the Book of Revelation\n\n## Primary Purposes\n\nThe Book of Revelation served several interconnected purposes for its original audience and the broader church:\n\n### 1. **Comfort and Encouragement During Persecution**\nWritten to seven churches in Asia Minor (modern-day Turkey) during a time of Roman persecution, Revelation aimed to strengthen Christians facing suffering, imprisonment, and martyrdom. It assured believers that God remained sovereign despite their circumstances.\n\n### 2. **Call to Faithful Endurance**\nThe book repeatedly urges Christians to remain faithful, resist compromise with pagan Roman culture, and persevere through trials. The recurring phrase \"he who overcomes\" emphasizes active faithfulness over passive survival.\n\n### 3. **Theological Assurance of God's Ultimate Victory**\nRevelation provides a cosmic perspective showing that despite present evil and suffering, God will ultimately triumph over Satan, evil powers, and death itself. Christ is portrayed as the victorious Lamb who has already won the decisive battle.\n\n### 4. **Warning and Correction**\nThe letters to the seven churches (chapters 2-3) address specific spiritual problems including false teaching, complacency, and moral compromise, calling churches to repentance.\n\n### 5. **Worship and Doxology**\nThe book draws readers into heavenly worship, reorienting their perspective from earthly troubles to God's throne room, emphasizing that worship is the proper response to God's character and actions.\n\n## Context\n\nMost scholars date Revelation to approximately 95-96 AD during Emperor Domitian's reign, though some argue for an earlier date around 68-70 AD during Nero's persecution.",
+    "duration": 50575,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.862Z",
+    "created_at": "2025-12-30T13:52:43.736Z",
     "score": 0.46,
     "scores": [
       {
-        "id": 1091,
-        "eval_id": 269,
-        "name": "Theological Accuracy Judge",
+        "id": 33,
+        "eval_id": 46,
+        "name": "Historical Accuracy Judge",
         "score": 0.92,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [],
-          "rationale": "The LLM’s response accurately reflects the core purpose of Revelation: to comfort and exhort persecuted believers through apocalyptic visions that affirm God’s ultimate victory over evil, the returning Christ, and the culmination of creation in a new heaven and a new earth. These elements align with biblical teaching (e.g., Rev 19–22, 21:1) and with historic Christian orthodoxy regarding final judgment and the eschaton. The inclusion of “new heaven and new earth” expands appropriately into the biblical end-state of creation, which is scripturally grounded (also echoed in 2 Pet 3:13). The answer remains faithful to the book’s aim of encouraging perseverance and faith in light of cosmic victory. Nuance is preserved by mentioning visions and the persecuted audience; it does not overstate or misinterpret the book’s purpose. A minor enhancement could acknowledge multiple interpretive approaches to Revelation, but the core accuracy is solid."
+          "errors": [
+            "Omission: Explicitly stating the return of Christ (parousia) as a purpose would align with common scholarly summaries; the response emphasizes 'ultimate victory' but does not explicitly mention Christ's return."
+          ],
+          "rationale": "The answer accurately identifies the main original-audience purposes of Revelation (comfort during persecution, call to endurance, assurance of God's ultimate victory, the specific warnings to the seven churches, and emphasis on worship). It also correctly notes the typical dating around 95–96 CE under Domitian, while acknowledging earlier-date proposals. The only notable gap is an explicit mention of the return of Christ, which is a standard aspect of Revelation’s eschatology, though its themes of victory and the Lamb imply this. Overall, the response is factually accurate, comprehensive, and appropriately nuanced."
         },
-        "created_at": "2025-12-30T00:17:45.365Z"
+        "created_at": "2025-12-30T13:53:34.329Z"
       },
       {
-        "id": 1092,
-        "eval_id": 269,
+        "id": 34,
+        "eval_id": 46,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:17:45.365Z"
+        "created_at": "2025-12-30T13:53:34.329Z"
       }
     ],
     "traces": [
       {
-        "id": 417,
-        "eval_id": 269,
+        "id": 17,
+        "eval_id": 46,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the purpose of the book of Revelation?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: What was the purpose of the book of Revelation?"
               }
             ]
           }
         ],
         "output": {
-          "text": "To encourage persecuted Christians with visions of God's ultimate victory over evil, Christ's return, and the establishment of a new heaven and new earth.",
+          "text": "# Purpose of the Book of Revelation\n\n## Primary Purposes\n\nThe Book of Revelation served several interconnected purposes for its original audience and the broader church:\n\n### 1. **Comfort and Encouragement During Persecution**\nWritten to seven churches in Asia Minor (modern-day Turkey) during a time of Roman persecution, Revelation aimed to strengthen Christians facing suffering, imprisonment, and martyrdom. It assured believers that God remained sovereign despite their circumstances.\n\n### 2. **Call to Faithful Endurance**\nThe book repeatedly urges Christians to remain faithful, resist compromise with pagan Roman culture, and persevere through trials. The recurring phrase \"he who overcomes\" emphasizes active faithfulness over passive survival.\n\n### 3. **Theological Assurance of God's Ultimate Victory**\nRevelation provides a cosmic perspective showing that despite present evil and suffering, God will ultimately triumph over Satan, evil powers, and death itself. Christ is portrayed as the victorious Lamb who has already won the decisive battle.\n\n### 4. **Warning and Correction**\nThe letters to the seven churches (chapters 2-3) address specific spiritual problems including false teaching, complacency, and moral compromise, calling churches to repentance.\n\n### 5. **Worship and Doxology**\nThe book draws readers into heavenly worship, reorienting their perspective from earthly troubles to God's throne room, emphasizing that worship is the proper response to God's character and actions.\n\n## Context\n\nMost scholars date Revelation to approximately 95-96 AD during Emperor Domitian's reign, though some argue for an earlier date around 68-70 AD during Nero's persecution.",
           "toolCalls": []
         },
-        "start_time": 198.117917,
-        "end_time": 1878.347667,
-        "input_tokens": 152,
-        "output_tokens": 35,
-        "total_tokens": 187,
+        "start_time": 311.202417,
+        "end_time": 11578.362833,
+        "input_tokens": 96,
+        "output_tokens": 367,
+        "total_tokens": 463,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 86,
+    "id": 6,
     "run_id": 1,
     "name": "Context Understanding [Claude Sonnet 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +83,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

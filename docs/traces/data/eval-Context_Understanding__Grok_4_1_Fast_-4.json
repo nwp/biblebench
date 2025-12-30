@@ -1,82 +1,82 @@
 {
   "eval": {
-    "id": 175,
-    "suite_id": 57,
+    "id": 61,
+    "suite_id": 8,
     "col_order": 4,
     "input": "Who was the primary audience of the Sermon on the Mount?",
     "expected": "Jesus' disciples and the crowds who followed him",
-    "output": "Jesus' disciples",
-    "duration": 26743,
+    "output": "**Jesus' disciples were the primary audience of the Sermon on the Mount (Matthew 5–7).**\n\n### Key Biblical Evidence\n- **Matthew 5:1–2**: \"Seeing the *crowds*, he went up on the mountain, and when he sat down, *his disciples came to him*. And he opened his mouth and *taught them*.\" (ESV; emphasis added)\n  - Jesus ascends a mountainside (evoking Moses on Sinai), assumes the seated posture of a rabbi teaching, and specifically directs his words to the disciples who approach him. The Greek *autos* (\"them\") in v. 2 refers back to the disciples.\n- **Matthew 7:28**: \"And when Jesus finished these sayings, *the crowds were astonished* at his teaching.\"\n  - This confirms the crowds were present and listening but positioned as observers, not direct addressees.\n\n### Context\n- **Setting**: Early in Jesus' Galilean ministry (ca. AD 28–30), following large crowds from Decapolis, Galilee, Judea, and beyond (Matt. 4:25). The sermon outlines kingdom ethics for committed followers.\n- **Disciple-Focused Content**: It begins with the Beatitudes (\"Blessed are... for theirs is the kingdom,\" Matt. 5:3–12), uses discipleship language (e.g., \"you are the salt... light,\" 5:13–16; \"unless your righteousness exceeds...,\" 5:20), and ends with a call to action (\"everyone... who hears these words... acts on them,\" 7:24).\n- **Parallel in Luke**: The Sermon on the Plain (Luke 6:17–49) similarly addresses disciples amid a crowd (Luke 6:20: \"he lifted up his eyes on *his disciples*\"), supporting the disciple-centric focus.\n\n### Scholarly Consensus\nThere is broad agreement among scholars (evangelical, critical, and historical-critical) that the disciples are the primary audience, with crowds as secondary hearers. No significant debate exists; traditional views (e.g., patristic authors like Augustine) and modern commentaries (e.g., Davies-Allison, Luz, France) affirm this. Some note redactional shaping by Matthew to emphasize discipleship for a 1st-century Jewish-Christian community.",
+    "duration": 58832,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:10:02.279Z",
-    "score": 0.25,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.4,
     "scores": [
       {
-        "id": 756,
-        "eval_id": 175,
-        "name": "Theological Accuracy Judge",
-        "score": 0.5,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 61,
+        "eval_id": 61,
+        "name": "Historical Accuracy Judge",
+        "score": 0.8,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
-          "biblically_grounded": false,
+          "biblically_grounded": true,
           "nuance_captured": false,
           "errors": [
-            "Claims the Sermon on the Mount’s audience were exclusively Jesus' disciples; Scripture indicates that Jesus taught the Sermon to his disciples but they were speaking to the crowd present as well (Matthew 5:1; 7:28-29).",
-            "The response omits the explicit presence and listening role of the crowds, which is an important nuance in biblical accounts and affects the proper understanding of the sermon’s audience."
+            "The statement that there is broad consensus and that 'no significant debate exists' about the Sermon’s primary audience overstates the scholarly position; there is ongoing discussion and nuance about whether the Sermon is addressed chiefly to Jesus' disciples, to the broader crowd, or to a community-shaped audience (as Matthew might imply for a Jewish-Christian readership).",
+            "While the LLM cites Luke as supporting a disciple-centric focus, Luke’s parallel (Sermon on the Plain) is not a perfect one-to-one, and some scholars argue for slightly different emphasis in Luke’s context. This nuance could be more carefully framed rather than treated as a straightforward corroboration."
           ],
-          "rationale": "The Sermon on the Mount is commonly understood to be delivered to a dual audience: Jesus’ disciples, with the crowds gathered and listening (Matthew 5:1). The LLM’s answer correctly identifies disciples as part of the audience, but it ignores the crowd’s presence and listening role, which is biblically significant. This makes the claim partially inaccurate and lacking in nuance, though not heretical. The doctrine itself (ethical instruction for followers) remains orthodox."
+          "rationale": "The answer correctly identifies the Sermon on the Mount as primarily directed to Jesus’ disciples with crowds present as listeners. It provides textual evidence (Matt 5:1–2; 7:28) and contextual notes (Beatitudes, disciple-focused language, Luke’s parallel) and reflects a common scholarly position. However, it overstates consensus by claiming there is no significant debate and implies Luke’s parallel unambiguously reinforces a disciple-centric focus. In reality, scholars recognize a spectrum of views about audience and purpose, and Luke’s Sermon on the Plain offers a related but not identical context. The core factual points are solid, but the nuance could be more carefully qualified."
         },
-        "created_at": "2025-12-30T00:10:29.040Z"
+        "created_at": "2025-12-30T13:53:42.586Z"
       },
       {
-        "id": 757,
-        "eval_id": 175,
+        "id": 62,
+        "eval_id": 61,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:10:29.040Z"
+        "created_at": "2025-12-30T13:53:42.586Z"
       }
     ],
     "traces": [
       {
-        "id": 286,
-        "eval_id": 175,
+        "id": 31,
+        "eval_id": 61,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho was the primary audience of the Sermon on the Mount?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who was the primary audience of the Sermon on the Mount?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Jesus' disciples",
+          "text": "**Jesus' disciples were the primary audience of the Sermon on the Mount (Matthew 5–7).**\n\n### Key Biblical Evidence\n- **Matthew 5:1–2**: \"Seeing the *crowds*, he went up on the mountain, and when he sat down, *his disciples came to him*. And he opened his mouth and *taught them*.\" (ESV; emphasis added)\n  - Jesus ascends a mountainside (evoking Moses on Sinai), assumes the seated posture of a rabbi teaching, and specifically directs his words to the disciples who approach him. The Greek *autos* (\"them\") in v. 2 refers back to the disciples.\n- **Matthew 7:28**: \"And when Jesus finished these sayings, *the crowds were astonished* at his teaching.\"\n  - This confirms the crowds were present and listening but positioned as observers, not direct addressees.\n\n### Context\n- **Setting**: Early in Jesus' Galilean ministry (ca. AD 28–30), following large crowds from Decapolis, Galilee, Judea, and beyond (Matt. 4:25). The sermon outlines kingdom ethics for committed followers.\n- **Disciple-Focused Content**: It begins with the Beatitudes (\"Blessed are... for theirs is the kingdom,\" Matt. 5:3–12), uses discipleship language (e.g., \"you are the salt... light,\" 5:13–16; \"unless your righteousness exceeds...,\" 5:20), and ends with a call to action (\"everyone... who hears these words... acts on them,\" 7:24).\n- **Parallel in Luke**: The Sermon on the Plain (Luke 6:17–49) similarly addresses disciples amid a crowd (Luke 6:20: \"he lifted up his eyes on *his disciples*\"), supporting the disciple-centric focus.\n\n### Scholarly Consensus\nThere is broad agreement among scholars (evangelical, critical, and historical-critical) that the disciples are the primary audience, with crowds as secondary hearers. No significant debate exists; traditional views (e.g., patristic authors like Augustine) and modern commentaries (e.g., Davies-Allison, Luz, France) affirm this. Some note redactional shaping by Matthew to emphasize discipleship for a 1st-century Jewish-Christian community.",
           "toolCalls": []
         },
-        "start_time": 193.029583,
-        "end_time": 2688.786041,
-        "input_tokens": 281,
-        "output_tokens": 241,
-        "total_tokens": 522,
+        "start_time": 311.963083,
+        "end_time": 9477.56425,
+        "input_tokens": 239,
+        "output_tokens": 835,
+        "total_tokens": 1074,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 57,
+    "id": 8,
     "run_id": 1,
     "name": "Context Understanding [Grok 4.1 Fast]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -84,6 +84,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:10:02.279Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

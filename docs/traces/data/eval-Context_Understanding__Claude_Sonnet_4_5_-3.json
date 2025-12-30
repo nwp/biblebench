@@ -1,83 +1,79 @@
 {
   "eval": {
-    "id": 267,
-    "suite_id": 86,
+    "id": 44,
+    "suite_id": 6,
     "col_order": 3,
     "input": "What was the historical context of the book of Exodus?",
     "expected": "Exodus describes the Israelites' slavery in Egypt and their deliverance by God through Moses",
-    "output": "The Israelites were enslaved in Egypt for approximately 400 years. Egypt was a dominant ancient Near Eastern power during the Late Bronze Age (likely 15th-13th century BC). The Pharaoh feared Israel's growing population and instituted harsh oppression. This period preceded Israel's formation as a nation and their eventual settlement in Canaan. The exodus occurred during a time when Egypt controlled much of the Levant and maintained vassal states throughout the region.",
-    "duration": 41587,
+    "output": "# Historical Context of the Book of Exodus\n\n## Traditional Dating and Setting\n\nThe book of Exodus is set during Israel's enslavement in Egypt and their subsequent liberation. The narrative spans approximately 80 years, from Moses' birth to the completion of the Tabernacle.\n\n**Two main chronological theories exist:**\n\n1. **Early Date (c. 1446 BC)** - Based on 1 Kings 6:1, which states the Exodus occurred 480 years before Solomon's temple (c. 966 BC). This places the events during Egypt's 18th Dynasty, possibly under Thutmose III or Amenhotep II.\n\n2. **Late Date (c. 1260-1250 BC)** - Favored by many scholars based on archaeological evidence, including the storage cities Pithom and Rameses (possibly built under Rameses II of the 19th Dynasty).\n\n## Egyptian Context\n\nThe Israelites' experience reflects the realities of ancient Egypt:\n- **Forced labor** on building projects was common for both foreign populations and Egyptian citizens\n- **Semitic peoples** in Egypt's Nile Delta region is well-documented\n- **Egypt's power** during the New Kingdom period (1550-1070 BC) dominated the ancient Near East\n\n## Israelite Religious Development\n\nExodus marks a pivotal transition:\n- Formal establishment of **Yahweh worship** and the covenant relationship\n- Introduction of the **Law (Torah)** at Mount Sinai\n- Creation of Israel as a **nation** rather than just a family clan\n\n## Scholarly Considerations\n\nWhile the biblical account presents these events as occurring in a specific historical period, extra-biblical evidence for the Exodus itself remains debated among scholars, with ongoing discussion about historicity and dating.",
+    "duration": 72665,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.862Z",
-    "score": 0.305,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.45,
     "scores": [
       {
-        "id": 1177,
-        "eval_id": 267,
-        "name": "Theological Accuracy Judge",
-        "score": 0.61,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 123,
+        "eval_id": 44,
+        "name": "Historical Accuracy Judge",
+        "score": 0.9,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
-          "nuance_captured": false,
-          "errors": [
-            "Omission of central theological elements (God's deliverance, Moses as mediator, the Passover, and the Sinai covenant) which are essential to the biblical Exodus narrative.",
-            "Dating presented as Late Bronze Age with a broad range; Exodus dating is debated among scholars, and the answer does not acknowledge these uncertainties or alternative timelines.",
-            "While historically framed, the answer could be misread as a purely political/military account rather than the theocentric redemptive narrative that Scripture emphasizes."
-          ],
-          "rationale": "The response correctly notes oppression in Egypt and the notion of an exodus, and places the event in a general Late Bronze Age context consistent with some scholarly views. It lacks explicit emphasis on God’s saving initiative, the role of Moses, the Passover, and the Sinai covenant, which are central to biblical and historic Christian understanding of Exodus. It is broadly biblically grounded and orthodoxy-consistent in its basic claims, but its theological precision and nuance are limited due to omissions of key redemptive elements and the acknowledgment of scholarly dating uncertainties."
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The response accurately presents the Exodus context as involving Israelite slavery in Egypt and divine deliverance, then expands to scholarly dating debates (early date ~1446 BCE vs late date ~1260–1250 BCE) with citations to the 1 Kings 6:1 formula and the Ramesses/Pithom link. It correctly notes the broader Egyptian context (New Kingdom power, presence of Semitic groups) and the major religious developments (covenant/Yahweh worship, Sinai law, nation formation). It also appropriately acknowledges the lack of extrabiblical evidence for the Exodus and that dating remains debated. The discussion is balanced, cites standard scholarly positions, and avoids definitive claims where evidence is contested. A potential caveat is the simplifying timeline statement (80 years from Moses’ birth to Tabernacle completion), which is a common but approximate summary rather than a fixed chronology; however, it is not misleading for a contextual overview.)"
         },
-        "created_at": "2025-12-30T00:18:03.451Z"
+        "created_at": "2025-12-30T13:53:56.419Z"
       },
       {
-        "id": 1178,
-        "eval_id": 267,
+        "id": 124,
+        "eval_id": 44,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:18:03.451Z"
+        "created_at": "2025-12-30T13:53:56.419Z"
       }
     ],
     "traces": [
       {
-        "id": 449,
-        "eval_id": 267,
+        "id": 62,
+        "eval_id": 44,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was the historical context of the book of Exodus?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: What was the historical context of the book of Exodus?"
               }
             ]
           }
         ],
         "output": {
-          "text": "The Israelites were enslaved in Egypt for approximately 400 years. Egypt was a dominant ancient Near Eastern power during the Late Bronze Age (likely 15th-13th century BC). The Pharaoh feared Israel's growing population and instituted harsh oppression. This period preceded Israel's formation as a nation and their eventual settlement in Canaan. The exodus occurred during a time when Egypt controlled much of the Levant and maintained vassal states throughout the region.",
+          "text": "# Historical Context of the Book of Exodus\n\n## Traditional Dating and Setting\n\nThe book of Exodus is set during Israel's enslavement in Egypt and their subsequent liberation. The narrative spans approximately 80 years, from Moses' birth to the completion of the Tabernacle.\n\n**Two main chronological theories exist:**\n\n1. **Early Date (c. 1446 BC)** - Based on 1 Kings 6:1, which states the Exodus occurred 480 years before Solomon's temple (c. 966 BC). This places the events during Egypt's 18th Dynasty, possibly under Thutmose III or Amenhotep II.\n\n2. **Late Date (c. 1260-1250 BC)** - Favored by many scholars based on archaeological evidence, including the storage cities Pithom and Rameses (possibly built under Rameses II of the 19th Dynasty).\n\n## Egyptian Context\n\nThe Israelites' experience reflects the realities of ancient Egypt:\n- **Forced labor** on building projects was common for both foreign populations and Egyptian citizens\n- **Semitic peoples** in Egypt's Nile Delta region is well-documented\n- **Egypt's power** during the New Kingdom period (1550-1070 BC) dominated the ancient Near East\n\n## Israelite Religious Development\n\nExodus marks a pivotal transition:\n- Formal establishment of **Yahweh worship** and the covenant relationship\n- Introduction of the **Law (Torah)** at Mount Sinai\n- Creation of Israel as a **nation** rather than just a family clan\n\n## Scholarly Considerations\n\nWhile the biblical account presents these events as occurring in a specific historical period, extra-biblical evidence for the Exodus itself remains debated among scholars, with ongoing discussion about historicity and dating.",
           "toolCalls": []
         },
-        "start_time": 197.932292,
-        "end_time": 4928.990667,
-        "input_tokens": 153,
-        "output_tokens": 102,
-        "total_tokens": 255,
+        "start_time": 311.100792,
+        "end_time": 12596.989667,
+        "input_tokens": 97,
+        "output_tokens": 401,
+        "total_tokens": 498,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 86,
+    "id": 6,
     "run_id": 1,
     "name": "Context Understanding [Claude Sonnet 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -85,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

@@ -1,79 +1,81 @@
 {
   "eval": {
-    "id": 272,
-    "suite_id": 87,
+    "id": 49,
+    "suite_id": 7,
     "col_order": 0,
     "input": "Who wrote the Gospel of John and what was his relationship to Jesus?",
     "expected": "John the Apostle, one of Jesus' twelve disciples, known as 'the disciple whom Jesus loved'",
-    "output": "John the Apostle, son of Zebedee and brother of James. He was one of Jesus' twelve disciples and part of the inner circle (along with Peter and James) who witnessed key events like the Transfiguration and Gethsemane. He identifies himself in the Gospel as \"the disciple whom Jesus loved\" and was present at the crucifixion, where Jesus entrusted his mother Mary to John's care.",
-    "duration": 25846,
+    "output": "## Authorship of the Gospel of John\n\n### Traditional View\n\nThe Gospel of John has traditionally been attributed to **John the son of Zebedee**, one of the twelve apostles. According to this view:\n\n- He was a **Galilean fisherman** called by Jesus alongside his brother James (Mark 1:19-20)\n- He was part of Jesus' **inner circle** (along with Peter and James), present at key events like the Transfiguration and Gethsemane\n- He is identified as the **\"Beloved Disciple\"** mentioned in the Gospel itself (John 13:23; 19:26; 21:20-24)\n- He reclined next to Jesus at the Last Supper\n- Jesus entrusted his mother Mary to his care at the crucifixion (John 19:26-27)\n\nEarly church fathers including **Irenaeus** (c. 180 AD) affirmed this attribution, claiming Irenaeus learned this from Polycarp, who knew John personally.\n\n### Scholarly Discussion\n\nModern scholarship presents alternative perspectives:\n\n- Some suggest **\"John the Elder\"** (mentioned by Papias) as a possible author distinct from the apostle\n- Others propose the Gospel emerged from a **\"Johannine community\"** that preserved the Beloved Disciple's testimony\n- The Gospel itself claims to be based on **eyewitness testimony** (John 21:24)\n\n### Conclusion\n\nWhether written directly by the apostle or compiled by his followers, the Gospel claims connection to an eyewitness who had a uniquely close relationship with Jesus.",
+    "duration": 84455,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.862Z",
-    "score": 0.425,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.375,
     "scores": [
       {
-        "id": 1107,
-        "eval_id": 272,
-        "name": "Theological Accuracy Judge",
-        "score": 0.85,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 181,
+        "eval_id": 49,
+        "name": "Historical Accuracy Judge",
+        "score": 0.75,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
-          "doctrinally_sound": true,
+          "doctrinally_sound": false,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [],
-          "rationale": "The response is largely accurate and alignes with orthodox teaching. It correctly identifies John the Apostle as the son of Zebedee and brother of James, and affirms his role as one of Jesus’ twelve and as part of the inner circle (with Peter). It accurately notes that the beloved disciple is a key self-designation within John’s Gospel and that Jesus entrusts Mary to the beloved disciple at the crucifixion (John 19:26–27), which is biblically grounded. It also reflects that the Transfiguration and Gethsure events involve the inner circle (Peter, James, John), which is supported by Scripture (e.g., Mark 9:2; Luke 9:28; Mark 14:33). The only major nuance missing is acknowledging scholarly debate about the precise authorship of the Gospel of John (whether it was written by the apostle John, by the Johannine community, or by another figure), but the answer’s attribution to John the Apostle is consistent with traditional Christian orthodoxy. No theological errors are present; the answer remains biblically grounded and doctrinally sound."
+          "errors": [
+            "The claim that the Gospel of John places John the Apostle at the Transfiguration. The Transfiguration narrative is described in the Synoptic Gospels (Matthew, Mark, Luke); John does not recount the Transfiguration, and the text does not attest John’s presence there."
+          ],
+          "rationale": "The response accurately summarizes the traditional attribution, patristic testimony (Irenaeus, Polycarp), and scholarly alternatives (John the Elder/Papias, Johannine community), and it notes the Gospel’s own claim to eyewitness testimony (John 21:24). It correctly identifies the Beloved Disciple, Last Supper detail, and Mary at the cross. The main factual error is asserting John’s presence at the Transfiguration, which is not described in John’s gospel. Overall, the answer is relevant and nuanced, with one significant factual lapse."
         },
-        "created_at": "2025-12-30T00:17:47.731Z"
+        "created_at": "2025-12-30T13:54:08.209Z"
       },
       {
-        "id": 1108,
-        "eval_id": 272,
+        "id": 182,
+        "eval_id": 49,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:17:47.731Z"
+        "created_at": "2025-12-30T13:54:08.209Z"
       }
     ],
     "traces": [
       {
-        "id": 423,
-        "eval_id": 272,
+        "id": 91,
+        "eval_id": 49,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWho wrote the Gospel of John and what was his relationship to Jesus?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who wrote the Gospel of John and what was his relationship to Jesus?"
               }
             ]
           }
         ],
         "output": {
-          "text": "John the Apostle, son of Zebedee and brother of James. He was one of Jesus' twelve disciples and part of the inner circle (along with Peter and James) who witnessed key events like the Transfiguration and Gethsemane. He identifies himself in the Gospel as \"the disciple whom Jesus loved\" and was present at the crucifixion, where Jesus entrusted his mother Mary to John's care.",
+          "text": "## Authorship of the Gospel of John\n\n### Traditional View\n\nThe Gospel of John has traditionally been attributed to **John the son of Zebedee**, one of the twelve apostles. According to this view:\n\n- He was a **Galilean fisherman** called by Jesus alongside his brother James (Mark 1:19-20)\n- He was part of Jesus' **inner circle** (along with Peter and James), present at key events like the Transfiguration and Gethsemane\n- He is identified as the **\"Beloved Disciple\"** mentioned in the Gospel itself (John 13:23; 19:26; 21:20-24)\n- He reclined next to Jesus at the Last Supper\n- Jesus entrusted his mother Mary to his care at the crucifixion (John 19:26-27)\n\nEarly church fathers including **Irenaeus** (c. 180 AD) affirmed this attribution, claiming Irenaeus learned this from Polycarp, who knew John personally.\n\n### Scholarly Discussion\n\nModern scholarship presents alternative perspectives:\n\n- Some suggest **\"John the Elder\"** (mentioned by Papias) as a possible author distinct from the apostle\n- Others propose the Gospel emerged from a **\"Johannine community\"** that preserved the Beloved Disciple's testimony\n- The Gospel itself claims to be based on **eyewitness testimony** (John 21:24)\n\n### Conclusion\n\nWhether written directly by the apostle or compiled by his followers, the Gospel claims connection to an eyewitness who had a uniquely close relationship with Jesus.",
           "toolCalls": []
         },
-        "start_time": 200.173875,
-        "end_time": 3721.076417,
-        "input_tokens": 155,
-        "output_tokens": 98,
-        "total_tokens": 253,
+        "start_time": 311.35125,
+        "end_time": 9619.3875,
+        "input_tokens": 99,
+        "output_tokens": 364,
+        "total_tokens": 463,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 87,
+    "id": 7,
     "run_id": 1,
     "name": "Context Understanding [Claude Opus 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +83,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

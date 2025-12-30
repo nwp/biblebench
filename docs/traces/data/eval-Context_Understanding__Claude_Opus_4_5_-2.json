@@ -1,79 +1,79 @@
 {
   "eval": {
-    "id": 274,
-    "suite_id": 87,
+    "id": 51,
+    "suite_id": 7,
     "col_order": 2,
     "input": "To whom was the book of Romans written and why?",
     "expected": "The book of Romans was written to the church in Rome to explain the gospel and prepare for Paul's visit",
-    "output": "**To whom:** The Christian community in Rome, a church Paul had not yet visited, composed of both Jewish and Gentile believers.\n\n**Why:** \n- To introduce himself before his planned visit to Rome and eventual mission to Spain\n- To present a systematic explanation of the gospel and justification by faith\n- To address tensions between Jewish and Gentile Christians in the congregation\n- To solicit their support for his westward missionary work",
-    "duration": 31448,
+    "output": "# The Recipients and Purpose of Romans\n\n## To Whom It Was Written\n\nThe book of Romans was written to **the Christian community in Rome**, comprising both Jewish and Gentile believers. Paul addresses them directly as those \"loved by God and called to be his holy people\" (Romans 1:7).\n\n**Key details about the recipients:**\n- A church Paul had never personally visited (Romans 1:10-13)\n- A mixed congregation of Jewish and Gentile Christians (evident from Paul addressing both groups throughout)\n- An established community, as their \"faith is being reported all over the world\" (Romans 1:8)\n\n## Why Paul Wrote Romans\n\nPaul had **several interconnected purposes:**\n\n### 1. **To Introduce Himself and His Gospel**\nPaul planned to visit Rome en route to Spain (Romans 15:23-24, 28) and sought their support for this western mission. The letter served as a theological introduction to his teaching.\n\n### 2. **To Present a Systematic Explanation of the Gospel**\nRomans contains Paul's most comprehensive treatment of salvation, righteousness by faith, and God's redemptive plan—themes central to his apostolic message.\n\n### 3. **To Address Jewish-Gentile Tensions**\nChapters 9-11 and 14-15 particularly address the relationship between Jews and Gentiles in God's plan, likely reflecting real tensions within the Roman church (possibly heightened after Jews returned following their expulsion under Claudius in AD 49).\n\n### 4. **To Encourage Unity**\nPaul urges mutual acceptance between the \"strong\" and \"weak\" (Romans 14-15).",
+    "duration": 68801,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.863Z",
-    "score": 0.465,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.46,
     "scores": [
       {
-        "id": 1133,
-        "eval_id": 274,
-        "name": "Theological Accuracy Judge",
-        "score": 0.93,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 109,
+        "eval_id": 51,
+        "name": "Historical Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
           "errors": [],
-          "rationale": "The LLM’s answer reflects a solid and widely accepted reading of Romans: the addressee is the Christian community in Rome, a church Paul had not yet visited, consisting of Jewish and Gentile believers. The stated purposes align with biblical data: (1) introducing Paul and his gospel before his planned visit (Romans 15:23-29; 15:28-29), (2) presenting a systematic explanation of the gospel and justification by faith (Romans 1–5; 3–4), (3) addressing Jew–Gentile tensions within the congregation (Romans 9–11; 14–15 on how Gentiles and Jews relate within the one people of God), and (4) soliciting support for his westward missionary plan to Spain and for his travel to Rome (Romans 15:24, 28–32). These points are doctrinally orthodox (emphasizing justification by faith and the inclusion of Jew and Gentile) and biblically grounded. While the answer could further elaborate on Romans’ broader themes (e.g., the law, Israel’s status, and God’s faithfulness to Israel) for fuller nuance, the core evaluation of to whom and why Romans was written is accurate and well-captured."
+          "rationale": "The response accurately identifies the recipients as the Christian community in Rome (Jewish and Gentile believers) and correctly notes that Paul had not yet visited in person. It correctly states multiple purposes of Romans: (1) introducing Paul and his gospel, (2) presenting a systematic explanation of the gospel, (3) addressing Jewish–Gentile tensions, and (4) promoting unity within the church. The answer also reflects scholarly nuance by referencing Romans 9–11 and 14–15 as addressing Jew–Gentile relations and by noting historical context (e.g., Claudius’s expulsion and the likely tensions upon the Jewish return). It explicitly cites relevant verses (Romans 1:7; 1:8; 1:10–13; 15:23–24; 15:25–28) to support its points. A minor caveat is that the “holy people” phrasing for Romans 1:7 is a translation nuance (most English translations render it “saints”), but this does not affect factual accuracy. Overall, the answer directly answers the question and provides appropriate historical-contextual nuance."
         },
-        "created_at": "2025-12-30T00:17:53.341Z"
+        "created_at": "2025-12-30T13:53:52.555Z"
       },
       {
-        "id": 1134,
-        "eval_id": 274,
+        "id": 110,
+        "eval_id": 51,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:17:53.341Z"
+        "created_at": "2025-12-30T13:53:52.555Z"
       }
     ],
     "traces": [
       {
-        "id": 433,
-        "eval_id": 274,
+        "id": 55,
+        "eval_id": 51,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nTo whom was the book of Romans written and why?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: To whom was the book of Romans written and why?"
               }
             ]
           }
         ],
         "output": {
-          "text": "**To whom:** The Christian community in Rome, a church Paul had not yet visited, composed of both Jewish and Gentile believers.\n\n**Why:** \n- To introduce himself before his planned visit to Rome and eventual mission to Spain\n- To present a systematic explanation of the gospel and justification by faith\n- To address tensions between Jewish and Gentile Christians in the congregation\n- To solicit their support for his westward missionary work",
+          "text": "# The Recipients and Purpose of Romans\n\n## To Whom It Was Written\n\nThe book of Romans was written to **the Christian community in Rome**, comprising both Jewish and Gentile believers. Paul addresses them directly as those \"loved by God and called to be his holy people\" (Romans 1:7).\n\n**Key details about the recipients:**\n- A church Paul had never personally visited (Romans 1:10-13)\n- A mixed congregation of Jewish and Gentile Christians (evident from Paul addressing both groups throughout)\n- An established community, as their \"faith is being reported all over the world\" (Romans 1:8)\n\n## Why Paul Wrote Romans\n\nPaul had **several interconnected purposes:**\n\n### 1. **To Introduce Himself and His Gospel**\nPaul planned to visit Rome en route to Spain (Romans 15:23-24, 28) and sought their support for this western mission. The letter served as a theological introduction to his teaching.\n\n### 2. **To Present a Systematic Explanation of the Gospel**\nRomans contains Paul's most comprehensive treatment of salvation, righteousness by faith, and God's redemptive plan—themes central to his apostolic message.\n\n### 3. **To Address Jewish-Gentile Tensions**\nChapters 9-11 and 14-15 particularly address the relationship between Jews and Gentiles in God's plan, likely reflecting real tensions within the Roman church (possibly heightened after Jews returned following their expulsion under Claudius in AD 49).\n\n### 4. **To Encourage Unity**\nPaul urges mutual acceptance between the \"strong\" and \"weak\" (Romans 14-15).",
           "toolCalls": []
         },
-        "start_time": 200.378583,
-        "end_time": 4423.9835,
-        "input_tokens": 152,
-        "output_tokens": 95,
-        "total_tokens": 247,
+        "start_time": 311.444833,
+        "end_time": 9635.770417,
+        "input_tokens": 96,
+        "output_tokens": 367,
+        "total_tokens": 463,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 87,
+    "id": 7,
     "run_id": 1,
     "name": "Context Understanding [Claude Opus 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

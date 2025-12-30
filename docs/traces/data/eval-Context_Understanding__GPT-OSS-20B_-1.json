@@ -1,79 +1,89 @@
 {
   "eval": {
-    "id": 87,
-    "suite_id": 29,
+    "id": 26,
+    "suite_id": 4,
     "col_order": 1,
     "input": "What was Paul's background before his conversion?",
     "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
-    "output": "Paul (Saul of Tarsus) was a devout Pharisee, a Roman citizen from Tarsus, educated in Jewish law under Gamaliel, worked as a tentmaker, and actively persecuted early Christians.",
-    "duration": 25646,
+    "output": "**Paul’s life before his conversion – the “Saul of Tarsus”**\n\n| Aspect | Traditional/ scholarly view | Key details |\n|--------|-----------------------------|-------------|\n| **Birthplace & ethnicity** | Jewish, from Tarsus in Cilicia (modern‑day Turkey) | Tarsus was a Greek‑Roman provincial city with a sizeable Jewish community; Paul was raised in that Jewish milieu. |\n| **Name** | Saul (the Hebrew form) | “Saul” is the original name found in the New Testament; he later added “Paul” (Latin form) after conversion, but both names refer to the same person. |\n| **Citizenship** | Roman citizen | Paul's letters (e.g., Galatians 1:1, Romans 15:25) refer to his Roman citizenship.  This gave him free travel and legal protection throughout the empire. |\n| **Religious identity** | Zealous Pharisee (or at least a highly observant Jew) | 1) 1 Cor 9:5‑6 says he was “going with the law, not with the Gospels.” 2) 2 Tim 3:15‑17 speaks of “the precepts of my proper law of keeping all customs of the Jews.” 3) 1 Syn, 23:6‑21 notes his studying with “Gamaliel.” |\n| **Education** | Classical Jewish schooling – Torah and Greek classics | 1) Paul studied the Law with “Gamaliel the Elder,” a respected professor of the Jewish law in Jerusalem, known for his eloquence and adherence to the strictest interpretation of the scriptures. <br>2) He was fluent in Hebrew/Aramaic, Greek, and Latin—revealed in his epistolary style and public arguments. |\n| **Occupation/ social status** | Scholar, teacher of Jewish law, and possible “priest” by training (not a hieratic but a Pharisaic authority) | 1) He is described as “preaching the Law of the Jews to the Gentiles” in Acts 9:5. <br>2) No record of him serving in the Temple; his “priestly” status likely comes from *Pharisaic* scholarship, which carried authority much like priestly ordination. |\n| **Political allegiance** | Loyal to Roman rule, willing to support the emperor | 1) Acts 9:33 notes that the Roman governor, Felix, “approved Saul’s request” before the Roman Prov.  \n2) Galatians 1:14‑15 says he was “the first to persecute the flock of Christ.” |\n| **Character/ personality** | Visionary, passionate, militant in his commitment to the Law | 1) His zeal is counted among the reasons for his harsh persecution of early Christians—he saw their movement as a threat to Jewish identity and public order. <br>2) His rhetorical skills and disputes (e.g., in Acts 26) show he was both articulate and confrontational. |\n\n### Summary\n\nBefore converting, Saul of Tarsus was a **Greek‑Roman Catholic citizen** who had been raised and educated as a **Jewish Pharisee**. He was intimately familiar with the Torah, the oral traditions, and the philosophical traditions of Hellenic culture. His ethical and religious worldview was shaped by rigorous study under Gamaliel and by strict adherence to the Jewish Law. He regarded himself as a protector of both the Jewish legal tradition and the authority of the Roman Empire. These characteristics would later inform his apostolic work: the same dedication that once drove him to persecute the church eventually became the very fervor that fueled his mission to the Gentiles.",
+    "duration": 68821,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:38:36.604Z",
-    "score": 0.475,
+    "created_at": "2025-12-30T13:52:43.736Z",
+    "score": 0.125,
     "scores": [
       {
-        "id": 339,
-        "eval_id": 87,
-        "name": "Theological Accuracy Judge",
-        "score": 0.95,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 111,
+        "eval_id": 26,
+        "name": "Historical Accuracy Judge",
+        "score": 0.25,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
-          "doctrinally_sound": true,
-          "biblically_grounded": true,
-          "nuance_captured": true,
-          "errors": [],
-          "rationale": "The LLM accurately lists Paul’s Pharisaic identity, Roman citizenship, origin from Tarsus, education under Gamaliel, tentmaking, and active persecution of Christians—all of which are biblical and historically affirmed. Each point is supported by Scripture (Pharisee: Philippians 3:5-6; Acts 23:6; citizenship and Tarsus: Acts 21:39; 22:28; 16–18; Gamaliel: Acts 22:3; tentmaking: Acts 18:3; persecution: Acts 9:1-2). The answer is doctrinally sound and provides a well-rounded, nuanced picture without introducing false claims. Minor interpretive phrasing like “devout” is acceptable and not doctrinally problematic.)"
+          "doctrinally_sound": false,
+          "biblically_grounded": false,
+          "nuance_captured": false,
+          "errors": [
+            "Inaccurate overall description: Paul is correctly identified as a Pharisee and a prior persecutor, but the summary repeatedly calls him a \"Greek-Roman Catholic citizen\" (anachronistic) and implies Catholic affiliation, which is incorrect for the 1st‑century context.",
+            "Roman citizenship is noted, but the cited biblical references are misrepresented. The claim that Romans 15:25 discusses Paul’s citizenship is incorrect; Paul’s Roman citizenship is explicitly established in Acts (e.g., Acts 22:28), not in Galatians 1:1 or Romans 15:25.",
+            "Misquotation/misinterpretation of passages: 1 Corinthians 9:5–6 is not about Paul choosing to follow “the law, not the Gospels”; the passage concerns rights of apostles, marriage, and fees, not a dichotomy between law and gospel. 2 Timothy 3:15–17 does not describe Paul’s formative training as you quoted (“precepts of my proper law of keeping all customs of the Jews”). These are inaccurate readings of the sources.",
+            "The table’s faith/identity claims are often misrepresented. For example, Acts 9:5 is not a statement that Paul was \"preaching the Law of the Jews to the Gentiles\"; the early narrative emphasizes his encounter with Jesus and later missionary preaching about Christ. The assertion that he preached the Law to Gentiles is an oversimplification of Pauline mission and message.",
+            "Some cited sources and references are inaccurate or unclear: \"1 Syn, 23:6–21\" is not a standard reference for Paul’s background; this appears to be a misreference or garbled citation. The claim about Gamaliel as a modern “professor” is anachronistic terminology (Gamaliel was a rabbinic teacher, not a university professor).",
+            "Political allegiance claims (e.g., that Acts 9:33 notes Felix approving Saul’s request) are not accurate as stated; the historical trajectory in Acts shows Paul interacting with Roman authorities, but the specific claim about Felix approving a request is not supported by the text in that form. Paul’s relationship to imperial authority is complex (Roman citizen with rights; he appeals to Caesar in Acts 25–26).",
+            "The response states Paul was a priest by training and even a “hieratic” authority; there is no solid evidence that Paul was ever a priest; he is consistently described as a Pharisee, and Acts portrays him as a tentmaker by trade, not a priestly function.",
+            "Important contextual omissions: Paul’s family background (e.g., his self‑description in Philippians 3:5 as from the tribe of Benjamin), his occupation as tentmaker (Acts 18:3), and the nuance that his pre‑conversion zeal was largely framed within his Pharisaic Jewish identity and persecuting the Way, are not adequately or accurately treated.",
+            "Overall precision issues: Several statements conflate or misquote primary sources (e.g., 1 Corinthians 9:5–6, 2 Timothy 3:15–17) and rely on dubious or misrepresented citations, which undermines reliability. The answer also mislabels Paul’s stance toward Rome, and presents a number of assertions as facts that are either uncertain or contested among scholars."
+          ],
+          "rationale": "The response contains multiple factual inaccuracies, misquotations, and misinterpretations of Paul’s background. While it correctly identifies Paul as a Pharisee and a prior persecutor, it erroneously labels him as a Catholic and misreads or misattributes several biblical references. It also includes speculative or unsupported claims (e.g., “priestly status,” “Latin fluency,” and specific Acts references about Felix) and omits well-attested details (tentmaking, self‑designation as a Pharisee of the tribe of Benjamin, more nuanced view of his relationship to Rome). Because of these errors and the lack of careful sourcing, the answer is not reliable or complete, and it fails to meet scholarly standards for nuance and precision in this context."
         },
-        "created_at": "2025-12-30T00:39:02.269Z"
+        "created_at": "2025-12-30T13:53:52.575Z"
       },
       {
-        "id": 340,
-        "eval_id": 87,
+        "id": 112,
+        "eval_id": 26,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:39:02.269Z"
+        "created_at": "2025-12-30T13:53:52.575Z"
       }
     ],
     "traces": [
       {
-        "id": 122,
-        "eval_id": 87,
+        "id": 56,
+        "eval_id": 26,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: What was Paul's background before his conversion?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Paul (Saul of Tarsus) was a devout Pharisee, a Roman citizen from Tarsus, educated in Jewish law under Gamaliel, worked as a tentmaker, and actively persecuted early Christians.",
+          "text": "**Paul’s life before his conversion – the “Saul of Tarsus”**\n\n| Aspect | Traditional/ scholarly view | Key details |\n|--------|-----------------------------|-------------|\n| **Birthplace & ethnicity** | Jewish, from Tarsus in Cilicia (modern‑day Turkey) | Tarsus was a Greek‑Roman provincial city with a sizeable Jewish community; Paul was raised in that Jewish milieu. |\n| **Name** | Saul (the Hebrew form) | “Saul” is the original name found in the New Testament; he later added “Paul” (Latin form) after conversion, but both names refer to the same person. |\n| **Citizenship** | Roman citizen | Paul's letters (e.g., Galatians 1:1, Romans 15:25) refer to his Roman citizenship.  This gave him free travel and legal protection throughout the empire. |\n| **Religious identity** | Zealous Pharisee (or at least a highly observant Jew) | 1) 1 Cor 9:5‑6 says he was “going with the law, not with the Gospels.” 2) 2 Tim 3:15‑17 speaks of “the precepts of my proper law of keeping all customs of the Jews.” 3) 1 Syn, 23:6‑21 notes his studying with “Gamaliel.” |\n| **Education** | Classical Jewish schooling – Torah and Greek classics | 1) Paul studied the Law with “Gamaliel the Elder,” a respected professor of the Jewish law in Jerusalem, known for his eloquence and adherence to the strictest interpretation of the scriptures. <br>2) He was fluent in Hebrew/Aramaic, Greek, and Latin—revealed in his epistolary style and public arguments. |\n| **Occupation/ social status** | Scholar, teacher of Jewish law, and possible “priest” by training (not a hieratic but a Pharisaic authority) | 1) He is described as “preaching the Law of the Jews to the Gentiles” in Acts 9:5. <br>2) No record of him serving in the Temple; his “priestly” status likely comes from *Pharisaic* scholarship, which carried authority much like priestly ordination. |\n| **Political allegiance** | Loyal to Roman rule, willing to support the emperor | 1) Acts 9:33 notes that the Roman governor, Felix, “approved Saul’s request” before the Roman Prov.  \n2) Galatians 1:14‑15 says he was “the first to persecute the flock of Christ.” |\n| **Character/ personality** | Visionary, passionate, militant in his commitment to the Law | 1) His zeal is counted among the reasons for his harsh persecution of early Christians—he saw their movement as a threat to Jewish identity and public order. <br>2) His rhetorical skills and disputes (e.g., in Acts 26) show he was both articulate and confrontational. |\n\n### Summary\n\nBefore converting, Saul of Tarsus was a **Greek‑Roman Catholic citizen** who had been raised and educated as a **Jewish Pharisee**. He was intimately familiar with the Torah, the oral traditions, and the philosophical traditions of Hellenic culture. His ethical and religious worldview was shaped by rigorous study under Gamaliel and by strict adherence to the Jewish Law. He regarded himself as a protector of both the Jewish legal tradition and the authority of the Roman Empire. These characteristics would later inform his apostolic work: the same dedication that once drove him to persecute the church eventually became the very fervor that fueled his mission to the Gentiles.",
           "toolCalls": []
         },
-        "start_time": 200.980541,
-        "end_time": 2233.518416,
-        "input_tokens": 193,
-        "output_tokens": 170,
-        "total_tokens": 363,
+        "start_time": 310.142458,
+        "end_time": 7258.021625,
+        "input_tokens": 150,
+        "output_tokens": 1044,
+        "total_tokens": 1194,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 29,
+    "id": 4,
     "run_id": 1,
     "name": "Context Understanding [GPT-OSS-20B]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +91,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:38:36.604Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }

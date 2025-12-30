@@ -1,79 +1,81 @@
 {
   "eval": {
-    "id": 87,
-    "suite_id": 29,
+    "id": 114,
+    "suite_id": 15,
     "col_order": 1,
     "input": "What was Paul's background before his conversion?",
     "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
-    "output": "Born in Tarsus of Cilicia as a Roman citizen, he was a Pharisee trained by Gamaliel and a zealous persecutor of the early church.",
-    "duration": 40331,
+    "output": "Before his conversion, the Apostle Paul (originally known as Saul of Tarsus) was a devout Jew, a Roman citizen, and a zealous persecutor of the early Christian church. His background uniquely equipped him for his future role as the apostle to the Gentiles.\n\nHere are the essential facts regarding his background:\n\n### 1. Birthplace and Citizenship\n*   **Native of Tarsus:** Paul was born in Tarsus, a major city in the Roman province of Cilicia (modern-day Turkey). Tarsus was a center of learning and culture, which exposed Paul to Greek language and Hellenistic culture from an early age.\n*   **Roman Citizenship:** Paul was born a Roman citizen. This was a privileged status that afforded him legal rights, such as the ability to appeal his case to the Emperor (as he did in Acts 25:11). It is unclear how his family acquired this citizenship, but it was likely through manumission (freed slave status), military service, or a monetary gift paid to the state.\n\n### 2. Jewish Heritage and Education\n*   **Tribe of Benjamin:** Paul identified himself as a \"Hebrew of Hebrews\" and a member of the tribe of Benjamin (Philippians 3:5).\n*   **Pharisaic Training:** Paul was raised as a Pharisee, a Jewish sect known for strict adherence to the Law of Moses and oral tradition. He described his life in Judaism as being \"zealous for the traditions of my fathers\" (Galatians 1:14).\n*   **Study in Jerusalem:** According to Acts 22:3, Paul was educated in Jerusalem under the renowned rabbi Gamaliel I. This suggests he received an elite education in the interpretation of the Hebrew Scriptures.\n\n### 3. Occupation\n*   **Tentmaker:** Paul was trained as a tentmaker (or leatherworker). In the ancient world, it was common for rabbis to learn a manual trade to support themselves and avoid being a financial burden, a practice Paul adhered to throughout his ministry (Acts 18:3).\n\n### 4. Persecution of the Church\nBefore his encounter with Christ on the road to Damascus, Paul was a vigorous opponent of the Christian movement.\n*   **Zeal:** He viewed the followers of \"The Way\" as blasphemers who threatened the purity of the Jewish faith.\n*   **Actions:** He was present at (and approved of) the stoning of Stephen, the first Christian martyr (Acts 7:58–8:1). He subsequently obtained letters from the high priest to arrest Christians in Damascus and bring them to Jerusalem for punishment (Acts 9:1-2).\n\n### Summary\nPaul’s background represents a synthesis of three worlds: **Roman citizenship** gave him political protection and mobility; **Greek culture** (from Tarsus) allowed him to communicate effectively with the Gentile world; and **Jewish piety** (under Gamaliel) gave him a deep theological foundation to explain how Jesus fulfilled the Hebrew Scriptures.",
+    "duration": 81904,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:59:18.470Z",
-    "score": 0.46,
+    "created_at": "2025-12-30T13:52:43.737Z",
+    "score": 0.425,
     "scores": [
       {
-        "id": 349,
-        "eval_id": 87,
-        "name": "Theological Accuracy Judge",
-        "score": 0.92,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "id": 167,
+        "eval_id": 114,
+        "name": "Historical Accuracy Judge",
+        "score": 0.85,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [],
-          "rationale": "The LLM’s summary of Paul’s pre-conversion background aligns well with biblical data. It accurately states that Paul was born in Tarsus of Cilicia and held Roman citizenship by birth, that he was a Pharisee, and that he was trained by Gamaliel (Acts 22:3; Acts 21:39; Acts 16:37; Philippians 3:5-6). It also correctly identifies him as a zealous persecutor of the early church (Acts 8:3; Galatians 1:13-14; Philippians 3:6). These points are biblically grounded and consistent with historic Christian teaching. The response could be enriched with additional nuances (e.g., more on his dual Jewish-Roman identity, tribe identity, or further scriptural nuances like “Hebrew of Hebrews” from Philippians 3), but the core claims are accurate and well-supported. "
+          "errors": [
+            "The claim about how Paul acquired Roman citizenship is misleading. Acts 22:28 indicates Paul was born a Roman citizen, i.e., citizenship by birth, not primarily by manumission, military service, or a later payment. The suggestion that his family’s citizenship was likely obtained through such means is speculative and not clearly supported by the text."
+          ],
+          "rationale": "The answer accurately captures the main factual elements of Paul’s background (birthplace in Tarsus, Roman citizenship, Jewish heritage, Pharisee background, Gamaliel, tentmaking, persecution of Christians, presence at Stephen’s martyrdom, and harm to Christians before conversion). The notable imperfection is the citizenship origin: Acts 22:28 presents Paul as born a citizen, which some readers interpret as by birth, whereas the response treats the citizenship as possibly acquired by other means. Aside from that, the response aligns well with the biblical data and common scholarly points, and it remains relevant and appropriately nuanced about the historical context."
         },
-        "created_at": "2025-12-30T00:59:58.819Z"
+        "created_at": "2025-12-30T13:54:05.659Z"
       },
       {
-        "id": 350,
-        "eval_id": 87,
+        "id": 168,
+        "eval_id": 114,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:59:58.819Z"
+        "created_at": "2025-12-30T13:54:05.659Z"
       }
     ],
     "traces": [
       {
-        "id": 128,
-        "eval_id": 87,
+        "id": 84,
+        "eval_id": 114,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: What was Paul's background before his conversion?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Born in Tarsus of Cilicia as a Roman citizen, he was a Pharisee trained by Gamaliel and a zealous persecutor of the early church.",
+          "text": "Before his conversion, the Apostle Paul (originally known as Saul of Tarsus) was a devout Jew, a Roman citizen, and a zealous persecutor of the early Christian church. His background uniquely equipped him for his future role as the apostle to the Gentiles.\n\nHere are the essential facts regarding his background:\n\n### 1. Birthplace and Citizenship\n*   **Native of Tarsus:** Paul was born in Tarsus, a major city in the Roman province of Cilicia (modern-day Turkey). Tarsus was a center of learning and culture, which exposed Paul to Greek language and Hellenistic culture from an early age.\n*   **Roman Citizenship:** Paul was born a Roman citizen. This was a privileged status that afforded him legal rights, such as the ability to appeal his case to the Emperor (as he did in Acts 25:11). It is unclear how his family acquired this citizenship, but it was likely through manumission (freed slave status), military service, or a monetary gift paid to the state.\n\n### 2. Jewish Heritage and Education\n*   **Tribe of Benjamin:** Paul identified himself as a \"Hebrew of Hebrews\" and a member of the tribe of Benjamin (Philippians 3:5).\n*   **Pharisaic Training:** Paul was raised as a Pharisee, a Jewish sect known for strict adherence to the Law of Moses and oral tradition. He described his life in Judaism as being \"zealous for the traditions of my fathers\" (Galatians 1:14).\n*   **Study in Jerusalem:** According to Acts 22:3, Paul was educated in Jerusalem under the renowned rabbi Gamaliel I. This suggests he received an elite education in the interpretation of the Hebrew Scriptures.\n\n### 3. Occupation\n*   **Tentmaker:** Paul was trained as a tentmaker (or leatherworker). In the ancient world, it was common for rabbis to learn a manual trade to support themselves and avoid being a financial burden, a practice Paul adhered to throughout his ministry (Acts 18:3).\n\n### 4. Persecution of the Church\nBefore his encounter with Christ on the road to Damascus, Paul was a vigorous opponent of the Christian movement.\n*   **Zeal:** He viewed the followers of \"The Way\" as blasphemers who threatened the purity of the Jewish faith.\n*   **Actions:** He was present at (and approved of) the stoning of Stephen, the first Christian martyr (Acts 7:58–8:1). He subsequently obtained letters from the high priest to arrest Christians in Damascus and bring them to Jerusalem for punishment (Acts 9:1-2).\n\n### Summary\nPaul’s background represents a synthesis of three worlds: **Roman citizenship** gave him political protection and mobility; **Greek culture** (from Tarsus) allowed him to communicate effectively with the Gentile world; and **Jewish piety** (under Gamaliel) gave him a deep theological foundation to explain how Jesus fulfilled the Hebrew Scriptures.",
           "toolCalls": []
         },
-        "start_time": 162.193125,
-        "end_time": 16893.447959,
-        "input_tokens": 133,
-        "output_tokens": 629,
-        "total_tokens": 762,
+        "start_time": 314.554083,
+        "end_time": 9152.217958,
+        "input_tokens": 88,
+        "output_tokens": 635,
+        "total_tokens": 723,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 29,
+    "id": 15,
     "run_id": 1,
     "name": "Context Understanding [GLM-4.7]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -81,6 +83,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:59:18.469Z"
+    "created_at": "2025-12-30T13:52:43.737Z"
   }
 }

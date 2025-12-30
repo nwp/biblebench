@@ -1,81 +1,79 @@
 {
   "eval": {
-    "id": 257,
-    "suite_id": 85,
+    "id": 34,
+    "suite_id": 5,
     "col_order": 1,
     "input": "What was Paul's background before his conversion?",
     "expected": "Paul was a Pharisee and a zealous persecutor of Christians before his conversion on the road to Damascus",
-    "output": "Paul was a Pharisee, a Roman citizen, and a zealous persecutor of Christians. He was trained in Jewish law under Gamaliel in Jerusalem and actively worked to suppress the early Christian movement, including participating in the stoning of Stephen.",
-    "duration": 35577,
+    "output": "# Paul's Background Before His Conversion\n\n## Jewish Heritage and Education\n\nPaul was a **Hellenistic Jew** born in **Tarsus** (in Cilicia, modern-day Turkey), a major city with significant Greek influence. He was born with the Roman name **Saul** and held Roman citizenship—an unusual status for a provincial Jew that likely reflected his family's elevated social position.\n\nHe received rigorous training in **Jewish law and theology**, studying under **Gamaliel**, one of the most respected Pharisaic teachers in first-century Jerusalem (Acts 22:3). This education made him exceptionally knowledgeable in Torah and Jewish tradition.\n\n## Religious Identity\n\nPaul identified as a **Pharisee**, the Jewish sect known for strict adherence to Torah observance and oral tradition. He was zealous about Jewish law and devoted to maintaining Jewish religious practice—characteristics he later emphasized when recounting his pre-conversion life (Philippians 3:4-6).\n\n## Persecution of Christians\n\nMost significantly, Paul actively **persecuted the early Christian movement**. He held the cloaks of those who stoned Stephen (Acts 7:58) and obtained authority to arrest Christians in Damascus (Acts 9:1-2). By his own account, he violently opposed the church and \"advanced in Judaism beyond many Jews of [his] age\" through his zealousness (Galatians 1:13-14).\n\n## Historical Significance\n\nThis background is crucial for understanding Paul's transformation: his persecution of Christians and later dramatic conversion (c. 33-35 CE) made him a controversial figure initially, yet his deep Jewish training later enabled him to articulate Christianity's relationship to Judaism.",
+    "duration": 43320,
     "status": "success",
     "rendered_columns": [],
-    "created_at": "2025-12-30T00:17:21.862Z",
+    "created_at": "2025-12-30T13:52:43.736Z",
     "score": 0.46,
     "scores": [
       {
-        "id": 1157,
-        "eval_id": 257,
-        "name": "Theological Accuracy Judge",
+        "id": 15,
+        "eval_id": 34,
+        "name": "Historical Accuracy Judge",
         "score": 0.92,
-        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "description": "LLM-based evaluation of historical and contextual accuracy",
         "metadata": {
           "doctrinally_sound": true,
           "biblically_grounded": true,
           "nuance_captured": true,
-          "errors": [
-            "The phrase 'participating in the stoning' could imply Paul personally threw stones; the biblical text indicates he consented to Stephen's death (Acts 7:58; 8:1) rather than actively stoning him himself."
-          ],
-          "rationale": "The response accurately reflects Paul's pre-conversion identity: he was a Pharisee, a Roman citizen, trained in Jewish law under Gamaliel, and a zealous persecutor of Christians. It aligns with biblical data (Acts 22:3; Acts 7–8; Galatians 1:13–14; Philippians 3:5) and with historic Christian orthodoxy. The only nuance is the potential overstatement about his personal participation in Stephen's stoning; the text shows he approved of Stephen's death rather than necessarily throwing stones himself."
+          "errors": [],
+          "rationale": "The response accurately presents Paul's pre-conversion background as a Jew from Tarsus with Roman citizenship, educated in Jewish law, and identified as a Pharisee. It correctly notes his zealous persecution of Christians (including the Stephen incident and Damascus arrest attempt), and cites Paul’s own statements in Galatians 1:13–14 and his Philippians 3:4–6 to support this characterization. It also acknowledges the Damascus road conversion and places the event in the commonly dated window around AD 33–35, which aligns with scholarly consensus. The reference to Gamaliel (Acts 22:3) and the claim of Roman citizenship are well-supported by the biblical text. The discussion of being a Hellenistic/Diaspora Jew and a probable but not explicitly stated social status is a reasonable, cautious interpretation, though not explicitly mandated by the text. Overall, the answer directly addresses the question with appropriate level of detail and context."
         },
-        "created_at": "2025-12-30T00:17:57.441Z"
+        "created_at": "2025-12-30T13:53:27.074Z"
       },
       {
-        "id": 1158,
-        "eval_id": 257,
+        "id": 16,
+        "eval_id": 34,
         "name": "Key Points Coverage",
         "score": 0,
         "description": "Checks if the response includes key factual points using word overlap",
         "metadata": {
-          "keyPoints": [],
+          "keyPhrases": [],
           "matchedPoints": [],
           "missedPoints": [],
           "coverage": 0,
           "totalPoints": 0,
           "pointsFound": 0
         },
-        "created_at": "2025-12-30T00:17:57.441Z"
+        "created_at": "2025-12-30T13:53:27.074Z"
       }
     ],
     "traces": [
       {
-        "id": 441,
-        "eval_id": 257,
+        "id": 8,
+        "eval_id": 34,
         "input": [
           {
             "role": "user",
             "content": [
               {
                 "type": "text",
-                "text": "You are a Bible scholar with deep knowledge of scripture, history, and context.\n\nAnswer the question directly and concisely. Provide the essential facts without preambles, hedging, or unnecessary elaboration.\n\nExamples of good answers:\n- Question: \"Who wrote Romans?\"\n  Answer: \"The Apostle Paul\"\n- Question: \"What was the purpose of Revelation?\"\n  Answer: \"To encourage persecuted Christians with visions of God's ultimate victory and Christ's return\"\n\nDo NOT add phrases like \"According to tradition\" or \"The text was written by\" - just state the facts directly.\n\nWhat was Paul's background before his conversion?"
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: What was Paul's background before his conversion?"
               }
             ]
           }
         ],
         "output": {
-          "text": "Paul was a Pharisee, a Roman citizen, and a zealous persecutor of Christians. He was trained in Jewish law under Gamaliel in Jerusalem and actively worked to suppress the early Christian movement, including participating in the stoning of Stephen.",
+          "text": "# Paul's Background Before His Conversion\n\n## Jewish Heritage and Education\n\nPaul was a **Hellenistic Jew** born in **Tarsus** (in Cilicia, modern-day Turkey), a major city with significant Greek influence. He was born with the Roman name **Saul** and held Roman citizenship—an unusual status for a provincial Jew that likely reflected his family's elevated social position.\n\nHe received rigorous training in **Jewish law and theology**, studying under **Gamaliel**, one of the most respected Pharisaic teachers in first-century Jerusalem (Acts 22:3). This education made him exceptionally knowledgeable in Torah and Jewish tradition.\n\n## Religious Identity\n\nPaul identified as a **Pharisee**, the Jewish sect known for strict adherence to Torah observance and oral tradition. He was zealous about Jewish law and devoted to maintaining Jewish religious practice—characteristics he later emphasized when recounting his pre-conversion life (Philippians 3:4-6).\n\n## Persecution of Christians\n\nMost significantly, Paul actively **persecuted the early Christian movement**. He held the cloaks of those who stoned Stephen (Acts 7:58) and obtained authority to arrest Christians in Damascus (Acts 9:1-2). By his own account, he violently opposed the church and \"advanced in Judaism beyond many Jews of [his] age\" through his zealousness (Galatians 1:13-14).\n\n## Historical Significance\n\nThis background is crucial for understanding Paul's transformation: his persecution of Christians and later dramatic conversion (c. 33-35 CE) made him a controversial figure initially, yet his deep Jewish training later enabled him to articulate Christianity's relationship to Judaism.",
           "toolCalls": []
         },
-        "start_time": 196.145833,
-        "end_time": 2346.622417,
-        "input_tokens": 150,
-        "output_tokens": 57,
-        "total_tokens": 207,
+        "start_time": 310.56375,
+        "end_time": 5915.85575,
+        "input_tokens": 94,
+        "output_tokens": 376,
+        "total_tokens": 470,
         "col_order": 1
       }
     ]
   },
   "suite": {
-    "id": 85,
+    "id": 5,
     "run_id": 1,
     "name": "Context Understanding [Claude Haiku 4.5]",
     "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
@@ -83,6 +81,6 @@
     "variant_group": "Context Understanding",
     "status": "success",
     "duration": 0,
-    "created_at": "2025-12-30T00:17:21.862Z"
+    "created_at": "2025-12-30T13:52:43.736Z"
   }
 }
