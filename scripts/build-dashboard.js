@@ -37,6 +37,11 @@ const EVALUATION_CATEGORIES = {
   'Steering Compliance - Progressive': 'theology'
 };
 
+// Evaluations excluded from overall score (descriptive, not quality metrics)
+const EXCLUDED_FROM_OVERALL_SCORE = [
+  'Theological Orientation'
+];
+
 // Evaluation descriptions extracted from README
 const EVALUATION_DESCRIPTIONS = {
   'Exact Scripture Matching': {
@@ -173,16 +178,21 @@ function main() {
       evaluationScores[evalName] = average(scores);
     }
 
-    // Calculate overall score
-    const overallScore = average(Object.values(evaluationScores));
+    // Calculate overall score (excluding descriptive evaluations)
+    const scoredEvaluations = Object.entries(evaluationScores)
+      .filter(([name]) => !EXCLUDED_FROM_OVERALL_SCORE.includes(name))
+      .map(([, score]) => score);
+    const overallScore = average(scoredEvaluations);
 
-    // Calculate category scores
+    // Calculate category scores (excluding descriptive evaluations)
     const scriptureEvals = Object.entries(evaluationScores)
       .filter(([name]) => EVALUATION_CATEGORIES[name] === 'scripture')
+      .filter(([name]) => !EXCLUDED_FROM_OVERALL_SCORE.includes(name))
       .map(([, score]) => score);
 
     const theologyEvals = Object.entries(evaluationScores)
       .filter(([name]) => EVALUATION_CATEGORIES[name] === 'theology')
+      .filter(([name]) => !EXCLUDED_FROM_OVERALL_SCORE.includes(name))
       .map(([, score]) => score);
 
     return {
