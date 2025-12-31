@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Detailed specifications and evaluation costs for all LLM models tested in BibleBench">
-  <title>Model Specifications - BibleBench</title>
+  <title>Model Leaderboard - BibleBench</title>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nwp.github.io/biblebench/models.html">
-  <meta property="og:title" content="Model Specifications - BibleBench">
+  <meta property="og:title" content="Model Leaderboard - BibleBench">
   <meta property="og:description" content="Comprehensive specifications, pricing, and evaluation costs for all AI models tested in the BibleBench theological benchmark.">
   <meta property="og:image" content="https://nwp.github.io/biblebench/logo.png">
   <meta property="og:site_name" content="BibleBench">
@@ -17,7 +17,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://nwp.github.io/biblebench/models.html">
-  <meta name="twitter:title" content="Model Specifications - BibleBench">
+  <meta name="twitter:title" content="Model Leaderboard - BibleBench">
   <meta name="twitter:description" content="Comprehensive specifications, pricing, and evaluation costs for all AI models tested in the BibleBench theological benchmark.">
   <meta name="twitter:image" content="https://nwp.github.io/biblebench/logo.png">
 
@@ -51,7 +51,7 @@
           <img src="./logo.png" alt="BibleBench Logo" class="logo">
           <h1 class="title">
             <span class="title-main">BibleBench</span>
-            <span class="title-sub">Model Specifications</span>
+            <span class="title-sub">Model Leaderboard</span>
           </h1>
         </div>
       </div>
@@ -83,14 +83,32 @@
         <div class="sort-controls">
           <label for="sort-select">Sort by:</label>
           <select id="sort-select" class="sort-select">
-            <option value="score-high" selected>Overall Score (High to Low)</option>
-            <option value="score-low">Overall Score (Low to High)</option>
-            <option value="value-high">Value (High to Low)</option>
-            <option value="value-low">Value (Low to High)</option>
-            <option value="provider">Provider (A-Z)</option>
-            <option value="cost-high">Evaluation Cost (High to Low)</option>
-            <option value="cost-low">Evaluation Cost (Low to High)</option>
-            <option value="name">Model Name (A-Z)</option>
+            <optgroup label="Overall Performance">
+              <option value="score-high" selected>Overall Score (High to Low)</option>
+              <option value="score-low">Overall Score (Low to High)</option>
+              <option value="value-high">Value (High to Low)</option>
+              <option value="value-low">Value (Low to High)</option>
+            </optgroup>
+            <optgroup label="Scripture Accuracy">
+              <option value="eval-context-understanding">Context Understanding</option>
+              <option value="eval-exact-scripture-matching">Exact Scripture Matching</option>
+              <option value="eval-reference-knowledge">Reference Knowledge</option>
+            </optgroup>
+            <optgroup label="Theological Understanding">
+              <option value="eval-core-doctrines">Core Doctrines</option>
+              <option value="eval-denominational-nuance">Denominational Nuance</option>
+              <option value="eval-heresy-detection">Heresy Detection</option>
+              <option value="eval-pastoral-application">Pastoral Application</option>
+              <option value="eval-sect-theology">Sect Theology</option>
+              <option value="eval-steering-compliance-conservative">Steering Compliance - Conservative</option>
+              <option value="eval-steering-compliance-progressive">Steering Compliance - Progressive</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="provider">Provider (A-Z)</option>
+              <option value="cost-high">Evaluation Cost (High to Low)</option>
+              <option value="cost-low">Evaluation Cost (Low to High)</option>
+              <option value="name">Model Name (A-Z)</option>
+            </optgroup>
           </select>
         </div>
 

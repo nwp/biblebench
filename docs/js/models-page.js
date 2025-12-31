@@ -3,6 +3,20 @@
  * Renders model specifications and usage data
  */
 
+// Evaluation sort value to dashboard evaluation name mapping
+const EVAL_SORT_MAP = {
+  'eval-context-understanding': 'Context Understanding',
+  'eval-core-doctrines': 'Core Doctrines',
+  'eval-denominational-nuance': 'Denominational Nuance',
+  'eval-exact-scripture-matching': 'Exact Scripture Matching',
+  'eval-heresy-detection': 'Heresy Detection',
+  'eval-pastoral-application': 'Pastoral Application',
+  'eval-reference-knowledge': 'Reference Knowledge',
+  'eval-sect-theology': 'Sect Theology',
+  'eval-steering-compliance-conservative': 'Steering Compliance - Conservative',
+  'eval-steering-compliance-progressive': 'Steering Compliance - Progressive'
+};
+
 class ModelsPageManager {
   constructor() {
     this.metadata = null;
@@ -105,6 +119,18 @@ class ModelsPageManager {
   getSortedModels() {
     const modelsArray = Object.values(this.metadata);
 
+    // Check if this is an evaluation sort
+    if (this.sortOption.startsWith('eval-')) {
+      const evaluationName = EVAL_SORT_MAP[this.sortOption];
+      if (evaluationName) {
+        return modelsArray.sort((a, b) => {
+          const scoreA = this.getModelEvaluationScore(a.id, evaluationName);
+          const scoreB = this.getModelEvaluationScore(b.id, evaluationName);
+          return scoreB - scoreA; // High to low
+        });
+      }
+    }
+
     switch (this.sortOption) {
       case 'value-high':
         return modelsArray.sort((a, b) => {
@@ -172,6 +198,82 @@ class ModelsPageManager {
 
     // Value = Score per dollar (higher is better)
     return score / cost;
+  }
+
+  getModelEvaluationScore(modelId, evaluationName) {
+    const dashboardModel = this.dashboard.models.find(m => m.id === modelId);
+    return dashboardModel?.evaluationScores?.[evaluationName] || 0;
+  }
+
+  getModelCategoryScore(modelId, category) {
+    const dashboardModel = this.dashboard.models.find(m => m.id === modelId);
+    return dashboardModel?.categoryScores?.[category] || 0;
+  }
+
+  formatTheologicalOrientation(score) {
+    if (score < 0.33) {
+      return 'More Progressive';
+    } else if (score < 0.67) {
+      return 'Moderate';
+    } else {
+      return 'More Conservative';
+    }
+  }
+
+  createEvaluationCategory(modelId, categoryName, categoryKey, evaluations) {
+    const details = document.createElement('details');
+    details.className = 'eval-category';
+
+    const summary = document.createElement('summary');
+    const score = this.getModelCategoryScore(modelId, categoryKey);
+
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'category-name';
+    nameSpan.textContent = categoryName;
+    summary.appendChild(nameSpan);
+
+    const scoreSpan = document.createElement('span');
+    scoreSpan.className = 'category-score';
+    scoreSpan.textContent = `${(score * 100).toFixed(1)}%`;
+    summary.appendChild(scoreSpan);
+
+    details.appendChild(summary);
+
+    const evalsList = document.createElement('div');
+    evalsList.className = 'evals-list';
+
+    for (const evalName of evaluations) {
+      const evalScore = this.getModelEvaluationScore(modelId, evalName);
+      const evalItem = this.createEvalItem(evalName, evalScore);
+      evalsList.appendChild(evalItem);
+    }
+
+    details.appendChild(evalsList);
+    return details;
+  }
+
+  createEvalItem(name, score) {
+    const item = document.createElement('div');
+    item.className = 'eval-item';
+
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'eval-name';
+    nameSpan.textContent = name;
+
+    const scoreSpan = document.createElement('span');
+    scoreSpan.className = 'eval-score';
+
+    // Format Theological Orientation as categorical instead of percentage
+    if (name === 'Theological Orientation') {
+      scoreSpan.textContent = this.formatTheologicalOrientation(score);
+    } else {
+      scoreSpan.textContent = `${(score * 100).toFixed(1)}%`;
+    }
+
+    item.appendChild(nameSpan);
+    item.appendChild(scoreSpan);
+
+    return item;
   }
 
   createFlatSection(models) {
@@ -260,14 +362,14 @@ class ModelsPageManager {
     description.textContent = model.description;
     card.appendChild(description);
 
-    const specs = this.createModelSpecs(model);
-    card.appendChild(specs);
+    const evalPerformance = this.createEvaluationPerformance(model);
+    card.appendChild(evalPerformance);
 
-    const usageSection = this.createUsageSection(usage);
+    const usageSection = this.createUsageSection(usage, model);
     card.appendChild(usageSection);
 
-    const capabilities = this.createCapabilitiesSection(model);
-    card.appendChild(capabilities);
+    const specsAndCaps = this.createSpecsAndCapabilities(model);
+    card.appendChild(specsAndCaps);
 
     return card;
   }
@@ -301,33 +403,90 @@ class ModelsPageManager {
     return header;
   }
 
-  createModelSpecs(model) {
-    const specs = document.createElement('div');
-    specs.className = 'model-specs';
+  createEvaluationPerformance(model) {
+    const section = document.createElement('div');
+    section.className = 'evaluation-performance';
 
-    const score = this.getModelScore(model.id);
-    const scoreSpec = this.createSpec('Overall Score', `${(score * 100).toFixed(1)}%`);
-    scoreSpec.classList.add('spec-highlight');
-    specs.appendChild(scoreSpec);
+    const heading = document.createElement('h5');
+    heading.className = 'section-heading';
+    heading.textContent = 'Evaluation Performance';
+    section.appendChild(heading);
 
-    const valueScore = this.getModelValueScore(model.id);
-    const cost = this.usage[model.id]?.totalCost || 0;
-    if (cost > 0 && valueScore > 0) {
-      const valueSpec = this.createSpec('Value Score', `${(valueScore * 100).toFixed(1)} pts/$`);
-      valueSpec.classList.add('spec-highlight', 'spec-value');
-      specs.appendChild(valueSpec);
+    // Determine which metric to display prominently based on sort option
+    let prominentLabel = 'Overall Score';
+    let prominentScore = this.getModelScore(model.id);
+
+    // If sorting by a specific evaluation, show that evaluation instead
+    if (this.sortOption.startsWith('eval-')) {
+      const evaluationName = EVAL_SORT_MAP[this.sortOption];
+      if (evaluationName) {
+        prominentLabel = evaluationName;
+        prominentScore = this.getModelEvaluationScore(model.id, evaluationName);
+      }
     }
 
-    const contextSpec = this.createSpec('Context Length', `${this.formatNumber(model.contextLength)} tokens`);
-    specs.appendChild(contextSpec);
+    // Create prominent score display with dynamic label
+    const overallDiv = document.createElement('div');
+    overallDiv.className = 'overall-score-display';
 
-    const promptSpec = this.createSpec('Prompt Cost', `$${this.formatCostPerMillion(model.cost.prompt)}/M tokens`);
-    specs.appendChild(promptSpec);
+    const labelSpan = document.createElement('span');
+    labelSpan.className = 'label';
+    labelSpan.textContent = prominentLabel;
+    overallDiv.appendChild(labelSpan);
 
-    const completionSpec = this.createSpec('Completion Cost', `$${this.formatCostPerMillion(model.cost.completion)}/M tokens`);
-    specs.appendChild(completionSpec);
+    const scoreSpan = document.createElement('span');
+    scoreSpan.className = 'score highlight';
 
-    return specs;
+    // Format Theological Orientation as categorical instead of percentage
+    if (prominentLabel === 'Theological Orientation') {
+      scoreSpan.textContent = this.formatTheologicalOrientation(prominentScore);
+    } else {
+      scoreSpan.textContent = `${(prominentScore * 100).toFixed(1)}%`;
+    }
+
+    overallDiv.appendChild(scoreSpan);
+
+    section.appendChild(overallDiv);
+
+    // Category sections (expandable)
+    const categoriesContainer = document.createElement('div');
+    categoriesContainer.className = 'eval-categories';
+
+    // Scripture Accuracy
+    const scriptureEvals = [
+      'Context Understanding',
+      'Exact Scripture Matching',
+      'Reference Knowledge'
+    ];
+    const scriptureCategory = this.createEvaluationCategory(
+      model.id,
+      'Scripture Accuracy',
+      'scripture',
+      scriptureEvals
+    );
+    categoriesContainer.appendChild(scriptureCategory);
+
+    // Theological Understanding
+    const theologyEvals = [
+      'Core Doctrines',
+      'Denominational Nuance',
+      'Heresy Detection',
+      'Pastoral Application',
+      'Sect Theology',
+      'Steering Compliance - Conservative',
+      'Steering Compliance - Progressive',
+      'Theological Orientation'
+    ];
+    const theologyCategory = this.createEvaluationCategory(
+      model.id,
+      'Theological Understanding',
+      'theology',
+      theologyEvals
+    );
+    categoriesContainer.appendChild(theologyCategory);
+
+    section.appendChild(categoriesContainer);
+    return section;
   }
 
   createSpec(label, value) {
@@ -347,7 +506,7 @@ class ModelsPageManager {
     return spec;
   }
 
-  createUsageSection(usage) {
+  createUsageSection(usage, model) {
     const container = document.createElement('div');
     container.className = 'usage-stats';
 
@@ -377,8 +536,17 @@ class ModelsPageManager {
     const costStat = this.createStat('Total Cost', `$${this.formatCost(usage.totalCost)}`, true);
     grid.appendChild(costStat);
 
-    const testsStat = this.createStat('Test Cases', this.formatNumber(usage.evaluationsCount));
-    grid.appendChild(testsStat);
+    // Replace Test Cases with Value Score
+    const valueScore = this.getModelValueScore(model.id);
+    if (valueScore > 0) {
+      const valueStat = this.createStat('Value Score', `${(valueScore * 100).toFixed(1)} pts/$`);
+      valueStat.classList.add('spec-value');
+      grid.appendChild(valueStat);
+    } else {
+      // Fallback to test cases if no value score available
+      const testsStat = this.createStat('Test Cases', this.formatNumber(usage.evaluationsCount));
+      grid.appendChild(testsStat);
+    }
 
     container.appendChild(grid);
     return container;
@@ -401,16 +569,39 @@ class ModelsPageManager {
     return stat;
   }
 
-  createCapabilitiesSection(model) {
+  createSpecsAndCapabilities(model) {
     const details = document.createElement('details');
     details.className = 'capabilities';
 
     const summary = document.createElement('summary');
-    summary.textContent = 'Capabilities';
+    summary.textContent = 'Specifications & Capabilities';
     details.appendChild(summary);
 
     const content = document.createElement('div');
     content.className = 'capabilities-content';
+
+    // Add model specifications first
+    const specsHeading = document.createElement('p');
+    const specsStrong = document.createElement('strong');
+    specsStrong.textContent = 'Model Specifications';
+    specsHeading.appendChild(specsStrong);
+    content.appendChild(specsHeading);
+
+    const specsList = document.createElement('ul');
+
+    const contextItem = document.createElement('li');
+    contextItem.textContent = `Context Length: ${this.formatNumber(model.contextLength)} tokens`;
+    specsList.appendChild(contextItem);
+
+    const promptItem = document.createElement('li');
+    promptItem.textContent = `Prompt Cost: $${this.formatCostPerMillion(model.cost.prompt)}/M tokens`;
+    specsList.appendChild(promptItem);
+
+    const completionItem = document.createElement('li');
+    completionItem.textContent = `Completion Cost: $${this.formatCostPerMillion(model.cost.completion)}/M tokens`;
+    specsList.appendChild(completionItem);
+
+    content.appendChild(specsList);
 
     // Modalities
     if (model.modalities) {
