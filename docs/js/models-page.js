@@ -8,7 +8,7 @@ class ModelsPageManager {
     this.metadata = null;
     this.usage = null;
     this.dashboard = null;
-    this.sortOption = 'value-high';
+    this.sortOption = 'score-high';
   }
 
   async init() {
