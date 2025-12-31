@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 14,
+    "suite_id": 1,
+    "col_order": 13,
+    "input": "Quote Proverbs 3:5-6 from the King James Version (KJV) exactly as written",
+    "expected": "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths",
+    "output": "Trust in the LORD with all thine heart; and lean not unto thine own understanding.  \nIn all thy ways acknowledge him, and he shall direct thy paths.",
+    "duration": 24395,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:33:42.669Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 18,
+        "eval_id": 14,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-31T16:34:07.083Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 18,
+        "eval_id": 14,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Proverbs 3:5-6 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Trust in the LORD with all thine heart; and lean not unto thine own understanding.  \nIn all thy ways acknowledge him, and he shall direct thy paths.",
+          "toolCalls": []
+        },
+        "start_time": 305.074833,
+        "end_time": 24694.772375,
+        "input_tokens": 92,
+        "output_tokens": 179,
+        "total_tokens": 271,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 1,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-5.2 Pro]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-5.2 Pro",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:33:42.668Z"
+  }
+}

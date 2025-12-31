@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 7,
+    "suite_id": 1,
+    "col_order": 6,
+    "input": "What is the reference for the love chapter that starts with 'If I speak in the tongues of men or of angels'?",
+    "expected": "1 Corinthians 13",
+    "output": "1 Corinthians 13:1",
+    "duration": 12355,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:41:00.533Z",
+    "score": 0.8333333333333334,
+    "scores": [
+      {
+        "id": 16,
+        "eval_id": 7,
+        "name": "Scripture Reference Accuracy",
+        "score": 0.5,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": true
+        },
+        "created_at": "2025-12-31T16:41:12.906Z"
+      },
+      {
+        "id": 17,
+        "eval_id": 7,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-31T16:41:12.906Z"
+      },
+      {
+        "id": 18,
+        "eval_id": 7,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "1 Corinthians 13:1"
+        },
+        "created_at": "2025-12-31T16:41:12.906Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 6,
+        "eval_id": 7,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for the love chapter that starts with 'If I speak in the tongues of men or of angels'?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "1 Corinthians 13:1",
+          "toolCalls": []
+        },
+        "start_time": 277.694709,
+        "end_time": 12629.276542,
+        "input_tokens": 72,
+        "output_tokens": 93,
+        "total_tokens": 165,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 1,
+    "run_id": 1,
+    "name": "Reference Knowledge [GPT-5.2 Pro]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "GPT-5.2 Pro",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:41:00.532Z"
+  }
+}

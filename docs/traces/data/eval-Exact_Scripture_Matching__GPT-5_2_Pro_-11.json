@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 12,
+    "suite_id": 1,
+    "col_order": 11,
+    "input": "Quote Romans 3:23 from the New International Version (NIV) exactly as written",
+    "expected": "for all have sinned and fall short of the glory of God",
+    "output": "for all have sinned and fall short of the glory of God,",
+    "duration": 29797,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:33:42.669Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 21,
+        "eval_id": 12,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-31T16:34:12.485Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 21,
+        "eval_id": 12,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Romans 3:23 from the New International Version (NIV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "for all have sinned and fall short of the glory of God,",
+          "toolCalls": []
+        },
+        "start_time": 304.873167,
+        "end_time": 30097.063875,
+        "input_tokens": 90,
+        "output_tokens": 172,
+        "total_tokens": 262,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 1,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-5.2 Pro]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-5.2 Pro",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:33:42.668Z"
+  }
+}
