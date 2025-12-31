@@ -1,0 +1,102 @@
+{
+  "eval": {
+    "id": 31,
+    "suite_id": 5,
+    "col_order": 3,
+    "input": "A teacher says: 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human.' Evaluate this teaching.",
+    "expected": "This is the heresy of Docetism. It denies the true humanity of Christ. Orthodox Christianity teaches the hypostatic union - Jesus is fully God AND fully human. He had a real physical body, experienced hunger, thirst, fatigue, and truly died on the cross. 1 John 4:2-3 explicitly condemns denying that Jesus came in the flesh, and Hebrews 2:17 states he had to be made fully human to be our high priest.",
+    "output": "This teaching is a heresy. It is the ancient error called \"Docetism\" (from the Greek dokein, “to seem”), which claims Christ only appeared to be human and did not really possess a true human body. The church has consistently rejected this view. Why:\n\n1. It contradicts Scripture\n- The New Testament repeatedly affirms the real, embodied humanity of Jesus: John 1:14 (“The Word became flesh”), Luke 2 (birth narratives), Matthew 4:2 (he hungered), Matthew 26:38 (he was sorrowful and troubled), John 19:34 (blood and water from his side), Hebrews 2:14–18 and 4:15 (he shared in our flesh and was tempted), 1 Timothy 3:16, 1 John 4:2–3 (confession that Christ came in the flesh), and 1 Corinthians 15 (death and bodily resurrection). If Jesus only “seemed” to have a body, these texts are rendered misleading or false.\n\n2. It undermines salvation\n- Christian soteriology depends on the real incarnation, death, and resurrection of Jesus. If Jesus did not truly assume human nature and truly die in a human body, then he did not redeem human flesh (cf. Romans 5; Hebrews 2). A counterfeit or merely apparent suffering cannot accomplish atonement.\n\n3. It was condemned by the early church\n- Docetism was opposed by the Apostles’ tradition and vigorously rebutted by early Christians (e.g., Ignatius of Antioch, Irenaeus, Tertullian). Councils and creeds affirm the true humanity of Christ (Nicene and Chalcedonian formulations). The Chalcedonian Definition (451) affirms that Christ is one Person in two natures, “without confusion, without change, without division, without separation” — truly God and truly man.\n\n4. The orthodox doctrine to affirm\n- Classical (orthodox) Christology teaches the hypostatic union: the eternal Son of God assumed a complete human nature (body and rational soul) and so is fully God and fully man in one Person. That human nature was real, not illusory, and was united to the divine Person of the Son.\n\n5. Clarification about “spiritual body”\n- Some confusion arises from passages about a “spiritual body” (1 Corinthians 15) — that language concerns the transformed, resurrected body, not the historical incarnation. The claim that Jesus was only a spiritual phantom during his earthly life is not what 1 Corinthians 15 teaches and remains unorthodox.\n\nConclusion\n- The statement is heretical (Docetism). It denies core biblical and creedal truths about the incarnation and therefore was rejected by the historic church. For further reading: Ignatius’ letters, Irenaeus’ Against Heresies, Athanasius’ On the Incarnation, and the Chalcedonian Definition.",
+    "duration": 46270,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:08:58.838Z",
+    "score": 0.9833333333333334,
+    "scores": [
+      {
+        "id": 14,
+        "eval_id": 31,
+        "name": "Theological Accuracy Judge",
+        "score": 0.95,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM response accurately identifies Docetism as the heretical view that Jesus only seemed to be human and had no real body. It correctly affirms orthodox Christology: the hypostatic union, that Christ is fully God and fully man, with a real human nature united to the divine Person. It cites and interprets key biblical passages (e.g., John 1:14; Luke 2; Matthew 4:2; John 19:34; Hebrews 2; 1 John 4:2–3; 1 Corinthians 15) and clarifies the meaning of ‘spiritual body’ in the context of resurrection rather than the historical incarnation. It also notes soteriological implications (incarnation, death, resurrection) and the early church’s condemnation through patristic writers and the Chalcedonian definition, which aligns with historic orthodoxy. The point about “spiritual body” is nuanced and correctly distinguished from the incarnation. A very minor potential improvement would be to foreground the incarnation language of John 1:14 earlier, but overall the answer is doctrinally sound, biblically grounded, and nuanced."
+        },
+        "created_at": "2025-12-31T16:09:45.111Z"
+      },
+      {
+        "id": 15,
+        "eval_id": 31,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-31T16:09:45.111Z"
+      },
+      {
+        "id": 16,
+        "eval_id": 31,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "biblical",
+            "scripture",
+            "heretical",
+            "heresy",
+            "false",
+            "error",
+            "contradicts"
+          ],
+          "count": 8
+        },
+        "created_at": "2025-12-31T16:09:45.111Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 6,
+        "eval_id": 31,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nA teacher says: 'Jesus only seemed to have a physical body. He was actually a purely spiritual being who appeared human but wasn't truly human.' Evaluate this teaching."
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "This teaching is a heresy. It is the ancient error called \"Docetism\" (from the Greek dokein, “to seem”), which claims Christ only appeared to be human and did not really possess a true human body. The church has consistently rejected this view. Why:\n\n1. It contradicts Scripture\n- The New Testament repeatedly affirms the real, embodied humanity of Jesus: John 1:14 (“The Word became flesh”), Luke 2 (birth narratives), Matthew 4:2 (he hungered), Matthew 26:38 (he was sorrowful and troubled), John 19:34 (blood and water from his side), Hebrews 2:14–18 and 4:15 (he shared in our flesh and was tempted), 1 Timothy 3:16, 1 John 4:2–3 (confession that Christ came in the flesh), and 1 Corinthians 15 (death and bodily resurrection). If Jesus only “seemed” to have a body, these texts are rendered misleading or false.\n\n2. It undermines salvation\n- Christian soteriology depends on the real incarnation, death, and resurrection of Jesus. If Jesus did not truly assume human nature and truly die in a human body, then he did not redeem human flesh (cf. Romans 5; Hebrews 2). A counterfeit or merely apparent suffering cannot accomplish atonement.\n\n3. It was condemned by the early church\n- Docetism was opposed by the Apostles’ tradition and vigorously rebutted by early Christians (e.g., Ignatius of Antioch, Irenaeus, Tertullian). Councils and creeds affirm the true humanity of Christ (Nicene and Chalcedonian formulations). The Chalcedonian Definition (451) affirms that Christ is one Person in two natures, “without confusion, without change, without division, without separation” — truly God and truly man.\n\n4. The orthodox doctrine to affirm\n- Classical (orthodox) Christology teaches the hypostatic union: the eternal Son of God assumed a complete human nature (body and rational soul) and so is fully God and fully man in one Person. That human nature was real, not illusory, and was united to the divine Person of the Son.\n\n5. Clarification about “spiritual body”\n- Some confusion arises from passages about a “spiritual body” (1 Corinthians 15) — that language concerns the transformed, resurrected body, not the historical incarnation. The claim that Jesus was only a spiritual phantom during his earthly life is not what 1 Corinthians 15 teaches and remains unorthodox.\n\nConclusion\n- The statement is heretical (Docetism). It denies core biblical and creedal truths about the incarnation and therefore was rejected by the historic church. For further reading: Ignatius’ letters, Irenaeus’ Against Heresies, Athanasius’ On the Incarnation, and the Chalcedonian Definition.",
+          "toolCalls": []
+        },
+        "start_time": 376.326125,
+        "end_time": 24725.152708,
+        "input_tokens": 74,
+        "output_tokens": 1641,
+        "total_tokens": 1715,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 5,
+    "run_id": 1,
+    "name": "Heresy Detection [GPT-5 Mini]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "GPT-5 Mini",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:08:58.838Z"
+  }
+}

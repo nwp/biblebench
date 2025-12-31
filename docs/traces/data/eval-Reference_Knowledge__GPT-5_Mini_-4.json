@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 146,
+    "suite_id": 31,
+    "col_order": 4,
+    "input": "Where does Paul write about the armor of God?",
+    "expected": "Ephesians 6:10-18",
+    "output": "Ephesians 6:10-18",
+    "duration": 3086,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:10:12.803Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 192,
+        "eval_id": 146,
+        "name": "Scripture Reference Accuracy",
+        "score": 1,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": true,
+          "contains": true
+        },
+        "created_at": "2025-12-31T16:10:15.909Z"
+      },
+      {
+        "id": 193,
+        "eval_id": 146,
+        "name": "Contains Answer",
+        "score": 1,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": true
+        },
+        "created_at": "2025-12-31T16:10:15.909Z"
+      },
+      {
+        "id": 194,
+        "eval_id": 146,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Ephesians 6:10-18"
+        },
+        "created_at": "2025-12-31T16:10:15.909Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 70,
+        "eval_id": 146,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhere does Paul write about the armor of God?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Ephesians 6:10-18",
+          "toolCalls": []
+        },
+        "start_time": 158.870166,
+        "end_time": 3240.755833,
+        "input_tokens": 58,
+        "output_tokens": 142,
+        "total_tokens": 200,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [GPT-5 Mini]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "GPT-5 Mini",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:10:12.803Z"
+  }
+}

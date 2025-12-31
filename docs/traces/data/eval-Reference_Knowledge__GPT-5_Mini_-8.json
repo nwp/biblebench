@@ -1,0 +1,90 @@
+{
+  "eval": {
+    "id": 150,
+    "suite_id": 31,
+    "col_order": 8,
+    "input": "What is the reference for the Great Commission?",
+    "expected": "Matthew 28:19-20",
+    "output": "Matthew 28:18–20",
+    "duration": 6045,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:10:12.803Z",
+    "score": 0.3333333333333333,
+    "scores": [
+      {
+        "id": 230,
+        "eval_id": 150,
+        "name": "Scripture Reference Accuracy",
+        "score": 0,
+        "description": "Validates scripture reference formatting and accuracy",
+        "metadata": {
+          "exactMatch": false,
+          "contains": false
+        },
+        "created_at": "2025-12-31T16:10:18.867Z"
+      },
+      {
+        "id": 231,
+        "eval_id": 150,
+        "name": "Contains Answer",
+        "score": 0,
+        "description": "Checks if the output contains the expected answer",
+        "metadata": {
+          "contains": false
+        },
+        "created_at": "2025-12-31T16:10:18.867Z"
+      },
+      {
+        "id": 232,
+        "eval_id": 150,
+        "name": "Reference Format",
+        "score": 1,
+        "description": "Checks if the reference is in correct format",
+        "metadata": {
+          "validFormat": true,
+          "output": "Matthew 28:18–20"
+        },
+        "created_at": "2025-12-31T16:10:18.867Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 90,
+        "eval_id": 150,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar. Provide the exact scripture reference (book, chapter, and verse) for the following question. Give only the reference in standard format (e.g., \"John 3:16\").\n\nWhat is the reference for the Great Commission?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Matthew 28:18–20",
+          "toolCalls": []
+        },
+        "start_time": 159.446375,
+        "end_time": 6201.58375,
+        "input_tokens": 57,
+        "output_tokens": 205,
+        "total_tokens": 262,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 31,
+    "run_id": 1,
+    "name": "Reference Knowledge [GPT-5 Mini]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/reference-knowledge.eval.ts",
+    "variant_name": "GPT-5 Mini",
+    "variant_group": "Reference Knowledge",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:10:12.803Z"
+  }
+}

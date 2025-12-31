@@ -1,0 +1,98 @@
+{
+  "eval": {
+    "id": 34,
+    "suite_id": 5,
+    "col_order": 6,
+    "input": "Is the statement 'Jesus is Lord' sufficient for orthodox Christian belief, or are there other essential beliefs?",
+    "expected": "While 'Jesus is Lord' is foundational (Romans 10:9), orthodox Christianity requires additional essential beliefs about WHO Jesus is. The early creeds developed to combat heresies: Jesus must be confessed as fully God and fully human (against Arianism and Docetism), the Trinity must be affirmed (against modalism), salvation by grace through faith (against works-righteousness), and the authority of Scripture. These essential doctrines form the core of historic Christian orthodoxy.",
+    "output": "Short answer: Saying “Jesus is Lord” is a necessary confession of Christian faith, but by itself it is not sufficient to guarantee orthodox Christian belief. The confession must be understood within the fuller content of Trinitarian and Christological doctrine and the gospel (faith in his death, resurrection, and saving work) to be classed as orthodox.\n\nWhy “Jesus is Lord” is necessary\n- New Testament usage: Romans 10:9 links confessing “Jesus is Lord” with believing that God raised him — the two together are the basis for salvation in Paul’s formulation. Acts 2:36 and Philippians 2:9–11 likewise present Jesus’ lordship as central to Christian worship and confession.\n- Historically, the early church used the simple baptismal confession “Jesus is Lord” (cf. 1 Cor 12:3) as the kernel of Christian identity.\n\nWhy the phrase alone is not sufficient for orthodoxy\n- Ambiguity: “Jesus is Lord” can be claimed by persons who deny key doctrines. A Unitarian or an Arian could confess Jesus’ lordship while denying his full divinity; an Adoptionist could call him Lord but deny his eternal Sonship; a Socinian could speak of his exemplary lordship but deny atoning substitution and bodily resurrection.\n- Heresies that illustrate the insufficiency: Arianism (denies homoousios — full deity), Adoptionism (denies pre‑existent Son), Nestorianism and Monophysitism (distort Christ’s person and natures), Modalism/Oneness (denies three distinct persons), and forms of liberal theology that reduce Jesus to merely an ethical teacher. Each could accept “Jesus is Lord” in some sense but fail to be orthodox.\n- Orthodoxy requires precise formulations to safeguard what is meant by “Lord”: that Jesus is the eternal Son, truly God and truly human, whose life, atoning death, bodily resurrection and ascension accomplish salvation.\n\nWhat the church has historically treated as essential\nThe ecumenical creeds and councils defined the core content needed to make the confession “Jesus is Lord” orthodox. Key elements typically include:\n- One God in three persons (Trinity).\n- Jesus Christ as the eternal Word/only‑begotten Son, fully God (homoousios with the Father) and fully human (incarnation).\n- The two natures of Christ in one person (Chalcedon).\n- His atoning work (death and resurrection) and the reality of the bodily resurrection.\n- God’s saving grace received by faith, accompanied by repentance and new life.\n- The authority of God’s revelation (Scripture) and the church’s sacramental/worship life as interpretive context for belief.\n\nPastoral and soteriological nuance\n- For individual salvation Paul’s formula emphasizes both public confession and inner belief: “confess with your mouth… believe in your heart” (Rom 10:9). Mere lip‑service without heart belief, repentance, and reliance on Christ’s saving work is not salvific.\n- Different Christian traditions will add emphases (e.g., sacraments and ecclesial authority in Catholic/Orthodox teaching; sola fide and sola gratia in Protestant teaching), but all major orthodox traditions affirm the Trinitarian Christology and the saving work of Christ as non‑negotiable.\n\nConclusion\n“Jesus is Lord” is an indispensable and central confession, but orthodoxy requires that those words be understood in the full biblical and creedal sense: the Triune God, the true deity and true humanity of Christ, his atoning death and resurrection, and the gospel of salvation by grace through faith. Without that content, the simple phrase can be compatible with heterodox or heretical positions.",
+    "duration": 73790,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:08:58.838Z",
+    "score": 0.9733333333333333,
+    "scores": [
+      {
+        "id": 170,
+        "eval_id": 34,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM response accurately affirms that while the confession “Jesus is Lord” is essential, it is not sufficient in isolation for orthodox Christian belief. It correctly anchors lordship in biblical passages (Rom 10:9; Acts 2:36; Phil 2:9–11) and notes that early creeds were developed to safeguard a precise Christology and Trinitarian doctrine (fully God and fully human; the Trinity; the incarnation; atonement and resurrection; salvation by grace through faith; authority of Scripture). It also rightly acknowledges historical heresies (Arianism, Docetism, Adoptionism, Nestorianism, Monophysitism, Modalism) and explains why a fuller doctrinal content is required. The reference to Chalcedon (two natures in one person) and the affirmation of the church’s authority and the gospel as the framework for orthodoxy align with historic orthodoxy. The multi-tradition nuance—acknowledging differences among Catholic/Orthodox and Protestant emphases (sacraments, ecclesial authority, sola fide, etc.)—is handled with appropriate care, recognizing non-negotiables (Trinity, person of Christ, atoning work) across traditions. A minor caveat is that some Protestant traditions emphasize Scripture as the final authority over tradition; the text includes Scripture as an essential authority while noting variations in emphasis, which is accurate for “historic orthodoxy.” Overall, the answer is doctrinally sound, biblically grounded, and nuanced.}"
+        },
+        "created_at": "2025-12-31T16:10:12.631Z"
+      },
+      {
+        "id": 171,
+        "eval_id": 34,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-31T16:10:12.631Z"
+      },
+      {
+        "id": 172,
+        "eval_id": 34,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "biblical",
+            "scripture",
+            "heretical"
+          ],
+          "count": 4
+        },
+        "created_at": "2025-12-31T16:10:12.631Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 55,
+        "eval_id": 34,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nIs the statement 'Jesus is Lord' sufficient for orthodox Christian belief, or are there other essential beliefs?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Short answer: Saying “Jesus is Lord” is a necessary confession of Christian faith, but by itself it is not sufficient to guarantee orthodox Christian belief. The confession must be understood within the fuller content of Trinitarian and Christological doctrine and the gospel (faith in his death, resurrection, and saving work) to be classed as orthodox.\n\nWhy “Jesus is Lord” is necessary\n- New Testament usage: Romans 10:9 links confessing “Jesus is Lord” with believing that God raised him — the two together are the basis for salvation in Paul’s formulation. Acts 2:36 and Philippians 2:9–11 likewise present Jesus’ lordship as central to Christian worship and confession.\n- Historically, the early church used the simple baptismal confession “Jesus is Lord” (cf. 1 Cor 12:3) as the kernel of Christian identity.\n\nWhy the phrase alone is not sufficient for orthodoxy\n- Ambiguity: “Jesus is Lord” can be claimed by persons who deny key doctrines. A Unitarian or an Arian could confess Jesus’ lordship while denying his full divinity; an Adoptionist could call him Lord but deny his eternal Sonship; a Socinian could speak of his exemplary lordship but deny atoning substitution and bodily resurrection.\n- Heresies that illustrate the insufficiency: Arianism (denies homoousios — full deity), Adoptionism (denies pre‑existent Son), Nestorianism and Monophysitism (distort Christ’s person and natures), Modalism/Oneness (denies three distinct persons), and forms of liberal theology that reduce Jesus to merely an ethical teacher. Each could accept “Jesus is Lord” in some sense but fail to be orthodox.\n- Orthodoxy requires precise formulations to safeguard what is meant by “Lord”: that Jesus is the eternal Son, truly God and truly human, whose life, atoning death, bodily resurrection and ascension accomplish salvation.\n\nWhat the church has historically treated as essential\nThe ecumenical creeds and councils defined the core content needed to make the confession “Jesus is Lord” orthodox. Key elements typically include:\n- One God in three persons (Trinity).\n- Jesus Christ as the eternal Word/only‑begotten Son, fully God (homoousios with the Father) and fully human (incarnation).\n- The two natures of Christ in one person (Chalcedon).\n- His atoning work (death and resurrection) and the reality of the bodily resurrection.\n- God’s saving grace received by faith, accompanied by repentance and new life.\n- The authority of God’s revelation (Scripture) and the church’s sacramental/worship life as interpretive context for belief.\n\nPastoral and soteriological nuance\n- For individual salvation Paul’s formula emphasizes both public confession and inner belief: “confess with your mouth… believe in your heart” (Rom 10:9). Mere lip‑service without heart belief, repentance, and reliance on Christ’s saving work is not salvific.\n- Different Christian traditions will add emphases (e.g., sacraments and ecclesial authority in Catholic/Orthodox teaching; sola fide and sola gratia in Protestant teaching), but all major orthodox traditions affirm the Trinitarian Christology and the saving work of Christ as non‑negotiable.\n\nConclusion\n“Jesus is Lord” is an indispensable and central confession, but orthodoxy requires that those words be understood in the full biblical and creedal sense: the Triune God, the true deity and true humanity of Christ, his atoning death and resurrection, and the gospel of salvation by grace through faith. Without that content, the simple phrase can be compatible with heterodox or heretical positions.",
+          "toolCalls": []
+        },
+        "start_time": 376.793583,
+        "end_time": 47127.348167,
+        "input_tokens": 62,
+        "output_tokens": 1607,
+        "total_tokens": 1669,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 5,
+    "run_id": 1,
+    "name": "Heresy Detection [GPT-5 Mini]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "GPT-5 Mini",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:08:58.838Z"
+  }
+}

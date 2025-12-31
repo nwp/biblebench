@@ -1,0 +1,99 @@
+{
+  "eval": {
+    "id": 32,
+    "suite_id": 5,
+    "col_order": 4,
+    "input": "Someone teaches: 'The God of the Old Testament is different from the God of the New Testament. The Old Testament God was wrathful and evil, while Jesus revealed the true, good God.' What's wrong with this view?",
+    "expected": "This resembles Marcionism, a second-century heresy that rejected the Old Testament and taught there were two different gods. This is false. Orthodox Christianity affirms the unity of God across both Testaments. The same God who created the world, gave the law, and showed justice in the Old Testament is the God who sent Jesus. Jesus himself affirmed the Old Testament (Matthew 5:17-18) and revealed God's character as both just and merciful throughout scripture.",
+    "output": "Verdict: Heresy. This is essentially Marcionism (a second‑century heresy) or a form of ditheism/dualism: it splits the Bible’s revelation into two different gods — an “evil” creator of the Old Testament and a “good” revealer in the New Testament. Orthodox Christianity rejects this.\n\nWhy it’s wrong (briefly):\n\n1. It contradicts the Bible’s own teaching about God’s unity and immutability.\n- The Old and New Testaments present one God. God says, “I am” (Exod. 3:14) and is identified through the Old Testament names and promises that Jesus affirms and fulfills (e.g. Matt. 5:17; Luke 24:27,44). Hebrews 1:3 and John 14:9–10 portray Jesus as the exact image of the Father. “Jesus Christ is the same yesterday and today and forever” (Heb. 13:8). Malachi 3:6: “I the Lord do not change.”\n- The doctrine of the Trinity explains how Father, Son and Spirit are one God; denying unity produces theological contradictions about salvation, revelation, and the person of Christ.\n\n2. It creates an incoherent moral and theological picture.\n- Calling the OT God “evil” attacks God’s holiness, justice, and truthfulness, and makes God morally unreliable. If the Old Testament God is not the true God, the narrative of creation, covenant, promise, prophecy, and fulfillment collapses. The story of redemption (promise to Abraham, covenant with Israel, prophets pointing to the Messiah) is continuous and culminates in Christ.\n\n3. It misreads the OT and NT texts and ignores context.\n- The Old Testament repeatedly presents God’s steadfast love and mercy as well as his justice (Exod. 34:6–7: “merciful and gracious… yet by no means clearing the guilty”; Psalm 103:8; Isaiah 54:10). The New Testament likewise teaches God’s justice and wrath (e.g. Romans 1:18; Revelation) along with God’s mercy and love (Romans 5:8).\n- Many apparent differences are matters of emphasis, covenant role, and progressive revelation: God’s punishment in the OT is a righteous response to sin within covenant contexts; God’s mercy and self‑giving reach their climax in Christ, but that does not negate God’s justice.\n\n4. It was explicitly rejected by the early church.\n- Marcion taught a disjunction between the gods of OT and NT and produced his own canon; church fathers (Irenaeus, Tertullian, Justin Martyr, Augustine) rejected him and defended the unity and authority of the whole Scripture. The canon and orthodox creeds arose in part to protect the continuity of revelation.\n\nPastoral/theological consequences:\n- If one accepts two gods, one cannot trust God’s promises (e.g. promises to Abraham, the covenant with Israel, prophetic hopes) nor the claim that Jesus reveals the Father. It also undercuts the meaning of Christ’s atonement: Jesus fulfills and heals what was promised and broken, not replaces an unrelated evil deity.\n\nProper orthodox way to state the relationship:\n- There is one God who is holy, just, loving, merciful, and wrathful against sin. The Old Testament and New Testament are complementary revelations of that one God, progressively unfolding his character and purposes; in Jesus Christ that one God is fully and decisively revealed and fulfills his promises.\n\nKey texts to remember: Exodus 34:6–7; Malachi 3:6; Psalm 103:8; Matthew 5:17; John 14:9; Hebrews 1:3; Hebrews 13:8; Romans 1:18 and Romans 5:8.\n\nIn short: the view splits what the Bible joins together, violates the church’s historic teaching about God, and misunderstands both Testaments. It is therefore heretical.",
+    "duration": 61553,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:08:58.838Z",
+    "score": 0.9733333333333333,
+    "scores": [
+      {
+        "id": 117,
+        "eval_id": 32,
+        "name": "Theological Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of theological accuracy and doctrinal correctness",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The LLM correctly identifies the view as Marcionism or a form of dualistic thinking that improperly separates the OT and NT into two gods. It defends the historic Christian doctrine of the unity and immutability of God, the continuity of revelation from OT to NT, and the centralized, Christ-centered interpretation of Scripture. It cites appropriate biblical texts (Exodus 34:6–7; Malachi 3:6; Psalm 103:8; Matthew 5:17; John 14:9; Hebrews 1:3; Hebrews 13:8; Romans 1:18; Romans 5:8) and explains progressive revelation, covenant context, and the church's patristic rejection of Marcion. It also addresses pastoral implications and offers a succinct, orthodox framework for understanding the relationship of the Testaments. The only minor caveat is the optional inclusion of \"ditheism/dualism\" as a possibility, which is not necessary but not doctrinally incorrect."
+        },
+        "created_at": "2025-12-31T16:10:00.393Z"
+      },
+      {
+        "id": 118,
+        "eval_id": 32,
+        "name": "Heresy Identification",
+        "score": 1,
+        "description": "Checks if the response correctly identifies the heresy",
+        "metadata": {
+          "type": "no specific heresy"
+        },
+        "created_at": "2025-12-31T16:10:00.393Z"
+      },
+      {
+        "id": 119,
+        "eval_id": 32,
+        "name": "Orthodox Response",
+        "score": 1,
+        "description": "Checks if the response defends orthodox teaching",
+        "metadata": {
+          "orthodoxKeywords": [
+            "orthodox",
+            "scripture",
+            "heretical",
+            "heresy",
+            "contradicts"
+          ],
+          "count": 5
+        },
+        "created_at": "2025-12-31T16:10:00.393Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 40,
+        "eval_id": 32,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a theologian expert in church history and doctrine. Analyze the following theological statement or question, identifying whether it represents orthodox Christian teaching or heresy, and explain why.\n\nSomeone teaches: 'The God of the Old Testament is different from the God of the New Testament. The Old Testament God was wrathful and evil, while Jesus revealed the true, good God.' What's wrong with this view?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Verdict: Heresy. This is essentially Marcionism (a second‑century heresy) or a form of ditheism/dualism: it splits the Bible’s revelation into two different gods — an “evil” creator of the Old Testament and a “good” revealer in the New Testament. Orthodox Christianity rejects this.\n\nWhy it’s wrong (briefly):\n\n1. It contradicts the Bible’s own teaching about God’s unity and immutability.\n- The Old and New Testaments present one God. God says, “I am” (Exod. 3:14) and is identified through the Old Testament names and promises that Jesus affirms and fulfills (e.g. Matt. 5:17; Luke 24:27,44). Hebrews 1:3 and John 14:9–10 portray Jesus as the exact image of the Father. “Jesus Christ is the same yesterday and today and forever” (Heb. 13:8). Malachi 3:6: “I the Lord do not change.”\n- The doctrine of the Trinity explains how Father, Son and Spirit are one God; denying unity produces theological contradictions about salvation, revelation, and the person of Christ.\n\n2. It creates an incoherent moral and theological picture.\n- Calling the OT God “evil” attacks God’s holiness, justice, and truthfulness, and makes God morally unreliable. If the Old Testament God is not the true God, the narrative of creation, covenant, promise, prophecy, and fulfillment collapses. The story of redemption (promise to Abraham, covenant with Israel, prophets pointing to the Messiah) is continuous and culminates in Christ.\n\n3. It misreads the OT and NT texts and ignores context.\n- The Old Testament repeatedly presents God’s steadfast love and mercy as well as his justice (Exod. 34:6–7: “merciful and gracious… yet by no means clearing the guilty”; Psalm 103:8; Isaiah 54:10). The New Testament likewise teaches God’s justice and wrath (e.g. Romans 1:18; Revelation) along with God’s mercy and love (Romans 5:8).\n- Many apparent differences are matters of emphasis, covenant role, and progressive revelation: God’s punishment in the OT is a righteous response to sin within covenant contexts; God’s mercy and self‑giving reach their climax in Christ, but that does not negate God’s justice.\n\n4. It was explicitly rejected by the early church.\n- Marcion taught a disjunction between the gods of OT and NT and produced his own canon; church fathers (Irenaeus, Tertullian, Justin Martyr, Augustine) rejected him and defended the unity and authority of the whole Scripture. The canon and orthodox creeds arose in part to protect the continuity of revelation.\n\nPastoral/theological consequences:\n- If one accepts two gods, one cannot trust God’s promises (e.g. promises to Abraham, the covenant with Israel, prophetic hopes) nor the claim that Jesus reveals the Father. It also undercuts the meaning of Christ’s atonement: Jesus fulfills and heals what was promised and broken, not replaces an unrelated evil deity.\n\nProper orthodox way to state the relationship:\n- There is one God who is holy, just, loving, merciful, and wrathful against sin. The Old Testament and New Testament are complementary revelations of that one God, progressively unfolding his character and purposes; in Jesus Christ that one God is fully and decisively revealed and fulfills his promises.\n\nKey texts to remember: Exodus 34:6–7; Malachi 3:6; Psalm 103:8; Matthew 5:17; John 14:9; Hebrews 1:3; Hebrews 13:8; Romans 1:18 and Romans 5:8.\n\nIn short: the view splits what the Bible joins together, violates the church’s historic teaching about God, and misunderstands both Testaments. It is therefore heretical.",
+          "toolCalls": []
+        },
+        "start_time": 376.519458,
+        "end_time": 23940.318958,
+        "input_tokens": 86,
+        "output_tokens": 1846,
+        "total_tokens": 1932,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 5,
+    "run_id": 1,
+    "name": "Heresy Detection [GPT-5 Mini]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/heresy-detection.eval.ts",
+    "variant_name": "GPT-5 Mini",
+    "variant_group": "Heresy Detection",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:08:58.838Z"
+  }
+}

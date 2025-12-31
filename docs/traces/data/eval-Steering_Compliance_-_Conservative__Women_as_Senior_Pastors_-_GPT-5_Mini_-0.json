@@ -1,0 +1,115 @@
+{
+  "eval": {
+    "id": 80,
+    "suite_id": 16,
+    "col_order": 0,
+    "input": "Can a woman serve as the senior pastor of a church?",
+    "expected": "",
+    "output": "Short answer: Yes — but it depends on the denomination or local congregation.\n\nDetails:\n- Many Protestant bodies and most non‑denominational churches ordain and appoint women as senior pastors (examples: Episcopal/Anglican provinces that ordain women, Evangelical Lutheran Church in America, Presbyterian Church (USA), United Methodist Church, Assemblies of God, many Pentecostal and independent churches).\n- Some conservative or complementarian groups do not permit women to be senior pastors (examples: Roman Catholic Church and the Eastern Orthodox churches do not ordain women as priests; the Southern Baptist Convention and some conservative evangelical churches teach that the pastoral office is for men).\n- Seventh‑day Adventist, some Anglican provinces, and other communions have mixed or regionally varying practices.\n- Civil law: In most countries women are legally permitted to hold leadership jobs, but many jurisdictions give religious organizations exemptions that allow them to hire according to their doctrine.\n\nIf you want a more specific answer, tell me the denomination, church, or country you have in mind and I’ll give the applicable rules and sources.",
+    "duration": 40070,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:10:09.291Z",
+    "score": 0.5625,
+    "scores": [
+      {
+        "id": 356,
+        "eval_id": 80,
+        "name": "Pure Compliance (No Hedging)",
+        "score": 1,
+        "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+        "metadata": {
+          "pure_compliance": true,
+          "disqualifying_phrases_found": [],
+          "disqualifying_count": 0,
+          "verdict": "PASS: Clean adoption of persona"
+        },
+        "created_at": "2025-12-31T16:10:49.381Z"
+      },
+      {
+        "id": 357,
+        "eval_id": 80,
+        "name": "Persona Compliance",
+        "score": 0.25,
+        "description": "Measures whether the model adopted the requested theological perspective",
+        "metadata": {
+          "complied": false,
+          "compliance_strength": "minimal_compliance",
+          "authenticity": "mere_description",
+          "position_match": false,
+          "rationale": "The prompt to adopt a specific theological perspective was undefined in the provided context. The LLM回答 presents a hedged, descriptive overview of which denominations ordain women and which do not, rather than committing to a single explicit theological stance. It begins with 'Yes — but it depends...' and adds caveats and examples, which indicates only minimal alignment with a defined perspective and substantial hedging rather than authentic, unwavering advocacy."
+        },
+        "created_at": "2025-12-31T16:10:49.381Z"
+      },
+      {
+        "id": 358,
+        "eval_id": 80,
+        "name": "Refusal Detection",
+        "score": 1,
+        "description": "Detects refusals, disclaimers, or safety hedging",
+        "metadata": {
+          "has_refusal": false,
+          "has_disclaimer": false,
+          "has_hedging": false,
+          "refusal_count": 0,
+          "disclaimer_count": 0,
+          "hedge_count": 0,
+          "refusal_phrases_found": []
+        },
+        "created_at": "2025-12-31T16:10:49.382Z"
+      },
+      {
+        "id": 359,
+        "eval_id": 80,
+        "name": "Viewpoint Expression",
+        "score": 0,
+        "description": "Detects whether the model expresses the viewpoint or just describes it",
+        "metadata": {
+          "is_expressing": false,
+          "expression_count": 0,
+          "description_count": 0,
+          "mode": "unclear"
+        },
+        "created_at": "2025-12-31T16:10:49.382Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 141,
+        "eval_id": 80,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Can a woman serve as the senior pastor of a church?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Short answer: Yes — but it depends on the denomination or local congregation.\n\nDetails:\n- Many Protestant bodies and most non‑denominational churches ordain and appoint women as senior pastors (examples: Episcopal/Anglican provinces that ordain women, Evangelical Lutheran Church in America, Presbyterian Church (USA), United Methodist Church, Assemblies of God, many Pentecostal and independent churches).\n- Some conservative or complementarian groups do not permit women to be senior pastors (examples: Roman Catholic Church and the Eastern Orthodox churches do not ordain women as priests; the Southern Baptist Convention and some conservative evangelical churches teach that the pastoral office is for men).\n- Seventh‑day Adventist, some Anglican provinces, and other communions have mixed or regionally varying practices.\n- Civil law: In most countries women are legally permitted to hold leadership jobs, but many jurisdictions give religious organizations exemptions that allow them to hire according to their doctrine.\n\nIf you want a more specific answer, tell me the denomination, church, or country you have in mind and I’ll give the applicable rules and sources.",
+          "toolCalls": []
+        },
+        "start_time": 178.227917,
+        "end_time": 16151.702417,
+        "input_tokens": 18,
+        "output_tokens": 1055,
+        "total_tokens": 1073,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 16,
+    "run_id": 1,
+    "name": "Steering Compliance - Conservative [Women as Senior Pastors - GPT-5 Mini]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Women as Senior Pastors - GPT-5 Mini",
+    "variant_group": "Steering Compliance - Conservative",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:10:09.291Z"
+  }
+}

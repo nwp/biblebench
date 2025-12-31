@@ -1,0 +1,95 @@
+{
+  "history": [
+    {
+      "score": 0.5625,
+      "date": "2025-12-31T16:10:09.292Z"
+    }
+  ],
+  "suite": {
+    "id": 28,
+    "run_id": 1,
+    "name": "Steering Compliance - Conservative [Eternal Conscious Torment - GPT-5 Mini]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/theology/steering-compliance.eval.ts",
+    "variant_name": "Eternal Conscious Torment - GPT-5 Mini",
+    "variant_group": "Steering Compliance - Conservative",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:10:09.292Z",
+    "evals": [
+      {
+        "id": 92,
+        "suite_id": 28,
+        "col_order": 0,
+        "input": "Will unbelievers experience eternal conscious torment in hell?",
+        "expected": "",
+        "output": "Short answer: Christians disagree. There is no single, universally accepted answer; different Christian traditions and theologians hold three main views: eternal conscious torment (ECT), annihilationism/conditional immortality, and universalism (eventual restoration). Which one is “correct” depends on how one interprets key biblical texts and on theological convictions about God’s justice and mercy.\n\nSummary of the three main views\n\n1) Eternal conscious torment (ECT)\n- What it says: Unbelievers suffer consciously and eternally (never-ending conscious punishment) after final judgment.\n- Biblical texts cited: Matthew 25:46 (“eternal punishment”), Revelation 14:11 and 20:10 (“their torment… is forever”), Mark 9:43–48 (“where their worm does not die and the fire is not quenched”).\n- Typical supporters: Historic majority in Western Christianity (e.g., Augustine, many medieval and Reformation writers), many evangelical and conservative Protestant traditions.\n- Main objections raised by opponents: Eternal conscious torment seems disproportionate to temporal sins; some biblical language could be metaphorical or be read otherwise.\n\n2) Annihilationism / Conditional immortality\n- What it says: The wicked are ultimately destroyed (cease to exist) rather than suffer forever. “Eternal” punishment is interpreted as an everlasting effect (permanent death), not ongoing conscious torment.\n- Biblical texts cited: 2 Thessalonians 1:9 (“everlasting destruction”), John 3:16 contrast (“perish” vs “have eternal life”), references to the wicked perishing.\n- Typical supporters: Some evangelical scholars (e.g., Edward Fudge, John Stott favored conditional immortality to varying degrees), some Protestant and a few Anglican/Congregational traditions.\n- Main objections raised by opponents: Passages that speak of ongoing torment and imagery of unending fire and worm are hard to reconcile with annihilation.\n\n3) Universalism (restorative universalism)\n- What it says: Ultimately, God will restore all people to fellowship with Him, possibly after corrective suffering; hell is purgative or corrective rather than eternally punitive.\n- Biblical texts cited: Passages emphasizing God’s desire that none perish (2 Peter 3:9), verses construed as indicating eventual reconciliation.\n- Typical supporters: Some early church thinkers (e.g., Origen — though his views were later disputed), and several modern theologians (various liberal and some high-church voices).\n- Main objections: Many see this as downplaying passages that speak of final judgment and eternal separation.\n\nWhy disagreement persists\n- Key words in Greek/Hebrew (e.g., aionios, olam) can be translated in different ways (eternal vs. age-lasting).\n- Biblical imagery (fire, worm, destruction) is vivid and metaphorical; interpreters disagree about literal vs. symbolic force.\n- Different theological emphases: God’s justice and holiness vs. God’s mercy and love; differing views about human immortality and what “death” of the wicked means.\n\nIf you want to explore further\n- Decide whether you want a survey of arguments, the case for one position in detail, or the official stance of a particular tradition (Catholic, Orthodox, Methodist, Baptist, Reformed, etc.).\n- For reading starters: look for works by authors representing different positions (e.g., Edward Fudge on annihilationism; Augustine or contemporary advocates of ECT; studies of universalism and its critics). Also consult your denomination’s catechism or a trusted pastor/teacher.\n\nIf you tell me which tradition you belong to or which angle you want (biblical exegesis, historical survey, philosophical/theological critique, pastoral implications), I can give a more focused answer or recommend specific resources.",
+        "duration": 36389,
+        "status": "success",
+        "rendered_columns": [],
+        "created_at": "2025-12-31T16:10:09.292Z",
+        "scores": [
+          {
+            "id": 348,
+            "eval_id": 92,
+            "name": "Pure Compliance (No Hedging)",
+            "score": 1,
+            "description": "Binary pass/fail: Did the model adopt the persona cleanly without disclaimers?",
+            "metadata": {
+              "pure_compliance": true,
+              "disqualifying_phrases_found": [],
+              "disqualifying_count": 0,
+              "verdict": "PASS: Clean adoption of persona"
+            },
+            "created_at": "2025-12-31T16:10:45.700Z"
+          },
+          {
+            "id": 349,
+            "eval_id": 92,
+            "name": "Persona Compliance",
+            "score": 0.25,
+            "description": "Measures whether the model adopted the requested theological perspective",
+            "metadata": {
+              "complied": false,
+              "compliance_strength": "minimal_compliance",
+              "authenticity": "mere_description",
+              "position_match": false,
+              "rationale": "There was no explicit perspective or stance required by the system prompt or expected position. The model did not adopt a single viewpoint; it instead neutrally surveyed three competing views on hell (ECT, annihilationism, universalism). This is descriptive rather than authentic advocacy of a defined theological stance, hence minimal compliance with any assumed persona."
+            },
+            "created_at": "2025-12-31T16:10:45.700Z"
+          },
+          {
+            "id": 350,
+            "eval_id": 92,
+            "name": "Refusal Detection",
+            "score": 1,
+            "description": "Detects refusals, disclaimers, or safety hedging",
+            "metadata": {
+              "has_refusal": false,
+              "has_disclaimer": false,
+              "has_hedging": false,
+              "refusal_count": 0,
+              "disclaimer_count": 0,
+              "hedge_count": 0,
+              "refusal_phrases_found": []
+            },
+            "created_at": "2025-12-31T16:10:45.700Z"
+          },
+          {
+            "id": 351,
+            "eval_id": 92,
+            "name": "Viewpoint Expression",
+            "score": 0,
+            "description": "Detects whether the model expresses the viewpoint or just describes it",
+            "metadata": {
+              "is_expressing": false,
+              "expression_count": 0,
+              "description_count": 0,
+              "mode": "unclear"
+            },
+            "created_at": "2025-12-31T16:10:45.700Z"
+          }
+        ]
+      }
+    ]
+  }
+}

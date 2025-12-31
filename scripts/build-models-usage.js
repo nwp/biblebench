@@ -32,6 +32,26 @@ function nameToId(name) {
 }
 
 /**
+ * Extract model name from variant names, handling Steering Compliance prefixes
+ *
+ * Examples:
+ * - "GPT-5 Mini" -> "GPT-5 Mini"
+ * - "Abortion Ethics - GPT-5 Mini" -> "GPT-5 Mini"
+ * - "Transgender Identity - Claude Opus 4.5" -> "Claude Opus 4.5"
+ */
+function extractModelDisplayName(variantName) {
+  if (!variantName) return null;
+
+  const parts = variantName.split(' - ');
+
+  if (parts.length > 1) {
+    return parts[parts.length - 1];
+  }
+
+  return variantName;
+}
+
+/**
  * Main aggregation function
  */
 async function aggregateUsage() {
@@ -70,12 +90,13 @@ async function aggregateUsage() {
       const trace = JSON.parse(readFileSync(filePath, 'utf8'));
 
       // Extract model name from suite.variant_name
-      const modelName = trace.suite?.variant_name;
-      if (!modelName) {
+      const variantName = trace.suite?.variant_name;
+      if (!variantName) {
         filesSkipped++;
         continue;
       }
 
+      const modelName = extractModelDisplayName(variantName);
       const modelId = nameToId(modelName);
 
       // Initialize model usage if not exists

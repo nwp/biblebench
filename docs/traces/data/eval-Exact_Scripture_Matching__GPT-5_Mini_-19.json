@@ -1,0 +1,66 @@
+{
+  "eval": {
+    "id": 113,
+    "suite_id": 30,
+    "col_order": 19,
+    "input": "Quote Isaiah 40:31 from the King James Version (KJV) exactly as written",
+    "expected": "But they that wait upon the Lord shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint",
+    "output": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.",
+    "duration": 3705,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:10:10.962Z",
+    "score": 1,
+    "scores": [
+      {
+        "id": 184,
+        "eval_id": 113,
+        "name": "Exact Match",
+        "score": 1,
+        "description": "Checks if the output exactly matches the expected value (case-insensitive)",
+        "metadata": {
+          "exactMatch": true
+        },
+        "created_at": "2025-12-31T16:10:14.668Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 65,
+        "eval_id": 113,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in various Bible translations.\nYour task is to quote the exact verse text from the specified translation.\nBe EXTREMELY PRECISE with the wording - every word, comma, and punctuation mark matters.\nQuote ONLY the verse text itself without adding the reference, quotation marks, or any additional commentary.\n\nQuote Isaiah 40:31 from the King James Version (KJV) exactly as written"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.",
+          "toolCalls": []
+        },
+        "start_time": 167.920417,
+        "end_time": 3852.400084,
+        "input_tokens": 90,
+        "output_tokens": 238,
+        "total_tokens": 328,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 30,
+    "run_id": 1,
+    "name": "Exact Scripture Matching [GPT-5 Mini]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/scripture-matching.eval.ts",
+    "variant_name": "GPT-5 Mini",
+    "variant_group": "Exact Scripture Matching",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:10:10.962Z"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "eval": {
+    "id": 24,
+    "suite_id": 4,
+    "col_order": 4,
+    "input": "Who was the primary audience of the Sermon on the Mount?",
+    "expected": "Jesus' disciples and the crowds who followed him",
+    "output": "Short answer\nThe Sermon on the Mount (Matthew 5–7) was spoken to people who had gathered around Jesus — explicitly his disciples and the crowds — but its immediate, primary addressees are the disciples. In the Gospel of Matthew it also functions as authoritative teaching for Matthew’s early Jewish‑Christian community (and for Christians generally).\n\nWhy that answer?\n- Textual evidence: Matthew 5:1–2 frames the scene: Jesus \"went up on the mountain; and when he sat down, his disciples came to him. And he opened his mouth and taught them.\" That language identifies the disciples as the immediate audience of his teaching. Matthew closes the unit with an observation about the reaction of the crowds (7:28–29), indicating both disciples and multitudes were present.\n- Parallel in Luke: Luke 6:17–49 records a similar block of teaching (the “Sermon on the Plain”) and likewise mentions both disciples and a great multitude, again implying mixed listeners but with special address to the disciples.\n- Literary/theological function: Matthew shapes the sermon with Moses‑typology (mountain, law‑giving language) and with concerns about Jewish law, indicating he intends the sermon as formative instruction for the church he is addressing — particularly a Jewish‑Christian readership wrestling with how Jesus relates to the Law.\n- Scholarly perspective: Most scholars agree the historical Jesus taught such ethical sayings to mixed audiences (disciples plus crowds). Many also see Matthew’s version as a redactional composition intended to serve as catechesis for his community: so the “primary audience” can be seen in two senses — the immediate, in‑scene listeners (disciples and crowds, with special attention to disciples) and the Gospel’s intended readers (the Matthean church).\n\nIn short: historically and narratively the sermon was addressed to disciples (and the surrounding crowd); literarily and theologically Matthew presents it as foundational teaching for his Christian community.",
+    "duration": 46749,
+    "status": "success",
+    "rendered_columns": [],
+    "created_at": "2025-12-31T16:08:58.838Z",
+    "score": 0.96,
+    "scores": [
+      {
+        "id": 17,
+        "eval_id": 24,
+        "name": "Historical Accuracy Judge",
+        "score": 0.92,
+        "description": "LLM-based evaluation of historical and contextual accuracy",
+        "metadata": {
+          "doctrinally_sound": true,
+          "biblically_grounded": true,
+          "nuance_captured": true,
+          "errors": [],
+          "rationale": "The answer accurately identifies the immediate audience in Matthew 5:1–2 as the disciples, while noting that crowds are present and listening (consistent with 5:1–2 and 7:28–29). It correctly cites Luke 6:17–49 to show a parallel where both disciples and a crowd are present, reinforcing the mixed-audience dynamic. It discusses the literary/theological function (Moses-like mountaintop, concerns with the Law) and notes the Matthean community as a key audience, which is a widely accepted scholarly view. It also sensibly distinguishes two senses of “primary audience”: the in-scene listeners (disciples, with the crowd) and the intended readership of Matthew (the Matthean church or early Christians). The response is relevant to the question and appropriately hedged with nuance about scholarly perspectives. A minor caveat would be to soften claims such as “most scholars agree” with “many scholars argue” to reflect ongoing scholarly debate, but this does not detract from factual accuracy or overall completeness."
+        },
+        "created_at": "2025-12-31T16:09:45.589Z"
+      },
+      {
+        "id": 18,
+        "eval_id": 24,
+        "name": "Key Points Coverage",
+        "score": 1,
+        "description": "Checks if the response includes key factual points using word overlap",
+        "metadata": {
+          "keyPhrases": [
+            "disciples",
+            "crowds",
+            "Jesus"
+          ],
+          "matchedPoints": [
+            "disciples",
+            "crowds",
+            "Jesus"
+          ],
+          "missedPoints": [],
+          "coverage": 1,
+          "totalPoints": 3,
+          "pointsFound": 3
+        },
+        "created_at": "2025-12-31T16:09:45.589Z"
+      }
+    ],
+    "traces": [
+      {
+        "id": 7,
+        "eval_id": 24,
+        "input": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "You are a Bible scholar with expertise in biblical history, authorship, and historical context.\n\nProvide a clear, accurate answer to the question. Include the essential facts and key information needed to fully answer the question.\n\nWhen discussing topics with scholarly debate (such as authorship), it's appropriate to indicate the traditional or majority view while noting if there are alternative perspectives.\n\nQuestion: Who was the primary audience of the Sermon on the Mount?"
+              }
+            ]
+          }
+        ],
+        "output": {
+          "text": "Short answer\nThe Sermon on the Mount (Matthew 5–7) was spoken to people who had gathered around Jesus — explicitly his disciples and the crowds — but its immediate, primary addressees are the disciples. In the Gospel of Matthew it also functions as authoritative teaching for Matthew’s early Jewish‑Christian community (and for Christians generally).\n\nWhy that answer?\n- Textual evidence: Matthew 5:1–2 frames the scene: Jesus \"went up on the mountain; and when he sat down, his disciples came to him. And he opened his mouth and taught them.\" That language identifies the disciples as the immediate audience of his teaching. Matthew closes the unit with an observation about the reaction of the crowds (7:28–29), indicating both disciples and multitudes were present.\n- Parallel in Luke: Luke 6:17–49 records a similar block of teaching (the “Sermon on the Plain”) and likewise mentions both disciples and a great multitude, again implying mixed listeners but with special address to the disciples.\n- Literary/theological function: Matthew shapes the sermon with Moses‑typology (mountain, law‑giving language) and with concerns about Jewish law, indicating he intends the sermon as formative instruction for the church he is addressing — particularly a Jewish‑Christian readership wrestling with how Jesus relates to the Law.\n- Scholarly perspective: Most scholars agree the historical Jesus taught such ethical sayings to mixed audiences (disciples plus crowds). Many also see Matthew’s version as a redactional composition intended to serve as catechesis for his community: so the “primary audience” can be seen in two senses — the immediate, in‑scene listeners (disciples and crowds, with special attention to disciples) and the Gospel’s intended readers (the Matthean church).\n\nIn short: historically and narratively the sermon was addressed to disciples (and the surrounding crowd); literarily and theologically Matthew presents it as foundational teaching for his Christian community.",
+          "toolCalls": []
+        },
+        "start_time": 392.226084,
+        "end_time": 20158.147209,
+        "input_tokens": 92,
+        "output_tokens": 1172,
+        "total_tokens": 1264,
+        "col_order": 1
+      }
+    ]
+  },
+  "suite": {
+    "id": 4,
+    "run_id": 1,
+    "name": "Context Understanding [GPT-5 Mini]",
+    "filepath": "/Users/nathan/Development/biblebench/evals/scripture/context-understanding.eval.ts",
+    "variant_name": "GPT-5 Mini",
+    "variant_group": "Context Understanding",
+    "status": "success",
+    "duration": 0,
+    "created_at": "2025-12-31T16:08:58.838Z"
+  }
+}

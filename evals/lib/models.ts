@@ -42,30 +42,66 @@ const openrouter = createOpenRouter({
 
 /**
  * Rate limiter for free tier models
- * Automatically applies delay to models ending with ":free" suffix
+ * Uses a queue to serialize requests to each model, preventing race conditions
+ * when multiple test cases run in parallel
  */
-let lastRequestTime = 0;
-const MIN_DELAY_MS = 3500; // 3.5 seconds between requests (~17 req/min, under the 16-20 limit)
+const modelRateLimiters = new Map<string, { lastRequestTime: number; queue: Promise<void> }>();
 
 /**
- * Waits for rate limit before allowing the next request
+ * Default delay for free tier models
+ * Extremely conservative 6 seconds = ~10 req/min, only 20% of typical 50 req/min limits
+ * Provides substantial buffer for OpenRouter's sliding window rate limiting
  */
-async function waitForRateLimit(): Promise<void> {
-  const now = Date.now();
-  const timeSinceLastRequest = now - lastRequestTime;
+const DEFAULT_RATE_LIMIT_MS = 6000;
 
-  if (timeSinceLastRequest < MIN_DELAY_MS) {
-    const waitTime = MIN_DELAY_MS - timeSinceLastRequest;
+/**
+ * Waits for rate limit before allowing the next request for a specific model
+ * Uses a promise queue to ensure requests are truly serialized, even when
+ * multiple test cases run in parallel
+ */
+async function waitForRateLimit(modelName: string, delayMs: number = DEFAULT_RATE_LIMIT_MS): Promise<void> {
+  // Get or create rate limiter for this model
+  let rateLimiter = modelRateLimiters.get(modelName);
+  if (!rateLimiter) {
+    rateLimiter = { lastRequestTime: 0, queue: Promise.resolve() };
+    modelRateLimiters.set(modelName, rateLimiter);
+  }
+
+  // Queue this request: wait for previous requests to complete, then wait for rate limit
+  const previousQueue = rateLimiter.queue;
+
+  // Create a new promise for this request
+  let resolveCurrentRequest: () => void;
+  const currentRequestPromise = new Promise<void>((resolve) => {
+    resolveCurrentRequest = resolve;
+  });
+
+  // Update the queue so the next request waits for us
+  rateLimiter.queue = currentRequestPromise;
+
+  // Wait for all previous requests to complete
+  await previousQueue;
+
+  // Now it's our turn - wait for rate limit delay
+  const now = Date.now();
+  const timeSinceLastRequest = now - rateLimiter.lastRequestTime;
+
+  if (timeSinceLastRequest < delayMs) {
+    const waitTime = delayMs - timeSinceLastRequest;
+    console.log(`⏱️  Rate limiting ${modelName}: waiting ${(waitTime / 1000).toFixed(1)}s (${delayMs / 1000}s delay between requests)`);
     await delay(waitTime);
   }
 
-  lastRequestTime = Date.now();
+  // Update last request time and release the queue for the next request
+  rateLimiter.lastRequestTime = Date.now();
+  resolveCurrentRequest!();
 }
 
 /**
  * Wraps a model with rate limiting for free tier models only
+ * Each model has independent rate limiting to respect per-model quotas
  */
-function wrapWithRateLimit(modelName: string): LanguageModelV2 {
+function wrapWithRateLimit(modelName: string, delayMs?: number): LanguageModelV2 {
   const baseModel = openrouter.chat(modelName);
   const originalDoGenerate = baseModel.doGenerate.bind(baseModel);
   const originalDoStream = baseModel.doStream.bind(baseModel);
@@ -73,11 +109,11 @@ function wrapWithRateLimit(modelName: string): LanguageModelV2 {
   const rateLimitedModel: LanguageModelV2 = {
     ...baseModel,
     doGenerate: async (...args: Parameters<typeof baseModel.doGenerate>) => {
-      await waitForRateLimit();
+      await waitForRateLimit(modelName, delayMs);
       return originalDoGenerate(...args);
     },
     doStream: async (...args: Parameters<typeof baseModel.doStream>) => {
-      await waitForRateLimit();
+      await waitForRateLimit(modelName, delayMs);
       return originalDoStream(...args);
     },
   };
@@ -146,6 +182,13 @@ export const glm47 = wrapAISDKModel(openrouter.chat("z-ai/glm-4.7"));
 export const minimaxM21 = wrapAISDKModel(openrouter.chat("minimax/minimax-m2.1"));
 
 /**
+ * AllenAI Models (via OpenRouter)
+ */
+export const allenaiOlmo31Think = wrapAISDKModel(openrouter.chat("allenai/olmo-3.1-32b-think"));
+export const allenaiOlmo31ThinkFree = wrapWithRateLimit("allenai/olmo-3.1-32b-think:free");
+
+
+/**
  * Default model for LLM-as-judge evaluations
  * Using GPT-5 Nano for efficient high-quality judging
  */
@@ -162,6 +205,7 @@ export const benchmarkModels: readonly ModelConfig[] = [
   // OpenAI models
   { name: "GPT-5.2", model: gpt52, provider: "openai" },
   { name: "GPT-5.2 Pro", model: gpt52Pro, provider: "openai" },
+  { name: "GPT-5 Mini", model: gpt5Mini, provider: "openai" },
   { name: "GPT-5 Nano", model: gpt5Nano, provider: "openai" },
   { name: "GPT-OSS-120B", model: gptOss120b, provider: "openai" },
   { name: "GPT-OSS-20B", model: gptOss20b, provider: "openai" },
@@ -196,13 +240,16 @@ export const benchmarkModels: readonly ModelConfig[] = [
 
   // MiniMax models
   { name: "MiniMax M2.1", model: minimaxM21, provider: "minimax" },
+
+  // AllenAi models
+  {name: "Olmo 3.1 32B Think", model: allenaiOlmo31ThinkFree, provider: "allenai"}
 ] as const;
 
 /**
  * Model Categories for Organization
  * You can use these to run evaluations on specific categories
  */
-export const openaiModels = [gpt52, gpt52Pro, gpt5Nano, gptOss120b, gptOss20b];
+export const openaiModels = [gpt52, gpt52Pro, gpt5Mini, gpt5Nano, gptOss120b, gptOss20b];
 export const anthropicModels = [claudeHaiku45, claudeSonnet45, claudeOpus45];
 export const xaiModels = [grok41Fast, grok4];
 export const metaModels = [llama4Maverick];
@@ -212,14 +259,7 @@ export const deepseekModels = [deepseekV32];
 export const primeIntellectModels = [intellect3];
 export const zhipuModels = [glm47];
 export const minimaxModels = [minimaxM21];
-
-/**
- * Test subset of models (for quick testing with lower API costs)
- * Using openai/gpt-oss-120b:free for free tier testing
- */
-export const testModels: readonly ModelConfig[] = [
-  { name: "GPT-OSS-120B:free", model: gptOss120bFree, provider: "openai" },
-] as const;
+export const allenaiModels = [allenaiOlmo31ThinkFree];
 
 /**
  * Filter models by name based on environment variable
@@ -260,14 +300,14 @@ function getSelectedModels(): readonly ModelConfig[] {
     console.log("");
   } else {
     const originalPattern = process.env.MODELS || "";
-    console.warn(`\n⚠️  Warning: No models matched pattern "${originalPattern}"`);
-    console.warn("   Available model names:");
+    console.error(`\n❌ Error: No models matched pattern "${originalPattern}"`);
+    console.error("   Available model names:");
     benchmarkModels.forEach(({ name, provider }) => {
       const providerTag = provider ? ` [${provider}]` : "";
-      console.warn(`   - ${name}${providerTag}`);
+      console.error(`   - ${name}${providerTag}`);
     });
-    console.warn("   Falling back to all models.\n");
-    return benchmarkModels;
+    console.error("\n   To run all models, unset the MODELS variable or use a valid pattern.\n");
+    process.exit(1);
   }
 
   return filtered;
@@ -285,4 +325,18 @@ function getSelectedModels(): readonly ModelConfig[] {
  *   MODELS="opus" pnpm eval:dev         # Only Opus model
  */
 export const selectedModels = getSelectedModels();
+
+/**
+ * Rate-limited models (models that use wrapWithRateLimit)
+ * These require longer test timeouts due to serialized request queueing
+ */
+const rateLimitedModels = new Set([gptOss120bFree, allenaiOlmo31ThinkFree]);
+
+/**
+ * Check if any selected models use rate limiting
+ * Used by evalite.config.ts to adjust test timeout dynamically
+ */
+export const hasRateLimitedModels = selectedModels.some((config) =>
+  rateLimitedModels.has(config.model)
+);
 
