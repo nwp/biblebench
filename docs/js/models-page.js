@@ -8,7 +8,7 @@ class ModelsPageManager {
     this.metadata = null;
     this.usage = null;
     this.dashboard = null;
-    this.sortOption = 'score-high';
+    this.sortOption = 'value-high';
   }
 
   async init() {
@@ -94,6 +94,20 @@ class ModelsPageManager {
     const modelsArray = Object.values(this.metadata);
 
     switch (this.sortOption) {
+      case 'value-high':
+        return modelsArray.sort((a, b) => {
+          const valueA = this.getModelValueScore(a.id);
+          const valueB = this.getModelValueScore(b.id);
+          return valueB - valueA;
+        });
+
+      case 'value-low':
+        return modelsArray.sort((a, b) => {
+          const valueA = this.getModelValueScore(a.id);
+          const valueB = this.getModelValueScore(b.id);
+          return valueA - valueB;
+        });
+
       case 'score-high':
         return modelsArray.sort((a, b) => {
           const scoreA = this.getModelScore(a.id);
@@ -135,6 +149,17 @@ class ModelsPageManager {
   getModelScore(modelId) {
     const dashboardModel = this.dashboard.models.find(m => m.id === modelId);
     return dashboardModel?.overallScore || 0;
+  }
+
+  getModelValueScore(modelId) {
+    const score = this.getModelScore(modelId);
+    const cost = this.usage[modelId]?.totalCost || 0;
+
+    // If cost is 0 or model has no usage, return 0 to prevent division by zero
+    if (cost === 0 || score === 0) return 0;
+
+    // Value = Score per dollar (higher is better)
+    return score / cost;
   }
 
   createFlatSection(models) {
@@ -251,6 +276,14 @@ class ModelsPageManager {
     const scoreSpec = this.createSpec('Overall Score', `${(score * 100).toFixed(1)}%`);
     scoreSpec.classList.add('spec-highlight');
     specs.appendChild(scoreSpec);
+
+    const valueScore = this.getModelValueScore(model.id);
+    const cost = this.usage[model.id]?.totalCost || 0;
+    if (cost > 0 && valueScore > 0) {
+      const valueSpec = this.createSpec('Value Score', `${(valueScore * 100).toFixed(1)} pts/$`);
+      valueSpec.classList.add('spec-highlight', 'spec-value');
+      specs.appendChild(valueSpec);
+    }
 
     const contextSpec = this.createSpec('Context Length', `${this.formatNumber(model.contextLength)} tokens`);
     specs.appendChild(contextSpec);
