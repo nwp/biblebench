@@ -181,9 +181,18 @@ class ModelsPageManager {
     const modelsContainer = document.createElement('div');
     modelsContainer.className = 'provider-models';
 
-    for (const model of models) {
+    for (let i = 0; i < models.length; i++) {
+      const model = models[i];
       const modelUsage = this.usage[model.id] || null;
-      const card = this.createModelCard(model, modelUsage);
+
+      let rank = null;
+      if (this.sortOption === 'score-high') {
+        rank = i + 1;
+      } else if (this.sortOption === 'score-low') {
+        rank = models.length - i;
+      }
+
+      const card = this.createModelCard(model, modelUsage, rank);
       modelsContainer.appendChild(card);
     }
 
@@ -230,7 +239,7 @@ class ModelsPageManager {
 
     for (const model of models) {
       const modelUsage = this.usage[model.id] || null;
-      const card = this.createModelCard(model, modelUsage);
+      const card = this.createModelCard(model, modelUsage, null);
       modelsContainer.appendChild(card);
     }
 
@@ -238,12 +247,12 @@ class ModelsPageManager {
     return section;
   }
 
-  createModelCard(model, usage) {
+  createModelCard(model, usage, rank = null) {
     const card = document.createElement('div');
     card.className = 'model-card';
     card.id = model.id;
 
-    const header = this.createModelHeader(model);
+    const header = this.createModelHeader(model, rank);
     card.appendChild(header);
 
     const description = document.createElement('p');
@@ -263,7 +272,7 @@ class ModelsPageManager {
     return card;
   }
 
-  createModelHeader(model) {
+  createModelHeader(model, rank = null) {
     const header = document.createElement('div');
     header.className = 'model-header';
 
@@ -276,6 +285,18 @@ class ModelsPageManager {
     name.className = 'model-name';
     name.textContent = model.displayName;
     header.appendChild(name);
+
+    if (rank !== null) {
+      const rankBadge = document.createElement('span');
+      rankBadge.className = 'rank-badge';
+
+      if (rank === 1) rankBadge.classList.add('rank-1');
+      else if (rank === 2) rankBadge.classList.add('rank-2');
+      else if (rank === 3) rankBadge.classList.add('rank-3');
+
+      rankBadge.textContent = `#${rank}`;
+      header.appendChild(rankBadge);
+    }
 
     return header;
   }

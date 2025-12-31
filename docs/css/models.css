@@ -287,6 +287,40 @@
   line-height: 1.2;
 }
 
+/* Rank Badge */
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  padding: var(--space-2) var(--space-3);
+  background: linear-gradient(135deg, var(--accent-primary) 0%, #ea580c 100%);
+  color: white;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 800;
+  border-radius: 6px;
+  margin-left: auto;
+  box-shadow: 0 2px 4px rgba(217, 119, 6, 0.2);
+  letter-spacing: 0.025em;
+}
+
+.rank-badge.rank-1 {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+  font-size: 1rem;
+}
+
+.rank-badge.rank-2 {
+  background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+  box-shadow: 0 2px 6px rgba(148, 163, 184, 0.3);
+}
+
+.rank-badge.rank-3 {
+  background: linear-gradient(135deg, #d97706 0%, #c2410c 100%);
+  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.3);
+}
+
 /* Model Description */
 .model-description {
   font-family: var(--font-sans);
@@ -506,6 +540,16 @@
 
   .model-name {
     font-size: 1.5rem;
+  }
+
+  .rank-badge {
+    min-width: 2.5rem;
+    padding: var(--space-1) var(--space-2);
+    font-size: 0.8125rem;
+  }
+
+  .rank-badge.rank-1 {
+    font-size: 0.875rem;
   }
 
   .model-specs {
