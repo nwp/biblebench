@@ -8,7 +8,7 @@ class ModelsPageManager {
     this.metadata = null;
     this.usage = null;
     this.dashboard = null;
-    this.sortOption = 'value-high';
+    this.sortOption = 'score-high';
   }
 
   async init() {
@@ -69,8 +69,20 @@ class ModelsPageManager {
 
     sortSelect.addEventListener('change', (e) => {
       this.sortOption = e.target.value;
+      this.updateValueExplanationVisibility();
       this.renderModels();
     });
+
+    // Initialize explanation visibility on page load
+    this.updateValueExplanationVisibility();
+  }
+
+  updateValueExplanationVisibility() {
+    const explanation = document.getElementById('value-explanation');
+    if (!explanation) return;
+
+    const isValueSort = this.sortOption === 'value-high' || this.sortOption === 'value-low';
+    explanation.style.display = isValueSort ? 'flex' : 'none';
   }
 
   renderModels() {

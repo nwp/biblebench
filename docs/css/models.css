@@ -101,6 +101,79 @@
   box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
 }
 
+/* Value Metric Explanation */
+.value-explanation {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  padding: var(--space-6);
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border: 1px solid #6ee7b7;
+  border-left: 4px solid #059669;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.explanation-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.explanation-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.explanation-content h3 {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #065f46;
+  margin: 0 0 var(--space-3) 0;
+}
+
+.explanation-content p {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #047857;
+  margin: 0 0 var(--space-3) 0;
+}
+
+.explanation-content p:last-child {
+  margin-bottom: 0;
+}
+
+.explanation-content .formula {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: var(--space-3);
+  border-radius: 4px;
+  border: 1px solid #6ee7b7;
+  margin: var(--space-3) 0;
+}
+
+.explanation-content .note {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #065f46;
+  margin-top: var(--space-4);
+}
+
 /* Models Grid */
 .models-grid {
   max-width: var(--content-width);
@@ -162,6 +235,9 @@
   box-shadow: var(--shadow-sm);
   scroll-margin-top: calc(var(--space-16) + 60px);
   transition: all var(--transition-base);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  min-width: 0;
 }
 
 .model-card:hover {
@@ -223,7 +299,7 @@
 /* Model Specs Grid */
 .model-specs {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   gap: var(--space-5);
   padding: var(--space-6);
   background: var(--slate-100);
@@ -251,6 +327,8 @@
   font-size: 0.9375rem;
   font-weight: 600;
   color: var(--text-primary);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .spec-highlight .label {
@@ -295,7 +373,7 @@
 
 .usage-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
   gap: var(--space-4);
 }
 
@@ -415,15 +493,15 @@
 @media (max-width: 768px) {
   .intro-section {
     margin: var(--space-12) auto var(--space-10);
-    padding: 0 var(--space-6);
+    padding: 0 var(--space-4);
   }
 
   .models-grid {
-    padding: 0 var(--space-6) var(--space-16);
+    padding: 0 var(--space-4) var(--space-16);
   }
 
   .model-card {
-    padding: var(--space-6);
+    padding: var(--space-5);
   }
 
   .model-name {
@@ -433,14 +511,99 @@
   .model-specs {
     grid-template-columns: 1fr;
     gap: var(--space-4);
+    padding: var(--space-5);
   }
 
   .usage-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
   }
 
   .provider-heading {
     font-size: 0.875rem;
+  }
+
+  .sort-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-2);
+  }
+
+  .sort-select {
+    width: 100%;
+  }
+
+  .value-explanation {
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-5);
+    margin-top: var(--space-5);
+  }
+
+  .explanation-icon {
+    font-size: 1.25rem;
+  }
+
+  .explanation-content h3 {
+    font-size: 1rem;
+  }
+
+  .explanation-content p {
+    font-size: 0.875rem;
+  }
+
+  .explanation-content .formula {
+    font-size: 0.8125rem;
+    padding: var(--space-2);
+  }
+}
+
+/* Very Small Mobile - Single Column Layouts */
+@media (max-width: 480px) {
+  .intro-section {
+    padding: 0 var(--space-3);
+  }
+
+  .models-grid {
+    padding: 0 var(--space-3) var(--space-12);
+  }
+
+  .model-card {
+    padding: var(--space-4);
+  }
+
+  .model-specs {
+    padding: var(--space-4);
+  }
+
+  .usage-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .usage-stats {
+    padding: var(--space-4);
+  }
+
+  .model-name {
+    font-size: 1.375rem;
+  }
+
+  .value-explanation {
+    padding: var(--space-4);
+    margin-top: var(--space-4);
+  }
+
+  .explanation-content h3 {
+    font-size: 0.9375rem;
+  }
+
+  .explanation-content p {
+    font-size: 0.8125rem;
+  }
+
+  .explanation-content .formula {
+    font-size: 0.75rem;
   }
 }
 

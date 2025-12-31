@@ -83,15 +83,38 @@
         <div class="sort-controls">
           <label for="sort-select">Sort by:</label>
           <select id="sort-select" class="sort-select">
+            <option value="score-high" selected>Overall Score (High to Low)</option>
+            <option value="score-low">Overall Score (Low to High)</option>
             <option value="value-high">Value (High to Low)</option>
             <option value="value-low">Value (Low to High)</option>
-            <option value="score-high">Overall Score (High to Low)</option>
-            <option value="score-low">Overall Score (Low to High)</option>
             <option value="provider">Provider (A-Z)</option>
             <option value="cost-high">Evaluation Cost (High to Low)</option>
             <option value="cost-low">Evaluation Cost (Low to High)</option>
             <option value="name">Model Name (A-Z)</option>
           </select>
+        </div>
+
+        <!-- Value Metric Explanation (shown only when sorting by value) -->
+        <div id="value-explanation" class="value-explanation" style="display: none;">
+          <div class="explanation-icon">ℹ️</div>
+          <div class="explanation-content">
+            <h3>About the Value Score</h3>
+            <p>
+              The <strong>Value Score</strong> measures performance per dollar, helping you find models that offer
+              the best bang for your buck in faith-based applications.
+            </p>
+            <p class="formula">
+              <strong>Calculation:</strong> Value Score = (Overall Score ÷ Total Cost) × 100
+            </p>
+            <p>
+              A higher value score means better performance for the price. For example, a model with an 80% score
+              costing $0.50 (Value: 160 pts/$) offers better value than a 90% model costing $1.20 (Value: 75 pts/$),
+              even though the latter has higher absolute performance.
+            </p>
+            <p class="note">
+              <strong>Note:</strong> Only models with evaluation usage data display a value score.
+            </p>
+          </div>
         </div>
       </section>
 
